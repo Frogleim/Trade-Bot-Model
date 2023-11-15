@@ -1,0 +1,383 @@
+2023-11-14 22:59:47,741 - INFO - Connecting...
+2023-11-14 22:59:47,820 - INFO - Connected! Production DC2 - IPv4
+2023-11-14 22:59:47,820 - INFO - NetworkTask started
+2023-11-14 22:59:48,197 - INFO - Session initialized: Layer 158
+2023-11-14 22:59:48,197 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-14 22:59:48,197 - INFO - System: Windows 10 (en)
+2023-11-14 22:59:48,197 - INFO - Session started
+2023-11-14 22:59:48,197 - INFO - PingTask started
+2023-11-14 22:59:48,385 - INFO - Started 16 HandlerTasks
+2023-11-14 22:59:48,385 - INFO - Stopped 16 HandlerTasks
+2023-11-14 22:59:48,385 - INFO - PingTask stopped
+2023-11-14 22:59:48,385 - INFO - Disconnected
+2023-11-14 22:59:48,385 - INFO - NetworkTask stopped
+2023-11-14 22:59:48,385 - INFO - Session stopped
+2023-11-14 22:59:48,418 - INFO - Connecting...
+2023-11-14 22:59:48,495 - INFO - Connected! Production DC2 - IPv4
+2023-11-14 22:59:48,495 - INFO - NetworkTask started
+2023-11-14 22:59:48,888 - INFO - Session initialized: Layer 158
+2023-11-14 22:59:48,888 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-14 22:59:48,888 - INFO - System: Windows 10 (en)
+2023-11-14 22:59:48,888 - INFO - Session started
+2023-11-14 22:59:48,888 - INFO - PingTask started
+2023-11-14 22:59:49,129 - INFO - Started 16 HandlerTasks
+2023-11-14 22:59:51,388 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-14 22:59:51,404 - INFO - Stopped 16 HandlerTasks
+2023-11-14 22:59:51,404 - INFO - PingTask stopped
+2023-11-14 22:59:51,404 - INFO - Disconnected
+2023-11-14 22:59:51,404 - INFO - NetworkTask stopped
+2023-11-14 22:59:51,404 - INFO - Session stopped
+2023-11-14 23:03:14,154 - INFO - Connecting...
+2023-11-14 23:03:14,232 - INFO - Connected! Production DC2 - IPv4
+2023-11-14 23:03:14,232 - INFO - NetworkTask started
+2023-11-14 23:03:14,625 - INFO - Session initialized: Layer 158
+2023-11-14 23:03:14,625 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-14 23:03:14,625 - INFO - System: Windows 10 (en)
+2023-11-14 23:03:14,625 - INFO - Session started
+2023-11-14 23:03:14,625 - INFO - PingTask started
+2023-11-14 23:03:14,829 - INFO - Started 16 HandlerTasks
+2023-11-14 23:03:14,829 - INFO - Stopped 16 HandlerTasks
+2023-11-14 23:03:14,829 - INFO - PingTask stopped
+2023-11-14 23:03:14,829 - INFO - Disconnected
+2023-11-14 23:03:14,829 - INFO - NetworkTask stopped
+2023-11-14 23:03:14,829 - INFO - Session stopped
+2023-11-14 23:03:14,860 - INFO - Connecting...
+2023-11-14 23:03:14,939 - INFO - Connected! Production DC2 - IPv4
+2023-11-14 23:03:14,939 - INFO - NetworkTask started
+2023-11-14 23:03:15,379 - INFO - Session initialized: Layer 158
+2023-11-14 23:03:15,379 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-14 23:03:15,379 - INFO - System: Windows 10 (en)
+2023-11-14 23:03:15,379 - INFO - Session started
+2023-11-14 23:03:15,379 - INFO - PingTask started
+2023-11-14 23:03:15,682 - INFO - Started 16 HandlerTasks
+2023-11-14 23:03:16,625 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-14 23:03:16,640 - INFO - Stopped 16 HandlerTasks
+2023-11-14 23:03:16,640 - INFO - PingTask stopped
+2023-11-14 23:03:16,640 - INFO - Disconnected
+2023-11-14 23:03:16,640 - INFO - NetworkTask stopped
+2023-11-14 23:03:16,640 - INFO - Session stopped
+2023-11-14 23:03:26,705 - INFO - Connecting...
+2023-11-14 23:03:26,784 - INFO - Connected! Production DC2 - IPv4
+2023-11-14 23:03:26,784 - INFO - NetworkTask started
+2023-11-14 23:03:27,177 - INFO - Session initialized: Layer 158
+2023-11-14 23:03:27,177 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-14 23:03:27,177 - INFO - System: Windows 10 (en)
+2023-11-14 23:03:27,177 - INFO - Session started
+2023-11-14 23:03:27,177 - INFO - PingTask started
+2023-11-14 23:03:27,381 - INFO - Started 16 HandlerTasks
+2023-11-14 23:03:27,381 - INFO - Stopped 16 HandlerTasks
+2023-11-14 23:03:27,381 - INFO - PingTask stopped
+2023-11-14 23:03:27,381 - INFO - Disconnected
+2023-11-14 23:03:27,381 - INFO - NetworkTask stopped
+2023-11-14 23:03:27,381 - INFO - Session stopped
+2023-11-14 23:03:27,412 - INFO - Connecting...
+2023-11-14 23:03:27,476 - INFO - Connected! Production DC2 - IPv4
+2023-11-14 23:03:27,476 - INFO - NetworkTask started
+2023-11-14 23:03:27,825 - INFO - Session initialized: Layer 158
+2023-11-14 23:03:27,825 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-14 23:03:27,825 - INFO - System: Windows 10 (en)
+2023-11-14 23:03:27,825 - INFO - Session started
+2023-11-14 23:03:27,825 - INFO - PingTask started
+2023-11-14 23:03:28,031 - INFO - Started 16 HandlerTasks
+2023-11-14 23:03:52,507 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.5
+2023-11-14 23:04:10,738 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.1
+2023-11-14 23:04:28,969 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.5
+2023-11-14 23:04:47,223 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.0
+2023-11-14 23:05:05,428 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.0
+2023-11-14 23:05:23,676 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.3
+2023-11-14 23:05:41,908 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.6
+2023-11-14 23:06:00,201 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.9
+2023-11-14 23:06:18,429 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.2
+2023-11-14 23:06:36,666 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.1
+2023-11-14 23:06:55,380 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.7
+2023-11-14 23:07:13,598 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.8
+2023-11-14 23:07:31,897 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.0
+2023-11-14 23:07:50,199 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.4
+2023-11-14 23:08:08,482 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.2
+2023-11-14 23:08:26,728 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.3
+2023-11-14 23:08:45,012 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.0
+2023-11-14 23:09:03,253 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.7
+2023-11-14 23:09:21,993 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.1
+2023-11-14 23:09:40,690 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.1
+2023-11-14 23:09:58,932 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.1
+2023-11-14 23:10:17,661 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.5
+2023-11-14 23:10:35,928 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.6
+2023-11-14 23:10:54,186 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.6
+2023-11-14 23:11:12,464 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.7
+2023-11-14 23:11:30,710 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.7
+2023-11-14 23:11:48,977 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.5
+2023-11-14 23:12:07,288 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.3
+2023-11-14 23:12:25,567 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.2
+2023-11-14 23:12:43,794 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.7
+2023-11-14 23:13:02,511 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.0
+2023-11-14 23:13:20,800 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.9
+2023-11-14 23:13:40,108 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.7
+2023-11-14 23:13:58,325 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.7
+2023-11-14 23:14:16,580 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.5
+2023-11-14 23:14:35,316 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.4
+2023-11-14 23:14:53,604 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.6
+2023-11-14 23:15:11,851 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.8
+2023-11-14 23:15:30,137 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.8
+2023-11-14 23:15:48,475 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.4
+2023-11-14 23:16:06,743 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.6
+2023-11-14 23:16:25,108 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.8
+2023-11-14 23:16:43,360 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.8
+2023-11-14 23:17:01,605 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.1
+2023-11-14 23:17:19,857 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.0
+2023-11-14 23:17:38,113 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.2
+2023-11-14 23:17:56,374 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.2
+2023-11-14 23:18:14,702 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.2
+2023-11-14 23:18:32,978 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.5
+2023-11-14 23:18:51,238 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.8
+2023-11-14 23:19:09,476 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.0
+2023-11-14 23:19:27,703 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.0
+2023-11-14 23:19:45,943 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.1
+2023-11-14 23:20:04,178 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.6
+2023-11-14 23:20:22,908 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.5
+2023-11-14 23:20:41,162 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.7
+2023-11-14 23:20:59,404 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.0
+2023-11-14 23:21:17,677 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.0
+2023-11-14 23:21:35,921 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.8
+2023-11-14 23:21:54,226 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.8
+2023-11-14 23:22:12,489 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.1
+2023-11-14 23:22:30,745 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.2
+2023-11-14 23:22:49,423 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.4
+2023-11-14 23:23:07,632 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.5
+2023-11-14 23:23:26,386 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.7
+2023-11-14 23:23:45,816 - INFO - ETHUSDT price doesnt changed enough! Current price: 1980.7
+2023-11-14 23:24:04,108 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.3
+2023-11-14 23:24:22,352 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.5
+2023-11-14 23:24:40,628 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.5
+2023-11-14 23:24:58,908 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.6
+2023-11-14 23:25:17,197 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.9
+2023-11-14 23:25:35,455 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.9
+2023-11-14 23:25:53,656 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.0
+2023-11-14 23:26:12,347 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.3
+2023-11-14 23:26:31,301 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.4
+2023-11-14 23:26:50,561 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.4
+2023-11-14 23:27:11,863 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.0
+2023-11-14 23:27:30,624 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.3
+2023-11-14 23:27:48,868 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.4
+2023-11-14 23:28:07,109 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.4
+2023-11-14 23:28:25,368 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.9
+2023-11-14 23:28:43,630 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.0
+2023-11-14 23:29:01,890 - INFO - ETHUSDT price doesnt changed enough! Current price: 1981.8
+2023-11-14 23:29:20,095 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.6
+2023-11-14 23:29:38,350 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.3
+2023-11-14 23:29:57,091 - INFO - ETHUSDT price doesnt changed enough! Current price: 1982.9
+2023-11-14 23:30:15,383 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.8
+2023-11-14 23:30:34,698 - INFO - ETHUSDT price doesnt changed enough! Current price: 1983.9
+2023-11-14 23:30:52,982 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.2
+2023-11-14 23:31:11,229 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.3
+2023-11-14 23:31:29,483 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.5
+2023-11-14 23:31:47,709 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.5
+2023-11-14 23:32:05,959 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.9
+2023-11-14 23:32:24,249 - INFO - ETHUSDT price doesnt changed enough! Current price: 1985.2
+2023-11-14 23:32:42,741 - INFO - ETHUSDT price doesnt changed enough! Current price: 1985.3
+2023-11-14 23:33:01,117 - INFO - ETHUSDT price doesnt changed enough! Current price: 1985.2
+2023-11-14 23:33:19,870 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.4
+2023-11-14 23:33:38,112 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.6
+2023-11-14 23:33:56,412 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 1982.7$
+2023-11-14 23:33:58,322 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\binance_bot\main.py", line 69, in start_handler
+    bitcoin_ticker.create_order(side='short')
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 94, in create_order
+    balance = get_account_balance(client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 78, in get_account_balance
+    account_info = client.futures_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6582, in futures_account
+    return self._request_futures_api('get', 'account', True, 2, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+2023-11-14 23:33:58,322 - INFO - NetworkTask stopped
+2023-11-14 23:33:58,322 - INFO - PingTask stopped
+2023-11-14 23:33:58,322 - INFO - Disconnected
+2023-11-14 23:33:58,322 - INFO - Session stopped
+2023-11-14 23:33:58,322 - INFO - Connecting...
+2023-11-14 23:33:58,407 - INFO - Connected! Production DC2 - IPv4
+2023-11-14 23:33:58,407 - INFO - NetworkTask started
+2023-11-14 23:33:58,705 - INFO - Session initialized: Layer 158
+2023-11-14 23:33:58,705 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-14 23:33:58,705 - INFO - System: Windows 10 (en)
+2023-11-14 23:33:58,705 - INFO - Session started
+2023-11-14 23:33:58,705 - INFO - PingTask started
+2023-11-14 23:34:13,331 - INFO - [1] Retrying "updates.GetState" due to: Request timed out
+2023-11-15 00:48:26,143 - INFO - NetworkTask stopped
+2023-11-15 00:48:26,143 - INFO - PingTask stopped
+2023-11-15 00:48:26,143 - INFO - Disconnected
+2023-11-15 00:48:26,143 - INFO - Session stopped
+2023-11-15 00:48:26,143 - INFO - Connecting...
+2023-11-15 00:48:26,221 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 00:48:26,221 - INFO - NetworkTask started
+2023-11-15 00:48:26,582 - INFO - Session initialized: Layer 158
+2023-11-15 00:48:26,582 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 00:48:26,582 - INFO - System: Windows 10 (en)
+2023-11-15 00:48:26,582 - INFO - Session started
+2023-11-15 00:48:26,582 - INFO - PingTask started
+2023-11-15 01:48:27,793 - INFO - NetworkTask stopped
+2023-11-15 01:48:27,793 - INFO - PingTask stopped
+2023-11-15 01:48:27,799 - INFO - Disconnected
+2023-11-15 01:48:27,799 - INFO - Session stopped
+2023-11-15 01:48:27,799 - INFO - Connecting...
+2023-11-15 01:48:27,862 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 01:48:27,862 - INFO - NetworkTask started
+2023-11-15 01:48:28,240 - INFO - Session initialized: Layer 158
+2023-11-15 01:48:28,240 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 01:48:28,240 - INFO - System: Windows 10 (en)
+2023-11-15 01:48:28,240 - INFO - Session started
+2023-11-15 01:48:28,240 - INFO - PingTask started
+2023-11-15 02:16:19,946 - INFO - NetworkTask stopped
+2023-11-15 02:16:19,946 - INFO - Send exception: ConnectionResetError [WinError 64] The specified network name is no longer available
+2023-11-15 02:16:19,946 - INFO - PingTask stopped
+2023-11-15 02:16:19,946 - INFO - Close exception: ConnectionResetError [WinError 64] The specified network name is no longer available
+2023-11-15 02:16:19,946 - INFO - Disconnected
+2023-11-15 02:16:19,946 - INFO - Session stopped
+2023-11-15 02:16:19,946 - INFO - Connecting...
+2023-11-15 02:16:20,022 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 02:16:20,022 - INFO - NetworkTask started
+2023-11-15 02:16:20,310 - INFO - Session initialized: Layer 158
+2023-11-15 02:16:20,310 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 02:16:20,310 - INFO - System: Windows 10 (en)
+2023-11-15 02:16:20,310 - INFO - Session started
+2023-11-15 02:16:20,310 - INFO - PingTask started
+2023-11-15 02:48:28,292 - INFO - NetworkTask stopped
+2023-11-15 02:48:28,292 - INFO - PingTask stopped
+2023-11-15 02:48:28,292 - INFO - Disconnected
+2023-11-15 02:48:28,292 - INFO - Session stopped
+2023-11-15 02:48:28,292 - INFO - Connecting...
+2023-11-15 02:48:28,370 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 02:48:28,370 - INFO - NetworkTask started
+2023-11-15 02:48:28,819 - INFO - Session initialized: Layer 158
+2023-11-15 02:48:28,819 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 02:48:28,819 - INFO - System: Windows 10 (en)
+2023-11-15 02:48:28,819 - INFO - Session started
+2023-11-15 02:48:28,819 - INFO - PingTask started
+2023-11-15 03:33:33,928 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:33:33,928 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:33:33,928 - INFO - PingTask stopped
+2023-11-15 03:33:33,928 - INFO - Disconnected
+2023-11-15 03:33:33,928 - INFO - NetworkTask stopped
+2023-11-15 03:33:33,928 - INFO - Session stopped
+2023-11-15 03:33:37,328 - INFO - Connecting...
+2023-11-15 03:33:37,413 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:33:37,418 - INFO - NetworkTask started
+2023-11-15 03:33:37,865 - INFO - Session initialized: Layer 158
+2023-11-15 03:33:37,865 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:33:37,865 - INFO - System: Windows 10 (en)
+2023-11-15 03:33:37,865 - INFO - Session started
+2023-11-15 03:33:37,865 - INFO - PingTask started
+2023-11-15 03:33:38,271 - INFO - Started 16 HandlerTasks
+2023-11-15 03:33:38,292 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:33:38,292 - INFO - PingTask stopped
+2023-11-15 03:33:38,292 - INFO - Disconnected
+2023-11-15 03:33:38,292 - INFO - NetworkTask stopped
+2023-11-15 03:33:38,292 - INFO - Session stopped
+2023-11-15 03:33:38,324 - INFO - Connecting...
+2023-11-15 03:33:38,404 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:33:38,404 - INFO - NetworkTask started
+2023-11-15 03:33:38,861 - INFO - Session initialized: Layer 158
+2023-11-15 03:33:38,861 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:33:38,861 - INFO - System: Windows 10 (en)
+2023-11-15 03:33:38,861 - INFO - Session started
+2023-11-15 03:33:38,863 - INFO - PingTask started
+2023-11-15 03:33:39,256 - INFO - Started 16 HandlerTasks
+2023-11-15 03:33:51,038 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:33:51,260 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:33:51,443 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:33:52,010 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:33:52,594 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:33:52,810 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:35:04,096 - INFO - Connecting...
+2023-11-15 03:35:04,175 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:35:04,175 - INFO - NetworkTask started
+2023-11-15 03:35:04,537 - INFO - Session initialized: Layer 158
+2023-11-15 03:35:04,537 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:35:04,537 - INFO - System: Windows 10 (en)
+2023-11-15 03:35:04,537 - INFO - Session started
+2023-11-15 03:35:04,537 - INFO - PingTask started
+2023-11-15 03:35:04,757 - INFO - Started 16 HandlerTasks
+2023-11-15 03:35:04,772 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:35:04,772 - INFO - PingTask stopped
+2023-11-15 03:35:04,772 - INFO - Disconnected
+2023-11-15 03:35:04,772 - INFO - NetworkTask stopped
+2023-11-15 03:35:04,772 - INFO - Session stopped
+2023-11-15 03:35:04,788 - INFO - Connecting...
+2023-11-15 03:35:04,866 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:35:04,866 - INFO - NetworkTask started
+2023-11-15 03:35:05,275 - INFO - Session initialized: Layer 158
+2023-11-15 03:35:05,275 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:35:05,275 - INFO - System: Windows 10 (en)
+2023-11-15 03:35:05,275 - INFO - Session started
+2023-11-15 03:35:05,275 - INFO - PingTask started
+2023-11-15 03:35:05,485 - INFO - Started 16 HandlerTasks
+2023-11-15 03:35:09,319 - ERROR - 'markPrice'
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\binance_bot\main.py", line 45, in start_handler
+    btc_price_change, opened_price = make_trades.check_price_changes()
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\make_trades.py", line 30, in check_price_changes
+    btc_current = btc_current_class.get_live_price()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 39, in get_live_price
+    self.btc_current_price = ticker['markPrice']
+                             ~~~~~~^^^^^^^^^^^^^
+KeyError: 'markPrice'
+2023-11-15 03:35:19,810 - ERROR - 'markPrice'
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\binance_bot\main.py", line 45, in start_handler
+    btc_price_change, opened_price = make_trades.check_price_changes()
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\make_trades.py", line 30, in check_price_changes
+    btc_current = btc_current_class.get_live_price()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 39, in get_live_price
+    self.btc_current_price = ticker['markPrice']
+                             ~~~~~~^^^^^^^^^^^^^
+KeyError: 'markPrice'
+2023-11-15 03:35:52,944 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:35:52,959 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:35:52,959 - INFO - PingTask stopped
+2023-11-15 03:35:52,959 - INFO - Disconnected
+2023-11-15 03:35:52,959 - INFO - NetworkTask stopped
+2023-11-15 03:35:52,959 - INFO - Session stopped
+2023-11-15 03:35:56,947 - INFO - Connecting...
+2023-11-15 03:35:57,025 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:35:57,025 - INFO - NetworkTask started
+2023-11-15 03:35:57,466 - INFO - Session initialized: Layer 158
+2023-11-15 03:35:57,466 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:35:57,466 - INFO - System: Windows 10 (en)
+2023-11-15 03:35:57,466 - INFO - Session started
+2023-11-15 03:35:57,481 - INFO - PingTask started
+2023-11-15 03:35:57,879 - INFO - Started 16 HandlerTasks
+2023-11-15 03:35:57,894 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:35:57,894 - INFO - PingTask stopped
+2023-11-15 03:35:57,894 - INFO - Disconnected
+2023-11-15 03:35:57,894 - INFO - NetworkTask stopped
+2023-11-15 03:35:57,894 - INFO - Session stopped
+2023-11-15 03:35:57,910 - INFO - Connecting...
+2023-11-15 03:35:57,988 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:35:57,988 - INFO - NetworkTask started
+2023-11-15 03:35:58,429 - INFO - Session initialized: Layer 158
+2023-11-15 03:35:58,429 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:35:58,429 - INFO - System: Windows 10 (en)
+2023-11-15 03:35:58,429 - INFO - Session started
+2023-11-15 03:35:58,444 - INFO - PingTask started
+2023-11-15 03:35:58,695 - INFO - Started 16 HandlerTasks

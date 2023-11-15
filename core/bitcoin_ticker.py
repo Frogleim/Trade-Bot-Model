@@ -1,7 +1,9 @@
 import random
 from binance.client import Client
 from . import config
-# from core import config
+import logging
+import os
+import time
 
 
 previous_price = None
@@ -9,6 +11,11 @@ alert_status = False
 return_response = None
 price_threshold = 15
 price_difference = 0.0
+base_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(base_dir)
+files_dir = os.path.join(parent_dir, "logs")
+logging.basicConfig(filename=f'{files_dir}/binance_logs.log',
+                    level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 class LivePrice:
@@ -24,12 +31,12 @@ class LivePrice:
 
     def get_live_price(self):
         try:
-            ticker = self.client.futures_mark_price(symbol=self.trading_pair)
+            ticker = self.client.futures_ticker(symbol=self.trading_pair)
         except Exception:
             print('Connection lost! Reconnecting...')
             time.sleep(random.uniform(1.8, 2.63))
             ticker = self.client.futures_mark_price(symbol=self.trading_pair)
-        self.btc_current_price = ticker['markPrice']
+        self.btc_current_price = ticker['lastPrice']
         return self.btc_current_price
 
 
@@ -122,15 +129,15 @@ def close_position(side, quantity):
     print("Position closed successfully")
 
 
-if __name__ == "__main__":
-    import time
-
-    start_time = time.time()
-    # client = Client(config.API_KEY, config.API_SECRET)
-
-    # btc_current_class = LivePrice()
-    # btc_current = btc_current_class.get_live_price()
-    close_position('long', 0.01)
-    end_time = time.time()
-    total_time = end_time - start_time
-    print(total_time)
+# if __name__ == "__main__":
+#     import time
+#
+#     start_time = time.time()
+#     # client = Client(config.API_KEY, config.API_SECRET)
+#
+#     # btc_current_class = LivePrice()
+#     # btc_current = btc_current_class.get_live_price()
+#     close_position('long', 0.01)
+#     end_time = time.time()
+#     total_time = end_time - start_time
+#     print(total_time)

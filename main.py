@@ -51,12 +51,14 @@ async def start_handler(client: "Client", message: "types.Message"):
             while True:
                 res = make_trades.pnl_long(opened_price=opened_price)
                 if res == 'Profit':
+                    bitcoin_ticker.close_position(side='short', quantity=config.position_size)
                     logging.info('Position closed')
                     log = logs_handler.read_logs_txt()
                     trade_log = ''.join(log)
                     await client.send_message(chat_id, text=trade_log)
                     break
                 elif res == 'Loss':
+                    bitcoin_ticker.close_position(side='short', quantity=config.position_size)
                     logging.info('Position closed')
                     log = logs_handler.read_logs_txt()
                     trade_log = ''.join(log)
@@ -71,12 +73,14 @@ async def start_handler(client: "Client", message: "types.Message"):
             while True:
                 res = make_trades.pnl_short(opened_price=opened_price)
                 if res == 'Profit':
+                    bitcoin_ticker.close_position(side='long', quantity=config.position_size)
                     logging.info('Position closed')
                     log = logs_handler.read_logs_txt()
                     trade_log = ''.join(log)
                     await client.send_message(chat_id, text=trade_log)
                     break
                 elif res == 'Loss':
+                    bitcoin_ticker.close_position(side='long', quantity=config.position_size)
                     logging.info('Position closed')
                     log = logs_handler.read_logs_txt()
                     trade_log = ''.join(log)

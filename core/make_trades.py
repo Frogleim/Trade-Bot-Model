@@ -18,7 +18,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
 files_dir = os.path.join(grandparent_dir, "binance_bot")
-logging.basicConfig(filename=f'{files_dir}/logs/trade_logs.log',
+logging.basicConfig(filename=f'{files_dir}/logs/binance_logs.log',
                     level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -63,14 +63,13 @@ def pnl_long(opened_price=None, current_price=2090):
                 profit_checkpoint_list.append(current_checkpoint)
                 message = f'Current profit is: {current_profit}\nCurrent checkpoint is: {current_checkpoint}'
                 logging.info(message)
-        elif current_profit <= -2:  # Stop loss on -9.52%
+        elif current_profit <= -5:  # Stop loss on -9.52%
             LOSS = True
             logging.info('Losing money')
 
     print('Checking checkpoints')
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
         if current_checkpoint < profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
-            bitcoin_ticker.close_position(side='short', quantity=config.position_size)
             print('Position closed!')
             profit_checkpoint_list = []
             print(current_profit)
@@ -79,7 +78,6 @@ def pnl_long(opened_price=None, current_price=2090):
             logging.info(body)
             return 'Profit'
     elif LOSS:
-        bitcoin_ticker.close_position(side='short', quantity=config.position_size)
         body = f'Position closed!\nPosition data\nSymbol: {trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
         logging.info(body)
@@ -100,21 +98,19 @@ def pnl_short(opened_price=None):
                 profit_checkpoint_list.append(current_checkpoint)
                 message = f'Current profit is: {current_profit}\nCurrent checkpoint is: {current_checkpoint}'
                 logging.info(message)
-        elif current_profit <= -2:  # Stop loss on -9.52%
+        elif current_profit <= -5:  # Stop loss on -9.52%
             LOSS = True
             logging.warning('Losing money')
 
     print('Checking checkpoints')
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
         if current_checkpoint > profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
-            bitcoin_ticker.close_position(side='long', quantity=config.position_size)
             profit_checkpoint_list = []
             body = f'Position closed!\nPosition data\nSymbol: {trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
             logging.info(body)
             return 'Profit'
     elif LOSS:
-        bitcoin_ticker.close_position(side='long', quantity=config.position_size)
         body = f'Position closed!\nPosition data\nSymbol: {trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
         logging.info(body)
