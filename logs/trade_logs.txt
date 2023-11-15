@@ -1,0 +1,6 @@
+Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2093.0
+Close Price: 2090.0
+Profit: -3.0

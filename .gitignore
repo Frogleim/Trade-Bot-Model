@@ -1,0 +1,10 @@
+sessions
+results
+indicators
+trade_bots.session
+trade_bots.session-journal
+core/ticker_24hrs.py
+core/config.ini
+core/__pycache__
+.idea
+__pycache__
