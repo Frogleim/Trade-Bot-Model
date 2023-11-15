@@ -381,3 +381,263 @@ KeyError: 'markPrice'
 2023-11-15 03:35:58,429 - INFO - Session started
 2023-11-15 03:35:58,444 - INFO - PingTask started
 2023-11-15 03:35:58,695 - INFO - Started 16 HandlerTasks
+2023-11-15 03:36:17,680 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2013.0$
+2023-11-15 03:36:19,603 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\binance_bot\main.py", line 47, in start_handler
+    bitcoin_ticker.create_order(side='long')
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 94, in create_order
+    balance = get_account_balance(client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 78, in get_account_balance
+    account_info = client.futures_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6582, in futures_account
+    return self._request_futures_api('get', 'account', True, 2, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+2023-11-15 03:37:03,931 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:37:03,931 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:37:03,931 - INFO - PingTask stopped
+2023-11-15 03:37:03,931 - INFO - Disconnected
+2023-11-15 03:37:03,931 - INFO - NetworkTask stopped
+2023-11-15 03:37:03,931 - INFO - Session stopped
+2023-11-15 03:37:11,712 - INFO - Connecting...
+2023-11-15 03:37:11,791 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:37:11,791 - INFO - NetworkTask started
+2023-11-15 03:37:12,145 - INFO - Session initialized: Layer 158
+2023-11-15 03:37:12,145 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:37:12,145 - INFO - System: Windows 10 (en)
+2023-11-15 03:37:12,145 - INFO - Session started
+2023-11-15 03:37:12,152 - INFO - PingTask started
+2023-11-15 03:37:12,324 - INFO - Started 16 HandlerTasks
+2023-11-15 03:37:12,340 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:37:12,340 - INFO - PingTask stopped
+2023-11-15 03:37:12,340 - INFO - Disconnected
+2023-11-15 03:37:12,340 - INFO - NetworkTask stopped
+2023-11-15 03:37:12,340 - INFO - Session stopped
+2023-11-15 03:37:12,356 - INFO - Connecting...
+2023-11-15 03:37:12,434 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:37:12,434 - INFO - NetworkTask started
+2023-11-15 03:37:12,842 - INFO - Session initialized: Layer 158
+2023-11-15 03:37:12,842 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:37:12,842 - INFO - System: Windows 10 (en)
+2023-11-15 03:37:12,842 - INFO - Session started
+2023-11-15 03:37:12,846 - INFO - PingTask started
+2023-11-15 03:37:13,147 - INFO - Started 16 HandlerTasks
+2023-11-15 03:37:32,355 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-15 03:37:50,618 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.1
+2023-11-15 03:38:08,840 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.9
+2023-11-15 03:38:27,104 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.4
+2023-11-15 03:38:45,313 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.1
+2023-11-15 03:39:04,098 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-15 03:39:22,361 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.8
+2023-11-15 03:39:40,561 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.4
+2023-11-15 03:39:58,775 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-15 03:40:17,024 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2012.3$
+2023-11-15 03:40:18,980 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\binance_bot\main.py", line 69, in start_handler
+    bitcoin_ticker.create_order(side='short')
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 94, in create_order
+    balance = get_account_balance(client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 78, in get_account_balance
+    account_info = client.futures_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6582, in futures_account
+    return self._request_futures_api('get', 'account', True, 2, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+2023-11-15 03:42:37,447 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:42:37,463 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:42:37,463 - INFO - PingTask stopped
+2023-11-15 03:42:37,463 - INFO - Disconnected
+2023-11-15 03:42:37,463 - INFO - NetworkTask stopped
+2023-11-15 03:42:37,463 - INFO - Session stopped
+2023-11-15 03:42:40,471 - INFO - Connecting...
+2023-11-15 03:42:40,550 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:42:40,550 - INFO - NetworkTask started
+2023-11-15 03:42:40,927 - INFO - Session initialized: Layer 158
+2023-11-15 03:42:40,927 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:42:40,927 - INFO - System: Windows 10 (en)
+2023-11-15 03:42:40,927 - INFO - Session started
+2023-11-15 03:42:40,927 - INFO - PingTask started
+2023-11-15 03:42:41,131 - INFO - Started 16 HandlerTasks
+2023-11-15 03:42:41,141 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:42:41,141 - INFO - PingTask stopped
+2023-11-15 03:42:41,141 - INFO - Disconnected
+2023-11-15 03:42:41,141 - INFO - NetworkTask stopped
+2023-11-15 03:42:41,141 - INFO - Session stopped
+2023-11-15 03:42:41,163 - INFO - Connecting...
+2023-11-15 03:42:41,241 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:42:41,241 - INFO - NetworkTask started
+2023-11-15 03:42:41,592 - INFO - Session initialized: Layer 158
+2023-11-15 03:42:41,592 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:42:41,592 - INFO - System: Windows 10 (en)
+2023-11-15 03:42:41,592 - INFO - Session started
+2023-11-15 03:42:41,592 - INFO - PingTask started
+2023-11-15 03:42:41,801 - INFO - Started 16 HandlerTasks
+2023-11-15 03:43:00,798 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.4
+2023-11-15 03:43:19,076 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.1
+2023-11-15 03:43:37,824 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-15 03:43:56,073 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.0
+2023-11-15 03:44:14,296 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.2
+2023-11-15 03:44:32,529 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.3
+2023-11-15 03:44:50,798 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-15 03:45:09,045 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.0
+2023-11-15 03:45:27,278 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2014.5$
+2023-11-15 03:45:29,294 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\binance_bot\main.py", line 47, in start_handler
+    bitcoin_ticker.create_order(side='long')
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 94, in create_order
+    balance = get_account_balance(client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\binance_bot\core\bitcoin_ticker.py", line 78, in get_account_balance
+    account_info = client.futures_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6582, in futures_account
+    return self._request_futures_api('get', 'account', True, 2, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+2023-11-15 03:45:41,842 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 03:45:41,857 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:45:41,857 - INFO - PingTask stopped
+2023-11-15 03:45:41,857 - INFO - Disconnected
+2023-11-15 03:45:41,857 - INFO - NetworkTask stopped
+2023-11-15 03:45:41,857 - INFO - Session stopped
+2023-11-15 03:49:06,963 - INFO - Connecting...
+2023-11-15 03:49:07,044 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:49:07,046 - INFO - NetworkTask started
+2023-11-15 03:49:07,405 - INFO - Session initialized: Layer 158
+2023-11-15 03:49:07,406 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:49:07,406 - INFO - System: Windows 10 (en)
+2023-11-15 03:49:07,406 - INFO - Session started
+2023-11-15 03:49:07,408 - INFO - PingTask started
+2023-11-15 03:49:07,603 - INFO - Started 16 HandlerTasks
+2023-11-15 03:49:07,611 - INFO - Stopped 16 HandlerTasks
+2023-11-15 03:49:07,611 - INFO - PingTask stopped
+2023-11-15 03:49:07,612 - INFO - Disconnected
+2023-11-15 03:49:07,612 - INFO - NetworkTask stopped
+2023-11-15 03:49:07,612 - INFO - Session stopped
+2023-11-15 03:49:07,635 - INFO - Connecting...
+2023-11-15 03:49:07,719 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:49:07,719 - INFO - NetworkTask started
+2023-11-15 03:49:08,108 - INFO - Session initialized: Layer 158
+2023-11-15 03:49:08,108 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:49:08,108 - INFO - System: Windows 10 (en)
+2023-11-15 03:49:08,108 - INFO - Session started
+2023-11-15 03:49:08,113 - INFO - PingTask started
+2023-11-15 03:49:08,310 - INFO - Started 16 HandlerTasks
+2023-11-15 03:50:45,330 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.6
+2023-11-15 03:51:03,587 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.0
+2023-11-15 03:51:21,856 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.8
+2023-11-15 03:51:40,146 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.8
+2023-11-15 03:51:58,407 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-15 03:52:16,632 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.2
+2023-11-15 03:52:34,880 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.9
+2023-11-15 03:52:53,131 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.6
+2023-11-15 03:53:11,412 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.5
+2023-11-15 03:53:29,645 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.2
+2023-11-15 03:53:47,855 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.1
+2023-11-15 03:54:06,155 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.8
+2023-11-15 03:54:24,429 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.5
+2023-11-15 03:54:42,677 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.5
+2023-11-15 03:55:00,911 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.4
+2023-11-15 03:55:19,188 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2012.7$
+2023-11-15 03:55:21,458 - INFO - Buying ETHUSDT for price 2012.7
+2023-11-15 03:55:21,459 - INFO - NetworkTask stopped
+2023-11-15 03:55:21,462 - INFO - PingTask stopped
+2023-11-15 03:55:21,463 - INFO - Disconnected
+2023-11-15 03:55:21,463 - INFO - Session stopped
+2023-11-15 03:55:21,463 - INFO - Connecting...
+2023-11-15 03:55:21,528 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 03:55:21,528 - INFO - NetworkTask started
+2023-11-15 03:55:21,980 - INFO - Session initialized: Layer 158
+2023-11-15 03:55:21,980 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 03:55:21,980 - INFO - System: Windows 10 (en)
+2023-11-15 03:55:21,980 - INFO - Session started
+2023-11-15 03:55:21,980 - INFO - PingTask started
+2023-11-15 03:55:36,466 - INFO - [1] Retrying "messages.SendMessage" due to: Request timed out
+2023-11-15 04:03:04,844 - INFO - Current profit is: 2.5299999999999727
+Current checkpoint is: 2.5
+2023-11-15 04:26:27,388 - INFO - Current profit is: 3.5299999999999727
+Current checkpoint is: 3.5
+2023-11-15 04:26:40,443 - INFO - Current profit is: 5.569999999999936
+Current checkpoint is: 4.5
+2023-11-15 04:26:55,290 - INFO - Current profit is: 4.289999999999964
+Current checkpoint is: 3.5
+2023-11-15 04:26:55,290 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2012.7
+Close Price: 2017.0
+Profit: 4.3
+2023-11-15 04:26:56,925 - INFO - Position closed
+2023-11-15 04:26:56,925 - INFO - NetworkTask stopped
+2023-11-15 04:26:56,925 - INFO - PingTask stopped
+2023-11-15 04:26:56,925 - INFO - Disconnected
+2023-11-15 04:26:56,925 - INFO - Session stopped
+2023-11-15 04:26:56,925 - INFO - Connecting...
+2023-11-15 04:26:57,019 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 04:26:57,019 - INFO - NetworkTask started
+2023-11-15 04:26:57,349 - INFO - Session initialized: Layer 158
+2023-11-15 04:26:57,349 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 04:26:57,349 - INFO - System: Windows 10 (en)
+2023-11-15 04:26:57,349 - INFO - Session started
+2023-11-15 04:26:57,349 - INFO - PingTask started
+2023-11-15 04:27:11,939 - INFO - [1] Retrying "messages.SendMessage" due to: Request timed out
+2023-11-15 04:27:30,803 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.0
+2023-11-15 04:27:49,097 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.3
+2023-11-15 04:28:07,827 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.9
+2023-11-15 04:28:26,294 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2022.1$
+2023-11-15 04:28:28,547 - INFO - Buying ETHUSDT for price 2022.1
+2023-11-15 04:28:28,547 - INFO - NetworkTask stopped
+2023-11-15 04:28:28,547 - INFO - PingTask stopped
+2023-11-15 04:28:28,547 - INFO - Disconnected
+2023-11-15 04:28:28,547 - INFO - Session stopped
+2023-11-15 04:28:28,547 - INFO - Connecting...
+2023-11-15 04:28:28,625 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 04:28:28,625 - INFO - NetworkTask started
+2023-11-15 04:28:28,939 - INFO - Session initialized: Layer 158
+2023-11-15 04:28:28,939 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 04:28:28,939 - INFO - System: Windows 10 (en)
+2023-11-15 04:28:28,939 - INFO - Session started
+2023-11-15 04:28:28,939 - INFO - PingTask started
+2023-11-15 04:28:43,562 - INFO - [1] Retrying "messages.SendMessage" due to: Request timed out
