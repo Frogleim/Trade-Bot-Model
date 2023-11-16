@@ -1,14 +1,12 @@
 import time
-
-# from . import bitcoin_ticker, config
+from . import bitcoin_ticker, config, files_manager
 # from . import logs_handler
-import bitcoin_ticker
-import logs_handler
-import files_manager
+# import bitcoin_ticker
 import logging
 import random
-import config
+# import config
 import os
+import sys
 
 current_profit = 0
 position_mode = None
@@ -24,6 +22,12 @@ grandparent_dir = os.path.dirname(parent_dir)
 files_dir = os.path.join(grandparent_dir, "binance_bot")
 logging.basicConfig(filename=f'{files_dir}/logs/binance_logs.log',
                     level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+console_handler = logging.StreamHandler(sys.stdout)
+console_handler.setLevel(logging.INFO)  # Set the desired log level for the console
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+console_handler.setFormatter(formatter)
+root_logger = logging.getLogger()
+root_logger.addHandler(console_handler)
 
 
 def trade():

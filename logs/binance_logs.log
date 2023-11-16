@@ -902,3 +902,128 @@ Profit: 0.3
 2023-11-16 22:15:25,997 - INFO - ETHUSDT price doesnt changed enough! Current price: 1998.9
 2023-11-16 22:15:44,486 - INFO - ETHUSDT price doesnt changed enough! Current price: 1999.1
 2023-11-16 22:16:02,818 - INFO - ETHUSDT price doesnt changed enough! Current price: 1999.6
+2023-11-16 22:31:14,362 - INFO - Note: NumExpr detected 24 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2023-11-16 22:31:14,362 - INFO - NumExpr defaulting to 8 threads.
+2023-11-16 22:31:32,939 - INFO - ETHUSDT price doesnt changed enough! Current price: 1987.0
+2023-11-16 22:31:51,308 - INFO - ETHUSDT price doesnt changed enough! Current price: 1985.3
+2023-11-16 22:32:09,745 - INFO - ETHUSDT price doesnt changed enough! Current price: 1984.8
+2023-11-16 22:32:29,464 - INFO - ETHUSDT price doesnt changed enough! Current price: 1985.5
+2023-11-16 22:32:53,653 - INFO - ETHUSDT price doesnt changed enough! Current price: 1985.9
+2023-11-16 22:33:12,526 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 1987.2$
+2023-11-16 22:33:12,532 - INFO - Buying ETHUSDT for price 1987.2
+2023-11-16 22:33:14,249 - INFO - Entry Price: 1987.21 --- Current Price: 1987.68 --- Current Profit: 0.4700000000000273
+2023-11-16 22:33:16,826 - INFO - Entry Price: 1987.21 --- Current Price: 1987.99 --- Current Profit: 0.7799999999999727
+2023-11-16 22:33:19,477 - INFO - Entry Price: 1987.21 --- Current Price: 1988.08 --- Current Profit: 0.8699999999998909
+2023-11-16 22:33:23,430 - INFO - Entry Price: 1987.21 --- Current Price: 1988.19 --- Current Profit: 0.9800000000000182
+2023-11-16 22:33:25,815 - INFO - Entry Price: 1987.21 --- Current Price: 1988.50 --- Current Profit: 1.2899999999999636
+2023-11-16 22:33:41,268 - INFO - Entry Price: 1987.21 --- Current Price: 1989.12 --- Current Profit: 1.9099999999998545
+2023-11-16 22:33:44,104 - INFO - Entry Price: 1987.21 --- Current Price: 1989.72 --- Current Profit: 2.509999999999991
+2023-11-16 22:33:48,388 - INFO - Entry Price: 1987.21 --- Current Price: 1988.25 --- Current Profit: 1.0399999999999636
+2023-11-16 22:33:51,183 - INFO - Entry Price: 1987.21 --- Current Price: 1988.45 --- Current Profit: 1.240000000000009
+2023-11-16 22:33:53,944 - INFO - Entry Price: 1987.21 --- Current Price: 1988.58 --- Current Profit: 1.3699999999998909
+2023-11-16 22:33:56,420 - INFO - Entry Price: 1987.21 --- Current Price: 1988.60 --- Current Profit: 1.3899999999998727
+2023-11-16 22:33:59,586 - INFO - Entry Price: 1987.21 --- Current Price: 1988.76 --- Current Profit: 1.5499999999999545
+2023-11-16 22:34:02,151 - INFO - Entry Price: 1987.21 --- Current Price: 1988.60 --- Current Profit: 1.3899999999998727
+2023-11-16 22:34:06,477 - INFO - Entry Price: 1987.21 --- Current Price: 1989.18 --- Current Profit: 1.9700000000000273
+2023-11-16 22:34:08,950 - INFO - Entry Price: 1987.21 --- Current Price: 1989.40 --- Current Profit: 2.1900000000000546
+2023-11-16 22:34:11,856 - INFO - Entry Price: 1987.21 --- Current Price: 1989.31 --- Current Profit: 2.099999999999909
+2023-11-16 22:34:14,715 - INFO - Entry Price: 1987.21 --- Current Price: 1989.31 --- Current Profit: 2.099999999999909
+2023-11-16 22:34:17,287 - INFO - Entry Price: 1987.21 --- Current Price: 1989.31 --- Current Profit: 2.099999999999909
+2023-11-16 22:34:19,613 - INFO - Entry Price: 1987.21 --- Current Price: 1989.60 --- Current Profit: 2.3899999999998727
+2023-11-16 22:34:22,364 - INFO - Entry Price: 1987.21 --- Current Price: 1989.60 --- Current Profit: 2.3899999999998727
+2023-11-16 22:34:24,890 - INFO - Entry Price: 1987.21 --- Current Price: 1988.89 --- Current Profit: 1.6800000000000637
+2023-11-16 22:34:27,646 - INFO - Entry Price: 1987.21 --- Current Price: 1989.18 --- Current Profit: 1.9700000000000273
+2023-11-16 22:34:30,175 - INFO - Entry Price: 1987.21 --- Current Price: 1989.20 --- Current Profit: 1.990000000000009
+2023-11-16 22:34:32,998 - INFO - Entry Price: 1987.21 --- Current Price: 1988.73 --- Current Profit: 1.5199999999999818
+2023-11-16 22:34:35,593 - INFO - Entry Price: 1987.21 --- Current Price: 1988.73 --- Current Profit: 1.5199999999999818
+2023-11-16 22:34:41,569 - INFO - Entry Price: 1987.21 --- Current Price: 1989.42 --- Current Profit: 2.2100000000000364
+2023-11-16 22:34:44,282 - INFO - Entry Price: 1987.21 --- Current Price: 1989.42 --- Current Profit: 2.2100000000000364
+2023-11-16 22:35:04,148 - ERROR - 'lastPrice'
+2023-11-16 22:35:04,149 - INFO - Entry Price: 1987.21 --- Current Price: 1989.15000000 --- Current Profit: 1.9400000000000546
+2023-11-16 22:35:08,026 - INFO - Entry Price: 1987.21 --- Current Price: 1987.87 --- Current Profit: 0.6599999999998545
+2023-11-16 22:35:10,878 - INFO - Entry Price: 1987.21 --- Current Price: 1987.87 --- Current Profit: 0.6599999999998545
+2023-11-16 22:35:13,427 - INFO - Entry Price: 1987.21 --- Current Price: 1988.16 --- Current Profit: 0.9500000000000455
+2023-11-16 22:35:16,320 - INFO - Entry Price: 1987.21 --- Current Price: 1988.62 --- Current Profit: 1.4099999999998545
+2023-11-16 22:35:18,991 - INFO - Entry Price: 1987.21 --- Current Price: 1988.62 --- Current Profit: 1.4099999999998545
+2023-11-16 22:35:21,778 - INFO - Entry Price: 1987.21 --- Current Price: 1989.20 --- Current Profit: 1.990000000000009
+2023-11-16 22:35:24,139 - INFO - Entry Price: 1987.21 --- Current Price: 1989.20 --- Current Profit: 1.990000000000009
+2023-11-16 22:35:26,979 - INFO - Entry Price: 1987.21 --- Current Price: 1989.01 --- Current Profit: 1.7999999999999545
+2023-11-16 22:35:29,482 - INFO - Entry Price: 1987.21 --- Current Price: 1989.01 --- Current Profit: 1.7999999999999545
+2023-11-16 22:35:32,051 - INFO - Entry Price: 1987.21 --- Current Price: 1988.14 --- Current Profit: 0.9300000000000637
+2023-11-16 22:35:34,644 - INFO - Entry Price: 1987.21 --- Current Price: 1988.14 --- Current Profit: 0.9300000000000637
+2023-11-16 22:35:37,170 - INFO - Entry Price: 1987.21 --- Current Price: 1987.53 --- Current Profit: 0.31999999999993634
+2023-11-16 22:35:40,439 - INFO - Entry Price: 1987.21 --- Current Price: 1988.16 --- Current Profit: 0.9500000000000455
+2023-11-16 22:35:42,964 - INFO - Entry Price: 1987.21 --- Current Price: 1988.16 --- Current Profit: 0.9500000000000455
+2023-11-16 22:35:47,294 - INFO - Entry Price: 1987.21 --- Current Price: 1988.26 --- Current Profit: 1.0499999999999545
+2023-11-16 22:35:49,888 - INFO - Entry Price: 1987.21 --- Current Price: 1988.78 --- Current Profit: 1.5699999999999363
+2023-11-16 22:35:52,632 - INFO - Entry Price: 1987.21 --- Current Price: 1988.80 --- Current Profit: 1.5899999999999181
+2023-11-16 22:35:55,345 - INFO - Entry Price: 1987.21 --- Current Price: 1989.10 --- Current Profit: 1.8899999999998727
+2023-11-16 22:35:57,785 - INFO - Entry Price: 1987.21 --- Current Price: 1989.24 --- Current Profit: 2.0299999999999727
+2023-11-16 22:36:00,831 - INFO - Entry Price: 1987.21 --- Current Price: 1988.61 --- Current Profit: 1.3999999999998636
+2023-11-16 22:36:03,958 - INFO - Entry Price: 1987.21 --- Current Price: 1988.61 --- Current Profit: 1.3999999999998636
+2023-11-16 22:36:06,567 - INFO - Entry Price: 1987.21 --- Current Price: 1988.81 --- Current Profit: 1.599999999999909
+2023-11-16 22:36:20,560 - INFO - Entry Price: 1987.21 --- Current Price: 1986.57 --- Current Profit: -0.6400000000001
+2023-11-16 22:36:24,727 - INFO - Entry Price: 1987.21 --- Current Price: 1986.97 --- Current Profit: -0.2400000000000091
+2023-11-16 22:36:27,475 - INFO - Entry Price: 1987.21 --- Current Price: 1986.97 --- Current Profit: -0.2400000000000091
+2023-11-16 22:36:30,404 - INFO - Entry Price: 1987.21 --- Current Price: 1986.81 --- Current Profit: -0.40000000000009095
+2023-11-16 22:36:33,079 - INFO - Entry Price: 1987.21 --- Current Price: 1988.15 --- Current Profit: 0.9400000000000546
+2023-11-16 22:36:38,687 - INFO - Entry Price: 1987.21 --- Current Price: 1988.03 --- Current Profit: 0.8199999999999363
+2023-11-16 22:36:41,712 - INFO - Entry Price: 1987.21 --- Current Price: 1988.01 --- Current Profit: 0.7999999999999545
+2023-11-16 22:36:44,402 - INFO - Entry Price: 1987.21 --- Current Price: 1988.01 --- Current Profit: 0.7999999999999545
+2023-11-16 22:36:47,031 - INFO - Entry Price: 1987.21 --- Current Price: 1987.19 --- Current Profit: -0.01999999999998181
+2023-11-16 22:36:49,679 - INFO - Entry Price: 1987.21 --- Current Price: 1987.01 --- Current Profit: -0.20000000000004547
+2023-11-16 22:36:52,266 - INFO - Entry Price: 1987.21 --- Current Price: 1987.01 --- Current Profit: -0.20000000000004547
+2023-11-16 22:36:55,043 - INFO - Entry Price: 1987.21 --- Current Price: 1986.99 --- Current Profit: -0.22000000000002728
+2023-11-16 22:36:57,392 - INFO - Entry Price: 1987.21 --- Current Price: 1986.99 --- Current Profit: -0.22000000000002728
+2023-11-16 22:37:04,631 - INFO - Entry Price: 1987.21 --- Current Price: 1987.59 --- Current Profit: 0.37999999999988177
+2023-11-16 22:37:07,426 - INFO - Entry Price: 1987.21 --- Current Price: 1987.51 --- Current Profit: 0.2999999999999545
+2023-11-16 22:37:19,678 - INFO - Entry Price: 1987.21 --- Current Price: 1988.30 --- Current Profit: 1.0899999999999181
+2023-11-16 22:37:22,949 - INFO - Entry Price: 1987.21 --- Current Price: 1988.25 --- Current Profit: 1.0399999999999636
+2023-11-16 22:37:25,822 - INFO - Entry Price: 1987.21 --- Current Price: 1988.38 --- Current Profit: 1.1700000000000728
+2023-11-16 22:37:32,677 - INFO - Entry Price: 1987.21 --- Current Price: 1989.14 --- Current Profit: 1.9300000000000637
+2023-11-16 22:37:40,541 - INFO - Entry Price: 1987.21 --- Current Price: 1988.93 --- Current Profit: 1.7200000000000273
+2023-11-16 22:37:43,145 - INFO - Entry Price: 1987.21 --- Current Price: 1989.27 --- Current Profit: 2.0599999999999454
+2023-11-16 22:37:45,638 - INFO - Entry Price: 1987.21 --- Current Price: 1989.39 --- Current Profit: 2.1800000000000637
+2023-11-16 22:37:48,846 - INFO - Entry Price: 1987.21 --- Current Price: 1989.36 --- Current Profit: 2.1499999999998636
+2023-11-16 22:37:51,542 - INFO - Entry Price: 1987.21 --- Current Price: 1989.35 --- Current Profit: 2.1399999999998727
+2023-11-16 22:37:54,664 - INFO - Entry Price: 1987.21 --- Current Price: 1989.55 --- Current Profit: 2.339999999999918
+2023-11-16 22:37:57,168 - INFO - Entry Price: 1987.21 --- Current Price: 1989.48 --- Current Profit: 2.269999999999982
+2023-11-16 22:37:59,839 - INFO - Entry Price: 1987.21 --- Current Price: 1989.48 --- Current Profit: 2.269999999999982
+2023-11-16 22:38:03,619 - INFO - Entry Price: 1987.21 --- Current Price: 1989.59 --- Current Profit: 2.3799999999998818
+2023-11-16 22:38:06,525 - INFO - Entry Price: 1987.21 --- Current Price: 1989.59 --- Current Profit: 2.3799999999998818
+2023-11-16 22:38:09,233 - INFO - Entry Price: 1987.21 --- Current Price: 1989.60 --- Current Profit: 2.3899999999998727
+2023-11-16 22:38:11,912 - INFO - Entry Price: 1987.21 --- Current Price: 1989.73 --- Current Profit: 2.519999999999982
+2023-11-16 22:38:16,272 - INFO - Entry Price: 1987.21 --- Current Price: 1989.13 --- Current Profit: 1.9200000000000728
+2023-11-16 22:38:18,888 - INFO - Entry Price: 1987.21 --- Current Price: 1989.81 --- Current Profit: 2.599999999999909
+2023-11-16 22:38:21,917 - INFO - Entry Price: 1987.21 --- Current Price: 1988.60 --- Current Profit: 1.3899999999998727
+2023-11-16 22:38:24,753 - INFO - Entry Price: 1987.21 --- Current Price: 1988.37 --- Current Profit: 1.1599999999998545
+2023-11-16 22:38:28,854 - INFO - Entry Price: 1987.21 --- Current Price: 1988.37 --- Current Profit: 1.1599999999998545
+2023-11-16 22:38:31,320 - INFO - Entry Price: 1987.21 --- Current Price: 1988.90 --- Current Profit: 1.6900000000000546
+2023-11-16 22:38:36,467 - INFO - Entry Price: 1987.21 --- Current Price: 1988.89 --- Current Profit: 1.6800000000000637
+2023-11-16 22:38:39,040 - INFO - Entry Price: 1987.21 --- Current Price: 1988.89 --- Current Profit: 1.6800000000000637
+2023-11-16 22:38:42,246 - INFO - Entry Price: 1987.21 --- Current Price: 1988.89 --- Current Profit: 1.6800000000000637
+2023-11-16 22:38:44,668 - INFO - Entry Price: 1987.21 --- Current Price: 1988.90 --- Current Profit: 1.6900000000000546
+2023-11-16 22:38:47,078 - INFO - Entry Price: 1987.21 --- Current Price: 1988.90 --- Current Profit: 1.6900000000000546
+2023-11-16 22:38:49,529 - INFO - Entry Price: 1987.21 --- Current Price: 1988.41 --- Current Profit: 1.2000000000000455
+2023-11-16 22:38:52,030 - INFO - Entry Price: 1987.21 --- Current Price: 1988.41 --- Current Profit: 1.2000000000000455
+2023-11-16 22:38:54,809 - INFO - Entry Price: 1987.21 --- Current Price: 1987.70 --- Current Profit: 0.4900000000000091
+2023-11-16 22:38:57,562 - INFO - Entry Price: 1987.21 --- Current Price: 1987.70 --- Current Profit: 0.4900000000000091
+2023-11-16 22:39:00,233 - INFO - Entry Price: 1987.21 --- Current Price: 1987.78 --- Current Profit: 0.5699999999999363
+2023-11-16 22:39:03,047 - INFO - Entry Price: 1987.21 --- Current Price: 1987.71 --- Current Profit: 0.5
+2023-11-16 22:39:05,699 - INFO - Entry Price: 1987.21 --- Current Price: 1987.48 --- Current Profit: 0.2699999999999818
+2023-11-16 22:39:08,282 - INFO - Entry Price: 1987.21 --- Current Price: 1987.70 --- Current Profit: 0.4900000000000091
+2023-11-16 22:39:14,709 - INFO - Entry Price: 1987.21 --- Current Price: 1987.48 --- Current Profit: 0.2699999999999818
+2023-11-16 22:39:22,717 - INFO - Entry Price: 1987.21 --- Current Price: 1988.04 --- Current Profit: 0.8299999999999272
+2023-11-16 22:39:25,239 - INFO - Entry Price: 1987.21 --- Current Price: 1988.00 --- Current Profit: 0.7899999999999636
+2023-11-16 22:39:27,730 - INFO - Entry Price: 1987.21 --- Current Price: 1987.59 --- Current Profit: 0.37999999999988177
+2023-11-16 22:39:30,449 - INFO - Entry Price: 1987.21 --- Current Price: 1987.59 --- Current Profit: 0.37999999999988177
+2023-11-16 22:39:33,065 - INFO - Entry Price: 1987.21 --- Current Price: 1987.50 --- Current Profit: 0.2899999999999636
+2023-11-16 22:39:35,774 - INFO - Entry Price: 1987.21 --- Current Price: 1987.41 --- Current Profit: 0.20000000000004547
+2023-11-16 22:39:38,409 - INFO - Entry Price: 1987.21 --- Current Price: 1987.41 --- Current Profit: 0.20000000000004547
+2023-11-16 22:39:42,181 - INFO - Entry Price: 1987.21 --- Current Price: 1987.41 --- Current Profit: 0.20000000000004547
+2023-11-16 22:39:45,964 - INFO - Entry Price: 1987.21 --- Current Price: 1986.96 --- Current Profit: -0.25
+2023-11-16 22:39:48,335 - INFO - Entry Price: 1987.21 --- Current Price: 1987.15 --- Current Profit: -0.05999999999994543
+2023-11-16 22:39:50,916 - INFO - Entry Price: 1987.21 --- Current Price: 1986.64 --- Current Profit: -0.5699999999999363
+2023-11-16 22:39:53,594 - INFO - Entry Price: 1987.21 --- Current Price: 1986.61 --- Current Profit: -0.6000000000001364
+2023-11-16 22:40:01,309 - INFO - Entry Price: 1987.21 --- Current Price: 1986.83 --- Current Profit: -0.38000000000010914

@@ -1,8 +1,7 @@
 import random
 from binance.client import Client
-# from . import config
+from . import config
 import logging
-import config
 import os
 import time
 
