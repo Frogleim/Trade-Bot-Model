@@ -1,7 +1,8 @@
 import random
 from binance.client import Client
-from . import config
+# from . import config
 import logging
+import config
 import os
 import time
 
@@ -36,7 +37,11 @@ class LivePrice:
             print('Connection lost! Reconnecting...')
             time.sleep(random.uniform(1.8, 2.63))
             ticker = self.client.futures_mark_price(symbol=self.trading_pair)
-        self.btc_current_price = ticker['lastPrice']
+        try:
+            self.btc_current_price = ticker['lastPrice']
+        except KeyError as e:
+            logging.error(e)
+            self.btc_current_price = ticker['markPrice']
         return self.btc_current_price
 
 
@@ -118,13 +123,20 @@ def create_order(side, percentage_of_balance=95):
 
 def close_position(side, quantity):
     client = Client(config.API_KEY, config.API_SECRET)
-    opposite_side = Client.SIDE_SELL if side == 'long' else Client.SIDE_BUY
-    order = client.futures_create_order(
-        symbol='ETHUSDT',
-        side=opposite_side,
-        type=Client.ORDER_TYPE_MARKET,
-        quantity=quantity,
-    )
+    if side == 'long':
+        order = client.futures_create_order(
+            symbol='ETHUSDT',
+            side=Client.SIDE_BUY,
+            type=Client.ORDER_TYPE_MARKET,
+            quantity=quantity,
+        )
+    else:
+        order = client.futures_create_order(
+            symbol='ETHUSDT',
+            side=Client.SIDE_SELL,
+            type=Client.ORDER_TYPE_MARKET,
+            quantity=quantity,
+        )
     print(order)
     print("Position closed successfully")
 

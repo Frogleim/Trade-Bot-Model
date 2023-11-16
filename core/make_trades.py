@@ -1,9 +1,12 @@
 import time
-from . import bitcoin_ticker, config
-from . import logs_handler
-# import bitcoin_ticker
-# import logs_handler
+
+# from . import bitcoin_ticker, config
+# from . import logs_handler
+import bitcoin_ticker
+import logs_handler
 import logging
+import random
+import config
 import os
 
 current_profit = 0
@@ -20,6 +23,48 @@ grandparent_dir = os.path.dirname(parent_dir)
 files_dir = os.path.join(grandparent_dir, "binance_bot")
 logging.basicConfig(filename=f'{files_dir}/logs/binance_logs.log',
                     level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+def trade():
+    btc_price_change, opened_price = check_price_changes()
+    if btc_price_change:
+        # bitcoin_ticker.create_order(side='long')
+        body = f'Buying ETHUSDT for price {round(float(opened_price), 1)}'
+        logging.info(body)
+        while True:
+            res = pnl_long(opened_price=opened_price)
+            if res == 'Profit':
+                # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
+                logging.info('Position closed')
+                log = logs_handler.read_logs_txt()
+                trade_log = ''.join(log)
+                break
+            elif res == 'Loss':
+                # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
+                logging.info('Position closed')
+                log = logs_handler.read_logs_txt()
+                trade_log = ''.join(log)
+                break
+            time.sleep(random.uniform(0.6587, 1.11))
+    else:
+        # bitcoin_ticker.create_order(side='short')
+        body = f'Selling ETHUSDT for price {round(float(opened_price), 1)}'
+        logging.info(body)
+        while True:
+            res = pnl_short(opened_price=opened_price)
+            if res == 'Profit':
+                # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
+                logging.info('Position closed')
+                log = logs_handler.read_logs_txt()
+                trade_log = ''.join(log)
+                break
+            elif res == 'Loss':
+                # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
+                logging.info('Position closed')
+                log = logs_handler.read_logs_txt()
+                trade_log = ''.join(log)
+                break
+            time.sleep(random.uniform(0.6587, 1.11))
 
 
 def check_price_changes():
@@ -118,4 +163,6 @@ def pnl_short(opened_price=None):
 
 
 if __name__ == '__main__':
-    check_price_changes()
+    while True:
+        trade()
+        time.sleep(10)
