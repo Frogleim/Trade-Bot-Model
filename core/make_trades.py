@@ -4,6 +4,7 @@ import time
 # from . import logs_handler
 import bitcoin_ticker
 import logs_handler
+import files_manager
 import logging
 import random
 import config
@@ -26,24 +27,20 @@ logging.basicConfig(filename=f'{files_dir}/logs/binance_logs.log',
 
 
 def trade():
-    btc_price_change, opened_price = check_price_changes()
+    btc_price_change, opened_price, signal_price = check_price_changes()
     if btc_price_change:
         # bitcoin_ticker.create_order(side='long')
         body = f'Buying ETHUSDT for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
-            res = pnl_long(opened_price=opened_price)
+            res = pnl_long(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
                 # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
                 break
             elif res == 'Loss':
                 # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
                 break
             time.sleep(random.uniform(0.6587, 1.11))
     else:
@@ -51,18 +48,14 @@ def trade():
         body = f'Selling ETHUSDT for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
-            res = pnl_short(opened_price=opened_price)
+            res = pnl_short(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
                 # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
                 break
             elif res == 'Loss':
                 # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
                 break
             time.sleep(random.uniform(0.6587, 1.11))
 
@@ -78,15 +71,16 @@ def check_price_changes():
         time.sleep(config.ticker_timeout)
         next_btc_current_class = bitcoin_ticker.LivePrice()
         next_btc_current = next_btc_current_class.get_live_price()
-        if float(next_btc_current) - float(checking_price) > 1.5:
+        signal_difference = float(next_btc_current) - float(checking_price)
+        if signal_difference > 1.5:
             message = f"ETHUSDT goes up for more than 1$\n Buying ETHUSDT for {round(float(next_btc_current), 1)}$"
             logging.info(message)
-            return True, next_btc_current
-        elif float(next_btc_current) - float(checking_price) < -1.5:
+            return True, next_btc_current, signal_difference
+        elif signal_difference < -1.5:
             message = f"ETHUSDT goes up for more than 1$\n Buying ETHUSDT for {round(float(next_btc_current), 1)}$"
             logging.info(message)
 
-            return False, next_btc_current
+            return False, next_btc_current, signal_difference
         else:
             message = f"ETHUSDT price doesnt changed enough! Current price: {round(float(next_btc_current), 1)}"
             logging.info(message)
@@ -94,7 +88,7 @@ def check_price_changes():
             continue
 
 
-def pnl_long(opened_price=None, current_price=2090):
+def pnl_long(opened_price=None, current_price=2090, signal=None):
     global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
     btc_current_class = bitcoin_ticker.LivePrice()
     btc_current = btc_current_class.get_live_price()
@@ -112,23 +106,27 @@ def pnl_long(opened_price=None, current_price=2090):
             LOSS = True
             logging.info('Losing money')
     print(f'Current checkpoint: --> {current_checkpoint}')
-    if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
-        if current_checkpoint < profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
+    if len(profit_checkpoint_list) >= 1 and current_checkpoint is not None:
+        if current_checkpoint >= profit_checkpoint_list[-1] or current_checkpoint == config.checkpoint_list[-1]:
             print('Position closed!')
             profit_checkpoint_list = []
             print(current_profit)
             body = f'Position closed!\nPosition data\nSymbol: {trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
             logging.info(body)
+            files_manager.insert_data(opened_price, btc_current, current_profit, signal)
+            logging.info('Saving data')
             return 'Profit'
     elif LOSS:
         body = f'Position closed!\nPosition data\nSymbol: {trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
         logging.info(body)
+        files_manager.insert_data(opened_price, btc_current, current_profit, signal)
+        logging.info('Saving data')
         return 'Loss'
 
 
-def pnl_short(opened_price=None):
+def pnl_short(opened_price=None, signal=None):
     global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
     btc_current_class = bitcoin_ticker.LivePrice()
     btc_current = btc_current_class.get_live_price()
@@ -147,17 +145,22 @@ def pnl_short(opened_price=None):
             logging.warning('Losing money')
 
     print(f'Current checkpoint: --> {current_checkpoint}')
-    if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
-        if current_checkpoint > profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
+    if len(profit_checkpoint_list) >= 1 and current_checkpoint is not None:
+        if current_checkpoint >= profit_checkpoint_list[-1] or current_checkpoint == config.checkpoint_list[-1]:
             profit_checkpoint_list = []
             body = f'Position closed!\nPosition data\nSymbol: {trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
             logging.info(body)
+            files_manager.insert_data(opened_price, btc_current, current_profit, signal)
+            logging.info('Saving data')
+
             return 'Profit'
     elif LOSS:
         body = f'Position closed!\nPosition data\nSymbol: {trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
         logging.info(body)
+        files_manager.insert_data(opened_price, btc_current, current_profit, signal)
+        logging.info('Saving data')
         return 'Loss'
 
 
