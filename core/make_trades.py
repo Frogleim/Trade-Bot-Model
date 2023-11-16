@@ -100,7 +100,7 @@ def pnl_long(opened_price=None, current_price=2090):
     btc_current = btc_current_class.get_live_price()
     trading_pair = 'ETHUSDT'
     current_profit = float(btc_current) - float(opened_price)
-    print(current_profit)
+    print(f'Entry Price: {opened_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}')
     for i in range(len(config.checkpoint_list) - 1):
         if config.checkpoint_list[i] <= current_profit < config.checkpoint_list[i + 1]:
             if current_checkpoint != config.checkpoint_list[i]:  # Check if it's a new checkpoint
@@ -111,8 +111,7 @@ def pnl_long(opened_price=None, current_price=2090):
         elif current_profit <= -5:  # Stop loss on -9.52%
             LOSS = True
             logging.info('Losing money')
-
-    print('Checking checkpoints')
+    print(f'Current checkpoint: --> {current_checkpoint}')
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
         if current_checkpoint < profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
             print('Position closed!')
@@ -135,7 +134,7 @@ def pnl_short(opened_price=None):
     btc_current = btc_current_class.get_live_price()
     trading_pair = 'ETHUSDT'
     current_profit = float(opened_price) - float(btc_current)
-    print(current_profit)
+    print(f'Entry Price: {opened_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}')
     for i in range(len(config.checkpoint_list) - 1):
         if config.checkpoint_list[i] <= current_profit < config.checkpoint_list[i + 1]:
             if current_checkpoint != config.checkpoint_list[i]:
@@ -147,7 +146,7 @@ def pnl_short(opened_price=None):
             LOSS = True
             logging.warning('Losing money')
 
-    print('Checking checkpoints')
+    print(f'Current checkpoint: --> {current_checkpoint}')
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
         if current_checkpoint > profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
             profit_checkpoint_list = []
