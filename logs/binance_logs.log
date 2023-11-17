@@ -641,3 +641,1458 @@ Profit: 4.3
 2023-11-15 04:28:28,939 - INFO - Session started
 2023-11-15 04:28:28,939 - INFO - PingTask started
 2023-11-15 04:28:43,562 - INFO - [1] Retrying "messages.SendMessage" due to: Request timed out
+2023-11-15 21:10:07,287 - INFO - Connecting...
+2023-11-15 21:10:07,366 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 21:10:07,366 - INFO - NetworkTask started
+2023-11-15 21:10:07,743 - INFO - Session initialized: Layer 158
+2023-11-15 21:10:07,743 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 21:10:07,743 - INFO - System: Windows 10 (en)
+2023-11-15 21:10:07,743 - INFO - Session started
+2023-11-15 21:10:07,743 - INFO - PingTask started
+2023-11-15 21:10:07,931 - INFO - Started 16 HandlerTasks
+2023-11-15 21:10:07,947 - INFO - Stopped 16 HandlerTasks
+2023-11-15 21:10:07,947 - INFO - PingTask stopped
+2023-11-15 21:10:07,947 - INFO - Disconnected
+2023-11-15 21:10:07,947 - INFO - NetworkTask stopped
+2023-11-15 21:10:07,947 - INFO - Session stopped
+2023-11-15 21:10:07,962 - INFO - Connecting...
+2023-11-15 21:10:08,041 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 21:10:08,041 - INFO - NetworkTask started
+2023-11-15 21:10:08,407 - INFO - Session initialized: Layer 158
+2023-11-15 21:10:08,407 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 21:10:08,407 - INFO - System: Windows 10 (en)
+2023-11-15 21:10:08,407 - INFO - Session started
+2023-11-15 21:10:08,407 - INFO - PingTask started
+2023-11-15 21:10:08,591 - INFO - Started 16 HandlerTasks
+2023-11-15 21:10:13,874 - INFO - ETH/USDT current price: 2051.77
+2023-11-15 21:10:30,487 - INFO - ETH/USDT current price: 2051.18
+2023-11-15 21:10:30,487 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.2
+2023-11-15 21:10:32,193 - INFO - ETH/USDT current price: 2051.13
+2023-11-15 21:10:48,809 - INFO - ETH/USDT current price: 2051.02
+2023-11-15 21:10:48,809 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.0
+2023-11-15 21:10:50,406 - INFO - ETH/USDT current price: 2051.02
+2023-11-15 21:11:07,024 - INFO - ETH/USDT current price: 2050.57
+2023-11-15 21:11:07,024 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.6
+2023-11-15 21:11:08,657 - INFO - ETH/USDT current price: 2050.57
+2023-11-15 21:11:25,268 - INFO - ETH/USDT current price: 2050.69
+2023-11-15 21:11:25,268 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.7
+2023-11-15 21:11:26,884 - INFO - ETH/USDT current price: 2050.70
+2023-11-15 21:11:43,562 - INFO - ETH/USDT current price: 2051.50
+2023-11-15 21:11:43,562 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.5
+2023-11-15 21:11:45,207 - INFO - ETH/USDT current price: 2051.50
+2023-11-15 21:12:01,839 - INFO - ETH/USDT current price: 2051.70
+2023-11-15 21:12:01,839 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.7
+2023-11-15 21:12:03,459 - INFO - ETH/USDT current price: 2052.00
+2023-11-15 21:12:20,587 - INFO - ETH/USDT current price: 2052.10
+2023-11-15 21:12:20,587 - INFO - ETHUSDT price doesnt changed enough! Current price: 2052.1
+2023-11-15 21:12:22,205 - INFO - ETH/USDT current price: 2052.11
+2023-11-15 21:12:38,842 - INFO - ETH/USDT current price: 2052.40
+2023-11-15 21:12:38,842 - INFO - ETHUSDT price doesnt changed enough! Current price: 2052.4
+2023-11-15 21:12:40,493 - INFO - ETH/USDT current price: 2052.40
+2023-11-15 21:12:57,126 - INFO - ETH/USDT current price: 2051.80
+2023-11-15 21:12:57,126 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.8
+2023-11-15 21:12:58,742 - INFO - ETH/USDT current price: 2051.80
+2023-11-15 21:13:15,391 - INFO - ETH/USDT current price: 2051.62
+2023-11-15 21:13:15,391 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.6
+2023-11-15 21:13:17,071 - INFO - ETH/USDT current price: 2051.62
+2023-11-15 21:13:33,711 - INFO - ETH/USDT current price: 2052.26
+2023-11-15 21:13:33,711 - INFO - ETHUSDT price doesnt changed enough! Current price: 2052.3
+2023-11-15 21:13:35,335 - INFO - ETH/USDT current price: 2052.35
+2023-11-15 21:13:51,990 - INFO - ETH/USDT current price: 2052.48
+2023-11-15 21:13:51,990 - INFO - ETHUSDT price doesnt changed enough! Current price: 2052.5
+2023-11-15 21:13:53,613 - INFO - ETH/USDT current price: 2052.47
+2023-11-15 21:14:11,332 - INFO - ETH/USDT current price: 2053.22
+2023-11-15 21:14:11,332 - INFO - ETHUSDT price doesnt changed enough! Current price: 2053.2
+2023-11-15 21:14:12,929 - INFO - ETH/USDT current price: 2053.22
+2023-11-15 21:14:29,535 - INFO - ETH/USDT current price: 2051.96
+2023-11-15 21:14:29,535 - INFO - ETHUSDT price doesnt changed enough! Current price: 2052.0
+2023-11-15 21:14:31,157 - INFO - ETH/USDT current price: 2051.97
+2023-11-15 21:14:47,815 - INFO - ETH/USDT current price: 2052.33
+2023-11-15 21:14:47,815 - INFO - ETHUSDT price doesnt changed enough! Current price: 2052.3
+2023-11-15 21:14:49,409 - INFO - ETH/USDT current price: 2052.33
+2023-11-15 21:15:06,085 - INFO - ETH/USDT current price: 2051.78
+2023-11-15 21:15:06,085 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.8
+2023-11-15 21:15:07,741 - INFO - ETH/USDT current price: 2051.78
+2023-11-15 21:15:24,363 - INFO - ETH/USDT current price: 2051.35
+2023-11-15 21:15:24,363 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.3
+2023-11-15 21:15:25,997 - INFO - ETH/USDT current price: 2051.41
+2023-11-15 21:15:42,596 - INFO - ETH/USDT current price: 2051.27
+2023-11-15 21:15:42,596 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.3
+2023-11-15 21:15:44,252 - INFO - ETH/USDT current price: 2051.27
+2023-11-15 21:16:00,907 - INFO - ETH/USDT current price: 2050.89
+2023-11-15 21:16:00,907 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.9
+2023-11-15 21:16:02,500 - INFO - ETH/USDT current price: 2050.90
+2023-11-15 21:16:19,142 - INFO - ETH/USDT current price: 2051.41
+2023-11-15 21:16:19,142 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.4
+2023-11-15 21:16:21,556 - INFO - ETH/USDT current price: 2051.41
+2023-11-15 21:16:38,180 - INFO - ETH/USDT current price: 2051.39
+2023-11-15 21:16:38,180 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.4
+2023-11-15 21:16:39,811 - INFO - ETH/USDT current price: 2051.39
+2023-11-15 21:16:56,422 - INFO - ETH/USDT current price: 2051.39
+2023-11-15 21:16:56,422 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.4
+2023-11-15 21:16:58,057 - INFO - ETH/USDT current price: 2051.20
+2023-11-15 21:17:14,708 - INFO - ETH/USDT current price: 2051.09
+2023-11-15 21:17:14,708 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.1
+2023-11-15 21:17:16,369 - INFO - ETH/USDT current price: 2051.09
+2023-11-15 21:17:32,985 - INFO - ETH/USDT current price: 2051.06
+2023-11-15 21:17:32,985 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.1
+2023-11-15 21:17:34,625 - INFO - ETH/USDT current price: 2051.09
+2023-11-15 21:17:51,288 - INFO - ETH/USDT current price: 2050.89
+2023-11-15 21:17:51,288 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.9
+2023-11-15 21:17:52,919 - INFO - ETH/USDT current price: 2050.90
+2023-11-15 21:18:09,577 - INFO - ETH/USDT current price: 2051.15
+2023-11-15 21:18:09,577 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.2
+2023-11-15 21:18:11,228 - INFO - ETH/USDT current price: 2051.15
+2023-11-15 21:18:27,825 - INFO - ETH/USDT current price: 2051.41
+2023-11-15 21:18:27,825 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.4
+2023-11-15 21:18:29,457 - INFO - ETH/USDT current price: 2051.42
+2023-11-15 21:18:46,071 - INFO - ETH/USDT current price: 2051.02
+2023-11-15 21:18:46,071 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.0
+2023-11-15 21:18:47,717 - INFO - ETH/USDT current price: 2050.95
+2023-11-15 21:19:04,363 - INFO - ETH/USDT current price: 2050.82
+2023-11-15 21:19:04,363 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.8
+2023-11-15 21:19:06,019 - INFO - ETH/USDT current price: 2050.82
+2023-11-15 21:19:22,722 - INFO - ETH/USDT current price: 2051.25
+2023-11-15 21:19:22,722 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.2
+2023-11-15 21:19:24,345 - INFO - ETH/USDT current price: 2051.24
+2023-11-15 21:19:41,046 - INFO - ETH/USDT current price: 2051.23
+2023-11-15 21:19:41,046 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.2
+2023-11-15 21:19:42,649 - INFO - ETH/USDT current price: 2051.09
+2023-11-15 21:19:59,288 - INFO - ETH/USDT current price: 2051.34
+2023-11-15 21:19:59,288 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.3
+2023-11-15 21:20:00,912 - INFO - ETH/USDT current price: 2051.07
+2023-11-15 21:20:17,751 - INFO - ETH/USDT current price: 2051.26
+2023-11-15 21:20:17,751 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.3
+2023-11-15 21:20:19,370 - INFO - ETH/USDT current price: 2051.30
+2023-11-15 21:20:36,007 - INFO - ETH/USDT current price: 2051.58
+2023-11-15 21:20:36,007 - INFO - ETHUSDT price doesnt changed enough! Current price: 2051.6
+2023-11-15 21:20:37,631 - INFO - ETH/USDT current price: 2051.59
+2023-11-15 21:20:54,321 - INFO - ETH/USDT current price: 2050.85
+2023-11-15 21:20:54,321 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.8
+2023-11-15 21:20:55,949 - INFO - ETH/USDT current price: 2050.86
+2023-11-15 21:21:12,606 - INFO - ETH/USDT current price: 2050.65
+2023-11-15 21:21:12,606 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.7
+2023-11-15 21:21:14,260 - INFO - ETH/USDT current price: 2050.42
+2023-11-15 21:21:30,920 - INFO - ETH/USDT current price: 2050.72
+2023-11-15 21:21:30,920 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.7
+2023-11-15 21:21:32,513 - INFO - ETH/USDT current price: 2050.62
+2023-11-15 21:21:49,159 - INFO - ETH/USDT current price: 2050.15
+2023-11-15 21:21:49,159 - INFO - ETHUSDT price doesnt changed enough! Current price: 2050.2
+2023-11-15 21:21:50,786 - INFO - ETH/USDT current price: 2050.15
+2023-11-15 21:22:07,488 - INFO - ETH/USDT current price: 2051.76
+2023-11-15 21:22:07,488 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2051.8$
+2023-11-15 21:22:09,502 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\main.py", line 47, in start_handler
+    bitcoin_ticker.create_order(side='long')
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\core\bitcoin_ticker.py", line 107, in create_order
+    balance = get_account_balance(client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\core\bitcoin_ticker.py", line 91, in get_account_balance
+    account_info = client.futures_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6582, in futures_account
+    return self._request_futures_api('get', 'account', True, 2, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+2023-11-15 21:22:09,517 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:09,517 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:09,517 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:09,517 - INFO - [1] Retrying "updates.GetState" due to: Connection lost
+2023-11-15 21:22:09,517 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:09,517 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:09,517 - INFO - Disconnected
+2023-11-15 21:22:09,517 - INFO - NetworkTask stopped
+2023-11-15 21:22:09,517 - INFO - Disconnected
+2023-11-15 21:22:09,517 - INFO - Disconnected
+2023-11-15 21:22:09,517 - INFO - Disconnected
+2023-11-15 21:22:09,517 - INFO - PingTask stopped
+2023-11-15 21:22:09,517 - INFO - Disconnected
+2023-11-15 21:22:09,517 - INFO - Session stopped
+2023-11-15 21:22:09,517 - INFO - Connecting...
+2023-11-15 21:22:09,593 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 21:22:09,593 - INFO - NetworkTask started
+2023-11-15 21:22:09,800 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:09,800 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:09,800 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:09,800 - INFO - Disconnected
+2023-11-15 21:22:09,800 - INFO - NetworkTask stopped
+2023-11-15 21:22:09,800 - INFO - Disconnected
+2023-11-15 21:22:09,800 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:09,800 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:09,800 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:09,800 - INFO - Disconnected
+2023-11-15 21:22:09,800 - INFO - Session stopped
+2023-11-15 21:22:09,800 - INFO - Connecting...
+2023-11-15 21:22:09,878 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 21:22:09,878 - INFO - NetworkTask started
+2023-11-15 21:22:10,099 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:10,099 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,099 - INFO - Disconnected
+2023-11-15 21:22:10,099 - INFO - NetworkTask stopped
+2023-11-15 21:22:10,099 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,099 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,099 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,099 - WARNING - socket.send() raised exception.
+2023-11-15 21:22:10,099 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,099 - INFO - Disconnected
+2023-11-15 21:22:10,099 - INFO - Session stopped
+2023-11-15 21:22:10,099 - INFO - Connecting...
+2023-11-15 21:22:10,177 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 21:22:10,177 - INFO - NetworkTask started
+2023-11-15 21:22:10,397 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:10,397 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,397 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,397 - INFO - Disconnected
+2023-11-15 21:22:10,397 - INFO - NetworkTask stopped
+2023-11-15 21:22:10,397 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,397 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,397 - WARNING - socket.send() raised exception.
+2023-11-15 21:22:10,397 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,397 - INFO - Disconnected
+2023-11-15 21:22:10,397 - INFO - Session stopped
+2023-11-15 21:22:10,397 - INFO - Connecting...
+2023-11-15 21:22:10,476 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 21:22:10,476 - INFO - NetworkTask started
+2023-11-15 21:22:10,680 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 21:22:10,680 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,696 - INFO - Disconnected
+2023-11-15 21:22:10,696 - INFO - NetworkTask stopped
+2023-11-15 21:22:10,696 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,696 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,696 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,696 - WARNING - socket.send() raised exception.
+2023-11-15 21:22:10,696 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-15 21:22:10,696 - INFO - Disconnected
+2023-11-15 21:22:10,696 - INFO - Session stopped
+2023-11-15 21:22:10,696 - INFO - Connecting...
+2023-11-15 21:22:10,774 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 21:22:10,774 - INFO - NetworkTask started
+2023-11-15 21:22:11,073 - INFO - Session initialized: Layer 158
+2023-11-15 21:22:11,073 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 21:22:11,073 - INFO - System: Windows 10 (en)
+2023-11-15 21:22:11,073 - INFO - Session started
+2023-11-15 21:22:11,073 - INFO - PingTask started
+2023-11-15 21:32:39,443 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 21:32:39,460 - INFO - Stopped 16 HandlerTasks
+2023-11-15 21:32:39,460 - INFO - PingTask stopped
+2023-11-15 21:32:39,460 - INFO - Disconnected
+2023-11-15 21:32:39,460 - INFO - NetworkTask stopped
+2023-11-15 21:32:39,460 - INFO - Session stopped
+2023-11-15 22:04:35,435 - INFO - ETH/USDT current price: 2058.18
+2023-11-15 22:04:53,253 - INFO - Connecting...
+2023-11-15 22:04:53,328 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 22:04:53,330 - INFO - NetworkTask started
+2023-11-15 22:04:53,760 - INFO - Session initialized: Layer 158
+2023-11-15 22:04:53,760 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 22:04:53,760 - INFO - System: Windows 10 (en)
+2023-11-15 22:04:53,760 - INFO - Session started
+2023-11-15 22:04:53,762 - INFO - PingTask started
+2023-11-15 22:04:53,969 - INFO - Started 16 HandlerTasks
+2023-11-15 22:04:53,977 - INFO - Stopped 16 HandlerTasks
+2023-11-15 22:04:53,977 - INFO - PingTask stopped
+2023-11-15 22:04:53,977 - INFO - Disconnected
+2023-11-15 22:04:53,977 - INFO - NetworkTask stopped
+2023-11-15 22:04:53,977 - INFO - Session stopped
+2023-11-15 22:04:54,000 - INFO - Connecting...
+2023-11-15 22:04:54,081 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 22:04:54,081 - INFO - NetworkTask started
+2023-11-15 22:04:54,475 - INFO - Session initialized: Layer 158
+2023-11-15 22:04:54,475 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 22:04:54,475 - INFO - System: Windows 10 (en)
+2023-11-15 22:04:54,475 - INFO - Session started
+2023-11-15 22:04:54,477 - INFO - PingTask started
+2023-11-15 22:04:54,663 - INFO - Started 16 HandlerTasks
+2023-11-15 22:04:58,205 - INFO - ETH/USDT current price: 2057.72
+2023-11-15 22:05:14,815 - INFO - ETH/USDT current price: 2057.82
+2023-11-15 22:05:14,815 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:05:16,443 - INFO - ETH/USDT current price: 2057.81
+2023-11-15 22:05:33,082 - INFO - ETH/USDT current price: 2057.72
+2023-11-15 22:05:33,082 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:05:34,705 - INFO - ETH/USDT current price: 2057.72
+2023-11-15 22:05:51,302 - INFO - ETH/USDT current price: 2057.52
+2023-11-15 22:05:51,302 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.5
+2023-11-15 22:05:52,919 - INFO - ETH/USDT current price: 2057.52
+2023-11-15 22:06:09,586 - INFO - ETH/USDT current price: 2058.14
+2023-11-15 22:06:09,586 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:06:11,239 - INFO - ETH/USDT current price: 2058.01
+2023-11-15 22:06:27,972 - INFO - ETH/USDT current price: 2058.14
+2023-11-15 22:06:27,972 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:06:29,608 - INFO - ETH/USDT current price: 2058.11
+2023-11-15 22:06:46,238 - INFO - ETH/USDT current price: 2058.01
+2023-11-15 22:06:46,238 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.0
+2023-11-15 22:06:47,923 - INFO - ETH/USDT current price: 2058.01
+2023-11-15 22:07:04,545 - INFO - ETH/USDT current price: 2057.74
+2023-11-15 22:07:04,545 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:07:06,184 - INFO - ETH/USDT current price: 2057.73
+2023-11-15 22:07:22,811 - INFO - ETH/USDT current price: 2058.11
+2023-11-15 22:07:22,811 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:07:24,455 - INFO - ETH/USDT current price: 2058.11
+2023-11-15 22:07:41,087 - INFO - ETH/USDT current price: 2058.50
+2023-11-15 22:07:41,087 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:07:42,713 - INFO - ETH/USDT current price: 2058.09
+2023-11-15 22:07:59,346 - INFO - ETH/USDT current price: 2058.48
+2023-11-15 22:07:59,346 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:08:00,966 - INFO - ETH/USDT current price: 2058.21
+2023-11-15 22:08:18,118 - INFO - ETH/USDT current price: 2057.99
+2023-11-15 22:08:18,118 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.0
+2023-11-15 22:08:19,779 - INFO - ETH/USDT current price: 2057.99
+2023-11-15 22:08:36,431 - INFO - ETH/USDT current price: 2057.68
+2023-11-15 22:08:36,431 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:08:38,040 - INFO - ETH/USDT current price: 2057.68
+2023-11-15 22:08:54,663 - INFO - ETH/USDT current price: 2057.33
+2023-11-15 22:08:54,663 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.3
+2023-11-15 22:08:56,257 - INFO - ETH/USDT current price: 2057.33
+2023-11-15 22:09:12,910 - INFO - ETH/USDT current price: 2057.30
+2023-11-15 22:09:12,910 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.3
+2023-11-15 22:09:15,042 - INFO - ETH/USDT current price: 2057.31
+2023-11-15 22:09:31,684 - INFO - ETH/USDT current price: 2057.83
+2023-11-15 22:09:31,684 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:09:33,338 - INFO - ETH/USDT current price: 2058.00
+2023-11-15 22:09:49,994 - INFO - ETH/USDT current price: 2057.78
+2023-11-15 22:09:49,994 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:09:51,617 - INFO - ETH/USDT current price: 2057.86
+2023-11-15 22:10:08,410 - INFO - ETH/USDT current price: 2057.98
+2023-11-15 22:10:08,410 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.0
+2023-11-15 22:10:10,018 - INFO - ETH/USDT current price: 2057.98
+2023-11-15 22:10:27,080 - INFO - ETH/USDT current price: 2057.84
+2023-11-15 22:10:27,080 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:10:28,672 - INFO - ETH/USDT current price: 2057.98
+2023-11-15 22:10:45,314 - INFO - ETH/USDT current price: 2057.70
+2023-11-15 22:10:45,314 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:10:46,927 - INFO - ETH/USDT current price: 2057.64
+2023-11-15 22:11:03,523 - INFO - ETH/USDT current price: 2058.24
+2023-11-15 22:11:03,523 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.2
+2023-11-15 22:11:06,278 - INFO - ETH/USDT current price: 2058.09
+2023-11-15 22:11:22,924 - INFO - ETH/USDT current price: 2057.18
+2023-11-15 22:11:22,924 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.2
+2023-11-15 22:11:25,062 - INFO - ETH/USDT current price: 2057.18
+2023-11-15 22:11:41,690 - INFO - ETH/USDT current price: 2056.71
+2023-11-15 22:11:41,690 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.7
+2023-11-15 22:11:43,313 - INFO - ETH/USDT current price: 2056.91
+2023-11-15 22:11:59,896 - INFO - ETH/USDT current price: 2056.66
+2023-11-15 22:11:59,912 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.7
+2023-11-15 22:12:01,549 - INFO - ETH/USDT current price: 2056.66
+2023-11-15 22:12:18,657 - INFO - ETH/USDT current price: 2057.08
+2023-11-15 22:12:18,657 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.1
+2023-11-15 22:12:20,328 - INFO - ETH/USDT current price: 2057.08
+2023-11-15 22:12:36,945 - INFO - ETH/USDT current price: 2057.04
+2023-11-15 22:12:36,945 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.0
+2023-11-15 22:12:38,559 - INFO - ETH/USDT current price: 2056.91
+2023-11-15 22:12:55,208 - INFO - ETH/USDT current price: 2056.92
+2023-11-15 22:12:55,208 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.9
+2023-11-15 22:12:56,832 - INFO - ETH/USDT current price: 2056.92
+2023-11-15 22:13:13,548 - INFO - ETH/USDT current price: 2057.76
+2023-11-15 22:13:13,549 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:13:15,179 - INFO - ETH/USDT current price: 2057.76
+2023-11-15 22:13:32,884 - INFO - ETH/USDT current price: 2057.91
+2023-11-15 22:13:32,885 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.9
+2023-11-15 22:13:34,524 - INFO - ETH/USDT current price: 2057.91
+2023-11-15 22:13:51,139 - INFO - ETH/USDT current price: 2057.95
+2023-11-15 22:13:51,139 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.9
+2023-11-15 22:13:52,757 - INFO - ETH/USDT current price: 2058.21
+2023-11-15 22:14:09,374 - INFO - ETH/USDT current price: 2058.34
+2023-11-15 22:14:09,374 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.3
+2023-11-15 22:14:11,050 - INFO - ETH/USDT current price: 2058.34
+2023-11-15 22:14:27,680 - INFO - ETH/USDT current price: 2058.79
+2023-11-15 22:14:27,681 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.8
+2023-11-15 22:14:29,336 - INFO - ETH/USDT current price: 2058.79
+2023-11-15 22:14:45,942 - INFO - ETH/USDT current price: 2059.53
+2023-11-15 22:14:45,942 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.5
+2023-11-15 22:14:47,593 - INFO - ETH/USDT current price: 2059.73
+2023-11-15 22:15:04,223 - INFO - ETH/USDT current price: 2059.55
+2023-11-15 22:15:04,223 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.6
+2023-11-15 22:15:05,813 - INFO - ETH/USDT current price: 2059.54
+2023-11-15 22:15:22,437 - INFO - ETH/USDT current price: 2059.05
+2023-11-15 22:15:22,437 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.1
+2023-11-15 22:15:24,072 - INFO - ETH/USDT current price: 2059.05
+2023-11-15 22:15:40,708 - INFO - ETH/USDT current price: 2058.60
+2023-11-15 22:15:40,708 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.6
+2023-11-15 22:15:42,330 - INFO - ETH/USDT current price: 2058.83
+2023-11-15 22:15:58,973 - INFO - ETH/USDT current price: 2057.97
+2023-11-15 22:15:58,973 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.0
+2023-11-15 22:16:00,622 - INFO - ETH/USDT current price: 2057.97
+2023-11-15 22:16:17,256 - INFO - ETH/USDT current price: 2058.51
+2023-11-15 22:16:17,256 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:16:18,866 - INFO - ETH/USDT current price: 2058.51
+2023-11-15 22:16:36,059 - INFO - ETH/USDT current price: 2058.01
+2023-11-15 22:16:36,059 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.0
+2023-11-15 22:16:37,656 - INFO - ETH/USDT current price: 2057.97
+2023-11-15 22:16:54,651 - INFO - ETH/USDT current price: 2057.77
+2023-11-15 22:16:54,651 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:16:56,280 - INFO - ETH/USDT current price: 2057.75
+2023-11-15 22:17:12,912 - INFO - ETH/USDT current price: 2057.52
+2023-11-15 22:17:12,912 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.5
+2023-11-15 22:17:14,547 - INFO - ETH/USDT current price: 2057.52
+2023-11-15 22:17:31,184 - INFO - ETH/USDT current price: 2057.52
+2023-11-15 22:17:31,184 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.5
+2023-11-15 22:17:32,805 - INFO - ETH/USDT current price: 2057.52
+2023-11-15 22:17:49,430 - INFO - ETH/USDT current price: 2056.81
+2023-11-15 22:17:49,430 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.8
+2023-11-15 22:17:51,048 - INFO - ETH/USDT current price: 2056.81
+2023-11-15 22:18:07,652 - INFO - ETH/USDT current price: 2056.88
+2023-11-15 22:18:07,652 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.9
+2023-11-15 22:18:09,315 - INFO - ETH/USDT current price: 2056.88
+2023-11-15 22:18:25,933 - INFO - ETH/USDT current price: 2056.73
+2023-11-15 22:18:25,933 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.7
+2023-11-15 22:18:27,571 - INFO - ETH/USDT current price: 2056.96
+2023-11-15 22:18:44,226 - INFO - ETH/USDT current price: 2057.63
+2023-11-15 22:18:44,226 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.6
+2023-11-15 22:18:45,822 - INFO - ETH/USDT current price: 2057.63
+2023-11-15 22:19:02,939 - INFO - ETH/USDT current price: 2056.61
+2023-11-15 22:19:02,940 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.6
+2023-11-15 22:19:04,558 - INFO - ETH/USDT current price: 2056.63
+2023-11-15 22:19:21,175 - INFO - ETH/USDT current price: 2056.43
+2023-11-15 22:19:21,175 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.4
+2023-11-15 22:19:22,817 - INFO - ETH/USDT current price: 2056.43
+2023-11-15 22:19:39,453 - INFO - ETH/USDT current price: 2056.40
+2023-11-15 22:19:39,453 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.4
+2023-11-15 22:19:41,065 - INFO - ETH/USDT current price: 2056.40
+2023-11-15 22:19:57,685 - INFO - ETH/USDT current price: 2056.34
+2023-11-15 22:19:57,685 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.3
+2023-11-15 22:19:59,334 - INFO - ETH/USDT current price: 2056.34
+2023-11-15 22:20:16,201 - INFO - ETH/USDT current price: 2057.67
+2023-11-15 22:20:16,201 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:20:17,815 - INFO - ETH/USDT current price: 2057.67
+2023-11-15 22:20:34,934 - INFO - ETH/USDT current price: 2057.38
+2023-11-15 22:20:34,934 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.4
+2023-11-15 22:20:36,563 - INFO - ETH/USDT current price: 2057.38
+2023-11-15 22:20:53,184 - INFO - ETH/USDT current price: 2057.35
+2023-11-15 22:20:53,184 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.3
+2023-11-15 22:20:54,836 - INFO - ETH/USDT current price: 2057.22
+2023-11-15 22:21:11,458 - INFO - ETH/USDT current price: 2057.28
+2023-11-15 22:21:11,458 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.3
+2023-11-15 22:21:13,079 - INFO - ETH/USDT current price: 2057.98
+2023-11-15 22:21:30,182 - INFO - ETH/USDT current price: 2058.42
+2023-11-15 22:21:30,182 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.4
+2023-11-15 22:21:31,853 - INFO - ETH/USDT current price: 2058.17
+2023-11-15 22:21:48,450 - INFO - ETH/USDT current price: 2057.80
+2023-11-15 22:21:48,450 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:21:50,047 - INFO - ETH/USDT current price: 2057.80
+2023-11-15 22:22:06,669 - INFO - ETH/USDT current price: 2057.86
+2023-11-15 22:22:06,669 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.9
+2023-11-15 22:22:08,316 - INFO - ETH/USDT current price: 2057.80
+2023-11-15 22:22:24,953 - INFO - ETH/USDT current price: 2057.80
+2023-11-15 22:22:24,953 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:22:26,590 - INFO - ETH/USDT current price: 2057.80
+2023-11-15 22:22:43,211 - INFO - ETH/USDT current price: 2058.14
+2023-11-15 22:22:43,212 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:22:45,353 - INFO - ETH/USDT current price: 2058.14
+2023-11-15 22:23:02,005 - INFO - ETH/USDT current price: 2058.10
+2023-11-15 22:23:02,006 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:23:03,648 - INFO - ETH/USDT current price: 2058.10
+2023-11-15 22:23:20,289 - INFO - ETH/USDT current price: 2057.97
+2023-11-15 22:23:20,289 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.0
+2023-11-15 22:23:21,945 - INFO - ETH/USDT current price: 2057.96
+2023-11-15 22:23:38,602 - INFO - ETH/USDT current price: 2057.67
+2023-11-15 22:23:38,602 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:23:40,253 - INFO - ETH/USDT current price: 2057.67
+2023-11-15 22:23:56,900 - INFO - ETH/USDT current price: 2057.68
+2023-11-15 22:23:56,900 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:23:58,528 - INFO - ETH/USDT current price: 2057.68
+2023-11-15 22:24:15,163 - INFO - ETH/USDT current price: 2057.60
+2023-11-15 22:24:15,163 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.6
+2023-11-15 22:24:16,785 - INFO - ETH/USDT current price: 2057.15
+2023-11-15 22:24:33,448 - INFO - ETH/USDT current price: 2057.48
+2023-11-15 22:24:33,448 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.5
+2023-11-15 22:24:35,082 - INFO - ETH/USDT current price: 2057.48
+2023-11-15 22:24:51,736 - INFO - ETH/USDT current price: 2057.31
+2023-11-15 22:24:51,736 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.3
+2023-11-15 22:24:53,378 - INFO - ETH/USDT current price: 2057.32
+2023-11-15 22:25:10,007 - INFO - ETH/USDT current price: 2057.72
+2023-11-15 22:25:10,007 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.7
+2023-11-15 22:25:11,637 - INFO - ETH/USDT current price: 2057.72
+2023-11-15 22:25:28,239 - INFO - ETH/USDT current price: 2057.62
+2023-11-15 22:25:28,240 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.6
+2023-11-15 22:25:29,866 - INFO - ETH/USDT current price: 2057.36
+2023-11-15 22:25:46,500 - INFO - ETH/USDT current price: 2058.18
+2023-11-15 22:25:46,501 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.2
+2023-11-15 22:25:48,135 - INFO - ETH/USDT current price: 2058.18
+2023-11-15 22:26:04,758 - INFO - ETH/USDT current price: 2058.46
+2023-11-15 22:26:04,758 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:26:06,407 - INFO - ETH/USDT current price: 2058.45
+2023-11-15 22:26:23,035 - INFO - ETH/USDT current price: 2058.70
+2023-11-15 22:26:23,035 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.7
+2023-11-15 22:26:24,675 - INFO - ETH/USDT current price: 2058.70
+2023-11-15 22:26:41,352 - INFO - ETH/USDT current price: 2058.26
+2023-11-15 22:26:41,353 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.3
+2023-11-15 22:26:42,983 - INFO - ETH/USDT current price: 2058.25
+2023-11-15 22:26:59,619 - INFO - ETH/USDT current price: 2058.38
+2023-11-15 22:26:59,619 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.4
+2023-11-15 22:27:01,254 - INFO - ETH/USDT current price: 2058.38
+2023-11-15 22:27:17,909 - INFO - ETH/USDT current price: 2058.89
+2023-11-15 22:27:17,909 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.9
+2023-11-15 22:27:19,560 - INFO - ETH/USDT current price: 2058.89
+2023-11-15 22:27:36,673 - INFO - ETH/USDT current price: 2058.99
+2023-11-15 22:27:36,673 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.0
+2023-11-15 22:27:38,302 - INFO - ETH/USDT current price: 2058.99
+2023-11-15 22:27:54,933 - INFO - ETH/USDT current price: 2059.01
+2023-11-15 22:27:54,934 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.0
+2023-11-15 22:27:56,594 - INFO - ETH/USDT current price: 2059.01
+2023-11-15 22:28:13,241 - INFO - ETH/USDT current price: 2059.41
+2023-11-15 22:28:13,242 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.4
+2023-11-15 22:28:14,880 - INFO - ETH/USDT current price: 2059.41
+2023-11-15 22:28:31,504 - INFO - ETH/USDT current price: 2059.62
+2023-11-15 22:28:31,505 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.6
+2023-11-15 22:28:33,170 - INFO - ETH/USDT current price: 2059.62
+2023-11-15 22:28:49,982 - INFO - ETH/USDT current price: 2059.29
+2023-11-15 22:28:49,982 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.3
+2023-11-15 22:28:51,637 - INFO - ETH/USDT current price: 2059.29
+2023-11-15 22:29:08,282 - INFO - ETH/USDT current price: 2059.15
+2023-11-15 22:29:08,282 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.2
+2023-11-15 22:29:09,906 - INFO - ETH/USDT current price: 2059.39
+2023-11-15 22:29:26,549 - INFO - ETH/USDT current price: 2059.40
+2023-11-15 22:29:26,549 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.4
+2023-11-15 22:29:28,169 - INFO - ETH/USDT current price: 2059.40
+2023-11-15 22:29:44,796 - INFO - ETH/USDT current price: 2059.41
+2023-11-15 22:29:44,796 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.4
+2023-11-15 22:29:46,943 - INFO - ETH/USDT current price: 2059.37
+2023-11-15 22:30:03,598 - INFO - ETH/USDT current price: 2059.88
+2023-11-15 22:30:03,599 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.9
+2023-11-15 22:30:05,665 - INFO - ETH/USDT current price: 2059.88
+2023-11-15 22:30:22,420 - INFO - ETH/USDT current price: 2059.29
+2023-11-15 22:30:22,420 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.3
+2023-11-15 22:30:24,022 - INFO - ETH/USDT current price: 2059.29
+2023-11-15 22:30:40,641 - INFO - ETH/USDT current price: 2058.80
+2023-11-15 22:30:40,641 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.8
+2023-11-15 22:30:42,734 - INFO - ETH/USDT current price: 2058.60
+2023-11-15 22:30:59,350 - INFO - ETH/USDT current price: 2058.20
+2023-11-15 22:30:59,350 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.2
+2023-11-15 22:31:00,995 - INFO - ETH/USDT current price: 2058.20
+2023-11-15 22:31:17,615 - INFO - ETH/USDT current price: 2058.41
+2023-11-15 22:31:17,616 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.4
+2023-11-15 22:31:19,282 - INFO - ETH/USDT current price: 2058.42
+2023-11-15 22:31:35,928 - INFO - ETH/USDT current price: 2057.84
+2023-11-15 22:31:35,928 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.8
+2023-11-15 22:31:37,543 - INFO - ETH/USDT current price: 2057.83
+2023-11-15 22:31:54,184 - INFO - ETH/USDT current price: 2057.27
+2023-11-15 22:31:54,185 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.3
+2023-11-15 22:31:55,828 - INFO - ETH/USDT current price: 2056.77
+2023-11-15 22:32:12,524 - INFO - ETH/USDT current price: 2056.59
+2023-11-15 22:32:12,524 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.6
+2023-11-15 22:32:14,148 - INFO - ETH/USDT current price: 2057.06
+2023-11-15 22:32:30,822 - INFO - ETH/USDT current price: 2056.56
+2023-11-15 22:32:30,822 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.6
+2023-11-15 22:32:32,460 - INFO - ETH/USDT current price: 2056.56
+2023-11-15 22:32:49,127 - INFO - ETH/USDT current price: 2056.25
+2023-11-15 22:32:49,128 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.2
+2023-11-15 22:32:50,752 - INFO - ETH/USDT current price: 2056.25
+2023-11-15 22:33:07,366 - INFO - ETH/USDT current price: 2056.12
+2023-11-15 22:33:07,366 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.1
+2023-11-15 22:33:08,997 - INFO - ETH/USDT current price: 2056.12
+2023-11-15 22:33:25,622 - INFO - ETH/USDT current price: 2056.53
+2023-11-15 22:33:25,622 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.5
+2023-11-15 22:33:27,221 - INFO - ETH/USDT current price: 2056.53
+2023-11-15 22:33:43,825 - INFO - ETH/USDT current price: 2055.93
+2023-11-15 22:33:43,825 - INFO - ETHUSDT price doesnt changed enough! Current price: 2055.9
+2023-11-15 22:33:45,452 - INFO - ETH/USDT current price: 2056.30
+2023-11-15 22:34:02,080 - INFO - ETH/USDT current price: 2055.97
+2023-11-15 22:34:02,081 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.0
+2023-11-15 22:34:03,702 - INFO - ETH/USDT current price: 2055.96
+2023-11-15 22:34:20,358 - INFO - ETH/USDT current price: 2055.41
+2023-11-15 22:34:20,358 - INFO - ETHUSDT price doesnt changed enough! Current price: 2055.4
+2023-11-15 22:34:22,402 - INFO - ETH/USDT current price: 2055.39
+2023-11-15 22:34:39,059 - INFO - ETH/USDT current price: 2055.96
+2023-11-15 22:34:39,059 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.0
+2023-11-15 22:34:41,179 - INFO - ETH/USDT current price: 2055.94
+2023-11-15 22:34:57,817 - INFO - ETH/USDT current price: 2055.83
+2023-11-15 22:34:57,817 - INFO - ETHUSDT price doesnt changed enough! Current price: 2055.8
+2023-11-15 22:34:59,459 - INFO - ETH/USDT current price: 2055.83
+2023-11-15 22:35:16,078 - INFO - ETH/USDT current price: 2055.66
+2023-11-15 22:35:16,079 - INFO - ETHUSDT price doesnt changed enough! Current price: 2055.7
+2023-11-15 22:35:18,831 - INFO - ETH/USDT current price: 2056.29
+2023-11-15 22:35:35,469 - INFO - ETH/USDT current price: 2056.29
+2023-11-15 22:35:35,469 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.3
+2023-11-15 22:35:37,104 - INFO - ETH/USDT current price: 2056.29
+2023-11-15 22:35:53,722 - INFO - ETH/USDT current price: 2056.23
+2023-11-15 22:35:53,722 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.2
+2023-11-15 22:35:55,339 - INFO - ETH/USDT current price: 2056.23
+2023-11-15 22:36:11,975 - INFO - ETH/USDT current price: 2057.03
+2023-11-15 22:36:11,975 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.0
+2023-11-15 22:36:13,655 - INFO - ETH/USDT current price: 2057.03
+2023-11-15 22:36:30,317 - INFO - ETH/USDT current price: 2057.05
+2023-11-15 22:36:30,317 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.1
+2023-11-15 22:36:31,974 - INFO - ETH/USDT current price: 2057.40
+2023-11-15 22:36:48,617 - INFO - ETH/USDT current price: 2057.21
+2023-11-15 22:36:48,617 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.2
+2023-11-15 22:36:50,284 - INFO - ETH/USDT current price: 2057.20
+2023-11-15 22:37:06,970 - INFO - ETH/USDT current price: 2058.14
+2023-11-15 22:37:06,971 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:37:08,582 - INFO - ETH/USDT current price: 2058.20
+2023-11-15 22:37:25,187 - INFO - ETH/USDT current price: 2058.01
+2023-11-15 22:37:25,187 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.0
+2023-11-15 22:37:26,817 - INFO - ETH/USDT current price: 2057.57
+2023-11-15 22:37:43,963 - INFO - ETH/USDT current price: 2058.41
+2023-11-15 22:37:43,963 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.4
+2023-11-15 22:37:45,592 - INFO - ETH/USDT current price: 2058.29
+2023-11-15 22:38:02,242 - INFO - ETH/USDT current price: 2058.50
+2023-11-15 22:38:02,243 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:38:03,874 - INFO - ETH/USDT current price: 2058.38
+2023-11-15 22:38:20,520 - INFO - ETH/USDT current price: 2058.50
+2023-11-15 22:38:20,520 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:38:22,185 - INFO - ETH/USDT current price: 2058.46
+2023-11-15 22:38:38,836 - INFO - ETH/USDT current price: 2058.45
+2023-11-15 22:38:38,837 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.4
+2023-11-15 22:38:40,482 - INFO - ETH/USDT current price: 2058.46
+2023-11-15 22:38:57,141 - INFO - ETH/USDT current price: 2058.51
+2023-11-15 22:38:57,141 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:38:58,767 - INFO - ETH/USDT current price: 2058.57
+2023-11-15 22:39:15,454 - INFO - ETH/USDT current price: 2058.53
+2023-11-15 22:39:15,455 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:39:17,087 - INFO - ETH/USDT current price: 2058.52
+2023-11-15 22:39:34,239 - INFO - ETH/USDT current price: 2058.33
+2023-11-15 22:39:34,239 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.3
+2023-11-15 22:39:35,904 - INFO - ETH/USDT current price: 2058.34
+2023-11-15 22:39:52,550 - INFO - ETH/USDT current price: 2058.54
+2023-11-15 22:39:52,550 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.5
+2023-11-15 22:39:54,158 - INFO - ETH/USDT current price: 2058.54
+2023-11-15 22:40:10,790 - INFO - ETH/USDT current price: 2058.66
+2023-11-15 22:40:10,791 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.7
+2023-11-15 22:40:12,394 - INFO - ETH/USDT current price: 2058.65
+2023-11-15 22:40:29,174 - INFO - ETH/USDT current price: 2058.19
+2023-11-15 22:40:29,174 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.2
+2023-11-15 22:40:30,850 - INFO - ETH/USDT current price: 2058.20
+2023-11-15 22:40:47,975 - INFO - ETH/USDT current price: 2058.11
+2023-11-15 22:40:47,975 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:40:49,615 - INFO - ETH/USDT current price: 2058.11
+2023-11-15 22:41:06,263 - INFO - ETH/USDT current price: 2058.33
+2023-11-15 22:41:06,263 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.3
+2023-11-15 22:41:07,901 - INFO - ETH/USDT current price: 2058.34
+2023-11-15 22:41:24,570 - INFO - ETH/USDT current price: 2058.12
+2023-11-15 22:41:24,570 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-15 22:41:26,211 - INFO - ETH/USDT current price: 2058.12
+2023-11-15 22:41:42,858 - INFO - ETH/USDT current price: 2056.76
+2023-11-15 22:41:42,858 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.8
+2023-11-15 22:41:44,481 - INFO - ETH/USDT current price: 2056.85
+2023-11-15 22:42:01,170 - INFO - ETH/USDT current price: 2056.34
+2023-11-15 22:42:01,170 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.3
+2023-11-15 22:42:02,817 - INFO - ETH/USDT current price: 2056.26
+2023-11-15 22:42:19,438 - INFO - ETH/USDT current price: 2056.02
+2023-11-15 22:42:19,438 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.0
+2023-11-15 22:42:23,099 - INFO - ETH/USDT current price: 2055.83
+2023-11-15 22:42:39,787 - INFO - ETH/USDT current price: 2056.39
+2023-11-15 22:42:39,787 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.4
+2023-11-15 22:42:41,407 - INFO - ETH/USDT current price: 2056.38
+2023-11-15 22:42:58,045 - INFO - ETH/USDT current price: 2056.81
+2023-11-15 22:42:58,045 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.8
+2023-11-15 22:42:59,704 - INFO - ETH/USDT current price: 2056.81
+2023-11-15 22:43:16,394 - INFO - ETH/USDT current price: 2056.85
+2023-11-15 22:43:16,395 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.8
+2023-11-15 22:43:18,044 - INFO - ETH/USDT current price: 2056.84
+2023-11-15 22:43:34,717 - INFO - ETH/USDT current price: 2056.80
+2023-11-15 22:43:34,717 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.8
+2023-11-15 22:43:36,346 - INFO - ETH/USDT current price: 2056.80
+2023-11-15 22:43:53,013 - INFO - ETH/USDT current price: 2056.96
+2023-11-15 22:43:53,013 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.0
+2023-11-15 22:43:55,129 - INFO - ETH/USDT current price: 2056.96
+2023-11-15 22:44:11,747 - INFO - ETH/USDT current price: 2056.87
+2023-11-15 22:44:11,747 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.9
+2023-11-15 22:44:13,394 - INFO - ETH/USDT current price: 2057.62
+2023-11-15 22:44:30,053 - INFO - ETH/USDT current price: 2057.34
+2023-11-15 22:44:30,053 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.3
+2023-11-15 22:44:31,666 - INFO - ETH/USDT current price: 2057.35
+2023-11-15 22:44:48,316 - INFO - ETH/USDT current price: 2057.20
+2023-11-15 22:44:48,316 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.2
+2023-11-15 22:44:49,946 - INFO - ETH/USDT current price: 2057.19
+2023-11-15 22:45:06,587 - INFO - ETH/USDT current price: 2056.98
+2023-11-15 22:45:06,587 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.0
+2023-11-15 22:45:08,222 - INFO - ETH/USDT current price: 2057.37
+2023-11-15 22:45:24,852 - INFO - ETH/USDT current price: 2057.49
+2023-11-15 22:45:24,852 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.5
+2023-11-15 22:45:26,475 - INFO - ETH/USDT current price: 2057.91
+2023-11-15 22:45:43,108 - INFO - ETH/USDT current price: 2056.98
+2023-11-15 22:45:43,109 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.0
+2023-11-15 22:45:44,727 - INFO - ETH/USDT current price: 2056.80
+2023-11-15 22:46:01,372 - INFO - ETH/USDT current price: 2056.80
+2023-11-15 22:46:01,372 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.8
+2023-11-15 22:46:03,004 - INFO - ETH/USDT current price: 2056.80
+2023-11-15 22:46:19,632 - INFO - ETH/USDT current price: 2055.81
+2023-11-15 22:46:19,633 - INFO - ETHUSDT price doesnt changed enough! Current price: 2055.8
+2023-11-15 22:46:21,264 - INFO - ETH/USDT current price: 2055.82
+2023-11-15 22:46:37,919 - INFO - ETH/USDT current price: 2055.80
+2023-11-15 22:46:37,919 - INFO - ETHUSDT price doesnt changed enough! Current price: 2055.8
+2023-11-15 22:46:39,544 - INFO - ETH/USDT current price: 2055.80
+2023-11-15 22:46:56,192 - INFO - ETH/USDT current price: 2056.32
+2023-11-15 22:46:56,192 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.3
+2023-11-15 22:46:58,527 - INFO - ETH/USDT current price: 2056.32
+2023-11-15 22:47:15,159 - INFO - ETH/USDT current price: 2056.41
+2023-11-15 22:47:15,160 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.4
+2023-11-15 22:47:17,175 - INFO - ETH/USDT current price: 2056.12
+2023-11-15 22:47:33,792 - INFO - ETH/USDT current price: 2056.68
+2023-11-15 22:47:33,792 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.7
+2023-11-15 22:47:35,457 - INFO - ETH/USDT current price: 2056.68
+2023-11-15 22:47:53,161 - INFO - ETH/USDT current price: 2056.92
+2023-11-15 22:47:53,161 - INFO - ETHUSDT price doesnt changed enough! Current price: 2056.9
+2023-11-15 22:47:54,841 - INFO - ETH/USDT current price: 2056.93
+2023-11-15 22:48:11,459 - INFO - ETH/USDT current price: 2057.06
+2023-11-15 22:48:11,460 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.1
+2023-11-15 22:48:13,094 - INFO - ETH/USDT current price: 2057.07
+2023-11-15 22:48:30,100 - INFO - ETH/USDT current price: 2057.63
+2023-11-15 22:48:30,100 - INFO - ETHUSDT price doesnt changed enough! Current price: 2057.6
+2023-11-15 22:48:31,721 - INFO - ETH/USDT current price: 2057.63
+2023-11-15 22:48:48,408 - INFO - ETH/USDT current price: 2059.04
+2023-11-15 22:48:48,408 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.0
+2023-11-15 22:48:50,022 - INFO - ETH/USDT current price: 2059.04
+2023-11-15 22:49:06,669 - INFO - ETH/USDT current price: 2059.05
+2023-11-15 22:49:06,669 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.1
+2023-11-15 22:49:08,953 - INFO - ETH/USDT current price: 2058.98
+2023-11-15 22:49:25,616 - INFO - ETH/USDT current price: 2059.03
+2023-11-15 22:49:25,617 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.0
+2023-11-15 22:49:27,266 - INFO - ETH/USDT current price: 2059.03
+2023-11-15 22:49:43,882 - INFO - ETH/USDT current price: 2059.07
+2023-11-15 22:49:43,882 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.1
+2023-11-15 22:49:46,133 - INFO - ETH/USDT current price: 2059.20
+2023-11-15 22:50:02,764 - INFO - ETH/USDT current price: 2059.21
+2023-11-15 22:50:02,764 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.2
+2023-11-15 22:50:04,392 - INFO - ETH/USDT current price: 2059.21
+2023-11-15 22:50:21,035 - INFO - ETH/USDT current price: 2059.98
+2023-11-15 22:50:21,035 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.0
+2023-11-15 22:50:23,001 - INFO - ETH/USDT current price: 2059.98
+2023-11-15 22:50:39,832 - INFO - ETH/USDT current price: 2059.71
+2023-11-15 22:50:39,832 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.7
+2023-11-15 22:50:41,467 - INFO - ETH/USDT current price: 2059.93
+2023-11-15 22:50:58,593 - INFO - ETH/USDT current price: 2059.78
+2023-11-15 22:50:58,594 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.8
+2023-11-15 22:51:00,758 - INFO - ETH/USDT current price: 2059.78
+2023-11-15 22:51:17,399 - INFO - ETH/USDT current price: 2059.78
+2023-11-15 22:51:17,400 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.8
+2023-11-15 22:51:19,069 - INFO - ETH/USDT current price: 2059.78
+2023-11-15 22:51:35,682 - INFO - ETH/USDT current price: 2059.57
+2023-11-15 22:51:35,682 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.6
+2023-11-15 22:51:37,341 - INFO - ETH/USDT current price: 2059.38
+2023-11-15 22:51:53,978 - INFO - ETH/USDT current price: 2059.46
+2023-11-15 22:51:53,978 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.5
+2023-11-15 22:51:55,589 - INFO - ETH/USDT current price: 2059.34
+2023-11-15 22:52:12,239 - INFO - ETH/USDT current price: 2059.48
+2023-11-15 22:52:12,240 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.5
+2023-11-15 22:52:13,873 - INFO - ETH/USDT current price: 2059.47
+2023-11-15 22:52:32,774 - INFO - ETH/USDT current price: 2059.47
+2023-11-15 22:52:32,774 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.5
+2023-11-15 22:52:34,413 - INFO - ETH/USDT current price: 2059.47
+2023-11-15 22:52:51,061 - INFO - ETH/USDT current price: 2059.74
+2023-11-15 22:52:51,061 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.7
+2023-11-15 22:52:52,740 - INFO - ETH/USDT current price: 2059.79
+2023-11-15 22:53:09,354 - INFO - ETH/USDT current price: 2059.95
+2023-11-15 22:53:09,354 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.9
+2023-11-15 22:53:10,983 - INFO - ETH/USDT current price: 2060.00
+2023-11-15 22:53:27,599 - INFO - ETH/USDT current price: 2060.57
+2023-11-15 22:53:27,599 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.6
+2023-11-15 22:53:29,217 - INFO - ETH/USDT current price: 2060.57
+2023-11-15 22:53:45,890 - INFO - ETH/USDT current price: 2061.36
+2023-11-15 22:53:45,890 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.4
+2023-11-15 22:53:47,539 - INFO - ETH/USDT current price: 2061.46
+2023-11-15 22:54:04,190 - INFO - ETH/USDT current price: 2061.53
+2023-11-15 22:54:04,190 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.5
+2023-11-15 22:54:05,824 - INFO - ETH/USDT current price: 2061.40
+2023-11-15 22:54:22,486 - INFO - ETH/USDT current price: 2061.72
+2023-11-15 22:54:22,486 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.7
+2023-11-15 22:54:24,103 - INFO - ETH/USDT current price: 2061.72
+2023-11-15 22:54:40,750 - INFO - ETH/USDT current price: 2061.89
+2023-11-15 22:54:40,750 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.9
+2023-11-15 22:54:42,401 - INFO - ETH/USDT current price: 2061.89
+2023-11-15 22:54:59,053 - INFO - ETH/USDT current price: 2062.30
+2023-11-15 22:54:59,053 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.3
+2023-11-15 22:55:00,668 - INFO - ETH/USDT current price: 2062.19
+2023-11-15 22:55:17,283 - INFO - ETH/USDT current price: 2061.71
+2023-11-15 22:55:17,283 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.7
+2023-11-15 22:55:18,930 - INFO - ETH/USDT current price: 2061.71
+2023-11-15 22:55:35,567 - INFO - ETH/USDT current price: 2061.74
+2023-11-15 22:55:35,567 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.7
+2023-11-15 22:55:37,181 - INFO - ETH/USDT current price: 2061.82
+2023-11-15 22:55:53,818 - INFO - ETH/USDT current price: 2061.83
+2023-11-15 22:55:53,818 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.8
+2023-11-15 22:55:55,846 - INFO - ETH/USDT current price: 2061.88
+2023-11-15 22:56:12,452 - INFO - ETH/USDT current price: 2061.92
+2023-11-15 22:56:12,452 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.9
+2023-11-15 22:56:14,113 - INFO - ETH/USDT current price: 2061.91
+2023-11-15 22:56:30,744 - INFO - ETH/USDT current price: 2061.92
+2023-11-15 22:56:30,744 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.9
+2023-11-15 22:56:32,379 - INFO - ETH/USDT current price: 2061.92
+2023-11-15 22:56:48,996 - INFO - ETH/USDT current price: 2062.53
+2023-11-15 22:56:49,011 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.5
+2023-11-15 22:56:50,642 - INFO - ETH/USDT current price: 2062.32
+2023-11-15 22:57:07,263 - INFO - ETH/USDT current price: 2062.28
+2023-11-15 22:57:07,263 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.3
+2023-11-15 22:57:08,862 - INFO - ETH/USDT current price: 2062.32
+2023-11-15 22:57:25,533 - INFO - ETH/USDT current price: 2062.54
+2023-11-15 22:57:25,533 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.5
+2023-11-15 22:57:27,242 - INFO - ETH/USDT current price: 2062.54
+2023-11-15 22:57:43,937 - INFO - ETH/USDT current price: 2062.68
+2023-11-15 22:57:43,938 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.7
+2023-11-15 22:57:45,584 - INFO - ETH/USDT current price: 2062.80
+2023-11-15 22:58:02,207 - INFO - ETH/USDT current price: 2063.05
+2023-11-15 22:58:02,207 - INFO - ETHUSDT price doesnt changed enough! Current price: 2063.1
+2023-11-15 22:58:04,343 - INFO - ETH/USDT current price: 2063.05
+2023-11-15 22:58:20,969 - INFO - ETH/USDT current price: 2063.14
+2023-11-15 22:58:20,969 - INFO - ETHUSDT price doesnt changed enough! Current price: 2063.1
+2023-11-15 22:58:22,595 - INFO - ETH/USDT current price: 2063.14
+2023-11-15 22:58:39,241 - INFO - ETH/USDT current price: 2062.67
+2023-11-15 22:58:39,241 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.7
+2023-11-15 22:58:40,918 - INFO - ETH/USDT current price: 2062.67
+2023-11-15 22:58:57,554 - INFO - ETH/USDT current price: 2062.82
+2023-11-15 22:58:57,554 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.8
+2023-11-15 22:58:59,158 - INFO - ETH/USDT current price: 2062.82
+2023-11-15 22:59:15,806 - INFO - ETH/USDT current price: 2062.99
+2023-11-15 22:59:15,806 - INFO - ETHUSDT price doesnt changed enough! Current price: 2063.0
+2023-11-15 22:59:17,442 - INFO - ETH/USDT current price: 2062.99
+2023-11-15 22:59:34,075 - INFO - ETH/USDT current price: 2062.91
+2023-11-15 22:59:34,075 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.9
+2023-11-15 22:59:35,765 - INFO - ETH/USDT current price: 2062.91
+2023-11-15 22:59:52,377 - INFO - ETH/USDT current price: 2062.55
+2023-11-15 22:59:52,377 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.6
+2023-11-15 22:59:54,001 - INFO - ETH/USDT current price: 2062.55
+2023-11-15 23:00:10,607 - INFO - ETH/USDT current price: 2062.81
+2023-11-15 23:00:10,607 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.8
+2023-11-15 23:00:12,249 - INFO - ETH/USDT current price: 2063.29
+2023-11-15 23:00:28,904 - INFO - ETH/USDT current price: 2061.80
+2023-11-15 23:00:28,904 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.8
+2023-11-15 23:00:30,528 - INFO - ETH/USDT current price: 2061.80
+2023-11-15 23:00:47,144 - INFO - ETH/USDT current price: 2062.27
+2023-11-15 23:00:47,144 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.3
+2023-11-15 23:00:48,790 - INFO - ETH/USDT current price: 2062.41
+2023-11-15 23:01:05,919 - INFO - ETH/USDT current price: 2062.67
+2023-11-15 23:01:05,919 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.7
+2023-11-15 23:01:07,569 - INFO - ETH/USDT current price: 2062.56
+2023-11-15 23:01:24,194 - INFO - ETH/USDT current price: 2062.36
+2023-11-15 23:01:24,194 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.4
+2023-11-15 23:01:25,815 - INFO - ETH/USDT current price: 2062.48
+2023-11-15 23:01:42,449 - INFO - ETH/USDT current price: 2062.56
+2023-11-15 23:01:42,449 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.6
+2023-11-15 23:01:44,076 - INFO - ETH/USDT current price: 2062.56
+2023-11-15 23:02:00,712 - INFO - ETH/USDT current price: 2061.76
+2023-11-15 23:02:00,712 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.8
+2023-11-15 23:02:02,380 - INFO - ETH/USDT current price: 2061.76
+2023-11-15 23:02:18,986 - INFO - ETH/USDT current price: 2061.77
+2023-11-15 23:02:18,987 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.8
+2023-11-15 23:02:20,603 - INFO - ETH/USDT current price: 2061.76
+2023-11-15 23:02:37,222 - INFO - ETH/USDT current price: 2061.49
+2023-11-15 23:02:37,222 - INFO - ETHUSDT price doesnt changed enough! Current price: 2061.5
+2023-11-15 23:02:38,872 - INFO - ETH/USDT current price: 2061.99
+2023-11-15 23:02:56,111 - INFO - ETH/USDT current price: 2062.25
+2023-11-15 23:02:56,111 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.2
+2023-11-15 23:02:59,229 - INFO - ETH/USDT current price: 2061.90
+2023-11-15 23:03:15,896 - INFO - ETH/USDT current price: 2062.71
+2023-11-15 23:03:15,896 - INFO - ETHUSDT price doesnt changed enough! Current price: 2062.7
+2023-11-15 23:03:17,943 - INFO - ETH/USDT current price: 2063.62
+2023-11-15 23:03:34,583 - INFO - ETH/USDT current price: 2064.76
+2023-11-15 23:03:34,583 - INFO - ETHUSDT price doesnt changed enough! Current price: 2064.8
+2023-11-15 23:03:36,224 - INFO - ETH/USDT current price: 2064.99
+2023-11-15 23:03:52,883 - INFO - ETH/USDT current price: 2065.00
+2023-11-15 23:03:52,884 - INFO - ETHUSDT price doesnt changed enough! Current price: 2065.0
+2023-11-15 23:03:54,555 - INFO - ETH/USDT current price: 2064.85
+2023-11-15 23:04:11,208 - INFO - ETH/USDT current price: 2065.47
+2023-11-15 23:04:11,209 - INFO - ETHUSDT price doesnt changed enough! Current price: 2065.5
+2023-11-15 23:04:12,851 - INFO - ETH/USDT current price: 2065.47
+2023-11-15 23:04:29,493 - INFO - ETH/USDT current price: 2065.80
+2023-11-15 23:04:29,493 - INFO - ETHUSDT price doesnt changed enough! Current price: 2065.8
+2023-11-15 23:04:31,172 - INFO - ETH/USDT current price: 2065.95
+2023-11-15 23:04:47,800 - INFO - ETH/USDT current price: 2066.12
+2023-11-15 23:04:47,800 - INFO - ETHUSDT price doesnt changed enough! Current price: 2066.1
+2023-11-15 23:04:49,480 - INFO - ETH/USDT current price: 2066.12
+2023-11-15 23:05:06,169 - INFO - ETH/USDT current price: 2066.03
+2023-11-15 23:05:06,170 - INFO - ETHUSDT price doesnt changed enough! Current price: 2066.0
+2023-11-15 23:05:07,810 - INFO - ETH/USDT current price: 2066.10
+2023-11-15 23:05:24,414 - INFO - ETH/USDT current price: 2064.56
+2023-11-15 23:05:24,414 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2064.6$
+2023-11-15 23:05:26,352 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\main.py", line 69, in start_handler
+    bitcoin_ticker.create_order(side='short')
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\core\bitcoin_ticker.py", line 107, in create_order
+    balance = get_account_balance(client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\core\bitcoin_ticker.py", line 91, in get_account_balance
+    account_info = client.futures_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6582, in futures_account
+    return self._request_futures_api('get', 'account', True, 2, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+2023-11-15 23:05:26,390 - INFO - NetworkTask stopped
+2023-11-15 23:05:26,393 - INFO - PingTask stopped
+2023-11-15 23:05:26,393 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 23:05:26,397 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 23:05:26,397 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 23:05:26,398 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 23:05:26,398 - INFO - Discarding packet: The msg_id belongs to over 300 seconds in the past. Most likely the client time has to be synchronized.
+2023-11-15 23:05:26,398 - INFO - Disconnected
+2023-11-15 23:05:26,398 - INFO - Session stopped
+2023-11-15 23:05:26,398 - INFO - Connecting...
+2023-11-15 23:05:26,398 - INFO - Disconnected
+2023-11-15 23:05:26,398 - INFO - Disconnected
+2023-11-15 23:05:26,398 - INFO - Disconnected
+2023-11-15 23:05:26,398 - INFO - Disconnected
+2023-11-15 23:05:26,398 - INFO - Disconnected
+2023-11-15 23:05:26,478 - INFO - Connected! Production DC2 - IPv4
+2023-11-15 23:05:26,478 - INFO - NetworkTask started
+2023-11-15 23:05:26,945 - INFO - Session initialized: Layer 158
+2023-11-15 23:05:26,945 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-15 23:05:26,945 - INFO - System: Windows 10 (en)
+2023-11-15 23:05:26,945 - INFO - Session started
+2023-11-15 23:05:26,945 - INFO - PingTask started
+2023-11-15 23:05:41,397 - INFO - [1] Retrying "updates.GetState" due to: Request timed out
+2023-11-15 23:08:18,034 - INFO - {
+    "_": "types.UpdatesTooLong"
+}
+2023-11-15 23:25:40,318 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-15 23:25:40,326 - INFO - Stopped 16 HandlerTasks
+2023-11-16 11:26:17,991 - INFO - Connecting...
+2023-11-16 11:26:18,069 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 11:26:18,070 - INFO - NetworkTask started
+2023-11-16 11:26:18,559 - INFO - Disconnected
+2023-11-16 11:26:18,559 - INFO - NetworkTask stopped
+2023-11-16 11:26:18,559 - INFO - Session stopped
+2023-11-16 11:26:31,878 - INFO - Start creating a new auth key on DC2
+2023-11-16 11:26:31,878 - INFO - Connecting...
+2023-11-16 11:26:31,951 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 11:26:33,053 - INFO - Done auth key exchange: DhGenOk
+2023-11-16 11:26:33,053 - INFO - Disconnected
+2023-11-16 11:26:33,067 - INFO - Connecting...
+2023-11-16 11:26:33,142 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 11:26:33,144 - INFO - NetworkTask started
+2023-11-16 11:26:33,495 - INFO - Session initialized: Layer 158
+2023-11-16 11:26:33,495 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 11:26:33,495 - INFO - System: Windows 10 (en)
+2023-11-16 11:26:33,495 - INFO - Session started
+2023-11-16 11:26:33,496 - INFO - PingTask started
+2023-11-16 11:26:49,639 - INFO - Started 16 HandlerTasks
+2023-11-16 11:26:49,649 - INFO - Stopped 16 HandlerTasks
+2023-11-16 11:26:49,649 - INFO - PingTask stopped
+2023-11-16 11:26:49,650 - INFO - Disconnected
+2023-11-16 11:26:49,650 - INFO - NetworkTask stopped
+2023-11-16 11:26:49,650 - INFO - Session stopped
+2023-11-16 11:26:49,676 - INFO - Connecting...
+2023-11-16 11:26:49,755 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 11:26:49,755 - INFO - NetworkTask started
+2023-11-16 11:26:50,123 - INFO - Session initialized: Layer 158
+2023-11-16 11:26:50,123 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 11:26:50,123 - INFO - System: Windows 10 (en)
+2023-11-16 11:26:50,123 - INFO - Session started
+2023-11-16 11:26:50,125 - INFO - PingTask started
+2023-11-16 11:26:50,315 - INFO - Started 16 HandlerTasks
+2023-11-16 11:26:57,734 - INFO - ETH/USDT current price: 2059.29
+2023-11-16 11:27:14,384 - INFO - ETH/USDT current price: 2059.90
+2023-11-16 11:27:14,385 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.9
+2023-11-16 11:27:16,042 - INFO - ETH/USDT current price: 2059.71
+2023-11-16 11:27:32,680 - INFO - ETH/USDT current price: 2059.40
+2023-11-16 11:27:32,680 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.4
+2023-11-16 11:27:34,270 - INFO - ETH/USDT current price: 2059.32
+2023-11-16 11:27:50,922 - INFO - ETH/USDT current price: 2059.94
+2023-11-16 11:27:50,922 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.9
+2023-11-16 11:27:52,544 - INFO - ETH/USDT current price: 2059.68
+2023-11-16 11:28:09,154 - INFO - ETH/USDT current price: 2060.30
+2023-11-16 11:28:09,154 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.3
+2023-11-16 11:28:10,787 - INFO - ETH/USDT current price: 2060.30
+2023-11-16 11:28:27,431 - INFO - ETH/USDT current price: 2060.03
+2023-11-16 11:28:27,431 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.0
+2023-11-16 11:28:29,069 - INFO - ETH/USDT current price: 2060.05
+2023-11-16 11:28:45,744 - INFO - ETH/USDT current price: 2060.51
+2023-11-16 11:28:45,744 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.5
+2023-11-16 11:28:47,420 - INFO - ETH/USDT current price: 2060.14
+2023-11-16 11:29:04,046 - INFO - ETH/USDT current price: 2060.28
+2023-11-16 11:29:04,046 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.3
+2023-11-16 11:29:05,671 - INFO - ETH/USDT current price: 2060.27
+2023-11-16 11:29:22,307 - INFO - ETH/USDT current price: 2060.47
+2023-11-16 11:29:22,307 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.5
+2023-11-16 11:29:23,921 - INFO - ETH/USDT current price: 2060.47
+2023-11-16 11:29:40,544 - INFO - ETH/USDT current price: 2060.51
+2023-11-16 11:29:40,544 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.5
+2023-11-16 11:29:42,152 - INFO - ETH/USDT current price: 2060.69
+2023-11-16 11:29:59,222 - INFO - ETH/USDT current price: 2060.65
+2023-11-16 11:29:59,222 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.7
+2023-11-16 11:30:01,316 - INFO - ETH/USDT current price: 2060.65
+2023-11-16 11:30:17,975 - INFO - ETH/USDT current price: 2060.95
+2023-11-16 11:30:17,975 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.9
+2023-11-16 11:30:19,601 - INFO - ETH/USDT current price: 2060.94
+2023-11-16 11:30:36,742 - INFO - ETH/USDT current price: 2060.18
+2023-11-16 11:30:36,742 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.2
+2023-11-16 11:30:39,952 - INFO - ETH/USDT current price: 2060.15
+2023-11-16 11:30:56,621 - INFO - ETH/USDT current price: 2059.07
+2023-11-16 11:30:56,621 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.1
+2023-11-16 11:30:58,311 - INFO - ETH/USDT current price: 2059.07
+2023-11-16 11:31:15,359 - INFO - ETH/USDT current price: 2060.52
+2023-11-16 11:31:15,359 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.5
+2023-11-16 11:31:17,026 - INFO - ETH/USDT current price: 2060.52
+2023-11-16 11:31:33,686 - INFO - ETH/USDT current price: 2060.66
+2023-11-16 11:31:33,686 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.7
+2023-11-16 11:31:35,321 - INFO - ETH/USDT current price: 2060.65
+2023-11-16 11:31:51,957 - INFO - ETH/USDT current price: 2058.98
+2023-11-16 11:31:51,957 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2059.0$
+2023-11-16 11:31:53,894 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\main.py", line 69, in start_handler
+    bitcoin_ticker.create_order(side='short')
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\core\bitcoin_ticker.py", line 106, in create_order
+    balance = get_account_balance(client)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\bot\binance_bot_main\core\bitcoin_ticker.py", line 90, in get_account_balance
+    account_info = client.futures_account()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 6582, in futures_account
+    return self._request_futures_api('get', 'account', True, 2, data=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 383, in _request_futures_api
+    return self._request(method, uri, signed, True, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 359, in _request
+    return self._handle_response(self.response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\binance\client.py", line 368, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 37.186.126.60
+2023-11-16 11:31:53,899 - INFO - NetworkTask stopped
+2023-11-16 11:31:53,901 - INFO - PingTask stopped
+2023-11-16 11:31:53,901 - INFO - Disconnected
+2023-11-16 11:31:53,901 - INFO - Session stopped
+2023-11-16 11:31:53,901 - INFO - Connecting...
+2023-11-16 11:31:53,976 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 11:31:53,976 - INFO - NetworkTask started
+2023-11-16 11:31:54,385 - INFO - Session initialized: Layer 158
+2023-11-16 11:31:54,385 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 11:31:54,385 - INFO - System: Windows 10 (en)
+2023-11-16 11:31:54,385 - INFO - Session started
+2023-11-16 11:31:54,385 - INFO - PingTask started
+2023-11-16 11:50:51,401 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 11:50:51,411 - INFO - Stopped 16 HandlerTasks
+2023-11-16 11:50:51,411 - INFO - PingTask stopped
+2023-11-16 11:50:51,412 - INFO - Disconnected
+2023-11-16 11:50:51,412 - INFO - NetworkTask stopped
+2023-11-16 11:50:51,412 - INFO - Session stopped
+2023-11-16 14:56:40,069 - INFO - Connecting...
+2023-11-16 14:56:40,148 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 14:56:40,148 - INFO - NetworkTask started
+2023-11-16 14:56:40,525 - INFO - Session initialized: Layer 158
+2023-11-16 14:56:40,525 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 14:56:40,525 - INFO - System: Windows 10 (en)
+2023-11-16 14:56:40,525 - INFO - Session started
+2023-11-16 14:56:40,525 - INFO - PingTask started
+2023-11-16 14:56:40,713 - INFO - Started 16 HandlerTasks
+2023-11-16 14:56:40,728 - INFO - Stopped 16 HandlerTasks
+2023-11-16 14:56:40,728 - INFO - PingTask stopped
+2023-11-16 14:56:40,728 - INFO - Disconnected
+2023-11-16 14:56:40,728 - INFO - NetworkTask stopped
+2023-11-16 14:56:40,728 - INFO - Session stopped
+2023-11-16 14:56:40,760 - INFO - Connecting...
+2023-11-16 14:56:40,838 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 14:56:40,838 - INFO - NetworkTask started
+2023-11-16 14:56:41,200 - INFO - Session initialized: Layer 158
+2023-11-16 14:56:41,200 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 14:56:41,200 - INFO - System: Windows 10 (en)
+2023-11-16 14:56:41,200 - INFO - Session started
+2023-11-16 14:56:41,200 - INFO - PingTask started
+2023-11-16 14:56:41,388 - INFO - Started 16 HandlerTasks
+2023-11-16 14:56:48,152 - INFO - ETH/USDT current price: 2042.46
+2023-11-16 14:57:04,793 - INFO - ETH/USDT current price: 2042.24
+2023-11-16 14:57:04,793 - INFO - ETHUSDT price doesnt changed enough! Current price: 2042.2
+2023-11-16 14:57:06,463 - INFO - ETH/USDT current price: 2041.81
+2023-11-16 14:57:23,102 - INFO - ETH/USDT current price: 2040.66
+2023-11-16 14:57:23,102 - INFO - ETHUSDT price doesnt changed enough! Current price: 2040.7
+2023-11-16 14:57:25,236 - INFO - ETH/USDT current price: 2040.96
+2023-11-16 14:57:41,882 - INFO - ETH/USDT current price: 2039.83
+2023-11-16 14:57:41,882 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.8
+2023-11-16 14:57:43,532 - INFO - ETH/USDT current price: 2039.83
+2023-11-16 14:58:00,654 - INFO - ETH/USDT current price: 2039.81
+2023-11-16 14:58:00,654 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.8
+2023-11-16 14:58:02,303 - INFO - ETH/USDT current price: 2039.80
+2023-11-16 14:58:18,934 - INFO - ETH/USDT current price: 2039.44
+2023-11-16 14:58:18,934 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.4
+2023-11-16 14:58:20,568 - INFO - ETH/USDT current price: 2039.59
+2023-11-16 14:58:37,225 - INFO - ETH/USDT current price: 2039.68
+2023-11-16 14:58:37,225 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.7
+2023-11-16 14:58:38,858 - INFO - ETH/USDT current price: 2039.68
+2023-11-16 14:58:55,546 - INFO - ETH/USDT current price: 2039.63
+2023-11-16 14:58:55,546 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.6
+2023-11-16 14:58:57,172 - INFO - ETH/USDT current price: 2039.78
+2023-11-16 14:59:13,805 - INFO - ETH/USDT current price: 2039.78
+2023-11-16 14:59:13,805 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.8
+2023-11-16 14:59:15,421 - INFO - ETH/USDT current price: 2039.88
+2023-11-16 14:59:32,241 - INFO - ETH/USDT current price: 2039.62
+2023-11-16 14:59:32,241 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.6
+2023-11-16 14:59:33,873 - INFO - ETH/USDT current price: 2039.62
+2023-11-16 14:59:50,533 - INFO - ETH/USDT current price: 2039.72
+2023-11-16 14:59:50,533 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.7
+2023-11-16 14:59:52,198 - INFO - ETH/USDT current price: 2039.80
+2023-11-16 15:00:08,873 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:00:08,873 - INFO - ETH/USDT current price: 2039.80
+2023-11-16 15:00:08,873 - INFO - ETHUSDT price doesnt changed enough! Current price: 2039.8
+2023-11-16 15:00:09,266 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:00:10,499 - INFO - ETH/USDT current price: 2039.82
+2023-11-16 15:01:41,298 - INFO - Connecting...
+2023-11-16 15:01:41,364 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:01:41,364 - INFO - NetworkTask started
+2023-11-16 15:01:41,723 - INFO - Disconnected
+2023-11-16 15:01:41,723 - INFO - NetworkTask stopped
+2023-11-16 15:01:41,723 - INFO - Session stopped
+2023-11-16 15:01:53,538 - INFO - Start creating a new auth key on DC2
+2023-11-16 15:01:53,538 - INFO - Connecting...
+2023-11-16 15:01:53,600 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:01:54,825 - INFO - Done auth key exchange: DhGenOk
+2023-11-16 15:01:54,825 - INFO - Disconnected
+2023-11-16 15:01:54,825 - INFO - Connecting...
+2023-11-16 15:01:54,903 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:01:54,903 - INFO - NetworkTask started
+2023-11-16 15:01:55,254 - INFO - Session initialized: Layer 158
+2023-11-16 15:01:55,254 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:01:55,254 - INFO - System: Windows 10 (en)
+2023-11-16 15:01:55,254 - INFO - Session started
+2023-11-16 15:01:55,254 - INFO - PingTask started
+2023-11-16 15:02:12,985 - INFO - Started 16 HandlerTasks
+2023-11-16 15:02:12,985 - INFO - Stopped 16 HandlerTasks
+2023-11-16 15:02:12,985 - INFO - PingTask stopped
+2023-11-16 15:02:12,985 - INFO - Disconnected
+2023-11-16 15:02:12,985 - INFO - NetworkTask stopped
+2023-11-16 15:02:12,985 - INFO - Session stopped
+2023-11-16 15:02:13,016 - INFO - Connecting...
+2023-11-16 15:02:13,095 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:02:13,095 - INFO - NetworkTask started
+2023-11-16 15:02:13,581 - INFO - Session initialized: Layer 158
+2023-11-16 15:02:13,581 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:02:13,581 - INFO - System: Windows 10 (en)
+2023-11-16 15:02:13,581 - INFO - Session started
+2023-11-16 15:02:13,597 - INFO - PingTask started
+2023-11-16 15:02:13,896 - INFO - Started 16 HandlerTasks
+2023-11-16 15:02:38,412 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2043.0$
+2023-11-16 15:02:40,678 - INFO - Buying ETHUSDT for price 2043.0
+2023-11-16 15:02:47,356 - INFO - Current profit is: 2.6800000000000637
+Current checkpoint is: 2.5
+2023-11-16 15:03:55,378 - ERROR - 'lastPrice'
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\admin\Desktop\bot\binance_bot\main.py", line 52, in start_handler
+    res = make_trades.pnl_long(opened_price=opened_price)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\bot\binance_bot\core\make_trades.py", line 55, in pnl_long
+    btc_current = btc_current_class.get_live_price()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Desktop\bot\binance_bot\core\bitcoin_ticker.py", line 39, in get_live_price
+    self.btc_current_price = ticker['lastPrice']
+                             ~~~~~~^^^^^^^^^^^^^
+KeyError: 'lastPrice'
+2023-11-16 15:03:55,379 - INFO - NetworkTask stopped
+2023-11-16 15:03:55,382 - INFO - PingTask stopped
+2023-11-16 15:03:55,383 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-16 15:03:55,383 - INFO - Send exception: ConnectionResetError Connection lost
+2023-11-16 15:03:55,383 - INFO - Disconnected
+2023-11-16 15:03:55,383 - INFO - Session stopped
+2023-11-16 15:03:55,384 - INFO - Connecting...
+2023-11-16 15:03:55,447 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:03:55,447 - INFO - NetworkTask started
+2023-11-16 15:03:55,928 - INFO - Session initialized: Layer 158
+2023-11-16 15:03:55,928 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:03:55,928 - INFO - System: Windows 10 (en)
+2023-11-16 15:03:55,928 - INFO - Session started
+2023-11-16 15:03:55,928 - INFO - PingTask started
+2023-11-16 15:05:07,696 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:05:07,696 - INFO - Stopped 16 HandlerTasks
+2023-11-16 15:05:07,696 - INFO - PingTask stopped
+2023-11-16 15:05:07,696 - INFO - Disconnected
+2023-11-16 15:05:07,696 - INFO - NetworkTask stopped
+2023-11-16 15:05:07,696 - INFO - Session stopped
+2023-11-16 15:05:12,030 - INFO - Connecting...
+2023-11-16 15:05:12,113 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:05:12,113 - INFO - NetworkTask started
+2023-11-16 15:05:12,572 - INFO - Session initialized: Layer 158
+2023-11-16 15:05:12,573 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:05:12,573 - INFO - System: Windows 10 (en)
+2023-11-16 15:05:12,573 - INFO - Session started
+2023-11-16 15:05:12,575 - INFO - PingTask started
+2023-11-16 15:05:12,891 - INFO - Started 16 HandlerTasks
+2023-11-16 15:05:12,899 - INFO - Stopped 16 HandlerTasks
+2023-11-16 15:05:12,899 - INFO - PingTask stopped
+2023-11-16 15:05:12,899 - INFO - Disconnected
+2023-11-16 15:05:12,900 - INFO - NetworkTask stopped
+2023-11-16 15:05:12,900 - INFO - Session stopped
+2023-11-16 15:05:12,913 - INFO - Connecting...
+2023-11-16 15:05:12,996 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:05:12,996 - INFO - NetworkTask started
+2023-11-16 15:05:13,413 - INFO - Session initialized: Layer 158
+2023-11-16 15:05:13,413 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:05:13,413 - INFO - System: Windows 10 (en)
+2023-11-16 15:05:13,413 - INFO - Session started
+2023-11-16 15:05:13,414 - INFO - PingTask started
+2023-11-16 15:05:13,733 - INFO - Started 16 HandlerTasks
+2023-11-16 15:05:54,736 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2053.6$
+2023-11-16 15:05:55,129 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:05:55,758 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:05:56,057 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:05:56,371 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:05:57,014 - INFO - Buying ETHUSDT for price 2053.6
+2023-11-16 15:08:05,003 - INFO - Connecting...
+2023-11-16 15:08:05,081 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:08:05,081 - INFO - NetworkTask started
+2023-11-16 15:08:05,506 - INFO - Session initialized: Layer 158
+2023-11-16 15:08:05,506 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:08:05,506 - INFO - System: Windows 10 (en)
+2023-11-16 15:08:05,506 - INFO - Session started
+2023-11-16 15:08:05,506 - INFO - PingTask started
+2023-11-16 15:08:05,726 - INFO - Started 16 HandlerTasks
+2023-11-16 15:08:05,726 - INFO - Stopped 16 HandlerTasks
+2023-11-16 15:08:05,726 - INFO - PingTask stopped
+2023-11-16 15:08:05,726 - INFO - Disconnected
+2023-11-16 15:08:05,726 - INFO - NetworkTask stopped
+2023-11-16 15:08:05,726 - INFO - Session stopped
+2023-11-16 15:08:05,757 - INFO - Connecting...
+2023-11-16 15:08:05,820 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:08:05,820 - INFO - NetworkTask started
+2023-11-16 15:08:06,291 - INFO - Session initialized: Layer 158
+2023-11-16 15:08:06,291 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:08:06,291 - INFO - System: Windows 10 (en)
+2023-11-16 15:08:06,291 - INFO - Session started
+2023-11-16 15:08:06,291 - INFO - PingTask started
+2023-11-16 15:08:06,719 - INFO - Started 16 HandlerTasks
+2023-11-16 15:08:25,846 - INFO - ETHUSDT price doesnt changed enough! Current price: 2060.3
+2023-11-16 15:08:44,147 - INFO - ETHUSDT price doesnt changed enough! Current price: 2059.5
+2023-11-16 15:09:02,407 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2063.3$
+2023-11-16 15:09:04,666 - INFO - Buying ETHUSDT for price 2063.3
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Losing money
+2023-11-16 15:10:10,295 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2063.3
+Close Price: 2058.0
+Profit: -5.3
+2023-11-16 15:10:11,961 - INFO - Position closed
+2023-11-16 15:10:11,961 - INFO - NetworkTask stopped
+2023-11-16 15:10:11,961 - INFO - PingTask stopped
+2023-11-16 15:10:11,961 - INFO - Disconnected
+2023-11-16 15:10:11,961 - INFO - Session stopped
+2023-11-16 15:10:11,961 - INFO - Connecting...
+2023-11-16 15:10:12,040 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:10:12,040 - INFO - NetworkTask started
+2023-11-16 15:10:12,354 - INFO - Session initialized: Layer 158
+2023-11-16 15:10:12,354 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:10:12,354 - INFO - System: Windows 10 (en)
+2023-11-16 15:10:12,354 - INFO - Session started
+2023-11-16 15:10:12,354 - INFO - PingTask started
+2023-11-16 15:10:26,963 - INFO - [1] Retrying "messages.SendMessage" due to: Request timed out
+2023-11-16 15:10:45,880 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2059.6$
+2023-11-16 15:10:51,627 - INFO - Buying ETHUSDT for price 2059.6
+2023-11-16 15:10:53,494 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2059.6
+Close Price: 2059.2
+Profit: -0.4
+2023-11-16 15:10:55,146 - INFO - Position closed
+2023-11-16 15:11:13,504 - INFO - ETHUSDT price doesnt changed enough! Current price: 2058.1
+2023-11-16 15:11:31,775 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2059.5$
+2023-11-16 15:11:34,061 - INFO - Buying ETHUSDT for price 2059.5
+2023-11-16 15:11:34,061 - INFO - [1] Retrying "channels.GetMessages" due to: Request timed out
+2023-11-16 15:11:34,061 - INFO - NetworkTask stopped
+2023-11-16 15:11:34,061 - INFO - PingTask stopped
+2023-11-16 15:11:34,061 - INFO - Disconnected
+2023-11-16 15:11:34,061 - INFO - Session stopped
+2023-11-16 15:11:34,061 - INFO - Connecting...
+2023-11-16 15:11:34,162 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:11:34,162 - INFO - NetworkTask started
+2023-11-16 15:11:34,345 - INFO - Discarding packet: The msg_id is lower than all the stored values
+2023-11-16 15:11:34,345 - INFO - Disconnected
+2023-11-16 15:11:34,345 - INFO - NetworkTask stopped
+2023-11-16 15:11:34,361 - INFO - Discarding packet: The msg_id is lower than all the stored values
+2023-11-16 15:11:34,362 - INFO - Discarding packet: The msg_id is lower than all the stored values
+2023-11-16 15:11:34,362 - INFO - Discarding packet: The msg_id is lower than all the stored values
+2023-11-16 15:11:34,362 - INFO - Discarding packet: The msg_id is equal to any of the stored values
+2023-11-16 15:11:34,362 - INFO - Disconnected
+2023-11-16 15:11:34,362 - INFO - Disconnected
+2023-11-16 15:11:34,362 - INFO - Disconnected
+2023-11-16 15:11:34,362 - INFO - Disconnected
+2023-11-16 15:11:36,163 - INFO - Disconnected
+2023-11-16 15:11:36,163 - INFO - Session stopped
+2023-11-16 15:11:36,163 - INFO - Connecting...
+2023-11-16 15:11:36,243 - INFO - Connected! Production DC2 - IPv4
+2023-11-16 15:11:36,243 - INFO - NetworkTask started
+2023-11-16 15:11:36,662 - INFO - Session initialized: Layer 158
+2023-11-16 15:11:36,662 - INFO - Device: CPython 3.11.4 - 5811589868:AAElvx1nnMo5vaPWY-J2tYQ2YGL5TSv158A
+2023-11-16 15:11:36,662 - INFO - System: Windows 10 (en)
+2023-11-16 15:11:36,662 - INFO - Session started
+2023-11-16 15:11:36,662 - INFO - PingTask started
+2023-11-16 15:11:49,078 - INFO - [1] Retrying "messages.SendMessage" due to: Request timed out
+2023-11-16 15:11:51,374 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2059.5
+Close Price: 2059.9
+Profit: 0.4
+2023-11-16 15:11:53,028 - INFO - Position closed
+2023-11-16 15:12:01,428 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:12:01,679 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:12:01,884 - INFO - Stop signal received (SIGINT). Exiting...
+2023-11-16 15:15:40,287 - INFO - ETHUSDT price doesnt changed enough! Current price: 2068.7
+2023-11-16 15:16:00,511 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2071.2$
+2023-11-16 15:16:58,916 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2071.3$
+2023-11-16 15:18:09,954 - INFO - ETHUSDT price doesnt changed enough! Current price: 2068.5
+2023-11-16 15:18:28,243 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2065.2$
+2023-11-16 15:18:30,568 - INFO - Selling ETHUSDT for price 2065.2
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - WARNING - Losing money
+2023-11-16 15:19:30,559 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2065.2
+Close Price: 2070.9
+Profit: -5.7
+2023-11-16 15:19:32,215 - INFO - Position closed
+2023-11-16 15:20:00,485 - INFO - ETHUSDT price doesnt changed enough! Current price: 2074.8
+2023-11-16 15:20:18,746 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2071.4$
+2023-11-16 15:20:21,007 - INFO - Selling ETHUSDT for price 2071.4
+2023-11-16 15:20:22,638 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2071.4
+Close Price: 2071.1
+Profit: 0.3
+2023-11-16 15:20:24,280 - INFO - Position closed
+2023-11-16 15:20:55,440 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2070.8$
+2023-11-16 15:20:57,749 - INFO - Selling ETHUSDT for price 2070.8
+2023-11-16 15:21:00,045 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2070.8
+Close Price: 2070.8
+Profit: 0.0
+2023-11-16 15:21:01,709 - INFO - Position closed
+2023-11-16 15:23:08,902 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2070.0$
+2023-11-16 15:23:08,917 - INFO - Selling ETHUSDT for price 2070.0
+2023-11-16 15:23:27,862 - INFO - ETHUSDT price doesnt changed enough! Current price: 2069.9
+2023-11-16 15:23:42,590 - INFO - ETHUSDT price doesnt changed enough! Current price: 2069.9
+2023-11-16 15:23:56,857 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2068.2$
+2023-11-16 15:23:56,859 - INFO - Selling ETHUSDT for price 2068.2
+2023-11-16 15:25:20,612 - INFO - Current profit is: 3.2399999999997817
+Current checkpoint is: 2.8
+2023-11-16 15:29:37,279 - INFO - ETHUSDT price doesnt changed enough! Current price: 2077.0
+2023-11-16 15:29:52,039 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2074.3$
+2023-11-16 15:29:52,054 - INFO - Selling ETHUSDT for price 2074.3
+2023-11-16 15:31:13,434 - INFO - Current profit is: 3.0399999999999636
+Current checkpoint is: 2.8
+2023-11-16 15:35:08,639 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2072.8$
+2023-11-16 15:35:08,654 - INFO - Selling ETHUSDT for price 2072.8
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - WARNING - Losing money
+2023-11-16 15:37:33,978 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2072.8
+Close Price: 2078.2
+Profit: -5.3
+2023-11-16 15:37:33,978 - INFO - Position closed
+2023-11-16 15:37:58,291 - INFO - ETHUSDT price doesnt changed enough! Current price: 2080.4
+2023-11-16 15:38:12,595 - INFO - ETHUSDT price doesnt changed enough! Current price: 2079.9
+2023-11-16 15:38:26,879 - INFO - ETHUSDT price doesnt changed enough! Current price: 2080.8
+2023-11-16 15:38:41,573 - INFO - ETHUSDT price doesnt changed enough! Current price: 2081.9
+2023-11-16 15:38:55,862 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2084.7$
+2023-11-16 15:38:55,862 - INFO - Buying ETHUSDT for price 2084.7
+2023-11-16 15:38:57,499 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2084.7
+Close Price: 2084.7
+Profit: 0.0
+2023-11-16 15:38:57,500 - INFO - Position closed
+2023-11-16 15:39:21,753 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2082.2$
+2023-11-16 15:39:21,768 - INFO - Selling ETHUSDT for price 2082.2
+2023-11-16 15:39:23,447 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2082.2
+Close Price: 2082.6
+Profit: -0.4
+2023-11-16 15:39:23,447 - INFO - Position closed
+2023-11-16 15:39:47,713 - INFO - ETHUSDT price doesnt changed enough! Current price: 2082.2
+2023-11-16 15:40:02,014 - INFO - ETHUSDT price doesnt changed enough! Current price: 2082.6
+2023-11-16 15:40:16,311 - INFO - ETHUSDT price doesnt changed enough! Current price: 2081.6
+2023-11-16 15:40:30,576 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2083.9$
+2023-11-16 15:40:30,579 - INFO - Buying ETHUSDT for price 2083.9
+2023-11-16 15:40:32,249 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2083.9
+Close Price: 2083.9
+Profit: 0.0
+2023-11-16 15:40:32,251 - INFO - Position closed
+2023-11-16 15:40:56,528 - INFO - ETHUSDT price doesnt changed enough! Current price: 2080.4
+2023-11-16 15:41:11,334 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2083.3$
+2023-11-16 15:41:11,334 - INFO - Buying ETHUSDT for price 2083.3
+2023-11-16 15:41:12,955 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2083.3
+Close Price: 2083.6
+Profit: 0.3
+2023-11-16 15:41:12,956 - INFO - Position closed
+2023-11-16 15:41:37,244 - INFO - ETHUSDT price doesnt changed enough! Current price: 2083.1
+2023-11-16 15:41:51,562 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2086.5$
+2023-11-16 15:41:51,578 - INFO - Buying ETHUSDT for price 2086.5
+2023-11-16 15:41:53,195 - INFO - Position closed!
+Position data
+Symbol: ETHUSDT
+Entry Price: 2086.5
+Close Price: 2088.9
+Profit: 2.5
+2023-11-16 15:41:53,195 - INFO - Position closed
