@@ -22,10 +22,10 @@ logging.basicConfig(filename=f'{files_dir}/binance_logs.log',
 class LivePrice:
     def __init__(self):
         try:
-            self.client = Client(api_key=config.API_KEY, api_secret=config.API_SECRET)
+            self.client = Client(api_key=config.API_KEY, api_secret=config.API_SECRET, testnet=True)
         except Exception:
             print('Connection lost! Reconnecting...')
-            self.client = Client(api_key=config.API_KEY, api_secret=config.API_SECRET)
+            self.client = Client(api_key=config.API_KEY, api_secret=config.API_SECRET, testnet=True)
 
         self.trading_pair = 'ETHUSDT'  # Replace with the trading pair you want to check
         self.btc_current_price = None
@@ -82,17 +82,17 @@ def get_price_ticker():
 def get_account_balance(client):
     account_info = client.futures_account()
     balance = float(account_info['totalWalletBalance'])
-    return balance
+    return account_info
 
 
 def get_ask_price(client, symbol):
     order_book = client.get_order_book(symbol=symbol)
     ask_price = float(order_book['asks'][0][0])
-    return ask_price
+    return order_book
 
 
 def create_order(side, percentage_of_balance=95):
-    client = Client(config.API_KEY, config.API_SECRET)
+    client = Client(config.API_KEY, config.API_SECRET, testnet=True)
     symbol = 'ETHUSDT'
     ticker = client.futures_mark_price(symbol=symbol)
     btc_current_price = ticker['markPrice']
@@ -105,6 +105,7 @@ def create_order(side, percentage_of_balance=95):
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
             quantity=0.01,
+            test=True
         )
         print(order)
         print("Order opened successfully")
@@ -115,6 +116,7 @@ def create_order(side, percentage_of_balance=95):
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
             quantity=0.01,
+            test=True
         )
         print(order)
         print("Order opened successfully")
@@ -141,15 +143,14 @@ def close_position(side, quantity):
     print("Position closed successfully")
 
 
-# if __name__ == "__main__":
-#     import time
-#
-#     start_time = time.time()
-#     # client = Client(config.API_KEY, config.API_SECRET)
-#
-#     # btc_current_class = LivePrice()
-#     # btc_current = btc_current_class.get_live_price()
-#     close_position('long', 0.01)
-#     end_time = time.time()
-#     total_time = end_time - start_time
-#     print(total_time)
+if __name__ == "__main__":
+    import time
+
+    original_value = 0.01
+    percentage_increase = 0.20
+
+    new_value = original_value + (original_value * percentage_increase)
+
+    print("Original Value:", original_value)
+    print("Percentage Increase:", percentage_increase)
+    print("New Value:", new_value)

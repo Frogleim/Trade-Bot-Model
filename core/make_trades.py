@@ -1,14 +1,14 @@
+import logging
+import os
+import random
 import time
-
+import pnl_calculator
 # from . import bitcoin_ticker, config
 # from . import logs_handler
 import bitcoin_ticker
+import config
 import files_manager
 import logs_handler
-import logging
-import random
-import config
-import os
 
 current_profit = 0
 position_mode = None
@@ -29,41 +29,37 @@ logging.basicConfig(filename=f'{files_dir}/logs/binance_logs.log',
 def trade():
     btc_price_change, opened_price = check_price_changes()
     if btc_price_change:
-        # bitcoin_ticker.create_order(side='long')
+        bitcoin_ticker.create_order(side='long')
         body = f'Buying ETHUSDT for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
             res = pnl_long(opened_price=opened_price)
             if res == 'Profit':
-                # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
+                bitcoin_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
+                new_position_size = pnl_calculator.position_size()
+                logging.info(f'Position sized changed with Profit: {new_position_size}')
                 break
             elif res == 'Loss':
-                # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
+                bitcoin_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
                 break
             time.sleep(random.uniform(0.6587, 1.11))
     else:
-        # bitcoin_ticker.create_order(side='short')
+        bitcoin_ticker.create_order(side='short')
         body = f'Selling ETHUSDT for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
             res = pnl_short(opened_price=opened_price)
             if res == 'Profit':
-                # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
+                bitcoin_ticker.close_position(side='long', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
+                new_position_size = pnl_calculator.position_size()
+                logging.info(f'Position sized changed with Profit: {new_position_size}')
                 break
             elif res == 'Loss':
-                # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
+                bitcoin_ticker.close_position(side='long', quantity=config.position_size)
                 logging.info('Position closed')
-                log = logs_handler.read_logs_txt()
-                trade_log = ''.join(log)
                 break
             time.sleep(random.uniform(0.6587, 1.11))
 
@@ -104,7 +100,6 @@ def fix_price_pnl(entry_price, signal):
     logging.info(msg)
     if current_profit >= config.max_profit:
         files_manager.insert_data(entry_price, btc_current, current_profit, signal)
-
         return 'Profit'
     elif current_profit <= -config.max_loss:
         files_manager.insert_data(entry_price, btc_current, current_profit, signal)
@@ -112,6 +107,18 @@ def fix_price_pnl(entry_price, signal):
         return 'Loss'
 
 
+def fix_price_pnl_short(entry_price, signal):
+    global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
+    btc_current_class = bitcoin_ticker.LivePrice()
+    btc_current = btc_current_class.get_live_price()
+    current_profit = float(entry_price) - float(btc_current)
+    msg = f'Entry Price: {entry_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}'
+    logging.info(msg)
+    if current_profit >= config.max_profit:
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
+        return 'Profit'
+    elif current_profit <= -config.max_loss:
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
 
 
 def pnl_long(opened_price=None, current_price=2090):
