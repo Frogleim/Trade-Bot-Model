@@ -21,3 +21,5 @@ DC_MAP = {
 checkpoint_list = [2.5, 3.5, 4.5, 6.5, 7.5, 8.5, 9.5, 10.5, 16.5, 20.5]
 position_size = 0.01
 ticker_timeout = 15
+max_loss = 3
+max_profit = 5

@@ -33,11 +33,9 @@ def calculate_modified_difference(lst):
 
 if __name__ == '__main__':
     # Example usage:
-    starting_number = 1
+    starting_number = 1000
     common_ratio = 1.20  # 20% increase
     num_terms = 33
 
     result = geometric_progression(starting_number, common_ratio, num_terms)
-    modified_values = calculate_modified_difference(result)
     print("Original Values:", result)
-    print("Modified Differences:", modified_values)

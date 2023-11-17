@@ -3,6 +3,7 @@ import time
 # from . import bitcoin_ticker, config
 # from . import logs_handler
 import bitcoin_ticker
+import files_manager
 import logs_handler
 import logging
 import random
@@ -92,6 +93,25 @@ def check_price_changes():
             logging.info(message)
 
             continue
+
+
+def fix_price_pnl(entry_price, signal):
+    global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
+    btc_current_class = bitcoin_ticker.LivePrice()
+    btc_current = btc_current_class.get_live_price()
+    current_profit = float(btc_current) - float(entry_price)
+    msg = f'Entry Price: {entry_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}'
+    logging.info(msg)
+    if current_profit >= config.max_profit:
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
+
+        return 'Profit'
+    elif current_profit <= -config.max_loss:
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
+
+        return 'Loss'
+
+
 
 
 def pnl_long(opened_price=None, current_price=2090):
