@@ -8,20 +8,22 @@ files_dir = os.path.join(parent_dir, "core")
 file_path = f"{files_dir}/files/data.csv"
 
 
-def insert_data(entry_price, close_price, profit, entry_price_diff):
+def insert_data(entry_price, close_price, profit, entry_price_diff, open_time, close_time):
     # Read the existing data from the CSV file
     try:
         df = pd.read_csv(file_path)
     except FileNotFoundError:
         # If the file doesn't exist, create a new DataFrame
-        df = pd.DataFrame(columns=["entry price", "close price", "profit", "entry price difference"])
+        df = pd.DataFrame(columns=["entry price", "close price", "profit", "entry price difference", 'open_time', 'close_time'])
 
     # Create a new row with the given data
     new_data = {
-        "entry price": entry_price,
-        "close price": close_price,
-        "profit": profit,
-        "entry price difference": entry_price_diff
+        "entry price": round(float(entry_price), 1),
+        "close price": round(float(close_price), 1),
+        "profit": round(float(profit), 1),
+        "entry price difference": round(float(entry_price_diff), 1),
+        "open_time": open_time,
+        "close_time": close_time
     }
 
     # Append the new data to the DataFrame

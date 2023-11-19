@@ -1,2 +1,5 @@
-binance~=0.3
+python-binance
 pandas~=1.5.3
+requests
+openpyxl
+watchdog

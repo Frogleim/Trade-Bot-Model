@@ -26,7 +26,7 @@ class LivePrice:
             print('Connection lost! Reconnecting...')
             self.client = Client(api_key=config.API_KEY, api_secret=config.API_SECRET)
 
-        self.trading_pair = 'ETHUSDT'  # Replace with the trading pair you want to check
+        self.trading_pair = 'BTCUSDT'  # Replace with the trading pair you want to check
         self.btc_current_price = None
 
     def get_live_price(self):
@@ -93,31 +93,25 @@ def get_ask_price(client, symbol):
 def create_order(side, percentage_of_balance=95):
     client = Client(config.API_KEY, config.API_SECRET)
     symbol = 'ETHUSDT'
-    ticker = client.futures_mark_price(symbol=symbol)
-    btc_current_price = ticker['markPrice']
-    balance = get_account_balance(client)
-    quantity = balance / float(btc_current_price)
-    print(round(quantity, 1))
     if side == 'long':
         order = client.futures_create_order(
             symbol=symbol,
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
-            quantity=0.01,
+            quantity=config.position_size,
         )
         print(order)
         print("Order opened successfully")
-        return order['orderId'], round(quantity, 1)
+
     elif side == 'short':
         order = client.futures_create_order(
             symbol=symbol,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
-            quantity=0.01,
+            quantity=config.position_size,
         )
         print(order)
         print("Order opened successfully")
-        return order['orderId'], round(quantity, 1)
 
 
 def close_position(side, quantity):
@@ -140,15 +134,17 @@ def close_position(side, quantity):
     print("Position closed successfully")
 
 
-# if __name__ == "__main__":
-#     import time
-#
-#     start_time = time.time()
-#     # client = Client(config.API_KEY, config.API_SECRET)
-#
-#     # btc_current_class = LivePrice()
-#     # btc_current = btc_current_class.get_live_price()
-#     close_position('long', 0.01)
-#     end_time = time.time()
-#     total_time = end_time - start_time
-#     print(total_time)
+if __name__ == "__main__":
+    import time
+
+    start_time = time.time()
+    client = Client(config.API_KEY, config.API_SECRET)
+    order = client.futures_create_order(
+        symbol='ETHUSDT',
+        side=Client.SIDE_BUY,
+        type=Client.ORDER_TYPE_MARKET,
+        quantity=0.02,
+    )
+    # btc_current_class = LivePrice()
+    # btc_current = btc_current_class.get_live_price()
+

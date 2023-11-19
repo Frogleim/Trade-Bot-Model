@@ -1,8 +1,10 @@
+import datetime
 import time
-from . import bitcoin_ticker, config, files_manager
+from . import bitcoin_ticker, config, files_manager, pnl_calculator
 # from . import logs_handler
 # import bitcoin_ticker
 import logging
+
 import random
 # import config
 import os
@@ -34,14 +36,18 @@ def trade():
     btc_price_change, opened_price, signal_price = check_price_changes()
     if btc_price_change:
         # bitcoin_ticker.create_order(side='long')
+        open_time = time.time()
+        dt_object = datetime.datetime.fromtimestamp(open_time)
+        fixed_open_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
         body = f'Buying ETHUSDT for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
-            res = fix_price_pnl(entry_price=opened_price, signal=signal_price)
+            res = fix_price_pnl(entry_price=opened_price, signal=signal_price, open_time=fixed_open_time)
             # res = pnl_long(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
                 # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
+                pnl_calculator.position_size()
                 break
             elif res == 'Loss':
                 # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
@@ -50,13 +56,17 @@ def trade():
             time.sleep(random.uniform(0.6587, 1.11))
     else:
         # bitcoin_ticker.create_order(side='short')
+        open_time = time.time()
+        dt_object = datetime.datetime.fromtimestamp(open_time)
+        fixed_open_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
         body = f'Selling ETHUSDT for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
             # res = pnl_short(opened_price=opened_price, signal=signal_price)
-            res = fix_price_pnl_short(entry_price=opened_price, signal=signal_price)
+            res = fix_price_pnl_short(entry_price=opened_price, signal=signal_price, open_time=fixed_open_time)
             if res == 'Profit':
                 # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
+                pnl_calculator.position_size()
                 logging.info('Position closed')
                 break
             elif res == 'Loss':
@@ -78,11 +88,11 @@ def check_price_changes():
         next_btc_current_class = bitcoin_ticker.LivePrice()
         next_btc_current = next_btc_current_class.get_live_price()
         signal_difference = float(next_btc_current) - float(checking_price)
-        if signal_difference > 1.5:
+        if signal_difference > 30:
             message = f"ETHUSDT goes up for more than 1$\n Buying ETHUSDT for {round(float(next_btc_current), 1)}$"
             logging.info(message)
             return True, next_btc_current, signal_difference
-        elif signal_difference < -1.5:
+        elif signal_difference < -30:
             message = f"ETHUSDT goes up for more than 1$\n Buying ETHUSDT for {round(float(next_btc_current), 1)}$"
             logging.info(message)
 
@@ -94,36 +104,46 @@ def check_price_changes():
             continue
 
 
-def fix_price_pnl(entry_price, signal):
+def fix_price_pnl(entry_price, signal, open_time):
     global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
     btc_current_class = bitcoin_ticker.LivePrice()
     btc_current = btc_current_class.get_live_price()
     current_profit = float(btc_current) - float(entry_price)
     msg = f'Entry Price: {entry_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}'
     logging.info(msg)
-    if current_profit >= 4:
-        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
-
+    if current_profit >= 40:
+        close_time = time.time()
+        dt_object = datetime.datetime.fromtimestamp(close_time)
+        fixed_close_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal, open_time, fixed_close_time)
         return 'Profit'
-    elif current_profit <= -5:
-        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
-
+    elif current_profit <= -15:
+        close_time = time.time()
+        dt_object = datetime.datetime.fromtimestamp(close_time)
+        fixed_close_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal, open_time, fixed_close_time)
         return 'Loss'
 
 
-def fix_price_pnl_short(entry_price, signal):
+def fix_price_pnl_short(entry_price, signal, open_time):
     global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
     btc_current_class = bitcoin_ticker.LivePrice()
     btc_current = btc_current_class.get_live_price()
     current_profit = float(entry_price) - float(btc_current)
     msg = f'Entry Price: {entry_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}'
     logging.info(msg)
-    if current_profit >= 4:
-        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
+    if current_profit >= 40:
+        close_time = time.time()
+        dt_object = datetime.datetime.fromtimestamp(close_time)
+        fixed_close_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal, open_time, fixed_close_time)
 
         return 'Profit'
-    elif current_profit <= -5:
-        files_manager.insert_data(entry_price, btc_current, current_profit, signal)
+    elif current_profit <= -15:
+        close_time = time.time()
+        dt_object = datetime.datetime.fromtimestamp(close_time)
+        fixed_close_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
+        files_manager.insert_data(entry_price, btc_current, current_profit, signal, open_time, fixed_close_time)
 
         return 'Loss'
 
