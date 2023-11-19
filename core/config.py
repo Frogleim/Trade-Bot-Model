@@ -1,5 +1,3 @@
-API_KEY = 'zXDqmDNONEPHwKECHZgkLmWw0BEtnvlraw0b3RCzSptWARei7IbkJvdTliELbXbU'
-API_SECRET = 'wSnvdvLB96FeWYqbCJ7U7Nv1oSFIVlQrpzJG68ZI0I1kCcOxsscBx2eLiG5SlTV8'
 
 # testnet
 # API_KEY = ''
