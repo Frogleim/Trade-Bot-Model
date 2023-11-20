@@ -1,6 +1,6 @@
 import time
 # from . import config, bitcoin_ticker
-import bitcoin_ticker
+import crypto_ticker
 from binance.client import Client
 import config
 

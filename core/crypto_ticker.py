@@ -26,16 +26,15 @@ class LivePrice:
             print('Connection lost! Reconnecting...')
             self.client = Client(api_key=config.API_KEY, api_secret=config.API_SECRET)
 
-        self.trading_pair = 'BTCUSDT'  # Replace with the trading pair you want to check
         self.btc_current_price = None
 
     def get_live_price(self):
         try:
-            ticker = self.client.futures_ticker(symbol=self.trading_pair)
+            ticker = self.client.futures_ticker(symbol=config.trading_pair)
         except Exception:
             print('Connection lost! Reconnecting...')
             time.sleep(random.uniform(1.8, 2.63))
-            ticker = self.client.futures_mark_price(symbol=self.trading_pair)
+            ticker = self.client.futures_mark_price(symbol=config.trading_pair)
         try:
             self.btc_current_price = ticker['lastPrice']
         except KeyError as e:
@@ -95,7 +94,7 @@ def create_order(side, percentage_of_balance=95):
     symbol = 'ETHUSDT'
     if side == 'long':
         order = client.futures_create_order(
-            symbol=symbol,
+            symbol=config.trading_pair,
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
             quantity=config.position_size,
@@ -105,7 +104,7 @@ def create_order(side, percentage_of_balance=95):
 
     elif side == 'short':
         order = client.futures_create_order(
-            symbol=symbol,
+            symbol=config.trading_pair,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
             quantity=config.position_size,
@@ -118,14 +117,14 @@ def close_position(side, quantity):
     client = Client(config.API_KEY, config.API_SECRET)
     if side == 'long':
         order = client.futures_create_order(
-            symbol='ETHUSDT',
+            symbol=config.trading_pair,
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
             quantity=quantity,
         )
     else:
         order = client.futures_create_order(
-            symbol='ETHUSDT',
+            symbol=config.trading_pair,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
             quantity=quantity,
