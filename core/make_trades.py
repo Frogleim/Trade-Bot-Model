@@ -35,7 +35,7 @@ root_logger.addHandler(console_handler)
 def trade():
     btc_price_change, opened_price, signal_price = check_price_changes()
     if btc_price_change:
-        # bitcoin_ticker.create_order(side='long')
+        # crypto_ticker.create_order(side='long')
         open_time = time.time()
         dt_object = datetime.datetime.fromtimestamp(open_time)
         fixed_open_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
@@ -45,18 +45,18 @@ def trade():
             res = fix_price_pnl(entry_price=opened_price, signal=signal_price, open_time=fixed_open_time)
             # res = pnl_long(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
-                # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
+                # crypto_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
                 pnl_calculator.position_size()
                 break
             elif res == 'Loss':
-                # bitcoin_ticker.close_position(side='short', quantity=config.position_size)
+                # crypto_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
                 break
 
             time.sleep(random.uniform(0.6587, 1.11))
     else:
-        # bitcoin_ticker.create_order(side='short')
+        # crypto_ticker.create_order(side='short')
         open_time = time.time()
         dt_object = datetime.datetime.fromtimestamp(open_time)
         fixed_open_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
@@ -66,12 +66,12 @@ def trade():
             # res = pnl_short(opened_price=opened_price, signal=signal_price)
             res = fix_price_pnl_short(entry_price=opened_price, signal=signal_price, open_time=fixed_open_time)
             if res == 'Profit':
-                # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
+                # crypto_ticker.close_position(side='long', quantity=config.position_size)
                 pnl_calculator.position_size()
                 logging.info('Position closed')
                 break
             elif res == 'Loss':
-                # bitcoin_ticker.close_position(side='long', quantity=config.position_size)
+                # crypto_ticker.close_position(side='long', quantity=config.position_size)
                 logging.info('Position closed')
                 break
             time.sleep(random.uniform(0.6587, 1.11))
@@ -80,7 +80,7 @@ def trade():
 def reverse_trade():
     btc_price_change, opened_price, signal_price = check_price_changes()
     if btc_price_change:
-        crypto_ticker.create_order(side='long')
+        # crypto_ticker.create_order(side='long')
         open_time = time.time()
         dt_object = datetime.datetime.fromtimestamp(open_time)
         fixed_open_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
@@ -95,13 +95,13 @@ def reverse_trade():
                 # pnl_calculator.position_size()
                 break
             elif res == 'Loss':
-                crypto_ticker.close_position(side='short', quantity=config.position_size)
+                # crypto_ticker.close_position(side='short', quantity=config.position_size)
                 logging.info('Position closed')
                 break
 
             time.sleep(random.uniform(0.6587, 1.11))
     else:
-        crypto_ticker.create_order(side='short')
+        # crypto_ticker.create_order(side='short')
         open_time = time.time()
         dt_object = datetime.datetime.fromtimestamp(open_time)
         fixed_open_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
@@ -116,7 +116,7 @@ def reverse_trade():
                 logging.info('Position closed')
                 break
             elif res == 'Loss':
-                crypto_ticker.close_position(side='long', quantity=config.position_size)
+                # crypto_ticker.close_position(side='long', quantity=config.position_size)
                 logging.info('Position closed')
                 break
             time.sleep(random.uniform(0.6587, 1.11))
@@ -128,11 +128,14 @@ def check_price_changes():
     while True:
         btc_current_class = crypto_ticker.LivePrice()
         btc_current = btc_current_class.get_live_price()
+        logging.info(f'Current {config.trading_pair} price: {btc_current}')
         checking_price = btc_current
         time.sleep(config.ticker_timeout)
         next_btc_current_class = crypto_ticker.LivePrice()
         next_btc_current = next_btc_current_class.get_live_price()
+        logging.info(f'New {config.trading_pair} price: {next_btc_current}')
         signal_difference = float(next_btc_current) - float(checking_price)
+        logging.info(f'Difference: {signal_difference}')
         if signal_difference > config.signal_price:
             message = f"ETHUSDT goes up for more than {config.signal_price}$\n Buying {config.trading_pair} for {round(float(next_btc_current), 1)}$"
             logging.info(message)

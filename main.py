@@ -1,7 +1,6 @@
 import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-
 from core import make_trades
 from importlib import reload
 
@@ -13,12 +12,15 @@ class MyHandler(FileSystemEventHandler):
 
 
 def start():
+    interval_minutes = 30
+
     while True:
         make_trades.trade()
-        time.sleep(10)
+        time.sleep(interval_minutes * 60)  # Sleep for the specified interval
+
+        make_trades.trade()
+        time.sleep(interval_minutes * 60)
 
 
 if __name__ == '__main__':
     start()
-    # 80
-    #

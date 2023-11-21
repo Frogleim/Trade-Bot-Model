@@ -4834,3 +4834,1559 @@
 2023-11-20 15:43:09,324 - INFO - ETHUSDT price doesnt changed enough! Current price: 2031.3
 2023-11-20 15:43:28,046 - INFO - ETHUSDT price doesnt changed enough! Current price: 2029.6
 2023-11-20 15:43:46,361 - INFO - ETHUSDT price doesnt changed enough! Current price: 2029.0
+2023-11-21 08:34:16,787 - INFO - ETHUSDT price doesnt changed enough! Current price: 2019.7
+2023-11-21 08:34:35,115 - INFO - ETHUSDT price doesnt changed enough! Current price: 2020.4
+2023-11-21 08:34:53,464 - INFO - ETHUSDT price doesnt changed enough! Current price: 2019.9
+2023-11-21 08:35:11,795 - INFO - ETHUSDT price doesnt changed enough! Current price: 2020.0
+2023-11-21 08:35:30,121 - INFO - ETHUSDT price doesnt changed enough! Current price: 2019.5
+2023-11-21 08:35:48,414 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.9
+2023-11-21 08:36:06,772 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.8
+2023-11-21 08:36:25,091 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.8
+2023-11-21 08:37:02,571 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.9
+2023-11-21 08:37:20,888 - INFO - ETHUSDT price doesnt changed enough! Current price: 2019.0
+2023-11-21 08:37:39,237 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.2
+2023-11-21 08:37:58,005 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.9
+2023-11-21 08:38:16,469 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.3
+2023-11-21 08:38:34,803 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.2
+2023-11-21 08:38:53,185 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.3
+2023-11-21 08:39:11,505 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.3
+2023-11-21 08:39:29,861 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.1
+2023-11-21 08:39:48,151 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.1
+2023-11-21 08:40:06,470 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.6
+2023-11-21 08:40:25,893 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.1
+2023-11-21 08:40:44,243 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.6
+2023-11-21 08:41:02,546 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.8
+2023-11-21 08:41:20,910 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.9
+2023-11-21 08:41:39,225 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.2
+2023-11-21 08:41:57,532 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.0
+2023-11-21 08:42:15,840 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.8
+2023-11-21 08:42:34,172 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.7
+2023-11-21 08:42:52,502 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.6
+2023-11-21 08:43:10,846 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.4
+2023-11-21 08:43:29,184 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.0
+2023-11-21 08:43:47,483 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.8
+2023-11-21 08:44:05,788 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.8
+2023-11-21 08:44:24,116 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.7
+2023-11-21 08:44:42,959 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.0
+2023-11-21 08:45:01,270 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.0
+2023-11-21 08:45:19,555 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.0
+2023-11-21 08:45:37,870 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.0
+2023-11-21 08:45:56,217 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.6
+2023-11-21 08:46:15,110 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.2
+2023-11-21 08:46:33,439 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.5
+2023-11-21 08:46:51,740 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.6
+2023-11-21 08:47:10,061 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.8
+2023-11-21 08:47:28,355 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.3
+2023-11-21 08:47:46,685 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.3
+2023-11-21 08:48:04,996 - INFO - ETHUSDT price doesnt changed enough! Current price: 2018.7
+2023-11-21 08:48:23,512 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.9
+2023-11-21 08:48:41,852 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.3
+2023-11-21 08:49:00,691 - INFO - ETHUSDT goes down for more than 1$
+ Selling ETHUSDT for 2015.7$
+2023-11-21 08:49:00,691 - INFO - Selling ETHUSDT for price 2015.7
+2023-11-21 08:49:02,335 - INFO - Entry Price: 2015.68 --- Current Price: 2015.71 --- Current Profit: -0.029999999999972715
+2023-11-21 08:49:04,969 - INFO - Entry Price: 2015.68 --- Current Price: 2015.85 --- Current Profit: -0.16999999999984539
+2023-11-21 08:49:07,453 - INFO - Entry Price: 2015.68 --- Current Price: 2015.90 --- Current Profit: -0.22000000000002728
+2023-11-21 08:49:07,462 - INFO - Position closed
+2023-11-21 08:49:35,770 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.4
+2023-11-21 08:49:54,115 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.2
+2023-11-21 08:50:12,471 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.3
+2023-11-21 08:50:30,776 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 08:50:49,628 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 08:51:07,955 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 08:51:26,257 - INFO - ETHUSDT goes down for more than 1$
+ Selling ETHUSDT for 2015.6$
+2023-11-21 08:51:26,273 - INFO - Selling ETHUSDT for price 2015.6
+2023-11-21 08:51:27,932 - INFO - Entry Price: 2015.64 --- Current Price: 2015.64 --- Current Profit: 0.0
+2023-11-21 08:51:30,691 - INFO - Entry Price: 2015.64 --- Current Price: 2015.63 --- Current Profit: -0.009999999999990905
+2023-11-21 08:51:33,194 - INFO - Entry Price: 2015.64 --- Current Price: 2015.46 --- Current Profit: -0.18000000000006366
+2023-11-21 08:51:35,662 - INFO - Entry Price: 2015.64 --- Current Price: 2015.58 --- Current Profit: -0.060000000000172804
+2023-11-21 08:51:38,037 - INFO - Entry Price: 2015.64 --- Current Price: 2015.60 --- Current Profit: -0.040000000000190994
+2023-11-21 08:51:40,773 - INFO - Entry Price: 2015.64 --- Current Price: 2015.77 --- Current Profit: 0.12999999999988177
+2023-11-21 08:51:43,982 - INFO - Entry Price: 2015.64 --- Current Price: 2015.68 --- Current Profit: 0.03999999999996362
+2023-11-21 08:51:46,703 - INFO - Entry Price: 2015.64 --- Current Price: 2015.60 --- Current Profit: -0.040000000000190994
+2023-11-21 08:51:49,469 - INFO - Entry Price: 2015.64 --- Current Price: 2015.34 --- Current Profit: -0.3000000000001819
+2023-11-21 08:51:49,484 - INFO - Position closed
+2023-11-21 08:53:23,030 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.1
+2023-11-21 08:53:41,364 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 08:53:59,710 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.1
+2023-11-21 08:54:18,035 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 08:54:36,858 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.0
+2023-11-21 08:54:55,150 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.5
+2023-11-21 08:55:13,538 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.0
+2023-11-21 08:55:31,882 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 08:55:50,198 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 08:56:08,536 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 08:56:26,811 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 08:56:45,525 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.8
+2023-11-21 08:57:03,888 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.1
+2023-11-21 08:57:22,229 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 08:57:40,565 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 08:57:58,885 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 08:58:17,182 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 08:58:35,770 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 08:58:54,132 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 08:59:12,467 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.3
+2023-11-21 08:59:30,804 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 08:59:49,157 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 09:00:07,510 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.4
+2023-11-21 09:00:26,354 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.6
+2023-11-21 09:00:45,151 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.4
+2023-11-21 09:01:03,472 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-21 09:01:21,813 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.0
+2023-11-21 09:01:40,176 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:01:58,489 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:02:17,981 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:02:36,332 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.6
+2023-11-21 09:02:54,659 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.3
+2023-11-21 09:03:12,926 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.3
+2023-11-21 09:03:31,462 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 09:03:49,783 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:04:08,081 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.2
+2023-11-21 09:04:26,797 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.9
+2023-11-21 09:04:45,147 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 09:05:03,409 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 09:05:21,704 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.2
+2023-11-21 09:05:40,000 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-21 09:05:58,301 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.3
+2023-11-21 09:06:16,623 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.0
+2023-11-21 09:06:34,914 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.8
+2023-11-21 09:06:53,224 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.0
+2023-11-21 09:07:11,579 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.8
+2023-11-21 09:07:29,863 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.7
+2023-11-21 09:07:48,123 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.6
+2023-11-21 09:08:06,472 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.5
+2023-11-21 09:08:24,769 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.7
+2023-11-21 09:08:43,319 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.3
+2023-11-21 09:09:02,132 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.3
+2023-11-21 09:09:20,463 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.5
+2023-11-21 09:09:38,801 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 09:09:57,136 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.9
+2023-11-21 09:10:15,442 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.2
+2023-11-21 09:10:33,800 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 09:10:52,575 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.4
+2023-11-21 09:11:10,896 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.4
+2023-11-21 09:11:29,245 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 09:11:47,568 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.4
+2023-11-21 09:12:06,400 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 09:12:24,762 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 09:12:43,104 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.0
+2023-11-21 09:13:01,425 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 09:13:19,752 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 09:13:38,569 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2017.6$
+2023-11-21 09:13:38,571 - INFO - Buying ETHUSDT for price 2017.6
+2023-11-21 09:13:40,196 - INFO - Entry Price: 2017.62 --- Current Price: 2017.62 --- Current Profit: 0.0
+2023-11-21 09:13:42,923 - INFO - Entry Price: 2017.62 --- Current Price: 2017.63 --- Current Profit: 0.010000000000218279
+2023-11-21 09:13:45,694 - INFO - Entry Price: 2017.62 --- Current Price: 2017.63 --- Current Profit: 0.010000000000218279
+2023-11-21 09:13:48,164 - INFO - Entry Price: 2017.62 --- Current Price: 2017.64 --- Current Profit: 0.020000000000209184
+2023-11-21 09:13:50,734 - INFO - Entry Price: 2017.62 --- Current Price: 2017.64 --- Current Profit: 0.020000000000209184
+2023-11-21 09:13:53,242 - INFO - Entry Price: 2017.62 --- Current Price: 2017.64 --- Current Profit: 0.020000000000209184
+2023-11-21 09:13:55,562 - INFO - Entry Price: 2017.62 --- Current Price: 2017.19 --- Current Profit: -0.4299999999998363
+2023-11-21 09:13:57,995 - INFO - Entry Price: 2017.62 --- Current Price: 2017.19 --- Current Profit: -0.4299999999998363
+2023-11-21 09:14:00,365 - INFO - Entry Price: 2017.62 --- Current Price: 2017.63 --- Current Profit: 0.010000000000218279
+2023-11-21 09:14:03,067 - INFO - Entry Price: 2017.62 --- Current Price: 2017.63 --- Current Profit: 0.010000000000218279
+2023-11-21 09:14:05,496 - INFO - Entry Price: 2017.62 --- Current Price: 2017.73 --- Current Profit: 0.11000000000012733
+2023-11-21 09:14:08,121 - INFO - Entry Price: 2017.62 --- Current Price: 2017.63 --- Current Profit: 0.010000000000218279
+2023-11-21 09:14:10,638 - INFO - Entry Price: 2017.62 --- Current Price: 2017.93 --- Current Profit: 0.3100000000001728
+2023-11-21 09:14:13,237 - INFO - Entry Price: 2017.62 --- Current Price: 2018.00 --- Current Profit: 0.38000000000010914
+2023-11-21 09:14:15,639 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:14:18,085 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:14:20,563 - INFO - Entry Price: 2017.62 --- Current Price: 2018.10 --- Current Profit: 0.4800000000000182
+2023-11-21 09:14:23,266 - INFO - Entry Price: 2017.62 --- Current Price: 2018.23 --- Current Profit: 0.6100000000001273
+2023-11-21 09:14:26,145 - INFO - Entry Price: 2017.62 --- Current Price: 2018.37 --- Current Profit: 0.75
+2023-11-21 09:14:28,517 - INFO - Entry Price: 2017.62 --- Current Price: 2018.44 --- Current Profit: 0.8200000000001637
+2023-11-21 09:14:30,842 - INFO - Entry Price: 2017.62 --- Current Price: 2018.37 --- Current Profit: 0.75
+2023-11-21 09:14:34,029 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:14:36,473 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:14:38,983 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:14:41,464 - INFO - Entry Price: 2017.62 --- Current Price: 2018.54 --- Current Profit: 0.9200000000000728
+2023-11-21 09:14:43,950 - INFO - Entry Price: 2017.62 --- Current Price: 2018.61 --- Current Profit: 0.9900000000000091
+2023-11-21 09:14:46,471 - INFO - Entry Price: 2017.62 --- Current Price: 2018.61 --- Current Profit: 0.9900000000000091
+2023-11-21 09:14:49,234 - INFO - Entry Price: 2017.62 --- Current Price: 2018.60 --- Current Profit: 0.9800000000000182
+2023-11-21 09:14:51,635 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:14:54,096 - INFO - Entry Price: 2017.62 --- Current Price: 2018.60 --- Current Profit: 0.9800000000000182
+2023-11-21 09:14:56,498 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:14:59,115 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:15:01,732 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:15:04,134 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:15:06,712 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:15:09,348 - INFO - Entry Price: 2017.62 --- Current Price: 2018.12 --- Current Profit: 0.5
+2023-11-21 09:15:11,815 - INFO - Entry Price: 2017.62 --- Current Price: 2017.80 --- Current Profit: 0.18000000000006366
+2023-11-21 09:15:14,512 - INFO - Entry Price: 2017.62 --- Current Price: 2017.97 --- Current Profit: 0.3500000000001364
+2023-11-21 09:15:16,901 - INFO - Entry Price: 2017.62 --- Current Price: 2018.15 --- Current Profit: 0.5300000000002001
+2023-11-21 09:15:19,615 - INFO - Entry Price: 2017.62 --- Current Price: 2018.15 --- Current Profit: 0.5300000000002001
+2023-11-21 09:15:22,258 - INFO - Entry Price: 2017.62 --- Current Price: 2018.41 --- Current Profit: 0.790000000000191
+2023-11-21 09:15:24,701 - INFO - Entry Price: 2017.62 --- Current Price: 2018.50 --- Current Profit: 0.8800000000001091
+2023-11-21 09:15:27,255 - INFO - Entry Price: 2017.62 --- Current Price: 2018.53 --- Current Profit: 0.9100000000000819
+2023-11-21 09:15:30,391 - INFO - Entry Price: 2017.62 --- Current Price: 2018.54 --- Current Profit: 0.9200000000000728
+2023-11-21 09:15:32,758 - INFO - Entry Price: 2017.62 --- Current Price: 2018.54 --- Current Profit: 0.9200000000000728
+2023-11-21 09:15:35,324 - INFO - Entry Price: 2017.62 --- Current Price: 2018.89 --- Current Profit: 1.2700000000002092
+2023-11-21 09:15:37,925 - INFO - Entry Price: 2017.62 --- Current Price: 2018.91 --- Current Profit: 1.290000000000191
+2023-11-21 09:15:40,961 - INFO - Entry Price: 2017.62 --- Current Price: 2018.77 --- Current Profit: 1.150000000000091
+2023-11-21 09:15:43,581 - INFO - Entry Price: 2017.62 --- Current Price: 2018.78 --- Current Profit: 1.1600000000000819
+2023-11-21 09:15:46,236 - INFO - Entry Price: 2017.62 --- Current Price: 2018.78 --- Current Profit: 1.1600000000000819
+2023-11-21 09:15:48,570 - INFO - Entry Price: 2017.62 --- Current Price: 2018.48 --- Current Profit: 0.8600000000001273
+2023-11-21 09:15:51,271 - INFO - Entry Price: 2017.62 --- Current Price: 2018.49 --- Current Profit: 0.8700000000001182
+2023-11-21 09:15:53,981 - INFO - Entry Price: 2017.62 --- Current Price: 2018.53 --- Current Profit: 0.9100000000000819
+2023-11-21 09:15:56,716 - INFO - Entry Price: 2017.62 --- Current Price: 2018.52 --- Current Profit: 0.900000000000091
+2023-11-21 09:15:59,331 - INFO - Entry Price: 2017.62 --- Current Price: 2018.52 --- Current Profit: 0.900000000000091
+2023-11-21 09:16:02,061 - INFO - Entry Price: 2017.62 --- Current Price: 2018.54 --- Current Profit: 0.9200000000000728
+2023-11-21 09:16:05,204 - INFO - Entry Price: 2017.62 --- Current Price: 2018.58 --- Current Profit: 0.9600000000000364
+2023-11-21 09:16:07,732 - INFO - Entry Price: 2017.62 --- Current Price: 2018.59 --- Current Profit: 0.9700000000000273
+2023-11-21 09:16:10,263 - INFO - Entry Price: 2017.62 --- Current Price: 2018.59 --- Current Profit: 0.9700000000000273
+2023-11-21 09:16:12,838 - INFO - Entry Price: 2017.62 --- Current Price: 2018.61 --- Current Profit: 0.9900000000000091
+2023-11-21 09:16:15,520 - INFO - Entry Price: 2017.62 --- Current Price: 2018.08 --- Current Profit: 0.4600000000000364
+2023-11-21 09:16:18,083 - INFO - Entry Price: 2017.62 --- Current Price: 2018.09 --- Current Profit: 0.4700000000000273
+2023-11-21 09:16:20,806 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:23,228 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:25,732 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:28,405 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:31,030 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:33,676 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:36,181 - INFO - Entry Price: 2017.62 --- Current Price: 2017.91 --- Current Profit: 0.290000000000191
+2023-11-21 09:16:38,560 - INFO - Entry Price: 2017.62 --- Current Price: 2017.86 --- Current Profit: 0.2400000000000091
+2023-11-21 09:16:41,811 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:44,435 - INFO - Entry Price: 2017.62 --- Current Price: 2018.01 --- Current Profit: 0.39000000000010004
+2023-11-21 09:16:46,994 - INFO - Entry Price: 2017.62 --- Current Price: 2018.00 --- Current Profit: 0.38000000000010914
+2023-11-21 09:16:49,760 - INFO - Entry Price: 2017.62 --- Current Price: 2017.60 --- Current Profit: -0.01999999999998181
+2023-11-21 09:16:52,349 - INFO - Entry Price: 2017.62 --- Current Price: 2016.91 --- Current Profit: -0.709999999999809
+2023-11-21 09:16:54,978 - INFO - Entry Price: 2017.62 --- Current Price: 2016.91 --- Current Profit: -0.709999999999809
+2023-11-21 09:16:57,592 - INFO - Entry Price: 2017.62 --- Current Price: 2016.88 --- Current Profit: -0.7399999999997817
+2023-11-21 09:17:00,368 - INFO - Entry Price: 2017.62 --- Current Price: 2016.75 --- Current Profit: -0.8699999999998909
+2023-11-21 09:17:03,010 - INFO - Entry Price: 2017.62 --- Current Price: 2016.61 --- Current Profit: -1.009999999999991
+2023-11-21 09:17:05,326 - INFO - Entry Price: 2017.62 --- Current Price: 2017.00 --- Current Profit: -0.6199999999998909
+2023-11-21 09:17:07,925 - INFO - Entry Price: 2017.62 --- Current Price: 2017.47 --- Current Profit: -0.14999999999986358
+2023-11-21 09:17:10,505 - INFO - Entry Price: 2017.62 --- Current Price: 2017.17 --- Current Profit: -0.4499999999998181
+2023-11-21 09:17:12,919 - INFO - Entry Price: 2017.62 --- Current Price: 2017.17 --- Current Profit: -0.4499999999998181
+2023-11-21 09:17:15,628 - INFO - Entry Price: 2017.62 --- Current Price: 2016.78 --- Current Profit: -0.8399999999999181
+2023-11-21 09:17:18,282 - INFO - Entry Price: 2017.62 --- Current Price: 2016.78 --- Current Profit: -0.8399999999999181
+2023-11-21 09:17:21,028 - INFO - Entry Price: 2017.62 --- Current Price: 2016.58 --- Current Profit: -1.0399999999999636
+2023-11-21 09:17:23,452 - INFO - Entry Price: 2017.62 --- Current Price: 2016.58 --- Current Profit: -1.0399999999999636
+2023-11-21 09:17:26,195 - INFO - Entry Price: 2017.62 --- Current Price: 2016.02 --- Current Profit: -1.599999999999909
+2023-11-21 09:17:28,541 - INFO - Entry Price: 2017.62 --- Current Price: 2016.00 --- Current Profit: -1.6199999999998909
+2023-11-21 09:17:30,899 - INFO - Entry Price: 2017.62 --- Current Price: 2015.99 --- Current Profit: -1.6299999999998818
+2023-11-21 09:17:33,343 - INFO - Entry Price: 2017.62 --- Current Price: 2015.90 --- Current Profit: -1.7199999999998
+2023-11-21 09:20:06,456 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.6
+2023-11-21 09:20:24,715 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.2
+2023-11-21 09:20:43,065 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.6
+2023-11-21 09:21:01,899 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.8
+2023-11-21 09:21:20,189 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.9
+2023-11-21 09:21:38,566 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.1
+2023-11-21 09:21:56,882 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.0
+2023-11-21 09:22:15,193 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.6
+2023-11-21 09:22:33,532 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 09:22:51,843 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 09:23:10,667 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 09:23:28,955 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.9
+2023-11-21 09:23:47,279 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.4
+2023-11-21 09:24:05,630 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 09:24:23,947 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 09:24:42,264 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 09:25:00,608 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 09:25:19,348 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 09:25:37,690 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.1
+2023-11-21 09:25:56,030 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 09:26:14,357 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 09:26:33,181 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 09:26:52,028 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.1
+2023-11-21 09:27:10,358 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.9
+2023-11-21 09:27:28,676 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 09:27:47,023 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:28:05,816 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:28:24,145 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.6
+2023-11-21 09:28:42,478 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:29:00,845 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 09:29:19,158 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 09:29:37,459 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 09:29:56,158 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 09:30:14,461 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 09:30:32,824 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.7
+2023-11-21 09:30:51,132 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 09:31:09,476 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 09:31:27,842 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.4
+2023-11-21 09:31:46,165 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 09:32:04,984 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 09:32:23,296 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:32:41,615 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.8
+2023-11-21 09:32:59,916 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 09:33:18,251 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 09:33:36,589 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 09:33:54,904 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.4
+2023-11-21 09:34:13,203 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.7
+2023-11-21 09:34:31,539 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.7
+2023-11-21 09:34:49,879 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.8
+2023-11-21 09:35:08,177 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.1
+2023-11-21 09:35:26,477 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.6
+2023-11-21 09:35:44,786 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-21 09:36:03,113 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 09:36:21,424 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.0
+2023-11-21 09:36:39,715 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.1
+2023-11-21 09:36:58,020 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 09:37:16,349 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-21 09:37:34,647 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.0
+2023-11-21 09:37:53,004 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.5
+2023-11-21 09:38:11,319 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.3
+2023-11-21 09:38:29,649 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.9
+2023-11-21 09:38:47,963 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.5
+2023-11-21 09:39:06,266 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.3
+2023-11-21 09:39:24,564 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.1
+2023-11-21 09:39:43,987 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-21 09:40:02,523 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 09:40:21,355 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.2
+2023-11-21 09:40:39,692 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.1
+2023-11-21 09:40:57,999 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.8
+2023-11-21 09:41:16,316 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 09:41:34,660 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.6
+2023-11-21 09:41:52,989 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.1
+2023-11-21 09:42:11,284 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.6
+2023-11-21 09:42:29,624 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.6
+2023-11-21 09:42:47,925 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.4
+2023-11-21 09:43:06,289 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.6
+2023-11-21 09:43:24,648 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.0
+2023-11-21 09:43:42,983 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.8
+2023-11-21 09:44:01,299 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.0
+2023-11-21 09:44:19,607 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.5
+2023-11-21 09:44:37,934 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.2
+2023-11-21 09:44:56,197 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.0
+2023-11-21 09:45:14,502 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.1
+2023-11-21 09:45:32,857 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 09:45:52,817 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.3
+2023-11-21 09:46:11,152 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.3
+2023-11-21 09:46:29,521 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.7
+2023-11-21 09:46:47,810 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.9
+2023-11-21 09:47:06,158 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.7
+2023-11-21 09:47:24,507 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.0
+2023-11-21 09:47:42,861 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.2
+2023-11-21 09:48:01,229 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.0
+2023-11-21 09:48:19,555 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.2
+2023-11-21 09:48:37,849 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.4
+2023-11-21 09:48:56,178 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.1
+2023-11-21 09:49:14,973 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-21 09:49:33,315 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 09:49:51,583 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.3
+2023-11-21 09:50:10,175 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.9
+2023-11-21 10:09:07,771 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.4
+2023-11-21 10:09:26,085 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.1
+2023-11-21 10:09:44,392 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.1
+2023-11-21 10:10:03,239 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2014.2$
+2023-11-21 10:10:03,245 - INFO - Buying ETHUSDT for price 2014.2
+2023-11-21 10:10:04,879 - INFO - Entry Price: 2014.25 --- Current Price: 2014.25 --- Current Profit: 0.0
+2023-11-21 10:10:08,650 - INFO - Entry Price: 2014.25 --- Current Price: 2014.16 --- Current Profit: -0.08999999999991815
+2023-11-21 10:10:11,397 - INFO - Entry Price: 2014.25 --- Current Price: 2014.15 --- Current Profit: -0.09999999999990905
+2023-11-21 10:10:14,010 - INFO - Entry Price: 2014.25 --- Current Price: 2014.90 --- Current Profit: 0.650000000000091
+2023-11-21 10:10:16,527 - INFO - Entry Price: 2014.25 --- Current Price: 2014.90 --- Current Profit: 0.650000000000091
+2023-11-21 10:10:18,889 - INFO - Entry Price: 2014.25 --- Current Price: 2015.26 --- Current Profit: 1.009999999999991
+2023-11-21 10:10:21,523 - INFO - Entry Price: 2014.25 --- Current Price: 2015.16 --- Current Profit: 0.9100000000000819
+2023-11-21 10:10:24,282 - INFO - Entry Price: 2014.25 --- Current Price: 2015.16 --- Current Profit: 0.9100000000000819
+2023-11-21 10:10:26,884 - INFO - Entry Price: 2014.25 --- Current Price: 2015.20 --- Current Profit: 0.9500000000000455
+2023-11-21 10:10:29,609 - INFO - Entry Price: 2014.25 --- Current Price: 2015.21 --- Current Profit: 0.9600000000000364
+2023-11-21 10:10:32,382 - INFO - Entry Price: 2014.25 --- Current Price: 2014.65 --- Current Profit: 0.40000000000009095
+2023-11-21 10:10:35,379 - INFO - Entry Price: 2014.25 --- Current Price: 2014.65 --- Current Profit: 0.40000000000009095
+2023-11-21 10:10:37,726 - INFO - Entry Price: 2014.25 --- Current Price: 2014.70 --- Current Profit: 0.4500000000000455
+2023-11-21 10:10:40,381 - INFO - Entry Price: 2014.25 --- Current Price: 2014.70 --- Current Profit: 0.4500000000000455
+2023-11-21 10:10:43,054 - INFO - Entry Price: 2014.25 --- Current Price: 2014.70 --- Current Profit: 0.4500000000000455
+2023-11-21 10:10:45,650 - INFO - Entry Price: 2014.25 --- Current Price: 2014.75 --- Current Profit: 0.5
+2023-11-21 10:10:48,213 - INFO - Entry Price: 2014.25 --- Current Price: 2015.10 --- Current Profit: 0.849999999999909
+2023-11-21 10:10:50,784 - INFO - Entry Price: 2014.25 --- Current Price: 2015.10 --- Current Profit: 0.849999999999909
+2023-11-21 10:10:53,142 - INFO - Entry Price: 2014.25 --- Current Price: 2015.10 --- Current Profit: 0.849999999999909
+2023-11-21 10:10:55,533 - INFO - Entry Price: 2014.25 --- Current Price: 2015.38 --- Current Profit: 1.1300000000001091
+2023-11-21 10:10:58,003 - INFO - Entry Price: 2014.25 --- Current Price: 2015.38 --- Current Profit: 1.1300000000001091
+2023-11-21 10:11:00,600 - INFO - Entry Price: 2014.25 --- Current Price: 2014.87 --- Current Profit: 0.6199999999998909
+2023-11-21 10:11:03,226 - INFO - Entry Price: 2014.25 --- Current Price: 2014.87 --- Current Profit: 0.6199999999998909
+2023-11-21 10:11:05,601 - INFO - Entry Price: 2014.25 --- Current Price: 2014.87 --- Current Profit: 0.6199999999998909
+2023-11-21 10:11:08,070 - INFO - Entry Price: 2014.25 --- Current Price: 2014.87 --- Current Profit: 0.6199999999998909
+2023-11-21 10:11:10,661 - INFO - Entry Price: 2014.25 --- Current Price: 2014.87 --- Current Profit: 0.6199999999998909
+2023-11-21 10:11:13,132 - INFO - Entry Price: 2014.25 --- Current Price: 2014.86 --- Current Profit: 0.6099999999999
+2023-11-21 10:11:15,880 - INFO - Entry Price: 2014.25 --- Current Price: 2014.86 --- Current Profit: 0.6099999999999
+2023-11-21 10:11:18,591 - INFO - Entry Price: 2014.25 --- Current Price: 2015.17 --- Current Profit: 0.9200000000000728
+2023-11-21 10:11:21,136 - INFO - Entry Price: 2014.25 --- Current Price: 2015.17 --- Current Profit: 0.9200000000000728
+2023-11-21 10:11:23,654 - INFO - Entry Price: 2014.25 --- Current Price: 2015.17 --- Current Profit: 0.9200000000000728
+2023-11-21 10:11:25,982 - INFO - Entry Price: 2014.25 --- Current Price: 2014.98 --- Current Profit: 0.7300000000000182
+2023-11-21 10:11:28,773 - INFO - Entry Price: 2014.25 --- Current Price: 2014.81 --- Current Profit: 0.5599999999999454
+2023-11-21 10:11:31,506 - INFO - Entry Price: 2014.25 --- Current Price: 2014.80 --- Current Profit: 0.5499999999999545
+2023-11-21 10:11:34,066 - INFO - Entry Price: 2014.25 --- Current Price: 2014.56 --- Current Profit: 0.30999999999994543
+2023-11-21 10:11:37,158 - INFO - Entry Price: 2014.25 --- Current Price: 2014.55 --- Current Profit: 0.2999999999999545
+2023-11-21 10:11:40,047 - INFO - Entry Price: 2014.25 --- Current Price: 2014.40 --- Current Profit: 0.15000000000009095
+2023-11-21 10:11:42,873 - INFO - Entry Price: 2014.25 --- Current Price: 2014.40 --- Current Profit: 0.15000000000009095
+2023-11-21 10:11:45,256 - INFO - Entry Price: 2014.25 --- Current Price: 2014.06 --- Current Profit: -0.19000000000005457
+2023-11-21 10:11:47,870 - INFO - Entry Price: 2014.25 --- Current Price: 2014.06 --- Current Profit: -0.19000000000005457
+2023-11-21 10:11:50,415 - INFO - Entry Price: 2014.25 --- Current Price: 2014.05 --- Current Profit: -0.20000000000004547
+2023-11-21 10:11:52,741 - INFO - Entry Price: 2014.25 --- Current Price: 2014.05 --- Current Profit: -0.20000000000004547
+2023-11-21 10:11:55,353 - INFO - Entry Price: 2014.25 --- Current Price: 2014.06 --- Current Profit: -0.19000000000005457
+2023-11-21 10:11:57,698 - INFO - Entry Price: 2014.25 --- Current Price: 2013.91 --- Current Profit: -0.33999999999991815
+2023-11-21 10:12:00,127 - INFO - Entry Price: 2014.25 --- Current Price: 2013.90 --- Current Profit: -0.34999999999990905
+2023-11-21 10:12:02,634 - INFO - Entry Price: 2014.25 --- Current Price: 2013.90 --- Current Profit: -0.34999999999990905
+2023-11-21 10:12:04,981 - INFO - Entry Price: 2014.25 --- Current Price: 2013.90 --- Current Profit: -0.34999999999990905
+2023-11-21 10:12:07,602 - INFO - Entry Price: 2014.25 --- Current Price: 2013.91 --- Current Profit: -0.33999999999991815
+2023-11-21 10:12:10,013 - INFO - Entry Price: 2014.25 --- Current Price: 2013.91 --- Current Profit: -0.33999999999991815
+2023-11-21 10:12:12,771 - INFO - Entry Price: 2014.25 --- Current Price: 2013.91 --- Current Profit: -0.33999999999991815
+2023-11-21 10:12:15,357 - INFO - Entry Price: 2014.25 --- Current Price: 2014.18 --- Current Profit: -0.06999999999993634
+2023-11-21 10:12:17,754 - INFO - Entry Price: 2014.25 --- Current Price: 2014.17 --- Current Profit: -0.07999999999992724
+2023-11-21 10:12:20,260 - INFO - Entry Price: 2014.25 --- Current Price: 2014.27 --- Current Profit: 0.01999999999998181
+2023-11-21 10:12:22,960 - INFO - Entry Price: 2014.25 --- Current Price: 2014.27 --- Current Profit: 0.01999999999998181
+2023-11-21 10:12:25,706 - INFO - Entry Price: 2014.25 --- Current Price: 2014.27 --- Current Profit: 0.01999999999998181
+2023-11-21 10:12:28,419 - INFO - Entry Price: 2014.25 --- Current Price: 2014.28 --- Current Profit: 0.029999999999972715
+2023-11-21 10:12:31,087 - INFO - Entry Price: 2014.25 --- Current Price: 2014.60 --- Current Profit: 0.34999999999990905
+2023-11-21 10:12:33,833 - INFO - Entry Price: 2014.25 --- Current Price: 2014.59 --- Current Profit: 0.33999999999991815
+2023-11-21 10:12:37,632 - INFO - Entry Price: 2014.25 --- Current Price: 2014.59 --- Current Profit: 0.33999999999991815
+2023-11-21 10:12:40,627 - INFO - Entry Price: 2014.25 --- Current Price: 2014.60 --- Current Profit: 0.34999999999990905
+2023-11-21 10:12:43,233 - INFO - Entry Price: 2014.25 --- Current Price: 2014.99 --- Current Profit: 0.7400000000000091
+2023-11-21 10:12:45,890 - INFO - Entry Price: 2014.25 --- Current Price: 2014.99 --- Current Profit: 0.7400000000000091
+2023-11-21 10:12:48,332 - INFO - Entry Price: 2014.25 --- Current Price: 2015.05 --- Current Profit: 0.7999999999999545
+2023-11-21 10:12:50,697 - INFO - Entry Price: 2014.25 --- Current Price: 2015.05 --- Current Profit: 0.7999999999999545
+2023-11-21 10:12:53,174 - INFO - Entry Price: 2014.25 --- Current Price: 2015.05 --- Current Profit: 0.7999999999999545
+2023-11-21 10:12:55,874 - INFO - Entry Price: 2014.25 --- Current Price: 2014.98 --- Current Profit: 0.7300000000000182
+2023-11-21 10:12:58,253 - INFO - Entry Price: 2014.25 --- Current Price: 2015.10 --- Current Profit: 0.849999999999909
+2023-11-21 10:13:00,597 - INFO - Entry Price: 2014.25 --- Current Price: 2014.96 --- Current Profit: 0.7100000000000364
+2023-11-21 10:13:03,001 - INFO - Entry Price: 2014.25 --- Current Price: 2015.10 --- Current Profit: 0.849999999999909
+2023-11-21 10:13:05,502 - INFO - Entry Price: 2014.25 --- Current Price: 2015.15 --- Current Profit: 0.900000000000091
+2023-11-21 10:13:08,242 - INFO - Entry Price: 2014.25 --- Current Price: 2015.15 --- Current Profit: 0.900000000000091
+2023-11-21 10:13:10,993 - INFO - Entry Price: 2014.25 --- Current Price: 2015.32 --- Current Profit: 1.0699999999999363
+2023-11-21 10:13:13,435 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:13:15,765 - INFO - Entry Price: 2014.25 --- Current Price: 2015.32 --- Current Profit: 1.0699999999999363
+2023-11-21 10:13:18,476 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:13:21,250 - INFO - Entry Price: 2014.25 --- Current Price: 2015.36 --- Current Profit: 1.1099999999999
+2023-11-21 10:13:23,730 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:13:26,448 - INFO - Entry Price: 2014.25 --- Current Price: 2015.24 --- Current Profit: 0.9900000000000091
+2023-11-21 10:13:29,276 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:13:31,863 - INFO - Entry Price: 2014.25 --- Current Price: 2015.23 --- Current Profit: 0.9800000000000182
+2023-11-21 10:13:34,529 - INFO - Entry Price: 2014.25 --- Current Price: 2015.24 --- Current Profit: 0.9900000000000091
+2023-11-21 10:13:37,139 - INFO - Entry Price: 2014.25 --- Current Price: 2015.24 --- Current Profit: 0.9900000000000091
+2023-11-21 10:13:39,622 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:13:42,083 - INFO - Entry Price: 2014.25 --- Current Price: 2015.42 --- Current Profit: 1.1700000000000728
+2023-11-21 10:13:44,570 - INFO - Entry Price: 2014.25 --- Current Price: 2015.42 --- Current Profit: 1.1700000000000728
+2023-11-21 10:13:47,185 - INFO - Entry Price: 2014.25 --- Current Price: 2015.50 --- Current Profit: 1.25
+2023-11-21 10:13:49,684 - INFO - Entry Price: 2014.25 --- Current Price: 2015.36 --- Current Profit: 1.1099999999999
+2023-11-21 10:13:52,343 - INFO - Entry Price: 2014.25 --- Current Price: 2015.37 --- Current Profit: 1.1199999999998909
+2023-11-21 10:13:54,814 - INFO - Entry Price: 2014.25 --- Current Price: 2015.44 --- Current Profit: 1.1900000000000546
+2023-11-21 10:13:57,144 - INFO - Entry Price: 2014.25 --- Current Price: 2015.44 --- Current Profit: 1.1900000000000546
+2023-11-21 10:13:59,594 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:14:01,948 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:14:05,751 - INFO - Entry Price: 2014.25 --- Current Price: 2015.29 --- Current Profit: 1.0399999999999636
+2023-11-21 10:14:08,516 - INFO - Entry Price: 2014.25 --- Current Price: 2015.29 --- Current Profit: 1.0399999999999636
+2023-11-21 10:14:10,899 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:14:13,621 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:14:16,146 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:14:18,932 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:14:21,707 - INFO - Entry Price: 2014.25 --- Current Price: 2015.31 --- Current Profit: 1.0599999999999454
+2023-11-21 10:14:24,018 - INFO - Entry Price: 2014.25 --- Current Price: 2015.25 --- Current Profit: 1.0
+2023-11-21 10:14:27,124 - INFO - Entry Price: 2014.25 --- Current Price: 2015.25 --- Current Profit: 1.0
+2023-11-21 10:14:29,568 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:14:32,010 - INFO - Entry Price: 2014.25 --- Current Price: 2015.30 --- Current Profit: 1.0499999999999545
+2023-11-21 10:14:34,483 - INFO - Entry Price: 2014.25 --- Current Price: 2015.48 --- Current Profit: 1.2300000000000182
+2023-11-21 10:14:36,867 - INFO - Entry Price: 2014.25 --- Current Price: 2015.48 --- Current Profit: 1.2300000000000182
+2023-11-21 10:14:39,854 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:14:42,931 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:14:45,624 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:14:48,184 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:14:50,819 - INFO - Entry Price: 2014.25 --- Current Price: 2015.35 --- Current Profit: 1.099999999999909
+2023-11-21 10:14:53,488 - INFO - Entry Price: 2014.25 --- Current Price: 2015.36 --- Current Profit: 1.1099999999999
+2023-11-21 10:14:56,008 - INFO - Entry Price: 2014.25 --- Current Price: 2015.28 --- Current Profit: 1.0299999999999727
+2023-11-21 10:14:58,647 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:15:01,471 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:15:03,822 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:15:06,392 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:15:09,144 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:15:11,612 - INFO - Entry Price: 2014.25 --- Current Price: 2015.10 --- Current Profit: 0.849999999999909
+2023-11-21 10:15:13,980 - INFO - Entry Price: 2014.25 --- Current Price: 2015.25 --- Current Profit: 1.0
+2023-11-21 10:15:16,445 - INFO - Entry Price: 2014.25 --- Current Price: 2015.25 --- Current Profit: 1.0
+2023-11-21 10:15:19,065 - INFO - Entry Price: 2014.25 --- Current Price: 2015.42 --- Current Profit: 1.1700000000000728
+2023-11-21 10:15:21,600 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:15:24,140 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:15:26,840 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:15:29,553 - INFO - Entry Price: 2014.25 --- Current Price: 2015.19 --- Current Profit: 0.9400000000000546
+2023-11-21 10:15:31,988 - INFO - Entry Price: 2014.25 --- Current Price: 2015.01 --- Current Profit: 0.7599999999999909
+2023-11-21 10:15:34,391 - INFO - Entry Price: 2014.25 --- Current Price: 2015.35 --- Current Profit: 1.099999999999909
+2023-11-21 10:15:36,960 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:15:40,189 - INFO - Entry Price: 2014.25 --- Current Price: 2015.35 --- Current Profit: 1.099999999999909
+2023-11-21 10:15:42,502 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:15:45,136 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:15:47,464 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:15:50,152 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:15:52,681 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:15:55,317 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:15:57,799 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:16:00,179 - INFO - Entry Price: 2014.25 --- Current Price: 2015.49 --- Current Profit: 1.240000000000009
+2023-11-21 10:16:02,790 - INFO - Entry Price: 2014.25 --- Current Price: 2015.35 --- Current Profit: 1.099999999999909
+2023-11-21 10:16:05,217 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:07,779 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:10,157 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:12,762 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:15,331 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:17,675 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:20,040 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:16:22,598 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:25,160 - INFO - Entry Price: 2014.25 --- Current Price: 2015.34 --- Current Profit: 1.0899999999999181
+2023-11-21 10:16:27,510 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:16:29,864 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:16:32,238 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:16:34,585 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:16:36,942 - INFO - Entry Price: 2014.25 --- Current Price: 2015.52 --- Current Profit: 1.2699999999999818
+2023-11-21 10:16:39,299 - INFO - Entry Price: 2014.25 --- Current Price: 2015.33 --- Current Profit: 1.0799999999999272
+2023-11-21 10:16:41,763 - INFO - Entry Price: 2014.25 --- Current Price: 2015.52 --- Current Profit: 1.2699999999999818
+2023-11-21 10:16:44,350 - INFO - Entry Price: 2014.25 --- Current Price: 2015.51 --- Current Profit: 1.259999999999991
+2023-11-21 10:16:46,750 - INFO - Entry Price: 2014.25 --- Current Price: 2015.51 --- Current Profit: 1.259999999999991
+2023-11-21 10:16:49,219 - INFO - Entry Price: 2014.25 --- Current Price: 2015.52 --- Current Profit: 1.2699999999999818
+2023-11-21 10:16:51,853 - INFO - Entry Price: 2014.25 --- Current Price: 2015.52 --- Current Profit: 1.2699999999999818
+2023-11-21 10:16:54,564 - INFO - Entry Price: 2014.25 --- Current Price: 2015.51 --- Current Profit: 1.259999999999991
+2023-11-21 10:16:57,265 - INFO - Entry Price: 2014.25 --- Current Price: 2015.51 --- Current Profit: 1.259999999999991
+2023-11-21 10:17:00,039 - INFO - Entry Price: 2014.25 --- Current Price: 2015.51 --- Current Profit: 1.259999999999991
+2023-11-21 10:17:02,560 - INFO - Entry Price: 2014.25 --- Current Price: 2015.52 --- Current Profit: 1.2699999999999818
+2023-11-21 10:17:05,144 - INFO - Entry Price: 2014.25 --- Current Price: 2015.52 --- Current Profit: 1.2699999999999818
+2023-11-21 10:17:07,529 - INFO - Entry Price: 2014.25 --- Current Price: 2015.51 --- Current Profit: 1.259999999999991
+2023-11-21 10:17:10,249 - INFO - Entry Price: 2014.25 --- Current Price: 2015.23 --- Current Profit: 0.9800000000000182
+2023-11-21 10:17:12,964 - INFO - Entry Price: 2014.25 --- Current Price: 2015.23 --- Current Profit: 0.9800000000000182
+2023-11-21 10:17:15,379 - INFO - Entry Price: 2014.25 --- Current Price: 2015.60 --- Current Profit: 1.349999999999909
+2023-11-21 10:17:17,957 - INFO - Entry Price: 2014.25 --- Current Price: 2015.60 --- Current Profit: 1.349999999999909
+2023-11-21 10:17:20,527 - INFO - Entry Price: 2014.25 --- Current Price: 2015.95 --- Current Profit: 1.7000000000000455
+2023-11-21 10:17:22,880 - INFO - Entry Price: 2014.25 --- Current Price: 2015.94 --- Current Profit: 1.6900000000000546
+2023-11-21 10:17:25,196 - INFO - Entry Price: 2014.25 --- Current Price: 2015.99 --- Current Profit: 1.740000000000009
+2023-11-21 10:17:27,581 - INFO - Entry Price: 2014.25 --- Current Price: 2015.99 --- Current Profit: 1.740000000000009
+2023-11-21 10:17:30,338 - INFO - Entry Price: 2014.25 --- Current Price: 2016.10 --- Current Profit: 1.849999999999909
+2023-11-21 10:17:32,893 - INFO - Entry Price: 2014.25 --- Current Price: 2016.10 --- Current Profit: 1.849999999999909
+2023-11-21 10:17:35,426 - INFO - Entry Price: 2014.25 --- Current Price: 2016.26 --- Current Profit: 2.009999999999991
+2023-11-21 10:17:37,836 - INFO - Entry Price: 2014.25 --- Current Price: 2016.13 --- Current Profit: 1.8800000000001091
+2023-11-21 10:17:41,019 - INFO - Entry Price: 2014.25 --- Current Price: 2015.99 --- Current Profit: 1.740000000000009
+2023-11-21 10:17:43,562 - INFO - Entry Price: 2014.25 --- Current Price: 2016.16 --- Current Profit: 1.9100000000000819
+2023-11-21 10:17:45,959 - INFO - Entry Price: 2014.25 --- Current Price: 2016.15 --- Current Profit: 1.900000000000091
+2023-11-21 10:17:48,481 - INFO - Entry Price: 2014.25 --- Current Price: 2016.16 --- Current Profit: 1.9100000000000819
+2023-11-21 10:17:51,099 - INFO - Entry Price: 2014.25 --- Current Price: 2016.15 --- Current Profit: 1.900000000000091
+2023-11-21 10:17:53,674 - INFO - Entry Price: 2014.25 --- Current Price: 2016.16 --- Current Profit: 1.9100000000000819
+2023-11-21 10:17:56,260 - INFO - Entry Price: 2014.25 --- Current Price: 2016.16 --- Current Profit: 1.9100000000000819
+2023-11-21 10:17:58,656 - INFO - Entry Price: 2014.25 --- Current Price: 2016.15 --- Current Profit: 1.900000000000091
+2023-11-21 10:18:00,991 - INFO - Entry Price: 2014.25 --- Current Price: 2016.25 --- Current Profit: 2.0
+2023-11-21 10:18:03,407 - INFO - Entry Price: 2014.25 --- Current Price: 2016.25 --- Current Profit: 2.0
+2023-11-21 10:18:06,026 - INFO - Entry Price: 2014.25 --- Current Price: 2016.41 --- Current Profit: 2.160000000000082
+2023-11-21 10:18:08,371 - INFO - Entry Price: 2014.25 --- Current Price: 2016.42 --- Current Profit: 2.1700000000000728
+2023-11-21 10:18:10,797 - INFO - Entry Price: 2014.25 --- Current Price: 2016.42 --- Current Profit: 2.1700000000000728
+2023-11-21 10:18:13,309 - INFO - Entry Price: 2014.25 --- Current Price: 2016.52 --- Current Profit: 2.269999999999982
+2023-11-21 10:18:15,747 - INFO - Entry Price: 2014.25 --- Current Price: 2016.45 --- Current Profit: 2.2000000000000455
+2023-11-21 10:18:18,187 - INFO - Entry Price: 2014.25 --- Current Price: 2016.53 --- Current Profit: 2.2799999999999727
+2023-11-21 10:18:20,784 - INFO - Entry Price: 2014.25 --- Current Price: 2016.53 --- Current Profit: 2.2799999999999727
+2023-11-21 10:18:23,406 - INFO - Entry Price: 2014.25 --- Current Price: 2016.53 --- Current Profit: 2.2799999999999727
+2023-11-21 10:18:25,898 - INFO - Entry Price: 2014.25 --- Current Price: 2016.53 --- Current Profit: 2.2799999999999727
+2023-11-21 10:18:28,387 - INFO - Entry Price: 2014.25 --- Current Price: 2017.20 --- Current Profit: 2.9500000000000455
+2023-11-21 10:18:31,517 - INFO - Entry Price: 2014.25 --- Current Price: 2017.16 --- Current Profit: 2.910000000000082
+2023-11-21 10:18:33,877 - INFO - Entry Price: 2014.25 --- Current Price: 2017.16 --- Current Profit: 2.910000000000082
+2023-11-21 10:18:36,590 - INFO - Entry Price: 2014.25 --- Current Price: 2017.08 --- Current Profit: 2.8299999999999272
+2023-11-21 10:18:39,335 - INFO - Entry Price: 2014.25 --- Current Price: 2017.03 --- Current Profit: 2.7799999999999727
+2023-11-21 10:18:42,503 - INFO - Entry Price: 2014.25 --- Current Price: 2017.03 --- Current Profit: 2.7799999999999727
+2023-11-21 10:18:45,670 - INFO - Entry Price: 2014.25 --- Current Price: 2016.95 --- Current Profit: 2.7000000000000455
+2023-11-21 10:18:49,341 - INFO - Entry Price: 2014.25 --- Current Price: 2017.21 --- Current Profit: 2.9600000000000364
+2023-11-21 10:18:51,934 - INFO - Entry Price: 2014.25 --- Current Price: 2017.21 --- Current Profit: 2.9600000000000364
+2023-11-21 10:18:54,326 - INFO - Entry Price: 2014.25 --- Current Price: 2017.09 --- Current Profit: 2.839999999999918
+2023-11-21 10:18:57,449 - INFO - Entry Price: 2014.25 --- Current Price: 2017.72 --- Current Profit: 3.4700000000000273
+2023-11-21 10:19:00,161 - INFO - Entry Price: 2014.25 --- Current Price: 2018.24 --- Current Profit: 3.990000000000009
+2023-11-21 10:19:02,552 - INFO - Entry Price: 2014.25 --- Current Price: 2018.45 --- Current Profit: 4.2000000000000455
+2023-11-21 10:19:02,568 - INFO - Position closed
+2023-11-21 10:49:21,945 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.9
+2023-11-21 10:49:40,331 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.9
+2023-11-21 10:49:58,656 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.9
+2023-11-21 10:50:17,368 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.9
+2023-11-21 10:50:35,704 - INFO - ETHUSDT price doesnt changed enough! Current price: 2017.1
+2023-11-21 10:50:54,030 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.2
+2023-11-21 10:51:12,349 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 10:51:31,156 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.6
+2023-11-21 10:51:49,440 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.0
+2023-11-21 10:52:07,733 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 10:52:26,038 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:52:44,358 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.2
+2023-11-21 10:53:02,706 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 10:53:16,467 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 10:53:21,060 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 10:53:35,269 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.2
+2023-11-21 10:53:39,408 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:53:53,582 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 10:53:57,743 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 10:54:11,908 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.1
+2023-11-21 10:54:16,067 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.1
+2023-11-21 10:54:30,194 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.2
+2023-11-21 10:54:34,917 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 10:54:48,546 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 10:54:53,255 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 10:55:06,843 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 10:55:11,553 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.1
+2023-11-21 10:55:25,189 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 10:55:29,861 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 10:55:43,516 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 10:55:48,168 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 10:56:01,845 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 10:56:06,499 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 10:56:20,626 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 10:56:24,801 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 10:56:39,479 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.2
+2023-11-21 10:56:43,118 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.2
+2023-11-21 10:56:57,810 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.5
+2023-11-21 10:57:01,452 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 10:57:16,147 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.3
+2023-11-21 10:57:20,255 - INFO - ETHUSDT price doesnt changed enough! Current price: 2016.0
+2023-11-21 10:57:34,475 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 10:57:38,560 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.6
+2023-11-21 10:57:52,791 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 10:57:56,906 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:58:11,106 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 10:58:15,220 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:58:29,428 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.6
+2023-11-21 10:58:33,575 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.6
+2023-11-21 10:58:49,272 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:58:51,877 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:59:07,600 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:59:10,166 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 10:59:25,921 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.7
+2023-11-21 10:59:28,982 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.9
+2023-11-21 10:59:44,231 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 10:59:47,297 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 11:00:02,534 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 11:00:05,606 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.8
+2023-11-21 11:00:20,849 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.4
+2023-11-21 11:00:24,435 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.4
+2023-11-21 11:00:39,666 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 11:00:42,750 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.5
+2023-11-21 11:00:57,963 - INFO - ETHUSDT price doesnt changed enough! Current price: 2015.3
+2023-11-21 11:01:01,108 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.8
+2023-11-21 11:01:16,299 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 11:01:19,420 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 11:01:35,130 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 11:01:37,732 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 11:01:53,424 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 11:01:56,032 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 11:02:12,108 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-21 11:02:14,339 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.5
+2023-11-21 11:02:30,456 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 11:02:32,682 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.3
+2023-11-21 11:02:48,796 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.3
+2023-11-21 11:02:50,998 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 11:03:07,100 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.9
+2023-11-21 11:03:09,350 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.9
+2023-11-21 11:03:25,427 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.9
+2023-11-21 11:03:27,679 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.9
+2023-11-21 11:03:44,166 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.0
+2023-11-21 11:03:45,993 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.0
+2023-11-21 11:04:02,470 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.0
+2023-11-21 11:04:04,318 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.0
+2023-11-21 11:04:20,784 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-21 11:04:22,673 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-21 11:04:39,104 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.7
+2023-11-21 11:04:40,967 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.6
+2023-11-21 11:04:57,393 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.4
+2023-11-21 11:05:01,300 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.2
+2023-11-21 11:05:15,670 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.6
+2023-11-21 11:05:19,678 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.5
+2023-11-21 11:05:33,973 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.7
+2023-11-21 11:05:38,028 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-21 11:05:52,334 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.7
+2023-11-21 11:05:56,347 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 11:06:10,690 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.8
+2023-11-21 11:06:14,681 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.6
+2023-11-21 11:06:29,506 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 11:06:33,527 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.4
+2023-11-21 11:06:47,810 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 11:06:51,879 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 11:07:06,133 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-21 11:07:10,219 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.5
+2023-11-21 11:07:24,436 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.4
+2023-11-21 11:07:28,511 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.2
+2023-11-21 11:07:42,735 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.8
+2023-11-21 11:07:46,859 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.8
+2023-11-21 11:08:01,074 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.3
+2023-11-21 11:08:05,147 - INFO - ETHUSDT price doesnt changed enough! Current price: 2012.0
+2023-11-21 11:08:19,395 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.9
+2023-11-21 11:08:23,474 - INFO - ETHUSDT goes down for more than 1$
+ Selling ETHUSDT for 2011.7$
+2023-11-21 11:08:23,474 - INFO - Selling ETHUSDT for price 2011.7
+2023-11-21 11:08:25,101 - INFO - Entry Price: 2011.73 --- Current Price: 2011.73 --- Current Profit: 0.0
+2023-11-21 11:08:27,563 - INFO - Entry Price: 2011.73 --- Current Price: 2011.77 --- Current Profit: 0.03999999999996362
+2023-11-21 11:08:29,949 - INFO - Entry Price: 2011.73 --- Current Price: 2011.74 --- Current Profit: 0.009999999999990905
+2023-11-21 11:08:32,478 - INFO - Entry Price: 2011.73 --- Current Price: 2011.74 --- Current Profit: 0.009999999999990905
+2023-11-21 11:08:35,228 - INFO - Entry Price: 2011.73 --- Current Price: 2011.74 --- Current Profit: 0.009999999999990905
+2023-11-21 11:08:37,733 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.7
+2023-11-21 11:08:37,890 - INFO - Entry Price: 2011.73 --- Current Price: 2011.66 --- Current Profit: -0.06999999999993634
+2023-11-21 11:08:40,876 - INFO - Entry Price: 2011.73 --- Current Price: 2011.65 --- Current Profit: -0.07999999999992724
+2023-11-21 11:08:43,377 - INFO - Entry Price: 2011.73 --- Current Price: 2011.37 --- Current Profit: -0.36000000000012733
+2023-11-21 11:08:45,908 - INFO - Entry Price: 2011.73 --- Current Price: 2011.18 --- Current Profit: -0.5499999999999545
+2023-11-21 11:08:48,359 - INFO - Entry Price: 2011.73 --- Current Price: 2011.29 --- Current Profit: -0.44000000000005457
+2023-11-21 11:08:51,070 - INFO - Entry Price: 2011.73 --- Current Price: 2011.28 --- Current Profit: -0.4500000000000455
+2023-11-21 11:08:53,668 - INFO - Entry Price: 2011.73 --- Current Price: 2011.29 --- Current Profit: -0.44000000000005457
+2023-11-21 11:08:56,049 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.2
+2023-11-21 11:08:56,301 - INFO - Entry Price: 2011.73 --- Current Price: 2011.13 --- Current Profit: -0.599999999999909
+2023-11-21 11:08:58,925 - INFO - Entry Price: 2011.73 --- Current Price: 2011.13 --- Current Profit: -0.599999999999909
+2023-11-21 11:09:01,270 - INFO - Entry Price: 2011.73 --- Current Price: 2011.11 --- Current Profit: -0.6200000000001182
+2023-11-21 11:09:03,689 - INFO - Entry Price: 2011.73 --- Current Price: 2011.00 --- Current Profit: -0.7300000000000182
+2023-11-21 11:09:06,401 - INFO - Entry Price: 2011.73 --- Current Price: 2011.00 --- Current Profit: -0.7300000000000182
+2023-11-21 11:09:09,013 - INFO - Entry Price: 2011.73 --- Current Price: 2011.01 --- Current Profit: -0.7200000000000273
+2023-11-21 11:09:11,520 - INFO - Entry Price: 2011.73 --- Current Price: 2011.01 --- Current Profit: -0.7200000000000273
+2023-11-21 11:09:14,015 - INFO - Entry Price: 2011.73 --- Current Price: 2010.98 --- Current Profit: -0.75
+2023-11-21 11:09:14,334 - INFO - ETHUSDT price doesnt changed enough! Current price: 2011.0
+2023-11-21 11:09:16,351 - INFO - Entry Price: 2011.73 --- Current Price: 2010.96 --- Current Profit: -0.7699999999999818
+2023-11-21 11:09:18,993 - INFO - Entry Price: 2011.73 --- Current Price: 2010.96 --- Current Profit: -0.7699999999999818
+2023-11-21 11:09:21,729 - INFO - Entry Price: 2011.73 --- Current Price: 2010.83 --- Current Profit: -0.900000000000091
+2023-11-21 11:09:24,232 - INFO - Entry Price: 2011.73 --- Current Price: 2010.91 --- Current Profit: -0.8199999999999363
+2023-11-21 11:09:26,605 - INFO - Entry Price: 2011.73 --- Current Price: 2010.91 --- Current Profit: -0.8199999999999363
+2023-11-21 11:09:28,933 - INFO - Entry Price: 2011.73 --- Current Price: 2010.56 --- Current Profit: -1.1700000000000728
+2023-11-21 11:09:28,945 - INFO - Position closed
+2023-11-21 11:09:33,143 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.1
+2023-11-21 11:09:51,458 - INFO - ETHUSDT goes up for more than 1$
+ Buying ETHUSDT for 2011.2$
+2023-11-21 11:09:51,462 - INFO - Buying ETHUSDT for price 2011.2
+2023-11-21 11:09:53,096 - INFO - Entry Price: 2011.21 --- Current Price: 2011.60 --- Current Profit: 0.38999999999987267
+2023-11-21 11:09:55,666 - INFO - Entry Price: 2011.21 --- Current Price: 2011.21 --- Current Profit: 0.0
+2023-11-21 11:09:58,162 - INFO - Entry Price: 2011.21 --- Current Price: 2012.04 --- Current Profit: 0.8299999999999272
+2023-11-21 11:10:00,560 - INFO - Entry Price: 2011.21 --- Current Price: 2012.03 --- Current Profit: 0.8199999999999363
+2023-11-21 11:10:03,096 - INFO - Entry Price: 2011.21 --- Current Price: 2012.33 --- Current Profit: 1.1199999999998909
+2023-11-21 11:10:05,575 - INFO - Entry Price: 2011.21 --- Current Price: 2012.33 --- Current Profit: 1.1199999999998909
+2023-11-21 11:10:07,936 - INFO - Entry Price: 2011.21 --- Current Price: 2012.21 --- Current Profit: 1.0
+2023-11-21 11:10:10,545 - INFO - Entry Price: 2011.21 --- Current Price: 2012.59 --- Current Profit: 1.3799999999998818
+2023-11-21 11:10:13,289 - INFO - Entry Price: 2011.21 --- Current Price: 2012.53 --- Current Profit: 1.3199999999999363
+2023-11-21 11:10:15,808 - INFO - Entry Price: 2011.21 --- Current Price: 2012.65 --- Current Profit: 1.4400000000000546
+2023-11-21 11:10:18,177 - INFO - Entry Price: 2011.21 --- Current Price: 2012.64 --- Current Profit: 1.4300000000000637
+2023-11-21 11:10:20,536 - INFO - Entry Price: 2011.21 --- Current Price: 2012.64 --- Current Profit: 1.4300000000000637
+2023-11-21 11:10:23,148 - INFO - Entry Price: 2011.21 --- Current Price: 2012.64 --- Current Profit: 1.4300000000000637
+2023-11-21 11:10:25,694 - INFO - Entry Price: 2011.21 --- Current Price: 2011.43 --- Current Profit: 0.22000000000002728
+2023-11-21 11:10:28,321 - INFO - Entry Price: 2011.21 --- Current Price: 2011.43 --- Current Profit: 0.22000000000002728
+2023-11-21 11:10:30,884 - INFO - Entry Price: 2011.21 --- Current Price: 2011.79 --- Current Profit: 0.5799999999999272
+2023-11-21 11:10:34,046 - INFO - Entry Price: 2011.21 --- Current Price: 2012.27 --- Current Profit: 1.0599999999999454
+2023-11-21 11:10:36,507 - INFO - Entry Price: 2011.21 --- Current Price: 2012.43 --- Current Profit: 1.2200000000000273
+2023-11-21 11:10:39,152 - INFO - Entry Price: 2011.21 --- Current Price: 2011.93 --- Current Profit: 0.7200000000000273
+2023-11-21 11:10:41,493 - INFO - Entry Price: 2011.21 --- Current Price: 2011.82 --- Current Profit: 0.6099999999999
+2023-11-21 11:10:43,829 - INFO - Entry Price: 2011.21 --- Current Price: 2012.23 --- Current Profit: 1.0199999999999818
+2023-11-21 11:10:46,235 - INFO - Entry Price: 2011.21 --- Current Price: 2011.98 --- Current Profit: 0.7699999999999818
+2023-11-21 11:10:48,725 - INFO - Entry Price: 2011.21 --- Current Price: 2011.85 --- Current Profit: 0.6399999999998727
+2023-11-21 11:10:51,134 - INFO - Entry Price: 2011.21 --- Current Price: 2011.85 --- Current Profit: 0.6399999999998727
+2023-11-21 11:10:53,720 - INFO - Entry Price: 2011.21 --- Current Price: 2011.75 --- Current Profit: 0.5399999999999636
+2023-11-21 11:10:56,084 - INFO - Entry Price: 2011.21 --- Current Price: 2011.97 --- Current Profit: 0.7599999999999909
+2023-11-21 11:10:58,581 - INFO - Entry Price: 2011.21 --- Current Price: 2012.05 --- Current Profit: 0.8399999999999181
+2023-11-21 11:11:01,325 - INFO - Entry Price: 2011.21 --- Current Price: 2011.71 --- Current Profit: 0.5
+2023-11-21 11:11:03,692 - INFO - Entry Price: 2011.21 --- Current Price: 2011.71 --- Current Profit: 0.5
+2023-11-21 11:11:06,334 - INFO - Entry Price: 2011.21 --- Current Price: 2011.31 --- Current Profit: 0.09999999999990905
+2023-11-21 11:11:08,883 - INFO - Entry Price: 2011.21 --- Current Price: 2011.31 --- Current Profit: 0.09999999999990905
+2023-11-21 11:11:11,274 - INFO - Entry Price: 2011.21 --- Current Price: 2010.76 --- Current Profit: -0.4500000000000455
+2023-11-21 11:11:13,916 - INFO - Entry Price: 2011.21 --- Current Price: 2010.80 --- Current Profit: -0.41000000000008185
+2023-11-21 11:11:16,477 - INFO - Entry Price: 2011.21 --- Current Price: 2011.12 --- Current Profit: -0.09000000000014552
+2023-11-21 11:11:18,820 - INFO - Entry Price: 2011.21 --- Current Price: 2011.24 --- Current Profit: 0.029999999999972715
+2023-11-21 11:11:21,260 - INFO - Entry Price: 2011.21 --- Current Price: 2011.22 --- Current Profit: 0.009999999999990905
+2023-11-21 11:11:23,587 - INFO - Entry Price: 2011.21 --- Current Price: 2011.22 --- Current Profit: 0.009999999999990905
+2023-11-21 11:11:26,057 - INFO - Entry Price: 2011.21 --- Current Price: 2011.22 --- Current Profit: 0.009999999999990905
+2023-11-21 11:11:28,447 - INFO - Entry Price: 2011.21 --- Current Price: 2010.77 --- Current Profit: -0.44000000000005457
+2023-11-21 11:11:31,138 - INFO - Entry Price: 2011.21 --- Current Price: 2010.77 --- Current Profit: -0.44000000000005457
+2023-11-21 11:11:34,307 - INFO - Entry Price: 2011.21 --- Current Price: 2010.90 --- Current Profit: -0.30999999999994543
+2023-11-21 11:11:37,213 - INFO - Entry Price: 2011.21 --- Current Price: 2011.41 --- Current Profit: 0.20000000000004547
+2023-11-21 11:11:39,719 - INFO - Entry Price: 2011.21 --- Current Price: 2011.70 --- Current Profit: 0.4900000000000091
+2023-11-21 11:11:42,729 - INFO - Entry Price: 2011.21 --- Current Price: 2011.41 --- Current Profit: 0.20000000000004547
+2023-11-21 11:11:45,167 - INFO - Entry Price: 2011.21 --- Current Price: 2011.71 --- Current Profit: 0.5
+2023-11-21 11:11:47,716 - INFO - Entry Price: 2011.21 --- Current Price: 2011.71 --- Current Profit: 0.5
+2023-11-21 11:11:50,389 - INFO - Entry Price: 2011.21 --- Current Price: 2011.31 --- Current Profit: 0.09999999999990905
+2023-11-21 11:11:52,765 - INFO - Entry Price: 2011.21 --- Current Price: 2011.31 --- Current Profit: 0.09999999999990905
+2023-11-21 11:11:55,211 - INFO - Entry Price: 2011.21 --- Current Price: 2011.20 --- Current Profit: -0.009999999999990905
+2023-11-21 11:11:57,566 - INFO - Entry Price: 2011.21 --- Current Price: 2011.20 --- Current Profit: -0.009999999999990905
+2023-11-21 11:12:00,275 - INFO - Entry Price: 2011.21 --- Current Price: 2011.21 --- Current Profit: 0.0
+2023-11-21 11:12:02,736 - INFO - Entry Price: 2011.21 --- Current Price: 2011.21 --- Current Profit: 0.0
+2023-11-21 11:12:05,468 - INFO - Entry Price: 2011.21 --- Current Price: 2010.92 --- Current Profit: -0.2899999999999636
+2023-11-21 11:12:07,894 - INFO - Entry Price: 2011.21 --- Current Price: 2010.92 --- Current Profit: -0.2899999999999636
+2023-11-21 11:12:10,578 - INFO - Entry Price: 2011.21 --- Current Price: 2010.78 --- Current Profit: -0.43000000000006366
+2023-11-21 11:12:13,356 - INFO - Entry Price: 2011.21 --- Current Price: 2010.57 --- Current Profit: -0.6400000000001
+2023-11-21 11:12:16,101 - INFO - Entry Price: 2011.21 --- Current Price: 2010.51 --- Current Profit: -0.7000000000000455
+2023-11-21 11:12:18,421 - INFO - Entry Price: 2011.21 --- Current Price: 2010.39 --- Current Profit: -0.8199999999999363
+2023-11-21 11:12:21,136 - INFO - Entry Price: 2011.21 --- Current Price: 2010.09 --- Current Profit: -1.1200000000001182
+2023-11-21 11:12:21,153 - INFO - Position closed
+2023-11-21 11:27:18,307 - INFO - ETHUSDT price doesnt changed enough! Current price: 2007.9
+2023-11-21 11:29:21,648 - INFO - ETHUSDT price doesnt changed enough! Current price: 2007.6
+2023-11-21 11:31:24,986 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.0
+2023-11-21 11:33:28,818 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.5
+2023-11-21 11:35:32,131 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.0
+2023-11-21 11:37:35,479 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.7
+2023-11-21 11:39:27,572 - INFO - Current ETHUSDT price: 2009.88
+2023-11-21 11:41:29,249 - INFO - New ETHUSDT price: 2009.88
+2023-11-21 11:41:29,249 - INFO - Difference: 0.1799999999998363
+2023-11-21 11:41:29,249 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.1
+2023-11-21 11:41:30,953 - INFO - Current ETHUSDT price: 2010.06
+2023-11-21 11:42:04,368 - INFO - Current ETHUSDT price: 2009.74
+2023-11-21 11:42:39,480 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.3
+2023-11-21 11:42:58,081 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.0
+2023-11-21 11:43:16,431 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.1
+2023-11-21 11:43:34,825 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.5
+2023-11-21 11:43:53,182 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.8
+2023-11-21 11:44:06,511 - INFO - New ETHUSDT price: 2009.67
+2023-11-21 11:44:06,511 - INFO - Difference: -0.06999999999993634
+2023-11-21 11:44:06,511 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.7
+2023-11-21 11:44:08,188 - INFO - Current ETHUSDT price: 2009.76
+2023-11-21 11:44:11,987 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.0
+2023-11-21 11:44:30,380 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.8
+2023-11-21 11:44:48,694 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.4
+2023-11-21 11:45:07,501 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.3
+2023-11-21 11:45:25,871 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.5
+2023-11-21 11:45:44,196 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.0
+2023-11-21 11:46:02,499 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.2
+2023-11-21 11:46:10,342 - INFO - New ETHUSDT price: 2010.19
+2023-11-21 11:46:10,342 - INFO - Difference: 0.43000000000006366
+2023-11-21 11:46:10,342 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.2
+2023-11-21 11:46:12,013 - INFO - Current ETHUSDT price: 2010.18
+2023-11-21 11:46:20,846 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.8
+2023-11-21 11:46:39,153 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.2
+2023-11-21 11:46:57,488 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.2
+2023-11-21 11:47:15,818 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.2
+2023-11-21 11:47:34,128 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.3
+2023-11-21 11:47:52,446 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.7
+2023-11-21 11:48:10,783 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.3
+2023-11-21 11:48:13,705 - INFO - New ETHUSDT price: 2009.30
+2023-11-21 11:48:13,705 - INFO - Difference: -0.8800000000001091
+2023-11-21 11:48:13,705 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.3
+2023-11-21 11:48:15,373 - INFO - Current ETHUSDT price: 2009.52
+2023-11-21 11:48:29,581 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.9
+2023-11-21 11:48:47,937 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.3
+2023-11-21 11:49:06,265 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.3
+2023-11-21 11:49:24,588 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.0
+2023-11-21 11:49:42,881 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.0
+2023-11-21 11:50:01,218 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.1
+2023-11-21 11:50:17,013 - INFO - New ETHUSDT price: 2010.30
+2023-11-21 11:50:17,013 - INFO - Difference: 0.7799999999999727
+2023-11-21 11:50:17,013 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.3
+2023-11-21 11:50:18,679 - INFO - Current ETHUSDT price: 2010.30
+2023-11-21 11:50:19,551 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.3
+2023-11-21 11:50:37,848 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.2
+2023-11-21 11:50:56,199 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.2
+2023-11-21 11:51:14,567 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.3
+2023-11-21 11:51:32,885 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.3
+2023-11-21 11:51:51,200 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.6
+2023-11-21 11:52:09,580 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.6
+2023-11-21 11:52:20,308 - INFO - New ETHUSDT price: 2009.59
+2023-11-21 11:52:20,323 - INFO - Difference: -0.7100000000000364
+2023-11-21 11:52:20,323 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.6
+2023-11-21 11:52:21,942 - INFO - Current ETHUSDT price: 2009.89
+2023-11-21 11:52:27,920 - INFO - ETHUSDT price doesnt changed enough! Current price: 2010.1
+2023-11-21 11:52:46,242 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.8
+2023-11-21 11:53:04,562 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.4
+2023-11-21 11:53:22,921 - INFO - ETHUSDT price doesnt changed enough! Current price: 2009.4
+2023-11-21 11:53:41,259 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.8
+2023-11-21 11:53:59,609 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.0
+2023-11-21 11:54:17,919 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.2
+2023-11-21 11:54:23,603 - INFO - New ETHUSDT price: 2008.20
+2023-11-21 11:54:23,603 - INFO - Difference: -1.6900000000000546
+2023-11-21 11:54:23,603 - INFO - ETHUSDT goes down for more than 1.5$
+ Selling ETHUSDT for 2008.2$
+2023-11-21 11:54:23,603 - INFO - Selling ETHUSDT for price 2008.2
+2023-11-21 11:54:25,727 - INFO - Entry Price: 2008.20 --- Current Price: 2008.20 --- Current Profit: 0.0
+2023-11-21 11:54:28,151 - INFO - Entry Price: 2008.20 --- Current Price: 2008.20 --- Current Profit: 0.0
+2023-11-21 11:54:30,868 - INFO - Entry Price: 2008.20 --- Current Price: 2008.20 --- Current Profit: 0.0
+2023-11-21 11:54:33,382 - INFO - Entry Price: 2008.20 --- Current Price: 2008.20 --- Current Profit: 0.0
+2023-11-21 11:54:35,875 - INFO - Entry Price: 2008.20 --- Current Price: 2008.20 --- Current Profit: 0.0
+2023-11-21 11:54:37,326 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.2
+2023-11-21 11:54:38,192 - INFO - Entry Price: 2008.20 --- Current Price: 2008.12 --- Current Profit: 0.08000000000015461
+2023-11-21 11:54:40,671 - INFO - Entry Price: 2008.20 --- Current Price: 2008.12 --- Current Profit: 0.08000000000015461
+2023-11-21 11:54:43,083 - INFO - Entry Price: 2008.20 --- Current Price: 2008.01 --- Current Profit: 0.19000000000005457
+2023-11-21 11:54:45,664 - INFO - Entry Price: 2008.20 --- Current Price: 2008.02 --- Current Profit: 0.18000000000006366
+2023-11-21 11:54:48,243 - INFO - Entry Price: 2008.20 --- Current Price: 2008.01 --- Current Profit: 0.19000000000005457
+2023-11-21 11:54:50,649 - INFO - Entry Price: 2008.20 --- Current Price: 2008.01 --- Current Profit: 0.19000000000005457
+2023-11-21 11:54:53,762 - INFO - Entry Price: 2008.20 --- Current Price: 2008.02 --- Current Profit: 0.18000000000006366
+2023-11-21 11:54:55,650 - INFO - ETHUSDT price doesnt changed enough! Current price: 2008.0
+2023-11-21 11:54:56,207 - INFO - Entry Price: 2008.20 --- Current Price: 2008.01 --- Current Profit: 0.19000000000005457
+2023-11-21 11:54:58,903 - INFO - Entry Price: 2008.20 --- Current Price: 2007.68 --- Current Profit: 0.5199999999999818
+2023-11-21 11:55:01,418 - INFO - Entry Price: 2008.20 --- Current Price: 2007.55 --- Current Profit: 0.650000000000091
+2023-11-21 11:55:03,805 - INFO - Entry Price: 2008.20 --- Current Price: 2007.54 --- Current Profit: 0.6600000000000819
+2023-11-21 11:55:06,573 - INFO - Entry Price: 2008.20 --- Current Price: 2007.35 --- Current Profit: 0.8500000000001364
+2023-11-21 11:55:08,928 - INFO - Entry Price: 2008.20 --- Current Price: 2007.35 --- Current Profit: 0.8500000000001364
+2023-11-21 11:55:11,349 - INFO - Entry Price: 2008.20 --- Current Price: 2007.35 --- Current Profit: 0.8500000000001364
+2023-11-21 11:55:13,742 - INFO - Entry Price: 2008.20 --- Current Price: 2007.29 --- Current Profit: 0.9100000000000819
+2023-11-21 11:55:13,977 - INFO - ETHUSDT price doesnt changed enough! Current price: 2007.3
+2023-11-21 11:55:16,334 - INFO - Entry Price: 2008.20 --- Current Price: 2007.29 --- Current Profit: 0.9100000000000819
+2023-11-21 11:55:19,349 - INFO - Entry Price: 2008.20 --- Current Price: 2007.24 --- Current Profit: 0.9600000000000364
+2023-11-21 11:55:21,863 - INFO - Entry Price: 2008.20 --- Current Price: 2007.24 --- Current Profit: 0.9600000000000364
+2023-11-21 11:55:24,393 - INFO - Entry Price: 2008.20 --- Current Price: 2007.24 --- Current Profit: 0.9600000000000364
+2023-11-21 11:55:26,767 - INFO - Entry Price: 2008.20 --- Current Price: 2007.24 --- Current Profit: 0.9600000000000364
+2023-11-21 11:55:29,093 - INFO - Entry Price: 2008.20 --- Current Price: 2007.06 --- Current Profit: 1.1400000000001
+2023-11-21 11:55:31,718 - INFO - Entry Price: 2008.20 --- Current Price: 2007.06 --- Current Profit: 1.1400000000001
+2023-11-21 11:55:32,305 - INFO - ETHUSDT price doesnt changed enough! Current price: 2007.0
+2023-11-21 11:55:34,178 - INFO - Entry Price: 2008.20 --- Current Price: 2006.72 --- Current Profit: 1.4800000000000182
+2023-11-21 11:55:36,956 - INFO - Entry Price: 2008.20 --- Current Price: 2006.72 --- Current Profit: 1.4800000000000182
+2023-11-21 11:55:39,702 - INFO - Entry Price: 2008.20 --- Current Price: 2006.71 --- Current Profit: 1.490000000000009
+2023-11-21 11:55:42,012 - INFO - Entry Price: 2008.20 --- Current Price: 2006.70 --- Current Profit: 1.5
+2023-11-21 11:55:44,386 - INFO - Entry Price: 2008.20 --- Current Price: 2005.77 --- Current Profit: 2.4300000000000637
+2023-11-21 11:55:47,103 - INFO - Entry Price: 2008.20 --- Current Price: 2005.77 --- Current Profit: 2.4300000000000637
+2023-11-21 11:55:49,488 - INFO - Entry Price: 2008.20 --- Current Price: 2006.06 --- Current Profit: 2.1400000000001
+2023-11-21 11:55:50,636 - INFO - ETHUSDT price doesnt changed enough! Current price: 2006.1
+2023-11-21 11:55:51,927 - INFO - Entry Price: 2008.20 --- Current Price: 2006.06 --- Current Profit: 2.1400000000001
+2023-11-21 11:55:54,399 - INFO - Entry Price: 2008.20 --- Current Price: 2006.22 --- Current Profit: 1.9800000000000182
+2023-11-21 11:55:56,753 - INFO - Entry Price: 2008.20 --- Current Price: 2006.29 --- Current Profit: 1.9100000000000819
+2023-11-21 11:55:59,379 - INFO - Entry Price: 2008.20 --- Current Price: 2006.55 --- Current Profit: 1.650000000000091
+2023-11-21 11:56:01,732 - INFO - Entry Price: 2008.20 --- Current Price: 2006.52 --- Current Profit: 1.6800000000000637
+2023-11-21 11:56:04,470 - INFO - Entry Price: 2008.20 --- Current Price: 2006.25 --- Current Profit: 1.9500000000000455
+2023-11-21 11:56:07,210 - INFO - Entry Price: 2008.20 --- Current Price: 2006.25 --- Current Profit: 1.9500000000000455
+2023-11-21 11:56:08,924 - INFO - ETHUSDT price doesnt changed enough! Current price: 2006.3
+2023-11-21 11:56:09,947 - INFO - Entry Price: 2008.20 --- Current Price: 2006.25 --- Current Profit: 1.9500000000000455
+2023-11-21 11:56:12,306 - INFO - Entry Price: 2008.20 --- Current Price: 2006.26 --- Current Profit: 1.9400000000000546
+2023-11-21 11:56:14,821 - INFO - Entry Price: 2008.20 --- Current Price: 2006.15 --- Current Profit: 2.0499999999999545
+2023-11-21 11:56:17,153 - INFO - Entry Price: 2008.20 --- Current Price: 2006.15 --- Current Profit: 2.0499999999999545
+2023-11-21 11:56:20,018 - INFO - Entry Price: 2008.20 --- Current Price: 2006.15 --- Current Profit: 2.0499999999999545
+2023-11-21 11:56:22,570 - INFO - Entry Price: 2008.20 --- Current Price: 2006.33 --- Current Profit: 1.8700000000001182
+2023-11-21 11:56:25,273 - INFO - Entry Price: 2008.20 --- Current Price: 2006.33 --- Current Profit: 1.8700000000001182
+2023-11-21 11:56:27,205 - INFO - ETHUSDT price doesnt changed enough! Current price: 2006.4
+2023-11-21 11:56:27,944 - INFO - Entry Price: 2008.20 --- Current Price: 2006.44 --- Current Profit: 1.759999999999991
+2023-11-21 11:56:30,643 - INFO - Entry Price: 2008.20 --- Current Price: 2006.59 --- Current Profit: 1.6100000000001273
+2023-11-21 11:56:33,214 - INFO - Entry Price: 2008.20 --- Current Price: 2006.61 --- Current Profit: 1.5900000000001455
+2023-11-21 11:56:35,843 - INFO - Entry Price: 2008.20 --- Current Price: 2007.10 --- Current Profit: 1.1000000000001364
+2023-11-21 11:56:38,333 - INFO - Entry Price: 2008.20 --- Current Price: 2006.80 --- Current Profit: 1.400000000000091
+2023-11-21 11:56:40,853 - INFO - Entry Price: 2008.20 --- Current Price: 2006.76 --- Current Profit: 1.4400000000000546
+2023-11-21 11:56:43,507 - INFO - Entry Price: 2008.20 --- Current Price: 2006.76 --- Current Profit: 1.4400000000000546
+2023-11-21 11:56:45,523 - INFO - ETHUSDT price doesnt changed enough! Current price: 2006.8
+2023-11-21 11:56:46,102 - INFO - Entry Price: 2008.20 --- Current Price: 2006.76 --- Current Profit: 1.4400000000000546
+2023-11-21 11:56:48,545 - INFO - Entry Price: 2008.20 --- Current Price: 2006.76 --- Current Profit: 1.4400000000000546
+2023-11-21 11:56:50,921 - INFO - Entry Price: 2008.20 --- Current Price: 2006.99 --- Current Profit: 1.2100000000000364
+2023-11-21 11:56:53,403 - INFO - Entry Price: 2008.20 --- Current Price: 2006.99 --- Current Profit: 1.2100000000000364
+2023-11-21 11:56:56,158 - INFO - Entry Price: 2008.20 --- Current Price: 2006.76 --- Current Profit: 1.4400000000000546
+2023-11-21 11:56:58,708 - INFO - Entry Price: 2008.20 --- Current Price: 2007.09 --- Current Profit: 1.1100000000001273
+2023-11-21 11:57:01,347 - INFO - Entry Price: 2008.20 --- Current Price: 2006.83 --- Current Profit: 1.3700000000001182
+2023-11-21 11:57:03,796 - INFO - ETHUSDT price doesnt changed enough! Current price: 2006.8
+2023-11-21 11:57:04,097 - INFO - Entry Price: 2008.20 --- Current Price: 2006.80 --- Current Profit: 1.400000000000091
+2023-11-21 11:57:06,471 - INFO - Entry Price: 2008.20 --- Current Price: 2006.80 --- Current Profit: 1.400000000000091
+2023-11-21 11:57:08,937 - INFO - Entry Price: 2008.20 --- Current Price: 2006.93 --- Current Profit: 1.2699999999999818
+2023-11-21 11:57:11,679 - INFO - Entry Price: 2008.20 --- Current Price: 2006.99 --- Current Profit: 1.2100000000000364
+2023-11-21 11:57:14,045 - INFO - Entry Price: 2008.20 --- Current Price: 2006.99 --- Current Profit: 1.2100000000000364
+2023-11-21 11:57:16,669 - INFO - Entry Price: 2008.20 --- Current Price: 2006.99 --- Current Profit: 1.2100000000000364
+2023-11-21 11:57:19,231 - INFO - Entry Price: 2008.20 --- Current Price: 2006.82 --- Current Profit: 1.3800000000001091
+2023-11-21 11:57:21,932 - INFO - Entry Price: 2008.20 --- Current Price: 2006.75 --- Current Profit: 1.4500000000000455
+2023-11-21 11:57:22,103 - INFO - ETHUSDT price doesnt changed enough! Current price: 2006.8
+2023-11-21 11:57:25,121 - INFO - Entry Price: 2008.20 --- Current Price: 2006.76 --- Current Profit: 1.4400000000000546
+2023-11-21 11:57:27,713 - INFO - Entry Price: 2008.20 --- Current Price: 2006.76 --- Current Profit: 1.4400000000000546
+2023-11-21 11:57:31,106 - INFO - Entry Price: 2008.20 --- Current Price: 2006.66 --- Current Profit: 1.5399999999999636
+2023-11-21 11:57:33,478 - INFO - Entry Price: 2008.20 --- Current Price: 2006.67 --- Current Profit: 1.5299999999999727
+2023-11-21 11:57:35,916 - INFO - Entry Price: 2008.20 --- Current Price: 2006.67 --- Current Profit: 1.5299999999999727
+2023-11-21 11:57:38,404 - INFO - Entry Price: 2008.20 --- Current Price: 2006.63 --- Current Profit: 1.5699999999999363
+2023-11-21 11:57:40,455 - INFO - ETHUSDT price doesnt changed enough! Current price: 2006.7
+2023-11-21 11:57:41,514 - INFO - Entry Price: 2008.20 --- Current Price: 2006.63 --- Current Profit: 1.5699999999999363
+2023-11-21 11:57:44,136 - INFO - Entry Price: 2008.20 --- Current Price: 2006.75 --- Current Profit: 1.4500000000000455
+2023-11-21 11:57:46,573 - INFO - Entry Price: 2008.20 --- Current Price: 2004.49 --- Current Profit: 3.7100000000000364
+2023-11-21 11:57:49,152 - INFO - Entry Price: 2008.20 --- Current Price: 2004.50 --- Current Profit: 3.7000000000000455
+2023-11-21 11:57:51,619 - INFO - Entry Price: 2008.20 --- Current Price: 2004.50 --- Current Profit: 3.7000000000000455
+2023-11-21 11:57:53,977 - INFO - Entry Price: 2008.20 --- Current Price: 2005.00 --- Current Profit: 3.2000000000000455
+2023-11-21 11:57:56,447 - INFO - Entry Price: 2008.20 --- Current Price: 2005.00 --- Current Profit: 3.2000000000000455
+2023-11-21 11:57:58,775 - INFO - ETHUSDT goes down for more than 1$
+ Selling ETHUSDT for 2005.0$
+2023-11-21 11:57:58,791 - INFO - Selling ETHUSDT for price 2005.0
+2023-11-21 11:57:59,153 - INFO - Entry Price: 2008.20 --- Current Price: 2005.21 --- Current Profit: 2.990000000000009
+2023-11-21 11:58:00,736 - INFO - Entry Price: 2005.00 --- Current Price: 2005.00 --- Current Profit: 0.0
+2023-11-21 11:58:01,747 - INFO - Entry Price: 2008.20 --- Current Price: 2005.21 --- Current Profit: 2.990000000000009
+2023-11-21 11:58:03,269 - INFO - Entry Price: 2005.00 --- Current Price: 2005.90 --- Current Profit: -0.900000000000091
+2023-11-21 11:58:04,455 - INFO - Entry Price: 2008.20 --- Current Price: 2005.90 --- Current Profit: 2.2999999999999545
+2023-11-21 11:58:05,784 - INFO - Entry Price: 2005.00 --- Current Price: 2005.90 --- Current Profit: -0.900000000000091
+2023-11-21 11:58:07,223 - INFO - Entry Price: 2008.20 --- Current Price: 2004.82 --- Current Profit: 3.380000000000109
+2023-11-21 11:58:08,403 - INFO - Entry Price: 2005.00 --- Current Price: 2005.90 --- Current Profit: -0.900000000000091
+2023-11-21 11:58:09,589 - INFO - Entry Price: 2008.20 --- Current Price: 2004.82 --- Current Profit: 3.380000000000109
+2023-11-21 11:58:10,772 - INFO - Entry Price: 2005.00 --- Current Price: 2004.52 --- Current Profit: 0.4800000000000182
+2023-11-21 11:58:12,172 - INFO - Entry Price: 2008.20 --- Current Price: 2004.82 --- Current Profit: 3.380000000000109
+2023-11-21 11:58:13,237 - INFO - Entry Price: 2005.00 --- Current Price: 2004.52 --- Current Profit: 0.4800000000000182
+2023-11-21 11:58:14,567 - INFO - Entry Price: 2008.20 --- Current Price: 2004.70 --- Current Profit: 3.5
+2023-11-21 11:58:15,786 - INFO - Entry Price: 2005.00 --- Current Price: 2004.70 --- Current Profit: 0.2999999999999545
+2023-11-21 11:58:17,233 - INFO - Entry Price: 2008.20 --- Current Price: 2004.80 --- Current Profit: 3.400000000000091
+2023-11-21 11:58:18,200 - INFO - Entry Price: 2005.00 --- Current Price: 2004.22 --- Current Profit: 0.7799999999999727
+2023-11-21 11:58:20,452 - INFO - Entry Price: 2008.20 --- Current Price: 2004.51 --- Current Profit: 3.6900000000000546
+2023-11-21 11:58:21,321 - INFO - Entry Price: 2005.00 --- Current Price: 2004.51 --- Current Profit: 0.4900000000000091
+2023-11-21 11:58:23,474 - INFO - Entry Price: 2008.20 --- Current Price: 2004.51 --- Current Profit: 3.6900000000000546
+2023-11-21 11:58:23,902 - INFO - Entry Price: 2005.00 --- Current Price: 2004.67 --- Current Profit: 0.32999999999992724
+2023-11-21 11:58:25,886 - INFO - Entry Price: 2008.20 --- Current Price: 2004.67 --- Current Profit: 3.5299999999999727
+2023-11-21 11:58:26,453 - INFO - Entry Price: 2005.00 --- Current Price: 2004.30 --- Current Profit: 0.7000000000000455
+2023-11-21 11:58:29,116 - INFO - Entry Price: 2005.00 --- Current Price: 2004.67 --- Current Profit: 0.32999999999992724
+2023-11-21 11:58:29,131 - INFO - Entry Price: 2008.20 --- Current Price: 2004.30 --- Current Profit: 3.900000000000091
+2023-11-21 11:58:31,569 - INFO - Entry Price: 2008.20 --- Current Price: 2004.68 --- Current Profit: 3.519999999999982
+2023-11-21 11:58:33,314 - INFO - Entry Price: 2005.00 --- Current Price: 2004.68 --- Current Profit: 0.31999999999993634
+2023-11-21 11:58:33,896 - INFO - Entry Price: 2008.20 --- Current Price: 2004.69 --- Current Profit: 3.509999999999991
+2023-11-21 11:58:35,751 - INFO - Entry Price: 2005.00 --- Current Price: 2004.69 --- Current Profit: 0.30999999999994543
+2023-11-21 11:58:36,571 - INFO - Entry Price: 2008.20 --- Current Price: 2004.69 --- Current Profit: 3.509999999999991
+2023-11-21 11:58:38,113 - INFO - Entry Price: 2005.00 --- Current Price: 2004.69 --- Current Profit: 0.30999999999994543
+2023-11-21 11:58:39,302 - INFO - Entry Price: 2008.20 --- Current Price: 2004.69 --- Current Profit: 3.509999999999991
+2023-11-21 11:58:40,702 - INFO - Entry Price: 2005.00 --- Current Price: 2004.69 --- Current Profit: 0.30999999999994543
+2023-11-21 11:58:41,944 - INFO - Entry Price: 2008.20 --- Current Price: 2004.69 --- Current Profit: 3.509999999999991
+2023-11-21 11:58:43,146 - INFO - Entry Price: 2005.00 --- Current Price: 2004.60 --- Current Profit: 0.40000000000009095
+2023-11-21 11:58:44,278 - INFO - Entry Price: 2008.20 --- Current Price: 2004.50 --- Current Profit: 3.7000000000000455
+2023-11-21 11:58:45,611 - INFO - Entry Price: 2005.00 --- Current Price: 2004.60 --- Current Profit: 0.40000000000009095
+2023-11-21 11:58:46,964 - INFO - Entry Price: 2008.20 --- Current Price: 2004.60 --- Current Profit: 3.6000000000001364
+2023-11-21 11:58:48,267 - INFO - Entry Price: 2005.00 --- Current Price: 2004.84 --- Current Profit: 0.16000000000008185
+2023-11-21 11:58:49,475 - INFO - Entry Price: 2008.20 --- Current Price: 2005.00 --- Current Profit: 3.2000000000000455
+2023-11-21 11:58:50,666 - INFO - Entry Price: 2005.00 --- Current Price: 2004.84 --- Current Profit: 0.16000000000008185
+2023-11-21 11:58:51,903 - INFO - Entry Price: 2008.20 --- Current Price: 2004.44 --- Current Profit: 3.759999999999991
+2023-11-21 11:58:53,067 - INFO - Entry Price: 2005.00 --- Current Price: 2004.84 --- Current Profit: 0.16000000000008185
+2023-11-21 11:58:54,282 - INFO - Entry Price: 2008.20 --- Current Price: 2004.44 --- Current Profit: 3.759999999999991
+2023-11-21 11:58:55,403 - INFO - Entry Price: 2005.00 --- Current Price: 2004.49 --- Current Profit: 0.5099999999999909
+2023-11-21 11:58:56,700 - INFO - Entry Price: 2008.20 --- Current Price: 2004.25 --- Current Profit: 3.9500000000000455
+2023-11-21 11:58:57,833 - INFO - Entry Price: 2005.00 --- Current Price: 2004.25 --- Current Profit: 0.75
+2023-11-21 11:58:59,411 - INFO - Entry Price: 2008.20 --- Current Price: 2004.51 --- Current Profit: 3.6900000000000546
+2023-11-21 11:59:00,331 - INFO - Entry Price: 2005.00 --- Current Price: 2004.25 --- Current Profit: 0.75
+2023-11-21 11:59:02,132 - INFO - Entry Price: 2008.20 --- Current Price: 2004.36 --- Current Profit: 3.8400000000001455
+2023-11-21 11:59:02,864 - INFO - Entry Price: 2005.00 --- Current Price: 2004.78 --- Current Profit: 0.22000000000002728
+2023-11-21 11:59:04,703 - INFO - Entry Price: 2008.20 --- Current Price: 2004.52 --- Current Profit: 3.6800000000000637
+2023-11-21 11:59:05,587 - INFO - Entry Price: 2005.00 --- Current Price: 2004.52 --- Current Profit: 0.4800000000000182
+2023-11-21 11:59:07,203 - INFO - Entry Price: 2008.20 --- Current Price: 2004.52 --- Current Profit: 3.6800000000000637
+2023-11-21 11:59:08,041 - INFO - Entry Price: 2005.00 --- Current Price: 2004.44 --- Current Profit: 0.5599999999999454
+2023-11-21 11:59:09,785 - INFO - Entry Price: 2008.20 --- Current Price: 2004.32 --- Current Profit: 3.880000000000109
+2023-11-21 11:59:10,713 - INFO - Entry Price: 2005.00 --- Current Price: 2004.44 --- Current Profit: 0.5599999999999454
+2023-11-21 11:59:12,436 - INFO - Entry Price: 2008.20 --- Current Price: 2004.32 --- Current Profit: 3.880000000000109
+2023-11-21 11:59:13,186 - INFO - Entry Price: 2005.00 --- Current Price: 2004.50 --- Current Profit: 0.5
+2023-11-21 11:59:15,113 - INFO - Entry Price: 2008.20 --- Current Price: 2004.50 --- Current Profit: 3.7000000000000455
+2023-11-21 11:59:15,883 - INFO - Entry Price: 2005.00 --- Current Price: 2004.50 --- Current Profit: 0.5
+2023-11-21 11:59:17,746 - INFO - Entry Price: 2008.20 --- Current Price: 2004.48 --- Current Profit: 3.7200000000000273
+2023-11-21 11:59:18,640 - INFO - Entry Price: 2005.00 --- Current Price: 2004.27 --- Current Profit: 0.7300000000000182
+2023-11-21 11:59:20,080 - INFO - Entry Price: 2008.20 --- Current Price: 2004.27 --- Current Profit: 3.9300000000000637
+2023-11-21 11:59:21,017 - INFO - Entry Price: 2005.00 --- Current Price: 2004.29 --- Current Profit: 0.7100000000000364
+2023-11-21 11:59:22,486 - INFO - Entry Price: 2008.20 --- Current Price: 2004.29 --- Current Profit: 3.910000000000082
+2023-11-21 11:59:23,989 - INFO - Entry Price: 2005.00 --- Current Price: 2004.51 --- Current Profit: 0.4900000000000091
+2023-11-21 11:59:24,849 - INFO - Entry Price: 2008.20 --- Current Price: 2004.62 --- Current Profit: 3.5800000000001546
+2023-11-21 11:59:26,719 - INFO - Entry Price: 2005.00 --- Current Price: 2004.69 --- Current Profit: 0.30999999999994543
+2023-11-21 11:59:28,117 - INFO - Entry Price: 2008.20 --- Current Price: 2004.69 --- Current Profit: 3.509999999999991
+2023-11-21 11:59:29,863 - INFO - Entry Price: 2005.00 --- Current Price: 2004.69 --- Current Profit: 0.30999999999994543
+2023-11-21 11:59:30,474 - INFO - Entry Price: 2008.20 --- Current Price: 2004.69 --- Current Profit: 3.509999999999991
+2023-11-21 11:59:32,319 - INFO - Entry Price: 2005.00 --- Current Price: 2004.99 --- Current Profit: 0.009999999999990905
+2023-11-21 11:59:33,629 - INFO - Entry Price: 2008.20 --- Current Price: 2005.00 --- Current Profit: 3.2000000000000455
+2023-11-21 11:59:34,918 - INFO - Entry Price: 2005.00 --- Current Price: 2005.00 --- Current Profit: 0.0
+2023-11-21 11:59:36,104 - INFO - Entry Price: 2008.20 --- Current Price: 2005.00 --- Current Profit: 3.2000000000000455
+2023-11-21 11:59:37,319 - INFO - Entry Price: 2005.00 --- Current Price: 2005.00 --- Current Profit: 0.0
+2023-11-21 11:59:38,769 - INFO - Entry Price: 2008.20 --- Current Price: 2004.78 --- Current Profit: 3.4200000000000728
+2023-11-21 11:59:39,839 - INFO - Entry Price: 2005.00 --- Current Price: 2004.86 --- Current Profit: 0.14000000000010004
+2023-11-21 11:59:41,493 - INFO - Entry Price: 2008.20 --- Current Price: 2004.85 --- Current Profit: 3.3500000000001364
+2023-11-21 11:59:42,254 - INFO - Entry Price: 2005.00 --- Current Price: 2004.78 --- Current Profit: 0.22000000000002728
+2023-11-21 11:59:44,200 - INFO - Entry Price: 2008.20 --- Current Price: 2004.85 --- Current Profit: 3.3500000000001364
+2023-11-21 11:59:44,709 - INFO - Entry Price: 2005.00 --- Current Price: 2004.85 --- Current Profit: 0.15000000000009095
+2023-11-21 11:59:46,974 - INFO - Entry Price: 2008.20 --- Current Price: 2004.85 --- Current Profit: 3.3500000000001364
+2023-11-21 11:59:47,430 - INFO - Entry Price: 2005.00 --- Current Price: 2004.85 --- Current Profit: 0.15000000000009095
+2023-11-21 11:59:49,619 - INFO - Entry Price: 2008.20 --- Current Price: 2004.85 --- Current Profit: 3.3500000000001364
+2023-11-21 11:59:49,885 - INFO - Entry Price: 2005.00 --- Current Price: 2004.99 --- Current Profit: 0.009999999999990905
+2023-11-21 11:59:51,994 - INFO - Entry Price: 2008.20 --- Current Price: 2004.99 --- Current Profit: 3.2100000000000364
+2023-11-21 11:59:52,246 - INFO - Entry Price: 2005.00 --- Current Price: 2004.99 --- Current Profit: 0.009999999999990905
+2023-11-21 11:59:54,589 - INFO - Entry Price: 2008.20 --- Current Price: 2004.99 --- Current Profit: 3.2100000000000364
+2023-11-21 11:59:54,778 - INFO - Entry Price: 2005.00 --- Current Price: 2005.00 --- Current Profit: 0.0
+2023-11-21 11:59:57,186 - INFO - Entry Price: 2005.00 --- Current Price: 2004.99 --- Current Profit: 0.009999999999990905
+2023-11-21 11:59:57,280 - INFO - Entry Price: 2008.20 --- Current Price: 2004.99 --- Current Profit: 3.2100000000000364
+2023-11-21 11:59:59,544 - INFO - Entry Price: 2005.00 --- Current Price: 2004.92 --- Current Profit: 0.07999999999992724
+2023-11-21 11:59:59,779 - INFO - Entry Price: 2008.20 --- Current Price: 2004.99 --- Current Profit: 3.2100000000000364
+2023-11-21 12:00:02,147 - INFO - Entry Price: 2008.20 --- Current Price: 2004.92 --- Current Profit: 3.2799999999999727
+2023-11-21 12:00:02,298 - INFO - Entry Price: 2005.00 --- Current Price: 2004.88 --- Current Profit: 0.11999999999989086
+2023-11-21 12:00:04,595 - INFO - Entry Price: 2008.20 --- Current Price: 2004.89 --- Current Profit: 3.3099999999999454
+2023-11-21 12:00:04,626 - INFO - Entry Price: 2005.00 --- Current Price: 2004.89 --- Current Profit: 0.10999999999989996
+2023-11-21 12:00:06,972 - INFO - Entry Price: 2005.00 --- Current Price: 2004.89 --- Current Profit: 0.10999999999989996
+2023-11-21 12:00:07,129 - INFO - Entry Price: 2008.20 --- Current Price: 2004.89 --- Current Profit: 3.3099999999999454
+2023-11-21 12:00:09,381 - INFO - Entry Price: 2005.00 --- Current Price: 2004.89 --- Current Profit: 0.10999999999989996
+2023-11-21 12:00:09,712 - INFO - Entry Price: 2008.20 --- Current Price: 2004.89 --- Current Profit: 3.3099999999999454
+2023-11-21 12:00:12,113 - INFO - Entry Price: 2005.00 --- Current Price: 2004.70 --- Current Profit: 0.2999999999999545
+2023-11-21 12:00:12,318 - INFO - Entry Price: 2008.20 --- Current Price: 2004.99 --- Current Profit: 3.2100000000000364
+2023-11-21 12:00:14,458 - INFO - Entry Price: 2005.00 --- Current Price: 2004.57 --- Current Profit: 0.43000000000006366
+2023-11-21 12:00:14,684 - INFO - Entry Price: 2008.20 --- Current Price: 2004.64 --- Current Profit: 3.5599999999999454
+2023-11-21 12:00:17,420 - INFO - Entry Price: 2008.20 --- Current Price: 2004.64 --- Current Profit: 3.5599999999999454
+2023-11-21 12:00:17,803 - INFO - Entry Price: 2005.00 --- Current Price: 2004.65 --- Current Profit: 0.34999999999990905
+2023-11-21 12:00:20,187 - INFO - Entry Price: 2008.20 --- Current Price: 2004.72 --- Current Profit: 3.480000000000018
+2023-11-21 12:00:20,228 - INFO - Entry Price: 2005.00 --- Current Price: 2004.72 --- Current Profit: 0.2799999999999727
+2023-11-21 12:00:23,119 - INFO - Entry Price: 2005.00 --- Current Price: 2004.98 --- Current Profit: 0.01999999999998181
+2023-11-21 12:00:23,535 - INFO - Entry Price: 2008.20 --- Current Price: 2004.98 --- Current Profit: 3.2200000000000273
+2023-11-21 12:00:25,801 - INFO - Entry Price: 2005.00 --- Current Price: 2004.98 --- Current Profit: 0.01999999999998181
+2023-11-21 12:00:26,241 - INFO - Entry Price: 2008.20 --- Current Price: 2004.98 --- Current Profit: 3.2200000000000273
+2023-11-21 12:00:28,345 - INFO - Entry Price: 2005.00 --- Current Price: 2005.00 --- Current Profit: 0.0
+2023-11-21 12:00:28,880 - INFO - Entry Price: 2008.20 --- Current Price: 2005.64 --- Current Profit: 2.5599999999999454
+2023-11-21 12:00:30,802 - INFO - Entry Price: 2005.00 --- Current Price: 2005.41 --- Current Profit: -0.41000000000008185
+2023-11-21 12:00:31,510 - INFO - Entry Price: 2008.20 --- Current Price: 2005.41 --- Current Profit: 2.7899999999999636
+2023-11-21 12:00:33,332 - INFO - Entry Price: 2005.00 --- Current Price: 2005.64 --- Current Profit: -0.6400000000001
+2023-11-21 12:00:33,993 - INFO - Entry Price: 2008.20 --- Current Price: 2005.66 --- Current Profit: 2.5399999999999636
+2023-11-21 12:00:35,676 - INFO - Entry Price: 2005.00 --- Current Price: 2005.96 --- Current Profit: -0.9600000000000364
+2023-11-21 12:00:37,172 - INFO - Entry Price: 2008.20 --- Current Price: 2005.96 --- Current Profit: 2.240000000000009
+2023-11-21 12:00:38,416 - INFO - Entry Price: 2005.00 --- Current Price: 2005.90 --- Current Profit: -0.900000000000091
+2023-11-21 12:00:39,880 - INFO - Entry Price: 2008.20 --- Current Price: 2005.16 --- Current Profit: 3.0399999999999636
+2023-11-21 12:00:41,123 - INFO - Entry Price: 2005.00 --- Current Price: 2005.16 --- Current Profit: -0.16000000000008185
+2023-11-21 12:00:42,648 - INFO - Entry Price: 2008.20 --- Current Price: 2005.16 --- Current Profit: 3.0399999999999636
+2023-11-21 12:00:43,862 - INFO - Entry Price: 2005.00 --- Current Price: 2005.17 --- Current Profit: -0.17000000000007276
+2023-11-21 12:00:45,124 - INFO - Entry Price: 2008.20 --- Current Price: 2005.17 --- Current Profit: 3.0299999999999727
+2023-11-21 12:00:46,537 - INFO - Entry Price: 2005.00 --- Current Price: 2005.17 --- Current Profit: -0.17000000000007276
+2023-11-21 12:00:47,826 - INFO - Entry Price: 2008.20 --- Current Price: 2005.17 --- Current Profit: 3.0299999999999727
+2023-11-21 12:00:49,021 - INFO - Entry Price: 2005.00 --- Current Price: 2005.23 --- Current Profit: -0.2300000000000182
+2023-11-21 12:00:50,515 - INFO - Entry Price: 2008.20 --- Current Price: 2005.23 --- Current Profit: 2.9700000000000273
+2023-11-21 12:00:51,679 - INFO - Entry Price: 2005.00 --- Current Price: 2005.23 --- Current Profit: -0.2300000000000182
+2023-11-21 12:00:53,186 - INFO - Entry Price: 2008.20 --- Current Price: 2004.61 --- Current Profit: 3.5900000000001455
+2023-11-21 12:00:54,054 - INFO - Entry Price: 2005.00 --- Current Price: 2004.60 --- Current Profit: 0.40000000000009095
+2023-11-21 12:00:55,548 - INFO - Entry Price: 2008.20 --- Current Price: 2004.60 --- Current Profit: 3.6000000000001364
+2023-11-21 12:00:56,465 - INFO - Entry Price: 2005.00 --- Current Price: 2004.19 --- Current Profit: 0.8099999999999454
+2023-11-21 12:00:58,098 - INFO - Entry Price: 2008.20 --- Current Price: 2004.56 --- Current Profit: 3.6400000000001
+2023-11-21 12:00:58,931 - INFO - Entry Price: 2005.00 --- Current Price: 2004.56 --- Current Profit: 0.44000000000005457
+2023-11-21 12:01:00,423 - INFO - Entry Price: 2008.20 --- Current Price: 2004.19 --- Current Profit: 4.009999999999991
+2023-11-21 12:01:01,359 - INFO - Entry Price: 2005.00 --- Current Price: 2004.19 --- Current Profit: 0.8099999999999454
+2023-11-21 12:01:02,908 - INFO - Entry Price: 2008.20 --- Current Price: 2004.19 --- Current Profit: 4.009999999999991
+2023-11-21 12:01:03,930 - INFO - Entry Price: 2005.00 --- Current Price: 2002.80 --- Current Profit: 2.2000000000000455
+2023-11-21 12:01:05,441 - INFO - Entry Price: 2008.20 --- Current Price: 2002.80 --- Current Profit: 5.400000000000091
+2023-11-21 12:01:06,454 - INFO - Position closed
+2023-11-21 12:01:06,652 - INFO - Entry Price: 2005.00 --- Current Price: 2002.80 --- Current Profit: 2.2000000000000455
+2023-11-21 12:01:09,011 - INFO - Entry Price: 2005.00 --- Current Price: 2004.12 --- Current Profit: 0.8800000000001091
+2023-11-21 12:01:11,527 - INFO - Entry Price: 2005.00 --- Current Price: 2003.49 --- Current Profit: 1.509999999999991
+2023-11-21 12:01:14,090 - INFO - Entry Price: 2005.00 --- Current Price: 2004.40 --- Current Profit: 0.599999999999909
+2023-11-21 12:01:17,192 - INFO - Entry Price: 2005.00 --- Current Price: 2004.40 --- Current Profit: 0.599999999999909
+2023-11-21 12:01:19,804 - INFO - Entry Price: 2005.00 --- Current Price: 2004.30 --- Current Profit: 0.7000000000000455
+2023-11-21 12:01:23,012 - INFO - Entry Price: 2005.00 --- Current Price: 2004.12 --- Current Profit: 0.8800000000001091
+2023-11-21 12:01:25,576 - INFO - Entry Price: 2005.00 --- Current Price: 2004.30 --- Current Profit: 0.7000000000000455
+2023-11-21 12:01:28,122 - INFO - Entry Price: 2005.00 --- Current Price: 2004.71 --- Current Profit: 0.2899999999999636
+2023-11-21 12:01:30,734 - INFO - Entry Price: 2005.00 --- Current Price: 2004.71 --- Current Profit: 0.2899999999999636
+2023-11-21 12:01:33,472 - INFO - Entry Price: 2005.00 --- Current Price: 2004.49 --- Current Profit: 0.5099999999999909
+2023-11-21 12:01:35,959 - INFO - Entry Price: 2005.00 --- Current Price: 2004.70 --- Current Profit: 0.2999999999999545
+2023-11-21 12:01:38,507 - INFO - Entry Price: 2005.00 --- Current Price: 2005.37 --- Current Profit: -0.36999999999989086
+2023-11-21 12:01:41,291 - INFO - Entry Price: 2005.00 --- Current Price: 2005.37 --- Current Profit: -0.36999999999989086
+2023-11-21 12:01:43,964 - INFO - Entry Price: 2005.00 --- Current Price: 2004.86 --- Current Profit: 0.14000000000010004
+2023-11-21 12:01:46,323 - INFO - Entry Price: 2005.00 --- Current Price: 2004.86 --- Current Profit: 0.14000000000010004
+2023-11-21 12:01:48,762 - INFO - Entry Price: 2005.00 --- Current Price: 2005.51 --- Current Profit: -0.5099999999999909
+2023-11-21 12:01:51,154 - INFO - Entry Price: 2005.00 --- Current Price: 2005.51 --- Current Profit: -0.5099999999999909
+2023-11-21 12:01:53,860 - INFO - Entry Price: 2005.00 --- Current Price: 2005.72 --- Current Profit: -0.7200000000000273
+2023-11-21 12:01:56,566 - INFO - Entry Price: 2005.00 --- Current Price: 2005.72 --- Current Profit: -0.7200000000000273
+2023-11-21 12:01:59,021 - INFO - Entry Price: 2005.00 --- Current Price: 2005.19 --- Current Profit: -0.19000000000005457
+2023-11-21 12:02:01,725 - INFO - Entry Price: 2005.00 --- Current Price: 2005.29 --- Current Profit: -0.2899999999999636
+2023-11-21 12:02:04,212 - INFO - Entry Price: 2005.00 --- Current Price: 2005.42 --- Current Profit: -0.42000000000007276
+2023-11-21 12:02:06,571 - INFO - Entry Price: 2005.00 --- Current Price: 2005.29 --- Current Profit: -0.2899999999999636
+2023-11-21 12:02:09,089 - INFO - Entry Price: 2005.00 --- Current Price: 2005.29 --- Current Profit: -0.2899999999999636
+2023-11-21 12:02:11,827 - INFO - Entry Price: 2005.00 --- Current Price: 2005.81 --- Current Profit: -0.8099999999999454
+2023-11-21 12:02:14,186 - INFO - Entry Price: 2005.00 --- Current Price: 2005.94 --- Current Profit: -0.9400000000000546
+2023-11-21 12:02:16,958 - INFO - Entry Price: 2005.00 --- Current Price: 2006.53 --- Current Profit: -1.5299999999999727
+2023-11-21 12:02:16,974 - INFO - Position closed
+2023-11-21 12:31:08,111 - INFO - Current ETHUSDT price: 2010.41
+2023-11-21 12:33:09,787 - INFO - New ETHUSDT price: 2008.72
+2023-11-21 12:33:09,787 - INFO - Difference: -1.6900000000000546
+2023-11-21 12:33:09,787 - INFO - ETHUSDT goes down for more than 1.5$
+ Selling ETHUSDT for 2008.7$
+2023-11-21 12:33:09,787 - INFO - Selling ETHUSDT for price 2008.7
+2023-11-21 12:33:11,472 - INFO - Entry Price: 2008.72 --- Current Price: 2008.90 --- Current Profit: -0.18000000000006366
+2023-11-21 12:33:14,053 - INFO - Entry Price: 2008.72 --- Current Price: 2008.89 --- Current Profit: -0.17000000000007276
+2023-11-21 12:33:16,588 - INFO - Entry Price: 2008.72 --- Current Price: 2008.90 --- Current Profit: -0.18000000000006366
+2023-11-21 12:33:19,397 - INFO - Entry Price: 2008.72 --- Current Price: 2008.90 --- Current Profit: -0.18000000000006366
+2023-11-21 12:33:22,245 - INFO - Entry Price: 2008.72 --- Current Price: 2008.90 --- Current Profit: -0.18000000000006366
+2023-11-21 12:33:24,717 - INFO - Entry Price: 2008.72 --- Current Price: 2008.89 --- Current Profit: -0.17000000000007276
+2023-11-21 12:33:27,361 - INFO - Entry Price: 2008.72 --- Current Price: 2008.77 --- Current Profit: -0.049999999999954525
+2023-11-21 12:33:29,813 - INFO - Entry Price: 2008.72 --- Current Price: 2008.77 --- Current Profit: -0.049999999999954525
+2023-11-21 12:33:32,442 - INFO - Entry Price: 2008.72 --- Current Price: 2008.77 --- Current Profit: -0.049999999999954525
+2023-11-21 12:33:34,896 - INFO - Entry Price: 2008.72 --- Current Price: 2008.77 --- Current Profit: -0.049999999999954525
+2023-11-21 12:33:37,236 - INFO - Entry Price: 2008.72 --- Current Price: 2008.77 --- Current Profit: -0.049999999999954525
+2023-11-21 12:33:39,846 - INFO - Entry Price: 2008.72 --- Current Price: 2008.78 --- Current Profit: -0.05999999999994543
+2023-11-21 12:33:42,420 - INFO - Entry Price: 2008.72 --- Current Price: 2008.46 --- Current Profit: 0.2599999999999909
+2023-11-21 12:33:45,063 - INFO - Entry Price: 2008.72 --- Current Price: 2008.46 --- Current Profit: 0.2599999999999909
+2023-11-21 12:33:47,395 - INFO - Entry Price: 2008.72 --- Current Price: 2008.34 --- Current Profit: 0.38000000000010914
+2023-11-21 12:33:49,910 - INFO - Entry Price: 2008.72 --- Current Price: 2008.34 --- Current Profit: 0.38000000000010914
+2023-11-21 12:33:52,441 - INFO - Entry Price: 2008.72 --- Current Price: 2008.35 --- Current Profit: 0.37000000000011823
+2023-11-21 12:33:55,315 - INFO - Entry Price: 2008.72 --- Current Price: 2008.20 --- Current Profit: 0.5199999999999818
+2023-11-21 12:33:57,960 - INFO - Entry Price: 2008.72 --- Current Price: 2008.20 --- Current Profit: 0.5199999999999818
+2023-11-21 12:34:00,586 - INFO - Entry Price: 2008.72 --- Current Price: 2008.33 --- Current Profit: 0.39000000000010004
+2023-11-21 12:34:02,919 - INFO - Entry Price: 2008.72 --- Current Price: 2008.32 --- Current Profit: 0.40000000000009095
+2023-11-21 12:34:05,324 - INFO - Entry Price: 2008.72 --- Current Price: 2008.33 --- Current Profit: 0.39000000000010004
+2023-11-21 12:34:08,003 - INFO - Entry Price: 2008.72 --- Current Price: 2008.20 --- Current Profit: 0.5199999999999818
+2023-11-21 12:34:10,777 - INFO - Entry Price: 2008.72 --- Current Price: 2008.19 --- Current Profit: 0.5299999999999727
+2023-11-21 12:34:13,125 - INFO - Entry Price: 2008.72 --- Current Price: 2008.32 --- Current Profit: 0.40000000000009095
+2023-11-21 12:34:15,594 - INFO - Entry Price: 2008.72 --- Current Price: 2008.20 --- Current Profit: 0.5199999999999818
+2023-11-21 12:34:18,073 - INFO - Entry Price: 2008.72 --- Current Price: 2008.32 --- Current Profit: 0.40000000000009095
+2023-11-21 12:34:20,496 - INFO - Entry Price: 2008.72 --- Current Price: 2007.83 --- Current Profit: 0.8900000000001
+2023-11-21 12:34:23,134 - INFO - Entry Price: 2008.72 --- Current Price: 2007.80 --- Current Profit: 0.9200000000000728
+2023-11-21 12:34:25,805 - INFO - Entry Price: 2008.72 --- Current Price: 2007.80 --- Current Profit: 0.9200000000000728
+2023-11-21 12:34:28,403 - INFO - Entry Price: 2008.72 --- Current Price: 2007.80 --- Current Profit: 0.9200000000000728
+2023-11-21 12:34:30,998 - INFO - Entry Price: 2008.72 --- Current Price: 2007.85 --- Current Profit: 0.8700000000001182
+2023-11-21 12:34:33,420 - INFO - Entry Price: 2008.72 --- Current Price: 2007.84 --- Current Profit: 0.8800000000001091
+2023-11-21 12:34:36,047 - INFO - Entry Price: 2008.72 --- Current Price: 2007.40 --- Current Profit: 1.3199999999999363
+2023-11-21 12:34:38,751 - INFO - Entry Price: 2008.72 --- Current Price: 2007.47 --- Current Profit: 1.25
+2023-11-21 12:34:41,219 - INFO - Entry Price: 2008.72 --- Current Price: 2007.47 --- Current Profit: 1.25
+2023-11-21 12:34:43,673 - INFO - Entry Price: 2008.72 --- Current Price: 2007.73 --- Current Profit: 0.9900000000000091
+2023-11-21 12:34:46,446 - INFO - Entry Price: 2008.72 --- Current Price: 2007.74 --- Current Profit: 0.9800000000000182
+2023-11-21 12:34:49,072 - INFO - Entry Price: 2008.72 --- Current Price: 2007.73 --- Current Profit: 0.9900000000000091
+2023-11-21 12:34:51,635 - INFO - Entry Price: 2008.72 --- Current Price: 2007.86 --- Current Profit: 0.8600000000001273
+2023-11-21 12:34:54,019 - INFO - Entry Price: 2008.72 --- Current Price: 2007.86 --- Current Profit: 0.8600000000001273
+2023-11-21 12:34:56,988 - INFO - Entry Price: 2008.72 --- Current Price: 2008.01 --- Current Profit: 0.7100000000000364
+2023-11-21 12:35:00,040 - INFO - Entry Price: 2008.72 --- Current Price: 2008.49 --- Current Profit: 0.2300000000000182
+2023-11-21 12:35:03,201 - INFO - Entry Price: 2008.72 --- Current Price: 2008.64 --- Current Profit: 0.07999999999992724
+2023-11-21 12:35:05,638 - INFO - Entry Price: 2008.72 --- Current Price: 2008.78 --- Current Profit: -0.05999999999994543
+2023-11-21 12:35:08,740 - INFO - Entry Price: 2008.72 --- Current Price: 2008.65 --- Current Profit: 0.06999999999993634
+2023-11-21 12:35:11,302 - INFO - Entry Price: 2008.72 --- Current Price: 2008.65 --- Current Profit: 0.06999999999993634
+2023-11-21 12:35:13,847 - INFO - Entry Price: 2008.72 --- Current Price: 2008.65 --- Current Profit: 0.06999999999993634
+2023-11-21 12:35:16,212 - INFO - Entry Price: 2008.72 --- Current Price: 2008.65 --- Current Profit: 0.06999999999993634
+2023-11-21 12:35:18,683 - INFO - Entry Price: 2008.72 --- Current Price: 2008.95 --- Current Profit: -0.2300000000000182
+2023-11-21 12:35:21,323 - INFO - Entry Price: 2008.72 --- Current Price: 2008.95 --- Current Profit: -0.2300000000000182
+2023-11-21 12:35:23,760 - INFO - Entry Price: 2008.72 --- Current Price: 2008.97 --- Current Profit: -0.25
+2023-11-21 12:35:26,334 - INFO - Entry Price: 2008.72 --- Current Price: 2009.03 --- Current Profit: -0.30999999999994543
+2023-11-21 12:35:28,969 - INFO - Entry Price: 2008.72 --- Current Price: 2009.08 --- Current Profit: -0.35999999999989996
+2023-11-21 12:35:33,016 - INFO - Entry Price: 2008.72 --- Current Price: 2008.97 --- Current Profit: -0.25
+2023-11-21 12:35:35,683 - INFO - Entry Price: 2008.72 --- Current Price: 2009.25 --- Current Profit: -0.5299999999999727
+2023-11-21 12:35:38,183 - INFO - Entry Price: 2008.72 --- Current Price: 2009.25 --- Current Profit: -0.5299999999999727
+2023-11-21 12:35:40,608 - INFO - Entry Price: 2008.72 --- Current Price: 2009.25 --- Current Profit: -0.5299999999999727
+2023-11-21 12:35:43,160 - INFO - Entry Price: 2008.72 --- Current Price: 2009.34 --- Current Profit: -0.6199999999998909
+2023-11-21 12:35:45,872 - INFO - Entry Price: 2008.72 --- Current Price: 2009.36 --- Current Profit: -0.6399999999998727
+2023-11-21 12:35:49,432 - INFO - Entry Price: 2008.72 --- Current Price: 2009.44 --- Current Profit: -0.7200000000000273
+2023-11-21 12:35:52,123 - INFO - Entry Price: 2008.72 --- Current Price: 2009.25 --- Current Profit: -0.5299999999999727
+2023-11-21 12:35:55,877 - INFO - Entry Price: 2008.72 --- Current Price: 2009.25 --- Current Profit: -0.5299999999999727
+2023-11-21 12:35:58,818 - INFO - Entry Price: 2008.72 --- Current Price: 2009.40 --- Current Profit: -0.6800000000000637
+2023-11-21 12:36:01,259 - INFO - Entry Price: 2008.72 --- Current Price: 2009.41 --- Current Profit: -0.6900000000000546
+2023-11-21 12:36:03,822 - INFO - Entry Price: 2008.72 --- Current Price: 2009.36 --- Current Profit: -0.6399999999998727
+2023-11-21 12:36:06,453 - INFO - Entry Price: 2008.72 --- Current Price: 2009.21 --- Current Profit: -0.4900000000000091
+2023-11-21 12:36:09,113 - INFO - Entry Price: 2008.72 --- Current Price: 2009.21 --- Current Profit: -0.4900000000000091
+2023-11-21 12:36:11,828 - INFO - Entry Price: 2008.72 --- Current Price: 2009.27 --- Current Profit: -0.5499999999999545
+2023-11-21 12:36:14,963 - INFO - Entry Price: 2008.72 --- Current Price: 2009.27 --- Current Profit: -0.5499999999999545
+2023-11-21 12:36:17,297 - INFO - Entry Price: 2008.72 --- Current Price: 2009.27 --- Current Profit: -0.5499999999999545
+2023-11-21 12:36:19,748 - INFO - Entry Price: 2008.72 --- Current Price: 2009.27 --- Current Profit: -0.5499999999999545
+2023-11-21 12:36:22,220 - INFO - Entry Price: 2008.72 --- Current Price: 2009.27 --- Current Profit: -0.5499999999999545
+2023-11-21 12:36:24,900 - INFO - Entry Price: 2008.72 --- Current Price: 2009.44 --- Current Profit: -0.7200000000000273
+2023-11-21 12:36:27,570 - INFO - Entry Price: 2008.72 --- Current Price: 2009.27 --- Current Profit: -0.5499999999999545
+2023-11-21 12:36:30,269 - INFO - Entry Price: 2008.72 --- Current Price: 2009.44 --- Current Profit: -0.7200000000000273
+2023-11-21 12:36:32,931 - INFO - Entry Price: 2008.72 --- Current Price: 2009.68 --- Current Profit: -0.9600000000000364
+2023-11-21 12:36:35,428 - INFO - Entry Price: 2008.72 --- Current Price: 2009.68 --- Current Profit: -0.9600000000000364
+2023-11-21 12:36:38,185 - INFO - Entry Price: 2008.72 --- Current Price: 2009.69 --- Current Profit: -0.9700000000000273
+2023-11-21 12:36:40,658 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:36:43,235 - INFO - Entry Price: 2008.72 --- Current Price: 2009.65 --- Current Profit: -0.9300000000000637
+2023-11-21 12:36:45,650 - INFO - Entry Price: 2008.72 --- Current Price: 2009.50 --- Current Profit: -0.7799999999999727
+2023-11-21 12:36:48,097 - INFO - Entry Price: 2008.72 --- Current Price: 2009.65 --- Current Profit: -0.9300000000000637
+2023-11-21 12:36:50,863 - INFO - Entry Price: 2008.72 --- Current Price: 2009.68 --- Current Profit: -0.9600000000000364
+2023-11-21 12:36:53,397 - INFO - Entry Price: 2008.72 --- Current Price: 2009.65 --- Current Profit: -0.9300000000000637
+2023-11-21 12:36:55,870 - INFO - Entry Price: 2008.72 --- Current Price: 2009.71 --- Current Profit: -0.9900000000000091
+2023-11-21 12:36:58,622 - INFO - Entry Price: 2008.72 --- Current Price: 2009.72 --- Current Profit: -1.0
+2023-11-21 12:37:00,951 - INFO - Entry Price: 2008.72 --- Current Price: 2009.72 --- Current Profit: -1.0
+2023-11-21 12:37:03,419 - INFO - Entry Price: 2008.72 --- Current Price: 2009.58 --- Current Profit: -0.8599999999999
+2023-11-21 12:37:05,920 - INFO - Entry Price: 2008.72 --- Current Price: 2009.58 --- Current Profit: -0.8599999999999
+2023-11-21 12:37:08,705 - INFO - Entry Price: 2008.72 --- Current Price: 2009.63 --- Current Profit: -0.9100000000000819
+2023-11-21 12:37:11,463 - INFO - Entry Price: 2008.72 --- Current Price: 2009.63 --- Current Profit: -0.9100000000000819
+2023-11-21 12:37:13,956 - INFO - Entry Price: 2008.72 --- Current Price: 2009.50 --- Current Profit: -0.7799999999999727
+2023-11-21 12:37:16,346 - INFO - Entry Price: 2008.72 --- Current Price: 2009.50 --- Current Profit: -0.7799999999999727
+2023-11-21 12:37:19,053 - INFO - Entry Price: 2008.72 --- Current Price: 2009.51 --- Current Profit: -0.7899999999999636
+2023-11-21 12:37:21,728 - INFO - Entry Price: 2008.72 --- Current Price: 2009.51 --- Current Profit: -0.7899999999999636
+2023-11-21 12:37:24,384 - INFO - Entry Price: 2008.72 --- Current Price: 2009.51 --- Current Profit: -0.7899999999999636
+2023-11-21 12:37:26,853 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:37:29,213 - INFO - Entry Price: 2008.72 --- Current Price: 2009.22 --- Current Profit: -0.5
+2023-11-21 12:37:31,869 - INFO - Entry Price: 2008.72 --- Current Price: 2009.42 --- Current Profit: -0.7000000000000455
+2023-11-21 12:37:34,606 - INFO - Entry Price: 2008.72 --- Current Price: 2009.22 --- Current Profit: -0.5
+2023-11-21 12:37:37,219 - INFO - Entry Price: 2008.72 --- Current Price: 2009.22 --- Current Profit: -0.5
+2023-11-21 12:37:39,545 - INFO - Entry Price: 2008.72 --- Current Price: 2008.92 --- Current Profit: -0.20000000000004547
+2023-11-21 12:37:42,127 - INFO - Entry Price: 2008.72 --- Current Price: 2008.78 --- Current Profit: -0.05999999999994543
+2023-11-21 12:37:44,785 - INFO - Entry Price: 2008.72 --- Current Price: 2008.77 --- Current Profit: -0.049999999999954525
+2023-11-21 12:37:47,191 - INFO - Entry Price: 2008.72 --- Current Price: 2008.77 --- Current Profit: -0.049999999999954525
+2023-11-21 12:37:49,882 - INFO - Entry Price: 2008.72 --- Current Price: 2008.76 --- Current Profit: -0.03999999999996362
+2023-11-21 12:37:52,636 - INFO - Entry Price: 2008.72 --- Current Price: 2008.76 --- Current Profit: -0.03999999999996362
+2023-11-21 12:37:55,152 - INFO - Entry Price: 2008.72 --- Current Price: 2009.02 --- Current Profit: -0.2999999999999545
+2023-11-21 12:37:57,653 - INFO - Entry Price: 2008.72 --- Current Price: 2009.02 --- Current Profit: -0.2999999999999545
+2023-11-21 12:38:00,781 - INFO - Entry Price: 2008.72 --- Current Price: 2009.02 --- Current Profit: -0.2999999999999545
+2023-11-21 12:38:03,443 - INFO - Entry Price: 2008.72 --- Current Price: 2009.02 --- Current Profit: -0.2999999999999545
+2023-11-21 12:38:06,445 - INFO - Entry Price: 2008.72 --- Current Price: 2009.02 --- Current Profit: -0.2999999999999545
+2023-11-21 12:38:09,131 - INFO - Entry Price: 2008.72 --- Current Price: 2009.23 --- Current Profit: -0.5099999999999909
+2023-11-21 12:38:11,638 - INFO - Entry Price: 2008.72 --- Current Price: 2009.23 --- Current Profit: -0.5099999999999909
+2023-11-21 12:38:14,380 - INFO - Entry Price: 2008.72 --- Current Price: 2009.11 --- Current Profit: -0.38999999999987267
+2023-11-21 12:38:16,925 - INFO - Entry Price: 2008.72 --- Current Price: 2008.97 --- Current Profit: -0.25
+2023-11-21 12:38:19,900 - INFO - Entry Price: 2008.72 --- Current Price: 2008.97 --- Current Profit: -0.25
+2023-11-21 12:38:22,243 - INFO - Entry Price: 2008.72 --- Current Price: 2008.97 --- Current Profit: -0.25
+2023-11-21 12:38:24,807 - INFO - Entry Price: 2008.72 --- Current Price: 2008.96 --- Current Profit: -0.2400000000000091
+2023-11-21 12:38:27,481 - INFO - Entry Price: 2008.72 --- Current Price: 2009.19 --- Current Profit: -0.4700000000000273
+2023-11-21 12:38:30,151 - INFO - Entry Price: 2008.72 --- Current Price: 2008.95 --- Current Profit: -0.2300000000000182
+2023-11-21 12:38:32,887 - INFO - Entry Price: 2008.72 --- Current Price: 2009.23 --- Current Profit: -0.5099999999999909
+2023-11-21 12:38:35,279 - INFO - Entry Price: 2008.72 --- Current Price: 2009.22 --- Current Profit: -0.5
+2023-11-21 12:38:37,812 - INFO - Entry Price: 2008.72 --- Current Price: 2008.95 --- Current Profit: -0.2300000000000182
+2023-11-21 12:38:40,533 - INFO - Entry Price: 2008.72 --- Current Price: 2008.95 --- Current Profit: -0.2300000000000182
+2023-11-21 12:38:42,972 - INFO - Entry Price: 2008.72 --- Current Price: 2008.95 --- Current Profit: -0.2300000000000182
+2023-11-21 12:38:45,598 - INFO - Entry Price: 2008.72 --- Current Price: 2008.95 --- Current Profit: -0.2300000000000182
+2023-11-21 12:38:48,369 - INFO - Entry Price: 2008.72 --- Current Price: 2009.03 --- Current Profit: -0.30999999999994543
+2023-11-21 12:38:50,984 - INFO - Entry Price: 2008.72 --- Current Price: 2009.10 --- Current Profit: -0.37999999999988177
+2023-11-21 12:38:53,339 - INFO - Entry Price: 2008.72 --- Current Price: 2009.05 --- Current Profit: -0.32999999999992724
+2023-11-21 12:38:56,044 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:38:58,829 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:39:01,207 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:39:03,973 - INFO - Entry Price: 2008.72 --- Current Price: 2009.05 --- Current Profit: -0.32999999999992724
+2023-11-21 12:39:06,620 - INFO - Entry Price: 2008.72 --- Current Price: 2009.00 --- Current Profit: -0.2799999999999727
+2023-11-21 12:39:09,068 - INFO - Entry Price: 2008.72 --- Current Price: 2009.00 --- Current Profit: -0.2799999999999727
+2023-11-21 12:39:11,547 - INFO - Entry Price: 2008.72 --- Current Price: 2008.99 --- Current Profit: -0.2699999999999818
+2023-11-21 12:39:14,134 - INFO - Entry Price: 2008.72 --- Current Price: 2009.00 --- Current Profit: -0.2799999999999727
+2023-11-21 12:39:16,740 - INFO - Entry Price: 2008.72 --- Current Price: 2008.99 --- Current Profit: -0.2699999999999818
+2023-11-21 12:39:19,097 - INFO - Entry Price: 2008.72 --- Current Price: 2008.99 --- Current Profit: -0.2699999999999818
+2023-11-21 12:39:21,866 - INFO - Entry Price: 2008.72 --- Current Price: 2009.00 --- Current Profit: -0.2799999999999727
+2023-11-21 12:39:24,557 - INFO - Entry Price: 2008.72 --- Current Price: 2009.32 --- Current Profit: -0.599999999999909
+2023-11-21 12:39:26,947 - INFO - Entry Price: 2008.72 --- Current Price: 2009.36 --- Current Profit: -0.6399999999998727
+2023-11-21 12:39:29,527 - INFO - Entry Price: 2008.72 --- Current Price: 2009.36 --- Current Profit: -0.6399999999998727
+2023-11-21 12:39:31,873 - INFO - Entry Price: 2008.72 --- Current Price: 2009.37 --- Current Profit: -0.6499999999998636
+2023-11-21 12:39:34,622 - INFO - Entry Price: 2008.72 --- Current Price: 2009.45 --- Current Profit: -0.7300000000000182
+2023-11-21 12:39:38,209 - INFO - Entry Price: 2008.72 --- Current Price: 2009.44 --- Current Profit: -0.7200000000000273
+2023-11-21 12:39:40,845 - INFO - Entry Price: 2008.72 --- Current Price: 2009.44 --- Current Profit: -0.7200000000000273
+2023-11-21 12:39:43,549 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:39:46,271 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:39:48,756 - INFO - Entry Price: 2008.72 --- Current Price: 2009.05 --- Current Profit: -0.32999999999992724
+2023-11-21 12:39:51,082 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:39:53,742 - INFO - Entry Price: 2008.72 --- Current Price: 2008.86 --- Current Profit: -0.13999999999987267
+2023-11-21 12:39:56,068 - INFO - Entry Price: 2008.72 --- Current Price: 2008.86 --- Current Profit: -0.13999999999987267
+2023-11-21 12:39:58,430 - INFO - Entry Price: 2008.72 --- Current Price: 2008.54 --- Current Profit: 0.18000000000006366
+2023-11-21 12:40:01,038 - INFO - Entry Price: 2008.72 --- Current Price: 2008.54 --- Current Profit: 0.18000000000006366
+2023-11-21 12:40:03,899 - INFO - Entry Price: 2008.72 --- Current Price: 2008.99 --- Current Profit: -0.2699999999999818
+2023-11-21 12:40:06,275 - INFO - Entry Price: 2008.72 --- Current Price: 2009.12 --- Current Profit: -0.3999999999998636
+2023-11-21 12:40:09,022 - INFO - Entry Price: 2008.72 --- Current Price: 2009.13 --- Current Profit: -0.41000000000008185
+2023-11-21 12:40:11,720 - INFO - Entry Price: 2008.72 --- Current Price: 2009.13 --- Current Profit: -0.41000000000008185
+2023-11-21 12:40:14,141 - INFO - Entry Price: 2008.72 --- Current Price: 2009.00 --- Current Profit: -0.2799999999999727
+2023-11-21 12:40:16,693 - INFO - Entry Price: 2008.72 --- Current Price: 2008.86 --- Current Profit: -0.13999999999987267
+2023-11-21 12:40:19,209 - INFO - Entry Price: 2008.72 --- Current Price: 2008.86 --- Current Profit: -0.13999999999987267
+2023-11-21 12:40:21,944 - INFO - Entry Price: 2008.72 --- Current Price: 2008.59 --- Current Profit: 0.13000000000010914
+2023-11-21 12:40:24,619 - INFO - Entry Price: 2008.72 --- Current Price: 2008.59 --- Current Profit: 0.13000000000010914
+2023-11-21 12:40:27,135 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:40:29,570 - INFO - Entry Price: 2008.72 --- Current Price: 2008.50 --- Current Profit: 0.22000000000002728
+2023-11-21 12:40:32,104 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:40:34,700 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:40:37,061 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:40:39,656 - INFO - Entry Price: 2008.72 --- Current Price: 2008.37 --- Current Profit: 0.3500000000001364
+2023-11-21 12:40:42,142 - INFO - Entry Price: 2008.72 --- Current Price: 2008.37 --- Current Profit: 0.3500000000001364
+2023-11-21 12:40:44,833 - INFO - Entry Price: 2008.72 --- Current Price: 2008.35 --- Current Profit: 0.37000000000011823
+2023-11-21 12:40:47,238 - INFO - Entry Price: 2008.72 --- Current Price: 2008.35 --- Current Profit: 0.37000000000011823
+2023-11-21 12:40:49,818 - INFO - Entry Price: 2008.72 --- Current Price: 2008.34 --- Current Profit: 0.38000000000010914
+2023-11-21 12:40:52,166 - INFO - Entry Price: 2008.72 --- Current Price: 2008.34 --- Current Profit: 0.38000000000010914
+2023-11-21 12:40:54,880 - INFO - Entry Price: 2008.72 --- Current Price: 2008.36 --- Current Profit: 0.36000000000012733
+2023-11-21 12:40:57,447 - INFO - Entry Price: 2008.72 --- Current Price: 2008.35 --- Current Profit: 0.37000000000011823
+2023-11-21 12:40:59,897 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:41:02,791 - INFO - Entry Price: 2008.72 --- Current Price: 2008.37 --- Current Profit: 0.3500000000001364
+2023-11-21 12:41:05,748 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:41:08,186 - INFO - Entry Price: 2008.72 --- Current Price: 2008.50 --- Current Profit: 0.22000000000002728
+2023-11-21 12:41:10,757 - INFO - Entry Price: 2008.72 --- Current Price: 2008.50 --- Current Profit: 0.22000000000002728
+2023-11-21 12:41:13,220 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:41:15,608 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:41:17,967 - INFO - Entry Price: 2008.72 --- Current Price: 2008.50 --- Current Profit: 0.22000000000002728
+2023-11-21 12:41:20,406 - INFO - Entry Price: 2008.72 --- Current Price: 2008.50 --- Current Profit: 0.22000000000002728
+2023-11-21 12:41:22,716 - INFO - Entry Price: 2008.72 --- Current Price: 2008.50 --- Current Profit: 0.22000000000002728
+2023-11-21 12:41:25,218 - INFO - Entry Price: 2008.72 --- Current Price: 2008.51 --- Current Profit: 0.21000000000003638
+2023-11-21 12:41:27,891 - INFO - Entry Price: 2008.72 --- Current Price: 2009.11 --- Current Profit: -0.38999999999987267
+2023-11-21 12:41:31,161 - INFO - Entry Price: 2008.72 --- Current Price: 2009.52 --- Current Profit: -0.7999999999999545
+2023-11-21 12:41:33,881 - INFO - Entry Price: 2008.72 --- Current Price: 2009.40 --- Current Profit: -0.6800000000000637
+2023-11-21 12:41:36,446 - INFO - Entry Price: 2008.72 --- Current Price: 2009.40 --- Current Profit: -0.6800000000000637
+2023-11-21 12:41:38,805 - INFO - Entry Price: 2008.72 --- Current Price: 2009.15 --- Current Profit: -0.43000000000006366
+2023-11-21 12:41:41,180 - INFO - Entry Price: 2008.72 --- Current Price: 2009.15 --- Current Profit: -0.43000000000006366
+2023-11-21 12:41:43,682 - INFO - Entry Price: 2008.72 --- Current Price: 2009.15 --- Current Profit: -0.43000000000006366
+2023-11-21 12:41:46,528 - INFO - Entry Price: 2008.72 --- Current Price: 2009.36 --- Current Profit: -0.6399999999998727
+2023-11-21 12:41:49,234 - INFO - Entry Price: 2008.72 --- Current Price: 2009.21 --- Current Profit: -0.4900000000000091
+2023-11-21 12:41:51,853 - INFO - Entry Price: 2008.72 --- Current Price: 2009.19 --- Current Profit: -0.4700000000000273
+2023-11-21 12:41:54,365 - INFO - Entry Price: 2008.72 --- Current Price: 2009.15 --- Current Profit: -0.43000000000006366
+2023-11-21 12:41:56,911 - INFO - Entry Price: 2008.72 --- Current Price: 2009.15 --- Current Profit: -0.43000000000006366
+2023-11-21 12:41:59,255 - INFO - Entry Price: 2008.72 --- Current Price: 2009.14 --- Current Profit: -0.42000000000007276
+2023-11-21 12:42:01,915 - INFO - Entry Price: 2008.72 --- Current Price: 2009.18 --- Current Profit: -0.4600000000000364
+2023-11-21 12:42:04,651 - INFO - Entry Price: 2008.72 --- Current Price: 2009.62 --- Current Profit: -0.8999999999998636
+2023-11-21 12:42:07,310 - INFO - Entry Price: 2008.72 --- Current Price: 2009.65 --- Current Profit: -0.9300000000000637
+2023-11-21 12:42:09,992 - INFO - Entry Price: 2008.72 --- Current Price: 2009.79 --- Current Profit: -1.0699999999999363
+2023-11-21 12:42:12,297 - INFO - Entry Price: 2008.72 --- Current Price: 2009.79 --- Current Profit: -1.0699999999999363
+2023-11-21 12:42:15,192 - INFO - Entry Price: 2008.72 --- Current Price: 2009.62 --- Current Profit: -0.8999999999998636
+2023-11-21 12:42:18,232 - INFO - Entry Price: 2008.72 --- Current Price: 2010.00 --- Current Profit: -1.2799999999999727
+2023-11-21 12:42:20,741 - INFO - Entry Price: 2008.72 --- Current Price: 2010.00 --- Current Profit: -1.2799999999999727
+2023-11-21 12:42:23,476 - INFO - Entry Price: 2008.72 --- Current Price: 2009.99 --- Current Profit: -1.2699999999999818
+2023-11-21 12:42:25,825 - INFO - Entry Price: 2008.72 --- Current Price: 2009.99 --- Current Profit: -1.2699999999999818
+2023-11-21 12:42:28,203 - INFO - Entry Price: 2008.72 --- Current Price: 2010.03 --- Current Profit: -1.3099999999999454
+2023-11-21 12:42:30,561 - INFO - Entry Price: 2008.72 --- Current Price: 2010.03 --- Current Profit: -1.3099999999999454
+2023-11-21 12:42:33,328 - INFO - Entry Price: 2008.72 --- Current Price: 2010.03 --- Current Profit: -1.3099999999999454
+2023-11-21 12:42:37,749 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:42:40,392 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:42:42,768 - INFO - Entry Price: 2008.72 --- Current Price: 2010.06 --- Current Profit: -1.3399999999999181
+2023-11-21 12:42:45,427 - INFO - Entry Price: 2008.72 --- Current Price: 2010.06 --- Current Profit: -1.3399999999999181
+2023-11-21 12:42:48,178 - INFO - Entry Price: 2008.72 --- Current Price: 2009.79 --- Current Profit: -1.0699999999999363
+2023-11-21 12:42:50,579 - INFO - Entry Price: 2008.72 --- Current Price: 2009.76 --- Current Profit: -1.0399999999999636
+2023-11-21 12:42:53,246 - INFO - Entry Price: 2008.72 --- Current Price: 2009.97 --- Current Profit: -1.25
+2023-11-21 12:42:55,826 - INFO - Entry Price: 2008.72 --- Current Price: 2009.76 --- Current Profit: -1.0399999999999636
+2023-11-21 12:42:58,564 - INFO - Entry Price: 2008.72 --- Current Price: 2010.06 --- Current Profit: -1.3399999999999181
+2023-11-21 12:43:01,304 - INFO - Entry Price: 2008.72 --- Current Price: 2010.06 --- Current Profit: -1.3399999999999181
+2023-11-21 12:43:04,226 - INFO - Entry Price: 2008.72 --- Current Price: 2010.28 --- Current Profit: -1.5599999999999454
+2023-11-21 12:43:06,743 - INFO - Entry Price: 2008.72 --- Current Price: 2010.28 --- Current Profit: -1.5599999999999454
+2023-11-21 12:43:09,900 - INFO - Entry Price: 2008.72 --- Current Price: 2010.14 --- Current Profit: -1.4200000000000728
+2023-11-21 12:43:12,481 - INFO - Entry Price: 2008.72 --- Current Price: 2010.15 --- Current Profit: -1.4300000000000637
+2023-11-21 12:43:15,102 - INFO - Entry Price: 2008.72 --- Current Price: 2010.14 --- Current Profit: -1.4200000000000728
+2023-11-21 12:43:17,777 - INFO - Entry Price: 2008.72 --- Current Price: 2010.09 --- Current Profit: -1.3699999999998909
+2023-11-21 12:43:20,357 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:43:22,778 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:43:25,767 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:43:28,165 - INFO - Entry Price: 2008.72 --- Current Price: 2009.92 --- Current Profit: -1.2000000000000455
+2023-11-21 12:43:31,337 - INFO - Entry Price: 2008.72 --- Current Price: 2010.03 --- Current Profit: -1.3099999999999454
+2023-11-21 12:43:33,996 - INFO - Entry Price: 2008.72 --- Current Price: 2010.15 --- Current Profit: -1.4300000000000637
+2023-11-21 12:43:36,734 - INFO - Entry Price: 2008.72 --- Current Price: 2010.15 --- Current Profit: -1.4300000000000637
+2023-11-21 12:43:39,360 - INFO - Entry Price: 2008.72 --- Current Price: 2010.25 --- Current Profit: -1.5299999999999727
+2023-11-21 12:43:41,831 - INFO - Entry Price: 2008.72 --- Current Price: 2010.25 --- Current Profit: -1.5299999999999727
+2023-11-21 12:43:44,331 - INFO - Entry Price: 2008.72 --- Current Price: 2010.15 --- Current Profit: -1.4300000000000637
+2023-11-21 12:43:46,904 - INFO - Entry Price: 2008.72 --- Current Price: 2009.72 --- Current Profit: -1.0
+2023-11-21 12:43:49,271 - INFO - Entry Price: 2008.72 --- Current Price: 2009.71 --- Current Profit: -0.9900000000000091
+2023-11-21 12:43:51,916 - INFO - Entry Price: 2008.72 --- Current Price: 2009.71 --- Current Profit: -0.9900000000000091
+2023-11-21 12:43:54,306 - INFO - Entry Price: 2008.72 --- Current Price: 2009.71 --- Current Profit: -0.9900000000000091
+2023-11-21 12:43:56,636 - INFO - Entry Price: 2008.72 --- Current Price: 2009.70 --- Current Profit: -0.9800000000000182
+2023-11-21 12:43:59,011 - INFO - Entry Price: 2008.72 --- Current Price: 2009.70 --- Current Profit: -0.9800000000000182
+2023-11-21 12:44:02,803 - INFO - Entry Price: 2008.72 --- Current Price: 2009.71 --- Current Profit: -0.9900000000000091
+2023-11-21 12:44:05,572 - INFO - Entry Price: 2008.72 --- Current Price: 2009.71 --- Current Profit: -0.9900000000000091
+2023-11-21 12:44:08,249 - INFO - Entry Price: 2008.72 --- Current Price: 2009.61 --- Current Profit: -0.8899999999998727
+2023-11-21 12:44:11,005 - INFO - Entry Price: 2008.72 --- Current Price: 2009.70 --- Current Profit: -0.9800000000000182
+2023-11-21 12:44:13,942 - INFO - Entry Price: 2008.72 --- Current Price: 2009.30 --- Current Profit: -0.5799999999999272
+2023-11-21 12:44:16,682 - INFO - Entry Price: 2008.72 --- Current Price: 2009.30 --- Current Profit: -0.5799999999999272
+2023-11-21 12:44:19,440 - INFO - Entry Price: 2008.72 --- Current Price: 2009.38 --- Current Profit: -0.6600000000000819
+2023-11-21 12:44:21,973 - INFO - Entry Price: 2008.72 --- Current Price: 2009.44 --- Current Profit: -0.7200000000000273
+2023-11-21 12:44:24,332 - INFO - Entry Price: 2008.72 --- Current Price: 2009.44 --- Current Profit: -0.7200000000000273
+2023-11-21 12:44:26,788 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:44:29,194 - INFO - Entry Price: 2008.72 --- Current Price: 2009.31 --- Current Profit: -0.5899999999999181
+2023-11-21 12:44:31,568 - INFO - Entry Price: 2008.72 --- Current Price: 2009.30 --- Current Profit: -0.5799999999999272
+2023-11-21 12:44:34,858 - INFO - Entry Price: 2008.72 --- Current Price: 2009.42 --- Current Profit: -0.7000000000000455
+2023-11-21 12:44:37,208 - INFO - Entry Price: 2008.72 --- Current Price: 2009.42 --- Current Profit: -0.7000000000000455
+2023-11-21 12:44:39,641 - INFO - Entry Price: 2008.72 --- Current Price: 2009.42 --- Current Profit: -0.7000000000000455
+2023-11-21 12:44:42,033 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:44:44,501 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:44:47,206 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:44:49,565 - INFO - Entry Price: 2008.72 --- Current Price: 2009.42 --- Current Profit: -0.7000000000000455
+2023-11-21 12:44:52,084 - INFO - Entry Price: 2008.72 --- Current Price: 2009.42 --- Current Profit: -0.7000000000000455
+2023-11-21 12:44:54,506 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:44:56,866 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:44:59,275 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:45:01,855 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:45:04,184 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:45:07,220 - INFO - Entry Price: 2008.72 --- Current Price: 2009.43 --- Current Profit: -0.7100000000000364
+2023-11-21 12:45:09,923 - INFO - Entry Price: 2008.72 --- Current Price: 2008.66 --- Current Profit: 0.05999999999994543
+2023-11-21 12:45:12,662 - INFO - Entry Price: 2008.72 --- Current Price: 2008.66 --- Current Profit: 0.05999999999994543
+2023-11-21 12:45:15,861 - INFO - Entry Price: 2008.72 --- Current Price: 2008.76 --- Current Profit: -0.03999999999996362
+2023-11-21 12:45:18,304 - INFO - Entry Price: 2008.72 --- Current Price: 2008.89 --- Current Profit: -0.17000000000007276
+2023-11-21 12:45:20,836 - INFO - Entry Price: 2008.72 --- Current Price: 2006.71 --- Current Profit: 2.009999999999991
+2023-11-21 12:45:23,354 - INFO - Entry Price: 2008.72 --- Current Price: 2006.96 --- Current Profit: 1.759999999999991
+2023-11-21 12:45:26,060 - INFO - Entry Price: 2008.72 --- Current Price: 2006.96 --- Current Profit: 1.759999999999991
+2023-11-21 12:45:28,830 - INFO - Entry Price: 2008.72 --- Current Price: 2007.08 --- Current Profit: 1.6400000000001
+2023-11-21 12:45:31,581 - INFO - Entry Price: 2008.72 --- Current Price: 2007.07 --- Current Profit: 1.650000000000091
+2023-11-21 12:45:34,335 - INFO - Entry Price: 2008.72 --- Current Price: 2007.07 --- Current Profit: 1.650000000000091
+2023-11-21 12:45:37,056 - INFO - Entry Price: 2008.72 --- Current Price: 2007.05 --- Current Profit: 1.6700000000000728
+2023-11-21 12:45:39,760 - INFO - Entry Price: 2008.72 --- Current Price: 2007.09 --- Current Profit: 1.6300000000001091
+2023-11-21 12:45:42,449 - INFO - Entry Price: 2008.72 --- Current Price: 2007.09 --- Current Profit: 1.6300000000001091
+2023-11-21 12:45:44,951 - INFO - Entry Price: 2008.72 --- Current Price: 2007.06 --- Current Profit: 1.6600000000000819
+2023-11-21 12:45:47,513 - INFO - Entry Price: 2008.72 --- Current Price: 2006.89 --- Current Profit: 1.8299999999999272
+2023-11-21 12:45:50,117 - INFO - Entry Price: 2008.72 --- Current Price: 2006.86 --- Current Profit: 1.8600000000001273
+2023-11-21 12:45:52,671 - INFO - Entry Price: 2008.72 --- Current Price: 2006.86 --- Current Profit: 1.8600000000001273
+2023-11-21 12:45:55,377 - INFO - Entry Price: 2008.72 --- Current Price: 2006.54 --- Current Profit: 2.1800000000000637
+2023-11-21 12:45:58,031 - INFO - Entry Price: 2008.72 --- Current Price: 2006.54 --- Current Profit: 2.1800000000000637
+2023-11-21 12:46:00,414 - INFO - Entry Price: 2008.72 --- Current Price: 2006.54 --- Current Profit: 2.1800000000000637
+2023-11-21 12:46:02,759 - INFO - Entry Price: 2008.72 --- Current Price: 2006.54 --- Current Profit: 2.1800000000000637
+2023-11-21 12:46:05,148 - INFO - Entry Price: 2008.72 --- Current Price: 2006.54 --- Current Profit: 2.1800000000000637
+2023-11-21 12:46:08,357 - INFO - Entry Price: 2008.72 --- Current Price: 2006.87 --- Current Profit: 1.8500000000001364
+2023-11-21 12:46:11,053 - INFO - Entry Price: 2008.72 --- Current Price: 2006.87 --- Current Profit: 1.8500000000001364
+2023-11-21 12:46:13,672 - INFO - Entry Price: 2008.72 --- Current Price: 2006.86 --- Current Profit: 1.8600000000001273
+2023-11-21 12:46:16,461 - INFO - Entry Price: 2008.72 --- Current Price: 2006.86 --- Current Profit: 1.8600000000001273
+2023-11-21 12:46:19,073 - INFO - Entry Price: 2008.72 --- Current Price: 2006.65 --- Current Profit: 2.0699999999999363
+2023-11-21 12:46:21,568 - INFO - Entry Price: 2008.72 --- Current Price: 2006.64 --- Current Profit: 2.0799999999999272
+2023-11-21 12:46:24,267 - INFO - Entry Price: 2008.72 --- Current Price: 2006.65 --- Current Profit: 2.0699999999999363
+2023-11-21 12:46:26,601 - INFO - Entry Price: 2008.72 --- Current Price: 2006.65 --- Current Profit: 2.0699999999999363
+2023-11-21 12:46:29,399 - INFO - Entry Price: 2008.72 --- Current Price: 2006.65 --- Current Profit: 2.0699999999999363
+2023-11-21 12:46:32,149 - INFO - Entry Price: 2008.72 --- Current Price: 2006.70 --- Current Profit: 2.019999999999982
+2023-11-21 12:46:34,483 - INFO - Entry Price: 2008.72 --- Current Price: 2006.71 --- Current Profit: 2.009999999999991
+2023-11-21 12:46:37,119 - INFO - Entry Price: 2008.72 --- Current Price: 2006.71 --- Current Profit: 2.009999999999991
+2023-11-21 12:46:39,717 - INFO - Entry Price: 2008.72 --- Current Price: 2006.71 --- Current Profit: 2.009999999999991
+2023-11-21 12:46:42,102 - INFO - Entry Price: 2008.72 --- Current Price: 2006.70 --- Current Profit: 2.019999999999982
+2023-11-21 12:46:44,758 - INFO - Entry Price: 2008.72 --- Current Price: 2006.70 --- Current Profit: 2.019999999999982
+2023-11-21 12:46:47,367 - INFO - Entry Price: 2008.72 --- Current Price: 2006.87 --- Current Profit: 1.8500000000001364
+2023-11-21 12:46:49,769 - INFO - Entry Price: 2008.72 --- Current Price: 2006.87 --- Current Profit: 1.8500000000001364
+2023-11-21 12:46:52,337 - INFO - Entry Price: 2008.72 --- Current Price: 2006.86 --- Current Profit: 1.8600000000001273
+2023-11-21 12:46:54,959 - INFO - Entry Price: 2008.72 --- Current Price: 2007.14 --- Current Profit: 1.5799999999999272
+2023-11-21 12:46:57,619 - INFO - Entry Price: 2008.72 --- Current Price: 2007.27 --- Current Profit: 1.4500000000000455
+2023-11-21 12:47:00,145 - INFO - Entry Price: 2008.72 --- Current Price: 2007.16 --- Current Profit: 1.5599999999999454
+2023-11-21 12:47:02,588 - INFO - Entry Price: 2008.72 --- Current Price: 2007.16 --- Current Profit: 1.5599999999999454
+2023-11-21 12:47:05,035 - INFO - Entry Price: 2008.72 --- Current Price: 2007.16 --- Current Profit: 1.5599999999999454
+2023-11-21 12:47:07,974 - INFO - Entry Price: 2008.72 --- Current Price: 2007.88 --- Current Profit: 0.8399999999999181
+2023-11-21 12:47:11,897 - INFO - Entry Price: 2008.72 --- Current Price: 2008.04 --- Current Profit: 0.6800000000000637
+2023-11-21 12:47:14,521 - INFO - Entry Price: 2008.72 --- Current Price: 2007.93 --- Current Profit: 0.7899999999999636
+2023-11-21 12:47:17,067 - INFO - Entry Price: 2008.72 --- Current Price: 2007.94 --- Current Profit: 0.7799999999999727
+2023-11-21 12:47:19,801 - INFO - Entry Price: 2008.72 --- Current Price: 2007.94 --- Current Profit: 0.7799999999999727
+2023-11-21 12:47:22,200 - INFO - Entry Price: 2008.72 --- Current Price: 2007.94 --- Current Profit: 0.7799999999999727
+2023-11-21 12:47:24,567 - INFO - Entry Price: 2008.72 --- Current Price: 2009.00 --- Current Profit: -0.2799999999999727
+2023-11-21 12:47:26,951 - INFO - Entry Price: 2008.72 --- Current Price: 2009.00 --- Current Profit: -0.2799999999999727
+2023-11-21 12:47:29,479 - INFO - Entry Price: 2008.72 --- Current Price: 2009.57 --- Current Profit: -0.849999999999909
+2023-11-21 12:47:31,900 - INFO - Entry Price: 2008.72 --- Current Price: 2009.57 --- Current Profit: -0.849999999999909
+2023-11-21 12:47:34,520 - INFO - Entry Price: 2008.72 --- Current Price: 2009.80 --- Current Profit: -1.0799999999999272
+2023-11-21 12:47:36,899 - INFO - Entry Price: 2008.72 --- Current Price: 2009.81 --- Current Profit: -1.0899999999999181
+2023-11-21 12:47:39,548 - INFO - Entry Price: 2008.72 --- Current Price: 2009.92 --- Current Profit: -1.2000000000000455
+2023-11-21 12:47:42,190 - INFO - Entry Price: 2008.72 --- Current Price: 2009.92 --- Current Profit: -1.2000000000000455
+2023-11-21 12:47:44,693 - INFO - Entry Price: 2008.72 --- Current Price: 2009.99 --- Current Profit: -1.2699999999999818
+2023-11-21 12:47:47,349 - INFO - Entry Price: 2008.72 --- Current Price: 2009.89 --- Current Profit: -1.1700000000000728
+2023-11-21 12:47:50,303 - INFO - Entry Price: 2008.72 --- Current Price: 2009.98 --- Current Profit: -1.259999999999991
+2023-11-21 12:47:53,289 - INFO - Entry Price: 2008.72 --- Current Price: 2010.04 --- Current Profit: -1.3199999999999363
+2023-11-21 12:47:56,029 - INFO - Entry Price: 2008.72 --- Current Price: 2010.13 --- Current Profit: -1.4100000000000819
+2023-11-21 12:47:58,379 - INFO - Entry Price: 2008.72 --- Current Price: 2010.33 --- Current Profit: -1.6099999999999
+2023-11-21 12:48:00,774 - INFO - Entry Price: 2008.72 --- Current Price: 2010.34 --- Current Profit: -1.6199999999998909
+2023-11-21 12:48:03,250 - INFO - Entry Price: 2008.72 --- Current Price: 2010.34 --- Current Profit: -1.6199999999998909
+2023-11-21 12:48:05,816 - INFO - Entry Price: 2008.72 --- Current Price: 2010.34 --- Current Profit: -1.6199999999998909
+2023-11-21 12:48:08,245 - INFO - Entry Price: 2008.72 --- Current Price: 2009.68 --- Current Profit: -0.9600000000000364
+2023-11-21 12:48:10,594 - INFO - Entry Price: 2008.72 --- Current Price: 2009.68 --- Current Profit: -0.9600000000000364
+2023-11-21 12:48:13,276 - INFO - Entry Price: 2008.72 --- Current Price: 2009.73 --- Current Profit: -1.009999999999991
+2023-11-21 12:48:15,670 - INFO - Entry Price: 2008.72 --- Current Price: 2009.54 --- Current Profit: -0.8199999999999363
+2023-11-21 12:48:18,010 - INFO - Entry Price: 2008.72 --- Current Price: 2009.76 --- Current Profit: -1.0399999999999636
+2023-11-21 12:48:20,583 - INFO - Entry Price: 2008.72 --- Current Price: 2009.94 --- Current Profit: -1.2200000000000273
+2023-11-21 12:48:22,938 - INFO - Entry Price: 2008.72 --- Current Price: 2009.94 --- Current Profit: -1.2200000000000273
+2023-11-21 12:48:25,627 - INFO - Entry Price: 2008.72 --- Current Price: 2009.93 --- Current Profit: -1.2100000000000364
+2023-11-21 12:48:28,261 - INFO - Entry Price: 2008.72 --- Current Price: 2009.94 --- Current Profit: -1.2200000000000273
+2023-11-21 12:48:30,714 - INFO - Entry Price: 2008.72 --- Current Price: 2009.94 --- Current Profit: -1.2200000000000273
+2023-11-21 12:48:33,077 - INFO - Entry Price: 2008.72 --- Current Price: 2009.72 --- Current Profit: -1.0
+2023-11-21 12:48:35,727 - INFO - Entry Price: 2008.72 --- Current Price: 2009.72 --- Current Profit: -1.0
+2023-11-21 12:48:38,454 - INFO - Entry Price: 2008.72 --- Current Price: 2009.72 --- Current Profit: -1.0
+2023-11-21 12:48:41,090 - INFO - Entry Price: 2008.72 --- Current Price: 2009.93 --- Current Profit: -1.2100000000000364
+2023-11-21 12:48:44,005 - INFO - Entry Price: 2008.72 --- Current Price: 2009.94 --- Current Profit: -1.2200000000000273
+2023-11-21 12:48:46,487 - INFO - Entry Price: 2008.72 --- Current Price: 2010.00 --- Current Profit: -1.2799999999999727
+2023-11-21 12:48:49,093 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:48:51,430 - INFO - Entry Price: 2008.72 --- Current Price: 2010.23 --- Current Profit: -1.509999999999991
+2023-11-21 12:48:53,801 - INFO - Entry Price: 2008.72 --- Current Price: 2010.25 --- Current Profit: -1.5299999999999727
+2023-11-21 12:48:56,546 - INFO - Entry Price: 2008.72 --- Current Price: 2010.25 --- Current Profit: -1.5299999999999727
+2023-11-21 12:48:59,218 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:49:01,758 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:49:04,535 - INFO - Entry Price: 2008.72 --- Current Price: 2010.11 --- Current Profit: -1.3899999999998727
+2023-11-21 12:49:06,914 - INFO - Entry Price: 2008.72 --- Current Price: 2010.11 --- Current Profit: -1.3899999999998727
+2023-11-21 12:49:09,528 - INFO - Entry Price: 2008.72 --- Current Price: 2010.12 --- Current Profit: -1.3999999999998636
+2023-11-21 12:49:12,714 - INFO - Entry Price: 2008.72 --- Current Price: 2010.12 --- Current Profit: -1.3999999999998636
+2023-11-21 12:49:15,073 - INFO - Entry Price: 2008.72 --- Current Price: 2010.21 --- Current Profit: -1.490000000000009
+2023-11-21 12:49:17,512 - INFO - Entry Price: 2008.72 --- Current Price: 2010.21 --- Current Profit: -1.490000000000009
+2023-11-21 12:49:20,064 - INFO - Entry Price: 2008.72 --- Current Price: 2010.21 --- Current Profit: -1.490000000000009
+2023-11-21 12:49:22,582 - INFO - Entry Price: 2008.72 --- Current Price: 2010.21 --- Current Profit: -1.490000000000009
+2023-11-21 12:49:25,068 - INFO - Entry Price: 2008.72 --- Current Price: 2010.31 --- Current Profit: -1.5899999999999181
+2023-11-21 12:49:27,559 - INFO - Entry Price: 2008.72 --- Current Price: 2010.01 --- Current Profit: -1.2899999999999636
+2023-11-21 12:49:30,303 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:49:32,997 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:49:35,545 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:49:38,296 - INFO - Entry Price: 2008.72 --- Current Price: 2009.81 --- Current Profit: -1.0899999999999181
+2023-11-21 12:49:40,820 - INFO - Entry Price: 2008.72 --- Current Price: 2009.72 --- Current Profit: -1.0
+2023-11-21 12:49:43,501 - INFO - Entry Price: 2008.72 --- Current Price: 2010.48 --- Current Profit: -1.759999999999991
+2023-11-21 12:49:45,876 - INFO - Entry Price: 2008.72 --- Current Price: 2010.48 --- Current Profit: -1.759999999999991
+2023-11-21 12:49:49,568 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:49:51,984 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:49:54,319 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:49:56,679 - INFO - Entry Price: 2008.72 --- Current Price: 2010.29 --- Current Profit: -1.5699999999999363
+2023-11-21 12:50:01,054 - INFO - Entry Price: 2008.72 --- Current Price: 2010.13 --- Current Profit: -1.4100000000000819
+2023-11-21 12:50:03,962 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:50:06,457 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:50:08,849 - INFO - Entry Price: 2008.72 --- Current Price: 2009.70 --- Current Profit: -0.9800000000000182
+2023-11-21 12:50:11,742 - INFO - Entry Price: 2008.72 --- Current Price: 2009.69 --- Current Profit: -0.9700000000000273
+2023-11-21 12:50:14,593 - INFO - Entry Price: 2008.72 --- Current Price: 2009.45 --- Current Profit: -0.7300000000000182
+2023-11-21 12:50:17,118 - INFO - Entry Price: 2008.72 --- Current Price: 2009.09 --- Current Profit: -0.36999999999989086
+2023-11-21 12:50:19,725 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:50:22,443 - INFO - Entry Price: 2008.72 --- Current Price: 2009.04 --- Current Profit: -0.31999999999993634
+2023-11-21 12:50:25,006 - INFO - Entry Price: 2008.72 --- Current Price: 2009.47 --- Current Profit: -0.75
+2023-11-21 12:50:27,496 - INFO - Entry Price: 2008.72 --- Current Price: 2009.66 --- Current Profit: -0.9400000000000546
+2023-11-21 12:50:29,853 - INFO - Entry Price: 2008.72 --- Current Price: 2009.66 --- Current Profit: -0.9400000000000546
+2023-11-21 12:50:32,431 - INFO - Entry Price: 2008.72 --- Current Price: 2009.90 --- Current Profit: -1.1800000000000637
+2023-11-21 12:50:34,944 - INFO - Entry Price: 2008.72 --- Current Price: 2009.99 --- Current Profit: -1.2699999999999818
+2023-11-21 12:50:37,603 - INFO - Entry Price: 2008.72 --- Current Price: 2009.99 --- Current Profit: -1.2699999999999818
+2023-11-21 12:50:40,117 - INFO - Entry Price: 2008.72 --- Current Price: 2010.10 --- Current Profit: -1.3799999999998818
+2023-11-21 12:50:42,601 - INFO - Entry Price: 2008.72 --- Current Price: 2010.28 --- Current Profit: -1.5599999999999454
+2023-11-21 12:50:45,162 - INFO - Entry Price: 2008.72 --- Current Price: 2010.28 --- Current Profit: -1.5599999999999454
+2023-11-21 12:50:47,754 - INFO - Entry Price: 2008.72 --- Current Price: 2010.17 --- Current Profit: -1.4500000000000455
+2023-11-21 12:50:50,280 - INFO - Entry Price: 2008.72 --- Current Price: 2010.17 --- Current Profit: -1.4500000000000455
+2023-11-21 12:50:53,062 - INFO - Entry Price: 2008.72 --- Current Price: 2010.62 --- Current Profit: -1.8999999999998636
+2023-11-21 12:50:55,466 - INFO - Entry Price: 2008.72 --- Current Price: 2010.35 --- Current Profit: -1.6299999999998818
+2023-11-21 12:50:58,153 - INFO - Entry Price: 2008.72 --- Current Price: 2010.63 --- Current Profit: -1.9100000000000819
+2023-11-21 12:51:00,834 - INFO - Entry Price: 2008.72 --- Current Price: 2010.86 --- Current Profit: -2.1399999999998727
+2023-11-21 12:51:03,552 - INFO - Entry Price: 2008.72 --- Current Price: 2010.87 --- Current Profit: -2.1499999999998636
+2023-11-21 12:51:06,335 - INFO - Entry Price: 2008.72 --- Current Price: 2010.80 --- Current Profit: -2.0799999999999272
+2023-11-21 12:51:09,004 - INFO - Entry Price: 2008.72 --- Current Price: 2010.80 --- Current Profit: -2.0799999999999272
+2023-11-21 12:51:11,552 - INFO - Entry Price: 2008.72 --- Current Price: 2010.80 --- Current Profit: -2.0799999999999272
+2023-11-21 12:51:14,098 - INFO - Entry Price: 2008.72 --- Current Price: 2010.80 --- Current Profit: -2.0799999999999272
+2023-11-21 12:51:17,132 - INFO - Entry Price: 2008.72 --- Current Price: 2010.85 --- Current Profit: -2.1299999999998818
+2023-11-21 12:51:19,789 - INFO - Entry Price: 2008.72 --- Current Price: 2011.46 --- Current Profit: -2.740000000000009
+2023-11-21 12:51:19,805 - INFO - Position closed
+2023-11-21 13:00:51,772 - INFO - Current ETHUSDT price: 2013.86
+2023-11-21 13:02:53,571 - INFO - New ETHUSDT price: 2013.94
+2023-11-21 13:02:53,577 - INFO - Difference: 0.08000000000015461
+2023-11-21 13:02:53,577 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.9
+2023-11-21 13:02:55,222 - INFO - Current ETHUSDT price: 2014.06
+2023-11-21 13:04:56,888 - INFO - New ETHUSDT price: 2014.32
+2023-11-21 13:04:56,888 - INFO - Difference: 0.2599999999999909
+2023-11-21 13:04:56,888 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.3
+2023-11-21 13:04:58,525 - INFO - Current ETHUSDT price: 2014.33
+2023-11-21 13:07:00,201 - INFO - New ETHUSDT price: 2012.65
+2023-11-21 13:07:00,201 - INFO - Difference: -1.6799999999998363
+2023-11-21 13:07:00,201 - INFO - ETHUSDT goes down for more than 1.5$
+ Selling ETHUSDT for 2012.7$
+2023-11-21 13:10:21,747 - INFO - Current ETHUSDT price: 2014.53
+2023-11-21 13:12:23,429 - INFO - New ETHUSDT price: 2013.29
+2023-11-21 13:12:23,429 - INFO - Difference: -1.240000000000009
+2023-11-21 13:12:23,429 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.3
+2023-11-21 13:12:25,112 - INFO - Current ETHUSDT price: 2013.29
+2023-11-21 13:14:26,807 - INFO - New ETHUSDT price: 2013.59
+2023-11-21 13:14:26,807 - INFO - Difference: 0.2999999999999545
+2023-11-21 13:14:26,807 - INFO - ETHUSDT price doesnt changed enough! Current price: 2013.6
+2023-11-21 13:14:28,459 - INFO - Current ETHUSDT price: 2013.59
+2023-11-21 13:16:30,127 - INFO - New ETHUSDT price: 2014.13
+2023-11-21 13:16:30,127 - INFO - Difference: 0.540000000000191
+2023-11-21 13:16:30,127 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.1
+2023-11-21 13:16:31,776 - INFO - Current ETHUSDT price: 2014.14
+2023-11-21 13:18:33,436 - INFO - New ETHUSDT price: 2014.82
+2023-11-21 13:18:33,436 - INFO - Difference: 0.6799999999998363
+2023-11-21 13:18:33,436 - INFO - ETHUSDT price doesnt changed enough! Current price: 2014.8
+2023-11-21 13:18:35,101 - INFO - Current ETHUSDT price: 2014.76

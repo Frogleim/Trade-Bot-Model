@@ -1,10 +1,10 @@
 import random
 from binance.client import Client
-from . import config
+# from . import config
+import config
 import logging
 import os
 import time
-
 
 previous_price = None
 alert_status = False
@@ -133,6 +133,37 @@ def close_position(side, quantity):
     print("Position closed successfully")
 
 
+def place_buy_order(price, quantity, symbol):
+    client = Client(config.API_KEY, config.API_SECRET)
+    order = client.futures_create_order(
+        symbol=symbol,
+        side='BUY',
+        type='LIMIT',
+        timeInForce='GTC',  # Good 'til canceled
+        quantity=quantity,
+        price=price
+    )
+
+    print("Buy order placed successfully:")
+    print(order)
+
+
+def place_sell_order(price, quantity, symbol):
+    client = Client(config.API_KEY, config.API_SECRET)
+
+    order = client.futures_create_order(
+        symbol=symbol,
+        side='SELL',
+        type='LIMIT',
+        timeInForce='GTC',  # Good 'til canceled
+        quantity=quantity,
+        price=price
+    )
+
+    print("Buy order placed successfully:")
+    print(order)
+
+
 if __name__ == "__main__":
     import time
 
@@ -146,4 +177,3 @@ if __name__ == "__main__":
     )
     # btc_current_class = LivePrice()
     # btc_current = btc_current_class.get_live_price()
-

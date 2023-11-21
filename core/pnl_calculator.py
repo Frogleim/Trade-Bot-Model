@@ -59,12 +59,12 @@ def position_size():
     return original_value
 
 
-# if __name__ == '__main__':
-#     # starting_number = 0.21  # 0.21$
-#     # common_ratio = 1.10  # 20% increase
-#     # num_terms = 2
-#     # result = geometric_progression(starting_number, common_ratio, num_terms)
-#     # print(result)
+if __name__ == '__main__':
+    starting_number = 500  # 0.21$
+    common_ratio = 1.0568  # 20% increase
+    num_terms = 48
+    result = geometric_progression(starting_number, common_ratio, num_terms)
+    print(result)
 #     import datetime
 #     import time
 #

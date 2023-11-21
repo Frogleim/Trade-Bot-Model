@@ -5,10 +5,10 @@ import os
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 files_dir = os.path.join(parent_dir, "core")
-file_path = f"{files_dir}/files/reverse_data.csv"
+file_path = f"{files_dir}/files/data.csv"
 
 
-def insert_data(entry_price, close_price, profit, entry_price_diff, open_time, close_time):
+def insert_data(entry_price, close_price, profit, entry_price_diff=None, open_time=None, close_time=None):
     try:
         df = pd.read_csv(file_path)
     except FileNotFoundError:

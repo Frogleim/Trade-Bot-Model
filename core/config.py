@@ -1,5 +1,4 @@
 
-
 API_ID = ''
 API_HASH = ''
 TOKEN = ''
@@ -16,9 +15,9 @@ DC_MAP = {
 # ETH/USDT checkpoint list. Minimum Take Profit 11.9%
 checkpoint_list = [2.5, 3.5, 4.5, 6.5, 7.5, 8.5, 9.5, 10.5, 16.5, 20.5]
 position_size = 0.02
-ticker_timeout = 15
+ticker_timeout = 2*60
 trading_pair = 'ETHUSDT'
-TP = 4.5
-MIN_TP = 2.5
-SL = 2
-signal_price = 2
+TP = 10.5
+MIN_TP = 4.5
+SL = 1.2
+signal_price = 1.5
