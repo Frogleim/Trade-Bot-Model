@@ -54,7 +54,6 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
         try:
             # Get historical data
             klines = get_historical_data(symbol, interval, lookback_period)
-            print("Klines:", klines)  # Add this line to inspect the klines data
             klines_range = float(klines[-1][4])
 
             # Calculate trading range
@@ -65,7 +64,7 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
             sell_threshold = klines_range + (float(trading_range) * float(range_multiplier))
 
             # Get current price
-            current_price = float(client.get_ticker(symbol=symbol)['lastPrice'])
+            current_price = float(client.futures_ticker(symbol=symbol)['lastPrice'])
             logging.info(f'Current {config.trading_pair} price: {current_price} --- Trading range: {trading_range}')
 
             # Place buy order if the price is below the buy threshold
@@ -80,8 +79,9 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                 while True:
                     current_price_next = float(client.futures_ticker(symbol=symbol)['lastPrice'])
                     (profit) = float(current_price_next) - float(current_price)
-                    logging.info(f'Current profit/loss: {round(profit)}')
-                    if profit >= 2.5:
+                    logging.info(f'Current profit/loss: {round(profit, 1)} --- Current Price: {current_price_next}'
+                                 f' --- Entry Price {current_price}')
+                    if profit >= 1.8:
                         # crypto_ticker.close_position(side='short', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
@@ -98,10 +98,11 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                 # )
                 logging.info(f"Placing sell order at {current_price}")
                 while True:
-                    current_price_next = float(client.get_ticker(symbol=symbol)['lastPrice'])
+                    current_price_next = float(client.futures_ticker(symbol=symbol)['lastPrice'])
                     profit = float(current_price) - float(current_price_next)
-                    logging.info(f'Current profit/loss: {round(profit)}')
-                    if profit >= 2.5:
+                    logging.info(f'Current profit/loss: {round(profit, 1)} --- Current Price: {current_price_next}'
+                                 f' --- Entry Price {current_price}')
+                    if profit >= 1.8:
                         # crypto_ticker.close_position(side='long', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
