@@ -8,7 +8,7 @@ files_dir = os.path.join(parent_dir, "core")
 file_path = f"{files_dir}/files/data.csv"
 
 
-def insert_data(entry_price, close_price, profit, entry_price_diff=None, open_time=None, close_time=None):
+def insert_data(entry_price, close_price, profit, entry_price_diff=0.0, open_time=None, close_time=None):
     try:
         df = pd.read_csv(file_path)
     except FileNotFoundError:
