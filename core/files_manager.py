@@ -5,7 +5,7 @@ import os
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 files_dir = os.path.join(parent_dir, "core")
-file_path = f"{files_dir}/files/reverse_data.csv"
+file_path = f"{files_dir}/files/model_dataset.csv"
 
 
 def insert_data(entry_price, close_price, profit, entry_price_diff=0.0, open_time=None, close_time=None):
