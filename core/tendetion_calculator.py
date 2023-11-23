@@ -59,13 +59,15 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
             # Calculate trading range
             trading_range = calculate_range(klines)
 
-            # Set buy and sell thresholds
-            buy_threshold = klines_range - (float(trading_range) * float(range_multiplier))
-            sell_threshold = klines_range + (float(trading_range) * float(range_multiplier))
+
 
             # Get current price
             current_price = float(client.futures_ticker(symbol=symbol)['lastPrice'])
-            logging.info(f'Current {config.trading_pair} price: {current_price} --- Trading range: {trading_range}')
+            # Set buy and sell thresholds
+            buy_threshold = klines_range - (float(trading_range) * float(range_multiplier))
+            sell_threshold = current_price + (float(trading_range) * float(range_multiplier))
+            logging.info(f'Current {config.trading_pair} price: {current_price} --- Buy Threshold: {buy_threshold}\n'
+                         f'--- Sell threshold: {sell_threshold}')
 
             # Place buy order if the price is below the buy threshold
             if current_price < buy_threshold:
@@ -75,7 +77,6 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                 #     quantity=config.position_size,
                 #     symbol=config.trading_pair
                 # )
-                order_price = current_price
                 while True:
                     current_price_next = float(client.futures_ticker(symbol=symbol)['lastPrice'])
                     (profit) = float(current_price_next) - float(current_price)
@@ -85,11 +86,13 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                         # crypto_ticker.close_position(side='short', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
-                    elif profit <= -2.5:
+                        break
+                    elif profit <= -0.569:
                         logging.info(f'Current profit/loss: {round(profit)}')
                         # crypto_ticker.close_position(side='short', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Loss {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
+                        break
             elif current_price > sell_threshold:
                 # crypto_ticker.place_sell_order(
                 #     price=current_price,
@@ -106,14 +109,15 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                         # crypto_ticker.close_position(side='long', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
+                        break
 
-                    elif profit <= -2.5:
+                    elif profit <= -0.569:
                         logging.info(f'Current profit/loss: {round(profit)}')
                         # crypto_ticker.close_position(side='long', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Loss {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
-
-            time.sleep(60)  # Wait for 1 minute before checking again
+                        break
+            time.sleep(20)  # Wait for 1 minute before checking again
 
         except Exception as e:
             print(f"An error occurred: {e}")
