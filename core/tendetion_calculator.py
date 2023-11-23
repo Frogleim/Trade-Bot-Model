@@ -27,7 +27,7 @@ client = Client(config.API_KEY, config.API_SECRET)
 # Define trading parameters
 symbol = 'ETHUSDT'  # Replace with your desired trading pair
 interval = '5m'  # 5-minute candles
-lookback_period = 20  # Number of periods to look back for range calculation
+lookback_period = 15  # Number of periods to look back for range calculation
 range_multiplier = 0.01  # Range multiplier to set buy and sell thresholds
 
 
@@ -59,13 +59,12 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
             # Calculate trading range
             trading_range = calculate_range(klines)
 
-
+            buy_threshold = klines_range - (float(trading_range) * float(range_multiplier))
+            sell_threshold = klines_range + (float(trading_range) * float(range_multiplier))
 
             # Get current price
-            current_price = float(client.futures_ticker(symbol=symbol)['lastPrice'])
-            # Set buy and sell thresholds
-            buy_threshold = klines_range - (float(trading_range) * float(range_multiplier))
-            sell_threshold = current_price + (float(trading_range) * float(range_multiplier))
+            current_price = float(client.get_ticker(symbol=symbol)['lastPrice'])
+
             logging.info(f'Current {config.trading_pair} price: {current_price} --- Buy Threshold: {buy_threshold}\n'
                          f'--- Sell threshold: {sell_threshold}')
 
@@ -82,12 +81,12 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                     (profit) = float(current_price_next) - float(current_price)
                     logging.info(f'Current profit/loss: {round(profit, 1)} --- Current Price: {current_price_next}'
                                  f' --- Entry Price {current_price}')
-                    if profit >= 1.8:
+                    if profit >= 2:
                         # crypto_ticker.close_position(side='short', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
                         break
-                    elif profit <= -0.569:
+                    elif profit <= -1.569:
                         logging.info(f'Current profit/loss: {round(profit)}')
                         # crypto_ticker.close_position(side='short', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Loss {profit}')
@@ -105,13 +104,13 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                     profit = float(current_price) - float(current_price_next)
                     logging.info(f'Current profit/loss: {round(profit, 1)} --- Current Price: {current_price_next}'
                                  f' --- Entry Price {current_price}')
-                    if profit >= 1.8:
+                    if profit >= 2:
                         # crypto_ticker.close_position(side='long', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
                         break
 
-                    elif profit <= -0.569:
+                    elif profit <= -1.569:
                         logging.info(f'Current profit/loss: {round(profit)}')
                         # crypto_ticker.close_position(side='long', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Loss {profit}')

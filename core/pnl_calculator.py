@@ -1,6 +1,6 @@
 import time
-import config
-# from . import config
+# import config
+from . import config
 import os
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
