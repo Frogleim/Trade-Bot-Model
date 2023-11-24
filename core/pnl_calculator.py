@@ -1,6 +1,6 @@
 import time
-# import config
-from . import config
+import config
+# from . import config
 import os
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -61,8 +61,8 @@ def position_size():
 
 if __name__ == '__main__':
     starting_number = 100  # 0.21$
-    common_ratio = 1.02  # 20% increase
-    num_terms = 15
+    common_ratio = 1.10  # 20% increase
+    num_terms = 10
     result = geometric_progression(starting_number, common_ratio, num_terms)
     print(result)
 #     import datetime

@@ -12,9 +12,11 @@ if os.path.exists(model_path):
 else:
     model = LinearRegression()
 
+
 def train_model(X, y):
     # Fit the model with the new data
     model.fit(np.array(X).reshape(-1, 2), np.array(y).ravel())
+
 
 def predict_price_change(X):
     # Reshape the input to a 2D array
@@ -22,6 +24,7 @@ def predict_price_change(X):
 
     # Predict the price change based on the model
     return model.predict(X_2d)
+
 
 X, y = [], []
 price_change_prediction = [0.0]  # Initialize with a float
