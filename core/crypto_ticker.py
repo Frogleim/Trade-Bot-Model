@@ -127,6 +127,7 @@ def close_position(side, quantity):
             symbol=config.trading_pair,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
+
             quantity=quantity,
         )
     print(order)

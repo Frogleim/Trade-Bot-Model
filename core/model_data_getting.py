@@ -83,6 +83,10 @@ def update_model(model, new_data):
     return prediction[0]
 
 
+def calculate_sma(closes, window_size):
+    return np.convolve(closes, np.ones(window_size)/window_size, mode='valid')
+
+
 # Main trading function
 # ... (your imports and API key initialization)
 
@@ -101,6 +105,7 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
 
             # Get current price
             current_price = float(client.futures_ticker(symbol=symbol)['lastPrice'])
+
             # Set buy and sell thresholds
             buy_threshold = klines_range - (float(trading_range) * float(range_multiplier))
             sell_threshold = klines_range + (float(trading_range) * float(range_multiplier))
@@ -124,17 +129,19 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                     (profit) = float(current_price_next) - float(current_price)
                     logging.info(f'Current profit/loss: {round(profit, 1)} --- Current Price: {current_price_next}'
                                  f' --- Entry Price {current_price}')
-                    if profit >= 2:
+                    if profit >= 2.5:
                         # crypto_ticker.close_position(side='short', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
                         break
-                    elif profit <= -2.2:
+
+                    elif profit <= -config.SL:
                         logging.info(f'Current profit/loss: {round(profit)}')
                         # crypto_ticker.close_position(side='short', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Loss {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
                         break
+
             elif signal < 0:
                 # crypto_ticker.place_sell_order(
                 #     price=current_price,
@@ -147,20 +154,20 @@ def range_trading_bot(symbol, interval, lookback_period, range_multiplier):
                     profit = float(current_price) - float(current_price_next)
                     logging.info(f'Current profit/loss: {round(profit, 1)} --- Current Price: {current_price_next}'
                                  f' --- Entry Price {current_price}')
-                    if profit >= 2:
+                    if profit >= 2.5:
                         # crypto_ticker.close_position(side='long', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Profit {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
                         break
 
-                    elif profit <= -2.2:
+                    elif profit <= -config.SL:
                         logging.info(f'Current profit/loss: {round(profit)}')
                         # crypto_ticker.close_position(side='long', quantity=config.position_size)
                         logging.info(f'Position closed successfully\n with Loss {profit}')
                         files_manager.insert_data(current_price, current_price_next, profit)
                         break
 
-            time.sleep(20)  # Wait for 1 minute before checking again
+            time.sleep(45)  # Wait for 1 minute before checking again
             dump(model, model_path)  # Save the model to disk
 
 

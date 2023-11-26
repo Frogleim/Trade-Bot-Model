@@ -1,43 +1,52 @@
-from sklearn.linear_model import LinearRegression
+import pandas as pd
+from binance.client import Client
 import numpy as np
-from joblib import dump, load
+import config
+# Binance API credentials
+api_key = 'your_api_key'
+api_secret = 'your_api_secret'
+symbol = 'ETHUSDT'  # Example: BTCUSDT
 
-import os
+# Initialize Binance API
+client = Client(config.API_KEY, config.API_SECRET)
 
-model_filename = 'linear_regression_model.joblib'
-model_path = f'./model/{model_filename}'
+# Function to fetch historical klines (candlestick) data
+def fetch_klines(symbol, interval, limit=100):
+    klines = client.get_klines(symbol=symbol, interval=interval, limit=limit)
+    df = pd.DataFrame(klines, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume', 'close_time', 'quote_asset_volume', 'number_of_trades', 'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'])
+    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
+    df.set_index('timestamp', inplace=True)
+    return df
 
-if os.path.exists(model_path):
-    model = load(model_path)
-else:
-    model = LinearRegression()
+# Function to implement Moving Average Crossover strategy
+def ma_crossover_strategy(df, short_window, long_window):
+    signals = pd.DataFrame(index=df.index)
+    signals['signal'] = 0.0
 
+    # Create short simple moving average
+    signals['short_mavg'] = df['close'].rolling(window=short_window, min_periods=1, center=False).mean()
 
-def train_model(X, y):
-    # Fit the model with the new data
-    model.fit(np.array(X).reshape(-1, 2), np.array(y).ravel())
+    # Create long simple moving average
+    signals['long_mavg'] = df['close'].rolling(window=long_window, min_periods=1, center=False).mean()
 
+    # Create signals
+    signals['signal'][short_window:] = np.where(signals['short_mavg'][short_window:] > signals['long_mavg'][short_window:], 1.0, 0.0)
 
-def predict_price_change(X):
-    # Reshape the input to a 2D array
-    X_2d = np.array(X).reshape(1, -1) if len(X) == 1 else np.array(X).reshape(-1, 2)
+    # Generate trading orders
+    signals['positions'] = signals['signal'].diff()
 
-    # Predict the price change based on the model
-    return model.predict(X_2d)
+    return signals
 
+# Example parameters
+short_window = 50
+long_window = 200
+interval = '1h'  # 1-hour interval
 
-X, y = [], []
-price_change_prediction = [0.0]  # Initialize with a float
+# Fetch historical klines data
+historical_data = fetch_klines(symbol, interval)
 
-current_price = 2002.8
-trading_range = 15.632
-features = [[current_price, trading_range]]  # Wrap the features in a list
+# Implement strategy
+signals = ma_crossover_strategy(historical_data, short_window, long_window)
 
-if hasattr(model, 'coef_') and model.coef_ is not None:
-    price_change_prediction = predict_price_change(features)
-    print("Price Change Prediction:", price_change_prediction)
-
-X.append(features[0])  # Extract the inner list
-y.append(price_change_prediction[0])
-train_model(X, y)  # Update the model with new data
-dump(model, model_path)  # Save the model to disk
+# Print the signals
+print(signals)
