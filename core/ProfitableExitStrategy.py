@@ -36,6 +36,9 @@ root_logger.addHandler(console_handler)
 def trade():
     btc_price_change, opened_price, signal_price = check_price_changes()
     if btc_price_change:
+        profit_checkpoint_list.clear()
+        current_checkpoint = None
+        logging.info(f'Profit checkpoint list: {profit_checkpoint_list} --- Current checkpoint: {current_checkpoint}')
         # crypto_ticker.place_buy_order(price=opened_price, quantity=config.position_size, symbol=config.trading_pair)
         open_time = time.time()
         dt_object = datetime.datetime.fromtimestamp(open_time)
@@ -52,9 +55,12 @@ def trade():
                 break
             elif res == 'Loss':
                 # crypto_ticker.close_position(side='short', quantity=config.position_size)
-                logging.info('Position closed')
-                break
-    else:
+                logging.warning('Position closed')
+
+    elif not btc_price_change:
+        profit_checkpoint_list.clear()
+        current_checkpoint = None
+        logging.info(f'Profit checkpoint list: {profit_checkpoint_list} --- Current checkpoint: {current_checkpoint}')
         # crypto_ticker.place_sell_order(price=opened_price, quantity=config.position_size, symbol=config.trading_pair)
         open_time = time.time()
         dt_object = datetime.datetime.fromtimestamp(open_time)
@@ -71,8 +77,7 @@ def trade():
                 break
             elif res == 'Loss':
                 # crypto_ticker.close_position(side='long', quantity=config.position_size)
-                logging.info('Position closed')
-                break
+                logging.warning('Position closed')
 
 
 def check_price_changes():
@@ -101,13 +106,15 @@ def check_price_changes():
                 logging.info(message)
                 recent_signal.append('Down')
                 return False, next_btc_current, signal_difference
-        elif signal_difference > config.signal_price and pnl_calculator.get_last_two_candles_direction(config.trading_pair):
+        elif signal_difference > config.signal_price and pnl_calculator.get_last_two_candles_direction(
+                config.trading_pair):
             message = (f"{config.trading_pair} goes up for more than {config.signal_price}$\n"
                        f" Buying {config.trading_pair} for {round(float(next_btc_current), 1)}$")
             logging.info(message)
             recent_signal.append('Up')
             return True, next_btc_current, signal_difference
-        elif signal_difference < -config.signal_price and not pnl_calculator.get_last_two_candles_direction(config.trading_pair):
+        elif signal_difference < -config.signal_price and not pnl_calculator.get_last_two_candles_direction(
+                config.trading_pair):
             message = (f"{config.trading_pair} goes down for more than {config.signal_price}$\n"
                        f" Selling {config.trading_pair} for {round(float(next_btc_current), 1)}$")
             logging.info(message)
@@ -141,7 +148,6 @@ def pnl_long(opened_price=None, current_price=2090, signal=None):
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
             logging.info(body)
             files_manager.insert_data(opened_price, btc_current, current_profit, signal)
-            profit_checkpoint_list.clear()  # Reset the checkpoint list
             logging.info(f'Profit checkpoint list: {profit_checkpoint_list}')
             return 'Profit'
     elif LOSS:
@@ -149,7 +155,6 @@ def pnl_long(opened_price=None, current_price=2090, signal=None):
                f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
         logging.info(body)
         files_manager.insert_data(opened_price, btc_current, current_profit, signal)
-        profit_checkpoint_list.clear()  # Reset the checkpoint list
         logging.info(f'Profit checkpoint list: {profit_checkpoint_list}')
         return 'Loss'
 
@@ -178,7 +183,6 @@ def pnl_short(opened_price=None, signal=None):
             logging.info(body)
             files_manager.insert_data(opened_price, btc_current, current_profit, signal)
             logging.info('Saving data')
-            profit_checkpoint_list.clear()  # Reset the checkpoint list
             logging.info(f'Profit checkpoint list: {profit_checkpoint_list}')
             return 'Profit'
 
@@ -188,7 +192,6 @@ def pnl_short(opened_price=None, signal=None):
         logging.info(body)
         files_manager.insert_data(opened_price, btc_current, current_profit, signal)
         logging.info('Saving data')
-        profit_checkpoint_list.clear()  # Reset the checkpoint list
         logging.info(f'Profit checkpoint list: {profit_checkpoint_list}')
         return 'Loss'
 

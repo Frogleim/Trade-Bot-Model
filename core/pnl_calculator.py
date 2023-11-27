@@ -67,13 +67,8 @@ client = Client(api_key, api_secret)
 
 
 def get_last_two_candles_direction(symbol, interval='5m'):
-    # Retrieve the last three 1-minute candles (including the current one)
-    klines = client.get_klines(symbol=symbol, interval=interval, limit=3)
-
-    # Extract close prices from the last two candles
+    klines = client.get_klines(symbol=symbol, interval=interval, limit=5)
     close_prices = [float(kline[4]) for kline in klines[:-1]]
-
-    # Determine the direction based on the close prices
     if close_prices[-1] > close_prices[-2]:
         print(close_prices[-1])
         print(close_prices[-2])
@@ -87,13 +82,15 @@ def get_last_two_candles_direction(symbol, interval='5m'):
 
 
 if __name__ == '__main__':
-    # starting_number = 1000  # 0.21$
-    # common_ratio = 1.016  # 20% increase
-    # num_terms = 64
-    # result = geometric_progression(starting_number, common_ratio, num_terms)
-    # print(result)
-    #
-    symbol = 'BTCUSDT'
-    direction = get_last_two_candles_direction(symbol)
-    print(f'The direction of the last two candles on {symbol}: {direction}')
+    starting_number = 0.21  # 0.21$
+    common_ratio = 1.10  # 20% increase
+    num_terms = 64
+    result = geometric_progression(starting_number, common_ratio, num_terms)
+    print(result)
+    wallet = [new_value + 4.32 for new_value in result]
+    print(wallet)
 
+    # symbol = 'ETHUSDT'
+    # direction = get_last_two_candles_direction(symbol)
+    # print(f'The direction of the last two candles on {symbol}: {direction}')
+    #
