@@ -2,6 +2,7 @@ import time
 import config
 # from . import config
 import os
+from binance.client import Client
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
@@ -59,22 +60,40 @@ def position_size():
     return original_value
 
 
+api_key = os.getenv('API_KEY')
+api_secret = os.getenv('API_SECRET')
+# Replace 'YOUR_API_KEY' and 'YOUR_API_SECRET' with your Binance API key and secret
+client = Client(api_key, api_secret)
+
+
+def get_last_two_candles_direction(symbol, interval='5m'):
+    # Retrieve the last three 1-minute candles (including the current one)
+    klines = client.get_klines(symbol=symbol, interval=interval, limit=3)
+
+    # Extract close prices from the last two candles
+    close_prices = [float(kline[4]) for kline in klines[:-1]]
+
+    # Determine the direction based on the close prices
+    if close_prices[-1] > close_prices[-2]:
+        print(close_prices[-1])
+        print(close_prices[-2])
+        direction = True
+    elif close_prices[-1] < close_prices[-2]:
+        direction = False
+    else:
+        direction = 'No Change'
+
+    return direction
+
+
 if __name__ == '__main__':
-    starting_number = 1000  # 0.21$
-    common_ratio = 1.016  # 20% increase
-    num_terms = 64
-    result = geometric_progression(starting_number, common_ratio, num_terms)
-    print(result)
-#     import datetime
-#     import time
-#
-#     # Replace timestamp with your specific timestamp
-#     timestamp = time.time()
-#
-#     # Convert timestamp to a datetime object
-#     dt_object = datetime.datetime.fromtimestamp(timestamp)
-#
-#     # Format the datetime object as a string in the desired format
-#     formatted_time = dt_object.strftime('%Y-%m-%d %H:%M:%S')
-#
-#     print(formatted_time)
+    # starting_number = 1000  # 0.21$
+    # common_ratio = 1.016  # 20% increase
+    # num_terms = 64
+    # result = geometric_progression(starting_number, common_ratio, num_terms)
+    # print(result)
+    #
+    symbol = 'BTCUSDT'
+    direction = get_last_two_candles_direction(symbol)
+    print(f'The direction of the last two candles on {symbol}: {direction}')
+
