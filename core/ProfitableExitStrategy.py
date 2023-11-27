@@ -1,26 +1,28 @@
-import datetime
-import time
 from binance.client import Client
-import config
-import files_manager
 import pnl_calculator
+import files_manager
+import datetime
 import logging
-import os
+import config
+import time
 import sys
+import os
 
 current_profit = 0
 position_mode = None
 profit_checkpoint_list = []
+recent_signal = []
 current_checkpoint = None
 THRESHOLD_FOR_CLOSING = -30
 LOSS = False
 checking_price = None
-client = Client(config.API_KEY, config.API_SECRET)
-
+api_key = os.getenv('API_KEY')
+api_secret = os.getenv('API_SECRET')
+client = Client(api_key, api_secret)
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
-files_dir = os.path.join(grandparent_dir, "main_bot")
+files_dir = os.path.join(grandparent_dir, "Trade-Bot")
 logging.basicConfig(filename=f'{files_dir}/logs/binance_logs.log',
                     level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 console_handler = logging.StreamHandler(sys.stdout)
@@ -29,7 +31,6 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)
 root_logger = logging.getLogger()
 root_logger.addHandler(console_handler)
-
 
 
 def trade():
@@ -75,9 +76,8 @@ def trade():
                 break
 
 
-
 def check_price_changes():
-    global checking_price
+    global checking_price, recent_signal
 
     while True:
         btc_current = client.futures_ticker(symbol=config.trading_pair)['lastPrice']
@@ -88,27 +88,40 @@ def check_price_changes():
         logging.info(f'New {config.trading_pair} price: {next_btc_current}')
         signal_difference = float(next_btc_current) - float(checking_price)
         logging.info(f'Difference: {signal_difference}')
-        if signal_difference > config.signal_price:
-            message = f"{config.trading_pair} goes up for more than {config.signal_price}$\n Buying {config.trading_pair} for {round(float(next_btc_current), 1)}$"
+        if len(recent_signal) > 0 and recent_signal[-2:] == 'Up':
+            if signal_difference > config.signal_price:
+                message = (f"{config.trading_pair} goes up for more than {config.signal_price}$\n"
+                           f" Buying {config.trading_pair} for {round(float(next_btc_current), 1)}$")
+                logging.info(message)
+                recent_signal.append('Up')
+                return True, next_btc_current, signal_difference
+        elif len(recent_signal) > 0 and recent_signal[-2:] == 'Down':
+            if signal_difference < -config.signal_price:
+                message = (f"{config.trading_pair} goes down for more than {config.signal_price}$\n"
+                           f" Selling {config.trading_pair} for {round(float(next_btc_current), 1)}$")
+                logging.info(message)
+                recent_signal.append('Down')
+                return False, next_btc_current, signal_difference
+        elif signal_difference < -config.signal_price:
+            message = (f"{config.trading_pair} goes up for more than {config.signal_price}$\n"
+                       f" Buying {config.trading_pair} for {round(float(next_btc_current), 1)}$")
             logging.info(message)
+            recent_signal.append('Up')
             return True, next_btc_current, signal_difference
         elif signal_difference < -config.signal_price:
-            message = f"{config.trading_pair} goes down for more than {config.signal_price}$\n Selling {config.trading_pair} for {round(float(next_btc_current), 1)}$"
+            message = (f"{config.trading_pair} goes down for more than {config.signal_price}$\n"
+                       f" Selling {config.trading_pair} for {round(float(next_btc_current), 1)}$")
             logging.info(message)
-
+            recent_signal.append('Down')
             return False, next_btc_current, signal_difference
         else:
-            message = f"{config.trading_pair} price doesnt changed enough! Current price: {round(float(next_btc_current), 1)}"
-            logging.info(message)
 
             continue
-
 
 
 def pnl_long(opened_price=None, current_price=2090, signal=None):
     global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
     btc_current = client.futures_ticker(symbol=config.trading_pair)['lastPrice']
-    trading_pair = 'ETHUSDT'
     current_profit = float(btc_current) - float(opened_price)
     print(f'Entry Price: {opened_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}')
     for i in range(len(config.checkpoint_list) - 1):
@@ -125,7 +138,6 @@ def pnl_long(opened_price=None, current_price=2090, signal=None):
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
         if current_checkpoint < profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
             print('Position closed!')
-            profit_checkpoint_list = []
             print(current_profit)
             body = f'Position closed!\nPosition data\nSymbol: {config.trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
@@ -143,7 +155,6 @@ def pnl_long(opened_price=None, current_price=2090, signal=None):
 def pnl_short(opened_price=None, signal=None):
     global current_profit, current_checkpoint, profit_checkpoint_list, LOSS
     btc_current = client.futures_ticker(symbol=config.trading_pair)['lastPrice']
-    trading_pair = 'ETHUSDT'
     current_profit = float(opened_price) - float(btc_current)
     print(f'Entry Price: {opened_price} --- Current Price: {btc_current} --- Current Profit: {current_profit}')
     for i in range(len(config.checkpoint_list) - 1):
@@ -160,7 +171,6 @@ def pnl_short(opened_price=None, signal=None):
     print(f'Current checkpoint: --> {current_checkpoint}')
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
         if current_checkpoint >= profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
-            profit_checkpoint_list = []
             body = f'Position closed!\nPosition data\nSymbol: {config.trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
             logging.info(body)
