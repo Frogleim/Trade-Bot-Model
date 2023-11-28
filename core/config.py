@@ -1,3 +1,7 @@
+API_KEY = 'q2tAXfN3biq6Iuy7oX1sX5x872tn7Ax1F7BJTDDnha0GeFqtVbLN8XmwP9Vj8j8g'
+API_SECRET = 'txShSTi2Hl98clKdmYP3glfTJQi1hREGAjAfLks3PzrnhghtMteVT4M62aP1sQ2u'
+
+
 
 API_ID = ''
 API_HASH = ''

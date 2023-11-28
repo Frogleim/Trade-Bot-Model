@@ -45,7 +45,7 @@ def calculate_modified_difference(lst):
 
 def position_size():
     original_value = config.position_size
-    percentage_increase = 0.20
+    percentage_increase = 0.02
     new_value = original_value + (original_value * percentage_increase)
     print("Original Value:", original_value)
     print("Percentage Increase:", percentage_increase)
@@ -83,14 +83,14 @@ def get_last_two_candles_direction(symbol, interval='5m'):
 
 if __name__ == '__main__':
     starting_number = 0.21  # 0.21$
-    common_ratio = 1.10  # 20% increase
+    common_ratio = 1.03  # 20% increase
     num_terms = 64
     result = geometric_progression(starting_number, common_ratio, num_terms)
     print(result)
-    wallet = [new_value + 4.32 for new_value in result]
+    wallet = [new_value + 3.596 for new_value in result]
     print(wallet)
 
-    # symbol = 'ETHUSDT'
-    # direction = get_last_two_candles_direction(symbol)
-    # print(f'The direction of the last two candles on {symbol}: {direction}')
-    #
+    symbol = 'ETHUSDT'
+    direction = get_last_two_candles_direction(symbol)
+    print(f'The direction of the last two candles on {symbol}: {direction}')
+
