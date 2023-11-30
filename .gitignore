@@ -7,3 +7,4 @@ core/config.ini
 core/__pycache__
 .idea
 __pycache__
+logs
