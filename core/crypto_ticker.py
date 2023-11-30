@@ -5,6 +5,7 @@ import config
 import logging
 import os
 import time
+import decimal
 
 previous_price = None
 alert_status = False
@@ -16,6 +17,8 @@ parent_dir = os.path.dirname(base_dir)
 files_dir = os.path.join(parent_dir, "logs")
 logging.basicConfig(filename=f'{files_dir}/binance_logs.log',
                     level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+api_key = 'KH3zUXPCNXCI8mkVymna2cG3tkYm2daQtgPBsQpSdOwZlOcTQuqoQVvA9mSvpQfA'
+api_secret = '7TMJtn1N0B6cw875KgjD2jV1oxcLm6zcl5rPEt8uSJZeMmZs3JJrD1NxteVScPkb'
 
 
 class LivePrice:
@@ -89,15 +92,15 @@ def get_ask_price(client, symbol):
     return ask_price
 
 
-def create_order(side, percentage_of_balance=95):
-    client = Client(config.API_KEY, config.API_SECRET)
+def create_order(side, percentage_of_balance=95, quantity=None):
+    client = Client(api_key=api_key, api_secret=api_secret)
     symbol = 'ETHUSDT'
     if side == 'long':
         order = client.futures_create_order(
             symbol=config.trading_pair,
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
-            quantity=config.position_size,
+            quantity=quantity,
         )
         print(order)
         print("Order opened successfully")
@@ -107,14 +110,14 @@ def create_order(side, percentage_of_balance=95):
             symbol=config.trading_pair,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
-            quantity=config.position_size,
+            quantity=quantity,
         )
         print(order)
         print("Order opened successfully")
 
 
 def close_position(side, quantity):
-    client = Client(config.API_KEY, config.API_SECRET)
+    client = Client(api_key=api_key, api_secret=api_secret)
     if side == 'long':
         order = client.futures_create_order(
             symbol=config.trading_pair,
@@ -135,7 +138,7 @@ def close_position(side, quantity):
 
 
 def place_buy_order(price, quantity, symbol):
-    client = Client(config.API_KEY, config.API_SECRET)
+    client = Client(api_key=api_key, api_secret=api_secret)
     order = client.futures_create_order(
         symbol=symbol,
         side='BUY',
@@ -150,7 +153,7 @@ def place_buy_order(price, quantity, symbol):
 
 
 def place_sell_order(price, quantity, symbol):
-    client = Client(config.API_KEY, config.API_SECRET)
+    client = Client(api_key=api_key, api_secret=api_secret)
 
     order = client.futures_create_order(
         symbol=symbol,
@@ -169,12 +172,13 @@ if __name__ == "__main__":
     import time
 
     start_time = time.time()
-    client = Client(config.API_KEY, config.API_SECRET)
+    client = Client(api_key='KH3zUXPCNXCI8mkVymna2cG3tkYm2daQtgPBsQpSdOwZlOcTQuqoQVvA9mSvpQfA', api_secret='7TMJtn1N0B6cw875KgjD2jV1oxcLm6zcl5rPEt8uSJZeMmZs3JJrD1NxteVScPkb')
+
     order = client.futures_create_order(
         symbol='ETHUSDT',
         side=Client.SIDE_BUY,
         type=Client.ORDER_TYPE_MARKET,
-        quantity=0.02,
+        quantity=config.position_size * 1.5,
     )
     # btc_current_class = LivePrice()
     # btc_current = btc_current_class.get_live_price()

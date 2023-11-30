@@ -3,6 +3,8 @@ import config
 # from . import config
 import os
 from binance.client import Client
+from binance.helpers import round_step_size # add at top
+
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
@@ -45,7 +47,7 @@ def calculate_modified_difference(lst):
 
 def position_size():
     original_value = config.position_size
-    percentage_increase = 0.02
+    percentage_increase = 0.50
     new_value = original_value + (original_value * percentage_increase)
     print("Original Value:", original_value)
     print("Percentage Increase:", percentage_increase)
@@ -67,7 +69,7 @@ client = Client(api_key, api_secret)
 
 
 def get_last_two_candles_direction(symbol, interval='5m'):
-    klines = client.get_klines(symbol=symbol, interval=interval, limit=5)
+    klines = client.get_klines(symbol=symbol, interval=interval, limit=10)
     close_prices = [float(kline[4]) for kline in klines[:-1]]
     if close_prices[-1] > close_prices[-2]:
         print(close_prices[-1])
@@ -81,16 +83,35 @@ def get_last_two_candles_direction(symbol, interval='5m'):
     return direction
 
 
+def get_current_positions():
+    # Replace YOUR_API_KEY and YOUR_API_SECRET with your Binance API key and secret
+    client = Client(api_key='KH3zUXPCNXCI8mkVymna2cG3tkYm2daQtgPBsQpSdOwZlOcTQuqoQVvA9mSvpQfA', api_secret='7TMJtn1N0B6cw875KgjD2jV1oxcLm6zcl5rPEt8uSJZeMmZs3JJrD1NxteVScPkb')
+
+    client_test = Client(config.API_KEY, config.API_SECRET, testnet=True)
+    price = 2059
+    cost = float(str(price).split('.')[0] + "." + str(price).split('.')[1][0:5]) + (price * 0.3 / 100)
+
+    # Get current open positions
+    data = client.futures_exchange_info()  # request data
+    info = data['symbols']  # pull list of symbols
+    for x in range(len(info)):  # find length of list and run loop
+        if info[x]['symbol'] == config.trading_pair:  # until we find our coin
+            a = info[x]["filters"][0]['tickSize']  # break into filters pulling tick size
+            cost = round_step_size(cost,
+                                   float(a))  # convert tick size from string to float, insert in helper func with cost
+            print(cost)  # run into order parameter as price=cost
+
+
 if __name__ == '__main__':
-    starting_number = 0.21  # 0.21$
-    common_ratio = 1.03  # 20% increase
+    starting_number = 150  # 0.21$
+    common_ratio = 1.05  # 20% increase
     num_terms = 64
     result = geometric_progression(starting_number, common_ratio, num_terms)
     print(result)
-    wallet = [new_value + 3.596 for new_value in result]
+    wallet = [new_value + 1150 for new_value in result]
     print(wallet)
-
-    symbol = 'ETHUSDT'
-    direction = get_last_two_candles_direction(symbol)
-    print(f'The direction of the last two candles on {symbol}: {direction}')
-
+    #
+    # symbol = 'ETHUSDT'
+    # direction = get_last_two_candles_direction(symbol)
+    # print(f'The direction of the last two candles on {symbol}: {direction}')
+    # #

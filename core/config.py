@@ -1,6 +1,10 @@
-API_KEY = 'q2tAXfN3biq6Iuy7oX1sX5x872tn7Ax1F7BJTDDnha0GeFqtVbLN8XmwP9Vj8j8g'
-API_SECRET = 'txShSTi2Hl98clKdmYP3glfTJQi1hREGAjAfLks3PzrnhghtMteVT4M62aP1sQ2u'
+# API_SECRET = 'KH3zUXPCNXCI8mkVymna2cG3tkYm2daQtgPBsQpSdOwZlOcTQuqoQVvA9mSvpQfA'
+# API_KEY = '7TMJtn1N0B6cw875KgjD2jV1oxcLm6zcl5rPEt8uSJZeMmZs3JJrD1NxteVScPkb'
+#
 
+#testnet
+API_SECRET = '5e0a0677b040a428e6646d060ba616b40937e19f92a576c35ab98b7fcbbffdd9'
+API_KEY = '552adddf40a41a4b272f22c99d7318792f0d2daf42cd80d69f2ecf4e8b9d649d'
 
 
 API_ID = ''
@@ -17,9 +21,9 @@ DC_MAP = {
 }
 
 # ETH/USDT checkpoint list. Minimum Take Profit 11.9%
-checkpoint_list = [1.8, 2.0, 2.5, 3.5, 4.5, 6.5, 7.5, 8.5, 9.5, 10.5, 16.5, 20.5]
-position_size = 0.02
-ticker_timeout = 30
+checkpoint_list = [3, 3.5, 4.5, 6.5, 7.5, 8.5, 9.5, 10.5, 16.5, 20.5]
+position_size = 0.03
+ticker_timeout = 20
 trading_pair = 'ETHUSDT'
 TP = 10.5
 MIN_TP = 2
