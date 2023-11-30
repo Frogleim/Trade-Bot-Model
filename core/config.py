@@ -24,6 +24,7 @@ DC_MAP = {
 checkpoint_list = [3, 3.5, 4.5, 6.5, 7.5, 8.5, 9.5, 10.5, 16.5, 20.5]
 position_size = 0.03
 ticker_timeout = 20
+TRADE_INTERVAL = 25*60
 trading_pair = 'ETHUSDT'
 TP = 10.5
 MIN_TP = 2
