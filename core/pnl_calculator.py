@@ -50,9 +50,9 @@ def position_size():
     crypto_current_price = client.futures_ticker(symbol=config.trading_pair)['lastPrice']
     percentage_increase = 0.05
     new_value = original_value + (original_value * percentage_increase)
-    logging.info(f"Original Value: {round(original_value *  crypto_current_price, 3)}", )
+    logging.info(f"Original Value: {round(original_value *  crypto_current_price, 3) / 100}", )
     logging.info(f"Percentage Increase: {round(percentage_increase * 100)}%", )
-    logging.info(f"New Value: {round(new_value * crypto_current_price, 3)}$", )
+    logging.info(f"New Value: {round(new_value * crypto_current_price, 3) / 100}$", )
     time.sleep(1)
     config.position_size = round(new_value, 3)
     with open(f'{files_dir}/config.py', 'r') as config_file:
