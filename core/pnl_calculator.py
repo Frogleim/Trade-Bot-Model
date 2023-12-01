@@ -1,16 +1,14 @@
 import time
 import config
-# from . import config
 import os
 from binance.client import Client
 from binance.helpers import round_step_size  # add at top
-import pandas as pd
-import ta
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 files_dir = os.path.join(parent_dir, "core")
 print(files_dir)
+client = Client(config.API_KEY, config.API_SECRET)
 
 
 class BinanceFuturesPNLCalculator:
@@ -63,12 +61,6 @@ def position_size():
     return original_value
 
 
-api_key = os.getenv('API_KEY')
-api_secret = os.getenv('API_SECRET')
-# Replace 'YOUR_API_KEY' and 'YOUR_API_SECRET' with your Binance API key and secret
-client = Client(api_key, api_secret)
-
-
 def get_last_two_candles_direction(symbol, interval='5m'):
     klines = client.get_klines(symbol=symbol, interval=interval, limit=5)
     close_prices = [float(kline[4]) for kline in klines[:-1]]
@@ -82,45 +74,6 @@ def get_last_two_candles_direction(symbol, interval='5m'):
         direction = 'No Change'
 
     return direction
-
-
-def rh_rl_calculator():
-    # Replace 'ETHUSDT' with the trading pair you are interested in
-    symbol = 'ETHUSDT'
-    interval = Client.KLINE_INTERVAL_5MINUTE  # Set to 5-minute interval
-
-    # Main loop for live trading
-    while True:
-        try:
-            # Fetch the last 200 candles (adjust the limit as needed)
-            klines = client.get_klines(symbol=symbol, interval=interval, limit=200)
-            df = pd.DataFrame(klines, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume', 'close_time',
-                                               'quote_asset_volume', 'number_of_trades', 'taker_buy_base_asset_volume',
-                                               'taker_buy_quote_asset_volume', 'ignore'])
-
-            # Convert timestamp to datetime
-            df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-
-            # Calculate moving averages
-            df['ma50'] = ta.trend.sma_indicator(df['close'], window=50)
-            df['ma200'] = ta.trend.sma_indicator(df['close'], window=200)
-
-            # Identify resistance levels based on your strategy
-            resistance_high = df['high'][(float(df['close']) > df['ma50']) & (df['close'] > df['ma200'])].max()
-            resistance_low = df['low'][(float(df['close']) > df['ma50']) & (df['close'] > df['ma200'])].min()
-
-            # Print the calculated resistance levels
-            print(f'Resistance High (RH): {resistance_high}')
-            print(f'Resistance Low (RL): {resistance_low}')
-
-            # Implement your trading logic here based on the calculated levels
-
-            # Sleep for a specific interval (adjust as needed)
-            time.sleep(300)  # Sleep for 5 minutes
-
-        except Exception as e:
-            print(f"Error: {e}")
-            time.sleep(10)  # Sleep for 10 seconds in case of an error
 
 
 def get_current_positions():
@@ -144,16 +97,10 @@ def get_current_positions():
 
 
 if __name__ == '__main__':
-    # starting_number = 150  # 0.21$
-    # common_ratio = 1.05  # 20% increase
-    # num_terms = 64
-    # result = geometric_progression(starting_number, common_ratio, num_terms)
-    # print(result)
-    # wallet = [new_value + 1150 for new_value in result]
-    # print(wallet)
-    #
-    rh_rl_calculator()
-    # symbol = 'ETHUSDT'
-    # direction = get_last_two_candles_direction(symbol)
-    # print(f'The direction of the last two candles on {symbol}: {direction}')
-    # #
+    starting_number = 400  # 0.21$
+    common_ratio = 1.07  # 20% increase
+    num_terms = 40  # 40 Trades is one day trade
+    result = geometric_progression(starting_number, common_ratio, num_terms)
+    print(result)
+    wallet = [new_value + 14000.7 for new_value in result]
+    print(wallet)

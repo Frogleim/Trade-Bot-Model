@@ -41,14 +41,14 @@ def trade():
         profit_checkpoint_list.clear()
         current_checkpoint = None
         logging.info(f'Profit checkpoint list: {profit_checkpoint_list} --- Current checkpoint: {current_checkpoint}')
-        # crypto_ticker.create_order(entry_price=opened_price, side='long')
+        crypto_ticker.create_order(entry_price=opened_price, side='long')
         body = f'Buying {config.trading_pair} for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
             res = pnl_long(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
-                # crypto_ticker.close_position(side='short', quantity=config.position_size)
-                # pnl_calculator.position_size()
+                crypto_ticker.close_position(side='short', quantity=config.position_size)
+                pnl_calculator.position_size()
                 logging.info('Position closed')
                 break
 
@@ -56,14 +56,14 @@ def trade():
         profit_checkpoint_list.clear()
         current_checkpoint = None
         logging.info(f'Profit checkpoint list: {profit_checkpoint_list} --- Current checkpoint: {current_checkpoint}')
-        # crypto_ticker.create_order(entry_price=opened_price, side='short')
+        crypto_ticker.create_order(entry_price=opened_price, side='short')
         body = f'Selling {config.trading_pair} for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
             res = pnl_short(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
-                # crypto_ticker.close_position(side='long', quantity=config.position_size)
-                # pnl_calculator.position_size()
+                crypto_ticker.close_position(side='long', quantity=config.position_size)
+                pnl_calculator.position_size()
                 logging.info('Position closed')
                 break
 

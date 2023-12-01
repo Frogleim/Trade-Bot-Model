@@ -92,30 +92,27 @@ def get_ask_price(client, symbol):
     return ask_price
 
 
-def create_order(entry_price, side, percentage_of_balance=95, quantity=None):
+def create_order(entry_price, side, percentage_of_balance=95, quantity=config.position_size):
     client = Client(api_key=api_key, api_secret=api_secret)
-    symbol = 'ETHUSDT'
     if side == 'long':
         order = client.futures_create_order(
             symbol=config.trading_pair,
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
             quantity=quantity,
-            price=entry_price
+            # price=entry_price
         )
         print(order)
         print("Order opened successfully")
-
     elif side == 'short':
         order = client.futures_create_order(
             symbol=config.trading_pair,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
             quantity=quantity,
-            price=entry_price
+            # price=entry_price
 
         )
-        print(order)
         print("Order opened successfully")
 
 
