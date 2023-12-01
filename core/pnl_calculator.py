@@ -46,19 +46,33 @@ def calculate_modified_difference(lst):
 
 def position_size():
     original_value = config.position_size
-    percentage_increase = 0.50
+    percentage_increase = 0.05
     new_value = original_value + (original_value * percentage_increase)
     print("Original Value:", original_value)
     print("Percentage Increase:", percentage_increase)
     print("New Value:", new_value)
     time.sleep(1)
-    config.position_size = new_value
+    config.position_size = round(new_value, 3)
     with open(f'{files_dir}/config.py', 'r') as config_file:
         config_data = config_file.read()
     config_data = config_data.replace(f"position_size = {original_value}", f"position_size = {new_value}")
     with open(f'{files_dir}/config.py', 'w') as config_file:
         config_file.write(config_data)
     return original_value
+
+
+def get_symbol_precision(symbol):
+    exchange_info = client.get_exchange_info()
+
+    for symbol_info in exchange_info['symbols']:
+        if symbol_info['symbol'] == symbol:
+            return int(symbol_info['baseAssetPrecision'])
+
+    # If the symbol is not found, you may want to handle this case appropriately
+    raise ValueError(f"Symbol {symbol} not found in exchange info")
+
+# Example usage for ETHUSDT
+
 
 
 def get_last_two_candles_direction(symbol, interval='5m'):
@@ -97,10 +111,12 @@ def get_current_positions():
 
 
 if __name__ == '__main__':
-    starting_number = 400  # 0.21$
-    common_ratio = 1.07  # 20% increase
-    num_terms = 40  # 40 Trades is one day trade
+    symbol_precision_ethusdt = get_symbol_precision('ETHUSDT')
+    print(f"Symbol Precision for ETHUSDT: {symbol_precision_ethusdt}")
+    starting_number = 300  # 0.21$
+    common_ratio = 1.05  # 20% increase
+    num_terms = 80  # 40 Trades is one day trade
     result = geometric_progression(starting_number, common_ratio, num_terms)
     print(result)
-    wallet = [new_value + 14000.7 for new_value in result]
+    wallet = [new_value + 90 for new_value in result]
     print(wallet)

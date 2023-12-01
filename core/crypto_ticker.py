@@ -92,7 +92,7 @@ def get_ask_price(client, symbol):
     return ask_price
 
 
-def create_order(entry_price, side, percentage_of_balance=95, quantity=config.position_size):
+def create_order(entry_price, side, quantity=config.position_size):
     client = Client(api_key=api_key, api_secret=api_secret)
     if side == 'long':
         order = client.futures_create_order(
