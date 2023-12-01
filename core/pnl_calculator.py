@@ -1,3 +1,4 @@
+import logging
 import time
 import config
 import os
@@ -46,11 +47,12 @@ def calculate_modified_difference(lst):
 
 def position_size():
     original_value = config.position_size
+    crypto_current_price = client.futures_ticker(symbol=config.trading_pair)['lastPrice']
     percentage_increase = 0.05
     new_value = original_value + (original_value * percentage_increase)
-    print("Original Value:", original_value)
-    print("Percentage Increase:", percentage_increase)
-    print("New Value:", new_value)
+    logging.info(f"Original Value: {round(original_value *  crypto_current_price, 3)}", )
+    logging.info(f"Percentage Increase: {round(percentage_increase * 100)}%", )
+    logging.info(f"New Value: {round(new_value * crypto_current_price, 3)}$", )
     time.sleep(1)
     config.position_size = round(new_value, 3)
     with open(f'{files_dir}/config.py', 'r') as config_file:
@@ -71,16 +73,14 @@ def get_symbol_precision(symbol):
     # If the symbol is not found, you may want to handle this case appropriately
     raise ValueError(f"Symbol {symbol} not found in exchange info")
 
-# Example usage for ETHUSDT
 
+# Example usage for ETHUSDT
 
 
 def get_last_two_candles_direction(symbol, interval='5m'):
     klines = client.get_klines(symbol=symbol, interval=interval, limit=5)
     close_prices = [float(kline[4]) for kline in klines[:-1]]
     if close_prices[-1] > close_prices[-2]:
-        print(close_prices[-1])
-        print(close_prices[-2])
         direction = True
     elif close_prices[-1] < close_prices[-2]:
         direction = False
@@ -113,10 +113,12 @@ def get_current_positions():
 if __name__ == '__main__':
     symbol_precision_ethusdt = get_symbol_precision('ETHUSDT')
     print(f"Symbol Precision for ETHUSDT: {symbol_precision_ethusdt}")
-    starting_number = 300  # 0.21$
+    starting_number = 0.21  # 0.21$
     common_ratio = 1.05  # 20% increase
-    num_terms = 80  # 40 Trades is one day trade
+    num_terms = 40  # 40 Trades is one day trade
     result = geometric_progression(starting_number, common_ratio, num_terms)
     print(result)
-    wallet = [new_value + 90 for new_value in result]
+    wallet = [new_value + 1.03 for new_value in result]
     print(wallet)
+    res = get_last_two_candles_direction(symbol=config.trading_pair)
+    print(res)

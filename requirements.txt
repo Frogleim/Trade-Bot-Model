@@ -3,3 +3,6 @@ pandas~=1.5.3
 requests
 openpyxl
 watchdog
+numpy~=1.26.2
+joblib~=1.3.2
+scikit-learn~=1.3.2
