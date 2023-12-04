@@ -46,18 +46,21 @@ def calculate_modified_difference(lst):
 
 
 def position_size():
-    original_value = config.position_size
+    file_original_value = config.position_size
     crypto_current_price = client.futures_ticker(symbol=config.trading_pair)['lastPrice']
     percentage_increase = 0.05
-    new_value = original_value + (original_value * percentage_increase)
-    logging.info(f"Original Value: {round(original_value *  crypto_current_price, 3) / 100}", )
+    new_value = file_original_value + (file_original_value * percentage_increase)
+    original_value = (float(file_original_value) * float(crypto_current_price)) / 100
+    logging_new_value = (new_value * float(crypto_current_price)) / 100
+    logging.info(f"Original Value: {round(original_value, 3)}", )
     logging.info(f"Percentage Increase: {round(percentage_increase * 100)}%", )
-    logging.info(f"New Value: {round(new_value * crypto_current_price, 3) / 100}$", )
+    logging.info(f"New Value: {round(logging_new_value, 3)}$", )
     time.sleep(1)
     config.position_size = round(new_value, 3)
     with open(f'{files_dir}/config.py', 'r') as config_file:
         config_data = config_file.read()
-    config_data = config_data.replace(f"position_size = {original_value}", f"position_size = {new_value}")
+    config_data = config_data.replace(f"position_size = {file_original_value}",
+                                      f"position_size = {round(new_value, 3)}")
     with open(f'{files_dir}/config.py', 'w') as config_file:
         config_file.write(config_data)
     return original_value
@@ -80,10 +83,11 @@ def get_symbol_precision(symbol):
 def get_last_two_candles_direction(symbol, interval='5m'):
     klines = client.get_klines(symbol=symbol, interval=interval, limit=5)
     close_prices = [float(kline[4]) for kline in klines[:-1]]
+
     if close_prices[-1] > close_prices[-2]:
-        direction = True
+        direction = "Up"
     elif close_prices[-1] < close_prices[-2]:
-        direction = False
+        direction = "Down"
     else:
         direction = 'No Change'
 
@@ -111,14 +115,12 @@ def get_current_positions():
 
 
 if __name__ == '__main__':
-    symbol_precision_ethusdt = get_symbol_precision('ETHUSDT')
-    print(f"Symbol Precision for ETHUSDT: {symbol_precision_ethusdt}")
-    starting_number = 0.21  # 0.21$
+    starting_number = 2.8  # 0.21$
     common_ratio = 1.05  # 20% increase
-    num_terms = 40  # 40 Trades is one day trade
+    num_terms = 80  # 40 Trades is one day trade
     result = geometric_progression(starting_number, common_ratio, num_terms)
     print(result)
-    wallet = [new_value + 1.03 for new_value in result]
+    wallet = [new_value + 83.5 for new_value in result]
     print(wallet)
     res = get_last_two_candles_direction(symbol=config.trading_pair)
     print(res)

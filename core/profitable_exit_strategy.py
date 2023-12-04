@@ -40,13 +40,13 @@ def trade():
         profit_checkpoint_list.clear()
         current_checkpoint = None
         logging.info(f'Profit checkpoint list: {profit_checkpoint_list} --- Current checkpoint: {current_checkpoint}')
-        # crypto_ticker.create_order(entry_price=opened_price, side='long')
+        crypto_ticker.place_buy_order(price=opened_price, quantity=config.position_size, symbol=config.trading_pair)
         body = f'Buying {config.trading_pair} for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
             res = pnl_long(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
-                # crypto_ticker.close_position(side='short', quantity=config.position_size)
+                crypto_ticker.close_position(side='short', quantity=config.position_size)
                 pnl_calculator.position_size()
                 logging.info('Position closed')
                 break
@@ -55,13 +55,13 @@ def trade():
         profit_checkpoint_list.clear()
         current_checkpoint = None
         logging.info(f'Profit checkpoint list: {profit_checkpoint_list} --- Current checkpoint: {current_checkpoint}')
-        # crypto_ticker.create_order(entry_price=opened_price, side='short')
+        crypto_ticker.place_sell_order(price=opened_price, quantity=config.position_size, symbol=config.trading_pair)
         body = f'Selling {config.trading_pair} for price {round(float(opened_price), 1)}'
         logging.info(body)
         while True:
             res = pnl_short(opened_price=opened_price, signal=signal_price)
             if res == 'Profit':
-                # crypto_ticker.close_position(side='long', quantity=config.position_size)
+                crypto_ticker.close_position(side='long', quantity=config.position_size)
                 pnl_calculator.position_size()
                 logging.info('Position closed')
                 break
@@ -80,15 +80,15 @@ def check_price_changes():
         signal_difference = float(next_crypto_current) - float(checking_price)
         logging.info(f'Difference: {round(signal_difference, 2)}')
         if signal_difference > config.signal_price and pnl_calculator.get_last_two_candles_direction(
-                config.trading_pair):
+                config.trading_pair) == 'Up':
             logging.info(pnl_calculator.get_last_two_candles_direction(
                 config.trading_pair))
             message = (f"{config.trading_pair} goes up for more than {config.signal_price}$\n"
                        f" Buying {config.trading_pair} for {round(float(next_crypto_current), 1)}$")
             logging.info(message)
             return True, next_crypto_current, signal_difference
-        elif signal_difference < -config.signal_price and not pnl_calculator.get_last_two_candles_direction(
-                config.trading_pair):
+        elif signal_difference < -config.signal_price and pnl_calculator.get_last_two_candles_direction(
+                config.trading_pair) == 'Down':
             logging.info(pnl_calculator.get_last_two_candles_direction(
                 config.trading_pair))
             message = (f"{config.trading_pair} goes down for more than {config.signal_price}$\n"
@@ -114,7 +114,7 @@ def pnl_long(opened_price=None, current_price=2090, signal=None):
 
     logging.warning(f'Current checkpoint: --> {current_checkpoint}')
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
-        if current_checkpoint < profit_checkpoint_list[-1] or current_checkpoint >= config.checkpoint_list[-1]:
+        if current_checkpoint < profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
             body = f'Position closed!.\nPosition data\nSymbol: {config.trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
             logging.info(body)
@@ -138,7 +138,7 @@ def pnl_short(opened_price=None, signal=None):
 
     logging.warning(f'Current checkpoint: --> {current_checkpoint}')
     if len(profit_checkpoint_list) >= 2 and profit_checkpoint_list[-2] is not None and current_checkpoint is not None:
-        if current_checkpoint < profit_checkpoint_list[-1] or current_checkpoint >= config.checkpoint_list[-1]:
+        if current_checkpoint < profit_checkpoint_list[-2] or current_checkpoint == config.checkpoint_list[-1]:
             body = f'Position closed!\nPosition data\nSymbol: {config.trading_pair}\nEntry Price: {round(float(opened_price), 1)}\n' \
                    f'Close Price: {round(float(btc_current), 1)}\nProfit: {round(current_profit, 1)}'
             logging.info(body)
