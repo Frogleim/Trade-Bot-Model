@@ -44,6 +44,13 @@ class UpdateTradeCoins(BaseModel):
     indicator: str
 
 
+class Signal(BaseModel):
+    symbol: str
+    signal: str
+    entry_price: float
+    indicator: str
+
+
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
@@ -69,6 +76,28 @@ async def get_error_log():
         return FileResponse(error_log_file_path, media_type='application/octet-stream', filename='error_log.logs')
     else:
         raise HTTPException(status_code=404, detail="Log file not found")
+
+
+@app.post('/insert-signal')
+def insert_signal(signal_data: Signal):
+    my_db = db.DataBase()
+    my_db.clean_db(table_name='signal')
+    symbol = signal_data.symbol
+    signal = signal_data.signal
+    entry_price = signal_data.entry_price
+    indicator = signal_data.indicator
+    try:
+
+        my_db = db.DataBase()
+        my_db.insert_signal(
+            symbol=symbol,
+            signal=signal,
+            entry_price=entry_price,
+            indicator=indicator
+        )
+        return {"Message": "Success"}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f'Failed to insert signal\nError message: {e}')
 
 
 @app.get("/get-action-log")
@@ -155,6 +184,20 @@ def get_trade_coins():
     ]
     json_data = json.dumps(transformed_data, indent=4)
     return json.loads(json_data)
+
+
+@app.get('/is_finished')
+def is_finished():
+    try:
+        my_db = db.DataBase()
+        finished = my_db.check_is_finished()
+        if finished:
+            return {'Message': True}
+        else:
+            return {'Message': False}
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f'Error getting trade status\nMessage: {e}')
 
 
 @app.get('/get_trades_history/')

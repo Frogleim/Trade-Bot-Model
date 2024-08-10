@@ -1,8 +1,8 @@
 import warnings
+
 warnings.filterwarnings(action='ignore')
 
 import asyncio
-import logging
 
 from core.strategies import EMA_Cross
 from db import DataBase
@@ -14,8 +14,10 @@ pause_event = asyncio.Event()
 
 symbols = ['MATICUSDT', 'BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'ADAUSDT']
 
+
 async def check_signal(symbol):
     return await EMA_Cross.check_signal(symbol)
+
 
 async def monitor_and_check_signals():
     while True:
@@ -32,7 +34,8 @@ async def monitor_and_check_signals():
                         indicator='EMA'
                     )
                     pause_event.clear()  # Break out of the loop if a result is found
-            else: print('No trade signals')
+            else:
+                print('No trade signals')
             await asyncio.sleep(1)  # Check every second
             is_finished = my_db.check_is_finished()
             if is_finished:
@@ -42,6 +45,7 @@ async def monitor_and_check_signals():
         except Exception as e:
             logging_settings.error_logs_logger.error(f'EMA Crossover script down!\nError message: {e}')
         await asyncio.sleep(1)  # To avoid a tight loop
+
 
 if __name__ == '__main__':
     my_db.create_all_tables()

@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import pickle
 import ta
 
+
 # Fetch data
 symbol = 'MATIC/USDT'
 timeframe = '15m'

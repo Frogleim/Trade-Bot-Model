@@ -5,7 +5,7 @@ class DataBase:
     def __init__(self):
         self.user = "postgres"
         self.password = "admin"
-        self.host = "localhost"
+        self.host = "pgdb"
         self.port = 5433
         self.database = "miya"
 

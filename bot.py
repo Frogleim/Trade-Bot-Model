@@ -2,6 +2,8 @@ from coins_trade.miya import miya_trade
 from colorama import init, Fore
 from binance.client import Client
 from db import DataBase
+from coins_trade.miya import logging_settings
+
 import time
 
 client = Client()
@@ -10,7 +12,6 @@ client = Client()
 async def start_trade():
     my_db = DataBase()
     signal_data = my_db.get_signal()
-    print(signal_data)
     if signal_data is not None:
         row = my_db.get_trade_coins(signal_data[4])
         signal = signal_data[2]
@@ -22,6 +23,8 @@ async def start_trade():
             position_size=row[2],
             indicator=row[-1]
         )
+        my_db.clean_db(table_name='signals')
+        logging_settings.system_log.warning('Signals Table cleaned successfully')
         traded = True
         return traded
     else:

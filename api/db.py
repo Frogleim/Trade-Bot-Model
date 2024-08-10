@@ -5,7 +5,7 @@ class DataBase:
     def __init__(self):
         self.user = "postgres"
         self.password = "admin"
-        self.host = "localhost"
+        self.host = "pgdb"
         self.port = 5433
         self.database = "miya"
 
@@ -126,15 +126,14 @@ class DataBase:
             return None
 
     def check_is_finished(self):
-        while True:
-            conn = self.connect()
-            cursor = conn.cursor()
-            cursor.execute(f"SELECT * FROM trades_alert ")
-            rows = cursor.fetchall()
-            if len(rows) > 0:
-                return True
-            else:
-                return False
+        conn = self.connect()
+        cursor = conn.cursor()
+        cursor.execute(f"SELECT * FROM trades_alert ")
+        rows = cursor.fetchall()
+        if len(rows) > 0:
+            return True
+        else:
+            return False
 
     def get_binance_keys(self):
         conn = self.connect()
