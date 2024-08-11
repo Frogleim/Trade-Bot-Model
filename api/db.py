@@ -85,6 +85,12 @@ class DataBase:
         cursor.execute(f"DELETE FROM {table_name}")
         conn.commit()
 
+    def clean_signals(self):
+        conn = self.connect()
+        cursor = conn.cursor()
+        cursor.execute(f"DELETE FROM signals")
+        conn.commit()
+
     def get_trade_settings(self):
         conn = self.connect()
         cursor = conn.cursor()
@@ -95,7 +101,7 @@ class DataBase:
     def insert_signal(self, symbol, entry_price, signal, indicator):
         conn = self.connect()
         cursor = conn.cursor()
-        self.clean_db(table_name='signals')
+        self.clean_signals()
         cursor.execute("INSERT INTO signals (coin, signal, entry_price, indicator)"
                        " VALUES (%s, %s, %s, %s)",
                        (symbol, signal, entry_price, indicator))

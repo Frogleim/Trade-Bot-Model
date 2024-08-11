@@ -9,7 +9,7 @@ import time
 client = Client()
 
 
-async def start_trade():
+def start_trade():
     my_db = DataBase()
     signal_data = my_db.get_signal()
     if signal_data is not None:

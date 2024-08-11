@@ -8,7 +8,7 @@ from binance.client import Client
 import aiohttp
 import logging
 import ta
-import logging_settings
+from . import logging_settings
 
 # Initialize the Binance client
 api_key = 'YOUR_API_KEY'
