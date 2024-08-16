@@ -1,5 +1,0 @@
-signals - coin, signal, entry_price
-binance_keys = api_key, api_secret
-trade_coins = symbol, quantity, checkpoints
-trades_alert = is_finished
-trade_history = symbol, entry_price, exit_price, profit
