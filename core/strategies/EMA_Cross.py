@@ -74,73 +74,32 @@ async def calculate_indicators(symbol):
         return pd.DataFrame()
 
 async def check_signal(symbol):
-    data = await calculate_indicators(symbol)
-    if data.empty:
-        logging_settings.error_logs_logger.error(f'No data available for signal check for {symbol}')
-        return symbol, 'No Data', None
+    while True:
+        data = await calculate_indicators(symbol)
+        if data.empty:
+            loggs.error_logs_logger.error(f'No data available during signal check for {symbol}')
+            return symbol, 'No Data', None
 
-    data['Signal'] = 0
-    data['Signal'] = np.where((data['EMA_Short'] > data['EMA_Long']) & (data['ADX'] > 25), 1,
-                              np.where((data['EMA_Short'] < data['EMA_Long']) & (data['ADX'] > 25), -1, 0))
+        short_ema = data["EMA_Short"].iloc[-1]
+        long_ema = data["EMA_Long"].iloc[-1]
+        last_close_price = data['close'].iloc[-1]
+        atr = data['ATR'].iloc[-1]
+        adx = data['ADX'].iloc[-1]
+        sar = data['sar'].iloc[-1]
 
-    data['Crossover'] = data['Signal'].diff()
-
-    last_close_price = data['close'].iloc[-1]
-    short_ema = data["EMA_Short"].iloc[-1]
-    long_ema = data["EMA_Long"].iloc[-1]
-    atr = data['ATR'].iloc[-1]
-    adx = data['ADX'].iloc[-1]
-    sar = data['sar'].iloc[-1]
-    if short_ema > long_ema:
-        logging_settings.system_log.warning(f"Waiting for downtrend for {symbol}!")
-        while True:
-            data = await calculate_indicators(symbol)
-            if data.empty:
-                logging_settings.error_logs_logger.error(f'No data available during downtrend wait for {symbol}')
-                continue
-            short_ema = data["EMA_Short"].iloc[-1]
-            long_ema = data["EMA_Long"].iloc[-1]
-            last_close_price = data['close'].iloc[-1]
-            is_adx = True if adx > 22 else False
-            is_sar = True if sar > short_ema else False 
-
-            print(f'{symbol} Long ema: {long_ema} Short ema: {short_ema} ADX: {is_adx} SAR: {sar} is SAR: {is_sar}')
-
-            logging_settings.system_log.warning(f'EMA has not crossed yet for {symbol}')
-            if short_ema < long_ema:
-                logging_settings.system_log.warning(f'EMA crosses for {symbol}')
-                if last_close_price < long_ema and is_adx and is_sar:
-                    logging_settings.system_log.warning(f'{symbol} EMA crosses!\nShort EMA: {short_ema}, Long EMA: {long_ema} ADX: {data["ADX"].iloc[-1]} ATR: {atr} Signal: Buy')
-                    return symbol, 'Sell', last_close_price
+        if short_ema > long_ema:
+            if sar > short_ema and adx > 22:
+                logging_settings.system_log.warning(f'{symbol} Sell signal detected.')
+                return symbol, 'Sell', last_close_price
+        elif short_ema < long_ema:
+            if sar < short_ema and adx > 22:
+                logging_settings.system_log.warning(f'{symbol} Buy signal detected.')
+                return symbol, 'Buy', last_close_price
+        else:
+            logging_settings.system_log.warning(f'{symbol} No clear signal. Holding...')
             return symbol, 'Hold', last_close_price
 
-
-    elif short_ema < long_ema:
-        logging_settings.system_log.warning(f"Waiting for uptrend for {symbol}!")
-        while True:
-            data = await calculate_indicators(symbol)
-            if data.empty:
-                logging_settings.error_logs_logger.error(f'No data available during uptrend wait for {symbol}')
-                continue
-            
-            short_ema = data["EMA_Short"].iloc[-1]
-            long_ema = data["EMA_Long"].iloc[-1]
-            last_close_price = data['close'].iloc[-1]
-            is_sar = True if sar < short_ema else False 
-            is_adx = True if adx > 22 else False
-            print(f'{symbol} Long ema: {long_ema} Short ema: {short_ema} ADX: {is_adx} SAR: {sar} is SAR: {is_sar}')
-            logging_settings.system_log.warning(f'EMA has not crossed yet for {symbol}')
-            if short_ema > long_ema:
-                if last_close_price > long_ema and is_adx and is_sar:
-                    logging_settings.system_log.warning(f'{symbol} EMA crosses!\nShort EMA: {short_ema}, Long EMA: {long_ema} ADX: {data["ADX"].iloc[-1]} ATR: {atr} Signal: Buy')
-                    return symbol, "Buy", last_close_price
-            print('No signal ')
-            return symbol, 'Hold', last_close_price
-
-
-    else:
-        return symbol, 'Hold', last_close_price
-
+        await asyncio.sleep(900)  # Wait for 15 minutes before the next check.
 async def main():
     try:
         tasks = [check_signal(symbol) for symbol in symbols]
