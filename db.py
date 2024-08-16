@@ -5,8 +5,8 @@ class DataBase:
     def __init__(self):
         self.user = "postgres"
         self.password = "admin"
-        self.host = "localhost"
-        self.port = 5433
+        self.host = "pgdb"
+        self.port = 5432
         self.database = "miya"
 
     def connect(self):
