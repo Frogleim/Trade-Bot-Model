@@ -7,6 +7,13 @@ services:
     volumes:
       - coins_trade:/logs
     restart: unless-stopped
+
+  bot:
+    build:
+      context: .
+    volumes:
+      - coins_trade:/logs
+    restart: unless-stopped
   api:
     build: api
     ports:
