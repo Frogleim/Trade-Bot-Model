@@ -1,6 +1,0 @@
-pandas
-numpy
-python-binance
-aiohttp
-ta
-ccxt
