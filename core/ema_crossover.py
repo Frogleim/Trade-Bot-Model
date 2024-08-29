@@ -1,0 +1,82 @@
+from binance.client import Client
+import pandas as pd
+import ta
+import numpy as np
+import time
+import requests
+from position_handler import place_buy_order, place_sell_order, close_position
+import aiohttp
+import logging
+
+
+def get_credentials():
+    print('Getting API KEYS from db')
+    url = "http://77.37.51.134:8080/get_keys"
+    headers = {
+        "accept": "application / json"
+    }
+    response = requests.get(url=url, headers=headers, verify=False)
+    return response.json()
+
+
+cred_data = get_credentials()
+api_key = cred_data['api_key']
+api_secret = cred_data['api_secret']
+client = Client(api_key=api_key, api_secret=api_secret)
+symbol = 'BTCUSDT'
+interval = '15m'
+lookback = 5
+
+
+def calculate_ema():
+
+    data = client.futures_klines(symbol=symbol, interval='15m')
+    df = pd.DataFrame(data, columns=[
+        'open_time', 'open', 'high', 'low', 'close', 'volume',
+        'close_time', 'quote_asset_volume', 'number_of_trades',
+        'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'
+    ])
+    df['close'] = pd.to_numeric(df['close'])
+    short_ema = df['close'].ewm(span=9, adjust=False).mean()
+    long_ema = df['close'].ewm(span=15, adjust=False).mean()
+    close_price = df['close'].iloc[-2]
+    return long_ema, short_ema, close_price
+
+
+def check_crossover():
+    short_ema, long_ema, close_price = calculate_ema()
+    crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
+    crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+    if crossover_buy:
+        return 'Buy', close_price
+    elif crossover_sell:
+        return 'Sell', close_price
+    else:
+        return 'Hold', close_price
+
+
+def start_trade():
+    signal, close_price = check_crossover()
+    if signal == 'Buy':
+        place_buy_order(
+            price=float(close_price),
+            quantity=250,
+            symbol='BTCUSDT'
+        )
+        print('Buy position placed successfully')
+    elif signal == 'Sell':
+        place_sell_order(
+            price=float(close_price),
+            quantity=250,
+            symbol='BTCUSDT'
+        )
+        print('Buy position placed successfully')
+    else:
+        print('Hold, not crossover yet')
+
+
+
+if __name__ == '__main__':
+    while True:
+        start_trade()
+        time.sleep(60)
