@@ -29,7 +29,6 @@ lookback = 5
 
 
 def calculate_ema():
-
     data = client.futures_klines(symbol=symbol, interval='15m')
     df = pd.DataFrame(data, columns=[
         'open_time', 'open', 'high', 'low', 'close', 'volume',
@@ -47,9 +46,10 @@ def check_crossover():
     short_ema, long_ema, close_price = calculate_ema()
     crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
     crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
-    if crossover_buy:
+
+    if crossover_buy and close_price > long_ema:
         return 'Buy', close_price
-    elif crossover_sell:
+    elif crossover_sell and close_price < long_ema:
         return 'Sell', close_price
     else:
         return 'Hold', close_price
@@ -75,8 +75,7 @@ def start_trade():
         print('Hold, not crossover yet')
 
 
-
 if __name__ == '__main__':
     while True:
         start_trade()
-        time.sleep(60)
+        time.sleep(10)
