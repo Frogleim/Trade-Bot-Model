@@ -26,6 +26,7 @@ client = Client(api_key=api_key, api_secret=api_secret)
 symbol = 'BTCUSDT'
 interval = '15m'
 lookback = 5
+adx_period = 14
 
 
 def calculate_ema():
@@ -36,20 +37,27 @@ def calculate_ema():
         'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'
     ])
     df['close'] = pd.to_numeric(df['close'])
+    df['high'] = pd.to_numeric(df['high'])
+    df['low'] = pd.to_numeric(df['low'])
+
     short_ema = df['close'].ewm(span=9, adjust=False).mean()
     long_ema = df['close'].ewm(span=15, adjust=False).mean()
     close_price = df['close'].iloc[-2]
-    return long_ema, short_ema, close_price
+
+    adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
+
+    return long_ema, short_ema, close_price, adx
 
 
 def check_crossover():
-    short_ema, long_ema, close_price = calculate_ema()
+    short_ema, long_ema, close_price, adx = calculate_ema()
     crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
     crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
-
-    if crossover_buy and close_price > long_ema:
+    print(crossover_sell)
+    print(crossover_buy)
+    if crossover_buy and adx > 20:
         return 'Buy', close_price
-    elif crossover_sell and close_price < long_ema:
+    elif crossover_sell and adx > 20:
         return 'Sell', close_price
     else:
         return 'Hold', close_price
