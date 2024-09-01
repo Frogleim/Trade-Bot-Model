@@ -1,6 +1,6 @@
 import time
 from binance.client import Client
-from . import position_handler, logging_settings, ema_crossover, monitor_position
+import position_handler, logging_settings, ema_crossover, monitor_position
 from binance.exceptions import BinanceAPIException
 
 

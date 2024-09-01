@@ -82,11 +82,12 @@ def place_buy_order_with_stop_loss_take_profit(price, quantity, symbol, stop_los
 
 
 def place_buy_order(price, quantity, symbol):
+    print(quantity)
     client = Client(api_key=API_KEY, api_secret=API_SECRET)
     order = client.futures_create_order(
         symbol=symbol,
-        side=Client.SIDE_BUY,
-        type='LIMIT',
+        side='BUY',
+        type=Client.ORDER_TYPE_LIMIT,
         timeInForce='GTC',  # Good 'til canceled
         quantity=quantity,
         price=price
@@ -103,7 +104,7 @@ def place_sell_order(price, quantity, symbol):
     order = client.futures_create_order(
         symbol=symbol,
         side=Client.SIDE_SELL,
-        type='LIMIT',
+        type=Client.ORDER_TYPE_LIMIT,
         timeInForce='GTC',  # Good 'til canceled
         quantity=quantity,
         price=price

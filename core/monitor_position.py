@@ -1,6 +1,3 @@
-import time
-
-from position_handler import close_position
 from binance.client import Client
 from ema_crossover import get_credentials
 import pandas as pd
@@ -31,12 +28,12 @@ def check_position(signal, entry_price):
     last_price = price_ticker['lastPrice']
     long_ema = calculate_ema()
     if signal == 'Buy':
-        if last_price < long_ema:
+        if float(last_price) < float(long_ema.iloc[-1]):
             return 'Loss'
-        if last_price == float(entry_price) + 80:
+        if (last_price) == float(entry_price) + 80:
             return 'Profit'
     elif signal == 'Sell':
-        if last_price > long_ema:
+        if float(last_price) > float(long_ema.iloc[-1]):
             return 'Loss'
         if last_price == float(entry_price) - 80:
             return 'Profit'
@@ -44,5 +41,5 @@ def check_position(signal, entry_price):
 
 if __name__ == '__main__':
     # while True:
-    check_position()
     # time.sleep(1)
+    check_position('Buy', 30000)

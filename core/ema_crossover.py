@@ -1,12 +1,10 @@
 from binance.client import Client
 import pandas as pd
 import ta
-import numpy as np
 import time
 import requests
-from position_handler import place_buy_order, place_sell_order, close_position
-import aiohttp
-import logging
+from position_handler import place_buy_order, place_sell_order
+import place_position
 
 
 def get_credentials():
@@ -40,8 +38,8 @@ def calculate_ema():
     df['high'] = pd.to_numeric(df['high'])
     df['low'] = pd.to_numeric(df['low'])
 
-    short_ema = df['close'].ewm(span=9, adjust=False).mean()
-    long_ema = df['close'].ewm(span=15, adjust=False).mean()
+    short_ema = df['close'].ewm(span=5, adjust=False).mean()
+    long_ema = df['close'].ewm(span=8, adjust=False).mean()
     close_price = df['close'].iloc[-2]
 
     adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
@@ -63,27 +61,26 @@ def check_crossover():
         return 'Hold', close_price
 
 
-def start_trade():
+def start_trade(signal=None, close_price=2000):
     signal, close_price = check_crossover()
+    client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
+
     if signal == 'Buy':
-        place_buy_order(
-            price=float(close_price),
-            quantity=250,
-            symbol='BTCUSDT'
-        )
+        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.005)
         print('Buy position placed successfully')
     elif signal == 'Sell':
-        place_sell_order(
-            price=float(close_price),
-            quantity=250,
-            symbol='BTCUSDT'
-        )
+        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.005)
         print('Buy position placed successfully')
     else:
         print('Hold, not crossover yet')
 
 
 if __name__ == '__main__':
-    while True:
-        start_trade()
-        time.sleep(10)
+    # while True:
+    #     start_trade()
+    #     time.sleep(10)
+    start_trade(signal='Buy')
+    # info = client.futures_position_information(symbol='BTCUSDT')
+    # print(info)
+    exchange_info = client.futures_exchange_info()
+
