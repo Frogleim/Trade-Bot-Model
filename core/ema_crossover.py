@@ -53,34 +53,30 @@ def check_crossover():
     crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
     print(crossover_sell)
     print(crossover_buy)
-    if crossover_buy and adx > 20:
+    if crossover_buy and adx.iloc[-1] > 20:
         return 'Buy', close_price
-    elif crossover_sell and adx > 20:
+    elif crossover_sell and adx.iloc[-1] > 20:
         return 'Sell', close_price
     else:
         return 'Hold', close_price
 
 
-def start_trade(signal=None, close_price=2000):
-    signal, close_price = check_crossover()
+def start_trade(signal=None, close_price=None):
+    # signal, close_price = check_crossover()
     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
 
     if signal == 'Buy':
-        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.005)
+        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
         print('Buy position placed successfully')
     elif signal == 'Sell':
-        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.005)
+        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
         print('Buy position placed successfully')
     else:
         print('Hold, not crossover yet')
 
 
 if __name__ == '__main__':
-    # while True:
-    #     start_trade()
-    #     time.sleep(10)
-    start_trade(signal='Buy')
-    # info = client.futures_position_information(symbol='BTCUSDT')
-    # print(info)
-    exchange_info = client.futures_exchange_info()
+    while True:
+        start_trade()
+        time.sleep(10)
 

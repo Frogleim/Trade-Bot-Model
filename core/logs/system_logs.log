@@ -19,3 +19,8 @@
 2024-08-31 14:13:21,714 - WARNING - Starting trade. Symbol: ETHUSDT, Entry Price: 2000, Position Size: 20
 2024-08-31 14:13:40,316 - WARNING - Starting trade. Symbol: ETHUSDT, Entry Price: 2000, Position Size: 0.01
 2024-08-31 14:14:40,710 - WARNING - Trade wasn't finished...too much time passed
+2024-09-02 19:33:18,544 - WARNING - Starting trade. Symbol: BTCUSDT, Entry Price: 58527, Position Size: 0.005
+2024-09-02 21:01:00,784 - WARNING - Starting trade. Symbol: BTCUSDT, Entry Price: 58335, Position Size: 0.002
+2024-09-02 21:02:01,113 - WARNING - Trade wasn't finished...too much time passed
+2024-09-02 21:02:29,819 - WARNING - Starting trade. Symbol: BTCUSDT, Entry Price: 58364, Position Size: 0.002
+2024-09-02 21:06:18,816 - WARNING - Starting trade. Symbol: BTCUSDT, Entry Price: 58364, Position Size: 0.002

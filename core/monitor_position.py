@@ -17,8 +17,8 @@ def calculate_ema():
         'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'
     ])
     df['close'] = pd.to_numeric(df['close'])
-    short_ema = df['close'].ewm(span=9, adjust=False).mean()
-    long_ema = df['close'].ewm(span=15, adjust=False).mean()
+    short_ema = df['close'].ewm(span=5, adjust=False).mean()
+    long_ema = df['close'].ewm(span=8, adjust=False).mean()
     close_price = df['close'].iloc[-2]
     return long_ema
 
@@ -27,15 +27,16 @@ def check_position(signal, entry_price):
     price_ticker = client.futures_ticker(symbol='BTCUSDT')
     last_price = price_ticker['lastPrice']
     long_ema = calculate_ema()
+    print(f'Entry Price: {entry_price} ---> Target Price: {float(entry_price) + 80} ---> Long EMA: {long_ema.iloc[-1]}')
     if signal == 'Buy':
         if float(last_price) < float(long_ema.iloc[-1]):
             return 'Loss'
-        if (last_price) == float(entry_price) + 80:
+        if float(last_price) == float(entry_price) + 80:
             return 'Profit'
     elif signal == 'Sell':
         if float(last_price) > float(long_ema.iloc[-1]):
             return 'Loss'
-        if last_price == float(entry_price) - 80:
+        if float(last_price) == float(entry_price) - 80:
             return 'Profit'
 
 
