@@ -5,7 +5,8 @@ import time
 import requests
 from position_handler import place_buy_order, place_sell_order
 import place_position
-
+import logging_settings
+from coins_trade.miya import miya_trade
 
 def get_credentials():
     print('Getting API KEYS from db')
@@ -49,8 +50,8 @@ def calculate_ema():
 
 def check_crossover():
     short_ema, long_ema, close_price, adx = calculate_ema()
-    crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
-    crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+    crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
+    crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
     print(crossover_sell)
     print(crossover_buy)
     if crossover_buy and adx.iloc[-1] > 20:
@@ -62,15 +63,20 @@ def check_crossover():
 
 
 def start_trade(signal=None, close_price=None):
-    # signal, close_price = check_crossover()
+    signal, close_price = check_crossover()
     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
-
+    print(signal)
     if signal == 'Buy':
+        logging_settings.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
         place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
-        print('Buy position placed successfully')
+        logging_settings.system_log.warning('Trade finished! Sleeping...')
+        time.sleep(900)
     elif signal == 'Sell':
+        logging_settings.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
         place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
-        print('Buy position placed successfully')
+        logging_settings.system_log.warning('Trade finished! Sleeping...')
+
+        time.sleep(900)
     else:
         print('Hold, not crossover yet')
 

@@ -1,0 +1,5 @@
+python-binance
+pandas
+ccxt
+fastapi
+uvicorn

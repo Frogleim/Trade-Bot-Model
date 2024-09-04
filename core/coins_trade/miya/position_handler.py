@@ -1,17 +1,7 @@
 from binance.client import Client
+from . import config, api_connect
 import logging
 import os
-import requests
-
-
-def get_credentials():
-    url = "http://77.37.51.134:8080/get_keys"
-    headers = {
-        "accept": "application / json"
-    }
-    response = requests.get(url=url, headers=headers, verify=False)
-    return response.json()
-
 
 previous_price = None
 alert_status = False
@@ -23,23 +13,26 @@ parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
 logging.basicConfig(
     level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-keys_data = get_credentials()
+miya_api = api_connect.API()
+keys_data = miya_api.get_binance_keys()
 API_KEY = keys_data['api_key']
 API_SECRET = keys_data['api_secret']
+print(API_KEY)
+print(API_SECRET)
 
 
 def close_position(side, quantity):
     client = Client(api_key=API_KEY, api_secret=API_SECRET)
-    if side == 'Buy':
+    if side == 'long':
         order = client.futures_create_order(
-            symbol='BTCUSDT',
+            symbol=config.trading_pair,
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
             quantity=quantity,
         )
     else:
         order = client.futures_create_order(
-            symbol='BTCUSDT',
+            symbol=config.trading_pair,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
 
@@ -82,11 +75,10 @@ def place_buy_order_with_stop_loss_take_profit(price, quantity, symbol, stop_los
 
 
 def place_buy_order(price, quantity, symbol):
-    print(quantity)
     client = Client(api_key=API_KEY, api_secret=API_SECRET)
     order = client.futures_create_order(
         symbol=symbol,
-        side='BUY',
+        side=Client.SIDE_BUY,
         type=Client.ORDER_TYPE_MARKET,
         timeInForce='GTC',  # Good 'til canceled
         quantity=quantity,
@@ -98,12 +90,13 @@ def place_buy_order(price, quantity, symbol):
 
 
 def place_sell_order(price, quantity, symbol):
+
     client = Client(api_key=API_KEY, api_secret=API_SECRET)
 
     order = client.futures_create_order(
         symbol=symbol,
         side=Client.SIDE_SELL,
-        type=Client.ORDER_TYPE_LIMIT,
+        type='LIMIT',
         timeInForce='GTC',  # Good 'til canceled
         quantity=quantity,
         price=price
@@ -113,11 +106,13 @@ def place_sell_order(price, quantity, symbol):
     return order
 
 
-if __name__ == "__main__":
-    price = 0.553  # Example price for buying
-    quantity = 10  # Example quantity
-    symbol = 'MATICUSDT'
-    stop_loss_price = 1.20  # Example stop loss price
-    take_profit_price = 1.30  # Example take profit price
+def get_balance():
+    client = Client(api_key=API_KEY, api_secret=API_SECRET)
+    data = client.futures_account_balance()
+    for assets in data:
+        if assets['asset'] == 'USDT':
+            print(assets)
 
-    place_buy_order_with_stop_loss_take_profit(price, quantity, symbol, stop_loss_price, take_profit_price)
+
+if __name__ == "__main__":
+    get_balance()
