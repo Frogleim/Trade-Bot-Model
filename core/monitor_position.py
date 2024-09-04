@@ -48,12 +48,17 @@ def check_position(signal, entry_price):
         if last_price < long_ema.iloc[-1]:
             return 'Loss'
         elif last_price >= entry_price + 80:
+            print(
+                f'Entry Price: {entry_price} ---> Target Price: {entry_price + 80} ---> Long EMA: {long_ema.iloc[-1]}')
 
             return 'Profit'
     elif signal == 'Sell':
         if last_price > long_ema.iloc[-1]:
             return 'Loss'
         elif last_price <= entry_price - 80:
+            print(
+                f'Entry Price: {entry_price} ---> Target Price: {entry_price + 80} ---> Long EMA: {long_ema.iloc[-1]}')
+
             return 'Profit'
 
     return 'No Action'

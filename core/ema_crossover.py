@@ -3,10 +3,15 @@ import pandas as pd
 import ta
 import time
 import requests
-from position_handler import place_buy_order, place_sell_order
 import place_position
+import numpy as np
 import logging_settings
-from coins_trade.miya import miya_trade
+
+
+def write_system_state(e):
+    with open("system_state.txt", 'w') as file:
+        file.write(f'Not working\nReason {e}')
+
 
 def get_credentials():
     print('Getting API KEYS from db')
@@ -23,7 +28,7 @@ api_key = cred_data['api_key']
 api_secret = cred_data['api_secret']
 client = Client(api_key=api_key, api_secret=api_secret)
 symbol = 'BTCUSDT'
-interval = '15m'
+interval = '5m'
 lookback = 5
 adx_period = 14
 
@@ -42,9 +47,16 @@ def calculate_ema():
     short_ema = df['close'].ewm(span=5, adjust=False).mean()
     long_ema = df['close'].ewm(span=8, adjust=False).mean()
     close_price = df['close'].iloc[-2]
+    df['previous_close'] = df['close'].shift(1)
+    df['high_low'] = df['high'] - df['low']
+    df['high_prev_close'] = np.abs(df['high'] - df['previous_close'])
+    df['low_prev_close'] = np.abs(df['low'] - df['previous_close'])
+    df['true_range'] = df[['high_low', 'high_prev_close', 'low_prev_close']].max(axis=1)
+    atr_period = 14  # Default ATR period is 14
+    df['ATR'] = df['true_range'].rolling(window=atr_period).mean()
 
     adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
-
+    print(f'Long ema: {long_ema.iloc[-1]} Short ema: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]}')
     return long_ema, short_ema, close_price, adx
 
 
@@ -66,23 +78,32 @@ def start_trade(signal=None, close_price=None):
     signal, close_price = check_crossover()
     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
     print(signal)
-    if signal == 'Buy':
-        logging_settings.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
-        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
-        logging_settings.system_log.warning('Trade finished! Sleeping...')
-        time.sleep(900)
-    elif signal == 'Sell':
-        logging_settings.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
-        place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
-        logging_settings.system_log.warning('Trade finished! Sleeping...')
+    try:
+        if signal == 'Buy':
+            logging_settings.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
+            place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
+            logging_settings.system_log.warning('Trade finished! Sleeping...')
+            time.sleep(900)
+        elif signal == 'Sell':
+            logging_settings.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
+            place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
+            logging_settings.system_log.warning('Trade finished! Sleeping...')
 
-        time.sleep(900)
-    else:
-        print('Hold, not crossover yet')
+            time.sleep(900)
+        else:
+            print('Hold, not crossover yet')
+    except Exception as error:
+        logging_settings.error_logs_logger.error(error)
+
+        return 'Down', error
 
 
 if __name__ == '__main__':
-    while True:
-        start_trade()
-        time.sleep(10)
-
+    # while True:
+    #
+    #     start_trade()
+    #     time.sleep(10)
+    #     # if is_down == 'Down':
+    #     #     write_system_state(error_message)
+    #     #     break
+    calculate_ema()
