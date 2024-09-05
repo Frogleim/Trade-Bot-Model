@@ -35,22 +35,17 @@ def check_position(signal, entry_price):
     except Exception as e:
         logging_settings.system_log.info(f"Error fetching ticker data: {e}")
         return None
-
     short_ema, long_ema = calculate_ema()
-
     if long_ema is None:
         print("Failed to calculate EMA.")
         return None
-
     logging_settings.system_log.info(f'Entry Price: {entry_price} ---> Target Price: {entry_price + 80} ---> Long EMA: {long_ema.iloc[-1]}')
-
     if signal == 'Buy':
         if last_price < long_ema.iloc[-1]:
             return 'Loss'
         elif last_price >= entry_price + 80:
             print(
                 f'Entry Price: {entry_price} ---> Target Price: {entry_price + 80} ---> Long EMA: {long_ema.iloc[-1]}')
-
             return 'Profit'
     elif signal == 'Sell':
         if last_price > long_ema.iloc[-1]:

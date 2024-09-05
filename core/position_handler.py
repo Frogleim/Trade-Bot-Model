@@ -77,7 +77,6 @@ def place_buy_order_with_stop_loss_take_profit(price, quantity, symbol, stop_los
         stopPrice=take_profit_price,  # Specify the trigger price
         closePosition=True
     )
-
     print("OCO order for stop loss and take profit placed successfully:")
 
 
@@ -91,7 +90,6 @@ def place_buy_order(price, quantity, symbol):
         timeInForce='GTC',  # Good 'til canceled
         quantity=quantity,
     )
-
     print("Buy order placed successfully:")
     print(order)
     return order
@@ -99,7 +97,6 @@ def place_buy_order(price, quantity, symbol):
 
 def place_sell_order(price, quantity, symbol):
     client = Client(api_key=API_KEY, api_secret=API_SECRET)
-
     order = client.futures_create_order(
         symbol=symbol,
         side=Client.SIDE_SELL,
@@ -108,7 +105,6 @@ def place_sell_order(price, quantity, symbol):
         quantity=quantity,
         price=price
     )
-
     print("Sell order placed successfully:")
     return order
 
