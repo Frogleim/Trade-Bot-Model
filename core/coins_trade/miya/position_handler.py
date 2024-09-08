@@ -96,10 +96,8 @@ def place_sell_order(price, quantity, symbol):
     order = client.futures_create_order(
         symbol=symbol,
         side=Client.SIDE_SELL,
-        type='LIMIT',
-        timeInForce='GTC',  # Good 'til canceled
+        type='MARKET',
         quantity=quantity,
-        price=price
     )
 
     print("Sell order placed successfully:")

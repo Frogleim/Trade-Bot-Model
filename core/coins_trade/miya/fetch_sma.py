@@ -5,16 +5,16 @@ warnings.filterwarnings(action='ignore')
 import pandas as pd
 from binance.client import Client
 import ta
-from . import logging_settings
+import logging_settings
 
 # Initialize the Binance client
 api_key = 'YOUR_API_KEY'
 api_secret = 'YOUR_API_SECRET'
 client = Client(api_key, api_secret)
-symbol = 'MATICUSDT'
+symbol = 'BTCUSDT'
 
 short_period = 5
-long_period = 8
+long_period = 13
 adx_period = 14
 atr_period = 14
 

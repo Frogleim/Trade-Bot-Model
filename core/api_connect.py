@@ -79,4 +79,4 @@ class API:
 if __name__ == '__main__':
     api = API()
     status = api.get_settings()
-    print(status)
+    print(status[0]['ratios'])

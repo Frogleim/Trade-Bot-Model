@@ -2,10 +2,11 @@ import time
 from binance.client import Client
 import position_handler, logging_settings, ema_crossover
 from binance.exceptions import BinanceAPIException
-import tp_sl
+from coins_trade.miya import tp_sl
+from ema_crossover import get_credentials
 
 
-keys_data = ema_crossover.get_credentials()
+keys_data = get_credentials()
 API_KEY = keys_data['api_key']
 API_SECRET = keys_data['api_secret']
 client = Client(API_KEY, API_SECRET)
@@ -117,3 +118,12 @@ def trade(symbol, signal, entry_price, position_size):
                     logging_settings.finish_trade_log.info(f'{symbol} Finished')
                     break
 
+
+
+if __name__ == '__main__':
+    trade(
+        symbol='BTCUSDT',
+        signal='Buy',
+        entry_price=56720,
+        position_size=0.002
+    )

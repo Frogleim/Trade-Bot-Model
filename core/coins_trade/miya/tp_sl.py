@@ -55,7 +55,7 @@ def pnl_long(opened_price, indicator):
             print('CLosing with lose')
             return 'Loss'
     else:
-        if float(current_profit) <= -float(indicator_settings[4]):
+        if float(current_profit) <= -float(indicator_settings[0]['decimal_value']):
             print('CLosing with lose')
             return 'Loss'
     logging.warning(
@@ -81,9 +81,9 @@ def pnl_short(opened_price, indicator):
 
     global current_profit, current_checkpoint, profit_checkpoint_list
     try:
-        current_price = client.futures_ticker(symbol=indicator_settings[1])['lastPrice']
+        current_price = client.futures_ticker(symbol=indicator_settings[0]['symbol'])['lastPrice']
     except Exception as e:
-        current_price = client.futures_ticker(symbol=indicator_settings[1])['lastPrice']
+        current_price = client.futures_ticker(symbol=indicator_settings[0]['symbol'])['lastPrice']
     current_profit = float(opened_price) - float(current_price)
     for i in range(len(indicator_settings[0]['ratios']) - 1):
         if indicator_settings[0]['ratios'][i] <= current_profit < indicator_settings[0]['ratios'][i + 1]:
@@ -98,7 +98,7 @@ def pnl_short(opened_price, indicator):
             print('CLosing with lose')
             return 'Loss'
     else:
-        if float(current_profit) <= -float(indicator_settings[4]):
+        if float(current_profit) <= -float(indicator_settings[0]['decimal_value']):
             print('CLosing with lose')
             return 'Loss'
     logging.warning(
@@ -116,3 +116,12 @@ def pnl_short(opened_price, indicator):
             logging.info(f'Profit checkpoint list: {profit_checkpoint_list}')
 
             return 'Profit'
+
+
+
+if __name__ == '__main__':
+    indicator_settings = miya_api.get_settings()
+    print(indicator_settings)
+    print(indicator_settings[0]['ratios'])
+    print(indicator_settings[1])
+    pnl_long(54600, 'EMA')

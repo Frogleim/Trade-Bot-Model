@@ -6,6 +6,7 @@ import requests
 import place_position
 import numpy as np
 import logging_settings
+from coins_trade.miya import miya_trade
 
 
 def write_system_state(e):
@@ -70,10 +71,12 @@ def check_crossover():
     short_ema, long_ema, close_price, adx, atr = calculate_ema()
     crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
     crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
-    if crossover_buy and adx.iloc[-1] > 20 and float(atr) > 100:
-        return 'Buy', close_price
-    elif crossover_sell and adx.iloc[-1] > 20 and float(atr) > 100:
-        return 'Sell', close_price
+    if crossover_buy:
+        if adx.iloc[-1] > 20 or float(atr) > 100:
+            return 'Buy', close_price
+    elif crossover_sell:
+        if adx.iloc[-1] > 20 or float(atr) > 100:
+            return 'Sell', close_price
     else:
         return 'Hold', close_price
 
@@ -84,12 +87,12 @@ def start_trade(signal=None, close_price=None):
     try:
         if signal == 'Buy':
             logging_settings.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
-            place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
+            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
             logging_settings.system_log.warning('Trade finished! Sleeping...')
             time.sleep(900)
         elif signal == 'Sell':
             logging_settings.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
-            place_position.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002)
+            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
             logging_settings.system_log.warning('Trade finished! Sleeping...')
             time.sleep(900)
         else:

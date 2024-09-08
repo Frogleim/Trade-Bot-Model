@@ -1,6 +1,6 @@
 import time
 from binance.client import Client
-from . import tp_sl, position_handler, logging_settings, api_connect
+from . import tp_sl, position_handler, logging_settings, api_connect, monitor_position
 from binance.exceptions import BinanceAPIException
 
 
@@ -59,7 +59,7 @@ def trade(symbol, signal, entry_price, position_size, indicator):
 
                 break
             if open_orders['status'] == 'FILLED':
-                res = tp_sl.pnl_short(entry_price, indicator)
+                res = monitor_position.monitor_position_short(entry_price)
                 if res == 'Profit':
 
                     logging_settings.actions_logger.info(f'Closing Position with {res}')
@@ -132,7 +132,7 @@ def trade(symbol, signal, entry_price, position_size, indicator):
 
                 break
             if open_orders['status'] == 'FILLED':
-                res = tp_sl.pnl_long(entry_price, indicator, symbol)
+                res = monitor_position.monitor_position_long(entry_price)
                 if res == 'Profit':
                     logging_settings.actions_logger.info(f'Closing Position with {res}')
                     try:

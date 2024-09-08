@@ -15,3 +15,6 @@
 2024-08-31 14:06:01,901 - ERROR - APIError(code=-2019): Margin is insufficient.
 2024-08-31 14:09:43,423 - ERROR - APIError(code=-1102): Mandatory parameter 'quantity' was not sent, was empty/null, or malformed.
 2024-08-31 14:13:23,302 - ERROR - APIError(code=-2019): Margin is insufficient.
+2024-09-05 16:19:34,978 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15
+2024-09-05 16:23:20,332 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15
+2024-09-05 17:05:50,918 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15

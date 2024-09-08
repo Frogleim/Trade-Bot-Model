@@ -755,3 +755,4 @@ LINE 1: INSERT INTO signals (coin, signal, entry_price, indicator) V...
 2024-08-20 12:56:12,789 - ERROR - APIError(code=-2027): Exceeded the maximum allowable position at current leverage.
 2024-08-20 14:30:21,006 - ERROR - APIError(code=-2027): Exceeded the maximum allowable position at current leverage.
 2024-08-20 15:04:59,231 - ERROR - APIError(code=-2027): Exceeded the maximum allowable position at current leverage.
+2024-09-05 17:05:50,918 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15

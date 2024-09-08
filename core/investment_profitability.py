@@ -1,13 +1,13 @@
 import pandas as pd
 
 # Parameters for the new calculation with $50 investment, $350 initial capital, and 15 trades per day
-initial_capital = 350
-investment_per_trade = 50
+initial_capital = 305
+investment_per_trade = 80
 profit_per_trade_percentage = 0.18
 fee_percentage = 0.32
 daily_trades_count = 15
 investment_increase_percentage = 0.2
-weeks = 8  # 2 weeks
+weeks = 16  # 2 weeks
 days_in_week = 7
 total_days = weeks * days_in_week
 
@@ -39,7 +39,7 @@ for day in range(1, total_days + 1):
 df = pd.DataFrame(profits)
 
 # Save to Excel
-file_path = './books/trade_bot_profitability_2_weeks_50_investment_15_trades.xlsx'
+file_path = f'./books/trade_bot_profitability_{weeks}_weeks_{investment_per_trade}_investment_15_trades.xlsx'
 df.to_excel(file_path, index=False)
 
 
