@@ -1,5 +1,5 @@
 from binance.client import Client
-from . import config, api_connect
+import config, api_connect
 import logging
 import os
 
@@ -21,25 +21,37 @@ print(API_KEY)
 print(API_SECRET)
 
 
-def close_position(side, quantity):
+def close_position(symbol):
+    position_size = None
     client = Client(api_key=API_KEY, api_secret=API_SECRET)
-    if side == 'long':
+
+    position_info = client.futures_position_information(symbol=symbol)
+    print(position_info)
+    for position in position_info:
+        if position['symbol'] == symbol:
+            position_size = float(position['positionAmt'])
+            print(position_size)
+
+            break
+
+    if position_size > 0:  # Long position, so sell to close
         order = client.futures_create_order(
-            symbol=config.trading_pair,
-            side=Client.SIDE_BUY,
-            type=Client.ORDER_TYPE_MARKET,
-            quantity=0.001,
-        )
-    else:
-        order = client.futures_create_order(
-            symbol=config.trading_pair,
+            symbol=symbol,
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
-
-            quantity=0.001,
+            quantity=position_size
         )
-    print(order)
-    print("Position closed successfully")
+        print("Closed Long Position:", order)
+    elif position_size < 0:  # Short position, so buy to close
+        order = client.futures_create_order(
+            symbol=symbol,
+            side=Client.SIDE_BUY,
+            type=Client.ORDER_TYPE_MARKET,
+            quantity=abs(position_size)
+        )
+        print("Closed Short Position:", order)
+    else:
+        print("No open position to close.")
 
 
 def place_buy_order_with_stop_loss_take_profit(price, quantity, symbol, stop_loss_price, take_profit_price):
@@ -112,4 +124,6 @@ def get_balance():
 
 
 if __name__ == "__main__":
-    get_balance()
+    symbol = 'BTCUSDT'
+    # place_sell_order(price=0.5, symbol='BTCUSDT', quantity=0.01)
+    close_position(symbol)

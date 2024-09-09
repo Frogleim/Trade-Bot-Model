@@ -61,10 +61,10 @@ def trade(symbol, signal, entry_price, position_size, indicator):
 
                     logging_settings.actions_logger.info(f'Closing Position with {res}')
                     try:
-                        position_handler.close_position(side='long', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     except Exception as e:
                         logging_settings.error_logs_logger.error(e)
-                        position_handler.close_position(side='long', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     logging_settings.finish_trade_log.info(f'{symbol} Finished')
 
                     miya_api.insert_is_finished()
@@ -75,10 +75,10 @@ def trade(symbol, signal, entry_price, position_size, indicator):
                 if res == 'Loss':
                     logging_settings.actions_logger.info(f'Closing Position with {res}')
                     try:
-                        position_handler.close_position(side='long', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     except Exception as e:
                         logging_settings.error_logs_logger.error(e)
-                        position_handler.close_position(side='long', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     logging_settings.finish_trade_log.info(f'{symbol} Finished')
 
                     miya_api.insert_is_finished()
@@ -130,10 +130,10 @@ def trade(symbol, signal, entry_price, position_size, indicator):
                 if res == 'Profit':
                     logging_settings.actions_logger.info(f'Closing Position with {res}')
                     try:
-                        position_handler.close_position(side='short', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     except Exception as e:
                         logging_settings.error_logs_logger.error(e)
-                        position_handler.close_position(side='short', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     logging_settings.finish_trade_log.info(f'{symbol} Finished')
                     miya_api.insert_is_finished()
                     miya_api.clean_db(table_name='signals')
@@ -143,10 +143,10 @@ def trade(symbol, signal, entry_price, position_size, indicator):
                 if res == 'Loss':
                     logging_settings.actions_logger.info(f'Closing Position with {res}')
                     try:
-                        position_handler.close_position(side='short', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     except Exception as e:
                         logging_settings.error_logs_logger.error(e)
-                        position_handler.close_position(side='short', quantity=position_size)
+                        position_handler.close_position(symbol=symbol)
                     logging_settings.finish_trade_log.info(f'{symbol} Finished')
                     miya_api.insert_is_finished()
                     miya_api.clean_db(table_name='signals')

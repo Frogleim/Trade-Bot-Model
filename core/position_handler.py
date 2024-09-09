@@ -113,4 +113,4 @@ if __name__ == "__main__":
     stop_loss_price = 1.20  # Example stop loss price
     take_profit_price = 1.30  # Example take profit price
 
-    place_buy_order_with_stop_loss_take_profit(price, quantity, symbol, stop_loss_price, take_profit_price)
+    place_buy_order(symbol=symbol, price=price, quantity=quantity)
