@@ -756,3 +756,10 @@ LINE 1: INSERT INTO signals (coin, signal, entry_price, indicator) V...
 2024-08-20 14:30:21,006 - ERROR - APIError(code=-2027): Exceeded the maximum allowable position at current leverage.
 2024-08-20 15:04:59,231 - ERROR - APIError(code=-2027): Exceeded the maximum allowable position at current leverage.
 2024-09-05 17:05:50,918 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15
+2024-09-09 08:12:10,164 - ERROR - APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 83.110.154.240
+2024-09-09 08:12:49,041 - ERROR - APIError(code=-1106): Parameter 'timeinforce' sent when not required.
+2024-09-09 08:16:32,332 - ERROR - APIError(code=-1111): Precision is over the maximum defined for this asset.
+2024-09-09 08:17:51,289 - ERROR - APIError(code=-1111): Precision is over the maximum defined for this asset.
+2024-09-09 08:19:46,769 - ERROR - APIError(code=-1111): Precision is over the maximum defined for this asset.
+2024-09-09 08:36:08,119 - ERROR - Error in calculate_indicators: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10)
+2024-09-09 08:53:40,935 - ERROR - HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v1/ticker/24hr?symbol=BTCUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10fda3d90>: Failed to resolve 'fapi.binance.com' ([Errno 8] nodename nor servname provided, or not known)"))

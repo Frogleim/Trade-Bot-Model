@@ -1,6 +1,6 @@
 import time
 from binance.client import Client
-from . import tp_sl, position_handler, logging_settings, api_connect, monitor_position
+from . import position_handler, logging_settings, api_connect, monitor_position
 from binance.exceptions import BinanceAPIException
 
 
@@ -20,9 +20,6 @@ def trade(symbol, signal, entry_price, position_size, indicator):
         start_time = time.time()
         print(f'Trade starting time: {start_time}')
 
-        tp_sl.profit_checkpoint_list.clear()
-        tp_sl.current_profit = 0.00
-        tp_sl.current_checkpoint = 0.00
 
         try:
             order_info = position_handler.place_sell_order(price=entry_price,
@@ -93,9 +90,6 @@ def trade(symbol, signal, entry_price, position_size, indicator):
         start_time = time.time()
         print(f'Trade starting time: {start_time}')
 
-        tp_sl.profit_checkpoint_list.clear()
-        tp_sl.current_profit = 0.00
-        tp_sl.current_checkpoint = 0.00
 
         try:
             order_info = position_handler.place_buy_order(price=entry_price, quantity=position_size,
@@ -160,3 +154,5 @@ def trade(symbol, signal, entry_price, position_size, indicator):
                     break
 
 
+if __name__ == '__main__':
+    trade(symbol='BTCUSDT', signal='Sell', entry_price=50000, position_size=0.002, indicator='EMA')

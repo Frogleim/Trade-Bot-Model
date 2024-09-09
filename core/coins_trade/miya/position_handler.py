@@ -28,7 +28,7 @@ def close_position(side, quantity):
             symbol=config.trading_pair,
             side=Client.SIDE_BUY,
             type=Client.ORDER_TYPE_MARKET,
-            quantity=quantity,
+            quantity=0.001,
         )
     else:
         order = client.futures_create_order(
@@ -36,7 +36,7 @@ def close_position(side, quantity):
             side=Client.SIDE_SELL,
             type=Client.ORDER_TYPE_MARKET,
 
-            quantity=quantity,
+            quantity=0.001,
         )
     print(order)
     print("Position closed successfully")
@@ -80,7 +80,6 @@ def place_buy_order(price, quantity, symbol):
         symbol=symbol,
         side=Client.SIDE_BUY,
         type=Client.ORDER_TYPE_MARKET,
-        timeInForce='GTC',  # Good 'til canceled
         quantity=quantity,
     )
 

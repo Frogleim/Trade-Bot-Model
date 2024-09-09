@@ -1,5 +1,5 @@
 from binance.client import Client
-import logging_settings, fetch_sma
+from . import logging_settings, fetch_sma
 
 
 client = Client()
@@ -15,9 +15,9 @@ def monitor_position_long(entry_price):
         logging_settings.error_logs_logger.error(e)
         current_price = client.futures_ticker(symbol='BTCUSDT')['lastPrice']
 
-    if entry_price + take_profit >= float(current_price):
+    if float(current_price) + 80 > take_profit:
         return 'Profit'
-    elif current_price < sma:
+    elif float(current_price) < sma:
         return 'Loss'
 
 
@@ -31,8 +31,8 @@ def monitor_position_short(entry_price):
         logging_settings.error_logs_logger.error(e)
         current_price = client.futures_ticker(symbol='BTCUSDT')['lastPrice']
 
-    if entry_price - take_profit <= float(current_price):
+    if float(current_price) - take_profit < entry_price:
         return 'Profit'
-    elif current_price > sma:
+    elif float(current_price) > sma:
         return 'Loss'
 
