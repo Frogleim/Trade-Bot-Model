@@ -18,3 +18,4 @@
 2024-09-05 16:19:34,978 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15
 2024-09-05 16:23:20,332 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15
 2024-09-05 17:05:50,918 - ERROR - Error in trading loop: APIError(code=-2015): Invalid API-key, IP, or permissions for action, request ip: 46.71.204.15
+2024-09-10 08:53:32,509 - ERROR - Error in trading loop: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))

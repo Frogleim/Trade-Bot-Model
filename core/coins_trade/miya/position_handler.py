@@ -1,5 +1,5 @@
 from binance.client import Client
-import config, api_connect
+from . import config, api_connect
 import logging
 import os
 

@@ -6,7 +6,7 @@ import requests
 import place_position
 import numpy as np
 import logging_settings
-from coins_trade.miya import miya_trade
+from coins_trade.miya import miya_trade, position_handler
 
 
 def write_system_state(e):
@@ -49,7 +49,7 @@ def calculate_ema():
     df['high'] = pd.to_numeric(df['high'])
     df['low'] = pd.to_numeric(df['low'])
     short_ema = df['close'].ewm(span=5, adjust=False).mean()
-    long_ema = df['close'].ewm(span=8, adjust=False).mean()
+    long_ema = df['close'].ewm(span=13, adjust=False).mean()
     close_price = df['close'].iloc[-2]
     df['previous_close'] = df['close'].shift(1)
     df['high_low'] = df['high'] - df['low']
@@ -69,8 +69,8 @@ def calculate_ema():
 
 def check_crossover():
     short_ema, long_ema, close_price, adx, atr = calculate_ema()
-    crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
-    crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+    crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
+    crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
     if crossover_buy:
         if adx.iloc[-1] > 20 or float(atr) > 100:
             return 'Buy', close_price
@@ -82,6 +82,7 @@ def check_crossover():
 
 
 def start_trade(signal=None, close_price=None):
+
     signal, close_price = check_crossover()
     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
     try:
@@ -102,8 +103,11 @@ def start_trade(signal=None, close_price=None):
 
 
 if __name__ == '__main__':
+    print('Checking for opened trades')
+    position_handler.close_position(symbol='BTCUSDT')
     while True:
         try:
+
             start_trade()
             time.sleep(60)  # Sleep for 1 minute to avoid overloading
         except Exception as e:

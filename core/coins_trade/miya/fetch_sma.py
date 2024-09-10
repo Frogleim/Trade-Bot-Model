@@ -5,7 +5,7 @@ warnings.filterwarnings(action='ignore')
 import pandas as pd
 from binance.client import Client
 import ta
-from . import logging_settings
+import logging_settings
 
 # Initialize the Binance client
 api_key = 'YOUR_API_KEY'

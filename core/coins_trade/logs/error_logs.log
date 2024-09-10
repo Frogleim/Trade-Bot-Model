@@ -763,3 +763,4 @@ LINE 1: INSERT INTO signals (coin, signal, entry_price, indicator) V...
 2024-09-09 08:19:46,769 - ERROR - APIError(code=-1111): Precision is over the maximum defined for this asset.
 2024-09-09 08:36:08,119 - ERROR - Error in calculate_indicators: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10)
 2024-09-09 08:53:40,935 - ERROR - HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v1/ticker/24hr?symbol=BTCUSDT (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10fda3d90>: Failed to resolve 'fapi.binance.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2024-09-10 08:53:32,509 - ERROR - Error in trading loop: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
