@@ -19,8 +19,9 @@ def monitor_position_long(entry_price):
     except Exception as e:
         logging_settings.error_logs_logger.error(e)
         current_price = client.futures_ticker(symbol='BTCUSDT')['lastPrice']
+    profit_difference = float(current_price) - entry_price
 
-    if float(current_price) >= target:
+    if profit_difference > 100:
         return 'Profit'
     elif float(current_price) < sma:
         return 'Loss'
@@ -36,10 +37,8 @@ def monitor_position_short(entry_price):
     except Exception as e:
         logging_settings.error_logs_logger.error(e)
         current_price = client.futures_ticker(symbol='BTCUSDT')['lastPrice']
-    print(current_price)
-    print(sma)
-    print(target)
-    if float(current_price) < target:
+    profit_difference = float(current_price) - entry_price
+    if profit_difference < -100:
         return 'Profit'
     elif float(current_price) > sma:
         return 'Loss'
