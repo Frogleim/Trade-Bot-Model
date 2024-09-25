@@ -3,10 +3,7 @@ import pandas as pd
 import ta
 import time
 import requests
-import place_position
 import numpy as np
-import logging_settings
-from coins_trade.miya import miya_trade, position_handler
 
 
 def write_system_state(e):
@@ -24,10 +21,10 @@ def get_credentials():
     return response.json()
 
 
-cred_data = get_credentials()
-api_key = cred_data['api_key']
-api_secret = cred_data['api_secret']
-client = Client(api_key=api_key, api_secret=api_secret)
+# cred_data = get_credentials()
+# api_key = cred_data['api_key']
+# api_secret = cred_data['api_secret']
+client = Client()
 symbol = 'BTCUSDT'
 interval = '5m'
 lookback = 5
@@ -73,43 +70,73 @@ def check_crossover():
     crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
     if crossover_buy:
         if adx.iloc[-1] > 20 or float(atr) > 100:
-            return 'Buy', close_price
+            return 'long', close_price, adx.iloc[-1], atr
     elif crossover_sell:
         if adx.iloc[-1] > 20 or float(atr) > 100:
-            return 'Sell', close_price
+            return 'short', close_price, adx.iloc[-1], atr
     else:
-        return 'Hold', close_price
+        return 'Hold', close_price, adx.iloc[-1], atr
 
 
-def start_trade(signal=None, close_price=None):
 
-    signal, close_price = check_crossover()
-    client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
-    try:
-        if signal == 'Buy':
-            logging_settings.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
-            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-            logging_settings.system_log.warning('Trade finished! Sleeping...')
-            time.sleep(900)
-        elif signal == 'Sell':
-            logging_settings.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
-            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-            logging_settings.system_log.warning('Trade finished! Sleeping...')
-            time.sleep(900)
-        else:
-            print('Hold, not crossover yet')
-    except Exception as error:
-        logging_settings.error_logs_logger.error(error)
+def monitor_trade(close_price, atr, position_type='long'):
+    if position_type == 'long':
+        target_price = close_price + atr
+        stop_loss = close_price - atr
+    elif position_type == 'short':
+        target_price = close_price - atr
+        stop_loss = close_price + atr
+    else:
+        raise ValueError("position_type must be either 'long' or 'short'")
 
-
-if __name__ == '__main__':
-    print('Checking for opened trades')
-    position_handler.close_position(symbol='BTCUSDT')
     while True:
         try:
-
-            start_trade()
-            time.sleep(60)  # Sleep for 1 minute to avoid overloading
+            # Fetch the current price
+            current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
         except Exception as e:
-            logging_settings.error_logs_logger.error(f"Error in trading loop: {e}")
-            time.sleep(60)
+            print(f"Error fetching price: {e}")
+            time.sleep(1)  # Wait for a bit before retrying
+            continue
+
+        if position_type == 'long':
+            # Check if target price is hit (Profit in long)
+            if current_price >= target_price:
+                return 'Profit', target_price
+
+            # Check if stop loss is hit (Loss in long)
+            elif current_price < stop_loss:
+                return 'Loss', stop_loss
+
+        elif position_type == 'short':
+            # Check if target price is hit (Profit in short)
+            if current_price <= target_price:
+                return 'Profit', target_price
+
+            # Check if stop loss is hit (Loss in short)
+            elif current_price > stop_loss:
+                return 'Loss', stop_loss
+
+        # Optional: Sleep to avoid overwhelming the API with too many requests
+        time.sleep(1)
+
+# def start_trade(signal=None, close_price=None):
+#
+#     signal, close_price = check_crossover()
+#     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
+#     try:
+#         if signal == 'Buy':
+#             logging_settings.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
+#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
+#             logging_settings.system_log.warning('Trade finished! Sleeping...')
+#             time.sleep(900)
+#         elif signal == 'Sell':
+#             logging_settings.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
+#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
+#             logging_settings.system_log.warning('Trade finished! Sleeping...')
+#             time.sleep(900)
+#         else:
+#             print('Hold, not crossover yet')
+#     except Exception as error:
+#         logging_settings.error_logs_logger.error(error)
+
+
