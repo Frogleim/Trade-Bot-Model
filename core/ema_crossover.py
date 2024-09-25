@@ -66,13 +66,13 @@ def calculate_ema():
 
 def check_crossover():
     short_ema, long_ema, close_price, adx, atr = calculate_ema()
-    crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
-    crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+    crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
+    crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
     if crossover_buy:
-        if adx.iloc[-1] > 20 or float(atr) > 100:
+        if adx.iloc[-1] > 20 and float(atr) > 100:
             return 'long', close_price, adx.iloc[-1], atr
     elif crossover_sell:
-        if adx.iloc[-1] > 20 or float(atr) > 100:
+        if adx.iloc[-1] > 20 and float(atr) > 100:
             return 'short', close_price, adx.iloc[-1], atr
     else:
         return 'Hold', close_price, adx.iloc[-1], atr
