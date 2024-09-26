@@ -6,7 +6,7 @@ import pandas as pd
 import os
 
 # Replace 'your_api_key_here' with your actual NewsAPI key
-telegram_token = '7911524695:AAFPawr8FXJ1gLWAtSQ_jFKj9X_XZuSyKaY'
+telegram_token = 'bot_token'
 excel_file = "./trade_results/trade_results.xlsx"
 
 
