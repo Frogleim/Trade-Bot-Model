@@ -69,10 +69,10 @@ def check_crossover():
     crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
     crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
     if crossover_buy:
-        if adx.iloc[-1] > 20 and float(atr) > 100:
+        if adx.iloc[-1] > 20 and float(atr) > 65:
             return 'long', close_price, adx.iloc[-1], atr
     elif crossover_sell:
-        if adx.iloc[-1] > 20 and float(atr) > 100:
+        if adx.iloc[-1] > 20 and float(atr) > 65:
             return 'short', close_price, adx.iloc[-1], atr
     else:
         return 'Hold', close_price, adx.iloc[-1], atr
@@ -101,20 +101,20 @@ def monitor_trade(close_price, atr, position_type='long'):
         if position_type == 'long':
             # Check if target price is hit (Profit in long)
             if current_price >= target_price:
-                return 'Profit', target_price
+                return 'Profit', atr
 
             # Check if stop loss is hit (Loss in long)
             elif current_price < stop_loss:
-                return 'Loss', stop_loss
+                return 'Loss', -atr
 
         elif position_type == 'short':
             # Check if target price is hit (Profit in short)
             if current_price <= target_price:
-                return 'Profit', target_price
+                return 'Profit', atr
 
             # Check if stop loss is hit (Loss in short)
             elif current_price > stop_loss:
-                return 'Loss', stop_loss
+                return 'Loss', -atr
 
         # Optional: Sleep to avoid overwhelming the API with too many requests
         time.sleep(1)
