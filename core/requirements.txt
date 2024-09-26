@@ -4,6 +4,7 @@ ccxt
 fastapi
 uvicorn
 matplotlib
+fastapi
 flask
 dash
 plotly

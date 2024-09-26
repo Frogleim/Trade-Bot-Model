@@ -2,16 +2,21 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 from telegram import Update
 import ema_crossover
 import time
+import pandas as pd
+import os
 
 # Replace 'your_api_key_here' with your actual NewsAPI key
-api_key = 'f5fe5390fbb64c64883b26acdcadc8dc'
-base_url = 'https://newsapi.org/v2/everything'
-
-# Replace 'your_telegram_token_here' with your actual Telegram bot token
-telegram_token = '7247839345:AAF1YTg3ZTio4n3vQlzgKCn0FexkpneHppI'
+telegram_token = '7911524695:AAFPawr8FXJ1gLWAtSQ_jFKj9X_XZuSyKaY'
+excel_file = "./trade_results/trade_results.xlsx"
 
 
 def send_signal(update: Update, context: CallbackContext):
+    if not os.path.exists(excel_file):
+        df = pd.DataFrame(columns=["Symbol", "Signal", "Price", "ADX", "ATR", "Result", "PNL"])
+    else:
+        df = pd.read_excel(excel_file)
+
+
     while True:
 
         signal, close_price, adx, atr = ema_crossover.check_crossover()
@@ -20,6 +25,17 @@ def send_signal(update: Update, context: CallbackContext):
             update.message.reply_text(message)
             result, pnl = ema_crossover.monitor_trade(float(close_price), atr, position_type=signal)
             update.message.reply_text(f'Trade finished successfully\nResult: {result} PNL: {pnl}')
+            trade_data = {
+                "Symbol": "BTCUSDT",
+                "Signal": signal,
+                "Price": close_price,
+                "ADX": adx,
+                "ATR": atr,
+                "Result": result,
+                "PNL": pnl
+            }
+            df = df.append(trade_data, ignore_index=True)
+            df.to_excel(excel_file, index=False, engine='openpyxl')
 
             time.sleep(60)  # Adjust the sleep interval to check signals (e.g., every minute)
         else:
