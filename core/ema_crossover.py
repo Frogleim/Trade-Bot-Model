@@ -58,7 +58,7 @@ def calculate_ema():
     atr = df['ATR'].iloc[-1]
     adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
     if adx is None or adx.iloc[-1] is None:
-        write_system_state("ADX calculation failed")
+        print("ADX calculation failed")
         return None
     print(f'Long ema: {long_ema.iloc[-1]} Short ema: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]}')
     return long_ema, short_ema, close_price, adx, atr
@@ -76,7 +76,6 @@ def check_crossover():
             return 'short', close_price, adx.iloc[-1], atr
     else:
         return 'Hold', close_price, adx.iloc[-1], atr
-
 
 
 def monitor_trade(close_price, atr, position_type='long'):
@@ -101,20 +100,20 @@ def monitor_trade(close_price, atr, position_type='long'):
         if position_type == 'long':
             # Check if target price is hit (Profit in long)
             if current_price >= target_price:
-                return 'Profit', atr
+                return 'Profit', atr, target_price
 
             # Check if stop loss is hit (Loss in long)
             elif current_price < stop_loss:
-                return 'Loss', -atr
+                return 'Loss', -atr, stop_loss
 
         elif position_type == 'short':
             # Check if target price is hit (Profit in short)
             if current_price <= target_price:
-                return 'Profit', atr
+                return 'Profit', atr, target_price
 
             # Check if stop loss is hit (Loss in short)
             elif current_price > stop_loss:
-                return 'Loss', -atr
+                return 'Loss', -atr, stop_loss
 
         # Optional: Sleep to avoid overwhelming the API with too many requests
         time.sleep(1)
@@ -138,5 +137,3 @@ def monitor_trade(close_price, atr, position_type='long'):
 #             print('Hold, not crossover yet')
 #     except Exception as error:
 #         logging_settings.error_logs_logger.error(error)
-
-
