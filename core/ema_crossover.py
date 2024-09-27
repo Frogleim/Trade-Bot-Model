@@ -65,17 +65,46 @@ def calculate_ema():
 
 
 def check_crossover():
-    short_ema, long_ema, close_price, adx, atr = calculate_ema()
-    crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
-    crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
-    if crossover_buy:
-        if adx.iloc[-1] > 20 and float(atr) > 65:
-            return 'long', close_price, adx.iloc[-1], atr
-    elif crossover_sell:
-        if adx.iloc[-1] > 20 and float(atr) > 65:
-            return 'short', close_price, adx.iloc[-1], atr
-    else:
-        return 'Hold', close_price, adx.iloc[-1], atr
+    try:
+        # Fetch the necessary data
+        short_ema, long_ema, close_price, adx, atr = calculate_ema()
+
+        # Validate that none of the fetched data is None or invalid
+        missing_data = {}
+        if short_ema is None or len(short_ema) < 2:
+            missing_data['short_ema'] = 'Missing or invalid'
+        if long_ema is None or len(long_ema) < 2:
+            missing_data['long_ema'] = 'Missing or invalid'
+        if close_price is None:
+            missing_data['close_price'] = 'Missing'
+        if adx is None or len(adx) == 0 or adx.iloc[-1] is None:
+            missing_data['adx'] = 'Missing or invalid'
+        if atr is None or float(atr) <= 0:
+            missing_data['atr'] = 'Missing or invalid'
+
+        # If there is any missing or invalid data, raise an exception
+        if missing_data:
+            raise ValueError(f"Missing or invalid crossover data: {missing_data}")
+
+        # Determine crossover conditions
+        crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
+        crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+
+        # Evaluate buy or sell signals
+        if crossover_buy:
+            if adx.iloc[-1] > 20 and float(atr) > 65:
+                return 'long', close_price, adx.iloc[-1], atr
+        elif crossover_sell:
+            if adx.iloc[-1] > 20 and float(atr) > 65:
+                return 'short', close_price, adx.iloc[-1], atr
+        else:
+            return 'Hold', close_price, adx.iloc[-1], atr
+
+    except Exception as e:
+        # If something goes wrong, return None and log the error
+        print(f"Error in check_crossover: {e}")
+        return None
+
 
 
 def monitor_trade(close_price, atr, position_type='long'):
