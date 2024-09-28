@@ -6,7 +6,6 @@ import ema_crossover
 import time
 import pandas as pd
 import os
-import loggs
 
 client = Client()
 # Replace 'your_api_key_here' with your actual NewsAPI key
@@ -41,7 +40,7 @@ def send_signal(update: Update, context: CallbackContext):
 
                     time.sleep(60)  # Adjust the sleep interval to check signals (e.g., every minute)
                 else:
-                    loggs.error_logs_logger.error("There is no good condition for trade")
+                    print("There is no good condition for trade")
                     time.sleep(5 * 60)
             else:
                 # Handle the case where the function returns None
@@ -51,11 +50,11 @@ def send_signal(update: Update, context: CallbackContext):
         except ValueError as ve:
             # If specific data is missing, notify which data is missing
             update.message.reply_text(f"⚠️ Data issue: {ve}")
-            loggs.error_logs_logger.error(f"Data issue: {ve}")
+            print(f"Data issue: {ve}")
             time.sleep(5 * 60)
         except Exception as e:
             # Catch and notify other general errors
-            loggs.error_logs_logger.error(f"Error: {e}")
+            print(f"Error: {e}")
             update.message.reply_text(f'⛔️Bot is down! Error message: {e}')
             break
 

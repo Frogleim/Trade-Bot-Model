@@ -6,7 +6,7 @@ from datetime import datetime
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
-files_dir = os.path.join(grandparent_dir, r"coins_trade")
+files_dir = os.path.join(grandparent_dir, r"Trade-Bot/core")
 user_count = None
 actions_log_file_path = os.path.join(files_dir, 'logs', 'actions.log')
 error_logs_log_file_path = os.path.join(files_dir, 'logs', 'error_logs.log')

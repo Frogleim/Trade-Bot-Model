@@ -5,8 +5,6 @@ import time
 import requests
 import numpy as np
 from socket_binance import fetch_btcusdt_klines
-import loggs
-
 
 def write_system_state(e):
     with open("system_state.txt", 'w') as file:
@@ -117,7 +115,7 @@ def check_crossover():
 
     except Exception as e:
         # If something goes wrong, return None and log the error
-        loggs.error_logs_logger.error(f"Error in check_crossover: {e}")
+        print(f"Error in check_crossover: {e}")
         return None
 
 
@@ -136,7 +134,7 @@ def monitor_trade(close_price, atr, position_type='long'):
             # Fetch the current price
             current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
         except Exception as e:
-            loggs.error_logs_logger.error(f"Error fetching price: {e}")
+            print(f"Error fetching price: {e}")
             time.sleep(1)  # Wait for a bit before retrying
             continue
 
