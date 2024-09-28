@@ -4,6 +4,8 @@ import ta
 import time
 import requests
 import numpy as np
+from socket_binance import fetch_btcusdt_klines
+import loggs
 
 
 def write_system_state(e):
@@ -32,35 +34,48 @@ adx_period = 14
 
 
 def calculate_ema():
-    data = client.futures_klines(symbol=symbol, interval='5m')
-    if not data or len(data) == 0:
-        write_system_state("Empty data received from Binance")
+    # Fetch the kline data
+    df = fetch_btcusdt_klines(symbol, interval)
+
+    if df.empty:
+        print("No data fetched.")
         return None, None, None, None, None
 
-    df = pd.DataFrame(data, columns=[
-        'open_time', 'open', 'high', 'low', 'close', 'volume',
-        'close_time', 'quote_asset_volume', 'number_of_trades',
-        'taker_buy_base_asset_volume', 'taker_buy_quote_asset_volume', 'ignore'
-    ])
-    df['close'] = pd.to_numeric(df['close'])
-    df['high'] = pd.to_numeric(df['high'])
-    df['low'] = pd.to_numeric(df['low'])
+    # Calculate short and long EMA
     short_ema = df['close'].ewm(span=5, adjust=False).mean()
     long_ema = df['close'].ewm(span=13, adjust=False).mean()
+
+    # Close price for the previous period
     close_price = df['close'].iloc[-2]
+
+    # Calculate True Range (TR)
     df['previous_close'] = df['close'].shift(1)
     df['high_low'] = df['high'] - df['low']
-    df['high_prev_close'] = np.abs(df['high'] - df['previous_close'])
-    df['low_prev_close'] = np.abs(df['low'] - df['previous_close'])
+    df['high_prev_close'] = abs(df['high'] - df['previous_close'])
+    df['low_prev_close'] = abs(df['low'] - df['previous_close'])
+
+    # True Range (TR) is the maximum of these three values
     df['true_range'] = df[['high_low', 'high_prev_close', 'low_prev_close']].max(axis=1)
+
+    # Calculate the ATR using a rolling window
     atr_period = 14
     df['ATR'] = df['true_range'].rolling(window=atr_period).mean()
+
+    # Fetch the latest ATR value
     atr = df['ATR'].iloc[-1]
+
+    # Calculate ADX using ta-lib (adjust for your ta implementation)
+    adx_period = 14
     adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
+
+    # Validate the ADX value
     if adx is None or adx.iloc[-1] is None:
         print("ADX calculation failed")
-        return None
-    print(f'Long ema: {long_ema.iloc[-1]} Short ema: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]}')
+        return None, None, None, None, None
+
+    print(
+        f'Long EMA: {long_ema.iloc[-1]} Short EMA: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]} ADX: {adx.iloc[-1]}')
+
     return long_ema, short_ema, close_price, adx, atr
 
 
@@ -102,9 +117,8 @@ def check_crossover():
 
     except Exception as e:
         # If something goes wrong, return None and log the error
-        print(f"Error in check_crossover: {e}")
+        loggs.error_logs_logger.error(f"Error in check_crossover: {e}")
         return None
-
 
 
 def monitor_trade(close_price, atr, position_type='long'):
@@ -122,7 +136,7 @@ def monitor_trade(close_price, atr, position_type='long'):
             # Fetch the current price
             current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
         except Exception as e:
-            print(f"Error fetching price: {e}")
+            loggs.error_logs_logger.error(f"Error fetching price: {e}")
             time.sleep(1)  # Wait for a bit before retrying
             continue
 
@@ -147,6 +161,7 @@ def monitor_trade(close_price, atr, position_type='long'):
         # Optional: Sleep to avoid overwhelming the API with too many requests
         time.sleep(1)
 
+
 # def start_trade(signal=None, close_price=None):
 #
 #     signal, close_price = check_crossover()
@@ -166,3 +181,9 @@ def monitor_trade(close_price, atr, position_type='long'):
 #             print('Hold, not crossover yet')
 #     except Exception as error:
 #         logging_settings.error_logs_logger.error(error)
+
+
+if __name__ == '__main__':
+    while True:
+        crossover_result = check_crossover()
+        print(crossover_result)
