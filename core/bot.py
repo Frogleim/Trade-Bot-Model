@@ -14,50 +14,42 @@ telegram_token = '7911524695:AAFPawr8FXJ1gLWAtSQ_jFKj9X_XZuSyKaY'
 
 def send_signal(update: Update, context: CallbackContext):
     while True:
-        try:
-            # Check if the function returns a valid result
-            crossover_result = ema_crossover.check_crossover()
+        # try:
+        crossover_result = ema_crossover.check_crossover()
 
-            if crossover_result is not None:
-                # Unpack values if the result is valid
-                signal, close_price, adx, atr = crossover_result
+        if crossover_result[0] != 'Hold':
+            message = (f"Symbol: BTCUSDT\n⚠️Signal: {crossover_result[0]}\nPrice: {crossover_result[1]}\n"
+                       f"ADX: {crossover_result[2]}\nATR: {crossover_result[3]}")
+            update.message.reply_text(message)
 
-                if signal != 'Hold':
-                    message = f"Symbol: BTCUSDT\n⚠️Signal: {signal}\nPrice: {close_price}\nADX: {adx}\nATR: {atr}"
-                    update.message.reply_text(message)
+            # Fetch current price
+            current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
 
-                    # Fetch current price
-                    current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
-
-                    # Monitor the trade
-                    result, pnl, close = ema_crossover.monitor_trade(current_price, atr, position_type=signal)
-                    if pnl > 0:
-                        update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{pnl}\n'
-                                                  f'Close price: {close}')
-                    else:
-                        update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl}\n'
-                                                  f'Close price: {close}')
-
-                    time.sleep(60)  # Adjust the sleep interval to check signals (e.g., every minute)
-                else:
-                    print("There is no good condition for trade")
-                    time.sleep(5 * 60)
+            # Monitor the trade
+            result, pnl, close = ema_crossover.monitor_trade(current_price, crossover_result[3],
+                                                             position_type=crossover_result[0])
+            if pnl > 0:
+                update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{pnl}\n'
+                                          f'Close price: {close}')
             else:
-                # Handle the case where the function returns None
-                update.message.reply_text("⚠️ Unable to retrieve crossover data. Skipping this check.")
-                time.sleep(5 * 60)
+                update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl}\n'
+                                          f'Close price: {close}')
 
-        except ValueError as ve:
-            # If specific data is missing, notify which data is missing
-            update.message.reply_text(f"⚠️ Data issue: {ve}")
-            print(f"Data issue: {ve}")
+            time.sleep(60)  # Adjust the sleep interval to check signals (e.g., every minute)
+        else:
+            print("There is no good condition for trade")
             time.sleep(5 * 60)
-        except Exception as e:
-            # Catch and notify other general errors
-            print(f"Error: {e}")
-            update.message.reply_text(f'⛔️Bot is down! Error message: {e}')
-            break
 
+    # except ValueError as ve:
+    #     # If specific data is missing, notify which data is missing
+    #     update.message.reply_text(f"⚠️ Data issue: {ve}")
+    #     print(f"Data issue: {ve}")
+    #     time.sleep(5 * 60)
+    # except Exception as e:
+    #     # Catch and notify other general errors
+    #     print(f"Error: {e}")
+    #     update.message.reply_text(f'⛔️Bot is down! Error message: {e}')
+    #     break
 
 
 def start_bot(update: Update, context: CallbackContext):

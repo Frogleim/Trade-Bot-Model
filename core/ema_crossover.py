@@ -6,6 +6,7 @@ import requests
 import numpy as np
 from socket_binance import fetch_btcusdt_klines
 
+
 def write_system_state(e):
     with open("system_state.txt", 'w') as file:
         file.write(f'Not working\nReason {e}')
@@ -67,9 +68,6 @@ def calculate_ema():
     adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
 
     # Validate the ADX value
-    if adx is None or adx.iloc[-1] is None:
-        print("ADX calculation failed")
-        return None, None, None, None, None
 
     print(
         f'Long EMA: {long_ema.iloc[-1]} Short EMA: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]} ADX: {adx.iloc[-1]}')
@@ -106,12 +104,12 @@ def check_crossover():
         # Evaluate buy or sell signals
         if crossover_buy:
             if adx.iloc[-1] > 20 and float(atr) > 65:
-                return 'long', close_price, adx.iloc[-1], atr
+                return ['long', close_price, adx.iloc[-1], atr]
         elif crossover_sell:
             if adx.iloc[-1] > 20 and float(atr) > 65:
-                return 'short', close_price, adx.iloc[-1], atr
+                return ['short', close_price, adx.iloc[-1], atr]
         else:
-            return 'Hold', close_price, adx.iloc[-1], atr
+            return ['Hold', close_price, adx.iloc[-1], atr]
 
     except Exception as e:
         # If something goes wrong, return None and log the error
