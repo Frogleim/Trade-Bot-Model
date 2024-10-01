@@ -8,7 +8,6 @@ import pandas as pd
 import os
 
 client = Client()
-# Replace 'your_api_key_here' with your actual NewsAPI key
 telegram_token = '7911524695:AAFPawr8FXJ1gLWAtSQ_jFKj9X_XZuSyKaY'
 
 
@@ -16,16 +15,13 @@ def send_signal(update: Update, context: CallbackContext):
     while True:
         # try:
         crossover_result = ema_crossover.check_crossover()
+        print(crossover_result)
 
         if crossover_result[0] != 'Hold':
             message = (f"Symbol: BTCUSDT\n⚠️Signal: {crossover_result[0]}\nPrice: {crossover_result[1]}\n"
                        f"ADX: {crossover_result[2]}\nATR: {crossover_result[3]}")
             update.message.reply_text(message)
-
-            # Fetch current price
             current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
-
-            # Monitor the trade
             result, pnl, close = ema_crossover.monitor_trade(current_price, crossover_result[3],
                                                              position_type=crossover_result[0])
             if pnl > 0:
@@ -35,7 +31,7 @@ def send_signal(update: Update, context: CallbackContext):
                 update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl}\n'
                                           f'Close price: {close}')
 
-            time.sleep(60)  # Adjust the sleep interval to check signals (e.g., every minute)
+            time.sleep(60)
         else:
             print("There is no good condition for trade")
             time.sleep(5 * 60)
