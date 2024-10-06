@@ -4,7 +4,7 @@ import pandas as pd
 import ssl
 
 symbol = 'BTCUSDT'
-interval = '5m'
+interval = '15m'
 
 
 def fetch_klines(symbol, interval):

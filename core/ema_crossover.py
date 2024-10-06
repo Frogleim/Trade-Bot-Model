@@ -27,7 +27,7 @@ def get_credentials():
 # api_secret = cred_data['api_secret']
 client = Client()
 symbol = 'BTCUSDT'
-interval = '5m'
+interval = '15m'
 lookback = 5
 adx_period = 14
 
@@ -52,6 +52,13 @@ def calculate_ema():
     df['high_low'] = df['high'] - df['low']
     df['high_prev_close'] = abs(df['high'] - df['previous_close'])
     df['low_prev_close'] = abs(df['low'] - df['previous_close'])
+    delta = df['close'].diff(1)
+    gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
+    rs = gain / loss
+    rsi = 100 - (100 / (1 + rs))
+
+    rsi_sma = rsi.rolling(window=14).mean()
 
     # True Range (TR) is the maximum of these three values
     df['true_range'] = df[['high_low', 'high_prev_close', 'low_prev_close']].max(axis=1)
@@ -70,13 +77,14 @@ def calculate_ema():
     # Validate the ADX value
 
     print(
-        f'Long EMA: {long_ema.iloc[-1]} Short EMA: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]} ADX: {adx.iloc[-1]}')
+        f'Long EMA: {long_ema.iloc[-1]} Short EMA: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]} ADX: {adx.iloc[-1]}'
+        f' RSI: {rsi.iloc[-1]} RSI SMA: {rsi_sma.iloc[-1]}')
 
     return long_ema, short_ema, close_price, adx, atr
 
 
 def check_crossover():
-    short_ema, long_ema, close_price, adx, atr = calculate_ema()
+    long_ema, short_ema, close_price, adx, atr = calculate_ema()
     missing_data = {}
 
     # Data validation
@@ -98,6 +106,8 @@ def check_crossover():
     # Calculate crossovers
     crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
     crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+    # rsi_crossover_sell = (rsi.iloc[-2] < rsi_sma.iloc[-2]) and (rsi.iloc[-1] > rsi_sma.iloc[-1])
+    # rsi_crossover_buy = (rsi.iloc[-2] > rsi_sma.iloc[-2]) and (rsi.iloc[-1] < rsi_sma.iloc[-1])
 
     # Debug logging to track values
     print(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, Crossover Sell: {crossover_sell}")
