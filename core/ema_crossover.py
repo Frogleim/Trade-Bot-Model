@@ -85,11 +85,11 @@ def check_crossover():
 
     print(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, Crossover Sell: {crossover_sell}")
     if crossover_buy and additional_indicator_long:
-        return ['long', close_price, adx.iloc[-1], atr, rsi, long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     elif crossover_sell and additional_indicator_short:
-        return ['short', close_price, adx.iloc[-1], atr, rsi, long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
-        return ['Hold', close_price, adx.iloc[-1], atr, rsi, long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
 
 
 
