@@ -1,10 +1,9 @@
 import requests
 import logging
 import pandas as pd
-import ssl
 
 symbol = 'BTCUSDT'
-interval = '15m'
+interval = '5m'
 
 
 def fetch_klines(symbol, interval):

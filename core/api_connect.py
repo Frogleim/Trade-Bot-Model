@@ -1,5 +1,5 @@
-import requests
 from pydantic import BaseModel
+import requests
 
 
 class SignalPayload(BaseModel):

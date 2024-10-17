@@ -1,10 +1,9 @@
-from binance.client import Client
-import ta
-import time
-import requests
-from scipy.special import additional
-
 from socket_binance import fetch_btcusdt_klines
+from binance.client import Client
+import requests
+import time
+import loggs
+import ta
 
 
 def write_system_state(e):
@@ -24,7 +23,7 @@ def get_credentials():
 
 client = Client()
 symbol = 'BTCUSDT'
-interval = '15m'
+interval = '5m'
 lookback = 5
 adx_period = 14
 
@@ -56,7 +55,7 @@ def calculate_ema():
     atr = df['ATR'].iloc[-1]
     adx_period = 14
     adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
-    print(
+    loggs.system_log.info(
         f'Long EMA: {long_ema.iloc[-1]} Short EMA: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]} ADX: {adx.iloc[-1]}'
         f' RSI: {rsi.iloc[-1]} RSI SMA: {rsi_sma.iloc[-1]}')
     return long_ema, short_ema, close_price, adx, atr, rsi
@@ -78,15 +77,17 @@ def check_crossover():
         missing_data['atr'] = 'Missing or invalid'
     if missing_data:
         raise ValueError(f"Missing or invalid crossover data: {missing_data}")
-    crossover_sell = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
-    crossover_buy = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
-    additional_indicator_long = (adx.iloc[-1] > 20) and (rsi.iloc[-1] > 50) and (atr > 120)
-    additional_indicator_short = (adx.iloc[-1] > 20) and (rsi.iloc[-1] < 50) and (atr > 120)
+    crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
+    crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+    additional_indicator_long = (adx.iloc[-1] > 20) and (rsi.iloc[-1] > 50)
+    additional_indicator_short = (adx.iloc[-1] > 20) and (rsi.iloc[-1] < 50)
 
-    print(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, Crossover Sell: {crossover_sell}")
-    if crossover_buy and additional_indicator_long:
+    loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, "
+          f"Crossover Sell: {crossover_sell} Other Buy: {additional_indicator_long}"
+          f" Other Sell: {additional_indicator_short}")
+    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50:
         return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-    elif crossover_sell and additional_indicator_short:
+    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50:
         return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
         return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
@@ -105,7 +106,7 @@ def long_trade(entry_price, atr):
             print(f"Error fetching price: {e}")
             time.sleep(1)
             continue
-        print(f'Target price: {target_price}, Current price: {current_price} Stop loss: {stop_loss}')
+        loggs.system_log.info(f'Target price: {target_price}, Current price: {current_price} Stop loss: {stop_loss}')
         if current_price >= target_price:
             return 'Profit', atr, target_price
         elif current_price <= stop_loss:
@@ -123,7 +124,7 @@ def short_trade(entry_price, atr):
             print(f"Error fetching price: {e}")
             time.sleep(1)
             continue
-        print(f'Target price: {target_price}, Current price: {current_price}')
+        loggs.system_log.info(f'Target price: {target_price}, Current price: {current_price}')
         if current_price <= target_price:
             return 'Profit', atr, target_price
         elif current_price > stop_loss:
