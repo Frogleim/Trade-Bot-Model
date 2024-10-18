@@ -116,6 +116,8 @@ def long_trade(entry_price, atr):
 def short_trade(entry_price, atr):
     """Monitoring short trade"""
     target_price = entry_price - atr
+    # target = 68351
+    # stop loss = 68681
     stop_loss = entry_price + atr
     while True:
         try:

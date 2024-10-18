@@ -26,20 +26,26 @@ def send_signal(update: Update, context: CallbackContext):
                 result, pnl, close = ema_crossover.long_trade(current_price, crossover_result[3],
                                                              )
                 if pnl > 0:
-                    pnl_in_diff = float(crossover_result[1])
-                    update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{crossover_result[1]}\n'
+                    pnl_in_diff = close - float(crossover_result[1])
+                    update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{pnl_in_diff}\n'
                                               f'Close price: {close}')
                 else:
-                    update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl}\n'
+                    pnl_in_diff = float(crossover_result[1]) - close
+
+                    update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
                                               f'Close price: {close}')
             if crossover_result[0] == 'short':
                 result, pnl, close = ema_crossover.short_trade(current_price, crossover_result[3],
                                                              )
                 if pnl > 0:
-                    update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{pnl}\n'
+                    pnl_in_diff = float(crossover_result[1]) - close
+
+                    update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{pnl_in_diff}\n'
                                               f'Close price: {close}')
                 else:
-                    update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl}\n'
+                    pnl_in_diff = float(crossover_result[1]) - close
+
+                    update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
                                               f'Close price: {close}')
 
             time.sleep(60)
