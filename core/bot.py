@@ -2,6 +2,7 @@ from telegram.ext import Updater, CommandHandler, CallbackContext
 from binance.client import Client
 from telegram import Update
 import ema_crossover
+from socket_binance import get_wallet
 import time
 import os
 
@@ -26,27 +27,32 @@ def send_signal(update: Update, context: CallbackContext):
                 result, pnl, close = ema_crossover.long_trade(current_price, crossover_result[3],
                                                              )
                 if pnl > 0:
+                    avail_balance = get_wallet()
                     pnl_in_diff = close - float(crossover_result[1])
-                    update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{pnl_in_diff}\n'
-                                              f'Close price: {close}')
+                    update.message.reply_text(f'Trade finished successfully\n'
+                                              f'Result:🚀 {result} \nPNL: 🤑{pnl_in_diff}\n'
+                                              f'Close price: {close}\n💲{avail_balance}')
                 else:
+                    avail_balance = get_wallet()
                     pnl_in_diff = float(crossover_result[1]) - close
-
-                    update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
-                                              f'Close price: {close}')
+                    update.message.reply_text(f'Trade was not successful😥\n'
+                                              f'Result:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
+                                              f'Close price: {close}\n💲{avail_balance}')
             if crossover_result[0] == 'short':
                 result, pnl, close = ema_crossover.short_trade(current_price, crossover_result[3],
                                                              )
                 if pnl > 0:
+                    avail_balance = get_wallet()
                     pnl_in_diff = float(crossover_result[1]) - close
-
-                    update.message.reply_text(f'Trade finished successfully\nResult:🚀 {result} \nPNL: 🤑{pnl_in_diff}\n'
-                                              f'Close price: {close}')
+                    update.message.reply_text(f'Trade finished successfully\n'
+                                              f'Result:🚀 {result} \nPNL: 🤑{pnl_in_diff}\n'
+                                              f'Close price: {close}\n💲{avail_balance}')
                 else:
+                    avail_balance = get_wallet()
                     pnl_in_diff = float(crossover_result[1]) - close
-
-                    update.message.reply_text(f'Trade was not successful😥\nResult:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
-                                              f'Close price: {close}')
+                    update.message.reply_text(f'Trade was not successful😥\n'
+                                              f'Result:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
+                                              f'Close price: {close}💲{avail_balance}')
 
             time.sleep(60)
         else:
@@ -57,17 +63,16 @@ def send_signal(update: Update, context: CallbackContext):
 
 
 def start_bot(update: Update, context: CallbackContext):
-    update.message.reply_text("Hello! I'll notify you with trading signals.")
-    send_signal(update, context)  # Start sending signals when bot starts
+    avail_balance = get_wallet()
+    update.message.reply_text(f"Hello, I'm Miya Trade bot! I'll notify you with trading signals.\n"
+                              f"Binance Futures Wallet:💲{avail_balance}")
+    send_signal(update, context)
 
 
 def main():
     updater = Updater(telegram_token)
     dp = updater.dispatcher
-
-    # Command to start the bot and begin sending signals
     dp.add_handler(CommandHandler("start", start_bot))
-
     updater.start_polling()
     updater.idle()
 

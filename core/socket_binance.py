@@ -1,6 +1,10 @@
+import os
+
 import requests
 import logging
 import pandas as pd
+from binance.client import Client
+
 
 symbol = 'BTCUSDT'
 interval = '5m'
@@ -36,11 +40,12 @@ def fetch_btcusdt_klines(symbol, interval):
     else:
         return pd.DataFrame()  # Return empty DataFrame if no data is fetched
 
+def get_wallet():
+    client = Client(api_key=os.environ['API_KEY'], api_secret=os.environ['API_SECRET'])
+    futures_account = client.futures_account_balance()
+    return futures_account[0]['availableBalance']
+
+
 
 if __name__ == '__main__':
-    result_df = fetch_btcusdt_klines(symbol, interval)
-    if not result_df.empty:
-        print(f"Data for {symbol}:")
-        print(result_df[['high', 'close', 'low']])
-    else:
-        print(f"No data available for {symbol}")
+    get_wallet()
