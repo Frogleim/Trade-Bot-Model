@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, CallbackContext
 from binance.client import Client
 from telegram import Update
-import ema_crossover
+import app
 from socket_binance import get_wallet
 import time
 import os
@@ -13,7 +13,7 @@ telegram_token = os.environ['TELEGRAM_TOKEN']
 def send_signal(update: Update, context: CallbackContext):
     while True:
         # try:
-        crossover_result = ema_crossover.check_crossover()
+        crossover_result = app.check_crossover()
         print(crossover_result)
 
         if crossover_result[0] != 'Hold':
@@ -24,7 +24,7 @@ def send_signal(update: Update, context: CallbackContext):
             update.message.reply_text(message)
             current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
             if crossover_result[0] == 'long':
-                result, pnl, close = ema_crossover.long_trade(current_price, crossover_result[3],
+                result, pnl, close = app.long_trade(current_price, crossover_result[3],
                                                              )
                 if pnl > 0:
                     avail_balance = get_wallet()
@@ -39,7 +39,7 @@ def send_signal(update: Update, context: CallbackContext):
                                               f'Result:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
                                               f'Close price: {close}\n💲{avail_balance}')
             if crossover_result[0] == 'short':
-                result, pnl, close = ema_crossover.short_trade(current_price, crossover_result[3],
+                result, pnl, close = app.short_trade(current_price, crossover_result[3],
                                                              )
                 if pnl > 0:
                     avail_balance = get_wallet()
@@ -52,7 +52,7 @@ def send_signal(update: Update, context: CallbackContext):
                     pnl_in_diff = float(crossover_result[1]) - close
                     update.message.reply_text(f'Trade was not successful😥\n'
                                               f'Result:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
-                                              f'Close price: {close}💲{avail_balance}')
+                                              f'Close price: {close}\n💲{avail_balance}')
 
             time.sleep(60)
         else:

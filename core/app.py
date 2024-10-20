@@ -85,9 +85,9 @@ def check_crossover():
     loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, "
           f"Crossover Sell: {crossover_sell} Other Buy: {additional_indicator_long}"
           f" Other Sell: {additional_indicator_short}")
-    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50:
+    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50 and atr.iloc[-1] > 60:
         return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50:
+    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50 and atr.iloc[-1] > 60:
         return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
         return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
