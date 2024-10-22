@@ -1,4 +1,4 @@
-from socket_binance import fetch_btcusdt_klines
+from socket_binance import fetch_btcusdt_klines, get_last_price
 from binance.client import Client
 import requests
 import time
@@ -50,8 +50,6 @@ def calculate_ema():
     df['true_range'] = df[['high_low', 'high_prev_close', 'low_prev_close']].max(axis=1)
     atr_period = 14
     df['ATR'] = df['true_range'].rolling(window=atr_period).mean()
-
-    # Fetch the latest ATR value
     atr = df['ATR'].iloc[-1]
     adx_period = 14
     adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
@@ -85,9 +83,9 @@ def check_crossover():
     loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, "
           f"Crossover Sell: {crossover_sell} Other Buy: {additional_indicator_long}"
           f" Other Sell: {additional_indicator_short}")
-    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50 and atr > 60:
+    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50:
         return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50 and atr > 60:
+    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50:
         return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
         return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
@@ -101,12 +99,13 @@ def long_trade(entry_price, atr):
 
     while True:
         try:
-            current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
+            current_price = get_last_price()
         except Exception as e:
             print(f"Error fetching price: {e}")
             time.sleep(1)
             continue
-        loggs.system_log.info(f'Target price: {target_price}, Current price: {current_price} Stop loss: {stop_loss}')
+        loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
+                              f'Current price: {current_price} Stop loss: {stop_loss}')
         if current_price >= target_price:
             return 'Profit', atr, target_price
         elif current_price <= stop_loss:
@@ -116,17 +115,16 @@ def long_trade(entry_price, atr):
 def short_trade(entry_price, atr):
     """Monitoring short trade"""
     target_price = entry_price - atr
-    # target = 68351
-    # stop loss = 68681
     stop_loss = entry_price + atr
     while True:
         try:
-            current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
+            current_price = get_last_price()
         except Exception as e:
             print(f"Error fetching price: {e}")
             time.sleep(1)
             continue
-        loggs.system_log.info(f'Target price: {target_price}, Current price: {current_price}')
+        loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
+                              f'Current price: {current_price} Stop loss: {stop_loss}')
         if current_price <= target_price:
             return 'Profit', atr, target_price
         elif current_price > stop_loss:

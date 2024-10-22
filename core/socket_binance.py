@@ -1,4 +1,6 @@
 import os
+import json
+import websocket
 
 import requests
 import logging
@@ -20,6 +22,33 @@ def fetch_klines(symbol, interval):
         logging.error(f'Error fetching klines for {symbol}: {e}')
         return []
 
+
+
+def get_last_price(symbol="BTCUSDT", interval="5m"):
+    # API endpoint for Kline data
+    url = "https://fapi.binance.com/fapi/v1/klines"
+
+    # Parameters for the API request
+    params = {
+        "symbol": symbol,    # Trading pair symbol (e.g., BTCUSDT)
+        "interval": interval, # Time interval (e.g., 1m, 5m, 1h)
+        "limit": 1            # Number of candlesticks (set to 1 to get the latest one)
+    }
+
+    # Send the GET request
+    response = requests.get(url, params=params)
+
+    # Parse the response data
+    if response.status_code == 200:
+        klines = response.json()
+        # The close price is the 5th element in the response for each kline
+        last_candle = klines[0]  # Get the latest candle
+        close_price = float(last_candle[4])  # The close price is at index 4
+        print(f"Last price for {symbol}: {close_price} type: {type(close_price)}")
+        return close_price
+    else:
+        print(f"Error fetching data: {response.status_code}")
+        return None
 
 def fetch_btcusdt_klines(symbol, interval):
     result = fetch_klines(symbol, interval)
@@ -47,5 +76,10 @@ def get_wallet():
 
 
 
+
+
 if __name__ == '__main__':
-    get_wallet()
+    client = Client()
+    current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
+    print(current_price)
+    get_last_price()

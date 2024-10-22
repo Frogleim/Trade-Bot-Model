@@ -2,7 +2,7 @@ from datetime import datetime
 import logging
 import os
 
-version = '1.0 beta'
+version = '1.01 beta'
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
