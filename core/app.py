@@ -6,6 +6,8 @@ import loggs
 import ta
 
 
+
+
 def write_system_state(e):
     with open("system_state.txt", 'w') as file:
         file.write(f'Not working\nReason {e}')
@@ -94,9 +96,12 @@ def check_crossover():
 
 def long_trade(entry_price, atr):
     """Monitoring long trade"""
-    target_price = entry_price + atr
-    stop_loss = entry_price - atr
-
+    if atr <= 160:
+        target_price = entry_price + atr
+        stop_loss = entry_price - atr
+    else:
+        target_price = entry_price + 160
+        stop_loss = entry_price - 160
     while True:
         try:
             current_price = get_last_price()
@@ -131,25 +136,25 @@ def short_trade(entry_price, atr):
             return 'Loss', -atr, stop_loss
         time.sleep(1)
 
-# def start_trade(signal=None, close_price=None):
-#
-#     signal, close_price = check_crossover()
-#     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
-#     try:
-#         if signal == 'Buy':
-#             logging_settings.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
-#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-#             logging_settings.system_log.warning('Trade finished! Sleeping...')
-#             time.sleep(900)
-#         elif signal == 'Sell':
-#             logging_settings.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
-#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-#             logging_settings.system_log.warning('Trade finished! Sleeping...')
-#             time.sleep(900)
-#         else:
-#             print('Hold, not crossover yet')
-#     except Exception as error:
-#         logging_settings.error_logs_logger.error(error)
+def start_trade(signal=None, close_price=None):
+
+    signal, close_price = check_crossover()
+    client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
+    try:
+        if signal == 'Buy':
+            loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
+            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
+            loggs.system_log.warning('Trade finished! Sleeping...')
+            time.sleep(900)
+        elif signal == 'Sell':
+            loggs.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
+            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
+            loggs.system_log.warning('Trade finished! Sleeping...')
+            time.sleep(900)
+        else:
+            print('Hold, not crossover yet')
+    except Exception as error:
+        loggs.error_logs_logger.error(error)
 
 
 if __name__ == '__main__':
