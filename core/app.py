@@ -85,13 +85,15 @@ def check_crossover():
     loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, "
           f"Crossover Sell: {crossover_sell} Other Buy: {additional_indicator_long}"
           f" Other Sell: {additional_indicator_short}")
-    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50:
-        return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50:
-        return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+    if atr >= 70:
+        if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50:
+            return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50:
+            return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        else:
+            return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
         return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-
 
 
 def long_trade(entry_price, atr):
@@ -136,25 +138,27 @@ def short_trade(entry_price, atr):
             return 'Loss', -atr, stop_loss
         time.sleep(1)
 
-def start_trade(signal=None, close_price=None):
 
-    signal, close_price = check_crossover()
-    client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
-    try:
-        if signal == 'Buy':
-            loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
-            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-            loggs.system_log.warning('Trade finished! Sleeping...')
-            time.sleep(900)
-        elif signal == 'Sell':
-            loggs.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
-            miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-            loggs.system_log.warning('Trade finished! Sleeping...')
-            time.sleep(900)
-        else:
-            print('Hold, not crossover yet')
-    except Exception as error:
-        loggs.error_logs_logger.error(error)
+#
+# def start_trade(signal=None, close_price=None):
+#
+#     signal, close_price = check_crossover()
+#     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
+#     try:
+#         if signal == 'Buy':
+#             loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
+#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
+#             loggs.system_log.warning('Trade finished! Sleeping...')
+#             time.sleep(900)
+#         elif signal == 'Sell':
+#             loggs.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
+#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
+#             loggs.system_log.warning('Trade finished! Sleeping...')
+#             time.sleep(900)
+#         else:
+#             print('Hold, not crossover yet')
+#     except Exception as error:
+#         loggs.error_logs_logger.error(error)
 
 
 if __name__ == '__main__':
