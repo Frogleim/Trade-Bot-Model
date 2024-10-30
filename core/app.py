@@ -100,7 +100,7 @@ def long_trade(entry_price, atr):
     """Monitoring long trade"""
     if atr <= 160:
         target_price = entry_price + atr
-        stop_loss = entry_price - atr
+        stop_loss = entry_price - (atr / 2)
     else:
         target_price = entry_price + 160
         stop_loss = entry_price - 160
@@ -122,7 +122,7 @@ def long_trade(entry_price, atr):
 def short_trade(entry_price, atr):
     """Monitoring short trade"""
     target_price = entry_price - atr
-    stop_loss = entry_price + atr
+    stop_loss = entry_price + (atr / 2)
     while True:
         try:
             current_price = get_last_price()
