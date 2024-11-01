@@ -1,15 +1,13 @@
 import os
-import json
-import websocket
-
+from dotenv import load_dotenv
 import requests
 import logging
 import pandas as pd
 from binance.client import Client
 
-
-symbol = 'BTCUSDT'
-interval = '5m'
+load_dotenv(dotenv_path='.env')
+symbol = os.environ.get('SYMBOL')
+interval = os.environ.get('INTERVAL')
 
 
 def fetch_klines(symbol, interval):
@@ -24,7 +22,7 @@ def fetch_klines(symbol, interval):
 
 
 
-def get_last_price(symbol="BTCUSDT", interval="5m"):
+def get_last_price(symbol=symbol, interval=interval):
     # API endpoint for Kline data
     url = "https://fapi.binance.com/fapi/v1/klines"
 

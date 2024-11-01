@@ -4,7 +4,10 @@ import requests
 import time
 import loggs
 import ta
+from dotenv import load_dotenv
+import os
 
+load_dotenv(dotenv_path='.env')
 
 
 
@@ -24,10 +27,10 @@ def get_credentials():
 
 
 client = Client()
-symbol = 'BTCUSDT'
-interval = '5m'
+symbol = os.environ.get('SYMBOL')
+interval = os.environ.get('INTERVAL')
 lookback = 5
-adx_period = 14
+adx_period = os.environ.get('ADX_PERIOD')
 
 
 def calculate_ema():
@@ -36,8 +39,8 @@ def calculate_ema():
     if df.empty:
         print("No data fetched.")
         return None, None, None, None, None
-    short_ema = df['close'].ewm(span=5, adjust=False).mean()
-    long_ema = df['close'].ewm(span=13, adjust=False).mean()
+    short_ema = df['close'].ewm(span=os.environ.get('SHORT_EMA'), adjust=False).mean()
+    long_ema = df['close'].ewm(span=os.environ.get('LONG_EMA'), adjust=False).mean()
     close_price = df['close'].iloc[-2]
     df['previous_close'] = df['close'].shift(1)
     df['high_low'] = df['high'] - df['low']
@@ -50,7 +53,7 @@ def calculate_ema():
     rsi = 100 - (100 / (1 + rs))
     rsi_sma = rsi.rolling(window=14).mean()
     df['true_range'] = df[['high_low', 'high_prev_close', 'low_prev_close']].max(axis=1)
-    atr_period = 14
+    atr_period = os.environ.get('ATR_PERIOD')
     df['ATR'] = df['true_range'].rolling(window=atr_period).mean()
     atr = df['ATR'].iloc[-1]
     adx_period = 14
@@ -95,12 +98,12 @@ def check_crossover():
 
 def long_trade(entry_price, atr):
     """Monitoring long trade"""
-    if atr <= 160:
+    if atr >= float(os.environ.get('ATR')):
         target_price = entry_price + atr
         stop_loss = entry_price - (atr / 2)
     else:
-        target_price = entry_price + 160
-        stop_loss = entry_price - 160
+        target_price = entry_price + float(os.environ.get('ATR'))
+        stop_loss = entry_price - atr
     while True:
         try:
             current_price = get_last_price()
@@ -118,8 +121,12 @@ def long_trade(entry_price, atr):
 
 def short_trade(entry_price, atr):
     """Monitoring short trade"""
-    target_price = entry_price - atr
-    stop_loss = entry_price + (atr / 2)
+    if atr >= float(os.environ.get('ATR')):
+        target_price = entry_price - float(os.environ.get('ATR'))
+        stop_loss = entry_price + (atr / 2)
+    else:
+        target_price = entry_price - float(os.environ.get('ATR'))
+        stop_loss = entry_price + atr
     while True:
         try:
             current_price = get_last_price()

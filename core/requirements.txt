@@ -13,3 +13,4 @@ colorama
 python-telegram-bot==13.13
 websocket-client
 ta
+python-dotenv
