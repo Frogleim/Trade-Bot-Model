@@ -22,7 +22,7 @@ def fetch_klines(symbol, interval):
 
 
 
-def get_last_price(symbol=symbol, interval=interval):
+def get_last_price(symbol='ADAUSDT', interval='5m'):
     # API endpoint for Kline data
     url = "https://fapi.binance.com/fapi/v1/klines"
 

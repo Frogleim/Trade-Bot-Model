@@ -39,8 +39,8 @@ def calculate_ema():
     if df.empty:
         print("No data fetched.")
         return None, None, None, None, None
-    short_ema = df['close'].ewm(span=os.environ.get('SHORT_EMA'), adjust=False).mean()
-    long_ema = df['close'].ewm(span=os.environ.get('LONG_EMA'), adjust=False).mean()
+    short_ema = df['close'].ewm(span=int(os.environ.get('SHORT_EMA')), adjust=False).mean()
+    long_ema = df['close'].ewm(span=int(os.environ.get('LONG_EMA')), adjust=False).mean()
     close_price = df['close'].iloc[-2]
     df['previous_close'] = df['close'].shift(1)
     df['high_low'] = df['high'] - df['low']
@@ -53,7 +53,7 @@ def calculate_ema():
     rsi = 100 - (100 / (1 + rs))
     rsi_sma = rsi.rolling(window=14).mean()
     df['true_range'] = df[['high_low', 'high_prev_close', 'low_prev_close']].max(axis=1)
-    atr_period = os.environ.get('ATR_PERIOD')
+    atr_period = int(os.environ.get('ATR_PERIOD'))
     df['ATR'] = df['true_range'].rolling(window=atr_period).mean()
     atr = df['ATR'].iloc[-1]
     adx_period = 14
