@@ -16,3 +16,4 @@ coins_trade/__pycache__
 jupyter_data/.ipynb_checkpoints
 model_building/models/
 model_building/strategies/macd_model.pkl
+jupyter_test

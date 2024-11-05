@@ -4,6 +4,7 @@ import requests
 import time
 import loggs
 import ta
+from coins_trade.miya import miya_trade
 from dotenv import load_dotenv
 import os
 
@@ -65,7 +66,7 @@ def calculate_ema():
 
 
 def check_crossover():
-    """Check for signal with based strategy"""
+    """Check for signal with improved strategy considering price movement"""
     long_ema, short_ema, close_price, adx, atr, rsi = calculate_ema()
     missing_data = {}
     if short_ema is None or len(short_ema) < 2:
@@ -80,30 +81,45 @@ def check_crossover():
         missing_data['atr'] = 'Missing or invalid'
     if missing_data:
         raise ValueError(f"Missing or invalid crossover data: {missing_data}")
+
+    # Crossover conditions
     crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
     crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
+
+    # Additional Indicator conditions
     additional_indicator_long = (adx.iloc[-1] > 20) and (rsi.iloc[-1] > 50)
     additional_indicator_short = (adx.iloc[-1] > 20) and (rsi.iloc[-1] < 50)
 
-    loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, "
-          f"Crossover Sell: {crossover_sell} Other Buy: {additional_indicator_long}"
-          f" Other Sell: {additional_indicator_short}")
-    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50:
-        return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50:
-        return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+    # Volatility filter: Ensure ATR is above a certain threshold
+    volatility_threshold = 0.5  # Adjust based on your data
+    price_range = abs(close_price.iloc[-1] - close_price.iloc[-5])  # Last 5 periods' price range
+    sufficient_volatility = price_range > volatility_threshold * atr
+
+    # Log diagnostic info
+    loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Price Range: {price_range}, "
+                          f"Volatility Filter: {sufficient_volatility}, "
+                          f"Crossover Buy: {crossover_buy}, Crossover Sell: {crossover_sell}, "
+                          f"Other Buy: {additional_indicator_long}, Other Sell: {additional_indicator_short}")
+
+    # Apply all conditions for trade signals
+    if crossover_buy and additional_indicator_long and sufficient_volatility:
+        return ['long', close_price.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+    elif crossover_sell and additional_indicator_short and sufficient_volatility:
+        return ['short', close_price.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
-        return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['Hold', close_price.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
 
 
 def long_trade(entry_price, atr):
     """Monitoring long trade"""
+    loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {entry_price}')
+
     if atr >= float(os.environ.get('ATR')):
         target_price = entry_price + atr
         stop_loss = entry_price - (atr / 2)
     else:
         target_price = entry_price + float(os.environ.get('ATR'))
-        stop_loss = entry_price - atr
+        stop_loss = entry_price - (atr / 2 )
     while True:
         try:
             current_price = get_last_price()
@@ -121,12 +137,14 @@ def long_trade(entry_price, atr):
 
 def short_trade(entry_price, atr):
     """Monitoring short trade"""
+
+    loggs.system_log.warning(f'Sell position placed successfully: Entry Price: {entry_price}')
     if atr >= float(os.environ.get('ATR')):
         target_price = entry_price - float(os.environ.get('ATR'))
         stop_loss = entry_price + (atr / 2)
     else:
         target_price = entry_price - float(os.environ.get('ATR'))
-        stop_loss = entry_price + atr
+        stop_loss = entry_price + (atr / 2)
     while True:
         try:
             current_price = get_last_price()
