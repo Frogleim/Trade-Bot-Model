@@ -64,9 +64,8 @@ def send_signal(update: Update, context: CallbackContext):
 
 
 def start_bot(update: Update, context: CallbackContext):
-    avail_balance = get_wallet()
     update.message.reply_text(f"Hello, I'm Miya Trade bot! I'll notify you with trading signals.\n"
-                              f"Binance Futures Wallet:💲{avail_balance}")
+                              )
     send_signal(update, context)
 
 

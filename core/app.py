@@ -4,34 +4,18 @@ import requests
 import time
 import loggs
 import ta
-from coins_trade.miya import miya_trade
 from dotenv import load_dotenv
 import os
 
 load_dotenv(dotenv_path='.env')
 
-
-
-def write_system_state(e):
-    with open("system_state.txt", 'w') as file:
-        file.write(f'Not working\nReason {e}')
-
-
-def get_credentials():
-    print('Getting API KEYS from db')
-    url = "http://77.37.51.134:8080/get_keys"
-    headers = {
-        "accept": "application / json"
-    }
-    response = requests.get(url=url, headers=headers, verify=False)
-    return response.json()
-
-
 client = Client()
 symbol = os.environ.get('SYMBOL')
 interval = os.environ.get('INTERVAL')
+print(symbol, interval)
 lookback = 5
 adx_period = os.environ.get('ADX_PERIOD')
+
 
 
 def calculate_ema():
@@ -42,7 +26,7 @@ def calculate_ema():
         return None, None, None, None, None
     short_ema = df['close'].ewm(span=int(os.environ.get('SHORT_EMA')), adjust=False).mean()
     long_ema = df['close'].ewm(span=int(os.environ.get('LONG_EMA')), adjust=False).mean()
-    close_price = df['close'].iloc[-2]
+    close_price_series = df['close']  # Return the entire close price series
     df['previous_close'] = df['close'].shift(1)
     df['high_low'] = df['high'] - df['low']
     df['high_prev_close'] = abs(df['high'] - df['previous_close'])
@@ -62,18 +46,20 @@ def calculate_ema():
     loggs.system_log.info(
         f'Long EMA: {long_ema.iloc[-1]} Short EMA: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]} ADX: {adx.iloc[-1]}'
         f' RSI: {rsi.iloc[-1]} RSI SMA: {rsi_sma.iloc[-1]}')
-    return long_ema, short_ema, close_price, adx, atr, rsi
+    return long_ema, short_ema, close_price_series, adx, atr, rsi
+
+
 
 
 def check_crossover():
     """Check for signal with improved strategy considering price movement"""
-    long_ema, short_ema, close_price, adx, atr, rsi = calculate_ema()
+    long_ema, short_ema, close_price_series, adx, atr, rsi = calculate_ema()
     missing_data = {}
     if short_ema is None or len(short_ema) < 2:
         missing_data['short_ema'] = 'Missing or invalid'
     if long_ema is None or len(long_ema) < 2:
         missing_data['long_ema'] = 'Missing or invalid'
-    if close_price is None:
+    if close_price_series is None:
         missing_data['close_price'] = 'Missing'
     if adx is None or len(adx) == 0 or adx.iloc[-1] is None:
         missing_data['adx'] = 'Missing or invalid'
@@ -92,7 +78,7 @@ def check_crossover():
 
     # Volatility filter: Ensure ATR is above a certain threshold
     volatility_threshold = 0.5  # Adjust based on your data
-    price_range = abs(close_price.iloc[-1] - close_price.iloc[-5])  # Last 5 periods' price range
+    price_range = abs(close_price_series.iloc[-1] - close_price_series.iloc[-5])  # Last 5 periods' price range
     sufficient_volatility = price_range > volatility_threshold * atr
 
     # Log diagnostic info
@@ -103,11 +89,11 @@ def check_crossover():
 
     # Apply all conditions for trade signals
     if crossover_buy and additional_indicator_long and sufficient_volatility:
-        return ['long', close_price.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['long', close_price_series.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     elif crossover_sell and additional_indicator_short and sufficient_volatility:
-        return ['short', close_price.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['short', close_price_series.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
-        return ['Hold', close_price.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['Hold', close_price_series.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
 
 
 def long_trade(entry_price, atr):
@@ -185,5 +171,4 @@ def short_trade(entry_price, atr):
 
 if __name__ == '__main__':
     while True:
-        crossover_result = check_crossover()
-        print(crossover_result[0])
+        check_crossover()

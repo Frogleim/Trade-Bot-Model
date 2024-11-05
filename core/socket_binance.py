@@ -77,7 +77,4 @@ def get_wallet():
 
 
 if __name__ == '__main__':
-    client = Client()
-    current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
-    print(current_price)
-    get_last_price()
+    fetch_btcusdt_klines('ADAUSDT', '5m')
