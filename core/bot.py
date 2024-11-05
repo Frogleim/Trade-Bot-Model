@@ -55,10 +55,10 @@ def send_signal(update: Update, context: CallbackContext):
                                               f'Result:❌ {result} \nLoss: 🙁{pnl_in_diff}\n'
                                               f'Close price: {close}\n💲{avail_balance}')
 
-            time.sleep(10)
+            time.sleep(60)
         else:
             print("There is no good condition for trade")
-            time.sleep(60)
+            time.sleep(10)
 
 
 
