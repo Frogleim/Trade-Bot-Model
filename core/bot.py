@@ -17,7 +17,7 @@ def send_signal(update: Update, context: CallbackContext):
         print(crossover_result)
 
         if crossover_result[0] != 'Hold':
-            current_price = float(client.futures_ticker(symbol='ADAUSDT')['lastPrice'])
+            current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
 
             message = (f"Symbol: BTCUSDT\n⚠️Signal: {crossover_result[0]}\nLong EMA: {crossover_result[5]}\n"
                        f"Short EMA: {crossover_result[6]}\n"
