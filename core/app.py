@@ -6,6 +6,8 @@ import loggs
 import ta
 from dotenv import load_dotenv
 import os
+from live_prediction import  get_prediction
+from position_handler import place_buy_order, place_sell_order, close_position
 
 load_dotenv(dotenv_path='.env')
 
@@ -52,14 +54,14 @@ def calculate_ema():
 
 
 def check_crossover():
-    """Check for signal with improved strategy considering price movement"""
-    long_ema, short_ema, close_price_series, adx, atr, rsi = calculate_ema()
+    """Check for signal with based strategy"""
+    long_ema, short_ema, close_price, adx, atr, rsi = calculate_ema()
     missing_data = {}
     if short_ema is None or len(short_ema) < 2:
         missing_data['short_ema'] = 'Missing or invalid'
     if long_ema is None or len(long_ema) < 2:
         missing_data['long_ema'] = 'Missing or invalid'
-    if close_price_series is None:
+    if close_price is None:
         missing_data['close_price'] = 'Missing'
     if adx is None or len(adx) == 0 or adx.iloc[-1] is None:
         missing_data['adx'] = 'Missing or invalid'
@@ -67,39 +69,27 @@ def check_crossover():
         missing_data['atr'] = 'Missing or invalid'
     if missing_data:
         raise ValueError(f"Missing or invalid crossover data: {missing_data}")
-
-    # Crossover conditions
     crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
     crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
-
-    # Additional Indicator conditions
     additional_indicator_long = (adx.iloc[-1] > 20) and (rsi.iloc[-1] > 50)
     additional_indicator_short = (adx.iloc[-1] > 20) and (rsi.iloc[-1] < 50)
 
-    # Volatility filter: Ensure ATR is above a certain threshold
-    volatility_threshold = 0.5  # Adjust based on your data
-    price_range = abs(close_price_series.iloc[-1] - close_price_series.iloc[-5])  # Last 5 periods' price range
-    sufficient_volatility = price_range > volatility_threshold * atr
-
-    # Log diagnostic info
-    loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Price Range: {price_range}, "
-                          f"Volatility Filter: {sufficient_volatility}, "
-                          f"Crossover Buy: {crossover_buy}, Crossover Sell: {crossover_sell}, "
-                          f"Other Buy: {additional_indicator_long}, Other Sell: {additional_indicator_short}")
-
-    # Apply all conditions for trade signals
-    if crossover_buy and additional_indicator_long and sufficient_volatility:
-        return ['long', close_price_series.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-    elif crossover_sell and additional_indicator_short and sufficient_volatility:
-        return ['short', close_price_series.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+    loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, "
+          f"Crossover Sell: {crossover_sell} Other Buy: {additional_indicator_long}"
+          f" Other Sell: {additional_indicator_short}")
+    predicted_price = get_prediction()
+    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50 and predicted_price > close_price.iloc[-1]:
+        return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50 and predicted_price < close_price.iloc[-1]:
+        return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
-        return ['Hold', close_price_series.iloc[-1], adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
 
 
 def long_trade(entry_price, atr):
     """Monitoring long trade"""
     loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {entry_price}')
-
+    place_buy_order(quantity=0.002, symbol=symbol)
     if atr >= float(os.environ.get('ATR')):
         target_price = entry_price + atr
         stop_loss = entry_price - (atr / 2)
@@ -116,8 +106,10 @@ def long_trade(entry_price, atr):
         loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
                               f'Current price: {current_price} Stop loss: {stop_loss}')
         if current_price >= target_price:
+            close_position(symbol=symbol)
             return 'Profit', atr, target_price
         elif current_price <= stop_loss:
+            close_position(symbol=symbol)
             return 'Loss', -atr, stop_loss
         time.sleep(1)
 
@@ -125,6 +117,7 @@ def short_trade(entry_price, atr):
     """Monitoring short trade"""
 
     loggs.system_log.warning(f'Sell position placed successfully: Entry Price: {entry_price}')
+    place_sell_order(quantity=0.002, symbol=symbol)
     if atr >= float(os.environ.get('ATR')):
         target_price = entry_price - float(os.environ.get('ATR'))
         stop_loss = entry_price + (atr / 2)
@@ -141,8 +134,10 @@ def short_trade(entry_price, atr):
         loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
                               f'Current price: {current_price} Stop loss: {stop_loss}')
         if current_price <= target_price:
+            close_position(symbol=symbol)
             return 'Profit', atr, target_price
         elif current_price > stop_loss:
+            close_position(symbol=symbol)
             return 'Loss', -atr, stop_loss
         time.sleep(1)
 
