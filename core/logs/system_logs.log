@@ -21,3 +21,15 @@
 1.03 beta - 2024-11-05 16:53:38,585 - INFO - Hello World!
 1.03 beta - 2024-11-05 16:53:40,837 - INFO - Long EMA: 0.3313624478013843 Short EMA: 0.33158329554175386 ATR: 0.0005642857142857076 ADX: 17.07282453855915 RSI: 56.66666666666698 RSI SMA: 62.725523358650946
 1.03 beta - 2024-11-05 16:53:40,837 - INFO - ADX: 17.07282453855915, ATR: 0.000571428571428568, Price Range: 0.00040000000000001146, Volatility Filter: True, Crossover Buy: False, Crossover Sell: False, Other Buy: False, Other Sell: False
+1.03 beta - 2025-01-10 11:52:34,338 - INFO - Hello World!
+1.03 beta - 2025-01-10 11:52:34,342 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:01:35,308 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:01:35,312 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:02:09,616 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:02:09,620 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:03:02,381 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:03:02,385 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:08:07,381 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:08:07,384 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:08:32,575 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:08:32,579 - INFO - Loading .env file

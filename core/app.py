@@ -1,169 +1,123 @@
 from socket_binance import fetch_btcusdt_klines, get_last_price
 from binance.client import Client
-import requests
 import time
 import loggs
 import ta
 from dotenv import load_dotenv
 import os
-from live_prediction import  get_prediction
 from position_handler import place_buy_order, place_sell_order, close_position
 
 load_dotenv(dotenv_path='.env')
-
+loggs.system_log.info('Loading .env file')
 client = Client()
 symbol = os.environ.get('SYMBOL')
 interval = os.environ.get('INTERVAL')
-print(symbol, interval)
-lookback = 5
-adx_period = os.environ.get('ADX_PERIOD')
 
 
+def calculate_support_resistance(df):
+    """Calculate support and resistance levels."""
+    recent_lows = df['low'].rolling(window=20).min()
+    recent_highs = df['high'].rolling(window=20).max()
+    support = recent_lows.iloc[-1]  # Current support level
+    resistance = recent_highs.iloc[-1]  # Current resistance level
+    return support, resistance
 
-def calculate_ema():
-    """Calculating indicators"""
+
+def calculate_ema_and_sr():
+    """Calculate EMA and Support/Resistance."""
     df = fetch_btcusdt_klines(symbol, interval)
     if df.empty:
         print("No data fetched.")
-        return None, None, None, None, None
-    short_ema = df['close'].ewm(span=int(os.environ.get('SHORT_EMA')), adjust=False).mean()
-    long_ema = df['close'].ewm(span=int(os.environ.get('LONG_EMA')), adjust=False).mean()
-    close_price_series = df['close']  # Return the entire close price series
-    df['previous_close'] = df['close'].shift(1)
-    df['high_low'] = df['high'] - df['low']
-    df['high_prev_close'] = abs(df['high'] - df['previous_close'])
-    df['low_prev_close'] = abs(df['low'] - df['previous_close'])
-    delta = df['close'].diff(1)
-    gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
-    loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
-    rs = gain / loss
-    rsi = 100 - (100 / (1 + rs))
-    rsi_sma = rsi.rolling(window=14).mean()
-    df['true_range'] = df[['high_low', 'high_prev_close', 'low_prev_close']].max(axis=1)
-    atr_period = int(os.environ.get('ATR_PERIOD'))
-    df['ATR'] = df['true_range'].rolling(window=atr_period).mean()
-    atr = df['ATR'].iloc[-1]
-    adx_period = 14
-    adx = ta.trend.adx(df['high'], df['low'], df['close'], window=adx_period)
-    loggs.system_log.info(
-        f'Long EMA: {long_ema.iloc[-1]} Short EMA: {short_ema.iloc[-1]} ATR: {df["ATR"].iloc[-2]} ADX: {adx.iloc[-1]}'
-        f' RSI: {rsi.iloc[-1]} RSI SMA: {rsi_sma.iloc[-1]}')
-    return long_ema, short_ema, close_price_series, adx, atr, rsi
+        return None, None, None, None, None, None
+    short_ema = df['close'].ewm(span=int(os.environ.get('SHORT_EMA')), adjust=False).mean().iloc[-1]
+    long_ema = df['close'].ewm(span=int(os.environ.get('LONG_EMA')), adjust=False).mean().iloc[-1]
+    close_price_series = df['close']
+    atr = ta.volatility.average_true_range(df['high'], df['low'], df['close'], window=int(os.environ.get('ATR_PERIOD'))).iloc[-1]
+    support, resistance = calculate_support_resistance(df)
+    current_price = close_price_series.iloc[-1]
+    return current_price, atr, support, resistance, short_ema, long_ema
 
 
+def check_signals_with_ema():
+    """Check for entry and exit signals based on EMA + Support and Resistance."""
+    current_price, atr, support, resistance, short_ema, long_ema = calculate_ema_and_sr()
 
+    # Long Entry: Price hits support and uptrend (short EMA > long EMA)
+    if current_price <= support and short_ema > long_ema:
+        loggs.system_log.info(f'Price hit support: {support}. Uptrend confirmed. Long entry signal.')
+        return ['Long', current_price, support, resistance]
 
-def check_crossover():
-    """Check for signal with based strategy"""
-    long_ema, short_ema, close_price, adx, atr, rsi = calculate_ema()
-    missing_data = {}
-    if short_ema is None or len(short_ema) < 2:
-        missing_data['short_ema'] = 'Missing or invalid'
-    if long_ema is None or len(long_ema) < 2:
-        missing_data['long_ema'] = 'Missing or invalid'
-    if close_price is None:
-        missing_data['close_price'] = 'Missing'
-    if adx is None or len(adx) == 0 or adx.iloc[-1] is None:
-        missing_data['adx'] = 'Missing or invalid'
-    if atr is None or float(atr) <= 0:
-        missing_data['atr'] = 'Missing or invalid'
-    if missing_data:
-        raise ValueError(f"Missing or invalid crossover data: {missing_data}")
-    crossover_buy = (short_ema.iloc[-2] < long_ema.iloc[-2]) and (short_ema.iloc[-1] > long_ema.iloc[-1])
-    crossover_sell = (short_ema.iloc[-2] > long_ema.iloc[-2]) and (short_ema.iloc[-1] < long_ema.iloc[-1])
-    additional_indicator_long = (adx.iloc[-1] > 20) and (rsi.iloc[-1] > 50)
-    additional_indicator_short = (adx.iloc[-1] > 20) and (rsi.iloc[-1] < 50)
+    # Short Entry: Price hits resistance and downtrend (short EMA < long EMA)
+    elif current_price >= resistance and short_ema < long_ema:
+        loggs.system_log.info(f'Price hit resistance: {resistance}. Downtrend confirmed. Short entry signal.')
+        return ['Short', current_price, support, resistance]
 
-    loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Crossover Buy: {crossover_buy}, "
-          f"Crossover Sell: {crossover_sell} Other Buy: {additional_indicator_long}"
-          f" Other Sell: {additional_indicator_short}")
-    predicted_price = get_prediction()
-    if crossover_buy and adx.iloc[-1] > 20 and rsi.iloc[-1] > 50 and predicted_price > close_price.iloc[-1]:
-        return ['long', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
-    elif crossover_sell and adx.iloc[-1] > 20 and rsi.iloc[-1] < 50 and predicted_price < close_price.iloc[-1]:
-        return ['short', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
     else:
-        return ['Hold', close_price, adx.iloc[-1], atr, rsi.iloc[-1], long_ema.iloc[-1], short_ema.iloc[-1]]
+        return ['Hold', current_price, support, resistance]
 
-
-def long_trade(entry_price, atr):
-    """Monitoring long trade"""
+def long_trade(entry_price, target_resistance):
+    """Monitoring long trade with exit at next resistance."""
     loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {entry_price}')
-    place_buy_order(quantity=0.002, symbol=symbol)
-    if atr >= float(os.environ.get('ATR')):
-        target_price = entry_price + atr
-        stop_loss = entry_price - (atr / 2)
-    else:
-        target_price = entry_price + float(os.environ.get('ATR'))
-        stop_loss = entry_price - (atr / 2 )
+    # place_buy_order(quantity=0.002, symbol=symbol)
+
+    stop_loss = entry_price - (target_resistance - entry_price) * 0.5
+
     while True:
         try:
             current_price = get_last_price()
         except Exception as e:
-            print(f"Error fetching price: {e}")
+            loggs.system_log.error(f"Error fetching price: {e}")
             time.sleep(1)
             continue
-        loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
-                              f'Current price: {current_price} Stop loss: {stop_loss}')
-        if current_price >= target_price:
-            close_position(symbol=symbol)
-            return 'Profit', atr, target_price
+
+        loggs.system_log.info(f'Long trade - Entry: {entry_price}, Target: {target_resistance}, '
+                              f'Current: {current_price}, Stop Loss: {stop_loss}')
+        if current_price >= target_resistance:
+            # close_position(symbol=symbol)
+            loggs.system_log.info(f'Target hit! Profit at {target_resistance}')
+            return 'Profit'
         elif current_price <= stop_loss:
-            close_position(symbol=symbol)
-            return 'Loss', -atr, stop_loss
+            # close_position(symbol=symbol)
+            loggs.system_log.warning(f'Stop loss hit. Loss at {stop_loss}')
+            return 'Loss'
         time.sleep(1)
 
-def short_trade(entry_price, atr):
-    """Monitoring short trade"""
 
+def short_trade(entry_price, target_support):
+    """Monitoring short trade with exit at next support."""
     loggs.system_log.warning(f'Sell position placed successfully: Entry Price: {entry_price}')
-    place_sell_order(quantity=0.002, symbol=symbol)
-    if atr >= float(os.environ.get('ATR')):
-        target_price = entry_price - float(os.environ.get('ATR'))
-        stop_loss = entry_price + (atr / 2)
-    else:
-        target_price = entry_price - float(os.environ.get('ATR'))
-        stop_loss = entry_price + (atr / 2)
+    # place_sell_order(quantity=0.002, symbol=symbol)
+
+    stop_loss = entry_price + (entry_price - target_support) * 0.5
+
     while True:
         try:
             current_price = get_last_price()
         except Exception as e:
-            print(f"Error fetching price: {e}")
+            loggs.system_log.error(f"Error fetching price: {e}")
             time.sleep(1)
             continue
-        loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
-                              f'Current price: {current_price} Stop loss: {stop_loss}')
-        if current_price <= target_price:
-            close_position(symbol=symbol)
-            return 'Profit', atr, target_price
-        elif current_price > stop_loss:
-            close_position(symbol=symbol)
-            return 'Loss', -atr, stop_loss
+
+        loggs.system_log.info(f'Short trade - Entry: {entry_price}, Target: {target_support}, '
+                              f'Current: {current_price}, Stop Loss: {stop_loss}')
+        if current_price <= target_support:
+            # close_position(symbol=symbol)
+            loggs.system_log.info(f'Target hit! Profit at {target_support}')
+            return 'Profit'
+        elif current_price >= stop_loss:
+            # close_position(symbol=symbol)
+            loggs.system_log.warning(f'Stop loss hit. Loss at {stop_loss}')
+            return 'Loss'
         time.sleep(1)
-
-
-#
-# def start_trade(signal=None, close_price=None):
-#
-#     signal, close_price = check_crossover()
-#     client.futures_change_leverage(leverage=125, symbol='BTCUSDT')
-#     try:
-#         if signal == 'Buy':
-#             loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {close_price}')
-#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-#             loggs.system_log.warning('Trade finished! Sleeping...')
-#             time.sleep(900)
-#         elif signal == 'Sell':
-#             loggs.system_log.warning(f'Sell position placed successfully. Entry Price: {close_price}')
-#             miya_trade.trade('BTCUSDT', signal=signal, entry_price=close_price, position_size=0.002, indicator='EMA')
-#             loggs.system_log.warning('Trade finished! Sleeping...')
-#             time.sleep(900)
-#         else:
-#             print('Hold, not crossover yet')
-#     except Exception as error:
-#         loggs.error_logs_logger.error(error)
 
 
 if __name__ == '__main__':
     while True:
-        check_crossover()
+        signal = check_signals()
+        if signal[0] == 'long':
+            long_trade(entry_price=signal[1], target_resistance=signal[3])
+        elif signal[0] == 'short':
+            short_trade(entry_price=signal[1], target_support=signal[2])
+        else:
+            loggs.system_log.info(f'No entry signal. Holding position.')
+        time.sleep(60)  # Wait 1 minute before checking for a new signal

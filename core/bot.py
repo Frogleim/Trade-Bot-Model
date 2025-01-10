@@ -7,22 +7,23 @@ import time
 import os
 
 client = Client()
-telegram_token = os.environ['TELEGRAM_TOKEN']
+# telegram_token = os.environ['TELEGRAM_TOKEN']
+telegram_token = '7247839345:AAF1YTg3ZTio4n3vQlzgKCn0FexkpneHppI'
 
 
 def send_signal(update: Update, context: CallbackContext):
     while True:
         # try:
-        crossover_result = app.check_crossover()
+        crossover_result = app.check_signals_with_ema()
         print(crossover_result)
 
         if crossover_result[0] != 'Hold':
             current_price = float(client.futures_ticker(symbol='BTCUSDT')['lastPrice'])
 
-            message = (f"Symbol: BTCUSDT\n⚠️Signal: {crossover_result[0]}\nLong EMA: {crossover_result[5]}\n"
-                       f"Short EMA: {crossover_result[6]}\n"
+            message = (f"Symbol: BTCUSDT\n⚠️Signal: {crossover_result[0]}\nSupport: {crossover_result[2]}\n"
+                       f"Resistance: {crossover_result[3]}\n"
                        f"Price: {current_price}\n"
-                       f"ADX: {crossover_result[2]}\nATR: {crossover_result[3]}\nRSI: {crossover_result[4]}")
+                       )
             update.message.reply_text(message)
             if crossover_result[0] == 'long':
                 result, pnl, close = app.long_trade(current_price, crossover_result[3],
