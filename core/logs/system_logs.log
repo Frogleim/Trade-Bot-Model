@@ -33,3 +33,1466 @@
 1.03 beta - 2025-01-10 12:08:07,384 - INFO - Loading .env file
 1.03 beta - 2025-01-10 12:08:32,575 - INFO - Hello World!
 1.03 beta - 2025-01-10 12:08:32,579 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:14:39,594 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:14:40,116 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:14:56,304 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:14:56,562 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:15:23,873 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:15:24,147 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:16:24,165 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:16:24,450 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:17:29,410 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:17:29,669 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:18:05,395 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:18:05,734 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:23:26,393 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:23:26,396 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:23:27,346 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:23:27,348 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:23:32,594 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:23:32,596 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:23:34,672 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:23:34,673 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:24:09,167 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:24:09,172 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:24:12,649 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:24:12,650 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:24:23,239 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:24:23,241 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:24:24,491 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:24:24,493 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:24:39,788 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:24:39,791 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:24:41,133 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:24:41,135 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:24:45,524 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:24:45,526 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:25:09,264 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:25:09,268 - INFO - Loading .env file
+1.03 beta - 2025-01-10 12:25:12,569 - INFO - Hello World!
+1.03 beta - 2025-01-10 12:25:12,572 - INFO - Loading .env file
+1.03 beta - 2025-01-10 15:12:11,274 - INFO - Hello World!
+1.03 beta - 2025-01-10 15:12:11,289 - INFO - Loading .env file
+1.03 beta - 2025-01-11 11:42:44,033 - INFO - Hello World!
+1.03 beta - 2025-01-11 11:42:44,041 - INFO - Loading .env file
+1.03 beta - 2025-01-11 11:44:07,384 - INFO - Hello World!
+1.03 beta - 2025-01-11 11:44:07,393 - INFO - Loading .env file
+1.03 beta - 2025-01-11 15:09:56,766 - INFO - Hello World!
+1.03 beta - 2025-01-11 15:09:56,769 - INFO - Loading .env file
+1.03 beta - 2025-01-11 15:10:30,159 - INFO - Hello World!
+1.03 beta - 2025-01-11 15:10:30,162 - INFO - Loading .env file
+1.03 beta - 2025-01-11 15:32:16,235 - INFO - Hello World!
+1.03 beta - 2025-01-11 15:32:16,239 - INFO - Loading .env file
+1.03 beta - 2025-01-11 15:33:00,459 - INFO - Hello World!
+1.03 beta - 2025-01-11 15:33:00,463 - INFO - Loading .env file
+1.03 beta - 2025-01-11 15:34:33,771 - INFO - Hello World!
+1.03 beta - 2025-01-11 15:34:33,775 - INFO - Loading .env file
+1.03 beta - 2025-01-11 20:49:39,916 - INFO - Hello World!
+1.03 beta - 2025-01-11 20:49:39,920 - INFO - Loading .env file
+1.03 beta - 2025-01-11 23:42:10,253 - INFO - Hello World!
+1.03 beta - 2025-01-11 23:42:16,922 - INFO - Hello World!
+1.03 beta - 2025-01-11 23:42:16,922 - INFO - Loading .env file
+1.03 beta - 2025-01-11 23:42:18,367 - WARNING - BTCUSDT: No data available.
+1.03 beta - 2025-01-11 23:42:18,367 - WARNING - ETHUSDT: No data available.
+1.03 beta - 2025-01-11 23:42:18,367 - WARNING - BNBUSDT: No data available.
+1.03 beta - 2025-01-11 23:42:18,367 - WARNING - ADAUSDT: No data available.
+1.03 beta - 2025-01-11 23:42:18,367 - WARNING - XRPUSDT: No data available.
+1.03 beta - 2025-01-11 23:43:06,692 - INFO - Hello World!
+1.03 beta - 2025-01-11 23:43:06,693 - INFO - Loading .env file
+1.03 beta - 2025-01-11 23:43:07,190 - WARNING - BTCUSDT: No data available.
+1.03 beta - 2025-01-11 23:43:07,190 - WARNING - ETHUSDT: No data available.
+1.03 beta - 2025-01-11 23:43:07,191 - WARNING - BNBUSDT: No data available.
+1.03 beta - 2025-01-11 23:43:07,191 - WARNING - ADAUSDT: No data available.
+1.03 beta - 2025-01-11 23:43:07,191 - WARNING - XRPUSDT: No data available.
+1.03 beta - 2025-01-11 23:44:30,018 - INFO - Hello World!
+1.03 beta - 2025-01-11 23:44:30,018 - INFO - Loading .env file
+1.03 beta - 2025-01-11 23:44:31,369 - WARNING - BTCUSDT: No data available.
+1.03 beta - 2025-01-11 23:44:31,383 - WARNING - ETHUSDT: No data available.
+1.03 beta - 2025-01-11 23:44:31,383 - WARNING - BNBUSDT: No data available.
+1.03 beta - 2025-01-11 23:44:31,384 - WARNING - ADAUSDT: No data available.
+1.03 beta - 2025-01-11 23:44:31,390 - WARNING - XRPUSDT: No data available.
+1.03 beta - 2025-01-12 00:08:17,847 - INFO - Hello World!
+1.03 beta - 2025-01-12 00:08:17,847 - INFO - Loading .env file
+1.03 beta - 2025-01-12 00:09:09,459 - INFO - Hello World!
+1.03 beta - 2025-01-12 00:09:09,460 - INFO - Loading .env file
+1.03 beta - 2025-01-12 00:17:02,570 - INFO - Hello World!
+1.03 beta - 2025-01-12 00:17:02,571 - INFO - Loading .env file
+1.03 beta - 2025-01-12 00:28:37,566 - INFO - Hello World!
+1.03 beta - 2025-01-12 00:28:37,566 - INFO - Loading .env file
+1.03 beta - 2025-01-12 00:33:22,353 - INFO - Hello World!
+1.03 beta - 2025-01-12 00:33:22,353 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:44:56,868 - INFO - Hello World!
+1.03 beta - 2025-01-12 13:44:56,869 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:47:05,676 - INFO - Hello World!
+1.03 beta - 2025-01-12 13:47:05,676 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:48:21,791 - INFO - Hello World!
+1.03 beta - 2025-01-12 13:48:21,792 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:49:09,677 - INFO - Hello World!
+1.03 beta - 2025-01-12 13:49:09,677 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:50:21,514 - INFO - Hello World!
+1.03 beta - 2025-01-12 13:50:21,514 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:50:21,993 - INFO - Starting REST API fetching for all symbols.
+1.03 beta - 2025-01-12 13:50:58,446 - INFO - Hello World!
+1.03 beta - 2025-01-12 13:50:58,446 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:50:59,107 - INFO - Starting REST API fetching for all symbols.
+1.03 beta - 2025-01-12 13:51:20,301 - INFO - Hello World!
+1.03 beta - 2025-01-12 13:51:20,301 - INFO - Loading .env file
+1.03 beta - 2025-01-12 13:51:20,937 - INFO - Starting REST API fetching for all symbols.
+1.03 beta - 2025-01-12 13:51:21,339 - INFO - Price rejected at support level: 93711.19
+1.03 beta - 2025-01-12 13:51:21,339 - INFO - BTCUSDT: Hold signal. Price: 93792.5, Support: 93711.19, Resistance: 94627.8.
+1.03 beta - 2025-01-12 13:51:21,733 - INFO - ETHUSDT: Hold signal. Price: 3237.65, Support: 3224.49, Resistance: 3285.28.
+1.03 beta - 2025-01-12 13:51:22,163 - INFO - Price rejected at support level: 690.53
+1.03 beta - 2025-01-12 13:51:22,163 - INFO - BNBUSDT: Hold signal. Price: 691.32, Support: 690.53, Resistance: 696.52.
+1.03 beta - 2025-01-12 13:51:22,563 - INFO - ADAUSDT: Hold signal. Price: 0.9895, Support: 0.987, Resistance: 1.0204.
+1.03 beta - 2025-01-12 13:51:22,967 - INFO - XRPUSDT: Hold signal. Price: 2.4916, Support: 2.4849, Resistance: 2.5561.
+1.03 beta - 2025-01-12 14:01:06,742 - WARNING - Stopped REST API fetching.
+1.03 beta - 2025-01-12 14:01:50,978 - INFO - Hello World!
+1.03 beta - 2025-01-12 14:01:50,981 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:01:51,644 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:03:15,155 - INFO - Hello World!
+1.03 beta - 2025-01-12 14:03:15,158 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:03:15,585 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:03:18,270 - INFO - BTCUSDT: Hold signal. Price: 93925.83, Support: 93711.19, Resistance: 94342.44.
+1.03 beta - 2025-01-12 14:03:28,563 - INFO - ETHUSDT: Hold signal. Price: 3241.53, Support: 3224.49, Resistance: 3266.67.
+1.03 beta - 2025-01-12 14:03:38,879 - INFO - BNBUSDT: Hold signal. Price: 692.2, Support: 690.53, Resistance: 694.38.
+1.03 beta - 2025-01-12 14:03:49,166 - INFO - ADAUSDT: Hold signal. Price: 0.9932, Support: 0.987, Resistance: 1.0066.
+1.03 beta - 2025-01-12 14:03:59,458 - INFO - XRPUSDT: Hold signal. Price: 2.5005, Support: 2.4849, Resistance: 2.5481.
+1.03 beta - 2025-01-12 14:04:09,853 - INFO - BTCUSDT: Hold signal. Price: 93907.83, Support: 93711.19, Resistance: 94342.44.
+1.03 beta - 2025-01-12 14:04:20,151 - INFO - ETHUSDT: Hold signal. Price: 3241.6, Support: 3224.49, Resistance: 3266.67.
+1.03 beta - 2025-01-12 14:04:30,449 - INFO - BNBUSDT: Hold signal. Price: 692.2, Support: 690.53, Resistance: 694.38.
+1.03 beta - 2025-01-12 14:04:40,807 - INFO - Hello World!
+1.03 beta - 2025-01-12 14:04:40,810 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:04:41,652 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:04:43,406 - INFO - BTCUSDT: Hold signal. Price: 93923.29, Support: 93711.19, Resistance: 94342.44.
+1.03 beta - 2025-01-12 14:04:53,764 - INFO - ETHUSDT: Hold signal. Price: 3240.79, Support: 3224.49, Resistance: 3266.67.
+1.03 beta - 2025-01-12 14:05:04,057 - INFO - BNBUSDT: Hold signal. Price: 692.21, Support: 690.53, Resistance: 694.21.
+1.03 beta - 2025-01-12 14:05:14,351 - INFO - ADAUSDT: Hold signal. Price: 0.9927, Support: 0.987, Resistance: 1.0052.
+1.03 beta - 2025-01-12 14:05:24,637 - INFO - XRPUSDT: Hold signal. Price: 2.4977, Support: 2.4849, Resistance: 2.5453.
+1.03 beta - 2025-01-12 14:05:34,943 - INFO - BTCUSDT: Hold signal. Price: 93938.03, Support: 93711.19, Resistance: 94342.44.
+1.03 beta - 2025-01-12 14:05:46,374 - INFO - ETHUSDT: Hold signal. Price: 3240.36, Support: 3224.49, Resistance: 3265.66.
+1.03 beta - 2025-01-12 14:05:51,598 - INFO - Hello World!
+1.03 beta - 2025-01-12 14:05:51,602 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:05:51,966 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:06:24,217 - INFO - Hello World!
+1.03 beta - 2025-01-12 14:06:24,222 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:06:24,582 - INFO - Loading .env file
+1.03 beta - 2025-01-12 14:06:27,530 - INFO - BTCUSDT: Hold signal. Price: 93962.08, Support: 93711.19, Resistance: 94342.44.
+1.03 beta - 2025-01-12 14:06:27,707 - INFO - BNBUSDT: Hold signal. Price: 692.1, Support: 690.53, Resistance: 694.21.
+1.03 beta - 2025-01-12 14:06:27,719 - INFO - ADAUSDT: Hold signal. Price: 0.9925, Support: 0.987, Resistance: 1.0052.
+1.03 beta - 2025-01-12 14:06:27,723 - INFO - ETHUSDT: Hold signal. Price: 3240.01, Support: 3224.49, Resistance: 3265.66.
+1.03 beta - 2025-01-12 14:06:27,724 - INFO - XRPUSDT: Hold signal. Price: 2.4966, Support: 2.4849, Resistance: 2.5453.
+1.03 beta - 2025-01-12 14:11:27,658 - INFO - BTCUSDT: Hold signal. Price: 93969.7, Support: 93711.19, Resistance: 94331.82.
+1.03 beta - 2025-01-12 14:11:27,710 - INFO - Price rejected at support level: 690.53
+1.03 beta - 2025-01-12 14:11:27,710 - INFO - BNBUSDT: Hold signal. Price: 691.86, Support: 690.53, Resistance: 694.0.
+1.03 beta - 2025-01-12 14:11:27,714 - INFO - ETHUSDT: Hold signal. Price: 3240.55, Support: 3224.49, Resistance: 3259.79.
+1.03 beta - 2025-01-12 14:11:27,715 - INFO - ADAUSDT: Hold signal. Price: 0.9894, Support: 0.987, Resistance: 1.0024.
+1.03 beta - 2025-01-12 14:11:27,717 - INFO - XRPUSDT: Hold signal. Price: 2.4926, Support: 2.4849, Resistance: 2.5436.
+1.03 beta - 2025-01-12 14:16:27,907 - INFO - BTCUSDT: Hold signal. Price: 93985.53, Support: 93711.19, Resistance: 94267.03.
+1.03 beta - 2025-01-12 14:16:27,975 - INFO - XRPUSDT: Hold signal. Price: 2.4939, Support: 2.4849, Resistance: 2.539.
+1.03 beta - 2025-01-12 14:16:27,980 - INFO - ADAUSDT: Hold signal. Price: 0.9891, Support: 0.987, Resistance: 1.0019.
+1.03 beta - 2025-01-12 14:16:27,985 - INFO - ETHUSDT: Hold signal. Price: 3242.19, Support: 3224.49, Resistance: 3252.69.
+1.03 beta - 2025-01-12 14:16:27,999 - INFO - Price rejected at resistance level: 693.61
+1.03 beta - 2025-01-12 14:16:27,999 - INFO - BNBUSDT: Short entry signal at 692.44. Support: 690.53, Resistance: 693.61.
+1.03 beta - 2025-01-12 14:16:28,510 - WARNING - Sell position placed successfully: Entry Price: 692.15
+1.03 beta - 2025-01-12 14:16:28,864 - INFO - Short trade - Entry: 692.15, Target: 690.53, Current: 93954.5, Stop Loss: 692.96
+1.03 beta - 2025-01-12 14:16:28,864 - WARNING - Stop loss hit. Loss at 692.96
+1.03 beta - 2025-01-12 14:21:27,910 - INFO - BTCUSDT: Hold signal. Price: 93991.5, Support: 93711.19, Resistance: 94267.03.
+1.03 beta - 2025-01-12 14:21:27,990 - INFO - Price rejected at support level: 2.4849
+1.03 beta - 2025-01-12 14:21:27,991 - INFO - XRPUSDT: Hold signal. Price: 2.4876, Support: 2.4849, Resistance: 2.5381.
+1.03 beta - 2025-01-12 14:21:27,997 - INFO - Price rejected at resistance level: 693.61
+1.03 beta - 2025-01-12 14:21:28,001 - INFO - ETHUSDT: Hold signal. Price: 3242.23, Support: 3224.49, Resistance: 3252.41.
+1.03 beta - 2025-01-12 14:21:28,005 - INFO - Price rejected at support level: 0.987
+1.03 beta - 2025-01-12 14:21:28,005 - INFO - BNBUSDT: Short entry signal at 692.34. Support: 690.53, Resistance: 693.61.
+1.03 beta - 2025-01-12 14:21:28,005 - INFO - ADAUSDT: Hold signal. Price: 0.9883, Support: 0.987, Resistance: 1.0012.
+1.03 beta - 2025-01-12 14:21:28,585 - WARNING - Sell position placed successfully: Entry Price: 691.93
+1.03 beta - 2025-01-12 14:21:28,947 - INFO - Short trade - Entry: 691.93, Target: 690.53, Current: 93932.5, Stop Loss: 692.6299999999999
+1.03 beta - 2025-01-12 14:21:28,947 - WARNING - Stop loss hit. Loss at 692.6299999999999
+1.03 beta - 2025-01-12 14:26:27,914 - INFO - Price rejected at support level: 93711.19
+1.03 beta - 2025-01-12 14:26:27,915 - INFO - BTCUSDT: Hold signal. Price: 93851.94, Support: 93711.19, Resistance: 94222.41.
+1.03 beta - 2025-01-12 14:26:27,990 - INFO - ETHUSDT: Hold signal. Price: 3234.25, Support: 3224.49, Resistance: 3246.0.
+1.03 beta - 2025-01-12 14:26:27,991 - INFO - Price rejected at support level: 690.53
+1.03 beta - 2025-01-12 14:26:27,994 - INFO - Price rejected at support level: 0.9822
+1.03 beta - 2025-01-12 14:26:27,994 - INFO - Price rejected at support level: 2.47
+1.03 beta - 2025-01-12 14:26:27,995 - INFO - BNBUSDT: Hold signal. Price: 691.0, Support: 690.53, Resistance: 693.61.
+1.03 beta - 2025-01-12 14:26:27,995 - INFO - ADAUSDT: Hold signal. Price: 0.9823, Support: 0.9822, Resistance: 1.0011.
+1.03 beta - 2025-01-12 14:26:27,995 - INFO - XRPUSDT: Hold signal. Price: 2.4731, Support: 2.47, Resistance: 2.5319.
+1.03 beta - 2025-01-12 14:31:27,896 - INFO - Price rejected at support level: 93711.19
+1.03 beta - 2025-01-12 14:31:27,898 - INFO - BTCUSDT: Hold signal. Price: 93893.54, Support: 93711.19, Resistance: 94222.41.
+1.03 beta - 2025-01-12 14:31:27,969 - INFO - Price rejected at support level: 690.53
+1.03 beta - 2025-01-12 14:31:27,969 - INFO - BNBUSDT: Hold signal. Price: 690.87, Support: 690.53, Resistance: 693.61.
+1.03 beta - 2025-01-12 14:31:27,983 - INFO - ETHUSDT: Hold signal. Price: 3236.44, Support: 3224.49, Resistance: 3246.0.
+1.03 beta - 2025-01-12 14:31:27,991 - INFO - Price rejected at support level: 0.9789
+1.03 beta - 2025-01-12 14:31:27,993 - INFO - ADAUSDT: Hold signal. Price: 0.9799, Support: 0.9789, Resistance: 1.0011.
+1.03 beta - 2025-01-12 14:31:27,993 - INFO - XRPUSDT: Hold signal. Price: 2.477, Support: 2.47, Resistance: 2.5319.
+1.03 beta - 2025-01-12 15:00:49,779 - INFO - Hello World!
+1.03 beta - 2025-01-12 15:00:49,783 - INFO - Loading .env file
+1.03 beta - 2025-01-12 15:00:50,186 - INFO - Loading .env file
+1.03 beta - 2025-01-12 15:01:14,089 - INFO - Hello World!
+1.03 beta - 2025-01-12 15:01:14,093 - INFO - Loading .env file
+1.03 beta - 2025-01-12 15:01:14,454 - INFO - Loading .env file
+1.03 beta - 2025-01-12 15:01:17,178 - INFO - Price rejected at resistance level: 94059.09
+1.03 beta - 2025-01-12 15:01:17,179 - INFO - BTCUSDT: Hold signal. Price: 94049.99, Support: 93711.19, Resistance: 94059.09.
+1.03 beta - 2025-01-12 15:01:17,311 - INFO - Price rejected at support level: 690.4
+1.03 beta - 2025-01-12 15:01:17,311 - INFO - BNBUSDT: Hold signal. Price: 690.71, Support: 690.4, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:01:17,316 - INFO - ADAUSDT: Hold signal. Price: 0.9843, Support: 0.9758, Resistance: 0.9985.
+1.03 beta - 2025-01-12 15:01:17,325 - INFO - Price rejected at resistance level: 3246.4
+1.03 beta - 2025-01-12 15:01:17,325 - INFO - XRPUSDT: Hold signal. Price: 2.4873, Support: 2.47, Resistance: 2.517.
+1.03 beta - 2025-01-12 15:01:17,325 - INFO - ETHUSDT: Hold signal. Price: 3245.63, Support: 3224.49, Resistance: 3246.4.
+1.03 beta - 2025-01-12 15:01:17,449 - INFO - Price rejected at resistance level: 94059.09
+1.03 beta - 2025-01-12 15:01:17,449 - INFO - BTCUSDT: Hold signal. Price: 94049.99, Support: 93711.19, Resistance: 94059.09.
+1.03 beta - 2025-01-12 15:01:17,451 - INFO - ADAUSDT: Hold signal. Price: 0.9843, Support: 0.9758, Resistance: 0.9985.
+1.03 beta - 2025-01-12 15:01:17,453 - INFO - Price rejected at resistance level: 3246.4
+1.03 beta - 2025-01-12 15:01:17,455 - INFO - Price rejected at support level: 690.4
+1.03 beta - 2025-01-12 15:01:17,457 - INFO - ETHUSDT: Hold signal. Price: 3245.63, Support: 3224.49, Resistance: 3246.4.
+1.03 beta - 2025-01-12 15:01:17,457 - INFO - XRPUSDT: Hold signal. Price: 2.4872, Support: 2.47, Resistance: 2.517.
+1.03 beta - 2025-01-12 15:01:17,457 - INFO - BNBUSDT: Hold signal. Price: 690.71, Support: 690.4, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:06:17,421 - INFO - XRPUSDT: Hold signal. Price: 2.4787, Support: 2.47, Resistance: 2.5143.
+1.03 beta - 2025-01-12 15:06:17,421 - INFO - ADAUSDT: Hold signal. Price: 0.9817, Support: 0.9758, Resistance: 0.9971.
+1.03 beta - 2025-01-12 15:06:17,428 - INFO - Price rejected at resistance level: 3246.4
+1.03 beta - 2025-01-12 15:06:17,428 - INFO - Price rejected at resistance level: 94060.61
+1.03 beta - 2025-01-12 15:06:17,428 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:06:17,428 - INFO - ETHUSDT: Hold signal. Price: 3244.72, Support: 3224.49, Resistance: 3246.4.
+1.03 beta - 2025-01-12 15:06:17,428 - INFO - BTCUSDT: Hold signal. Price: 94057.25, Support: 93711.19, Resistance: 94060.61.
+1.03 beta - 2025-01-12 15:06:17,428 - INFO - BNBUSDT: Hold signal. Price: 690.29, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:06:17,688 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:06:17,690 - INFO - BNBUSDT: Hold signal. Price: 690.29, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:06:17,694 - INFO - ADAUSDT: Hold signal. Price: 0.9817, Support: 0.9758, Resistance: 0.9971.
+1.03 beta - 2025-01-12 15:06:17,698 - INFO - Price rejected at resistance level: 94060.61
+1.03 beta - 2025-01-12 15:06:17,704 - INFO - Price rejected at resistance level: 3246.4
+1.03 beta - 2025-01-12 15:06:17,705 - INFO - BTCUSDT: Hold signal. Price: 94057.25, Support: 93711.19, Resistance: 94060.61.
+1.03 beta - 2025-01-12 15:06:17,711 - INFO - XRPUSDT: Hold signal. Price: 2.4787, Support: 2.47, Resistance: 2.5143.
+1.03 beta - 2025-01-12 15:06:17,711 - INFO - ETHUSDT: Hold signal. Price: 3244.72, Support: 3224.49, Resistance: 3246.4.
+1.03 beta - 2025-01-12 15:11:17,394 - INFO - XRPUSDT: Hold signal. Price: 2.4807, Support: 2.47, Resistance: 2.5027.
+1.03 beta - 2025-01-12 15:11:17,395 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:11:17,397 - INFO - Price rejected at resistance level: 3250.39
+1.03 beta - 2025-01-12 15:11:17,398 - INFO - ADAUSDT: Hold signal. Price: 0.9836, Support: 0.9758, Resistance: 0.9945.
+1.03 beta - 2025-01-12 15:11:17,398 - INFO - Price rejected at resistance level: 94164.11
+1.03 beta - 2025-01-12 15:11:17,398 - INFO - BNBUSDT: Hold signal. Price: 690.74, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:11:17,398 - INFO - ETHUSDT: Hold signal. Price: 3247.21, Support: 3224.49, Resistance: 3250.39.
+1.03 beta - 2025-01-12 15:11:17,398 - INFO - BTCUSDT: Hold signal. Price: 94140.75, Support: 93711.19, Resistance: 94164.11.
+1.03 beta - 2025-01-12 15:11:17,486 - INFO - Price rejected at resistance level: 3250.39
+1.03 beta - 2025-01-12 15:11:17,486 - INFO - ETHUSDT: Hold signal. Price: 3247.21, Support: 3224.49, Resistance: 3250.39.
+1.03 beta - 2025-01-12 15:11:17,490 - INFO - Price rejected at resistance level: 94164.11
+1.03 beta - 2025-01-12 15:11:17,494 - INFO - ADAUSDT: Hold signal. Price: 0.9836, Support: 0.9758, Resistance: 0.9945.
+1.03 beta - 2025-01-12 15:11:17,495 - INFO - BTCUSDT: Hold signal. Price: 94140.75, Support: 93711.19, Resistance: 94164.11.
+1.03 beta - 2025-01-12 15:11:17,499 - INFO - XRPUSDT: Hold signal. Price: 2.4807, Support: 2.47, Resistance: 2.5027.
+1.03 beta - 2025-01-12 15:11:17,501 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:11:17,502 - INFO - BNBUSDT: Hold signal. Price: 690.74, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:16:17,596 - INFO - Price rejected at resistance level: 94164.11
+1.03 beta - 2025-01-12 15:16:17,598 - INFO - BTCUSDT: Hold signal. Price: 94143.98, Support: 93711.19, Resistance: 94164.11.
+1.03 beta - 2025-01-12 15:16:17,615 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:16:17,615 - INFO - BNBUSDT: Hold signal. Price: 690.26, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:16:17,621 - INFO - ADAUSDT: Hold signal. Price: 0.9846, Support: 0.9758, Resistance: 0.9945.
+1.03 beta - 2025-01-12 15:16:17,625 - INFO - Price rejected at resistance level: 3250.39
+1.03 beta - 2025-01-12 15:16:17,627 - INFO - ETHUSDT: Hold signal. Price: 3247.6, Support: 3231.3, Resistance: 3250.39.
+1.03 beta - 2025-01-12 15:16:17,627 - INFO - XRPUSDT: Hold signal. Price: 2.4845, Support: 2.47, Resistance: 2.5027.
+1.03 beta - 2025-01-12 15:16:17,736 - INFO - XRPUSDT: Hold signal. Price: 2.4845, Support: 2.47, Resistance: 2.5027.
+1.03 beta - 2025-01-12 15:16:17,747 - INFO - Price rejected at resistance level: 3250.39
+1.03 beta - 2025-01-12 15:16:17,747 - INFO - ETHUSDT: Hold signal. Price: 3247.6, Support: 3231.3, Resistance: 3250.39.
+1.03 beta - 2025-01-12 15:16:17,751 - INFO - Price rejected at resistance level: 94164.11
+1.03 beta - 2025-01-12 15:16:17,761 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:16:17,762 - INFO - ADAUSDT: Hold signal. Price: 0.9846, Support: 0.9758, Resistance: 0.9945.
+1.03 beta - 2025-01-12 15:16:17,763 - INFO - BTCUSDT: Hold signal. Price: 94143.98, Support: 93711.19, Resistance: 94164.11.
+1.03 beta - 2025-01-12 15:16:17,763 - INFO - BNBUSDT: Hold signal. Price: 690.26, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:21:17,356 - INFO - Price rejected at resistance level: 3251.39
+1.03 beta - 2025-01-12 15:21:17,358 - INFO - ETHUSDT: Hold signal. Price: 3250.66, Support: 3232.49, Resistance: 3251.39.
+1.03 beta - 2025-01-12 15:21:17,367 - INFO - XRPUSDT: Hold signal. Price: 2.4866, Support: 2.47, Resistance: 2.5027.
+1.03 beta - 2025-01-12 15:21:17,375 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:21:17,375 - INFO - ADAUSDT: Hold signal. Price: 0.9869, Support: 0.9758, Resistance: 0.9945.
+1.03 beta - 2025-01-12 15:21:17,377 - INFO - BNBUSDT: Hold signal. Price: 691.14, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:21:17,378 - INFO - Price rejected at resistance level: 94325.03
+1.03 beta - 2025-01-12 15:21:17,378 - INFO - BTCUSDT: Hold signal. Price: 94281.64, Support: 93711.19, Resistance: 94325.03.
+1.03 beta - 2025-01-12 15:21:17,475 - INFO - XRPUSDT: Hold signal. Price: 2.4866, Support: 2.47, Resistance: 2.5027.
+1.03 beta - 2025-01-12 15:21:17,484 - INFO - Price rejected at resistance level: 3251.39
+1.03 beta - 2025-01-12 15:21:17,488 - INFO - Price rejected at resistance level: 94325.03
+1.03 beta - 2025-01-12 15:21:17,491 - INFO - ETHUSDT: Hold signal. Price: 3250.66, Support: 3232.49, Resistance: 3251.39.
+1.03 beta - 2025-01-12 15:21:17,495 - INFO - BTCUSDT: Hold signal. Price: 94281.64, Support: 93711.19, Resistance: 94325.03.
+1.03 beta - 2025-01-12 15:21:17,495 - INFO - Price rejected at support level: 689.8
+1.03 beta - 2025-01-12 15:21:17,497 - INFO - ADAUSDT: Hold signal. Price: 0.9869, Support: 0.9758, Resistance: 0.9945.
+1.03 beta - 2025-01-12 15:21:17,497 - INFO - BNBUSDT: Hold signal. Price: 691.14, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:51:17,331 - INFO - Price rejected at resistance level: 94348.64
+1.03 beta - 2025-01-12 15:51:17,332 - INFO - BTCUSDT: Hold signal. Price: 94307.77, Support: 93836.51, Resistance: 94348.64.
+1.03 beta - 2025-01-12 15:51:17,334 - INFO - BNBUSDT: Hold signal. Price: 691.4, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:51:17,336 - INFO - XRPUSDT: Hold signal. Price: 2.4979, Support: 2.47, Resistance: 2.5034.
+1.03 beta - 2025-01-12 15:51:17,339 - INFO - ADAUSDT: Hold signal. Price: 0.9882, Support: 0.9758, Resistance: 0.9938.
+1.03 beta - 2025-01-12 15:51:17,339 - INFO - Price rejected at resistance level: 3258.38
+1.03 beta - 2025-01-12 15:51:17,339 - INFO - ETHUSDT: Hold signal. Price: 3255.93, Support: 3234.21, Resistance: 3258.38.
+1.03 beta - 2025-01-12 15:51:17,453 - INFO - ADAUSDT: Hold signal. Price: 0.9882, Support: 0.9758, Resistance: 0.9938.
+1.03 beta - 2025-01-12 15:51:17,458 - INFO - XRPUSDT: Hold signal. Price: 2.4979, Support: 2.47, Resistance: 2.5034.
+1.03 beta - 2025-01-12 15:51:17,462 - INFO - Price rejected at resistance level: 3258.38
+1.03 beta - 2025-01-12 15:51:17,465 - INFO - Price rejected at resistance level: 94348.64
+1.03 beta - 2025-01-12 15:51:17,467 - INFO - BNBUSDT: Hold signal. Price: 691.4, Support: 689.8, Resistance: 692.8.
+1.03 beta - 2025-01-12 15:51:17,468 - INFO - ETHUSDT: Hold signal. Price: 3255.93, Support: 3234.21, Resistance: 3258.38.
+1.03 beta - 2025-01-12 15:51:17,468 - INFO - BTCUSDT: Hold signal. Price: 94307.77, Support: 93836.51, Resistance: 94348.64.
+1.03 beta - 2025-01-12 15:56:17,305 - INFO - Price rejected at resistance level: 94348.64
+1.03 beta - 2025-01-12 15:56:17,305 - INFO - BTCUSDT: Hold signal. Price: 94287.18, Support: 93836.51, Resistance: 94348.64.
+1.03 beta - 2025-01-12 15:56:17,342 - INFO - Price rejected at resistance level: 692.56
+1.03 beta - 2025-01-12 15:56:17,342 - INFO - BNBUSDT: Hold signal. Price: 691.47, Support: 689.8, Resistance: 692.56.
+1.03 beta - 2025-01-12 15:56:17,352 - INFO - XRPUSDT: Hold signal. Price: 2.4961, Support: 2.47, Resistance: 2.5034.
+1.03 beta - 2025-01-12 15:56:17,358 - INFO - Price rejected at resistance level: 3258.38
+1.03 beta - 2025-01-12 15:56:17,365 - INFO - ADAUSDT: Hold signal. Price: 0.9887, Support: 0.9758, Resistance: 0.9938.
+1.03 beta - 2025-01-12 15:56:17,365 - INFO - ETHUSDT: Hold signal. Price: 3255.08, Support: 3234.21, Resistance: 3258.38.
+1.03 beta - 2025-01-12 15:56:17,475 - INFO - Price rejected at resistance level: 94348.64
+1.03 beta - 2025-01-12 15:56:17,480 - INFO - XRPUSDT: Hold signal. Price: 2.4961, Support: 2.47, Resistance: 2.5034.
+1.03 beta - 2025-01-12 15:56:17,480 - INFO - BTCUSDT: Hold signal. Price: 94287.18, Support: 93836.51, Resistance: 94348.64.
+1.03 beta - 2025-01-12 15:56:17,491 - INFO - ADAUSDT: Hold signal. Price: 0.9889, Support: 0.9758, Resistance: 0.9938.
+1.03 beta - 2025-01-12 15:56:17,496 - INFO - Price rejected at resistance level: 3258.38
+1.03 beta - 2025-01-12 15:56:17,502 - INFO - Price rejected at resistance level: 692.56
+1.03 beta - 2025-01-12 15:56:17,502 - INFO - ETHUSDT: Hold signal. Price: 3255.08, Support: 3234.21, Resistance: 3258.38.
+1.03 beta - 2025-01-12 15:56:17,502 - INFO - BNBUSDT: Hold signal. Price: 691.47, Support: 689.8, Resistance: 692.56.
+1.03 beta - 2025-01-12 16:30:17,190 - INFO - Hello World!
+1.03 beta - 2025-01-12 16:30:17,194 - INFO - Loading .env file
+1.03 beta - 2025-01-12 16:30:17,920 - INFO - Loading .env file
+1.03 beta - 2025-01-12 16:30:48,214 - INFO - Hello World!
+1.03 beta - 2025-01-12 16:30:48,217 - INFO - Loading .env file
+1.03 beta - 2025-01-12 16:30:48,666 - INFO - Loading .env file
+1.03 beta - 2025-01-12 16:30:53,965 - INFO - BTCUSDT: Hold signal. Price: 94402.26, Support: 94002.0, Resistance: 94600.0.
+1.03 beta - 2025-01-12 16:30:54,118 - INFO - ADAUSDT: Hold signal. Price: 0.9955, Support: 0.9804, Resistance: 1.001.
+1.03 beta - 2025-01-12 16:30:54,125 - INFO - BNBUSDT: Hold signal. Price: 692.01, Support: 689.8, Resistance: 693.4.
+1.03 beta - 2025-01-12 16:30:54,131 - INFO - ETHUSDT: Hold signal. Price: 3256.04, Support: 3241.5, Resistance: 3265.52.
+1.03 beta - 2025-01-12 16:30:54,133 - INFO - XRPUSDT: Hold signal. Price: 2.5142, Support: 2.4756, Resistance: 2.5282.
+1.03 beta - 2025-01-12 16:35:54,062 - INFO - BTCUSDT: Hold signal. Price: 94369.23, Support: 94015.16, Resistance: 94600.0.
+1.03 beta - 2025-01-12 16:35:54,118 - INFO - ETHUSDT: Hold signal. Price: 3255.25, Support: 3241.5, Resistance: 3265.52.
+1.03 beta - 2025-01-12 16:35:54,121 - INFO - XRPUSDT: Hold signal. Price: 2.511, Support: 2.4756, Resistance: 2.5282.
+1.03 beta - 2025-01-12 16:35:54,121 - INFO - ADAUSDT: Hold signal. Price: 0.9929, Support: 0.9804, Resistance: 1.001.
+1.03 beta - 2025-01-12 16:35:54,124 - INFO - BNBUSDT: Hold signal. Price: 691.93, Support: 689.8, Resistance: 693.4.
+1.03 beta - 2025-01-12 16:40:54,060 - INFO - BTCUSDT: Hold signal. Price: 94397.24, Support: 94019.4, Resistance: 94600.0.
+1.03 beta - 2025-01-12 16:40:54,111 - INFO - Price rejected at resistance level: 693.4
+1.03 beta - 2025-01-12 16:40:54,115 - INFO - BNBUSDT: Hold signal. Price: 692.33, Support: 689.92, Resistance: 693.4.
+1.03 beta - 2025-01-12 16:40:54,118 - INFO - ETHUSDT: Hold signal. Price: 3257.06, Support: 3241.97, Resistance: 3265.52.
+1.03 beta - 2025-01-12 16:40:54,118 - INFO - ADAUSDT: Hold signal. Price: 0.9922, Support: 0.9804, Resistance: 1.001.
+1.03 beta - 2025-01-12 16:40:54,119 - INFO - XRPUSDT: Hold signal. Price: 2.5123, Support: 2.4756, Resistance: 2.5282.
+1.03 beta - 2025-01-12 16:45:54,099 - INFO - Price rejected at resistance level: 94600.0
+1.03 beta - 2025-01-12 16:45:54,100 - INFO - BTCUSDT: Hold signal. Price: 94441.34, Support: 94107.09, Resistance: 94600.0.
+1.03 beta - 2025-01-12 16:45:54,107 - INFO - XRPUSDT: Hold signal. Price: 2.5096, Support: 2.4774, Resistance: 2.5282.
+1.03 beta - 2025-01-12 16:45:54,113 - INFO - Price rejected at resistance level: 693.4
+1.03 beta - 2025-01-12 16:45:54,116 - INFO - ADAUSDT: Hold signal. Price: 0.9916, Support: 0.983, Resistance: 1.001.
+1.03 beta - 2025-01-12 16:45:54,117 - INFO - BNBUSDT: Hold signal. Price: 692.36, Support: 690.09, Resistance: 693.4.
+1.03 beta - 2025-01-12 16:45:54,120 - INFO - ETHUSDT: Hold signal. Price: 3257.97, Support: 3246.2, Resistance: 3265.52.
+1.03 beta - 2025-01-12 16:50:54,331 - INFO - Price rejected at resistance level: 94600.0
+1.03 beta - 2025-01-12 16:50:54,333 - INFO - BTCUSDT: Hold signal. Price: 94433.5, Support: 94112.09, Resistance: 94600.0.
+1.03 beta - 2025-01-12 16:50:54,406 - INFO - Price rejected at resistance level: 3265.52
+1.03 beta - 2025-01-12 16:50:54,412 - INFO - XRPUSDT: Hold signal. Price: 2.5115, Support: 2.4823, Resistance: 2.5282.
+1.03 beta - 2025-01-12 16:50:54,416 - INFO - ETHUSDT: Hold signal. Price: 3259.28, Support: 3246.73, Resistance: 3265.52.
+1.03 beta - 2025-01-12 16:50:54,416 - INFO - Price rejected at resistance level: 693.4
+1.03 beta - 2025-01-12 16:50:54,420 - INFO - ADAUSDT: Hold signal. Price: 0.9928, Support: 0.983, Resistance: 1.001.
+1.03 beta - 2025-01-12 16:50:54,420 - INFO - BNBUSDT: Hold signal. Price: 692.39, Support: 690.09, Resistance: 693.4.
+1.03 beta - 2025-01-12 16:55:54,067 - INFO - BTCUSDT: Hold signal. Price: 94365.01, Support: 94173.48, Resistance: 94600.0.
+1.03 beta - 2025-01-12 16:55:54,107 - INFO - ETHUSDT: Hold signal. Price: 3255.0, Support: 3247.6, Resistance: 3265.52.
+1.03 beta - 2025-01-12 16:55:54,118 - INFO - ADAUSDT: Hold signal. Price: 0.9906, Support: 0.9833, Resistance: 1.001.
+1.03 beta - 2025-01-12 16:55:54,118 - INFO - XRPUSDT: Hold signal. Price: 2.5035, Support: 2.4841, Resistance: 2.5282.
+1.03 beta - 2025-01-12 16:55:54,119 - INFO - BNBUSDT: Hold signal. Price: 691.73, Support: 690.09, Resistance: 693.4.
+1.03 beta - 2025-01-12 17:00:54,390 - INFO - Price rejected at support level: 94173.48
+1.03 beta - 2025-01-12 17:00:54,392 - INFO - BTCUSDT: Long entry signal at 94316.94. Support: 94173.48, Resistance: 94600.0.
+1.03 beta - 2025-01-12 17:00:54,402 - INFO - XRPUSDT: Hold signal. Price: 2.503, Support: 2.4841, Resistance: 2.5282.
+1.03 beta - 2025-01-12 17:00:54,407 - INFO - BNBUSDT: Hold signal. Price: 691.61, Support: 690.09, Resistance: 693.4.
+1.03 beta - 2025-01-12 17:00:54,412 - INFO - Price rejected at support level: 3247.6
+1.03 beta - 2025-01-12 17:00:54,413 - INFO - ADAUSDT: Hold signal. Price: 0.9896, Support: 0.9833, Resistance: 1.001.
+1.03 beta - 2025-01-12 17:00:54,413 - INFO - ETHUSDT: Hold signal. Price: 3249.16, Support: 3247.6, Resistance: 3265.52.
+1.03 beta - 2025-01-12 17:00:55,099 - WARNING - Buy position placed successfully: Entry Price: 94281.1
+1.03 beta - 2025-01-12 17:00:55,465 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:00:56,832 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:00:58,197 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:00:59,573 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:00,972 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:02,350 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:03,763 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:05,129 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:06,490 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:07,854 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:09,212 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:10,571 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:11,933 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:13,298 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:14,662 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:16,024 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:17,381 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:18,741 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:20,102 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:21,466 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:22,833 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:24,213 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:25,568 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:26,941 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:28,308 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:29,671 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:31,035 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:32,404 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:33,760 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:35,122 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:36,484 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:37,847 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:39,213 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:40,572 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:41,932 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94305.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:43,295 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:44,658 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94293.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:46,024 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94293.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:47,384 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94293.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:48,744 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94293.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:50,106 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:51,466 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:52,835 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:54,848 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:56,794 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:01:58,722 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:00,643 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:02,560 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:04,500 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:06,443 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:08,367 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:10,384 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:12,347 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:14,325 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:16,239 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94298.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:18,180 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94298.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:20,123 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:22,064 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:23,992 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:25,999 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:27,975 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:29,908 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:31,854 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:33,908 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:35,888 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:37,828 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:39,760 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:41,699 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:43,669 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:45,597 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:47,544 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:49,542 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:51,538 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:52,944 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:54,364 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:55,735 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:57,100 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94300.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:58,480 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:02:59,844 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:01,207 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:02,583 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:03,946 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94297.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:05,333 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94290.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:06,702 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94280.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:08,067 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94272.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:09,427 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94272.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:10,795 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:12,162 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:13,531 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:14,896 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:16,334 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:17,701 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:19,071 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:20,434 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:21,805 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:23,168 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:25,529 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:26,887 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94275.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:28,255 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:29,615 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:30,981 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:32,346 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:33,709 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:35,071 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:36,437 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:37,804 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94293.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:39,260 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94293.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:40,623 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:41,988 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:43,357 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:44,732 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:46,099 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:47,461 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:48,844 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:50,215 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:51,612 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:52,990 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:54,355 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:55,772 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:57,135 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:58,511 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:03:59,878 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94325.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:01,242 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:02,601 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:03,969 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94310.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:05,328 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94310.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:06,692 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94310.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:08,722 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94310.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:10,646 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94310.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:12,740 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94301.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:14,652 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:17,009 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94281.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:18,953 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:20,917 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:22,835 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:24,766 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:26,692 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:28,638 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94258.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:30,602 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94258.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:32,556 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:34,526 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:37,610 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:39,552 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:41,493 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:43,821 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:45,735 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:47,656 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:49,579 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:51,560 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:53,498 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:55,435 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:57,343 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:04:59,258 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:01,183 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:02,849 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94256.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:04,487 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94262.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:06,128 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:07,765 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:09,402 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:11,053 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94266.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:12,694 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94270.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:14,346 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:15,991 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:17,635 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:19,630 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:21,571 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:23,494 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:25,444 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:27,770 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94265.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:29,710 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94285.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:31,671 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94299.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:33,682 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94299.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:35,646 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94299.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:37,673 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94288.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:39,589 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94286.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:41,502 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94282.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:43,432 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94282.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:45,338 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94283.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:47,317 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94282.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:49,221 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94282.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:51,159 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94282.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:53,156 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94282.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:54,427 - INFO - Price rejected at support level: 690.09
+1.03 beta - 2025-01-12 17:05:54,428 - INFO - BNBUSDT: Hold signal. Price: 691.32, Support: 690.09, Resistance: 693.4.
+1.03 beta - 2025-01-12 17:05:54,431 - INFO - ADAUSDT: Hold signal. Price: 0.9911, Support: 0.9833, Resistance: 1.001.
+1.03 beta - 2025-01-12 17:05:54,435 - INFO - Price rejected at support level: 3247.89
+1.03 beta - 2025-01-12 17:05:54,437 - INFO - XRPUSDT: Hold signal. Price: 2.5085, Support: 2.4891, Resistance: 2.5282.
+1.03 beta - 2025-01-12 17:05:54,438 - INFO - ETHUSDT: Hold signal. Price: 3250.02, Support: 3247.89, Resistance: 3265.52.
+1.03 beta - 2025-01-12 17:05:55,092 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94289.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:57,001 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94289.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:58,407 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:05:59,783 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:01,157 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:02,518 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:03,878 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:05,237 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:06,602 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:07,965 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94291.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:09,332 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94295.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:10,698 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94283.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:12,100 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94277.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:13,479 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94269.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:14,842 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94269.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:16,212 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94267.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:17,574 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94267.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:18,939 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94267.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:20,303 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94276.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:21,675 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94276.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:23,042 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94276.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:24,408 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94276.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:25,771 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94273.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:27,787 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94271.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:29,704 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94271.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:31,985 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94288.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:35,202 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94310.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:37,173 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:39,105 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:41,039 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:42,996 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:44,955 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:46,879 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:48,795 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94320.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:50,836 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94316.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:52,772 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94328.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:54,705 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94338.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:56,665 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:06:58,574 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:00,508 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:02,467 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:04,407 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94352.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:06,359 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:08,306 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:10,244 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:12,144 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:14,099 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:16,043 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:17,437 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:18,805 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:20,168 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:21,533 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:22,895 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:24,259 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:25,623 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94365.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:26,982 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:28,352 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:29,717 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:31,076 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:33,073 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:35,011 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:36,956 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:38,879 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:40,802 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:42,740 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:44,659 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:46,593 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94351.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:48,507 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94351.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:50,471 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94350.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:52,434 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94350.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:54,342 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94350.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:56,280 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94351.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:58,197 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:07:59,691 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:01,059 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:02,418 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:03,782 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:05,154 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:06,515 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:07,892 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94354.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:09,259 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94352.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:10,624 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94323.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:11,982 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94323.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:13,347 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:14,707 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:16,068 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:17,426 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:18,799 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94333.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:20,158 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94337.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:21,523 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94337.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:22,968 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94342.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:24,333 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94342.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:25,700 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94342.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:27,166 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94342.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:28,527 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94342.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:29,896 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94333.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:31,254 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94333.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:32,611 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:33,972 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:35,333 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94336.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:36,694 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:38,059 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:39,436 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:40,807 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:42,176 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:43,550 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:44,976 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:46,337 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:47,707 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:49,078 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:50,449 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:51,811 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94335.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:53,175 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94328.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:54,533 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94328.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:55,897 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94328.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:57,254 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94328.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:08:58,618 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94328.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:00,038 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94323.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:01,408 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94323.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:02,767 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94323.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:04,130 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94323.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:05,498 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:06,859 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:08,257 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94318.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:09,640 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94301.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:11,096 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94301.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:12,485 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94313.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:13,885 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94304.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:15,294 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:16,677 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:18,040 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:19,410 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:20,770 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:22,141 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:23,507 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:24,870 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:26,236 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:27,622 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:29,008 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:30,395 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:31,819 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:33,230 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:34,624 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:35,984 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:37,411 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:38,826 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:40,255 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:41,617 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94348.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:42,984 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:44,350 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:45,713 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:47,076 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:48,450 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:49,815 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:51,185 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94339.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:52,552 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:53,920 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:55,988 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:57,933 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:09:59,862 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:01,782 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:03,690 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94344.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:05,655 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:07,628 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:09,556 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:10,991 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:12,354 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:13,719 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:15,084 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:16,445 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:17,953 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94340.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:19,315 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94342.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:20,876 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94342.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:22,236 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94359.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:23,612 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94359.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:24,976 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:26,345 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:27,709 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:29,071 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:30,435 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:31,799 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:33,168 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:34,527 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:35,892 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:37,262 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:38,625 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:40,005 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:41,581 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94380.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:42,941 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94380.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:44,334 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94380.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:45,735 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94380.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:47,105 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94380.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:48,471 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94388.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:49,832 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94388.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:51,198 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:52,560 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:53,925 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:54,432 - INFO - Price rejected at support level: 3247.89
+1.03 beta - 2025-01-12 17:10:54,436 - INFO - BNBUSDT: Hold signal. Price: 691.99, Support: 690.09, Resistance: 693.4.
+1.03 beta - 2025-01-12 17:10:54,447 - INFO - XRPUSDT: Hold signal. Price: 2.513, Support: 2.4891, Resistance: 2.5282.
+1.03 beta - 2025-01-12 17:10:54,449 - INFO - ETHUSDT: Hold signal. Price: 3252.63, Support: 3247.89, Resistance: 3265.52.
+1.03 beta - 2025-01-12 17:10:54,449 - INFO - ADAUSDT: Hold signal. Price: 0.9955, Support: 0.9833, Resistance: 1.001.
+1.03 beta - 2025-01-12 17:10:55,301 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:56,678 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:58,037 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:10:59,399 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94393.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:00,774 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94393.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:02,166 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94393.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:03,535 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94393.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:04,967 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94368.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:06,326 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94368.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:07,733 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94368.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:09,387 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:11,028 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:12,669 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:14,331 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:15,976 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:17,617 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:19,249 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94359.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:20,889 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94359.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:22,525 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94359.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:24,179 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:25,818 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:27,450 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:29,086 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:30,742 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:32,390 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:34,033 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:35,674 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:37,326 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:38,970 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94369.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:40,616 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94369.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:42,271 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94370.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:43,901 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94370.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:45,548 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94370.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:47,187 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94370.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:48,836 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:50,476 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:52,125 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:53,762 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:55,409 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:57,053 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:11:58,705 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:00,343 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:01,978 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:03,616 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:05,262 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:06,903 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:08,547 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94384.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:10,258 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94384.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:11,904 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94384.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:13,556 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94384.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:14,966 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94380.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:16,329 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94370.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:17,695 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:19,056 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:20,416 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:21,791 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:23,157 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94367.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:24,525 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94364.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:25,900 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94364.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:27,271 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94364.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:28,631 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94364.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:30,004 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94364.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:31,368 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:32,730 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:34,106 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:35,471 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:36,832 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:38,185 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:39,542 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:40,910 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:42,274 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:43,666 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:45,035 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:46,405 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:47,771 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:49,137 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:50,503 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:51,871 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:53,238 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:54,615 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:55,976 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94358.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:57,365 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:12:58,727 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94363.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:00,094 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94376.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:01,455 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94376.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:02,817 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94376.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:04,180 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94375.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:05,542 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94390.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:06,903 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94390.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:08,268 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94390.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:10,100 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:11,468 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94394.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:12,897 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94398.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:14,261 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94398.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:15,630 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94399.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:16,993 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94399.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:18,473 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94399.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:19,838 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94399.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:21,221 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94400.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:22,653 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94400.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:24,077 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94400.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:25,528 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94400.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:26,895 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94400.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:28,258 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94399.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:29,664 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94400.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:31,020 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94400.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:32,386 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:33,749 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:35,113 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:36,478 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:37,845 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:39,207 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:40,569 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:41,938 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:43,293 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:44,651 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:46,017 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:47,379 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:48,739 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:50,113 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:51,477 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:52,841 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:54,203 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:55,563 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94418.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:56,927 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94406.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:58,287 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94427.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:13:59,651 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94422.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:01,042 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94422.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:02,419 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:03,786 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:05,148 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:06,512 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:07,873 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:09,232 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94431.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:10,597 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94431.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:11,960 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94437.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:13,324 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:14,680 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94437.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:16,036 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:17,401 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:18,766 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:20,135 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94425.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:21,545 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94422.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:22,920 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94420.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:24,290 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94420.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:25,646 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94460.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:27,013 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94462.1, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:28,381 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94460.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:29,749 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94460.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:31,118 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94475.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:32,483 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94475.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:33,876 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94460.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:35,253 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94475.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:37,288 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94475.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:39,237 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94475.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:41,136 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94475.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:43,090 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94479.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:44,996 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94479.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:46,920 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94483.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:48,833 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94483.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:50,781 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94483.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:53,075 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94499.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:55,022 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94493.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:56,966 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94493.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:14:58,907 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94493.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:00,829 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94493.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:02,733 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94493.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:04,703 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94493.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:06,632 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94505.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:08,542 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:10,487 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:11,887 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:13,248 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:14,608 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:15,977 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:17,348 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:18,713 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:20,082 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:21,444 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94518.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:22,807 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94517.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:24,173 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94518.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:25,536 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94518.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:26,910 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94516.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:28,279 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94516.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:29,647 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94515.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:31,017 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94516.0, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:32,383 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94515.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:33,751 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94507.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:35,119 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94507.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:36,482 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94507.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:37,839 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94516.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:39,204 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94516.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:40,567 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94518.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:41,938 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94518.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:43,304 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94527.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:44,670 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94527.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:46,037 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94536.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:47,401 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94536.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:48,769 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94536.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:50,766 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94536.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:52,699 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94536.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:54,160 - INFO - ADAUSDT: Hold signal. Price: 0.9966, Support: 0.9833, Resistance: 1.001.
+1.03 beta - 2025-01-12 17:15:54,162 - INFO - XRPUSDT: Hold signal. Price: 2.5173, Support: 2.4891, Resistance: 2.5282.
+1.03 beta - 2025-01-12 17:15:54,164 - INFO - ETHUSDT: Hold signal. Price: 3258.06, Support: 3247.89, Resistance: 3265.52.
+1.03 beta - 2025-01-12 17:15:54,167 - INFO - Price rejected at resistance level: 693.4
+1.03 beta - 2025-01-12 17:15:54,167 - INFO - BNBUSDT: Hold signal. Price: 692.74, Support: 690.09, Resistance: 693.4.
+1.03 beta - 2025-01-12 17:15:54,610 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94536.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:56,535 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94522.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:15:58,492 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94522.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:00,426 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94522.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:02,327 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94522.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:04,235 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94500.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:06,182 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94496.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:08,138 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:10,040 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:11,980 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:13,894 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:15,830 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:17,802 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:19,734 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:21,694 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94487.6, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:23,627 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94469.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:25,556 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94469.7, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:27,497 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94476.5, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:29,548 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94478.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:31,499 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94478.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:33,439 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94466.8, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:35,357 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94465.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:38,307 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:40,245 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:42,209 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:44,157 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:46,118 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:48,018 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:49,919 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:51,824 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.2, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:53,747 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94474.3, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:55,220 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94470.9, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 17:16:56,588 - INFO - Long trade - Entry: 94281.1, Target: 94600.0, Current: 94464.4, Stop Loss: 94121.65000000001
+1.03 beta - 2025-01-12 18:23:59,988 - INFO - Hello World!
+1.03 beta - 2025-01-12 18:23:59,993 - INFO - Loading .env file
+1.03 beta - 2025-01-12 18:24:00,400 - INFO - Loading .env file
+1.03 beta - 2025-01-12 18:24:03,357 - INFO - Price rejected at resistance level: 94980.21
+1.03 beta - 2025-01-12 18:24:03,357 - INFO - BTCUSDT: Hold signal. Price: 94871.14, Support: 94303.03, Resistance: 94980.21.
+1.03 beta - 2025-01-12 18:24:03,537 - INFO - Price rejected at resistance level: 694.14
+1.03 beta - 2025-01-12 18:24:03,538 - INFO - ADAUSDT: Hold signal. Price: 0.9968, Support: 0.9882, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:24:03,538 - INFO - BNBUSDT: Hold signal. Price: 693.64, Support: 691.2, Resistance: 694.14.
+1.03 beta - 2025-01-12 18:24:03,540 - INFO - Price rejected at resistance level: 3280.78
+1.03 beta - 2025-01-12 18:24:03,543 - INFO - Price rejected at support level: 2.4995
+1.03 beta - 2025-01-12 18:24:03,544 - INFO - ETHUSDT: Hold signal. Price: 3275.08, Support: 3247.89, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:24:03,544 - INFO - XRPUSDT: Hold signal. Price: 2.5025, Support: 2.4995, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:29:03,548 - INFO - Price rejected at resistance level: 94980.21
+1.03 beta - 2025-01-12 18:29:03,549 - INFO - Price rejected at resistance level: 694.14
+1.03 beta - 2025-01-12 18:29:03,549 - INFO - BTCUSDT: Hold signal. Price: 94832.01, Support: 94303.03, Resistance: 94980.21.
+1.03 beta - 2025-01-12 18:29:03,552 - INFO - ETHUSDT: Hold signal. Price: 3273.31, Support: 3247.89, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:29:03,552 - INFO - XRPUSDT: Hold signal. Price: 2.4954, Support: 2.4869, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:29:03,556 - INFO - BNBUSDT: Hold signal. Price: 693.0, Support: 691.2, Resistance: 694.14.
+1.03 beta - 2025-01-12 18:29:03,556 - INFO - ADAUSDT: Hold signal. Price: 0.9945, Support: 0.9882, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:34:03,721 - INFO - Price rejected at resistance level: 94980.21
+1.03 beta - 2025-01-12 18:34:03,721 - INFO - BTCUSDT: Hold signal. Price: 94869.0, Support: 94303.03, Resistance: 94980.21.
+1.03 beta - 2025-01-12 18:34:03,803 - INFO - XRPUSDT: Hold signal. Price: 2.4948, Support: 2.4869, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:34:03,807 - INFO - Price rejected at resistance level: 3280.78
+1.03 beta - 2025-01-12 18:34:03,808 - INFO - ETHUSDT: Hold signal. Price: 3274.61, Support: 3247.89, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:34:03,814 - INFO - ADAUSDT: Hold signal. Price: 0.9912, Support: 0.9882, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:34:03,817 - INFO - Price rejected at resistance level: 694.14
+1.03 beta - 2025-01-12 18:34:03,817 - INFO - BNBUSDT: Hold signal. Price: 692.9, Support: 691.2, Resistance: 694.14.
+1.03 beta - 2025-01-12 18:39:03,708 - INFO - Price rejected at resistance level: 94980.21
+1.03 beta - 2025-01-12 18:39:03,709 - INFO - BTCUSDT: Hold signal. Price: 94933.45, Support: 94303.03, Resistance: 94980.21.
+1.03 beta - 2025-01-12 18:39:03,814 - INFO - Price rejected at resistance level: 3280.78
+1.03 beta - 2025-01-12 18:39:03,816 - INFO - ETHUSDT: Hold signal. Price: 3275.05, Support: 3247.89, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:39:03,820 - INFO - XRPUSDT: Hold signal. Price: 2.4928, Support: 2.4869, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:39:03,821 - INFO - Price rejected at resistance level: 694.14
+1.03 beta - 2025-01-12 18:39:03,824 - INFO - ADAUSDT: Hold signal. Price: 0.9921, Support: 0.9882, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:39:03,824 - INFO - BNBUSDT: Hold signal. Price: 693.26, Support: 691.2, Resistance: 694.14.
+1.03 beta - 2025-01-12 18:44:04,625 - INFO - Price rejected at resistance level: 94994.49
+1.03 beta - 2025-01-12 18:44:04,627 - INFO - Price rejected at support level: 2.4869
+1.03 beta - 2025-01-12 18:44:04,628 - INFO - BTCUSDT: Hold signal. Price: 94854.34, Support: 94303.03, Resistance: 94994.49.
+1.03 beta - 2025-01-12 18:44:04,629 - INFO - BNBUSDT: Hold signal. Price: 692.71, Support: 691.2, Resistance: 694.14.
+1.03 beta - 2025-01-12 18:44:04,631 - INFO - ETHUSDT: Hold signal. Price: 3272.0, Support: 3248.28, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:44:04,631 - INFO - XRPUSDT: Hold signal. Price: 2.4913, Support: 2.4869, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:44:05,859 - INFO - Price rejected at support level: 0.9888
+1.03 beta - 2025-01-12 18:44:05,859 - INFO - ADAUSDT: Hold signal. Price: 0.9904, Support: 0.9888, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:49:04,046 - INFO - XRPUSDT: Hold signal. Price: 2.4937, Support: 2.4869, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:49:04,048 - INFO - ADAUSDT: Hold signal. Price: 0.9899, Support: 0.9879, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:49:04,052 - INFO - ETHUSDT: Hold signal. Price: 3269.24, Support: 3249.99, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:49:04,054 - INFO - Price rejected at support level: 691.7
+1.03 beta - 2025-01-12 18:49:04,055 - INFO - BNBUSDT: Hold signal. Price: 692.52, Support: 691.7, Resistance: 694.14.
+1.03 beta - 2025-01-12 18:49:04,486 - INFO - Price rejected at resistance level: 94994.49
+1.03 beta - 2025-01-12 18:49:04,486 - INFO - BTCUSDT: Hold signal. Price: 94811.49, Support: 94389.13, Resistance: 94994.49.
+1.03 beta - 2025-01-12 18:54:04,092 - INFO - ADAUSDT: Hold signal. Price: 0.9917, Support: 0.9879, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:54:04,094 - INFO - Price rejected at resistance level: 94994.49
+1.03 beta - 2025-01-12 18:54:04,096 - INFO - BTCUSDT: Hold signal. Price: 94842.84, Support: 94512.0, Resistance: 94994.49.
+1.03 beta - 2025-01-12 18:54:04,096 - INFO - ETHUSDT: Hold signal. Price: 3270.44, Support: 3255.25, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:54:04,097 - INFO - Price rejected at support level: 692.25
+1.03 beta - 2025-01-12 18:54:04,098 - INFO - BNBUSDT: Hold signal. Price: 692.67, Support: 692.25, Resistance: 694.14.
+1.03 beta - 2025-01-12 18:54:05,509 - INFO - XRPUSDT: Hold signal. Price: 2.501, Support: 2.4869, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:59:03,715 - INFO - BTCUSDT: Hold signal. Price: 94796.5, Support: 94533.33, Resistance: 94994.49.
+1.03 beta - 2025-01-12 18:59:03,805 - INFO - XRPUSDT: Hold signal. Price: 2.5012, Support: 2.4869, Resistance: 2.5218.
+1.03 beta - 2025-01-12 18:59:03,811 - INFO - ADAUSDT: Hold signal. Price: 0.991, Support: 0.9879, Resistance: 1.0013.
+1.03 beta - 2025-01-12 18:59:03,815 - INFO - ETHUSDT: Hold signal. Price: 3268.53, Support: 3256.63, Resistance: 3280.78.
+1.03 beta - 2025-01-12 18:59:03,819 - INFO - Price rejected at support level: 692.25
+1.03 beta - 2025-01-12 18:59:03,820 - INFO - BNBUSDT: Hold signal. Price: 692.43, Support: 692.25, Resistance: 694.14.
+1.03 beta - 2025-01-12 19:04:03,468 - INFO - Price rejected at resistance level: 94994.49
+1.03 beta - 2025-01-12 19:04:03,468 - INFO - BTCUSDT: Hold signal. Price: 94834.71, Support: 94533.33, Resistance: 94994.49.
+1.03 beta - 2025-01-12 19:04:03,511 - INFO - Price rejected at support level: 692.25
+1.03 beta - 2025-01-12 19:04:03,511 - INFO - BNBUSDT: Hold signal. Price: 693.1, Support: 692.25, Resistance: 694.14.
+1.03 beta - 2025-01-12 19:04:03,520 - INFO - XRPUSDT: Hold signal. Price: 2.4997, Support: 2.4869, Resistance: 2.5165.
+1.03 beta - 2025-01-12 19:04:03,522 - INFO - ETHUSDT: Hold signal. Price: 3271.52, Support: 3256.63, Resistance: 3280.78.
+1.03 beta - 2025-01-12 19:04:03,525 - INFO - ADAUSDT: Hold signal. Price: 0.9909, Support: 0.9879, Resistance: 1.0013.
+1.03 beta - 2025-01-12 19:09:03,751 - INFO - BTCUSDT: Hold signal. Price: 94722.45, Support: 94533.33, Resistance: 94994.49.
+1.03 beta - 2025-01-12 19:09:03,795 - INFO - ADAUSDT: Hold signal. Price: 0.9902, Support: 0.9879, Resistance: 1.0013.
+1.03 beta - 2025-01-12 19:09:03,799 - INFO - XRPUSDT: Hold signal. Price: 2.4984, Support: 2.4869, Resistance: 2.5165.
+1.03 beta - 2025-01-12 19:09:03,806 - INFO - Price rejected at support level: 692.25
+1.03 beta - 2025-01-12 19:09:03,806 - INFO - BNBUSDT: Hold signal. Price: 692.53, Support: 692.25, Resistance: 694.14.
+1.03 beta - 2025-01-12 19:09:03,809 - INFO - ETHUSDT: Hold signal. Price: 3266.8, Support: 3256.63, Resistance: 3280.78.
+1.03 beta - 2025-01-12 19:14:03,475 - INFO - BTCUSDT: Hold signal. Price: 94742.56, Support: 94533.33, Resistance: 94994.49.
+1.03 beta - 2025-01-12 19:14:03,634 - INFO - XRPUSDT: Hold signal. Price: 2.5082, Support: 2.4869, Resistance: 2.5165.
+1.03 beta - 2025-01-12 19:14:03,648 - INFO - Price rejected at support level: 692.25
+1.03 beta - 2025-01-12 19:14:03,648 - INFO - BNBUSDT: Hold signal. Price: 692.96, Support: 692.25, Resistance: 694.14.
+1.03 beta - 2025-01-12 19:14:03,649 - INFO - ADAUSDT: Hold signal. Price: 0.9918, Support: 0.9879, Resistance: 1.0013.
+1.03 beta - 2025-01-12 19:14:03,650 - INFO - ETHUSDT: Hold signal. Price: 3267.92, Support: 3256.63, Resistance: 3280.78.
+1.03 beta - 2025-01-12 19:19:03,753 - INFO - Price rejected at resistance level: 94994.49
+1.03 beta - 2025-01-12 19:19:03,754 - INFO - BTCUSDT: Hold signal. Price: 94927.21, Support: 94533.33, Resistance: 94994.49.
+1.03 beta - 2025-01-12 19:19:03,849 - INFO - ADAUSDT: Hold signal. Price: 0.992, Support: 0.9879, Resistance: 1.0013.
+1.03 beta - 2025-01-12 19:19:03,854 - INFO - Price rejected at resistance level: 694.14
+1.03 beta - 2025-01-12 19:19:03,861 - INFO - XRPUSDT: Hold signal. Price: 2.5108, Support: 2.4869, Resistance: 2.5165.
+1.03 beta - 2025-01-12 19:19:03,866 - INFO - Price rejected at resistance level: 3280.78
+1.03 beta - 2025-01-12 19:19:03,866 - INFO - BNBUSDT: Hold signal. Price: 693.64, Support: 692.25, Resistance: 694.14.
+1.03 beta - 2025-01-12 19:19:03,866 - INFO - ETHUSDT: Hold signal. Price: 3276.08, Support: 3259.7, Resistance: 3280.78.
+1.03 beta - 2025-01-12 19:24:03,497 - INFO - Price rejected at resistance level: 95450.1
+1.03 beta - 2025-01-12 19:24:03,498 - INFO - BTCUSDT: Hold signal. Price: 95285.43, Support: 94533.33, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:24:03,545 - INFO - ADAUSDT: Hold signal. Price: 1.0007, Support: 0.9879, Resistance: 1.0029.
+1.03 beta - 2025-01-12 19:24:03,551 - INFO - Price rejected at resistance level: 2.5259
+1.03 beta - 2025-01-12 19:24:03,563 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:24:03,564 - INFO - Price rejected at resistance level: 3296.01
+1.03 beta - 2025-01-12 19:24:03,564 - INFO - XRPUSDT: Hold signal. Price: 2.5252, Support: 2.4869, Resistance: 2.5259.
+1.03 beta - 2025-01-12 19:24:03,564 - INFO - BNBUSDT: Hold signal. Price: 695.17, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 19:24:03,564 - INFO - ETHUSDT: Hold signal. Price: 3291.04, Support: 3259.7, Resistance: 3296.01.
+1.03 beta - 2025-01-12 19:29:03,493 - INFO - BTCUSDT: Hold signal. Price: 95229.16, Support: 94656.41, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:29:03,523 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:29:03,525 - INFO - BNBUSDT: Hold signal. Price: 694.81, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 19:29:03,531 - INFO - Price rejected at resistance level: 1.0029
+1.03 beta - 2025-01-12 19:29:03,535 - INFO - Price rejected at resistance level: 2.5283
+1.03 beta - 2025-01-12 19:29:03,539 - INFO - ETHUSDT: Hold signal. Price: 3286.98, Support: 3265.5, Resistance: 3296.01.
+1.03 beta - 2025-01-12 19:29:03,541 - INFO - ADAUSDT: Hold signal. Price: 1.0016, Support: 0.9879, Resistance: 1.0029.
+1.03 beta - 2025-01-12 19:29:03,543 - INFO - XRPUSDT: Hold signal. Price: 2.528, Support: 2.4869, Resistance: 2.5283.
+1.03 beta - 2025-01-12 19:34:03,883 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:34:03,887 - INFO - BNBUSDT: Hold signal. Price: 694.71, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 19:34:03,896 - INFO - ADAUSDT: Hold signal. Price: 0.9971, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 19:34:03,897 - INFO - BTCUSDT: Hold signal. Price: 95099.56, Support: 94656.41, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:34:03,900 - INFO - ETHUSDT: Hold signal. Price: 3284.62, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 19:34:03,905 - INFO - XRPUSDT: Hold signal. Price: 2.5219, Support: 2.4869, Resistance: 2.5331.
+1.03 beta - 2025-01-12 19:39:03,726 - INFO - BTCUSDT: Hold signal. Price: 95106.39, Support: 94663.77, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:39:03,811 - INFO - ADAUSDT: Hold signal. Price: 0.9944, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 19:39:03,821 - INFO - ETHUSDT: Hold signal. Price: 3284.39, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 19:39:03,824 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:39:03,828 - INFO - XRPUSDT: Hold signal. Price: 2.5216, Support: 2.4869, Resistance: 2.5331.
+1.03 beta - 2025-01-12 19:39:03,829 - INFO - BNBUSDT: Hold signal. Price: 694.87, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 19:44:03,448 - INFO - BTCUSDT: Hold signal. Price: 95075.9, Support: 94675.54, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:44:03,523 - INFO - XRPUSDT: Hold signal. Price: 2.5225, Support: 2.4869, Resistance: 2.5331.
+1.03 beta - 2025-01-12 19:44:03,523 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:44:03,527 - INFO - BNBUSDT: Hold signal. Price: 695.02, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 19:44:03,528 - INFO - ADAUSDT: Hold signal. Price: 0.9942, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 19:44:03,530 - INFO - ETHUSDT: Hold signal. Price: 3283.58, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 19:49:03,483 - INFO - BTCUSDT: Hold signal. Price: 95081.28, Support: 94675.54, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:49:03,576 - INFO - ADAUSDT: Hold signal. Price: 0.9946, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 19:49:03,580 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:49:03,584 - INFO - XRPUSDT: Hold signal. Price: 2.5235, Support: 2.4869, Resistance: 2.5331.
+1.03 beta - 2025-01-12 19:49:03,587 - INFO - ETHUSDT: Hold signal. Price: 3283.37, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 19:49:03,587 - INFO - BNBUSDT: Hold signal. Price: 694.94, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 19:54:03,452 - INFO - BTCUSDT: Hold signal. Price: 95055.3, Support: 94675.54, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:54:03,523 - INFO - ADAUSDT: Hold signal. Price: 0.9931, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 19:54:03,531 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:54:03,534 - INFO - XRPUSDT: Hold signal. Price: 2.5189, Support: 2.4869, Resistance: 2.5331.
+1.03 beta - 2025-01-12 19:54:03,534 - INFO - BNBUSDT: Hold signal. Price: 694.98, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 19:54:03,537 - INFO - ETHUSDT: Hold signal. Price: 3284.72, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 19:59:03,527 - INFO - BTCUSDT: Hold signal. Price: 95076.44, Support: 94675.54, Resistance: 95450.1.
+1.03 beta - 2025-01-12 19:59:03,537 - INFO - ADAUSDT: Hold signal. Price: 0.9932, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 19:59:03,537 - INFO - ETHUSDT: Hold signal. Price: 3287.33, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 19:59:03,538 - INFO - Price rejected at resistance level: 695.52
+1.03 beta - 2025-01-12 19:59:03,539 - INFO - XRPUSDT: Hold signal. Price: 2.522, Support: 2.4869, Resistance: 2.5331.
+1.03 beta - 2025-01-12 19:59:03,539 - INFO - BNBUSDT: Hold signal. Price: 695.32, Support: 692.25, Resistance: 695.52.
+1.03 beta - 2025-01-12 20:04:03,792 - INFO - BTCUSDT: Hold signal. Price: 95023.87, Support: 94675.54, Resistance: 95450.1.
+1.03 beta - 2025-01-12 20:04:03,803 - INFO - ADAUSDT: Hold signal. Price: 0.9934, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:04:03,808 - INFO - Price rejected at resistance level: 2.5331
+1.03 beta - 2025-01-12 20:04:03,808 - INFO - Price rejected at resistance level: 695.6
+1.03 beta - 2025-01-12 20:04:03,808 - INFO - XRPUSDT: Hold signal. Price: 2.5281, Support: 2.4869, Resistance: 2.5331.
+1.03 beta - 2025-01-12 20:04:03,809 - INFO - BNBUSDT: Hold signal. Price: 694.76, Support: 692.25, Resistance: 695.6.
+1.03 beta - 2025-01-12 20:04:03,921 - INFO - ETHUSDT: Hold signal. Price: 3283.08, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:09:03,698 - INFO - BTCUSDT: Hold signal. Price: 94993.45, Support: 94675.54, Resistance: 95450.1.
+1.03 beta - 2025-01-12 20:09:03,786 - INFO - ETHUSDT: Hold signal. Price: 3280.61, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:09:03,790 - INFO - Price rejected at resistance level: 2.5408
+1.03 beta - 2025-01-12 20:09:03,790 - INFO - XRPUSDT: Hold signal. Price: 2.5359, Support: 2.4876, Resistance: 2.5408.
+1.03 beta - 2025-01-12 20:09:03,809 - INFO - Price rejected at resistance level: 695.6
+1.03 beta - 2025-01-12 20:09:03,809 - INFO - BNBUSDT: Hold signal. Price: 694.93, Support: 692.25, Resistance: 695.6.
+1.03 beta - 2025-01-12 20:09:03,812 - INFO - ADAUSDT: Hold signal. Price: 0.9941, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:14:03,521 - INFO - Price rejected at support level: 94675.54
+1.03 beta - 2025-01-12 20:14:03,522 - INFO - BTCUSDT: Long entry signal at 94856.34. Support: 94675.54, Resistance: 95450.1.
+1.03 beta - 2025-01-12 20:14:03,576 - INFO - XRPUSDT: Hold signal. Price: 2.5273, Support: 2.4876, Resistance: 2.5408.
+1.03 beta - 2025-01-12 20:14:03,577 - INFO - ETHUSDT: Hold signal. Price: 3275.04, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:14:03,578 - INFO - Price rejected at resistance level: 695.6
+1.03 beta - 2025-01-12 20:14:03,580 - INFO - BNBUSDT: Hold signal. Price: 694.37, Support: 692.25, Resistance: 695.6.
+1.03 beta - 2025-01-12 20:14:03,580 - INFO - ADAUSDT: Hold signal. Price: 0.9917, Support: 0.9879, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:14:04,254 - WARNING - Buy position placed successfully: Entry Price: 94813.4
+1.03 beta - 2025-01-12 20:14:04,614 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94813.3, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:05,993 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:07,400 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:08,768 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:10,124 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:11,496 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:12,900 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:14,259 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:15,690 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94824.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:17,088 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94834.2, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:18,448 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94838.0, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:19,882 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94837.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:21,981 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94818.0, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:23,933 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94818.0, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:25,854 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:27,859 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:29,797 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94843.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:31,763 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94843.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:33,688 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94843.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:35,655 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94847.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:37,570 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94847.4, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:39,506 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:41,496 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:43,447 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94866.1, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:45,398 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94866.1, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:47,349 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94866.1, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:49,390 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94843.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:51,334 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94835.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:53,282 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94822.1, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:55,241 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94822.1, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:57,180 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94811.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:14:59,122 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94812.0, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:01,043 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94811.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:02,998 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94811.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:05,010 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94811.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:06,911 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94811.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:08,841 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.6, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:10,776 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:12,189 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:13,552 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:14,970 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:16,620 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:17,990 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:19,351 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:20,714 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:22,081 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:23,447 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:24,810 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:26,169 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:28,036 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:29,397 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94819.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:30,755 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94828.2, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:32,117 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94828.2, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:33,478 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94849.4, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:35,096 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94849.4, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:36,467 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94853.2, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:37,831 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94853.2, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:39,197 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94853.2, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:40,583 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94853.1, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:41,946 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94853.1, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:43,306 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:44,666 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:46,071 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:47,440 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:48,801 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:50,185 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94856.8, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:51,549 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94857.9, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:53,034 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94861.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:54,399 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94861.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:55,763 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: 94861.7, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:15:56,887 - INFO - Long trade - Entry: 94813.4, Target: 95450.1, Current: None, Stop Loss: 94495.04999999999
+1.03 beta - 2025-01-12 20:19:03,566 - INFO - XRPUSDT: Hold signal. Price: 2.5252, Support: 2.4876, Resistance: 2.5408.
+1.03 beta - 2025-01-12 20:19:03,573 - INFO - Price rejected at support level: 3265.5
+1.03 beta - 2025-01-12 20:19:03,574 - INFO - ETHUSDT: Hold signal. Price: 3271.87, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:19:03,577 - INFO - BNBUSDT: Hold signal. Price: 694.0, Support: 692.25, Resistance: 695.6.
+1.03 beta - 2025-01-12 20:19:03,579 - INFO - Price rejected at support level: 0.9863
+1.03 beta - 2025-01-12 20:19:03,579 - INFO - ADAUSDT: Hold signal. Price: 0.9877, Support: 0.9863, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:24:03,630 - INFO - XRPUSDT: Hold signal. Price: 2.529, Support: 2.4901, Resistance: 2.5408.
+1.03 beta - 2025-01-12 20:24:03,632 - INFO - ADAUSDT: Hold signal. Price: 0.9897, Support: 0.9854, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:24:03,635 - INFO - Price rejected at resistance level: 695.6
+1.03 beta - 2025-01-12 20:24:03,635 - INFO - BNBUSDT: Hold signal. Price: 694.47, Support: 692.25, Resistance: 695.6.
+1.03 beta - 2025-01-12 20:24:03,635 - INFO - ETHUSDT: Hold signal. Price: 3276.74, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:29:03,555 - INFO - ETHUSDT: Hold signal. Price: 3276.92, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:29:03,559 - INFO - Price rejected at resistance level: 2.5408
+1.03 beta - 2025-01-12 20:29:03,560 - INFO - Price rejected at resistance level: 695.6
+1.03 beta - 2025-01-12 20:29:03,560 - INFO - ADAUSDT: Hold signal. Price: 0.9933, Support: 0.9854, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:29:03,560 - INFO - XRPUSDT: Hold signal. Price: 2.5384, Support: 2.4944, Resistance: 2.5408.
+1.03 beta - 2025-01-12 20:29:03,560 - INFO - BNBUSDT: Hold signal. Price: 694.22, Support: 692.3, Resistance: 695.6.
+1.03 beta - 2025-01-12 20:34:03,612 - INFO - ADAUSDT: Hold signal. Price: 0.9938, Support: 0.9854, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:34:03,618 - INFO - Price rejected at resistance level: 2.5429
+1.03 beta - 2025-01-12 20:34:03,618 - INFO - ETHUSDT: Hold signal. Price: 3278.99, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:34:03,618 - INFO - XRPUSDT: Hold signal. Price: 2.539, Support: 2.4944, Resistance: 2.5429.
+1.03 beta - 2025-01-12 20:34:03,620 - INFO - Price rejected at resistance level: 695.6
+1.03 beta - 2025-01-12 20:34:03,620 - INFO - BNBUSDT: Hold signal. Price: 694.98, Support: 692.3, Resistance: 695.6.
+1.03 beta - 2025-01-12 20:39:03,848 - INFO - Price rejected at resistance level: 695.7
+1.03 beta - 2025-01-12 20:39:03,851 - INFO - ADAUSDT: Hold signal. Price: 0.9937, Support: 0.9854, Resistance: 1.0047.
+1.03 beta - 2025-01-12 20:39:03,851 - INFO - BNBUSDT: Hold signal. Price: 695.43, Support: 692.39, Resistance: 695.7.
+1.03 beta - 2025-01-12 20:39:03,851 - INFO - ETHUSDT: Hold signal. Price: 3281.36, Support: 3265.5, Resistance: 3296.14.
+1.03 beta - 2025-01-12 20:39:03,864 - INFO - Price rejected at resistance level: 2.5429
+1.03 beta - 2025-01-12 20:39:03,864 - INFO - XRPUSDT: Hold signal. Price: 2.5383, Support: 2.4944, Resistance: 2.5429.
+1.03 beta - 2025-01-13 09:51:50,565 - INFO - Hello World!
+1.03 beta - 2025-01-13 09:51:50,570 - INFO - Loading .env file
+1.03 beta - 2025-01-13 09:51:51,002 - INFO - Loading .env file
+1.03 beta - 2025-01-13 09:52:04,376 - INFO - Price rejected at support level: 94045.45
+1.03 beta - 2025-01-13 09:52:04,377 - INFO - BTCUSDT: Hold signal. Price: 94181.82, Support: 94045.45, Resistance: 94913.03.
+1.03 beta - 2025-01-13 09:52:04,536 - INFO - ETHUSDT: Hold signal. Price: 3223.99, Support: 3213.0, Resistance: 3260.49.
+1.03 beta - 2025-01-13 09:52:04,545 - INFO - BNBUSDT: Hold signal. Price: 682.77, Support: 681.04, Resistance: 689.95.
+1.03 beta - 2025-01-13 09:52:04,546 - INFO - ADAUSDT: Hold signal. Price: 0.9452, Support: 0.942, Resistance: 0.9619.
+1.03 beta - 2025-01-13 09:52:04,547 - INFO - XRPUSDT: Hold signal. Price: 2.5085, Support: 2.4967, Resistance: 2.5413.
+1.03 beta - 2025-01-13 09:57:04,515 - INFO - Price rejected at support level: 94045.45
+1.03 beta - 2025-01-13 09:57:04,521 - INFO - ETHUSDT: Hold signal. Price: 3228.01, Support: 3213.0, Resistance: 3260.49.
+1.03 beta - 2025-01-13 09:57:04,521 - INFO - BTCUSDT: Hold signal. Price: 94222.99, Support: 94045.45, Resistance: 94913.03.
+1.03 beta - 2025-01-13 09:57:04,530 - INFO - ADAUSDT: Hold signal. Price: 0.9451, Support: 0.942, Resistance: 0.9619.
+1.03 beta - 2025-01-13 09:57:04,534 - INFO - BNBUSDT: Hold signal. Price: 683.06, Support: 681.04, Resistance: 689.95.
+1.03 beta - 2025-01-13 09:57:04,536 - INFO - XRPUSDT: Hold signal. Price: 2.5099, Support: 2.4967, Resistance: 2.5413.
+1.03 beta - 2025-01-13 10:02:04,591 - INFO - ETHUSDT: Hold signal. Price: 3223.11, Support: 3213.0, Resistance: 3260.49.
+1.03 beta - 2025-01-13 10:02:04,593 - INFO - XRPUSDT: Hold signal. Price: 2.5053, Support: 2.4967, Resistance: 2.5413.
+1.03 beta - 2025-01-13 10:02:04,593 - INFO - Price rejected at support level: 0.942
+1.03 beta - 2025-01-13 10:02:04,593 - INFO - BNBUSDT: Hold signal. Price: 682.41, Support: 681.04, Resistance: 689.95.
+1.03 beta - 2025-01-13 10:02:04,594 - INFO - Price rejected at support level: 94045.45
+1.03 beta - 2025-01-13 10:02:04,595 - INFO - ADAUSDT: Hold signal. Price: 0.9433, Support: 0.942, Resistance: 0.9619.
+1.03 beta - 2025-01-13 10:02:04,595 - INFO - BTCUSDT: Hold signal. Price: 94134.42, Support: 94045.45, Resistance: 94913.03.
+1.03 beta - 2025-01-13 10:07:04,463 - INFO - BTCUSDT: Hold signal. Price: 94273.43, Support: 94045.45, Resistance: 94913.03.
+1.03 beta - 2025-01-13 10:07:04,520 - INFO - ETHUSDT: Hold signal. Price: 3229.14, Support: 3213.0, Resistance: 3260.49.
+1.03 beta - 2025-01-13 10:07:04,522 - INFO - ADAUSDT: Hold signal. Price: 0.947, Support: 0.9416, Resistance: 0.9619.
+1.03 beta - 2025-01-13 10:07:04,526 - INFO - BNBUSDT: Hold signal. Price: 683.19, Support: 681.04, Resistance: 689.95.
+1.03 beta - 2025-01-13 10:07:04,527 - INFO - XRPUSDT: Hold signal. Price: 2.5171, Support: 2.4967, Resistance: 2.5413.
+1.03 beta - 2025-01-13 10:12:04,481 - INFO - BTCUSDT: Hold signal. Price: 94263.47, Support: 94045.45, Resistance: 94758.97.
+1.03 beta - 2025-01-13 10:12:04,518 - INFO - ADAUSDT: Hold signal. Price: 0.9478, Support: 0.9416, Resistance: 0.9582.
+1.03 beta - 2025-01-13 10:12:04,521 - INFO - ETHUSDT: Hold signal. Price: 3229.84, Support: 3213.0, Resistance: 3252.79.
+1.03 beta - 2025-01-13 10:12:04,524 - INFO - XRPUSDT: Hold signal. Price: 2.5164, Support: 2.4967, Resistance: 2.5315.
+1.03 beta - 2025-01-13 10:12:04,579 - INFO - BNBUSDT: Hold signal. Price: 683.13, Support: 681.04, Resistance: 689.02.
+1.03 beta - 2025-01-13 10:17:04,495 - INFO - Price rejected at support level: 94045.45
+1.03 beta - 2025-01-13 10:17:04,496 - INFO - BTCUSDT: Hold signal. Price: 94186.4, Support: 94045.45, Resistance: 94693.87.
+1.03 beta - 2025-01-13 10:17:04,524 - INFO - Price rejected at support level: 681.04
+1.03 beta - 2025-01-13 10:17:04,525 - INFO - BNBUSDT: Hold signal. Price: 682.19, Support: 681.04, Resistance: 688.36.
+1.03 beta - 2025-01-13 10:17:04,529 - INFO - ETHUSDT: Hold signal. Price: 3228.42, Support: 3213.0, Resistance: 3247.84.
+1.03 beta - 2025-01-13 10:17:04,531 - INFO - XRPUSDT: Hold signal. Price: 2.5147, Support: 2.4967, Resistance: 2.5294.
+1.03 beta - 2025-01-13 10:17:04,533 - INFO - ADAUSDT: Hold signal. Price: 0.9472, Support: 0.9416, Resistance: 0.9573.
+1.03 beta - 2025-01-13 10:50:47,118 - INFO - Hello World!
+1.03 beta - 2025-01-13 10:50:47,123 - INFO - Loading .env file
+1.03 beta - 2025-01-13 10:50:47,506 - INFO - Loading .env file
+1.03 beta - 2025-01-13 10:51:00,000 - INFO - Price rejected at support level: 93281.0
+1.03 beta - 2025-01-13 10:51:00,004 - INFO - BTCUSDT: Hold signal. Price: 93398.92, Support: 93281.0, Resistance: 94466.46.
+1.03 beta - 2025-01-13 10:51:00,172 - INFO - XRPUSDT: Hold signal. Price: 2.4504, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 10:51:00,175 - INFO - Price rejected at support level: 0.9301
+1.03 beta - 2025-01-13 10:51:00,177 - INFO - ADAUSDT: Hold signal. Price: 0.931, Support: 0.9301, Resistance: 0.9549.
+1.03 beta - 2025-01-13 10:51:00,179 - INFO - ETHUSDT: Hold signal. Price: 3190.74, Support: 3184.22, Resistance: 3233.53.
+1.03 beta - 2025-01-13 10:51:00,181 - INFO - Price rejected at support level: 678.11
+1.03 beta - 2025-01-13 10:51:00,197 - INFO - BNBUSDT: Hold signal. Price: 678.5, Support: 678.11, Resistance: 686.3.
+1.03 beta - 2025-01-13 10:56:00,171 - INFO - Price rejected at support level: 93281.0
+1.03 beta - 2025-01-13 10:56:00,175 - INFO - Price rejected at support level: 3181.3
+1.03 beta - 2025-01-13 10:56:00,180 - INFO - Price rejected at support level: 677.92
+1.03 beta - 2025-01-13 10:56:00,183 - INFO - BTCUSDT: Hold signal. Price: 93418.9, Support: 93281.0, Resistance: 94466.46.
+1.03 beta - 2025-01-13 10:56:00,183 - INFO - ETHUSDT: Hold signal. Price: 3182.93, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 10:56:00,183 - INFO - Price rejected at support level: 0.9287
+1.03 beta - 2025-01-13 10:56:00,183 - INFO - XRPUSDT: Hold signal. Price: 2.454, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 10:56:00,183 - INFO - BNBUSDT: Hold signal. Price: 678.07, Support: 677.92, Resistance: 686.3.
+1.03 beta - 2025-01-13 10:56:00,184 - INFO - ADAUSDT: Hold signal. Price: 0.9305, Support: 0.9287, Resistance: 0.9548.
+1.03 beta - 2025-01-13 11:01:00,191 - INFO - BNBUSDT: Hold signal. Price: 679.6, Support: 677.92, Resistance: 683.6.
+1.03 beta - 2025-01-13 11:01:00,193 - INFO - ETHUSDT: Hold signal. Price: 3190.62, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:01:00,198 - INFO - ADAUSDT: Hold signal. Price: 0.9345, Support: 0.9287, Resistance: 0.9519.
+1.03 beta - 2025-01-13 11:01:00,199 - INFO - BTCUSDT: Hold signal. Price: 93670.5, Support: 93281.0, Resistance: 94363.91.
+1.03 beta - 2025-01-13 11:01:00,202 - INFO - XRPUSDT: Hold signal. Price: 2.4614, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:06:00,187 - INFO - Price rejected at support level: 677.92
+1.03 beta - 2025-01-13 11:06:00,190 - INFO - BNBUSDT: Hold signal. Price: 678.71, Support: 677.92, Resistance: 683.6.
+1.03 beta - 2025-01-13 11:06:00,190 - INFO - Price rejected at support level: 3181.3
+1.03 beta - 2025-01-13 11:06:00,193 - INFO - ETHUSDT: Hold signal. Price: 3185.39, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:06:00,195 - INFO - BTCUSDT: Hold signal. Price: 93572.2, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:06:00,198 - INFO - ADAUSDT: Hold signal. Price: 0.9316, Support: 0.9287, Resistance: 0.9519.
+1.03 beta - 2025-01-13 11:06:00,199 - INFO - XRPUSDT: Hold signal. Price: 2.4515, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:11:00,419 - INFO - BTCUSDT: Hold signal. Price: 93783.58, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:11:00,489 - INFO - BNBUSDT: Hold signal. Price: 681.21, Support: 677.92, Resistance: 683.6.
+1.03 beta - 2025-01-13 11:11:00,515 - INFO - XRPUSDT: Hold signal. Price: 2.4608, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:11:00,520 - INFO - ADAUSDT: Hold signal. Price: 0.9381, Support: 0.9286, Resistance: 0.9498.
+1.03 beta - 2025-01-13 11:11:01,050 - INFO - ETHUSDT: Hold signal. Price: 3200.96, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:16:00,156 - INFO - BTCUSDT: Hold signal. Price: 93614.46, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:16:00,191 - INFO - ETHUSDT: Hold signal. Price: 3194.51, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:16:00,193 - INFO - BNBUSDT: Hold signal. Price: 680.19, Support: 677.92, Resistance: 683.6.
+1.03 beta - 2025-01-13 11:16:00,203 - INFO - XRPUSDT: Hold signal. Price: 2.4642, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:16:00,231 - INFO - ADAUSDT: Hold signal. Price: 0.935, Support: 0.9286, Resistance: 0.9497.
+1.03 beta - 2025-01-13 11:21:00,195 - INFO - BNBUSDT: Hold signal. Price: 680.88, Support: 677.92, Resistance: 683.6.
+1.03 beta - 2025-01-13 11:21:00,201 - INFO - ETHUSDT: Hold signal. Price: 3199.01, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:21:00,202 - INFO - BTCUSDT: Hold signal. Price: 93559.29, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:21:00,202 - INFO - ADAUSDT: Hold signal. Price: 0.9371, Support: 0.9286, Resistance: 0.9497.
+1.03 beta - 2025-01-13 11:21:00,204 - INFO - XRPUSDT: Hold signal. Price: 2.471, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:26:00,145 - INFO - BTCUSDT: Hold signal. Price: 93699.78, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:26:00,168 - INFO - XRPUSDT: Hold signal. Price: 2.4719, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:26:00,173 - INFO - ETHUSDT: Hold signal. Price: 3202.18, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:26:00,177 - INFO - BNBUSDT: Hold signal. Price: 682.02, Support: 677.92, Resistance: 683.6.
+1.03 beta - 2025-01-13 11:26:00,180 - INFO - ADAUSDT: Hold signal. Price: 0.9385, Support: 0.9286, Resistance: 0.9497.
+1.03 beta - 2025-01-13 11:31:00,386 - INFO - BTCUSDT: Hold signal. Price: 93689.17, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:31:00,450 - INFO - BNBUSDT: Hold signal. Price: 682.05, Support: 677.92, Resistance: 683.59.
+1.03 beta - 2025-01-13 11:31:00,457 - INFO - ADAUSDT: Hold signal. Price: 0.9377, Support: 0.9286, Resistance: 0.9497.
+1.03 beta - 2025-01-13 11:31:00,459 - INFO - XRPUSDT: Hold signal. Price: 2.4717, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:31:00,462 - INFO - ETHUSDT: Hold signal. Price: 3200.32, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:36:00,155 - INFO - BTCUSDT: Hold signal. Price: 93855.37, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:36:00,164 - INFO - ADAUSDT: Hold signal. Price: 0.9408, Support: 0.9286, Resistance: 0.9497.
+1.03 beta - 2025-01-13 11:36:00,166 - INFO - ETHUSDT: Hold signal. Price: 3205.56, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:36:00,169 - INFO - XRPUSDT: Hold signal. Price: 2.4726, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:36:00,172 - INFO - Price rejected at resistance level: 683.59
+1.03 beta - 2025-01-13 11:36:00,172 - INFO - BNBUSDT: Hold signal. Price: 682.93, Support: 677.92, Resistance: 683.59.
+1.03 beta - 2025-01-13 11:41:00,419 - INFO - BTCUSDT: Hold signal. Price: 93758.03, Support: 93281.0, Resistance: 94327.35.
+1.03 beta - 2025-01-13 11:41:00,477 - INFO - Price rejected at resistance level: 683.67
+1.03 beta - 2025-01-13 11:41:00,479 - INFO - BNBUSDT: Hold signal. Price: 683.26, Support: 677.92, Resistance: 683.67.
+1.03 beta - 2025-01-13 11:41:00,485 - INFO - XRPUSDT: Hold signal. Price: 2.4635, Support: 2.4444, Resistance: 2.5216.
+1.03 beta - 2025-01-13 11:41:00,489 - INFO - ADAUSDT: Hold signal. Price: 0.9386, Support: 0.9286, Resistance: 0.9497.
+1.03 beta - 2025-01-13 11:41:00,494 - INFO - ETHUSDT: Hold signal. Price: 3203.81, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:46:00,232 - INFO - BTCUSDT: Hold signal. Price: 93788.78, Support: 93281.0, Resistance: 94314.85.
+1.03 beta - 2025-01-13 11:46:00,234 - INFO - Price rejected at resistance level: 683.8
+1.03 beta - 2025-01-13 11:46:00,236 - INFO - ETHUSDT: Hold signal. Price: 3201.12, Support: 3181.3, Resistance: 3233.53.
+1.03 beta - 2025-01-13 11:46:00,238 - INFO - XRPUSDT: Hold signal. Price: 2.4621, Support: 2.4444, Resistance: 2.5187.
+1.03 beta - 2025-01-13 11:46:00,238 - INFO - ADAUSDT: Hold signal. Price: 0.9386, Support: 0.9286, Resistance: 0.9497.
+1.03 beta - 2025-01-13 11:46:00,238 - INFO - BNBUSDT: Hold signal. Price: 682.71, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 11:51:00,437 - INFO - BTCUSDT: Hold signal. Price: 93642.73, Support: 93281.0, Resistance: 94252.36.
+1.03 beta - 2025-01-13 11:51:00,446 - INFO - XRPUSDT: Hold signal. Price: 2.4578, Support: 2.4444, Resistance: 2.5162.
+1.03 beta - 2025-01-13 11:51:00,450 - INFO - ETHUSDT: Hold signal. Price: 3200.99, Support: 3181.3, Resistance: 3231.5.
+1.03 beta - 2025-01-13 11:51:00,452 - INFO - Price rejected at resistance level: 683.8
+1.03 beta - 2025-01-13 11:51:00,452 - INFO - BNBUSDT: Hold signal. Price: 682.51, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 11:51:00,979 - INFO - ADAUSDT: Hold signal. Price: 0.9357, Support: 0.9286, Resistance: 0.9489.
+1.03 beta - 2025-01-13 11:56:00,124 - INFO - BTCUSDT: Hold signal. Price: 93608.89, Support: 93281.0, Resistance: 94252.36.
+1.03 beta - 2025-01-13 11:56:00,171 - INFO - ETHUSDT: Hold signal. Price: 3201.41, Support: 3181.3, Resistance: 3229.79.
+1.03 beta - 2025-01-13 11:56:00,175 - INFO - Price rejected at resistance level: 683.8
+1.03 beta - 2025-01-13 11:56:00,176 - INFO - BNBUSDT: Hold signal. Price: 682.82, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 11:56:00,179 - INFO - XRPUSDT: Hold signal. Price: 2.4585, Support: 2.4444, Resistance: 2.5057.
+1.03 beta - 2025-01-13 11:56:00,181 - INFO - ADAUSDT: Hold signal. Price: 0.936, Support: 0.9286, Resistance: 0.9476.
+1.03 beta - 2025-01-13 12:01:00,138 - INFO - BTCUSDT: Hold signal. Price: 93607.6, Support: 93281.0, Resistance: 94242.52.
+1.03 beta - 2025-01-13 12:01:00,163 - INFO - ETHUSDT: Hold signal. Price: 3203.0, Support: 3181.3, Resistance: 3229.79.
+1.03 beta - 2025-01-13 12:01:00,167 - INFO - XRPUSDT: Hold signal. Price: 2.4629, Support: 2.4444, Resistance: 2.504.
+1.03 beta - 2025-01-13 12:01:00,169 - INFO - ADAUSDT: Hold signal. Price: 0.9364, Support: 0.9286, Resistance: 0.9476.
+1.03 beta - 2025-01-13 12:01:00,171 - INFO - Price rejected at resistance level: 683.8
+1.03 beta - 2025-01-13 12:01:00,171 - INFO - BNBUSDT: Hold signal. Price: 682.45, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:06:01,522 - INFO - XRPUSDT: Hold signal. Price: 2.4529, Support: 2.4444, Resistance: 2.4966.
+1.03 beta - 2025-01-13 12:06:01,527 - INFO - BNBUSDT: Hold signal. Price: 681.6, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:06:01,530 - INFO - ADAUSDT: Hold signal. Price: 0.9328, Support: 0.9286, Resistance: 0.9447.
+1.03 beta - 2025-01-13 12:06:01,546 - INFO - BTCUSDT: Hold signal. Price: 93571.94, Support: 93281.0, Resistance: 94123.81.
+1.03 beta - 2025-01-13 12:06:01,548 - INFO - ETHUSDT: Hold signal. Price: 3198.82, Support: 3181.3, Resistance: 3223.22.
+1.03 beta - 2025-01-13 12:11:01,136 - INFO - ETHUSDT: Hold signal. Price: 3190.25, Support: 3181.3, Resistance: 3215.01.
+1.03 beta - 2025-01-13 12:11:01,141 - INFO - BNBUSDT: Hold signal. Price: 680.11, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:11:01,143 - INFO - XRPUSDT: Hold signal. Price: 2.4407, Support: 2.4357, Resistance: 2.4876.
+1.03 beta - 2025-01-13 12:11:01,144 - INFO - ADAUSDT: Hold signal. Price: 0.9305, Support: 0.9286, Resistance: 0.9419.
+1.03 beta - 2025-01-13 12:11:01,145 - INFO - Price rejected at support level: 93281.0
+1.03 beta - 2025-01-13 12:11:01,145 - INFO - BTCUSDT: Hold signal. Price: 93458.37, Support: 93281.0, Resistance: 94057.19.
+1.03 beta - 2025-01-13 12:16:00,141 - INFO - BTCUSDT: Hold signal. Price: 93480.51, Support: 93281.0, Resistance: 93978.43.
+1.03 beta - 2025-01-13 12:16:00,164 - INFO - ETHUSDT: Hold signal. Price: 3196.36, Support: 3181.3, Resistance: 3214.07.
+1.03 beta - 2025-01-13 12:16:00,164 - INFO - ADAUSDT: Hold signal. Price: 0.9322, Support: 0.9286, Resistance: 0.9419.
+1.03 beta - 2025-01-13 12:16:00,165 - INFO - BNBUSDT: Hold signal. Price: 680.8, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:16:00,166 - INFO - XRPUSDT: Hold signal. Price: 2.442, Support: 2.4357, Resistance: 2.4876.
+1.03 beta - 2025-01-13 12:21:00,106 - INFO - Price rejected at support level: 93206.66
+1.03 beta - 2025-01-13 12:21:00,106 - INFO - BTCUSDT: Hold signal. Price: 93217.52, Support: 93206.66, Resistance: 93947.3.
+1.03 beta - 2025-01-13 12:21:00,189 - INFO - BNBUSDT: Hold signal. Price: 679.46, Support: 677.92, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:21:00,192 - INFO - ETHUSDT: Hold signal. Price: 3190.25, Support: 3181.3, Resistance: 3209.74.
+1.03 beta - 2025-01-13 12:21:00,194 - INFO - Price rejected at support level: 0.9286
+1.03 beta - 2025-01-13 12:21:00,196 - INFO - Price rejected at support level: 2.4262
+1.03 beta - 2025-01-13 12:21:00,196 - INFO - ADAUSDT: Hold signal. Price: 0.9287, Support: 0.9286, Resistance: 0.9419.
+1.03 beta - 2025-01-13 12:21:00,196 - INFO - XRPUSDT: Hold signal. Price: 2.4279, Support: 2.4262, Resistance: 2.4817.
+1.03 beta - 2025-01-13 12:26:00,111 - INFO - Price rejected at support level: 92904.35
+1.03 beta - 2025-01-13 12:26:00,113 - INFO - BTCUSDT: Hold signal. Price: 93079.5, Support: 92904.35, Resistance: 93947.3.
+1.03 beta - 2025-01-13 12:26:00,175 - INFO - XRPUSDT: Hold signal. Price: 2.4305, Support: 2.4129, Resistance: 2.4767.
+1.03 beta - 2025-01-13 12:26:00,180 - INFO - BNBUSDT: Hold signal. Price: 677.8, Support: 676.0, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:26:00,184 - INFO - ADAUSDT: Hold signal. Price: 0.9244, Support: 0.9205, Resistance: 0.9419.
+1.03 beta - 2025-01-13 12:26:00,187 - INFO - ETHUSDT: Hold signal. Price: 3177.4, Support: 3161.7, Resistance: 3209.74.
+1.03 beta - 2025-01-13 12:31:00,400 - INFO - BTCUSDT: Hold signal. Price: 93201.31, Support: 92904.35, Resistance: 93947.3.
+1.03 beta - 2025-01-13 12:31:00,448 - INFO - ADAUSDT: Hold signal. Price: 0.9261, Support: 0.9205, Resistance: 0.9419.
+1.03 beta - 2025-01-13 12:31:00,454 - INFO - XRPUSDT: Hold signal. Price: 2.4292, Support: 2.4129, Resistance: 2.4767.
+1.03 beta - 2025-01-13 12:31:00,459 - INFO - BNBUSDT: Hold signal. Price: 678.79, Support: 676.0, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:31:00,980 - INFO - ETHUSDT: Hold signal. Price: 3177.44, Support: 3161.7, Resistance: 3209.74.
+1.03 beta - 2025-01-13 12:36:00,144 - INFO - BTCUSDT: Hold signal. Price: 93267.14, Support: 92904.35, Resistance: 93947.3.
+1.03 beta - 2025-01-13 12:36:00,176 - INFO - ETHUSDT: Hold signal. Price: 3180.08, Support: 3161.7, Resistance: 3209.74.
+1.03 beta - 2025-01-13 12:36:00,180 - INFO - XRPUSDT: Hold signal. Price: 2.4329, Support: 2.4129, Resistance: 2.4767.
+1.03 beta - 2025-01-13 12:36:00,185 - INFO - BNBUSDT: Hold signal. Price: 678.56, Support: 676.0, Resistance: 683.8.
+1.03 beta - 2025-01-13 12:36:00,188 - INFO - ADAUSDT: Hold signal. Price: 0.9274, Support: 0.9205, Resistance: 0.9419.
+1.03 beta - 2025-01-13 12:41:00,376 - INFO - BTCUSDT: Hold signal. Price: 93294.42, Support: 92904.35, Resistance: 93947.3.
+1.03 beta - 2025-01-13 12:41:00,449 - INFO - XRPUSDT: Hold signal. Price: 2.4399, Support: 2.4129, Resistance: 2.4767.
+1.03 beta - 2025-01-13 12:41:00,457 - INFO - ETHUSDT: Hold signal. Price: 3175.59, Support: 3161.7, Resistance: 3209.74.
+1.03 beta - 2025-01-13 12:41:00,460 - INFO - ADAUSDT: Hold signal. Price: 0.9262, Support: 0.9205, Resistance: 0.9419.
+1.03 beta - 2025-01-13 12:41:00,463 - INFO - BNBUSDT: Hold signal. Price: 678.44, Support: 676.0, Resistance: 683.8.
+1.03 beta - 2025-01-13 13:06:00,160 - INFO - BTCUSDT: Hold signal. Price: 93158.92, Support: 92902.86, Resistance: 93947.3.
+1.03 beta - 2025-01-13 13:06:00,175 - INFO - ETHUSDT: Hold signal. Price: 3175.31, Support: 3161.7, Resistance: 3209.74.
+1.03 beta - 2025-01-13 13:06:00,176 - INFO - Price rejected at support level: 675.81
+1.03 beta - 2025-01-13 13:06:00,179 - INFO - ADAUSDT: Hold signal. Price: 0.9275, Support: 0.9205, Resistance: 0.9419.
+1.03 beta - 2025-01-13 13:06:00,182 - INFO - XRPUSDT: Hold signal. Price: 2.4403, Support: 2.4129, Resistance: 2.4757.
+1.03 beta - 2025-01-13 13:06:00,182 - INFO - BNBUSDT: Hold signal. Price: 676.9, Support: 675.81, Resistance: 683.8.
+1.03 beta - 2025-01-13 13:11:00,095 - INFO - Price rejected at support level: 92886.44
+1.03 beta - 2025-01-13 13:11:00,096 - INFO - BTCUSDT: Hold signal. Price: 93026.64, Support: 92886.44, Resistance: 93947.3.
+1.03 beta - 2025-01-13 13:11:00,179 - INFO - ETHUSDT: Hold signal. Price: 3169.81, Support: 3158.61, Resistance: 3209.74.
+1.03 beta - 2025-01-13 13:11:00,182 - INFO - ADAUSDT: Hold signal. Price: 0.9265, Support: 0.9205, Resistance: 0.9419.
+1.03 beta - 2025-01-13 13:11:00,182 - INFO - BNBUSDT: Hold signal. Price: 676.89, Support: 675.08, Resistance: 683.8.
+1.03 beta - 2025-01-13 13:11:00,183 - INFO - XRPUSDT: Hold signal. Price: 2.4347, Support: 2.4129, Resistance: 2.4757.
+1.03 beta - 2025-01-13 13:16:00,435 - INFO - Price rejected at support level: 92886.44
+1.03 beta - 2025-01-13 13:16:00,435 - INFO - BTCUSDT: Hold signal. Price: 93018.84, Support: 92886.44, Resistance: 93876.17.
+1.03 beta - 2025-01-13 13:16:00,441 - INFO - XRPUSDT: Hold signal. Price: 2.4338, Support: 2.4129, Resistance: 2.4666.
+1.03 beta - 2025-01-13 13:16:00,446 - INFO - ETHUSDT: Hold signal. Price: 3172.11, Support: 3158.61, Resistance: 3206.93.
+1.03 beta - 2025-01-13 13:16:00,465 - INFO - ADAUSDT: Hold signal. Price: 0.9238, Support: 0.9205, Resistance: 0.9407.
+1.03 beta - 2025-01-13 13:16:00,487 - INFO - Price rejected at support level: 675.08
+1.03 beta - 2025-01-13 13:16:00,487 - INFO - BNBUSDT: Hold signal. Price: 676.39, Support: 675.08, Resistance: 683.8.
+1.03 beta - 2025-01-13 13:26:00,424 - INFO - Price rejected at support level: 92762.0
+1.03 beta - 2025-01-13 13:26:00,425 - INFO - BTCUSDT: Hold signal. Price: 92931.5, Support: 92762.0, Resistance: 93666.67.
+1.03 beta - 2025-01-13 13:26:00,448 - INFO - Price rejected at support level: 673.08
+1.03 beta - 2025-01-13 13:26:00,449 - INFO - BNBUSDT: Hold signal. Price: 673.74, Support: 673.08, Resistance: 682.88.
+1.03 beta - 2025-01-13 13:26:00,453 - INFO - ADAUSDT: Hold signal. Price: 0.9242, Support: 0.9198, Resistance: 0.9368.
+1.03 beta - 2025-01-13 13:26:00,474 - INFO - ETHUSDT: Hold signal. Price: 3166.96, Support: 3158.61, Resistance: 3205.9.
+1.03 beta - 2025-01-13 13:26:00,476 - INFO - XRPUSDT: Hold signal. Price: 2.4321, Support: 2.4129, Resistance: 2.4642.
+1.03 beta - 2025-01-13 13:31:00,177 - INFO - Price rejected at support level: 0.919
+1.03 beta - 2025-01-13 13:31:00,180 - INFO - Price rejected at support level: 3152.36
+1.03 beta - 2025-01-13 13:31:00,181 - INFO - ADAUSDT: Hold signal. Price: 0.9194, Support: 0.919, Resistance: 0.9368.
+1.03 beta - 2025-01-13 13:31:00,182 - INFO - Price rejected at support level: 92762.0
+1.03 beta - 2025-01-13 13:31:00,183 - INFO - ETHUSDT: Hold signal. Price: 3157.65, Support: 3152.36, Resistance: 3205.9.
+1.03 beta - 2025-01-13 13:31:00,185 - INFO - Price rejected at support level: 672.17
+1.03 beta - 2025-01-13 13:31:00,186 - INFO - XRPUSDT: Hold signal. Price: 2.42, Support: 2.4129, Resistance: 2.4642.
+1.03 beta - 2025-01-13 13:31:00,186 - INFO - BTCUSDT: Hold signal. Price: 92813.67, Support: 92762.0, Resistance: 93661.55.
+1.03 beta - 2025-01-13 13:31:00,186 - INFO - BNBUSDT: Hold signal. Price: 672.61, Support: 672.17, Resistance: 682.88.

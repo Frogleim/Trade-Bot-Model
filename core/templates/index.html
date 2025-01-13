@@ -2,9 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Bot Monitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .status-item {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Trading Bot Monitor</h1>
+        <div class="status-item"><strong>Current Price:</strong> <span id="current_price">Loading...</span></div>
+        <div class="status-item"><strong>Status:</strong> <span id="status">Loading...</span></div>
+        <div class="status-item"><strong>Entry Price:</strong> <span id="entry_price">Loading...</span></div>
+        <div class="status-item"><strong>Target Price:</strong> <span id="target_price">Loading...</span></div>
+        <div class="status-item"><strong>Stop Loss:</strong> <span id="stop_loss">Loading...</span></div>
+        <div class="status-item"><strong>Direction:</strong> <span id="direction">Loading...</span></div>
+        <div class="status-item"><strong>Profit/Loss:</strong> <span id="profit_loss">Loading...</span></div>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        const socket = io.connect('http://' + document.domain + ':' + location.port);
+        socket.on('bot_update', function (data) {
+            document.getElementById('current_price').innerText = data.current_price.toFixed(2);
+            document.getElementById('status').innerText = data.status;
+            document.getElementById('entry_price').innerText = data.entry_price.toFixed(2);
+            document.getElementById('target_price').innerText = data.target_price.toFixed(2);
+            document.getElementById('stop_loss').innerText = data.stop_loss.toFixed(2);
+            document.getElementById('direction').innerText = data.direction;
+            document.getElementById('profit_loss').innerText = data.profit_loss.toFixed(2);
+        });
+    </script>
 </body>
 </html>
