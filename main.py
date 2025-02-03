@@ -1,3 +1,4 @@
+import time
 from tools import trade, strategy, models, loggs
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
@@ -56,6 +57,7 @@ class Bot:
         while True:
             try:
                 signal_data = strategy.check_crossover()
+                print(signal_data)
                 self.signal_data = {
                     "side": signal_data[0],
                     "entry_price": signal_data[1],
@@ -66,6 +68,7 @@ class Bot:
                     "short_ema": signal_data[6],
                     "volume": signal_data[7]
                 }
+                print(self.signal_data)
 
                 if self.signal_data["side"] == 'long':
                     loggs.system_log.info(f"Getting long signal with entry price: {self.signal_data['entry_price']}")
@@ -91,6 +94,7 @@ class Bot:
                     loggs.system_log.info('No trades at this moment')
             except Exception as e:
                 loggs.error_logs_logger.error(f"Error while checking crossover: {e}")
+            time.sleep(3*60)
 if __name__ == '__main__':
     myBot = Bot()
     myBot.check_signal()
