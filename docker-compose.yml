@@ -1,0 +1,44 @@
+version: '3.7'
+
+services:
+  signal_checker:
+    build:
+      context: .
+    volumes:
+      - coins_trade:/logs
+    restart: unless-stopped
+
+  bot:
+    build:
+      context: .
+    volumes:
+      - coins_trade:/logs
+    restart: unless-stopped
+  api:
+    build: api
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    depends_on:
+      - signal_checker
+      - db
+
+
+  db:
+    image: "postgres:16"
+    hostname: 'pgdb'
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_DB=miya
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+    container_name: bot_db
+    volumes:
+      - pgdbdata:/var/lib/postgresql/data/
+    restart: unless-stopped
+
+
+volumes:
+  coins_trade:
+  pgdbdata:

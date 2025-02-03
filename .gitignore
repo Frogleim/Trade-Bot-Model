@@ -1,0 +1,19 @@
+sessions
+results
+indicators
+trade_bots.session
+trade_bots.session-journal
+core/ticker_24hrs.py
+core/config.ini
+core/__pycache__
+.idea
+__pycache__
+venv
+core/trade/jupyter testing
+coins_trade/.pytest_cache
+coins_trade/__pycache__
+.vscode
+jupyter_data/.ipynb_checkpoints
+model_building/models/
+model_building/strategies/macd_model.pkl
+jupyter_test
