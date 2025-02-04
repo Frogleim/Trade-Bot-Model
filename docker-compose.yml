@@ -1,28 +1,14 @@
-version: '3.7'
+version: '3.9'
 
 services:
-  signal_checker:
-    build:
-      context: .
-    volumes:
-      - coins_trade:/logs
-    restart: unless-stopped
-
   bot:
+    env_file:
+      - ./tools/.env
     build:
       context: .
     volumes:
-      - coins_trade:/logs
+      - tools:/logs
     restart: unless-stopped
-  api:
-    build: api
-    ports:
-      - "8080:8080"
-    restart: unless-stopped
-    depends_on:
-      - signal_checker
-      - db
-
 
   db:
     image: "postgres:16"
@@ -30,7 +16,7 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_DB=miya
+      - POSTGRES_DB=tb
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
     container_name: bot_db
@@ -38,7 +24,8 @@ services:
       - pgdbdata:/var/lib/postgresql/data/
     restart: unless-stopped
 
-
 volumes:
   coins_trade:
   pgdbdata:
+  tools:   # Add this volume definition
+  restarting:   # Define the 'restarting' volume if needed

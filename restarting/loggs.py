@@ -6,9 +6,7 @@ version = '1.03 beta'
 base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
-# files_dir = os.path.join(grandparent_dir, r"app")
-files_dir = os.path.join(grandparent_dir, r"Trade-Bot")
-
+files_dir = os.path.join(grandparent_dir, r"app")
 user_count = None
 actions_log_file_path = os.path.join(files_dir, 'logs', 'actions.log')
 error_logs_log_file_path = os.path.join(files_dir, 'logs', 'error_logs.log')

@@ -1,4 +1,4 @@
-from . import loggs
+from . import loggs, settings
 import os
 from .socket_binance import fetch_btcusdt_klines, get_last_price
 import time
@@ -10,11 +10,11 @@ def long_trade(entry_price, atr):
     """Monitoring long trade"""
     loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {entry_price}')
 
-    if atr >= float(os.getenv('ATR')):
+    if atr >= float(settings.ATR):
         target_price = entry_price + atr
         stop_loss = entry_price - (atr / 2)
     else:
-        target_price = entry_price + float(os.getenv(('ATR')))
+        target_price = entry_price + float(settings.ATR)
         stop_loss = entry_price - (atr / 2 )
     while True:
         try:
@@ -38,11 +38,11 @@ def short_trade(entry_price, atr):
     """Monitoring short trade"""
 
     loggs.system_log.warning(f'Sell position placed successfully: Entry Price: {entry_price}')
-    if atr >= float(os.environ.get('ATR')):
-        target_price = entry_price - float(os.getenv(('ATR')))
+    if atr >= settings.ATR:
+        target_price = entry_price - settings.ATR
         stop_loss = entry_price + (atr / 2)
     else:
-        target_price = entry_price - float(os.getenv('ATR'))
+        target_price = entry_price - settings.ATR
         stop_loss = entry_price + (atr / 2)
     while True:
         try:

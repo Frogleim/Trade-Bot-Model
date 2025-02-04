@@ -1,11 +1,59 @@
 import time
-from tools import trade, strategy, models, loggs
+import os
+import threading
+import hashlib
+from pathlib import Path
+from dotenv import load_dotenv
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-import os
-from dotenv import load_dotenv
+
+from tools import trade, strategy, models, loggs, settings
+
+stop_event = threading.Event()
+check_signal_thread = None  # Store check_signal thread
 
 load_dotenv(dotenv_path=r'./tools/.env')
+
+Base = declarative_base()
+
+MONITORING_DIR = "./tools"
+
+
+class DirectoryChangeHandler(FileSystemEventHandler):
+    """Monitors the tools directory for file changes and restarts check_signal if needed."""
+
+    def __init__(self, directory, restart_func):
+        self.directory = directory
+        self.restart_func = restart_func
+        self.files_snapshot = self._get_files_snapshot()
+
+    def _get_files_snapshot(self):
+        """Get a dictionary of file hashes to detect changes."""
+        file_hashes = {}
+        for root, _, files in os.walk(self.directory):
+            for file in files:
+                file_path = os.path.join(root, file)
+                try:
+                    with open(file_path, "rb") as f:
+                        file_hashes[file_path] = hashlib.md5(f.read()).hexdigest()
+                except Exception as e:
+                    loggs.system_log.error(f"Error hashing file {file_path}: {e}")
+        return file_hashes
+
+    def on_any_event(self, event):
+        """Detects if a new file is added, deleted, or modified in the tools folder."""
+        time.sleep(1)  # Small delay to avoid multiple triggers
+
+        new_snapshot = self._get_files_snapshot()
+
+        if new_snapshot != self.files_snapshot:
+            loggs.system_log.info('Change detected in tools directory. Restarting check_signal...')
+            self.files_snapshot = new_snapshot  # Update snapshot
+            stop_event.set()  # Stop the current check_signal process
+            time.sleep(2)  # Give some time for the thread to stop
+            self.restart_func()  # Restart the check_signal method
 
 
 class Bot:
@@ -15,7 +63,7 @@ class Bot:
         self.db_url = os.getenv('DATABASE_URL')
         self.engine = create_engine(self.db_url)
         self.SessionLocal = sessionmaker(bind=self.engine)
-        self.symbol = os.getenv("SYMBOL")
+        self.symbol = settings.SYMBOL
         self.signal_data = {}
 
     def _connect_db(self):
@@ -34,16 +82,16 @@ class Bot:
             try:
                 new_trade = models.Trade(
                     symbol=self.symbol,
-                    entry_price=self.signal_data['entry_price'],
-                    exit_price=self.signal_data['exit_price'],
-                    pnl=self.signal_data['pnl'],
-                    long_ema=self.signal_data['long_ema'],
-                    short_ema=self.signal_data['short_ema'],
-                    adx=self.signal_data['adx'],
-                    atr=self.signal_data['atr'],
-                    rsi=self.signal_data['rsi'],
-                    volume=self.signal_data['volume'],
-                    side=self.signal_data['side']
+                    entry_price=self.signal_data.get('entry_price'),
+                    exit_price=self.signal_data.get('exit_price'),
+                    pnl=self.signal_data.get('pnl'),
+                    long_ema=self.signal_data.get('long_ema'),
+                    short_ema=self.signal_data.get('short_ema'),
+                    adx=self.signal_data.get('adx'),
+                    atr=self.signal_data.get('atr'),
+                    rsi=self.signal_data.get('rsi'),
+                    volume=self.signal_data.get('volume'),
+                    side=self.signal_data.get('side')
                 )
                 session.add(new_trade)
                 session.commit()
@@ -54,9 +102,16 @@ class Bot:
                 session.close()
 
     def check_signal(self):
-        while True:
+        stop_event.clear()  # Clear the stop signal when starting
+
+        while not stop_event.is_set():
             try:
                 signal_data = strategy.check_crossover()
+                if not signal_data:
+                    loggs.system_log.info('No signal data received.')
+                    time.sleep(3 * 60)
+                    continue
+
                 self.signal_data = {
                     "side": signal_data[0],
                     "entry_price": signal_data[1],
@@ -70,7 +125,7 @@ class Bot:
 
                 if self.signal_data["side"] == 'long':
                     loggs.system_log.info(f"Getting long signal with entry price: {self.signal_data['entry_price']}")
-                    pnl, atr, target_price = trade.long_trade(
+                    pnl, _, target_price = trade.long_trade(
                         entry_price=self.signal_data['entry_price'],
                         atr=self.signal_data['atr']
                     )
@@ -80,7 +135,7 @@ class Bot:
 
                 elif self.signal_data['side'] == "short":
                     loggs.system_log.info(f"Getting short signal with entry price: {self.signal_data['entry_price']}")
-                    pnl, atr, target_price = trade.short_trade(
+                    pnl, _, target_price = trade.short_trade(
                         entry_price=self.signal_data['entry_price'],
                         atr=self.signal_data['atr']
                     )
@@ -92,9 +147,41 @@ class Bot:
                     loggs.system_log.info('No trades at this moment')
             except Exception as e:
                 loggs.error_logs_logger.error(f"Error while checking crossover: {e}")
-            time.sleep(3*60)
+            time.sleep(3 * 60)
+
+
+def restart_check_signal():
+    """Stops the existing check_signal thread and starts a new one."""
+    global check_signal_thread
+    stop_event.set()  # Stop the previous thread
+    time.sleep(2)  # Give it some time to shut down
+
+    loggs.system_log.info("Restarting check_signal thread...")
+
+    bot = Bot()
+    check_signal_thread = threading.Thread(target=bot.check_signal)
+    check_signal_thread.daemon = True
+    check_signal_thread.start()
+
+
+def start_monitoring():
+    """Starts monitoring the tools directory for changes."""
+
+    event_handler = DirectoryChangeHandler(directory=MONITORING_DIR, restart_func=restart_check_signal)
+    observer = Observer()
+    observer.schedule(event_handler, path=MONITORING_DIR, recursive=True)  # Monitor files inside subdirectories too
+    observer.start()
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
 
 
 if __name__ == '__main__':
-    myBot = Bot()
-    myBot.check_signal()
+    loggs.system_log.info("Starting bot...")
+
+    restart_check_signal()  # Start check_signal initially
+    start_monitoring()

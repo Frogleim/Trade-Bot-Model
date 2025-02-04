@@ -1,17 +1,18 @@
 from .socket_binance import fetch_btcusdt_klines
 from binance.client import Client
-from . import loggs
+from . import loggs, settings
 import ta
 from dotenv import load_dotenv
 import os
+import pandas as pd
 
 loaded = load_dotenv(dotenv_path='./tools/.env')
 
 client = Client()
-symbol = os.getenv('SYMBOL')
-interval = os.getenv('INTERVAL')
+symbol = settings.SYMBOL
+interval = settings.INTERVAL
 lookback = 5
-adx_period = os.getenv('ADX_PERIOD')
+adx_period = settings.ADX_PERIOD
 
 
 def calculate_ema():
@@ -22,8 +23,8 @@ def calculate_ema():
         return None, None, None, None, None, None
 
     # Calculate EMAs
-    short_ema = df['close'].ewm(span=int(os.getenv('SHORT_EMA')), adjust=False).mean()
-    long_ema = df['close'].ewm(span=int(os.getenv('LONG_EMA')), adjust=False).mean()
+    short_ema = df['close'].ewm(span=int(settings.SHORT_EMA), adjust=False).mean()
+    long_ema = df['close'].ewm(span=int(settings.LONG_EMA), adjust=False).mean()
 
     # Calculate RSI
     close_price_series = df['close']
@@ -59,9 +60,21 @@ def calculate_ema():
 
 
 def check_crossover():
-    """Enhanced trade signal strategy with trend confirmation and adaptive volume filter."""
+    """Enhanced trade signal strategy with type safety and trend confirmation."""
 
     long_ema, short_ema, close_price_series, adx, atr, rsi, volume = calculate_ema()
+
+    # Ensure all values are numeric
+    def safe_convert(series):
+        return pd.to_numeric(series, errors='coerce') if series is not None else None
+
+    long_ema = safe_convert(long_ema)
+    short_ema = safe_convert(short_ema)
+    close_price_series = safe_convert(close_price_series)
+    adx = safe_convert(adx)
+    atr = float(atr) if atr is not None else None
+    rsi = safe_convert(rsi)
+    volume = safe_convert(volume)
 
     # Validate required data
     missing_data = {}
@@ -95,19 +108,19 @@ def check_crossover():
                      (curr_price < curr_short and curr_price < curr_long)
 
     # ADX confirms trend strength
-    strong_trend = adx.iloc[-1] > 25  # ADX above 25 indicates a strong trend
+    strong_trend = adx.iloc[-1] > 25
 
-    # RSI confirmation (Avoid overbought/sold trades)
-    rsi_long = 45 < rsi.iloc[-1] < 65  # Avoid extreme overbought conditions
-    rsi_short = 35 < rsi.iloc[-1] < 55  # Avoid extreme oversold conditions
+    # RSI confirmation
+    rsi_long = 45 < rsi.iloc[-1] < 65
+    rsi_short = 35 < rsi.iloc[-1] < 55
 
     # ATR ensures sufficient volatility
-    min_atr_threshold = atr * 0.1  # ATR should be at least 10% of recent ATR values
+    min_atr_threshold = atr * 0.1
     valid_atr = atr > min_atr_threshold
 
     # Dynamic volume threshold based on moving average
-    volume_avg = volume.rolling(window=14).mean().iloc[-1]  # 14-period volume average
-    high_volume = volume.iloc[-1] > volume_avg * 1.2  # 20% above the average
+    volume_avg = volume.rolling(window=14).mean().iloc[-1]
+    high_volume = volume.iloc[-1] > volume_avg * 1.2
 
     # Log diagnostic info
     loggs.system_log.info(f"ADX: {adx.iloc[-1]}, ATR: {atr}, Volume: {volume.iloc[-1]}, "
