@@ -20,16 +20,19 @@ def long_trade(entry_price, atr):
         try:
             current_price = get_last_price()
         except Exception as e:
-            print(f"Error fetching price: {e}")
+            loggs.error_logs_logger.error(f"Error fetching price: {e}")
             time.sleep(1)
             continue
         loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
                               f'Current price: {current_price} Stop loss: {stop_loss}')
         if current_price >= target_price:
+            loggs.system_log.info('Trade finished successfully with profit')
             return 'Profit', atr, target_price
         elif current_price <= stop_loss:
+            loggs.system_log.info('Trade finished successfully with loss')
             return 'Loss', -atr, stop_loss
         time.sleep(1)
+
 
 def short_trade(entry_price, atr):
     """Monitoring short trade"""
@@ -45,13 +48,16 @@ def short_trade(entry_price, atr):
         try:
             current_price = get_last_price()
         except Exception as e:
-            print(f"Error fetching price: {e}")
+            loggs.error_logs_logger.error(f"Error fetching price: {e}")
             time.sleep(1)
             continue
         loggs.system_log.info(f'Entry Price: {entry_price} Target price: {target_price}, '
                               f'Current price: {current_price} Stop loss: {stop_loss}')
         if current_price <= target_price:
+            loggs.system_log.info('Trade finished successfully with profit')
             return 'Profit', atr, target_price
         elif current_price > stop_loss:
+            loggs.system_log.info('Trade finished successfully with loss')
+
             return 'Loss', -atr, stop_loss
         time.sleep(1)

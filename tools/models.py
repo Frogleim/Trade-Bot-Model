@@ -1,5 +1,4 @@
 from logging.config import ConvertingList
-
 from sqlalchemy import create_engine, Column, Integer, String, Float
 from sqlalchemy.orm import declarative_base, sessionmaker
 from dotenv import load_dotenv
@@ -15,6 +14,7 @@ engine = create_engine(DATABASE_URL)
 Base = declarative_base()
 
 class Trade(Base):
+
     __tablename__ = 'trades'
 
     id = Column(Integer, primary_key=True, autoincrement=True)

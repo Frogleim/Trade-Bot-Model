@@ -14,14 +14,14 @@ class Bot:
         self.api_secret = os.getenv('BINANCE_API_SECRET', '')
         self.db_url = os.getenv('DATABASE_URL')
         self.engine = create_engine(self.db_url)
-        self.Base = declarative_base()
         self.SessionLocal = sessionmaker(bind=self.engine)
         self.symbol = os.getenv("SYMBOL")
         self.signal_data = {}
 
     def _connect_db(self):
         try:
-            self.Base.metadata.create_all(self.engine)
+            from tools.models import Base
+            Base.metadata.create_all(self.engine)
             session = self.SessionLocal()
             return session
         except Exception as e:
@@ -57,7 +57,6 @@ class Bot:
         while True:
             try:
                 signal_data = strategy.check_crossover()
-                print(signal_data)
                 self.signal_data = {
                     "side": signal_data[0],
                     "entry_price": signal_data[1],
@@ -68,7 +67,6 @@ class Bot:
                     "short_ema": signal_data[6],
                     "volume": signal_data[7]
                 }
-                print(self.signal_data)
 
                 if self.signal_data["side"] == 'long':
                     loggs.system_log.info(f"Getting long signal with entry price: {self.signal_data['entry_price']}")
@@ -95,6 +93,8 @@ class Bot:
             except Exception as e:
                 loggs.error_logs_logger.error(f"Error while checking crossover: {e}")
             time.sleep(3*60)
+
+
 if __name__ == '__main__':
     myBot = Bot()
     myBot.check_signal()
