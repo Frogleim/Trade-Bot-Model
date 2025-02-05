@@ -11,11 +11,11 @@ def long_trade(entry_price, atr):
     loggs.system_log.warning(f'Buy position placed successfully: Entry Price: {entry_price}')
 
     if atr >= float(settings.ATR):
-        target_price = entry_price + atr
-        stop_loss = entry_price - (atr / 2)
+        target_price = entry_price + settings.TAKE_PROFIT_ATR * float(atr)
+        stop_loss = entry_price - (settings.STOP_LOSS_ATR * float(atr))
     else:
-        target_price = entry_price + float(settings.ATR)
-        stop_loss = entry_price - (atr / 2 )
+        target_price = entry_price + settings.TAKE_PROFIT_ATR * float(atr)
+        stop_loss = entry_price - (settings.STOP_LOSS_ATR * float(atr))
     while True:
         try:
             current_price = get_last_price()
@@ -39,11 +39,11 @@ def short_trade(entry_price, atr):
 
     loggs.system_log.warning(f'Sell position placed successfully: Entry Price: {entry_price}')
     if atr >= settings.ATR:
-        target_price = entry_price - settings.ATR
-        stop_loss = entry_price + (atr / 2)
+        target_price = entry_price - (settings.TAKE_PROFIT_ATR * float(atr))
+        stop_loss = entry_price + (settings.STOP_LOSS_ATR * float(atr))
     else:
-        target_price = entry_price - settings.ATR
-        stop_loss = entry_price + (atr / 2)
+        target_price = entry_price - settings.TAKE_PROFIT_ATR * float(atr)
+        stop_loss = entry_price + (settings.STOP_LOSS_ATR * float(atr))
     while True:
         try:
             current_price = get_last_price()

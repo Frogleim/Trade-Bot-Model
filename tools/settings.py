@@ -1,9 +1,0 @@
-"""Trade bot indicator settings"""
-
-SYMBOL='ADAUSDT'
-INTERVAL='15m'
-ADX_PERIOD=14
-SHORT_EMA=5
-LONG_EMA=13
-ATR_PERIOD=14
-ATR=0.0100

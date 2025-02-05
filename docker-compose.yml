@@ -3,12 +3,23 @@ version: '3.9'
 services:
   bot:
     env_file:
-      - ./tools/.env
+      - ./bot/tools/.env
+    build:
+      context: ./bot
+    volumes:
+      - tools:/logs
+    restart: always
+
+  api:
+    env_file:
+      - ./bot/tools/.env
     build:
       context: .
     volumes:
       - tools:/logs
-    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    restart: always
 
   db:
     image: "postgres:16"
@@ -22,7 +33,7 @@ services:
     container_name: bot_db
     volumes:
       - pgdbdata:/var/lib/postgresql/data/
-    restart: unless-stopped
+    restart: always
 
 volumes:
   coins_trade:

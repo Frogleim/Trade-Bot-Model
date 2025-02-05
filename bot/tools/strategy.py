@@ -108,7 +108,7 @@ def check_crossover():
                      (curr_price < curr_short and curr_price < curr_long)
 
     # ADX confirms trend strength
-    strong_trend = adx.iloc[-1] > 25
+    strong_trend = adx.iloc[-1] > 24.66939454890813
 
     # RSI confirmation
     rsi_long = 45 < rsi.iloc[-1] < 65
