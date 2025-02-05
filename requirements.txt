@@ -16,3 +16,4 @@ ta
 python-dotenv
 SQLAlchemy
 psycopg2
+watchdog
