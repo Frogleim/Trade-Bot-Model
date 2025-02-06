@@ -22,7 +22,7 @@ def fetch_klines(symbol, interval):
 
 
 
-def get_last_price(symbol='ADAUSDT', interval='5m'):
+def get_last_price(symbol, interval='5m'):
     # API endpoint for Kline data
     url = "https://fapi.binance.com/fapi/v1/klines"
 
@@ -42,7 +42,6 @@ def get_last_price(symbol='ADAUSDT', interval='5m'):
         # The close price is the 5th element in the response for each kline
         last_candle = klines[0]  # Get the latest candle
         close_price = float(last_candle[4])  # The close price is at index 4
-        print(f"Last price for {symbol}: {close_price} type: {type(close_price)}")
         return close_price
     else:
         print(f"Error fetching data: {response.status_code}")

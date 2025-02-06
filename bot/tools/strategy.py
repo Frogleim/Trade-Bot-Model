@@ -100,12 +100,13 @@ def check_crossover():
     prev_price, curr_price = close_price_series.iloc[-2], close_price_series.iloc[-1]
 
     # Bullish crossover (Golden Cross)
-    crossover_buy = (prev_short < prev_long and curr_short > curr_long) and \
-                    (curr_price > curr_short and curr_price > curr_long)
-
+    # crossover_buy = (prev_short < prev_long and curr_short > curr_long) and \
+    #                 (curr_price > curr_short and curr_price > curr_long)
+    crossover_buy = curr_short > curr_long and prev_short > prev_long
+    crossover_sell = curr_short < curr_long and prev_short < prev_long
     # Bearish crossover (Death Cross)
-    crossover_sell = (prev_short > prev_long and curr_short < curr_long) and \
-                     (curr_price < curr_short and curr_price < curr_long)
+    # crossover_sell = (prev_short > prev_long and curr_short < curr_long) and \
+    #                  (curr_price < curr_short and curr_price < curr_long)
 
     # ADX confirms trend strength
     strong_trend = adx.iloc[-1] > 24.66939454890813
@@ -129,9 +130,9 @@ def check_crossover():
                           f"Valid ATR: {valid_atr}, High Volume: {high_volume}")
 
     # Apply all conditions for trade signals
-    if crossover_buy and strong_trend and rsi_long and valid_atr and high_volume:
+    if crossover_buy and strong_trend  and valid_atr and high_volume:
         return ['long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, high_volume]
-    elif crossover_sell and strong_trend and rsi_short and valid_atr and high_volume:
+    elif crossover_sell and strong_trend  and valid_atr and high_volume:
         return ['short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, high_volume]
     else:
         return ['Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, high_volume]

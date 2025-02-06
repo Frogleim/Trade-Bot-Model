@@ -10,10 +10,10 @@ files_dir = os.path.join(grandparent_dir, r"app")
 # files_dir = os.path.join(grandparent_dir, r"Trade-Bot")
 
 user_count = None
-actions_log_file_path = os.path.join(files_dir, 'logs', 'actions.log')
-error_logs_log_file_path = os.path.join(files_dir, 'logs', 'error_logs.log')
-finish_trade_log_file_path = os.path.join(files_dir, 'logs', 'finish_trade_log.log')
-system_logs_log_file_path = os.path.join(files_dir, 'logs', 'system_logs.log')
+actions_log_file_path = os.path.join(grandparent_dir, 'logs', 'actions.log')
+error_logs_log_file_path = os.path.join(grandparent_dir, 'logs', 'error_logs.log')
+finish_trade_log_file_path = os.path.join(grandparent_dir, 'logs', 'finish_trade_log.log')
+system_logs_log_file_path = os.path.join(grandparent_dir, 'logs', 'system_logs.log')
 print(system_logs_log_file_path)
 # Configure the 'actions.log' logger
 

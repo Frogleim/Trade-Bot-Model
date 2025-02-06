@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 
 
-DATABASE_URL = 'postgresql://postgres:admin@localhost:5433/tb'
+DATABASE_URL = 'postgresql://postgres:admin@pgdb:5432/tb'
 loaded = load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
 print(f"Dotenv loaded: {loaded}")
 print(DATABASE_URL)
