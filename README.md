@@ -18,7 +18,7 @@ This Trade Bot is a FastAPI-based application combined with a trading bot that i
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/trade-bot.git
+   git clone https://github.com/Frogleim/Trade-Bot-Model.git
    cd trade-bot
    ```
 
