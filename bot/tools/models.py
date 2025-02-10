@@ -31,4 +31,9 @@ class Trade(Base):
     side = Column(String, nullable=False)
 
 
-
+class Wallet(Base):
+    __tablename__ = 'wallets'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    initial_balance = Column(Float, nullable=False)
+    roi = Column(Float, nullable=False)
+    final_balance = Column(Float, nullable=False)

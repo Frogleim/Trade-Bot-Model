@@ -10,7 +10,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import importlib
 
-from tools import trade, strategy, models, loggs
+from tools import trade, strategy, models, loggs, pnl_calculator
 from tools.settings import settings
 
 stop_event = threading.Event()
@@ -69,6 +69,7 @@ class Bot:
         self.SessionLocal = sessionmaker(bind=self.engine)
         self.symbol = settings.SYMBOL
         self.signal_data = {}
+        self.wallet_data = {}
 
     def _connect_db(self):
         try:
@@ -80,7 +81,7 @@ class Bot:
             loggs.error_logs_logger.error(f'Error while connecting to db: {e}')
             return None
 
-    def _store_data(self):
+    def _store_trade_data(self):
         session = self._connect_db()
         if session:
             try:
@@ -98,6 +99,23 @@ class Bot:
                     side=self.signal_data.get('side')
                 )
                 session.add(new_trade)
+                session.commit()
+            except Exception as e:
+                loggs.error_logs_logger.error(f'Error while storing data: {e}')
+                session.rollback()
+            finally:
+                session.close()
+
+    def _store_wallet_data(self):
+        session = self._connect_db()
+        if session:
+            try:
+                new_wallet = models.Wallet(
+                    initial_balance=self.signal_data.get('initial_balance'),
+                    roi=self.signal_data.get('roi'),
+                    final_balance=self.signal_data.get('final_balance'),
+                )
+                session.add(new_wallet)
                 session.commit()
             except Exception as e:
                 loggs.error_logs_logger.error(f'Error while storing data: {e}')
@@ -136,8 +154,24 @@ class Bot:
                         atr=self.signal_data['atr']
                     )
                     self.signal_data['pnl'] = pnl
+
+
                     self.signal_data['exit_price'] = float(target_price)
-                    self._store_data()
+                    roi = pnl_calculator.pnl_calculator(
+                        position_size=10,
+                        leverage=125,
+                        entry_price=self.signal_data['entry_price'],
+                        exit_price=self.signal_data['exit_price'],
+                        side=self.signal_data['side']
+
+                    )
+                    self.wallet_data = {
+                        "initial_balance": 100,
+                        "roi": roi,
+                    }
+                    self.wallet_data['final_balance'] = self.wallet_data['initial_balance'] + roi
+                    self._store_wallet_data()
+                    self._store_trade_data()
 
                 elif self.signal_data['side'] == "short":
                     ON_TRADE = True
@@ -149,7 +183,20 @@ class Bot:
                     )
                     self.signal_data['pnl'] = pnl
                     self.signal_data['exit_price'] = float(target_price)
-                    self._store_data()
+                    roi = pnl_calculator.pnl_calculator(
+                        position_size=10,
+                        leverage=125,
+                        entry_price=self.signal_data['entry_price'],
+                        exit_price=self.signal_data['exit_price'],
+                        side=self.signal_data['side']
+
+                    )
+                    self.wallet_data = {
+                        "initial_balance": 100,
+                        "roi": roi,
+                    }
+                    self.wallet_data['final_balance'] = self.wallet_data['initial_balance'] + roi
+                    self._store_trade_data()
 
                 else:
                     loggs.system_log.info('No trades at this moment')
