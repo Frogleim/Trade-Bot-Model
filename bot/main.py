@@ -127,7 +127,7 @@ class Bot:
                 if self.signal_data["side"] == 'long':
                     ON_TRADE = True
                     loggs.system_log.info(f"Getting long signal with entry price: {self.signal_data['entry_price']}")
-                    pnl, _, target_price = trade.long_trade(
+                    _, pnl, target_price = trade.long_trade(
                         entry_price=self.signal_data['entry_price'],
                         atr=self.signal_data['atr']
                     )
@@ -139,7 +139,7 @@ class Bot:
                     ON_TRADE = True
 
                     loggs.system_log.info(f"Getting short signal with entry price: {self.signal_data['entry_price']}")
-                    pnl, _, target_price = trade.short_trade(
+                    _, pnl, target_price = trade.short_trade(
                         entry_price=self.signal_data['entry_price'],
                         atr=self.signal_data['atr']
                     )

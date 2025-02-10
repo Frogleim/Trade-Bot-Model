@@ -10,7 +10,7 @@ import uvicorn
 load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
 
 # Database URL
-DATABASE_URL = 'postgresql://postgres:admin@localhost:5433/tb'
+DATABASE_URL = 'postgresql://postgres:admin@pgdb:5432/tb'
 
 # SQLAlchemy setup
 engine = create_engine(DATABASE_URL)
