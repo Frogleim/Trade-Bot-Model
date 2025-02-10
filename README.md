@@ -118,6 +118,7 @@ services:
       context: ./bot
     volumes:
       - tools:/logs
+      - tools:/bot/tools  # Shared tools directory
     restart: always
 
   api:
@@ -127,6 +128,7 @@ services:
       context: .
     volumes:
       - tools:/logs
+      - tools:/bot/tools
     ports:
       - "8000:8000"
     restart: always
@@ -145,16 +147,36 @@ services:
       - pgdbdata:/var/lib/postgresql/data/
     restart: always
 
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    container_name: rabbitmq
+    hostname: 'rabbitmq'
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    restart: always
+
+  receiver:
+    build:
+      context: ./bot/rabbit
+    command: ["python3", "receiver.py"]
+    depends_on:
+      - rabbitmq
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - tools:/logs
+      - tools:/bot/tools  # Shared tools directory
+    restart: always
+
 volumes:
   coins_trade:
   pgdbdata:
-  tools:
-  restarting:
+  tools:  # This ensures tools is a named volume
 ```
 
 ## Contributing
 Feel free to submit issues and pull requests for improvements.
-
-## License
-This project is licensed under the MIT License.
-
