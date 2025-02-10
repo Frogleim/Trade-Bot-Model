@@ -65,8 +65,22 @@ def check_crossover():
 
     long_ema, short_ema, close_price_series, adx, atr, rsi, volume = calculate_ema()
 
-    # Ensure valid data
-    if any(data is None for data in [long_ema, short_ema, close_price_series, adx, atr, rsi, volume]):
+    # Ensure all fetched data is converted to numeric types
+    def safe_convert(series):
+        return pd.to_numeric(series, errors='coerce') if series is not None else None
+
+    long_ema = safe_convert(long_ema)
+    short_ema = safe_convert(short_ema)
+    close_price_series = safe_convert(close_price_series)
+    adx = safe_convert(adx)
+    atr = float(atr) if atr is not None else None
+    rsi = safe_convert(rsi)
+    volume = safe_convert(volume)
+
+    # Validate required data
+    if any(data is None or isinstance(data, pd.Series) and data.isnull().all() for data in
+           [short_ema, long_ema, close_price_series, adx, atr, rsi, volume]):
+        loggs.system_log.error("Missing or invalid data. Skipping crossover check.")
         return ['Hold', None, None, None, None, None, None, None]
 
     # Extract latest and previous values
@@ -74,19 +88,24 @@ def check_crossover():
     curr_short, curr_long = short_ema.iloc[-1], long_ema.iloc[-1]
     prev_price, curr_price = close_price_series.iloc[-2], close_price_series.iloc[-1]
 
-    # **Scalping Buy Signal:**
-    crossover_buy = curr_short > curr_long and prev_short < prev_long  # Golden Cross
-    rsi_buy = 45 < rsi.iloc[-1] < 65  # RSI in momentum zone
-    strong_trend = adx.iloc[-1] > 25  # Strong ADX
-    valid_atr = atr > 0.05 * curr_price  # Ensuring ATR is sufficient
-    volume_avg = volume.rolling(window=14).mean().iloc[-1]
-    high_volume = volume.iloc[-1] > volume_avg * 1.2  # Volume surge
+    # Ensure numeric values before comparison
+    if any(pd.isna(val) for val in [prev_short, prev_long, curr_short, curr_long, prev_price, curr_price]):
+        loggs.system_log.error("NaN values detected. Skipping crossover check.")
+        return ['Hold', None, None, None, None, None, None, None]
 
-    # **Scalping Sell Signal:**
-    crossover_sell = curr_short < curr_long and prev_short > prev_long  # Death Cross
-    rsi_sell = 35 < rsi.iloc[-1] < 55  # RSI in downtrend
-    valid_atr_sell = atr > 0.05 * curr_price
+    # **Scalping Buy Signal**
+    crossover_buy = curr_short > curr_long and prev_short < prev_long
+    rsi_buy = 45 < rsi.iloc[-1] < 65
+    strong_trend = adx.iloc[-1] > 25
+    valid_atr = atr > 0.05 * curr_price
+    volume_avg = volume.rolling(window=14).mean().iloc[-1]
+    high_volume = volume.iloc[-1] > volume_avg * 1.2
+
+    # **Scalping Sell Signal**
+    crossover_sell = curr_short < curr_long and prev_short > prev_long
+    rsi_sell = 35 < rsi.iloc[-1] < 55
     strong_trend_sell = adx.iloc[-1] > 25
+    valid_atr_sell = atr > 0.05 * curr_price
     high_volume_sell = volume.iloc[-1] > volume_avg * 1.2
 
     loggs.system_log.info(
@@ -96,7 +115,6 @@ def check_crossover():
         f"Valid ATR: {valid_atr}, High Volume: {high_volume}"
     )
 
-    # Entry conditions
     if crossover_buy and strong_trend and rsi_buy and valid_atr and high_volume:
         return ['long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     elif crossover_sell and strong_trend_sell and rsi_sell and valid_atr_sell and high_volume_sell:

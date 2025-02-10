@@ -124,3 +124,17 @@
 1.03 beta - 2025-02-10 22:12:13,277 - INFO - Long EMA: 97320.75208598841 Short EMA: 97314.49486828357 ATR: 396.7000000000002 ADX: 16.790848483261335 RSI: 49.04070362037238 RSI SMA: 42.437876474282675 Volume: 919.384
 1.03 beta - 2025-02-10 22:12:13,279 - INFO - ADX: 16.790848483261335, ATR: 356.5428571428565, Volume: 919.384, Crossover Buy: False, Crossover Sell: True, RSI Long: True, RSI Short: True, Valid ATR: True, High Volume: False
 1.03 beta - 2025-02-10 22:12:13,279 - INFO - No trades at this moment
+1.03 beta - 2025-02-10 23:39:16,225 - INFO - Starting bot...
+1.03 beta - 2025-02-10 23:39:16,225 - INFO - 🛑 Stopping check_signal thread...
+1.03 beta - 2025-02-10 23:39:16,225 - INFO - 🔄 Reloaded settings module
+1.03 beta - 2025-02-10 23:39:16,226 - INFO - 🚀 Restarted check_signal thread successfully!
+1.03 beta - 2025-02-10 23:39:16,915 - INFO - Long EMA: 97404.01036315963 Short EMA: 97460.62184741127 ATR: 123.58571428571511 ADX: 27.377455774755475 RSI: 46.69069462647415 Volume: 298.310
+1.03 beta - 2025-02-10 23:39:16,915 - INFO - ADX: 27.377455774755475, ATR: 123.58571428571511, Volume: 298.31, Crossover Buy: False, Crossover Sell: False, RSI Buy: True, RSI Sell: True, Valid ATR: False, High Volume: True
+1.03 beta - 2025-02-10 23:39:16,915 - INFO - No trades at this moment
+1.03 beta - 2025-02-10 23:39:46,748 - INFO - Change detected in tools directory. Restarting check_signal...
+1.03 beta - 2025-02-10 23:39:48,753 - INFO - 🛑 Stopping check_signal thread...
+1.03 beta - 2025-02-10 23:39:53,760 - INFO - 🔄 Reloaded settings module
+1.03 beta - 2025-02-10 23:39:53,763 - INFO - 🚀 Restarted check_signal thread successfully!
+1.03 beta - 2025-02-10 23:39:54,464 - INFO - Long EMA: 97403.71036315964 Short EMA: 97459.96184741126 ATR: 123.58571428571511 ADX: 27.377455774755475 RSI: 46.523016650342356 Volume: 315.712
+1.03 beta - 2025-02-10 23:39:54,465 - INFO - ADX: 27.377455774755475, ATR: 123.58571428571511, Volume: 315.712, Crossover Buy: False, Crossover Sell: False, RSI Buy: True, RSI Sell: True, Valid ATR: False, High Volume: True
+1.03 beta - 2025-02-10 23:39:54,465 - INFO - No trades at this moment
