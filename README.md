@@ -8,13 +8,14 @@ This Trade Bot is a FastAPI-based application combined with a trading bot that i
 - Retrieve system logs from the `./logs/system_log.logs` file
 - Automated trading bot that executes trades based on predefined strategies
 - API endpoints built with FastAPI
+- **🚀 Dynamic bot settings update using RabbitMQ**
 - Docker support for easy deployment
 
 ## Requirements
 - Python 3.11+
 - PostgreSQL
+- RabbitMQ (for dynamic settings updates)
 - Docker (optional for containerized deployment)
-
 ## Installation
 1. Clone the repository:
    ```sh

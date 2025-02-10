@@ -1,7 +1,8 @@
 import time
 from dotenv import load_dotenv
 from .socket_binance import get_last_price
-from . import loggs, settings
+from . import loggs
+from .settings import settings
 
 # Load environment variables
 load_dotenv(dotenv_path="./tools/.env")

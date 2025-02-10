@@ -5,6 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 import os
 import uvicorn
+from bot.tools import settings
 
 # Load environment variables
 load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
@@ -72,6 +73,23 @@ def get_system_logs():
         return {"error_logs": logs}
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Log file not found")
+
+
+@app.get("/settings")
+def get_settings():
+
+    config = {
+        "SYMBOL": settings.SYMBOL,
+        "INTERVAL": settings.INTERVAL,
+        "ADX_PERIOD": settings.ADX_PERIOD,
+        "SHORT_EMA": settings.SHORT_EMA,
+        "LONG_EMA": settings.LONG_EMA,
+        "ATR_PERIOD": settings.ATR_PERIOD,
+        "TAKE_PROFIT_ATR": settings.TAKE_PROFIT_ATR,
+        "STOP_LOSS_ATR": settings.STOP_LOSS_ATR,
+        "ATR": settings.ATR
+    }
+    return config
 
 
 if __name__ == "__main__":

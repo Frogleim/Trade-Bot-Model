@@ -1,10 +1,12 @@
 from .socket_binance import fetch_btcusdt_klines
 from binance.client import Client
-from . import loggs, settings
+from . import loggs
+from .settings import settings
 import ta
 from dotenv import load_dotenv
 import os
 import pandas as pd
+import importlib
 
 loaded = load_dotenv(dotenv_path='./tools/.env')
 
@@ -14,9 +16,10 @@ interval = settings.INTERVAL
 lookback = 5
 adx_period = settings.ADX_PERIOD
 
-
 def calculate_ema():
     """Calculating indicators including volume"""
+    importlib.reload(settings)  # 🔄 Reload settings dynamically
+
     df = fetch_btcusdt_klines(symbol, interval)
     if df.empty:
         print("No data fetched.")
@@ -61,8 +64,12 @@ def calculate_ema():
 
 def check_crossover():
     """Enhanced trade signal strategy with type safety and trend confirmation."""
+    importlib.reload(settings)  # 🔄 Reload settings dynamically
+
 
     long_ema, short_ema, close_price_series, adx, atr, rsi, volume = calculate_ema()
+    loggs.debug_log.debug(
+        f'Take profit ATR: {settings.TAKE_PROFIT_ATR} Stop loss ATR: {settings.STOP_LOSS_ATR} ATR: {settings.ATR} {settings.ADX_PERIOD} Short EMA: {settings.SHORT_EMA} Long EMA: {settings.LONG_EMA}')
 
     # Ensure all values are numeric
     def safe_convert(series):

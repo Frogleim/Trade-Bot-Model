@@ -8,8 +8,10 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
+import importlib
 
-from tools import trade, strategy, models, loggs, settings
+from tools import trade, strategy, models, loggs
+from tools.settings import settings
 
 stop_event = threading.Event()
 check_signal_thread = None  # Store check_signal thread
@@ -54,6 +56,8 @@ class DirectoryChangeHandler(FileSystemEventHandler):
             stop_event.set()  # Stop the current check_signal process
             time.sleep(2)  # Give some time for the thread to stop
             self.restart_func()  # Restart the check_signal method
+
+
 
 
 class Bot:
@@ -155,18 +159,31 @@ class Bot:
 
 
 def restart_check_signal():
-    """Stops the existing check_signal thread and starts a new one."""
+    """Stops the existing check_signal thread, reloads settings, and starts a new one."""
     global check_signal_thread
+
+    loggs.system_log.info("🛑 Stopping check_signal thread...")
     stop_event.set()  # Stop the previous thread
-    time.sleep(2)  # Give it some time to shut down
 
-    loggs.system_log.info("Restarting check_signal thread...")
+    # Give some time to fully stop the thread before restarting
+    if check_signal_thread and check_signal_thread.is_alive():
+        check_signal_thread.join(timeout=5)  # Avoid indefinite blocking
 
+    # 🔄 Reload settings
+    importlib.reload(settings)
+    loggs.system_log.info("🔄 Reloaded settings module")
+    # ✅ Start a new bot instance with updated settings
     bot = Bot()
-    check_signal_thread = threading.Thread(target=bot.check_signal)
-    check_signal_thread.daemon = True
+
+    # ✅ Restart the check_signal thread
+    stop_event.clear()
+    check_signal_thread = threading.Thread(target=bot.check_signal, daemon=True)
     check_signal_thread.start()
 
+    loggs.system_log.info("🚀 Restarted check_signal thread successfully!")
+    signal_path = './tools/signal'
+    if os.path.exists(signal_path):
+        os.remove(signal_path)
 
 def start_monitoring():
     """Starts monitoring the tools directory for changes."""

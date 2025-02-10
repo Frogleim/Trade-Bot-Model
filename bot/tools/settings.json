@@ -1,0 +1,11 @@
+{
+    "SYMBOL": "BTCUSDT",
+    "INTERVAL": "15m",
+    "ADX_PERIOD": 14,
+    "SHORT_EMA": 7.1573,
+    "LONG_EMA": 24.6693,
+    "ATR_PERIOD": 14,
+    "TAKE_PROFIT_ATR": 2.4643,
+    "STOP_LOSS_ATR": 0.7517,
+    "ATR": 400
+}
