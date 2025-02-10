@@ -19,7 +19,7 @@ load_dotenv(dotenv_path=r'./tools/.env')
 Base = declarative_base()
 
 MONITORING_DIR = "./tools"
-
+ON_TRADE=False
 
 class DirectoryChangeHandler(FileSystemEventHandler):
     """Monitors the tools directory for file changes and restarts check_signal if needed."""
@@ -48,7 +48,7 @@ class DirectoryChangeHandler(FileSystemEventHandler):
 
         new_snapshot = self._get_files_snapshot()
 
-        if new_snapshot != self.files_snapshot:
+        if new_snapshot != self.files_snapshot and not ON_TRADE:
             loggs.system_log.info('Change detected in tools directory. Restarting check_signal...')
             self.files_snapshot = new_snapshot  # Update snapshot
             stop_event.set()  # Stop the current check_signal process
@@ -102,6 +102,7 @@ class Bot:
                 session.close()
 
     def check_signal(self):
+        global ON_TRADE
         stop_event.clear()  # Clear the stop signal when starting
 
         while not stop_event.is_set():
@@ -114,33 +115,36 @@ class Bot:
 
                 self.signal_data = {
                     "side": signal_data[0],
-                    "entry_price": signal_data[1],
-                    "adx": signal_data[2],
-                    "atr": signal_data[3],
-                    "rsi": signal_data[4],
-                    "long_ema": signal_data[5],
-                    "short_ema": signal_data[6],
-                    "volume": signal_data[7]
+                    "entry_price": float(signal_data[1]),
+                    "adx": float(signal_data[2]),
+                    "atr": float(signal_data[3]),
+                    "rsi": float(signal_data[4]),
+                    "long_ema": float(signal_data[5]),
+                    "short_ema": float(signal_data[6]),
+                    "volume": float(signal_data[7])
                 }
 
                 if self.signal_data["side"] == 'long':
+                    ON_TRADE = True
                     loggs.system_log.info(f"Getting long signal with entry price: {self.signal_data['entry_price']}")
                     pnl, _, target_price = trade.long_trade(
                         entry_price=self.signal_data['entry_price'],
                         atr=self.signal_data['atr']
                     )
                     self.signal_data['pnl'] = pnl
-                    self.signal_data['exit_price'] = target_price
+                    self.signal_data['exit_price'] = float(target_price)
                     self._store_data()
 
                 elif self.signal_data['side'] == "short":
+                    ON_TRADE = True
+
                     loggs.system_log.info(f"Getting short signal with entry price: {self.signal_data['entry_price']}")
                     pnl, _, target_price = trade.short_trade(
                         entry_price=self.signal_data['entry_price'],
                         atr=self.signal_data['atr']
                     )
                     self.signal_data['pnl'] = pnl
-                    self.signal_data['exit_price'] = target_price
+                    self.signal_data['exit_price'] = float(target_price)
                     self._store_data()
 
                 else:

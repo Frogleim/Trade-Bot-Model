@@ -131,8 +131,8 @@ def check_crossover():
 
     # Apply all conditions for trade signals
     if crossover_buy and strong_trend  and valid_atr and high_volume:
-        return ['long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, high_volume]
+        return ['long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     elif crossover_sell and strong_trend  and valid_atr and high_volume:
-        return ['short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, high_volume]
+        return ['short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     else:
-        return ['Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, high_volume]
+        return ['Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
