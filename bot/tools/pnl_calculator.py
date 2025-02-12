@@ -14,7 +14,7 @@ def pnl_calculator(position_size, leverage, entry_price, exit_price, side='long'
 
 if __name__ == '__main__':
     position_size_usdt = 40
-    leverage_usdt = 125
+    leverage_usdt = 10
     entry_price = 50000
     exit_price = 56000
 

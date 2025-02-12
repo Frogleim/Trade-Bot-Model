@@ -58,8 +58,6 @@ class DirectoryChangeHandler(FileSystemEventHandler):
             self.restart_func()  # Restart the check_signal method
 
 
-
-
 class Bot:
     def __init__(self):
         self.api_key = os.getenv('BINANCE_API_KEY', '')
@@ -67,7 +65,7 @@ class Bot:
         self.db_url = os.getenv('DATABASE_URL')
         self.engine = create_engine(self.db_url)
         self.SessionLocal = sessionmaker(bind=self.engine)
-        self.symbol = settings.SYMBOL
+        self.symbols = settings.SYMBOLS  # Updated to handle multiple symbols
         self.signal_data = {}
         self.wallet_data = {}
 
@@ -81,12 +79,12 @@ class Bot:
             loggs.error_logs_logger.error(f'Error while connecting to db: {e}')
             return None
 
-    def _store_trade_data(self):
+    def _store_trade_data(self, symbol):
         session = self._connect_db()
         if session:
             try:
                 new_trade = models.Trade(
-                    symbol=self.symbol,
+                    symbol=symbol,
                     entry_price=self.signal_data.get('entry_price'),
                     exit_price=self.signal_data.get('exit_price'),
                     pnl=self.signal_data.get('pnl'),
@@ -106,150 +104,65 @@ class Bot:
             finally:
                 session.close()
 
-    def _store_wallet_data(self):
-        session = self._connect_db()
-        if session:
-            try:
-                new_wallet = models.Wallet(
-                    initial_balance=self.signal_data.get('initial_balance'),
-                    roi=self.signal_data.get('roi'),
-                    final_balance=self.signal_data.get('final_balance'),
-                )
-                session.add(new_wallet)
-                session.commit()
-            except Exception as e:
-                loggs.error_logs_logger.error(f'Error while storing data: {e}')
-                session.rollback()
-            finally:
-                session.close()
-
     def check_signal(self):
         global ON_TRADE
         stop_event.clear()  # Clear the stop signal when starting
 
         while not stop_event.is_set():
-            try:
-                signal_data = strategy.check_crossover()
-                if not signal_data:
-                    loggs.system_log.info('No signal data received.')
-                    time.sleep(3 * 60)
-                    continue
+            for symbol in self.symbols:
+                try:
+                    signal_data = strategy.check_crossover(symbol)
+                    if not signal_data:
+                        loggs.system_log.info(f'{symbol} - No signal data received.')
+                        continue
 
-                self.signal_data = {
-                    "side": signal_data[0],
-                    "entry_price": float(signal_data[1]),
-                    "adx": float(signal_data[2]),
-                    "atr": float(signal_data[3]),
-                    "rsi": float(signal_data[4]),
-                    "long_ema": float(signal_data[5]),
-                    "short_ema": float(signal_data[6]),
-                    "volume": float(signal_data[7])
-                }
-
-                if self.signal_data["side"] == 'long':
-                    ON_TRADE = True
-                    loggs.system_log.info(f"Getting long signal with entry price: {self.signal_data['entry_price']}")
-                    _, pnl, target_price = trade.long_trade(
-                        entry_price=self.signal_data['entry_price'],
-                        atr=self.signal_data['atr']
-                    )
-                    self.signal_data['pnl'] = pnl
-
-
-                    self.signal_data['exit_price'] = float(target_price)
-                    roi = pnl_calculator.pnl_calculator(
-                        position_size=10,
-                        leverage=125,
-                        entry_price=self.signal_data['entry_price'],
-                        exit_price=self.signal_data['exit_price'],
-                        side=self.signal_data['side']
-
-                    )
-                    self.wallet_data = {
-                        "initial_balance": 100,
-                        "roi": roi,
+                    self.signal_data = {
+                        "side": signal_data[1],
+                        "entry_price": float(signal_data[2]),
+                        "adx": float(signal_data[3]),
+                        "atr": float(signal_data[4]),
+                        "rsi": float(signal_data[5]),
+                        "long_ema": float(signal_data[6]),
+                        "short_ema": float(signal_data[7]),
+                        "volume": float(signal_data[8])
                     }
-                    self.wallet_data['final_balance'] = self.wallet_data['initial_balance'] + roi
-                    self._store_wallet_data()
-                    self._store_trade_data()
 
-                elif self.signal_data['side'] == "short":
-                    ON_TRADE = True
+                    if self.signal_data["side"] in ['long', 'short']:
+                        ON_TRADE = True
+                        loggs.system_log.info(f"{symbol} - Getting {self.signal_data['side']} signal with entry price: {self.signal_data['entry_price']}")
+                        trade_func = trade.long_trade if self.signal_data['side'] == 'long' else trade.short_trade
+                        _, pnl, target_price = trade_func(
+                            entry_price=self.signal_data['entry_price'],
+                            atr=self.signal_data['atr']
+                        )
+                        self.signal_data['pnl'] = pnl
+                        self.signal_data['exit_price'] = float(target_price)
+                        self._store_trade_data(symbol)
 
-                    loggs.system_log.info(f"Getting short signal with entry price: {self.signal_data['entry_price']}")
-                    _, pnl, target_price = trade.short_trade(
-                        entry_price=self.signal_data['entry_price'],
-                        atr=self.signal_data['atr']
-                    )
-                    self.signal_data['pnl'] = pnl
-                    self.signal_data['exit_price'] = float(target_price)
-                    roi = pnl_calculator.pnl_calculator(
-                        position_size=10,
-                        leverage=125,
-                        entry_price=self.signal_data['entry_price'],
-                        exit_price=self.signal_data['exit_price'],
-                        side=self.signal_data['side']
-
-                    )
-                    self.wallet_data = {
-                        "initial_balance": 100,
-                        "roi": roi,
-                    }
-                    self.wallet_data['final_balance'] = self.wallet_data['initial_balance'] + roi
-                    self._store_trade_data()
-
-                else:
-                    loggs.system_log.info('No trades at this moment')
-            except Exception as e:
-                loggs.error_logs_logger.error(f"Error while checking crossover: {e}")
-            time.sleep(3 * 60)
+                except Exception as e:
+                    loggs.error_logs_logger.error(f"{symbol} - Error while checking crossover: {e}")
+                time.sleep(10)  # Delay before checking next symbol
 
 
 def restart_check_signal():
-    """Stops the existing check_signal thread, reloads settings, and starts a new one."""
     global check_signal_thread
 
     loggs.system_log.info("🛑 Stopping check_signal thread...")
-    stop_event.set()  # Stop the previous thread
+    stop_event.set()
 
-    # Give some time to fully stop the thread before restarting
     if check_signal_thread and check_signal_thread.is_alive():
-        check_signal_thread.join(timeout=5)  # Avoid indefinite blocking
+        check_signal_thread.join(timeout=5)
 
-    # 🔄 Reload settings
     importlib.reload(settings)
     loggs.system_log.info("🔄 Reloaded settings module")
-    # ✅ Start a new bot instance with updated settings
     bot = Bot()
 
-    # ✅ Restart the check_signal thread
     stop_event.clear()
     check_signal_thread = threading.Thread(target=bot.check_signal, daemon=True)
     check_signal_thread.start()
 
     loggs.system_log.info("🚀 Restarted check_signal thread successfully!")
-    signal_path = './tools/signal'
-    if os.path.exists(signal_path):
-        os.remove(signal_path)
-
-def start_monitoring():
-    """Starts monitoring the tools directory for changes."""
-
-    event_handler = DirectoryChangeHandler(directory=MONITORING_DIR, restart_func=restart_check_signal)
-    observer = Observer()
-    observer.schedule(event_handler, path=MONITORING_DIR, recursive=True)  # Monitor files inside subdirectories too
-    observer.start()
-
-    try:
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        observer.stop()
-    observer.join()
-
 
 if __name__ == '__main__':
     loggs.system_log.info("Starting bot...")
-
-    restart_check_signal()  # Start check_signal initially
-    start_monitoring()
+    restart_check_signal()
