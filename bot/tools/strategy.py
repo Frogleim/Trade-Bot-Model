@@ -107,10 +107,13 @@ def check_crossover(symbol):
         f"RSI Buy: {rsi_buy}, RSI Sell: {rsi_sell}, "
         f"Valid ATR: {valid_atr}, High Volume: {high_volume}"
     )
+    loggs.debug_log.debug(
+        f"Symbol: {symbol} Current Price: {curr_price}, Volume: {volume.iloc[-1]}, adx: {adx.iloc[-1]} atr: {atr}, rsi: {rsi.iloc[-1]}, long_ema: {curr_long}, short_ema: {curr_short} "
+    )
 
-    if crossover_buy and strong_trend and valid_atr and high_volume:
+    if crossover_buy and strong_trend:
         return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
-    elif crossover_sell and strong_trend_sell and valid_atr_sell and high_volume_sell:
+    elif crossover_sell and strong_trend_sell:
         return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     else:
         return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]

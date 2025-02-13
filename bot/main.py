@@ -145,24 +145,48 @@ class Bot:
 
 
 def restart_check_signal():
+    """Stops the existing check_signal thread, reloads settings, and starts a new one."""
     global check_signal_thread
 
     loggs.system_log.info("🛑 Stopping check_signal thread...")
-    stop_event.set()
+    stop_event.set()  # Stop the previous thread
 
+    # Give some time to fully stop the thread before restarting
     if check_signal_thread and check_signal_thread.is_alive():
-        check_signal_thread.join(timeout=5)
+        check_signal_thread.join(timeout=5)  # Avoid indefinite blocking
 
+    # 🔄 Reload settings
     importlib.reload(settings)
     loggs.system_log.info("🔄 Reloaded settings module")
+    # ✅ Start a new bot instance with updated settings
     bot = Bot()
 
+    # ✅ Restart the check_signal thread
     stop_event.clear()
     check_signal_thread = threading.Thread(target=bot.check_signal, daemon=True)
     check_signal_thread.start()
 
     loggs.system_log.info("🚀 Restarted check_signal thread successfully!")
+    signal_path = './tools/signal'
+    if os.path.exists(signal_path):
+        os.remove(signal_path)
+
+def start_monitoring():
+    """Starts monitoring the tools directory for changes."""
+
+    event_handler = DirectoryChangeHandler(directory=MONITORING_DIR, restart_func=restart_check_signal)
+    observer = Observer()
+    observer.schedule(event_handler, path=MONITORING_DIR, recursive=True)  # Monitor files inside subdirectories too
+    observer.start()
+
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
+    observer.join()
 
 if __name__ == '__main__':
     loggs.system_log.info("Starting bot...")
-    restart_check_signal()
+    restart_check_signal()  # Start check_signal initially
+    start_monitoring()
