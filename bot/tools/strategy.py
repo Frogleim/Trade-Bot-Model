@@ -59,6 +59,31 @@ def calculate_ema(symbol):
     return long_ema, short_ema, df['close'], adx, atr, rsi, volume
 
 
+def identify_levels(df, window=20):
+    """Identify local support and resistance levels using rolling min/max"""
+    df['resistance'] = df['high'].rolling(window=window).max().shift(1)
+    df['support'] = df['low'].rolling(window=window).min().shift(1)
+    return df
+
+
+def detect_breakout(symbol, volume_threshold=1.5):
+
+    """Detect breakout when the price closes above resistance or below support with high volume"""
+    df = fetch_btcusdt_klines(symbol, interval)
+
+    df['resistance'] = df['high'].rolling(window=20).max().shift(1)
+    df['support'] = df['low'].rolling(window=20).min().shift(1)
+    df["prev_resistance"] = df["resistance"].shift(1)
+    df["prev_support"] = df["support"].shift(1)
+
+    df["breakout_up"] = (df["close"] > df["prev_resistance"]) & (
+                df["volume"] > df["volume"].rolling(20).mean() * volume_threshold)
+    df["breakout_down"] = (df["close"] < df["prev_support"]) & (
+                df["volume"] > df["volume"].rolling(20).mean() * volume_threshold)
+
+    return df
+
+
 def check_crossover(symbol):
     """Scalping-based trade signal strategy with risk management for a given symbol"""
     importlib.reload(settings)
@@ -111,12 +136,14 @@ def check_crossover(symbol):
         f"Symbol: {symbol} Current Price: {curr_price}, Volume: {volume.iloc[-1]}, adx: {adx.iloc[-1]} atr: {atr}, rsi: {rsi.iloc[-1]}, long_ema: {curr_long}, short_ema: {curr_short} "
     )
 
-    if crossover_buy and strong_trend:
+    is_break_out = detect_breakout(symbol)
+    if crossover_buy and strong_trend or is_break_out['breakout_up']:
         return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
-    elif crossover_sell and strong_trend_sell:
+    elif crossover_sell and strong_trend_sell or is_break_out['breakout_down']:
         return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     else:
         return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
+
 
 
 def monitor_cryptos():

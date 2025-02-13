@@ -37,3 +37,20 @@ class Wallet(Base):
     initial_balance = Column(Float, nullable=False)
     roi = Column(Float, nullable=False)
     final_balance = Column(Float, nullable=False)
+
+
+
+class Signal(Base):
+
+    __tablename__ = 'signals'
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    symbol = Column(String, nullable=True)
+    entry_price = Column(Float, nullable=False)
+    long_ema = Column(Float, nullable=False)
+    short_ema = Column(Float, nullable=False)
+    adx = Column(Float, nullable=False)
+    atr = Column(Float, nullable=False)
+    rsi = Column(Float, nullable=False)
+    volume = Column(Float, nullable=False)
+    side = Column(String, nullable=False)
