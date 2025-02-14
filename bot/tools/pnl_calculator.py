@@ -1,5 +1,5 @@
 
-def pnl_calculator(position_size, leverage, entry_price, exit_price, side='long'):
+def pnl_calculator(position_size, entry_price, exit_price, side='long', leverage=125):
     position_size_usdt_leverage = position_size * leverage
     if side == 'long':
 

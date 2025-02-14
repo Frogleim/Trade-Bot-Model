@@ -75,6 +75,7 @@ def detect_breakout(symbol, volume_threshold=1.5):
     df['support'] = df['low'].rolling(window=20).min().shift(1)
     df["prev_resistance"] = df["resistance"].shift(1)
     df["prev_support"] = df["support"].shift(1)
+    df["volume"] = pd.to_numeric(df["volume"], errors="coerce")  # Convert to float, coerce errors to NaN
 
     df["breakout_up"] = (df["close"] > df["prev_resistance"]) & (
                 df["volume"] > df["volume"].rolling(20).mean() * volume_threshold)
@@ -137,9 +138,9 @@ def check_crossover(symbol):
     )
 
     is_break_out = detect_breakout(symbol)
-    if crossover_buy and strong_trend or is_break_out['breakout_up']:
+    if crossover_buy and strong_trend or is_break_out['breakout_up'].iloc[-1]:
         return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
-    elif crossover_sell and strong_trend_sell or is_break_out['breakout_down']:
+    elif crossover_sell and strong_trend_sell or is_break_out['breakout_down'].iloc[-1]:
         return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     else:
         return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
