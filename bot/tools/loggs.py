@@ -7,31 +7,46 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(base_dir)
 grandparent_dir = os.path.dirname(parent_dir)
 files_dir = os.path.join(grandparent_dir, r"app")
-# files_dir = os.path.join(grandparent_dir, r"bot/tools")
 print(files_dir)
+
 user_count = None
-actions_log_file_path = os.path.join(grandparent_dir, 'logs', 'actions.log')
-error_logs_log_file_path = os.path.join(grandparent_dir, 'logs', 'error_logs.log')
-debug_logs_log_file_path = os.path.join(grandparent_dir, 'logs', 'debug_trade_log.log')
-system_logs_log_file_path = os.path.join(grandparent_dir, 'logs', 'system_logs.log')
+logs_dir = os.path.join(grandparent_dir, 'logs')
+os.makedirs(logs_dir, exist_ok=True)  # Ensure the logs directory exists
+
+# Define log file paths
+actions_log_file_path = os.path.join(logs_dir, 'actions.log')
+error_logs_log_file_path = os.path.join(logs_dir, 'error_logs.log')
+debug_logs_log_file_path = os.path.join(logs_dir, 'debug_trade_log.log')
+system_logs_log_file_path = os.path.join(logs_dir, 'system_logs.log')
+
 print(system_logs_log_file_path)
-# Configure the 'actions.log' logger
 
-error_logs_logger = logging.getLogger('error_logs_log')
-error_logs_logger.setLevel(logging.ERROR)
-error_logs_handler = logging.FileHandler(error_logs_log_file_path)
-error_logs_handler.setFormatter(logging.Formatter(f'{version} - %(asctime)s - %(levelname)s - %(message)s'))
-error_logs_logger.addHandler(error_logs_handler)
+# Common formatter
+formatter = logging.Formatter(f'{version} - %(asctime)s - %(levelname)s - %(message)s')
 
+# Function to configure a logger
+def setup_logger(name, log_file, level):
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
 
-system_log = logging.getLogger('system_log')
-system_log.setLevel(logging.INFO)
-system_log_handler = logging.FileHandler(system_logs_log_file_path)
-system_log_handler.setFormatter(logging.Formatter(f'{version} - %(asctime)s - %(levelname)s - %(message)s'))
-system_log.addHandler(system_log_handler)
+    # File handler
+    file_handler = logging.FileHandler(log_file)
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
-debug_log = logging.getLogger('debug_trade_log')
-debug_log.setLevel(logging.DEBUG)
-debug_log_handler = logging.FileHandler(debug_logs_log_file_path)
-debug_log_handler.setFormatter(logging.Formatter(f'{version} - %(asctime)s - %(levelname)s - %(message)s'))
-debug_log.addHandler(debug_log_handler)
+    # Console (terminal) handler
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+    logger.addHandler(console_handler)
+
+    return logger
+
+# Configure loggers
+error_logs_logger = setup_logger('error_logs_log', error_logs_log_file_path, logging.ERROR)
+system_log = setup_logger('system_log', system_logs_log_file_path, logging.INFO)
+debug_log = setup_logger('debug_trade_log', debug_logs_log_file_path, logging.DEBUG)
+
+# Example usage
+system_log.info("✅ System log initialized.")
+debug_log.debug("🔍 Debug log started.")
+error_logs_logger.error("❌ Example error log.")

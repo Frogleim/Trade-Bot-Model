@@ -163,7 +163,7 @@ class Bot:
                         self.signal_data['exit_price'] = float(target_price)  # ✅ Now defined
                         roi = pnl_calculator.pnl_calculator(40, self.signal_data['entry_price'], self.signal_data['exit_price'] )
                         self.wallet_data['roi'] = roi
-                        self.wallet_data['final_balance'] = float(target_price) - self.wallet_data['initial_balance']
+                        self.wallet_data['final_balance'] = self.wallet_data['initial_balance'] + roi
                         self._store_trade_data(symbol)
                         self._store_wallet_data()
 
