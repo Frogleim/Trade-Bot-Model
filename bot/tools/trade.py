@@ -12,7 +12,7 @@ load_dotenv(dotenv_path="./tools/.env")
 CHECK_INTERVAL = 1  # Time in seconds between price checks
 
 # Define checkpoint fractions (customize as desired)
-CHECKPOINTS = [0.2, 0.3, 0.4, 0.5, 0.75]  # e.g., update stop loss at 50% and 75% of the profit target
+CHECKPOINTS = [0.3, 0.4, 0.5, 0.75]  # e.g., update stop loss at 50% and 75% of the profit target
 
 def calculate_trade_targets(entry_price: float, atr: float, is_long: bool) -> tuple[float, float]:
     take_profit_multiplier = settings.TAKE_PROFIT_ATR
@@ -64,12 +64,12 @@ def monitor_trade(symbol: str, entry_price: float, target_price: float, stop_los
 
         if (is_long and current_price >= target_price) or (not is_long and current_price <= target_price):
             loggs.system_log.info(f"{symbol} - {trade_type} trade finished successfully with profit")
-            pnl = abs(target_price - entry_price)
+            pnl = target_price - entry_price
             return "Profit", pnl, target_price, symbol
 
         if (is_long and current_price <= current_stop_loss) or (not is_long and current_price >= current_stop_loss):
             loggs.system_log.info(f"{symbol} - {trade_type} trade finished with a loss (or stopped out after checkpoint)")
-            pnl = -abs(current_stop_loss - entry_price)
+            pnl = current_stop_loss - entry_price
             return "Loss", pnl, current_stop_loss, symbol
 
         time.sleep(CHECK_INTERVAL)

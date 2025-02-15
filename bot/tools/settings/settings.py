@@ -3,7 +3,7 @@
 SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'ADAUSDT']  # List of cryptos to monitor
 INTERVAL = '5m'  # Faster timeframe for scalping (Previously 15m → Now 5m)
 
-ADX_PERIOD = 10  # Faster ADX confirmation (Previously 13 → Now 10)
+ADX_PERIOD = 14  # Faster ADX confirmation (Previously 13 → Now 10)
 SHORT_EMA = 6  # Common short EMA for scalping (Previously 5.15 → Now 9)
 LONG_EMA = 21  # Classic trend-following EMA (Previously 24.67 → Now 21)
 

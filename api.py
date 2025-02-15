@@ -93,7 +93,7 @@ def get_system_logs():
 def get_settings():
 
     config = {
-        "SYMBOL": settings.SYMBOL,
+        "SYMBOL": settings.SYMBOLS,
         "INTERVAL": settings.INTERVAL,
         "ADX_PERIOD": settings.ADX_PERIOD,
         "SHORT_EMA": settings.SHORT_EMA,
@@ -101,7 +101,6 @@ def get_settings():
         "ATR_PERIOD": settings.ATR_PERIOD,
         "TAKE_PROFIT_ATR": settings.TAKE_PROFIT_ATR,
         "STOP_LOSS_ATR": settings.STOP_LOSS_ATR,
-        "ATR": settings.ATR
     }
     return config
 
