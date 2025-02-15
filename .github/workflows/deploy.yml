@@ -33,7 +33,7 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/bot-receiver:latest
 
       - name: Deploy to Server
-        uses: webfactory/ssh-agent@v0.5.3
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
