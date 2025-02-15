@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Debug Secrets
+    
       - name: Print Docker secrets
         run: |
           echo "DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}"
