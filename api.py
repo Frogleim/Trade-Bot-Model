@@ -105,5 +105,16 @@ def get_settings():
     return config
 
 
+@app.post("/clean-wallet")
+def clean_wallet(db: Session = Depends(get_db)):
+    wallet = db.query(Wallet).all()
+    if not wallet:
+        raise HTTPException(status_code=404, detail="No wallet found")
+    for wallet in wallet:
+        db.delete(wallet)
+        db.commit()
+    return {"success": True}
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="localhost", port=8000)

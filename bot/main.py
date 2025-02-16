@@ -109,16 +109,29 @@ class Bot:
         if session:
             try:
                 new_wallet = models.Wallet(
-                    initial_balance=self.wallet_data.get('initial_balance'),
-                    roi=self.wallet_data.get('roi'),
-                    final_balance=self.wallet_data.get('final_balance'),
-
+                    initial_balance=float(self.wallet_data.get('initial_balance', 0.0)),  # Ensure float type
+                    roi=float(self.wallet_data.get('roi', 0.0)),  # Avoid NoneType errors
+                    final_balance=float(self.wallet_data.get('final_balance', 0.0)),
                 )
                 session.add(new_wallet)
                 session.commit()
             except Exception as e:
                 loggs.error_logs_logger.error(f'Error while storing data: {e}')
                 session.rollback()
+            finally:
+                session.close()
+
+    def _get_last_final_balance(self):
+        """Retrieve the last recorded final balance from the database."""
+        session = self._connect_db()
+        if session:
+            try:
+                last_wallet = session.query(models.Wallet).order_by(models.Wallet.id.desc()).first()
+                return float(
+                    last_wallet.final_balance) if last_wallet else 1000.0  # Default to 1000 if no records exist
+            except Exception as e:
+                loggs.error_logs_logger.error(f'Error fetching last final balance: {e}')
+                return 1000.0  # Fail-safe default
             finally:
                 session.close()
 
@@ -133,7 +146,14 @@ class Bot:
                     if not signal_data:
                         loggs.system_log.info(f'{symbol} - No signal data received.')
                         continue
+
                     loggs.system_log.info(f'{symbol} - Signal data received.')
+
+                    # Load latest final balance dynamically
+                    self.wallet_data = {
+                        "initial_balance": self._get_last_final_balance(),
+                    }
+
                     self.signal_data = {
                         "side": signal_data[1],
                         "entry_price": float(signal_data[2]),
@@ -144,14 +164,12 @@ class Bot:
                         "short_ema": float(signal_data[7]),
                         "volume": float(signal_data[8])
                     }
-                    self.wallet_data = {
-                        "initial_balance": 1000,
-
-                    }
 
                     if self.signal_data["side"] in ['long', 'short']:
                         ON_TRADE = True
-                        loggs.system_log.info(f"{symbol} - Getting {self.signal_data['side']} signal with entry price: {self.signal_data['entry_price']}")
+                        loggs.system_log.info(
+                            f"{symbol} - Getting {self.signal_data['side']} signal with entry price: {self.signal_data['entry_price']}")
+
                         trade_result, pnl, target_price, traded_symbol = trade.execute_trade(
                             symbol,
                             self.signal_data['entry_price'],
@@ -161,14 +179,19 @@ class Bot:
 
                         self.signal_data['pnl'] = pnl  # ✅ Now defined
                         self.signal_data['exit_price'] = float(target_price)  # ✅ Now defined
-                        roi = pnl_calculator.pnl_calculator(40, self.signal_data['entry_price'], self.signal_data['exit_price'] )
+                        roi = pnl_calculator.pnl_calculator(40, self.signal_data['entry_price'],
+                                                            self.signal_data['exit_price'], 75)
                         self.wallet_data['roi'] = roi
+
+                        # ✅ Now correctly accumulating balance
                         self.wallet_data['final_balance'] = self.wallet_data['initial_balance'] + roi
+
                         self._store_trade_data(symbol)
                         self._store_wallet_data()
 
                 except Exception as e:
-                    loggs.error_logs_logger.error(f"{symbol} - Error while checking crossover: {e}, details: {traceback.format_exc()}")
+                    loggs.error_logs_logger.error(
+                        f"{symbol} - Error while checking crossover: {e}, details: {traceback.format_exc()}")
                 time.sleep(10)
 
 

@@ -13,10 +13,14 @@ def pnl_calculator(position_size, entry_price, exit_price, side='long', leverage
 
 
 if __name__ == '__main__':
-    position_size_usdt = 40
-    leverage_usdt = 10
-    entry_price = 50000
-    exit_price = 56000
+    position_size_usdt = 13.29
+    leverage_usdt = 75
+    entry_price = 664.44
+    exit_price = 666.2
 
-    roi = pnl_calculator(position_size_usdt, leverage_usdt, entry_price, exit_price)
+    roi = pnl_calculator(
+        position_size=position_size_usdt,
+        entry_price=entry_price,
+        exit_price=exit_price,
+    )
     print(roi)
