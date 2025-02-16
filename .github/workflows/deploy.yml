@@ -37,7 +37,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_PASSWORD }}  # Using password instead of SSH key
           script: |
             cd /root/Trade-Bot-Model  # Change to your project directory
             git pull origin main
@@ -45,4 +45,4 @@ jobs:
             docker-compose pull
             docker-compose build
             docker-compose up -d --remove-orphans
-            docker system prune -af  # Cleanup old images
+            docker system prune -af
