@@ -16,7 +16,7 @@ if __name__ == '__main__':
     position_size_usdt = 13.29
     leverage_usdt = 75
     entry_price = 664.44
-    exit_price = 666.2
+    exit_price = 663.2
 
     roi = pnl_calculator(
         position_size=position_size_usdt,

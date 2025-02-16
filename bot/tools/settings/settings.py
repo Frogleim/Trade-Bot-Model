@@ -1,6 +1,6 @@
 """Trade bot indicator settings"""
 
-SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'XRPUSDT', 'ADAUSDT']  # List of cryptos to monitor
+SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT']  # List of cryptos to monitor
 INTERVAL = '5m'  # Faster timeframe for scalping (Previously 15m → Now 5m)
 
 ADX_PERIOD = 10  # Faster ADX confirmation (Previously 13 → Now 10)
