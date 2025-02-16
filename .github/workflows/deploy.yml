@@ -37,7 +37,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USER }}
-          password: ${{ secrets.SSH_PASSWORD }}  # Using password instead of SSH key
+          password: ${{ secrets.PASSWORD }}  # Using password instead of SSH key
           script: |
             cd /root/Trade-Bot-Model  # Change to your project directory
             git pull origin main
