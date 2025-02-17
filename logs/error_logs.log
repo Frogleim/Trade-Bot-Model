@@ -138,3 +138,27 @@
 1.03 beta - 2025-02-17 11:47:36,552 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 18:31:58,092 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:32:18,046 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:34:25,476 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:34:44,150 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:35:05,358 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:35:29,216 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:36:06,148 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:36:37,998 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:36:52,235 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:36:55,441 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:37:38,480 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:37:52,295 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 18:39:16,773 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 19:07:17,840 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 19:07:28,276 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 19:07:44,890 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 19:07:58,636 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 19:08:25,105 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 19:08:29,077 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 19:08:42,010 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
