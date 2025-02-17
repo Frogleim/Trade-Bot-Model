@@ -1,7 +1,6 @@
 # bot_control.py
 import threading
 
-from bot.main import Bot
 
 # Global control flags
 stop_event = threading.Event()

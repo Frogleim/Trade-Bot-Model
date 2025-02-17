@@ -53,7 +53,7 @@ class DirectoryChangeHandler(FileSystemEventHandler):
         if new_snapshot != self.files_snapshot and not ON_TRADE:
             loggs.system_log.info('Change detected in tools directory. Restarting check_signal...')
             self.files_snapshot = new_snapshot  # Update snapshot
-            stop_event.set()  # Stop the current check_signal process
+            bot_control.stop_event.set()  # Stop the current check_signal process
             time.sleep(2)  # Give some time for the thread to stop
             self.restart_func()  # Restart the check_signal method
 
