@@ -117,6 +117,7 @@ def predict_trade_success_xgb(trade_signal):
 
     # Apply AI filters
     is_trending = trade_signal["adx"] > 20
+    loggs.system_log.info(f'Profit probability: {probability} is trending: {is_trending}')
     if probability > 0.85 and is_trending:
         return True  # ✅ AI approves trade
     return False  # ❌ AI rejects trade
@@ -174,6 +175,7 @@ def check_crossover(symbol):
 
     if (crossover_buy or is_breakout['breakout_up'].iloc[-1]) and strong_trend:
         ai_approved = predict_trade_success_xgb(trade_signal)
+
         if ai_approved:
             loggs.system_log.info(f"{symbol} - XGBoost approved.")
             return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
