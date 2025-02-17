@@ -154,7 +154,7 @@ class Bot:
 
                 try:
                     signal_data = strategy.check_crossover(symbol)
-                    if not signal_data:
+                    if not signal_data[1] == 'Hold':
                         loggs.system_log.info(f'{symbol} - No signal data received.')
                         continue
 
