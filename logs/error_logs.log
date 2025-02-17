@@ -29,3 +29,112 @@
 1.03 beta - 2025-02-15 13:33:53,466 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:09:07,252 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:09:09,123 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:09:20,967 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:11:44,024 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:11:48,022 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:12:01,031 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:12:13,965 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:12:26,862 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:12:39,734 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:12:52,436 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:13:05,383 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:13:16,900 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:13:28,386 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:13:40,064 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:13:54,533 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:13:58,067 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:14:10,776 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:14:21,816 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:14:32,778 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:14:43,747 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:40:20,356 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:40:32,349 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:40:44,693 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:41:39,093 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:41:50,327 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:41:53,271 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:42:05,717 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:42:18,221 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:45:03,616 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:45:04,876 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:45:15,821 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:45:26,699 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:45:37,522 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:45:48,538 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:45:59,515 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:46:29,885 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-17 11:46:31,294 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:46:42,153 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:46:53,003 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:47:03,980 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:47:14,849 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:47:25,815 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-17 11:47:36,552 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

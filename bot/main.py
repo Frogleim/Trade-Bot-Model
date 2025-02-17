@@ -12,8 +12,8 @@ import importlib
 import traceback
 from tools import trade, strategy, models, loggs, pnl_calculator
 from tools.settings import settings
+import bot_control
 
-stop_event = threading.Event()
 check_signal_thread = None  # Store check_signal thread
 
 load_dotenv(dotenv_path=r'./tools/.env')
@@ -137,10 +137,21 @@ class Bot:
 
     def check_signal(self):
         global ON_TRADE
-        stop_event.clear()  # Clear the stop signal when starting
+        bot_control.stop_event.clear()  # Ensure it's cleared before starting
 
-        while not stop_event.is_set():
+        while not bot_control.stop_event.is_set():
+            loggs.system_log.info(bot_control.stop_event)# 🔥 CHECK FOR STOP EVENT
+            if bot_control.paused_event.is_set():
+                loggs.system_log.info("Bot is paused. Waiting to resume...")
+                while bot_control.paused_event.is_set():  # 🔥 WAIT UNTIL UNPAUSED
+                    time.sleep(2)  # Avoid CPU overload
+                loggs.system_log.info("Bot resumed. Continuing execution...")
+
             for symbol in self.symbols:
+                if bot_control.stop_event.is_set():  # 🔥 Exit immediately if stopped
+                    loggs.system_log.info("Bot stopping... Exiting check_signal loop.")
+                    return
+
                 try:
                     signal_data = strategy.check_crossover(symbol)
                     if not signal_data:
@@ -177,8 +188,8 @@ class Bot:
                             is_long=True if self.signal_data['side'] == 'long' else False,
                         )
 
-                        self.signal_data['pnl'] = pnl  # ✅ Now defined
-                        self.signal_data['exit_price'] = float(target_price)  # ✅ Now defined
+                        self.signal_data['pnl'] = pnl
+                        self.signal_data['exit_price'] = float(target_price)
                         roi = pnl_calculator.pnl_calculator(40, self.signal_data['entry_price'],
                                                             self.signal_data['exit_price'], 75)
                         self.wallet_data['roi'] = roi
@@ -192,7 +203,8 @@ class Bot:
                 except Exception as e:
                     loggs.error_logs_logger.error(
                         f"{symbol} - Error while checking crossover: {e}, details: {traceback.format_exc()}")
-                time.sleep(10)
+
+                time.sleep(10)  # 🔥 Ensure stop_event is checked before sleeping
 
 
 def restart_check_signal():
@@ -200,27 +212,21 @@ def restart_check_signal():
     global check_signal_thread
 
     loggs.system_log.info("🛑 Stopping check_signal thread...")
-    stop_event.set()  # Stop the previous thread
+    bot_control.stop_event.set()  # ✅ Set the stop event
 
-    # Give some time to fully stop the thread before restarting
     if check_signal_thread and check_signal_thread.is_alive():
-        check_signal_thread.join(timeout=5)  # Avoid indefinite blocking
+        check_signal_thread.join(timeout=5)  # ✅ Wait for the thread to fully stop
 
-    # 🔄 Reload settings
     importlib.reload(settings)
     loggs.system_log.info("🔄 Reloaded settings module")
-    # ✅ Start a new bot instance with updated settings
+
     bot = Bot()
 
-    # ✅ Restart the check_signal thread
-    stop_event.clear()
+    bot_control.stop_event.clear()  # ✅ Clear stop_event before starting a new thread
     check_signal_thread = threading.Thread(target=bot.check_signal, daemon=True)
     check_signal_thread.start()
 
     loggs.system_log.info("🚀 Restarted check_signal thread successfully!")
-    signal_path = './tools/signal'
-    if os.path.exists(signal_path):
-        os.remove(signal_path)
 
 def start_monitoring():
     """Starts monitoring the tools directory for changes."""
@@ -237,7 +243,10 @@ def start_monitoring():
         observer.stop()
     observer.join()
 
-if __name__ == '__main__':
+def run():
     loggs.system_log.info("Starting bot...")
     restart_check_signal()  # Start check_signal initially
     start_monitoring()
+
+if __name__ == '__main__':
+    run()

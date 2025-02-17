@@ -138,9 +138,9 @@ def check_crossover(symbol):
     )
 
     is_break_out = detect_breakout(symbol)
-    if crossover_buy and strong_trend or is_break_out['breakout_up'].iloc[-1]:
+    if crossover_buy and strong_trend or (is_break_out['breakout_up'].iloc[-1] and strong_trend):
         return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
-    elif crossover_sell and strong_trend_sell or is_break_out['breakout_down'].iloc[-1]:
+    elif crossover_sell and strong_trend_sell or (is_break_out['breakout_down'].iloc[-1] and strong_trend_sell):
         return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     else:
         return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]

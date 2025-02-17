@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 import os
 import uvicorn
 from bot.tools.settings import settings
+from bot import bot_control
 
 # Load environment variables
 load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
@@ -116,5 +117,20 @@ def clean_wallet(db: Session = Depends(get_db)):
     return {"success": True}
 
 
+@app.post("/pause-bot/")
+def pause_bot():
+    """Pauses the bot"""
+    return bot_control.pause_bot()
+
+@app.post("/unpause-bot/")
+def unpause_bot():
+    """Unpauses the bot"""
+    return bot_control.unpause_bot()
+
+@app.post("/stop-bot/")
+def stop_bot():
+    """Stops the bot completely"""
+    return bot_control.stop_bot()
+
 if __name__ == "__main__":
-    uvicorn.run(app, host="localhost", port=8000)
+    uvicorn.run(app, host="localhost", port=8080)
