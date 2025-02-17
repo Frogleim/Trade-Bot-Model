@@ -18,3 +18,4 @@ SQLAlchemy
 psycopg2
 watchdog
 xgboost
+scikit-learn
