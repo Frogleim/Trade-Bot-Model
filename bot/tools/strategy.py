@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 import os
 import importlib
 import pickle
-from sklearn.preprocessing import StandardScaler
 
 current_dir = os.getcwd()
 print(current_dir)

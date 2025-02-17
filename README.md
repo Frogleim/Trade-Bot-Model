@@ -1,21 +1,24 @@
 # Trade Bot
 
 ## Overview
-This Trade Bot is a FastAPI-based application combined with a trading bot that interacts with a PostgreSQL database to store and retrieve trading data. It also provides system logs for monitoring and makes automated trade decisions based on EMA crossover strategy, ADX, RSI, ATR, and volume analysis.
+This Trade Bot is a FastAPI-based application combined with an AI-powered trading bot that interacts with a PostgreSQL database to store and retrieve trading data. It also provides system logs for monitoring and makes automated trade decisions based on an advanced trading strategy incorporating AI-based filtering, EMA crossover strategy, ADX, RSI, ATR, and volume analysis.
 
 ## Features
-- Fetch trading data from a PostgreSQL database
-- Retrieve system logs from the `./logs/system_log.logs` file
-- Automated trading bot that executes trades based on predefined strategies
-- API endpoints built with FastAPI
-- **🚀 Dynamic bot settings update using RabbitMQ**
-- Docker support for easy deployment
+- **AI-Powered Trade Filtering:** Uses a trained XGBoost model to validate trades before execution.
+- **Dynamic Market Analysis:** Incorporates trend confirmation, volatility checks, and volume filters.
+- **Fetch Trading Data from PostgreSQL:** Stores and retrieves past trades efficiently.
+- **Retrieve System Logs:** Tracks all trading actions in `./logs/system_log.logs`.
+- **Automated Trading Strategy:** Executes trades using AI-enhanced decision-making.
+- **API Endpoints with FastAPI:** Provides real-time trading data access.
+- **🚀 Dynamic Bot Settings Update via RabbitMQ.**
+- **Docker Support for Easy Deployment.**
 
 ## Requirements
 - Python 3.11+
 - PostgreSQL
 - RabbitMQ (for dynamic settings updates)
 - Docker (optional for containerized deployment)
+
 ## Installation
 1. Clone the repository:
    ```sh
@@ -38,6 +41,11 @@ This Trade Bot is a FastAPI-based application combined with a trading bot that i
    ```env
    DATABASE_URL=postgresql://postgres:admin@localhost:5433/tb
    ATR_PERIOD=14
+   ````
+
+5. **Train and Save the AI Model** (First-Time Setup Only):
+   ```sh
+   python train_xgboost.py  # Trains and saves `xgboost_model.model` and `scaler.pkl`
    ```
 
 ## Running the Application
@@ -95,15 +103,16 @@ python bot/main.py
 }
 ```
 
-## Trading Bot
-The bot fetches market data using Binance API and applies the following trading strategy:
-- **EMA Crossover:** Identifies bullish and bearish crossovers for trade signals.
+## AI-Powered Trading Bot
+The bot fetches market data using Binance API and applies the following **AI-enhanced** trading strategy:
+- **AI Trade Validation:** Uses XGBoost to confirm high-probability trades.
+- **EMA Crossover:** Identifies bullish and bearish crossovers.
 - **ADX Confirmation:** Ensures strong trends before making a trade.
 - **RSI Filter:** Confirms if the asset is in a good buying or selling range.
-- **ATR for Volatility:** Ensures market has sufficient volatility.
+- **ATR for Volatility:** Ensures market has sufficient volatility before entry.
 - **Volume Confirmation:** Uses historical volume to confirm trend strength.
 
-The bot determines whether to go `long`, `short`, or `hold` based on the strategy.
+The bot determines whether to go `long`, `short`, or `hold` based on the AI's decision-making process.
 
 ## Docker Compose Configuration
 The project uses the following `docker-compose.yml` setup:
