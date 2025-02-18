@@ -16,8 +16,8 @@ print(current_dir)
 
 # Load the trained AI model
 xgb_model = xgb.XGBClassifier()
-model_path = os.path.join(current_dir, "model/xgboost_model.model")
-scaler_path = os.path.join(current_dir, "model/scaler.pkl")
+model_path = os.path.join(current_dir, "/tools/model/xgboost_model.model")
+scaler_path = os.path.join(current_dir, "/tools/model/scaler.pkl")
 xgb_model.load_model(model_path)
 load_dotenv(dotenv_path='./tools/.env')
 

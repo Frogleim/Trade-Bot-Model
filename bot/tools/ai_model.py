@@ -9,7 +9,7 @@ import os
 
 current_dir = os.getcwd()
 features = ['entry_price', 'long_ema', 'short_ema', 'adx', 'atr', 'rsi', 'volume', 'side']
-model_path = os.path.join(current_dir, "model/xgboost_model.model")
+model_path = os.path.join(current_dir, "/tools/model/xgboost_model.model")
 
 
 def read_trade_data():
