@@ -158,28 +158,38 @@ def check_crossover(symbol):
 
     is_breakout = detect_breakout(symbol)
 
-    # Construct trade signal dictionary
-    trade_signal = {
-        "symbol": symbol,
-        "entry_price": curr_price,
-        "long_ema": curr_long,
-        "short_ema": curr_short,
-        "adx": adx.iloc[-1],
-        "atr": atr,
-        "rsi": rsi.iloc[-1],
-        "volume": volume.iloc[-1],
-        "side": "long" if crossover_buy or is_breakout['breakout_up'].iloc[-1] else "short"
-    }
-    loggs.debug_log.debug(trade_signal)
-
     # 🔥 AI-Enhanced Decision
 
     if (crossover_buy or is_breakout['breakout_up'].iloc[-1]) and strong_trend:
+        trade_signal = {
+            "symbol": symbol,
+            "entry_price": curr_price,
+            "long_ema": curr_long,
+            "short_ema": curr_short,
+            "adx": adx.iloc[-1],
+            "atr": atr,
+            "rsi": rsi.iloc[-1],
+            "volume": volume.iloc[-1],
+            "side": "long"
+        }
+        loggs.debug_log.debug(trade_signal)
         ai_approved = predict_trade_success_xgb(trade_signal)
         if ai_approved:
             loggs.system_log.info(f"{symbol} - XGBoost approved.")
             return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     elif (crossover_sell or is_breakout['breakout_down'].iloc[-1]) and strong_trend_sell:
+        trade_signal = {
+            "symbol": symbol,
+            "entry_price": curr_price,
+            "long_ema": curr_long,
+            "short_ema": curr_short,
+            "adx": adx.iloc[-1],
+            "atr": atr,
+            "rsi": rsi.iloc[-1],
+            "volume": volume.iloc[-1],
+            "side": "short"
+        }
+        loggs.debug_log.debug(trade_signal)
         ai_approved = predict_trade_success_xgb(trade_signal)
         if ai_approved:
             loggs.system_log.info(f"{symbol} - XGBoost approved.")
