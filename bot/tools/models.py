@@ -14,13 +14,20 @@ DB_HOST = "pgdb"  # This is the container name in Docker Compose
 DB_PORT = "5432"
 DB_NAME = "tb"
 
-# Create an engine for the default `postgres` database to create `tb`
+# Create an engine for the default `postgres` database
 default_engine = create_engine(f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/postgres")
 
-# Create the database if it does not exist
+# Check if the database exists before creating it
 with default_engine.connect() as connection:
-    connection.execute(text(f"CREATE DATABASE IF NOT EXIST {DB_NAME}"))
-    connection.commit()
+    result = connection.execute(text(f"SELECT 1 FROM pg_database WHERE datname='{DB_NAME}'"))
+    exists = result.scalar()
+
+    if not exists:
+        connection.execute(text(f"CREATE DATABASE {DB_NAME}"))
+        connection.commit()
+        print(f"Database '{DB_NAME}' created successfully.")
+    else:
+        print(f"Database '{DB_NAME}' already exists.")
 
 # Define the new engine for the `tb` database
 DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
@@ -28,6 +35,7 @@ engine = create_engine(DATABASE_URL)
 
 # Define the base model
 Base = declarative_base()
+
 
 class Trade(Base):
     __tablename__ = 'trades'
@@ -45,12 +53,14 @@ class Trade(Base):
     volume = Column(Float, nullable=False)
     side = Column(String, nullable=False)
 
+
 class Wallet(Base):
     __tablename__ = 'wallets'
     id = Column(Integer, primary_key=True, autoincrement=True)
     initial_balance = Column(Float, nullable=False)
     roi = Column(Float, nullable=False)
     final_balance = Column(Float, nullable=False)
+
 
 class Signal(Base):
     __tablename__ = 'signals'
@@ -65,6 +75,7 @@ class Signal(Base):
     rsi = Column(Float, nullable=False)
     volume = Column(Float, nullable=False)
     side = Column(String, nullable=False)
+
 
 # Create all tables
 Base.metadata.create_all(engine)
