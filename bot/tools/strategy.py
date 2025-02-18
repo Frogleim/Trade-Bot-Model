@@ -175,8 +175,8 @@ def check_crossover(symbol):
         }
         loggs.debug_log.debug(trade_signal)
         ai_approved = predict_signal(trade_signal)
-        if ai_approved:
-            loggs.system_log.info(f"{symbol} - XGBoost approved.")
+        if ai_approved['trade_decision']:
+            loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
             return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     elif (crossover_sell or is_breakout['breakout_down'].iloc[-1]) and strong_trend_sell:
         trade_signal = {
@@ -192,10 +192,11 @@ def check_crossover(symbol):
         }
         loggs.debug_log.debug(trade_signal)
         ai_approved = predict_signal(trade_signal)
-        if ai_approved:
-            loggs.system_log.info(f"{symbol} - XGBoost approved.")
+        if ai_approved['trade_decision']:
+            loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
             return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
-    return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
+    else:
+        return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
 
 
 def monitor_cryptos():

@@ -137,18 +137,18 @@ class Bot:
 
     def check_signal(self):
         global ON_TRADE
-        bot_control.stop_event.clear()  # Ensure it's cleared before starting
+        bot_control.stop_event.clear()
 
         while not bot_control.stop_event.is_set():
-            loggs.system_log.info(bot_control.stop_event)# 🔥 CHECK FOR STOP EVENT
+            loggs.system_log.info(bot_control.stop_event)
             if bot_control.paused_event.is_set():
                 loggs.system_log.info("Bot is paused. Waiting to resume...")
-                while bot_control.paused_event.is_set():  # 🔥 WAIT UNTIL UNPAUSED
-                    time.sleep(2)  # Avoid CPU overload
+                while bot_control.paused_event.is_set():
+                    time.sleep(2)
                 loggs.system_log.info("Bot resumed. Continuing execution...")
 
             for symbol in self.symbols:
-                if bot_control.stop_event.is_set():  # 🔥 Exit immediately if stopped
+                if bot_control.stop_event.is_set():
                     loggs.system_log.info("Bot stopping... Exiting check_signal loop.")
                     return
 

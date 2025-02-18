@@ -10,10 +10,10 @@ import os
 current_dir = os.getcwd()
 features = ['entry_price', 'long_ema', 'short_ema', 'adx', 'atr', 'rsi', 'volume', 'side']
 model_path = os.path.join(current_dir, "tools/model/xgboost_model.model")
-
+trade_data_path = os.path.join(current_dir, "tools/trade_data/trades_data_xboost.csv")
 
 def read_trade_data():
-    df = pd.read_csv('./trade_data/trades_data_xboost.csv')
+    df = pd.read_csv(trade_data_path)
     print(df.head())
     return df
 
