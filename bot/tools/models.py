@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine, Column, Integer, String, Float, text
-from sqlalchemy.orm import declarative_base, sessionmaker
+from sqlalchemy.orm import declarative_base
 from dotenv import load_dotenv
 import os
 
@@ -14,17 +14,16 @@ DB_HOST = "pgdb"  # This is the container name in Docker Compose
 DB_PORT = "5432"
 DB_NAME = "tb"
 
-# Create an engine for the default `postgres` database
+# Create an engine for the default `postgres` database (to create `tb`)
 default_engine = create_engine(f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/postgres")
 
 # Check if the database exists before creating it
 with default_engine.connect() as connection:
+    connection.execution_options(isolation_level="AUTOCOMMIT")  # Disable transaction block
     result = connection.execute(text(f"SELECT 1 FROM pg_database WHERE datname='{DB_NAME}'"))
-    exists = result.scalar()
 
-    if not exists:
+    if not result.scalar():
         connection.execute(text(f"CREATE DATABASE {DB_NAME}"))
-        connection.commit()
         print(f"Database '{DB_NAME}' created successfully.")
     else:
         print(f"Database '{DB_NAME}' already exists.")
