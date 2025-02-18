@@ -162,3 +162,6 @@
 1.03 beta - 2025-02-17 19:08:42,010 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+1.03 beta - 2025-02-18 20:55:45,613 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-18 20:55:57,963 - ERROR - ❌ Example error log.
+1.03 beta - 2025-02-18 20:56:21,911 - ERROR - ❌ Example error log.
