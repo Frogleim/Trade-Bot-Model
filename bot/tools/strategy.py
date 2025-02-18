@@ -194,8 +194,7 @@ def check_crossover(symbol):
         if ai_approved:
             loggs.system_log.info(f"{symbol} - XGBoost approved.")
             return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
-    else:
-        return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
+    return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
 
 
 def monitor_cryptos():
