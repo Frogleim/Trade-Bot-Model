@@ -2,7 +2,6 @@ import time
 import os
 import threading
 import hashlib
-from pathlib import Path
 from dotenv import load_dotenv
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
