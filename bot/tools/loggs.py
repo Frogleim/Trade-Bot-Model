@@ -10,14 +10,12 @@ files_dir = os.path.join(grandparent_dir, r"app")
 print(files_dir)
 
 user_count = None
-logs_dir = os.path.join(grandparent_dir, 'logs')
-os.makedirs(logs_dir, exist_ok=True)  # Ensure the logs directory exists
 
 # Define log file paths
-actions_log_file_path = os.path.join(logs_dir, 'actions.log')
-error_logs_log_file_path = os.path.join(logs_dir, 'error_logs.log')
-debug_logs_log_file_path = os.path.join(logs_dir, 'debug_trade_log.log')
-system_logs_log_file_path = os.path.join(logs_dir, 'system_logs.log')
+actions_log_file_path = os.path.join(files_dir, 'logs', 'actions.log')
+error_logs_log_file_path = os.path.join(files_dir, 'logs', 'error_logs.log')
+debug_logs_log_file_path = os.path.join(files_dir, 'logs', 'debug_trade_log.log')
+system_logs_log_file_path = os.path.join(files_dir, 'logs', 'system_logs.log')
 
 print(system_logs_log_file_path)
 
