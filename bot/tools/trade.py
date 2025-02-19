@@ -14,16 +14,26 @@ CHECK_INTERVAL = 1  # Time in seconds between price checks
 # Define checkpoint fractions (customize as desired)
 CHECKPOINTS = [0.3, 0.4, 0.5, 0.75]  # e.g., update stop loss at 50% and 75% of the profit target
 
-def calculate_trade_targets(entry_price: float, atr: float, is_long: bool) -> tuple[float, float]:
+def calculate_trade_targets(entry_price: float, atr: float, is_long: bool, symbol: str) -> tuple[float, float]:
     take_profit_multiplier = settings.TAKE_PROFIT_ATR
     stop_loss_multiplier = settings.STOP_LOSS_ATR
 
-    if is_long:
-        target_price = entry_price + (take_profit_multiplier * atr)
-        stop_loss = entry_price - (stop_loss_multiplier * atr)
-    else:
-        target_price = entry_price - (take_profit_multiplier * atr)
-        stop_loss = entry_price + (stop_loss_multiplier * atr)
+    if symbol == 'BTCUSDT':
+        if is_long:
+            target_price = entry_price + (2 + take_profit_multiplier * atr)
+            stop_loss = entry_price - (0.6 + stop_loss_multiplier * atr)
+        else:  # Short trade for BTCUSDT
+            target_price = entry_price - (2 + take_profit_multiplier * atr)
+            stop_loss = entry_price + (0.6 + stop_loss_multiplier * atr)
+    else:  # Other assets
+        if is_long:
+            target_price = entry_price + (take_profit_multiplier * atr)
+            stop_loss = entry_price - (stop_loss_multiplier * atr)
+        else:  # Short trade for non-BTCUSDT assets
+            target_price = entry_price - (take_profit_multiplier * atr)
+            stop_loss = entry_price + (stop_loss_multiplier * atr)
+
+    return target_price, stop_loss
 
     return target_price, stop_loss
 
@@ -83,7 +93,7 @@ def execute_trade(symbol: str, entry_price: float, atr: float, is_long: bool) ->
     """Executes and monitors a trade for the given symbol."""
     trade_type = "Long" if is_long else "Short"
     loggs.system_log.warning(f"{symbol} - {trade_type} position placed successfully: Entry Price: {entry_price}")
-    target_price, stop_loss = calculate_trade_targets(entry_price, atr, is_long)
+    target_price, stop_loss = calculate_trade_targets(entry_price, atr, is_long, symbol)
     return monitor_trade(symbol, entry_price, target_price, stop_loss, is_long)
 
 if __name__ == "__main__":

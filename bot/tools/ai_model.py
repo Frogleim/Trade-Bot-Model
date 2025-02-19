@@ -9,12 +9,11 @@ import os
 
 current_dir = os.getcwd()
 features = ['entry_price', 'long_ema', 'short_ema', 'adx', 'atr', 'rsi', 'volume', 'side']
-model_path = os.path.join(current_dir, "tools/model/xgboost_model.model")
-trade_data_path = os.path.join(current_dir, "tools/trade_data/trades_data_xboost.csv")
+model_path = os.path.join(current_dir, "model/xgboost_model.model")
+trade_data_path = os.path.join(current_dir, "trade_data/trades_data_xboost.csv")
 
 def read_trade_data():
     df = pd.read_csv(trade_data_path)
-    print(df.head())
     return df
 
 def scal_data():
@@ -62,7 +61,6 @@ def predict_signal(trade_signal):
 
     # **🔥 New Trend Filtering:**
     is_trending = trade_signal["adx"] > 20
-
     # Final Decision: Only open trade if all filters pass
     if probability > 0.85 and is_trending:
         trade_decision = True

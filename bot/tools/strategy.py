@@ -1,12 +1,12 @@
 import pandas as pd
 import xgboost as xgb
-from .socket_binance import fetch_btcusdt_klines
+from socket_binance import fetch_btcusdt_klines
 from binance.client import Client
-from . import loggs
-from .settings import settings
+import loggs
+from settings import settings
 import ta
 from dotenv import load_dotenv
-from .ai_model import predict_signal
+from ai_model import predict_signal
 import os
 import importlib
 import pickle
@@ -16,8 +16,8 @@ print(current_dir)
 
 # Load the trained AI model
 xgb_model = xgb.XGBClassifier()
-model_path = os.path.join(current_dir, "tools/model/xgboost_model.model")
-scaler_path = os.path.join(current_dir, "tools/model/scaler.pkl")
+model_path = os.path.join(current_dir, "model/xgboost_model.model")
+scaler_path = os.path.join(current_dir, "model/scaler.pkl")
 xgb_model.load_model(model_path)
 load_dotenv(dotenv_path='./tools/.env')
 
@@ -213,6 +213,6 @@ def monitor_cryptos():
 
 
 if __name__ == '__main__':
-    signal = {'symbol': 'BNBUSDT', 'entry_price': 634.51, 'long_ema': 645.8372928628042, 'short_ema': 641.0374842057347,
-     'adx': 55.71942338106728, 'atr': 3.4835714285714436, 'rsi': 16.25754527162968, 'volume': 20343.69, 'side': 'short'}
-    predict_trade_success_xgb(signal)
+    signal = {'symbol': 'BTCUSDT', 'entry_price': 96373.3, 'long_ema': 95851.81036425148, 'short_ema': 96013.68569326347, 'adx': 34.23061952811742, 'atr': 126.17857142857247, 'rsi': 87.10105123591269, 'volume': 793.967, 'side': 'long'}
+    res = predict_signal(signal)
+    print(res)
