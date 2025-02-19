@@ -200,6 +200,11 @@ class Bot:
                         self._store_trade_data(symbol)
                         self._store_wallet_data()
 
+                        loggs.system_log.info("🕒 Sleeping for 3 minutes after trade execution...")
+                        time.sleep(180)  # 🛑 Sleep for 3 minutes after trade
+
+                        ON_TRADE = False  # Reset ON_TRADE after sleep period
+
                 except Exception as e:
                     loggs.error_logs_logger.error(
                         f"{symbol} - Error while checking crossover: {e}, details: {traceback.format_exc()}")
