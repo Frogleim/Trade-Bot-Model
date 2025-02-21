@@ -12,6 +12,8 @@ import traceback
 from tools import trade, strategy, models, loggs, pnl_calculator
 from tools.settings import settings
 import bot_control
+import pika
+import json
 
 check_signal_thread = None  # Store check_signal thread
 
@@ -62,11 +64,25 @@ class Bot:
         self.api_key = os.getenv('BINANCE_API_KEY', '')
         self.api_secret = os.getenv('BINANCE_API_SECRET', '')
         self.db_url = os.getenv('DATABASE_URL')
+        self.rabbitmq_url = os.getenv('RABBITMQ_URL', 'amqp://guest:guest@rabbitmq:5672/')
+
         self.engine = create_engine(self.db_url)
         self.SessionLocal = sessionmaker(bind=self.engine)
         self.symbols = settings.SYMBOLS  # Updated to handle multiple symbols
         self.signal_data = {}
         self.wallet_data = {}
+
+    def _connect_rabbitmq(self):
+        """Establish connection with RabbitMQ inside Docker."""
+        try:
+            params = pika.URLParameters(self.rabbitmq_url)
+            connection = pika.BlockingConnection(params)
+            channel = connection.channel()
+            channel.queue_declare(queue='trade_signals', durable=True)
+            return connection, channel
+        except Exception as e:
+            loggs.error_logs_logger.error(f'❌ Error connecting to RabbitMQ: {e}')
+            return None, None
 
     def _connect_db(self):
         try:
@@ -134,6 +150,27 @@ class Bot:
             finally:
                 session.close()
 
+    def send_signal_to_rabbitmq(self, trade_signal):
+        """Send trade signals to RabbitMQ."""
+        connection, channel = self._connect_rabbitmq()
+        if not connection or not channel:
+            return
+
+        try:
+            channel.basic_publish(
+                exchange='',
+                routing_key='trade_signals',
+                body=json.dumps(trade_signal),
+                properties=pika.BasicProperties(
+                    delivery_mode=2  # Make messages persistent
+                )
+            )
+            loggs.system_log.info(f"✅ Trade signal sent to RabbitMQ: {trade_signal}")
+        except Exception as e:
+            loggs.error_logs_logger.error(f'❌ Error sending trade signal to RabbitMQ: {e}')
+        finally:
+            connection.close()
+
     def check_signal(self):
         global ON_TRADE
         bot_control.stop_event.clear()
@@ -154,9 +191,6 @@ class Bot:
                 try:
                     signal_data = strategy.check_crossover(symbol)
                     loggs.debug_log.debug(signal_data)
-                    if signal_data[1] == 'Hold':
-                        loggs.system_log.info(f'{symbol} - No signal data received.')
-                        continue
 
                     loggs.system_log.info(f'{symbol} - Signal data received.')
 
@@ -177,6 +211,8 @@ class Bot:
                     }
 
                     if self.signal_data["side"] in ['long', 'short']:
+                        self.send_signal_to_rabbitmq(self.signal_data)
+
                         ON_TRADE = True
                         loggs.system_log.info(
                             f"{symbol} - Getting {self.signal_data['side']} signal with entry price: {self.signal_data['entry_price']}")
@@ -204,6 +240,11 @@ class Bot:
                         time.sleep(180)  # 🛑 Sleep for 3 minutes after trade
 
                         ON_TRADE = False  # Reset ON_TRADE after sleep period
+                    else:
+                        loggs.system_log.info(f'{symbol} - No signal data received.')
+
+
+                        continue
 
                 except Exception as e:
                     loggs.error_logs_logger.error(
