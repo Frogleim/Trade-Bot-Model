@@ -1,8 +1,13 @@
-from sqlalchemy import create_engine, Column, Integer, String, Float, text, DateTime
+from sqlalchemy import create_engine, Column, Integer, String, Float, text, DateTime, Boolean
 from datetime import datetime
 from sqlalchemy.orm import declarative_base
+from passlib.context import CryptContext
+
 from dotenv import load_dotenv
 import os
+
+Base = declarative_base()
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 loaded = load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
 print(f"Dotenv loaded: {loaded}")
@@ -78,6 +83,23 @@ class Signal(Base):
 
 class User(Base):
     __tablename__ = 'users'
+
+    class User(Base):
+        __tablename__ = 'users'
+
+        id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+        username = Column(String, unique=True, nullable=False)
+        hashed_password = Column(String, nullable=False)
+        disabled = Column(Boolean, default=False)
+
+        def verify_password(self, password: str) -> bool:
+            """Check if the provided password matches the stored hashed password."""
+            return pwd_context.verify(password, self.hashed_password)
+
+        @classmethod
+        def hash_password(cls, password: str) -> str:
+            """Hash a plain text password."""
+            return pwd_context.hash(password)
 
 
 
