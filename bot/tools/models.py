@@ -1,4 +1,5 @@
-from sqlalchemy import create_engine, Column, Integer, String, Float, text
+from sqlalchemy import create_engine, Column, Integer, String, Float, text, DateTime
+from datetime import datetime
 from sqlalchemy.orm import declarative_base
 from dotenv import load_dotenv
 import os
@@ -10,8 +11,8 @@ print(f"Dotenv loaded: {loaded}")
 # Database credentials
 DB_USER = "postgres"
 DB_PASS = "admin"
-DB_HOST = "pgdb"  # This is the container name in Docker Compose
-DB_PORT = "5432"
+DB_HOST = "localhost"  # This is the container name in Docker Compose
+DB_PORT = "5433"
 DB_NAME = "tb"
 
 # Create an engine for the default `postgres` database (to create `tb`)
@@ -51,6 +52,8 @@ class Trade(Base):
     rsi = Column(Float, nullable=False)
     volume = Column(Float, nullable=False)
     side = Column(String, nullable=False)
+    start_time = Column(DateTime, default=datetime.utcnow, nullable=True)  # When trade starts
+    end_time = Column(DateTime, nullable=True)  # When trade ends, can be null
 
 
 class Wallet(Base):

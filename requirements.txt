@@ -1,22 +1,43 @@
-python-binance
-pandas
-ccxt
+# FastAPI and Web Frameworks
 fastapi
 uvicorn
-matplotlib
-fastapi
 flask
 dash
 plotly
+
+# Trading and Market Data
+python-binance
+ccxt
 tradingpattern
-colorama
-python-telegram-bot==13.13
-websocket-client
 ta
-python-dotenv
-SQLAlchemy
-psycopg2
-watchdog
+
+# Data Processing and Machine Learning
+pandas
 xgboost
 scikit-learn
 openpyxl
+
+# Database and ORM
+SQLAlchemy
+psycopg2
+
+# Environment Variables
+python-dotenv
+
+# Security and Authentication
+python-jose[cryptography]
+passlib[bcrypt]
+fastapi-users
+
+# WebSocket and API Clients
+websocket-client
+
+# Telegram Bot
+python-telegram-bot==13.13
+
+# File System and Monitoring
+watchdog
+
+# Logging and Visualization
+matplotlib
+colorama

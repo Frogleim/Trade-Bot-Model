@@ -11,6 +11,7 @@ import importlib
 import traceback
 from tools import trade, strategy, models, loggs, pnl_calculator
 from tools.settings import settings
+from datetime import datetime
 import bot_control
 import pika
 import json
@@ -191,14 +192,10 @@ class Bot:
                 try:
                     signal_data = strategy.check_crossover(symbol)
                     loggs.debug_log.debug(signal_data)
-
                     loggs.system_log.info(f'{symbol} - Signal data received.')
-
-                    # Load latest final balance dynamically
                     self.wallet_data = {
                         "initial_balance": self._get_last_final_balance(),
                     }
-
                     self.signal_data = {
                         "side": signal_data[1],
                         "entry_price": float(signal_data[2]),
@@ -207,43 +204,34 @@ class Bot:
                         "rsi": float(signal_data[5]),
                         "long_ema": float(signal_data[6]),
                         "short_ema": float(signal_data[7]),
-                        "volume": float(signal_data[8])
+                        "volume": float(signal_data[8]),
+                        "start_time": datetime.utcnow().isoformat()  # Get current UTC time in ISO format
                     }
-
+                    self.send_signal_to_rabbitmq(self.signal_data)
                     if self.signal_data["side"] in ['long', 'short']:
-                        self.send_signal_to_rabbitmq(self.signal_data)
-
                         ON_TRADE = True
                         loggs.system_log.info(
                             f"{symbol} - Getting {self.signal_data['side']} signal with entry price: {self.signal_data['entry_price']}")
-
                         trade_result, pnl, target_price, traded_symbol = trade.execute_trade(
                             symbol,
                             self.signal_data['entry_price'],
                             self.signal_data['atr'],
                             is_long=True if self.signal_data['side'] == 'long' else False,
                         )
-
                         self.signal_data['pnl'] = pnl
                         self.signal_data['exit_price'] = float(target_price)
                         roi = pnl_calculator.pnl_calculator(40, self.signal_data['entry_price'],
                                                             self.signal_data['exit_price'], 75)
                         self.wallet_data['roi'] = roi
-
-                        # ✅ Now correctly accumulating balance
                         self.wallet_data['final_balance'] = self.wallet_data['initial_balance'] + roi
-
+                        self.signal_data['end_time'] = datetime.utcnow().isoformat()
                         self._store_trade_data(symbol)
                         self._store_wallet_data()
-
                         loggs.system_log.info("🕒 Sleeping for 3 minutes after trade execution...")
-                        time.sleep(180)  # 🛑 Sleep for 3 minutes after trade
-
-                        ON_TRADE = False  # Reset ON_TRADE after sleep period
+                        time.sleep(180)
+                        ON_TRADE = False
                     else:
                         loggs.system_log.info(f'{symbol} - No signal data received.')
-
-
                         continue
 
                 except Exception as e:
