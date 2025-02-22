@@ -15,7 +15,7 @@ from passlib.context import CryptContext
 
 load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
 
-DATABASE_URL = 'postgresql://postgres:admin@localhost:5433/tb'
+DATABASE_URL = 'postgresql://postgres:admin@pgdb:5432/tb'
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

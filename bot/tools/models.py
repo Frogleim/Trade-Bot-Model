@@ -9,7 +9,7 @@ print(f"Dotenv loaded: {loaded}")
 
 DB_USER = "postgres"
 DB_PASS = "admin"
-DB_HOST = "pgdb"  # This is the container name in Docker Compose
+DB_HOST = "pgdb"
 DB_PORT = "5432"
 DB_NAME = "tb"
 
@@ -73,6 +73,12 @@ class Signal(Base):
     rsi = Column(Float, nullable=False)
     volume = Column(Float, nullable=False)
     side = Column(String, nullable=False)
+
+
+
+class User(Base):
+    __tablename__ = 'users'
+
 
 
 # Create all tables
