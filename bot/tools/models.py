@@ -81,25 +81,25 @@ class Signal(Base):
 
 
 
-class User(Base):
-    __tablename__ = 'users'
-
-    class User(Base):
-        __tablename__ = 'users'
-
-        id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-        username = Column(String, unique=True, nullable=False)
-        hashed_password = Column(String, nullable=False)
-        disabled = Column(Boolean, default=False)
-
-        def verify_password(self, password: str) -> bool:
-            """Check if the provided password matches the stored hashed password."""
-            return pwd_context.verify(password, self.hashed_password)
-
-        @classmethod
-        def hash_password(cls, password: str) -> str:
-            """Hash a plain text password."""
-            return pwd_context.hash(password)
+# class User(Base):
+#     __tablename__ = 'users'
+#
+#     class User(Base):
+#         __tablename__ = 'users'
+#
+#         id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+#         username = Column(String, unique=True, nullable=False)
+#         hashed_password = Column(String, nullable=False)
+#         disabled = Column(Boolean, default=False)
+#
+#         def verify_password(self, password: str) -> bool:
+#             """Check if the provided password matches the stored hashed password."""
+#             return pwd_context.verify(password, self.hashed_password)
+#
+#         @classmethod
+#         def hash_password(cls, password: str) -> str:
+#             """Hash a plain text password."""
+#             return pwd_context.hash(password)
 
 
 
