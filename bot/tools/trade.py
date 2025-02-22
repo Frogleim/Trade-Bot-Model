@@ -7,7 +7,7 @@ from .settings import settings
 
 load_dotenv(dotenv_path="./tools/.env")
 CHECK_INTERVAL = 1
-CHECKPOINTS = [0.3, 0.4, 0.5, 0.75]
+CHECKPOINTS = [0.4, 0.5, 0.75]
 
 def calculate_trade_targets(entry_price: float, atr: float, is_long: bool, symbol: str) -> tuple[float, float]:
     take_profit_multiplier = settings.TAKE_PROFIT_ATR

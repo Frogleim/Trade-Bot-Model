@@ -76,8 +76,8 @@ class Bot:
     def _connect_rabbitmq(self):
         """Establish connection with RabbitMQ inside Docker."""
         try:
-            params = pika.URLParameters(self.rabbitmq_url)
-            connection = pika.BlockingConnection(params)
+            connection = pika.BlockingConnection(pika.ConnectionParameters('rabbitmq'))
+
             channel = connection.channel()
             channel.queue_declare(queue='trade_signals', durable=True)
             return connection, channel
@@ -207,8 +207,10 @@ class Bot:
                         "volume": float(signal_data[8]),
                         "start_time": datetime.utcnow().isoformat()  # Get current UTC time in ISO format
                     }
-                    self.send_signal_to_rabbitmq(self.signal_data)
                     if self.signal_data["side"] in ['long', 'short']:
+                        self.signal_data['symbol'] = symbol
+                        self.send_signal_to_rabbitmq(self.signal_data)
+
                         ON_TRADE = True
                         loggs.system_log.info(
                             f"{symbol} - Getting {self.signal_data['side']} signal with entry price: {self.signal_data['entry_price']}")
