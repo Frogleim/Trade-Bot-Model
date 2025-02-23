@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, Float, text
+from sqlalchemy import create_engine, Column, Integer, String, Float, text, DateTime, func
 from sqlalchemy.orm import declarative_base
 from dotenv import load_dotenv
 import os
@@ -51,6 +51,11 @@ class Trade(Base):
     rsi = Column(Float, nullable=False)
     volume = Column(Float, nullable=False)
     side = Column(String, nullable=False)
+
+    # New Fields
+    start_time = Column(DateTime, default=func.now(), nullable=True)  # Trade open time
+    end_time = Column(DateTime, nullable=True)  # Trade close time
+
 
 
 class Wallet(Base):

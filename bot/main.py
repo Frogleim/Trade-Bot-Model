@@ -110,7 +110,9 @@ class Bot:
                     atr=self.signal_data.get('atr'),
                     rsi=self.signal_data.get('rsi'),
                     volume=self.signal_data.get('volume'),
-                    side=self.signal_data.get('side')
+                    side=self.signal_data.get('side'),
+                    start_time = self.signal_data.get('start_time'),
+                    end_time = self.signal_data.get('end_time')
                 )
                 session.add(new_trade)
                 session.commit()
@@ -221,6 +223,7 @@ class Bot:
                             is_long=True if self.signal_data['side'] == 'long' else False,
                         )
                         self.signal_data['pnl'] = pnl
+                        self.signal_data['end_time'] = datetime.utcnow().isoformat()
                         self.signal_data['exit_price'] = float(target_price)
                         roi = pnl_calculator.pnl_calculator(40, self.signal_data['entry_price'],
                                                             self.signal_data['exit_price'], 75)
