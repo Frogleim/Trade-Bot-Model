@@ -12,13 +12,13 @@ CHECKPOINTS = [0.4, 0.5, 0.75]
 def calculate_trade_targets(entry_price: float, atr: float, is_long: bool, symbol: str) -> tuple[float, float]:
     take_profit_multiplier = settings.TAKE_PROFIT_ATR
     stop_loss_multiplier = settings.STOP_LOSS_ATR
-    if symbol == 'BTCUSDT':
+    if symbol == 'BNBUSDT' or symbol == 'ADAUSDT':
         if is_long:
             target_price = entry_price + (2 + take_profit_multiplier * atr)
-            stop_loss = entry_price - (0.6 + stop_loss_multiplier * atr)
+            stop_loss = entry_price - (0.6 +  atr / stop_loss_multiplier)
         else:  # Short trade for BTCUSDT
             target_price = entry_price - (2 + take_profit_multiplier * atr)
-            stop_loss = entry_price + (0.6 + stop_loss_multiplier * atr)
+            stop_loss = entry_price + (0.6 +  atr / stop_loss_multiplier)
     else:  # Other assets
         if is_long:
             target_price = entry_price + (take_profit_multiplier * atr)
