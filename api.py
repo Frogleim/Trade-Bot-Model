@@ -12,7 +12,7 @@ from bot import bot_control
 load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
 
 # Database URL
-DATABASE_URL = 'postgresql://postgres:admin@pgdb:5432/tb'
+DATABASE_URL = 'postgresql://postgres:admin@pgdb:5432/bot_data'
 
 # SQLAlchemy setup
 engine = create_engine(DATABASE_URL)

@@ -12,7 +12,7 @@ DB_USER = "postgres"
 DB_PASS = "admin"
 DB_HOST = "pgdb"  # This is the container name in Docker Compose
 DB_PORT = "5432"
-DB_NAME = "tb"
+DB_NAME = "bot_data"
 
 # Create an engine for the default `postgres` database (to create `tb`)
 default_engine = create_engine(f"postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/postgres")
