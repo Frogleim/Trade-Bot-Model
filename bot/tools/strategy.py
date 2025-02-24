@@ -174,6 +174,7 @@ def check_crossover(symbol):
         }
         loggs.debug_log.debug(trade_signal)
         ai_approved = predict_signal(trade_signal)
+        loggs.debug_log.debug(ai_approved)
         if ai_approved['trade_decision']:
             loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
             return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
@@ -191,6 +192,7 @@ def check_crossover(symbol):
         }
         loggs.debug_log.debug(trade_signal)
         ai_approved = predict_signal(trade_signal)
+        loggs.debug_log.debug(ai_approved)
         if ai_approved['trade_decision']:
             loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
             return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]

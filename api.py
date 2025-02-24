@@ -51,7 +51,9 @@ def get_trades(db: Session = Depends(get_db)):
         "atr": trade.atr,
         "rsi": trade.rsi,
         "volume": trade.volume,
-        "side": trade.side
+        "side": trade.side,
+        "start_time": trade.start_time,
+        "end_time": trade.end_time,
     } for trade in trades]
 
 

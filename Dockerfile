@@ -9,9 +9,15 @@ COPY . /app
 # Install dependencies
 RUN pip install --no-cache-dir fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv
 COPY requirements.txt .
+
+# Install system dependencies including nano
 RUN apt-get update \
-    && apt-get -y install libpq-dev gcc && apt-get install -y iputils-ping
+    && apt-get -y install libpq-dev gcc iputils-ping nano \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN pip install -r requirements.txt
+
 # Expose the port for FastAPI
 EXPOSE 8000
 
