@@ -14,11 +14,11 @@ def calculate_trade_targets(entry_price: float, atr: float, is_long: bool, symbo
     stop_loss_multiplier = settings.STOP_LOSS_ATR
     if symbol == 'BNBUSDT' or symbol == 'ADAUSDT':
         if is_long:
-            target_price = entry_price + (2 + take_profit_multiplier * atr)
-            stop_loss = entry_price - (0.6 +  atr / stop_loss_multiplier)
+            target_price = entry_price + (take_profit_multiplier * atr)
+            stop_loss = entry_price - (atr / stop_loss_multiplier)
         else:  # Short trade for BTCUSDT
-            target_price = entry_price - (2 + take_profit_multiplier * atr)
-            stop_loss = entry_price + (0.6 +  atr / stop_loss_multiplier)
+            target_price = entry_price - (take_profit_multiplier * atr)
+            stop_loss = entry_price + (atr / stop_loss_multiplier)
     else:  # Other assets
         if is_long:
             target_price = entry_price + (take_profit_multiplier * atr)
