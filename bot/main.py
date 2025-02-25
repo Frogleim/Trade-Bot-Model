@@ -2,6 +2,7 @@ import time
 import os
 import threading
 import hashlib
+import uuid
 from dotenv import load_dotenv
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -101,6 +102,7 @@ class Bot:
             try:
                 new_trade = models.Trade(
                     symbol=symbol,
+                    trade_id=self.signal_data['trade_id'],
                     entry_price=self.signal_data.get('entry_price'),
                     exit_price=self.signal_data.get('exit_price'),
                     pnl=self.signal_data.get('pnl'),
@@ -200,6 +202,7 @@ class Bot:
                     }
                     self.signal_data = {
                         "side": signal_data[1],
+                        "trade_id": uuid.uuid4(),
                         "entry_price": float(signal_data[2]),
                         "adx": float(signal_data[3]),
                         "atr": float(signal_data[4]),
@@ -233,7 +236,6 @@ class Bot:
                         self._store_trade_data(symbol)
                         self._store_wallet_data()
                         loggs.system_log.info("🕒 Sleeping for 3 minutes after trade execution...")
-                        time.sleep(180)
                         ON_TRADE = False
                     else:
                         loggs.system_log.info(f'{symbol} - No signal data received.')

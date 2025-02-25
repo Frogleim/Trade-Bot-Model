@@ -40,6 +40,7 @@ class Trade(Base):
     __tablename__ = 'trades'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
+    trade_id = Column(String, unique=True, default=None)
     symbol = Column(String, nullable=True)
     entry_price = Column(Float, nullable=False)
     exit_price = Column(Float, nullable=False)
