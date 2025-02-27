@@ -3,24 +3,37 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 import os
 import uvicorn
 from bot.tools.settings import settings
 from bot import bot_control
 
 # Load environment variables
-load_dotenv(dotenv_path=os.path.abspath('./tools/.env'))
+load_dotenv(dotenv_path='.env')
 
 # Database URL
-DATABASE_URL = 'postgresql://postgres:admin@pgdb:5432/bot_data'
+
+DATABASE_URL = 'postgresql://postgres:admin@localhost:5433/tb'
 
 # SQLAlchemy setup
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # FastAPI app
-app = FastAPI()
+app = FastAPI(
+    debug=True,
+    title='Hedge.ai',
+    version='0.1.1',
+    description='The Trading Bot API provides a set of endpoints for managing and analyzing cryptocurrency trading strategies. It allows users to retrieve market signals, execute trades, monitor market trends, and backtest strategies using technical indicators like EMA, ADX, ATR, and RSI. This API is designed to work with Binance Futures and integrates with RabbitMQ for real-time signal processing.',
+)
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
+
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return FileResponse("static/favicon.ico")
 
 
 # Dependency to get DB session
@@ -148,4 +161,4 @@ def stop_bot():
     return bot_control.stop_bot()
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="localhost", port=8080)
+    uvicorn.run(app, host="localhost", port=8080, reload=True)

@@ -51,17 +51,17 @@ def monitor_trade(symbol: str, entry_price: float, target_price: float, stop_los
                               f" Current: {current_price}, Stop Loss: {current_stop_loss}")
         if is_long:
             profit_distance = target_price - entry_price
-            for fraction in CHECKPOINTS:
+            for fraction in settings.CHECKPOINTS:
                 checkpoint_price = entry_price + fraction * profit_distance
-                if current_price >= checkpoint_price and checkpoint_price > current_stop_loss:
+                if current_price >= checkpoint_price > current_stop_loss:
                     loggs.system_log.info(f"{symbol} - Long trade checkpoint reached at {checkpoint_price}."
                                           f" Updating stop loss from {current_stop_loss} to {checkpoint_price}.")
                     current_stop_loss = checkpoint_price
         else:
             profit_distance = entry_price - target_price
-            for fraction in CHECKPOINTS:
+            for fraction in settings.CHECKPOINTS:
                 checkpoint_price = entry_price - fraction * profit_distance
-                if current_price <= checkpoint_price and checkpoint_price < current_stop_loss:
+                if current_price <= checkpoint_price < current_stop_loss:
                     loggs.system_log.info(f"{symbol} - Short trade checkpoint reached at {checkpoint_price}."
                                           f" Updating stop loss from {current_stop_loss} to {checkpoint_price}.")
                     current_stop_loss = checkpoint_price
