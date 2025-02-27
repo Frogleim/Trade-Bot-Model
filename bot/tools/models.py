@@ -10,8 +10,8 @@ print(f"Dotenv loaded: {loaded}")
 # Database credentials
 DB_USER = "postgres"
 DB_PASS = "admin"
-DB_HOST = "localhost"  # This is the container name in Docker Compose
-DB_PORT = "5433"
+DB_HOST = "pgdb"  # This is the container name in Docker Compose
+DB_PORT = "5432"
 DB_NAME = "bot_data"
 
 # Create an engine for the default `postgres` database (to create `tb`)
