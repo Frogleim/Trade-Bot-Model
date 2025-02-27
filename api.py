@@ -21,6 +21,8 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # FastAPI app
 app = FastAPI()
 
+
+
 # Dependency to get DB session
 def get_db():
     db = SessionLocal()
@@ -33,28 +35,39 @@ def get_db():
 from bot.tools.models import Trade, Wallet
 
 
+@app.get("/get-columns", response_model=list[str])
+def get_trade_columns(db: Session = Depends(get_db)):
+    """Returns a list of all column names in the Trade table."""
+    return [column.name for column in Trade.__table__.columns]
+
+
 # Endpoint to get all trades
 @app.get("/trades", response_model=list[dict])
 def get_trades(db: Session = Depends(get_db)):
-    trades = db.query(Trade).all()
-    if not trades:
-        raise HTTPException(status_code=404, detail="No trades found")
-    return [{
-        "id": trade.id,
-        "symbol": trade.symbol,
-        "entry_price": trade.entry_price,
-        "exit_price": trade.exit_price,
-        "pnl": trade.pnl,
-        "long_ema": trade.long_ema,
-        "short_ema": trade.short_ema,
-        "adx": trade.adx,
-        "atr": trade.atr,
-        "rsi": trade.rsi,
-        "volume": trade.volume,
-        "side": trade.side,
-        "start_time": trade.start_time,
-        "end_time": trade.end_time,
-    } for trade in trades]
+    try:
+        trades = db.query(Trade).all()
+
+        if not trades:
+            raise HTTPException(status_code=404, detail="No trades found")
+        return [{
+            "trade_id": trade.trade_id,
+            "symbol": trade.symbol,
+            "entry_price": trade.entry_price,
+            "exit_price": trade.exit_price,
+            "pnl": trade.pnl,
+            "long_ema": trade.long_ema,
+            "short_ema": trade.short_ema,
+            "adx": trade.adx,
+            "atr": trade.atr,
+            "rsi": trade.rsi,
+            "volume": trade.volume,
+            "side": trade.side,
+            "start_time": trade.start_time,
+            "end_time": trade.end_time,
+        } for trade in trades]
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.get("/wallet")
