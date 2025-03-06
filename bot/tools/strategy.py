@@ -6,7 +6,7 @@ from . import loggs
 from .settings import settings
 import ta
 from dotenv import load_dotenv
-from .ai_model import predict_signal
+from .ai_model import predict_signal, next_price_prediction
 import os
 import importlib
 import pickle
@@ -122,7 +122,6 @@ def predict_trade_success_xgb(trade_signal):
         return True  # ✅ AI approves trade
     return False  # ❌ AI rejects trade
 
-# Modify `check_crossover()` to integrate AI decision
 def check_crossover(symbol):
     long_ema, short_ema, close_price_series, adx, atr, rsi, volume = calculate_ema(symbol)
 
@@ -158,9 +157,9 @@ def check_crossover(symbol):
 
     is_breakout = detect_breakout(symbol)
 
-    # 🔥 AI-Enhanced Decision
-
-    if (crossover_buy or is_breakout['breakout_up'].iloc[-1]) and strong_trend:
+    is_signal = next_price_prediction(symbol)
+    loggs.system_log.info(f'AI signal is: {is_signal}')
+    if is_signal and rsi.iloc[-1] > 50:
         trade_signal = {
             "symbol": symbol,
             "entry_price": curr_price,
@@ -175,10 +174,10 @@ def check_crossover(symbol):
         loggs.debug_log.debug(trade_signal)
         ai_approved = predict_signal(trade_signal)
         loggs.debug_log.debug(ai_approved)
-        if ai_approved['trade_decision']:
-            loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
-            return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
-    elif (crossover_sell or is_breakout['breakout_down'].iloc[-1]) and strong_trend_sell:
+        # if ai_approved['trade_decision']:
+        loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
+        return [symbol, 'long', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
+    elif not is_signal and rsi.iloc[-1] < 50:
         trade_signal = {
             "symbol": symbol,
             "entry_price": curr_price,
@@ -193,9 +192,9 @@ def check_crossover(symbol):
         loggs.debug_log.debug(trade_signal)
         ai_approved = predict_signal(trade_signal)
         loggs.debug_log.debug(ai_approved)
-        if ai_approved['trade_decision']:
-            loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
-            return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
+        # if ai_approved['trade_decision']:
+        loggs.system_log.info(f"{symbol} - XGBoost approved. Probability: {ai_approved['probability']}")
+        return [symbol, 'short', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
     else:
         return [symbol, 'Hold', curr_price, adx.iloc[-1], atr, rsi.iloc[-1], curr_long, curr_short, volume.iloc[-1]]
 

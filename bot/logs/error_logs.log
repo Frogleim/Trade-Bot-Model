@@ -1,0 +1,148 @@
+1.03 beta - 2025-03-06 12:14:20,847 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 12:15:36,101 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 12:28:13,963 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 12:29:26,656 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 12:30:02,321 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 12:30:12,823 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 12:31:37,786 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 12:33:37,042 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 14:48:43,879 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 14:58:44,051 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:05:29,042 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:05:45,838 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:05:54,418 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:06:03,272 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:06:15,498 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:06:24,571 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:06:36,647 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:15:18,834 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:15:23,372 - ERROR - ETHUSDT - Error while checking crossover: [Errno 2] No such file or directory: '/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/model/model.joblib', details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 197, in check_signal
+    signal_data = strategy.check_crossover(symbol)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/tools/strategy.py", line 162, in check_crossover
+    is_signal = next_price_prediction()
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/tools/ai_model.py", line 88, in next_price_prediction
+    model = load(next_price_model)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/joblib/numpy_pickle.py", line 650, in load
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/model/model.joblib'
+
+1.03 beta - 2025-03-06 15:15:56,634 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:16:00,072 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:01,820 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:03,556 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:05,287 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:07,011 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:08,738 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:10,476 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:12,465 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:14,220 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:15,956 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:17,703 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:19,422 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:21,148 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:22,894 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:24,621 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:16:26,351 - ERROR - Error while connecting to db: (psycopg2.OperationalError) could not translate host name "pgdb" to address: nodename nor servname provided, or not known
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+1.03 beta - 2025-03-06 15:23:20,775 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:24:26,449 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 15:27:48,908 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:19:33,116 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:23:11,310 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:26:22,621 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:26:25,990 - ERROR - ETHUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:26:37,931 - ERROR - ❌ Error connecting to RabbitMQ: [Errno 8] nodename nor servname provided, or not known
+1.03 beta - 2025-03-06 20:31:13,377 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:31:16,772 - ERROR - ETHUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:31:28,559 - ERROR - BNBUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:31:40,616 - ERROR - ADAUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:32:31,773 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:32:35,177 - ERROR - ETHUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:32:46,968 - ERROR - BNBUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:32:58,763 - ERROR - ADAUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:36:33,379 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:36:39,360 - ERROR - ADAUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:36:52,313 - ERROR - ADAUSDT - Error while checking crossover: 'NoneType' object is not subscriptable, details: Traceback (most recent call last):
+  File "/Users/gorbarseghyan/Desktop/other projets/Trade-Bot/bot/main.py", line 204, in check_signal
+    "side": signal_data[1],
+            ~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+
+1.03 beta - 2025-03-06 20:39:01,642 - ERROR - ❌ Example error log.
+1.03 beta - 2025-03-06 20:39:04,170 - ERROR - ❌ Error connecting to RabbitMQ: [Errno 8] nodename nor servname provided, or not known

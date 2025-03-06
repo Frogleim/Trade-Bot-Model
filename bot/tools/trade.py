@@ -15,14 +15,14 @@ def calculate_trade_targets(entry_price: float, atr: float, is_long: bool, symbo
         if is_long:
             target_price = entry_price + (take_profit_multiplier * atr)
             stop_loss = entry_price - (atr / stop_loss_multiplier)
-        else:  # Short trade for BTCUSDT
+        else:
             target_price = entry_price - (take_profit_multiplier * atr)
             stop_loss = entry_price + (atr / stop_loss_multiplier)
-    else:  # Other assets
+    else:
         if is_long:
             target_price = entry_price + (take_profit_multiplier * atr)
             stop_loss = entry_price - (stop_loss_multiplier * atr)
-        else:  # Short trade for non-BTCUSDT assets
+        else:
             target_price = entry_price - (take_profit_multiplier * atr)
             stop_loss = entry_price + (stop_loss_multiplier * atr)
 

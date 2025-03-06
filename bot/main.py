@@ -10,7 +10,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import importlib
 import traceback
-from tools import trade, strategy, models, loggs, pnl_calculator
+from tools import trade, strategy, models, loggs, pnl_calculator, ai_model
 from tools.settings import settings
 from datetime import datetime
 import bot_control
@@ -239,13 +239,13 @@ class Bot:
                         ON_TRADE = False
                     else:
                         loggs.system_log.info(f'{symbol} - No signal data received.')
-                        continue
+                        time.sleep(3600)
 
                 except Exception as e:
                     loggs.error_logs_logger.error(
                         f"{symbol} - Error while checking crossover: {e}, details: {traceback.format_exc()}")
 
-                time.sleep(10)  # 🔥 Ensure stop_event is checked before sleeping
+                time.sleep(10)
 
 
 def restart_check_signal():
