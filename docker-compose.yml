@@ -66,5 +66,4 @@ services:
 
 volumes:
   coins_trade:
-  db:
   tools:  # This ensures tools is a named volume
