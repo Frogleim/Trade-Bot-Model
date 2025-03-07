@@ -66,5 +66,5 @@ services:
 
 volumes:
   coins_trade:
-  pgdbdata:
+  db:
   tools:  # This ensures tools is a named volume
