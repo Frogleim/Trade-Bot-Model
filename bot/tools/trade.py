@@ -13,11 +13,11 @@ def calculate_trade_targets(entry_price: float, atr: float, is_long: bool, symbo
     stop_loss_multiplier = settings.STOP_LOSS_ATR
     if symbol == 'ADAUSDT':
         if is_long:
-            target_price = entry_price + (take_profit_multiplier * atr)
-            stop_loss = entry_price - (atr / stop_loss_multiplier)
+            target_price = entry_price + (atr * 3)
+            stop_loss = entry_price - (atr / 2)
         else:
-            target_price = entry_price - (take_profit_multiplier * atr)
-            stop_loss = entry_price + (atr / stop_loss_multiplier)
+            target_price = entry_price - (atr * 3)
+            stop_loss = entry_price + (atr / 2)
     else:
         if is_long:
             target_price = entry_price + (take_profit_multiplier * atr)
