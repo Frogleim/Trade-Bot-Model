@@ -240,6 +240,7 @@ class Bot:
                     else:
                         loggs.system_log.info(f'{symbol} - No signal data received.')
                     time.sleep(3600)
+                #     sss
 
                 except Exception as e:
                     loggs.error_logs_logger.error(
