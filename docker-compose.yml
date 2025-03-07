@@ -33,8 +33,6 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
     container_name: bot_db
-    volumes:
-      - pgdbdata:/var/lib/postgresql/data/
     restart: always
 
   rabbitmq:
